@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="tet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Istória - Biblioteka Dijitál</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ==========================================================================
+           1. 스타일 변수 (라이트 모드 & 야간 독서 모드 지원)
+           ========================================================================== */
+        :root {
+            --primary-color: #1e3a8a;
+            --primary-hover: #1d4ed8;
+            --accent-color: #2563eb;
+            --bg-body: #f1f5f9;
+            --bg-paper: #ffffff;
+            --bg-toolbar: #ffffff;
+            --text-main: #0f172a;
+            --text-sub: #475569;
+            --border-color: #e2e8f0;
+            --base-font-size: 18px;
+        }
+
+        body.dark-mode {
+            --primary-color: #3b82f6;
+            --primary-hover: #60a5fa;
+            --accent-color: #60a5fa;
+            --bg-body: #0f172a;
+            --bg-paper: #1e293b;
+            --bg-toolbar: #1e293b;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.25s, color 0.25s;
+        }
+
+        /* ==========================================================================
+           2. 상단 헤더 (로고 크기 고정 및 출판사별 동적 지원)
+           ========================================================================== */
+        header {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            padding: 0.65rem 1.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            flex-shrink: 0;
+        }
+
+        .header-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .brand-title {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #ffffff;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        /* 로고 크기 강제 고정 CSS */
+        .header-pub-logo {
+            height: 34px !important;
+            max-height: 34px !important;
+            width: auto !important;
+            max-width: 110px !important;
+            object-fit: contain;
+            border-radius: 6px;
+            background-color: #ffffff;
+            padding: 2px 4px;
+            flex-shrink: 0;
+            display: block;
+        }
+
+        .brand-title span#headerBookTitle {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .brand-badge {
+            font-size: 0.72rem;
+            background: rgba(255,255,255,0.2);
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .back-library-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(255,255,255,0.15);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.4rem 0.95rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: background 0.2s;
+            flex-shrink: 0;
+        }
+
+        .back-library-btn:hover {
+            background: rgba(255,255,255,0.28);
+        }
+
+        /* ==========================================================================
+           3. 상단 컨트롤 툴바 (챕터 선택, 언어 전환, 글자 크기, 야간 모드)
+           ========================================================================== */
+        .story-toolbar {
+            background-color: var(--bg-toolbar);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 90;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            padding: 0.55rem 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .toolbar-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.65rem;
+        }
+
+        .selector-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .scene-select {
+            padding: 0.4rem 0.8rem;
+            border: 1.5px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--bg-paper);
+            color: var(--text-main);
+            font-size: 0.88rem;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            max-width: 240px;
+        }
+
+        .scene-select:focus {
+            border-color: var(--accent-color);
+        }
+
+        .lang-group {
+            display: inline-flex;
+            background-color: var(--bg-body);
+            padding: 3px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .lang-btn {
+            padding: 0.3rem 0.75rem;
+            border: none;
+            border-radius: 6px;
+            background: transparent;
+            color: var(--text-sub);
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        .tools-group {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .tool-btn {
+            width: 34px;
+            height: 34px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--bg-paper);
+            color: var(--text-main);
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .tool-btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        /* ==========================================================================
+           4. 동화책 뷰어 (노트북: 좌우 2단 펼침 + 블러 액자 프레임)
+           ========================================================================== */
+        main {
+            max-width: 1280px;
+            margin: 1rem auto;
+            padding: 0 1.5rem;
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .story-book-card {
+            background-color: var(--bg-paper);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        /* 상단 진행률 바 */
+        .progress-bar-wrap {
+            width: 100%;
+            height: 5px;
+            background-color: var(--border-color);
+            flex-shrink: 0;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background-color: var(--accent-color);
+            width: 16.6%;
+            transition: width 0.3s ease;
+        }
+
+        /* 좌우 2단 펼침 컨테이너 */
+        .book-spread-layout {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            flex: 1;
+            min-height: 0;
+        }
+
+        /* 왼쪽 페이지: 삽화 영역 (블러 백드롭 + 액자 프레임) */
+        .illustration-box {
+            width: 100%;
+            height: 100%;
+            background-color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 1.5rem;
+            border-right: 1px solid var(--border-color);
+        }
+
+        body.dark-mode .illustration-box {
+            background-color: #0f172a;
+        }
+
+        /* 여백을 자연스럽게 채워주는 흐림 배경 이미지 */
+        .illustration-bg-blur {
+            position: absolute;
+            inset: -20px;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            object-fit: cover;
+            filter: blur(24px) brightness(0.92);
+            opacity: 0.45;
+            z-index: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        body.dark-mode .illustration-bg-blur {
+            filter: blur(24px) brightness(0.5);
+            opacity: 0.4;
+        }
+
+        /* 메인 삽화 이미지 */
+        .illustration-img {
+            position: relative;
+            z-index: 1;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: calc(100vh - 245px);
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.22);
+            display: block;
+            transition: transform 0.25s ease, opacity 0.25s ease;
+        }
+
+        .page-indicator-pill {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: rgba(15, 23, 42, 0.78);
+            color: #ffffff;
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            backdrop-filter: blur(4px);
+            z-index: 2;
+        }
+
+        /* 오른쪽 페이지: 본문 텍스트 영역 */
+        .story-content-area {
+            padding: 2rem 2.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow-y: auto;
+            max-height: calc(100vh - 205px);
+        }
+
+        .scene-header {
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .scene-chapter-label {
+            font-size: 0.82rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .scene-title {
+            font-size: 1.45rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-top: 0.15rem;
+            line-height: 1.3;
+        }
+
+        .story-text-block {
+            font-size: var(--base-font-size);
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            gap: 1.15rem;
+        }
+
+        .text-tetum {
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        .text-english {
+            color: var(--text-sub);
+            font-size: 0.92em;
+            padding-top: 0.9rem;
+            border-top: 1px dashed var(--border-color);
+        }
+
+        .text-english.solo {
+            color: var(--text-main);
+            font-size: 1em;
+            padding-top: 0;
+            border-top: none;
+        }
+
+        /* 하단 이전 / 다음 페이지 내비게이션 */
+        .story-footer-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.85rem 2rem;
+            background-color: var(--bg-body);
+            border-top: 1px solid var(--border-color);
+            gap: 1rem;
+            flex-shrink: 0;
+        }
+
+        .nav-page-btn {
+            padding: 0.6rem 1.25rem;
+            border: 1.5px solid var(--border-color);
+            border-radius: 10px;
+            background-color: var(--bg-paper);
+            color: var(--text-main);
+            font-size: 0.92rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s;
+        }
+
+        .nav-page-btn.primary {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
+        }
+
+        .nav-page-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-page-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .page-dots {
+            display: flex;
+            gap: 0.45rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .page-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: none;
+            background-color: #cbd5e1;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .page-dot.active {
+            width: 26px;
+            border-radius: 999px;
+            background-color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 0.85rem;
+            font-size: 0.78rem;
+            color: var(--text-sub);
+            flex-shrink: 0;
+        }
+
+        /* ==========================================================================
+           5. 태블릿 및 스마트폰 반응형 (768px 이하에서는 상하 수직 배치로 자동 전환)
+           ========================================================================== */
+        @media screen and (max-width: 768px) {
+            main {
+                margin: 1rem auto;
+                padding: 0 0.85rem;
+            }
+            .book-spread-layout {
+                grid-template-columns: 1fr;
+            }
+            .illustration-box {
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1rem;
+            }
+            .illustration-img {
+                max-height: 340px;
+            }
+            .story-content-area {
+                padding: 1.35rem 1.2rem;
+                max-height: none;
+                justify-content: flex-start;
+            }
+            .story-footer-nav {
+                padding: 0.85rem 1.2rem;
+            }
+            .scene-title {
+                font-size: 1.2rem;
+            }
+            .nav-page-btn {
+                padding: 0.55rem 1rem;
+                font-size: 0.88rem;
+            }
+            .page-dots {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 상단 헤더 -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="brand-title">
+                <img id="storyHeaderLogo" class="header-pub-logo" src="images/logo-s-j.png" alt="Editora Logo"
+                     onerror="this.style.display='none';">
+                <span id="headerBookTitle">Karrega hela istória...</span>
+                <span class="brand-badge">Istória</span>
+            </a>
+            <a href="index.html" class="back-library-btn">
+                <i class="fa-solid fa-arrow-left"></i> Fila ba Biblioteka
+            </a>
+        </div>
+    </header>
+
+    <!-- 상단 컨트롤 툴바 -->
+    <div class="story-toolbar">
+        <div class="toolbar-inner">
+            <!-- 장면(챕터) 바로가기 드롭다운 -->
+            <div class="selector-group">
+                <select id="sceneSelect" class="scene-select" onchange="onSceneSelectChange()" aria-label="Hili Pájina"></select>
+            </div>
+
+            <!-- 언어 표시 모드 선택 -->
+            <div class="lang-group" role="group" aria-label="Hili Lian">
+                <button type="button" class="lang-btn active" data-lang="both" onclick="setLanguageMode('both')">Tetun + EN</button>
+                <button type="button" class="lang-btn" data-lang="tet" onclick="setLanguageMode('tet')">Tetun</button>
+                <button type="button" class="lang-btn" data-lang="en" onclick="setLanguageMode('en')">English</button>
+            </div>
+
+            <!-- 글자 크기 & 야간 모드 -->
+            <div class="tools-group">
+                <button type="button" class="tool-btn" onclick="changeFontSize(-2)" title="Hamenu Letra">A-</button>
+                <button type="button" class="tool-btn" onclick="changeFontSize(2)" title="Haboot Letra">A+</button>
+                <button type="button" class="tool-btn" id="darkModeBtn" onclick="toggleDarkMode()" title="Modu Kalan">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메인 동화책 뷰어 -->
+    <main>
+        <article class="story-book-card">
+            <!-- 상단 진행률 바 -->
+            <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" id="progressBarFill"></div>
+            </div>
+
+            <!-- 좌우 2단 펼침 본문 -->
+            <div class="book-spread-layout">
+                <!-- 왼쪽: 삽화 (블러 배경 + 액자 프레임) -->
+                <div class="illustration-box">
+                    <img id="sceneBgBlur" class="illustration-bg-blur" src="" alt="" aria-hidden="true">
+                    <span class="page-indicator-pill" id="pageIndicatorPill">Pájina 1</span>
+                    <img id="sceneImage" class="illustration-img" src="" alt="Ilustrasaun Istória">
+                </div>
+
+                <!-- 오른쪽: 텍스트 -->
+                <div class="story-content-area" id="storyContentArea">
+                    <div class="scene-header">
+                        <div class="scene-chapter-label" id="sceneChapterLabel">KAPÍTULU 1</div>
+                        <h1 class="scene-title" id="sceneTitle">Karrega hela istória...</h1>
+                    </div>
+
+                    <div class="story-text-block" id="storyTextBlock"></div>
+                </div>
+            </div>
+
+            <!-- 하단 이전/다음 페이지 버튼 -->
+            <div class="story-footer-nav">
+                <button type="button" class="nav-page-btn" id="prevPageBtn" onclick="moveScene(-1)">
+                    <i class="fa-solid fa-chevron-left"></i> Uluk
+                </button>
+
+                <div class="page-dots" id="pageDots"></div>
+
+                <button type="button" class="nav-page-btn primary" id="nextPageBtn" onclick="moveScene(1)">
+                    Tuirmai <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Biblioteka Dijitál - SUE AND JUN Vocational Training Center (Timor-Leste).</p>
+    </footer>
+
+    <script>
+        /* ==========================================================================
+           [동화책 공용 리더 로직]
+           - URL 예시: story.html?book=sheperd&pub=pub-0
+             -> JSON 경로: data/stories-sheperd.json
+             -> 이미지 폴더: images/sheperd/ (단, lion_2의 경우 images/lion/ 자동 매핑 지원)
+             -> 출판사 로고: PUBLISHER_LOGOS[pub] 자동 적용
+           ========================================================================== */
+        const PUBLISHER_LOGOS = {
+            "pub-0": "images/logo-Tiranu.jpeg",
+            "pub-1": "images/logo-s-j.png",
+            "pub-2": "images/logo-lafaek.png",
+            "pub-3": "images/logo-siensia.png"
+        };
+
+        // JSON 파일명과 이미지 폴더명이 다를 경우를 대비한 예외 매핑 테이블
+        const IMAGE_FOLDER_OVERRIDES = {
+            "lion_2": "lion"
+        };
+
+        // 미리보기(blob) 환경이나 파일 미존재 시 화면 테스트를 위한 기본 샘플 데이터
+        const FALLBACK_STORY_DATA = {
+            title: {
+                en: "The Shepherd Boy & the Wolf",
+                tet: "Bibi-atan Ki'ik ho Lobu",
+                ko: "양치기 소년과 늑대"
+            },
+            scenes: [
+                {
+                    scene_number: 1,
+                    title: "Bored in the Pasture",
+                    image_file: "6.jpeg",
+                    english_text: "A Shepherd Boy tended his master's sheep near a dark forest not far from the village. Soon he found life in the pasture very dull. All he could do to amuse himself was to talk to his dog or play on his shepherd's pipe.",
+                    tetum_translation: "Iha bibi-atan ki'ik ida ne'ebé hein nia na'i nia bibi-malae sira iha du'ut fatin, besik ai-laran metan ne'ebé la dook husi knua. Maibé lakteu nia sente baruk tebes ho moris iha ne'e. Nia bele ko'alia de'it ho nia asu ka toka flauta hodi halimar."
+                },
+                {
+                    scene_number: 2,
+                    title: "The First False Alarm",
+                    image_file: "5.jpeg",
+                    english_text: "One day, sitting near the quiet forest, he thought of a trick to amuse himself. So, even though there was no wolf, he ran toward the village shouting at the top of his voice, \"Wolf! Wolf!\"",
+                    tetum_translation: "Loron ida, bainhira tuur haree bibi-malae sira, nia hetan ideia di'ak ida hodi halimar. Maski la haree lobu ida, nia halai ba knua hodi hakilar ho lian boot: \"Lobu! Lobu mai ona!\""
+                }
+            ]
+        };
+
+        let storyData = null;
+        let currentSceneIndex = 0;
+        let currentLangMode = "both";
+        let currentFontSize = 18;
+        let bookSlug = "sheperd";
+
+        function getBookConfig() {
+            const params = new URLSearchParams(window.location.search);
+            bookSlug = params.get("book") || "sheperd";
+            const imgFolder = IMAGE_FOLDER_OVERRIDES[bookSlug] || bookSlug;
+
+            return {
+                jsonPath: `data/stories-${bookSlug}.json`,
+                imageFolder: `images/${imgFolder}/`,
+                pubId: params.get("pub") || "pub-1"
+            };
+        }
+
+        function applyPublisherLogo(pubId) {
+            const logoEl = document.getElementById("storyHeaderLogo");
+            if (logoEl && PUBLISHER_LOGOS[pubId]) {
+                logoEl.src = PUBLISHER_LOGOS[pubId];
+            }
+        }
+
+        async function loadStoryBook() {
+            const config = getBookConfig();
+            applyPublisherLogo(config.pubId);
+
+            try {
+                // 미리보기(blob:) 환경에서는 상대 경로 fetch가 URL 파싱 오류를 일으키므로 즉시 폴백 처리
+                if (window.location.protocol === "blob:") {
+                    throw new Error("Preview blob environment detected");
+                }
+                const response = await fetch(config.jsonPath);
+                if (!response.ok) throw new Error(`JSON 파일을 찾을 수 없습니다: ${config.jsonPath}`);
+                storyData = await response.json();
+            } catch (err) {
+                console.warn("외부 JSON을 불러올 수 없어 기본 샘플 데이터를 표시합니다:", err.message);
+                storyData = FALLBACK_STORY_DATA;
+            }
+
+            const displayTitle = storyData.title?.tet || storyData.title?.en || "Istória";
+            document.title = `${displayTitle} - Biblioteka Dijitál`;
+            document.getElementById("headerBookTitle").innerText = displayTitle;
+
+            populateSceneControls();
+            renderScene(0);
+        }
+
+        function populateSceneControls() {
+            const selectEl = document.getElementById("sceneSelect");
+            const dotsEl = document.getElementById("pageDots");
+
+            selectEl.innerHTML = storyData.scenes.map((scene, idx) => 
+                `<option value="${idx}">${scene.scene_number}. ${scene.title}</option>`
+            ).join("");
+
+            dotsEl.innerHTML = storyData.scenes.map((_, idx) => 
+                `<button type="button" class="page-dot ${idx === 0 ? 'active' : ''}" onclick="renderScene(${idx})" aria-label="Pájina ${idx + 1}"></button>`
+            ).join("");
+        }
+
+        function renderScene(index) {
+            if (!storyData || !storyData.scenes || storyData.scenes.length === 0) return;
+
+            const total = storyData.scenes.length;
+            currentSceneIndex = Math.max(0, Math.min(total - 1, index));
+            const scene = storyData.scenes[currentSceneIndex];
+            const config = getBookConfig();
+
+            const imgEl = document.getElementById("sceneImage");
+            const bgBlurEl = document.getElementById("sceneBgBlur");
+            const fullImgPath = `${config.imageFolder}${scene.image_file}`;
+
+            imgEl.src = fullImgPath;
+            if (bgBlurEl) bgBlurEl.src = fullImgPath;
+            imgEl.alt = scene.title;
+
+            imgEl.onerror = function() {
+                this.onerror = null;
+                const fallbackUrl = `https://placehold.co/800x600/1e3a8a/ffffff?text=Kapitulu+${scene.scene_number}`;
+                this.src = fallbackUrl;
+                if (bgBlurEl) bgBlurEl.src = fallbackUrl;
+            };
+
+            document.getElementById("sceneChapterLabel").innerText = `KAPÍTULU ${scene.scene_number}`;
+            document.getElementById("sceneTitle").innerText = scene.title;
+            document.getElementById("pageIndicatorPill").innerText = `Pájina ${currentSceneIndex + 1} / ${total}`;
+            document.getElementById("progressBarFill").style.width = `${((currentSceneIndex + 1) / total) * 100}%`;
+
+            const textBlock = document.getElementById("storyTextBlock");
+            if (currentLangMode === "tet") {
+                textBlock.innerHTML = `<p class="text-tetum">${scene.tetum_translation}</p>`;
+            } else if (currentLangMode === "en") {
+                textBlock.innerHTML = `<p class="text-english solo">${scene.english_text}</p>`;
+            } else {
+                textBlock.innerHTML = `
+                    <p class="text-tetum">${scene.tetum_translation}</p>
+                    <p class="text-english">${scene.english_text}</p>
+                `;
+            }
+
+            // 페이지 전환 시 오른쪽 텍스트 스크롤 위치 초기화
+            const contentArea = document.getElementById("storyContentArea");
+            if (contentArea) contentArea.scrollTop = 0;
+
+            document.getElementById("sceneSelect").value = currentSceneIndex;
+            document.querySelectorAll(".page-dot").forEach((dot, idx) => {
+                dot.classList.toggle("active", idx === currentSceneIndex);
+            });
+
+            document.getElementById("prevPageBtn").disabled = (currentSceneIndex === 0);
+
+            const nextBtn = document.getElementById("nextPageBtn");
+            if (currentSceneIndex === total - 1) {
+                nextBtn.innerHTML = `<i class="fa-solid fa-rotate-left"></i> Lee Fali`;
+                nextBtn.onclick = () => renderScene(0);
+            } else {
+                nextBtn.innerHTML = `Tuirmai <i class="fa-solid fa-chevron-right"></i>`;
+                nextBtn.onclick = () => moveScene(1);
+            }
+        }
+
+        function moveScene(step) {
+            renderScene(currentSceneIndex + step);
+            if (window.innerWidth <= 768) {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+        }
+
+        function onSceneSelectChange() {
+            const idx = Number(document.getElementById("sceneSelect").value);
+            renderScene(idx);
+        }
+
+        function setLanguageMode(mode) {
+            currentLangMode = mode;
+            document.querySelectorAll(".lang-btn").forEach(btn => {
+                btn.classList.toggle("active", btn.dataset.lang === mode);
+            });
+            renderScene(currentSceneIndex);
+        }
+
+        function changeFontSize(step) {
+            currentFontSize = Math.min(28, Math.max(14, currentFontSize + step));
+            document.documentElement.style.setProperty("--base-font-size", `${currentFontSize}px`);
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            const isDark = document.body.classList.contains("dark-mode");
+            document.getElementById("darkModeBtn").innerHTML = isDark
+                ? `<i class="fa-solid fa-sun"></i>`
+                : `<i class="fa-solid fa-moon"></i>`;
+        }
+
+        // 키보드 좌우 방향키로 페이지 이동 지원
+        window.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowLeft" && currentSceneIndex > 0) moveScene(-1);
+            if (e.key === "ArrowRight" && storyData && currentSceneIndex < storyData.scenes.length - 1) moveScene(1);
+        });
+
+        window.addEventListener("DOMContentLoaded", loadStoryBook);
+    </script>
+</body>
+</html>

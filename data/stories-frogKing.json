@@ -1,0 +1,60 @@
+{
+  "title": {
+    "en": "The Frogs Who Wished for a King",
+    "tet": "Manduku Sira ne'ebé Husu Liurai Ida",
+    "ko": "왕을 원하는 개구리들"
+  },
+  "description": {
+    "tet": "Antes atu troka, hanoin lai di'ak ka aat.",
+    "en": "Be sure you can better your condition before you seek to change.",
+    "ko": "변화를 원하기 전에 현재보다 더 나아질지 먼저 생각하라."
+  },
+  "original_text": "The Frogs were tired of governing themselves. They had so much freedom that it had spoiled them, and they did nothing but sit around croaking in a bored manner and wishing for a government that could entertain them with the pomp and display of royalty, and rule them in a way to make them know they were being ruled. No milk and water government for them, they declared. So they sent a petition to Jupiter asking for a king.\n\nJupiter saw what simple and foolish creatures they were, but to keep them quiet and make them think they had a king he threw down a huge log, which fell into the water with a great splash. The Frogs hid themselves among the reeds and grasses, thinking the new king to be some fearful giant. But they soon discovered how tame and peaceable King Log was. In a short time the younger Frogs were using him for a diving platform, while the older Frogs made him a meeting place, where they complained loudly to Jupiter about the government.\n\nTo teach the Frogs a lesson the ruler of the gods now sent a Crane to be king of Frogland. The Crane proved to be a very different sort of king from old King Log. He gobbled up the poor Frogs right and left and they soon saw what fools they had been. In mournful croaks they begged Jupiter to take away the cruel tyrant before they should all be destroyed.\n\n\"How now!\" cried Jupiter \"Are you not yet content? You have what you asked for and so you have only yourselves to blame for your misfortunes.\"\n\nBe sure you can better your condition before you seek to change.",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "The Bored Frogs and Their Wish",
+      "image_file": "1.jpeg",
+      "english_text": "The Frogs were tired of governing themselves. They had so much freedom that they did nothing but sit around croaking in a bored manner, wishing for a king who could rule them with royal pomp. So they sent a petition to Jupiter asking for a king.",
+      "tetum_translation": "Iha mota laran, manduku sira baruk tebes atu ukun sira-nia an. Sira tuur de'it no manu-lia husu liurai ida ne'ebé bele ukun sira ho furak no kmanek. Nune'e, sira haruka husu ba maromak Júpiter atu fo liurai ida ba sira.",
+      "scene_summary": "A group of bored frogs sitting lazily on lily pads in a serene pond, croaking and staring up at the sky, asking Jupiter for a king.",
+      "nano_banana_prompt": "Nano Banana illustration style, a group of expressive frogs sitting lazily on lily pads in a serene green pond, looking bored and staring up at the sky as if asking for a ruler. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "The Arrival of King Log",
+      "image_file": "2.jpeg",
+      "english_text": "Jupiter saw how foolish they were, but to quiet them, he threw down a huge wooden log into the water with a great splash. The Frogs hid among the reeds, thinking their new king was a fearful giant.",
+      "tetum_translation": "Maromak Júpiter haruka soe tiha ai-to'os boot ida ba bee laran no halo manan-bee boot ida. Manduku sira ta'uk no subar iha du'ut laran, tanba hanoin liurai foun ne'e kmaus makas no forte tebes.",
+      "scene_summary": "A giant wooden log splashing dramatically into the pond, while terrified frogs hide behind green reeds looking out with big fearful eyes.",
+      "nano_banana_prompt": "Nano Banana illustration style, a giant wooden log splashing dramatically into a lily pond, causing big water ripples, while scared little frogs hide behind green reeds and look out with big curious eyes. Whimsical fairytale aesthetic, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Playing on King Log",
+      "image_file": "3.jpeg",
+      "english_text": "They soon discovered how tame King Log was. Young Frogs used him as a diving platform, while older Frogs sat on him and complained to Jupiter that their king was too weak.",
+      "tetum_translation": "Maibé lakteu sira haree katak Liurai Ai-To'os ne'e di'ak no la halo buat ida. Manduku ki'ik sira tuur iha nia leten hodi sori bee, no manduku katuas sira tuur ko'alia no kexa fali ba Júpiter tanba liurai ne'e kmaan demais.",
+      "scene_summary": "Playful frogs happily jumping and diving off a smooth floating wooden log in the pond, while older frogs lounge on top of it.",
+      "nano_banana_prompt": "Nano Banana illustration style, playful frogs happily jumping and diving off a smooth floating wooden log into the clear pond water, while older frogs sit on top relaxing under the sun. Storybook picture book style, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "The Cruel King Crane",
+      "image_file": "4.jpeg",
+      "english_text": "To teach them a lesson, Jupiter sent a Crane to be their new king. The Crane was a very different king; he began gobbling up the poor Frogs one after another.",
+      "tetum_translation": "Atu hanorin sira, Júpiter haruka fali manu-keta ida sai sira-nia liurai. Manu-keta ne'e oho no han manduku coitado sira ida-idak, no sira hahu ta'uk no mate wa'in.",
+      "scene_summary": "A tall crane standing in the pond, gobbling up scared frogs with its long beak while others leap away in terror.",
+      "nano_banana_prompt": "Nano Banana illustration style, a tall elegant crane standing in the lily pond with a sharp long beak, while terrified frogs leap away into the water to escape. Dramatic watercolor lighting, storybook aesthetic, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "A Painful Lesson",
+      "image_file": "5.jpeg",
+      "english_text": "In mournful croaks, the Frogs begged Jupiter to take away the tyrant. But Jupiter replied, 'You got what you asked for. You have only yourselves to blame.' Be sure you can better your condition before you seek to change.",
+      "tetum_translation": "Manduku sira tanis no husu ba Júpiter atu hasai liurai aat ne'e. Maibé Júpiter hatetan: 'Sira simu buat ne'ebé sira husu ona. Tan ne'e, keta salah ema seluk.' Hanoin didi'ak antes atu troka buat ne'ebé iha ona.",
+      "scene_summary": "Sad frogs huddled together on lily pads under a twilight sky, croaking mournfully after learning a bitter lesson.",
+      "nano_banana_prompt": "Nano Banana illustration style, sad frogs huddled together on lily pads during a moody blue twilight, looking remorseful and croaking sadly toward the starry sky. Warm fairytale watercolor textures, 4:3 aspect ratio."
+    }
+  ]
+}
