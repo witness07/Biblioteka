@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="tet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katesizmu - Biblioteka Dijitál</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ==========================================================================
+           1. 스타일 변수 (라이트 모드 & 야간 독서 모드 지원)
+           ========================================================================== */
+        :root {
+            --primary-color: #1e3a8a;
+            --primary-hover: #1d4ed8;
+            --accent-color: #b45309;
+            --accent-bg: #fef3c7;
+            --bg-body: #f1f5f9;
+            --bg-card: #ffffff;
+            --bg-toolbar: #ffffff;
+            --text-main: #0f172a;
+            --text-sub: #475569;
+            --border-color: #e2e8f0;
+            --base-font-size: 17px;
+        }
+
+        body.dark-mode {
+            --primary-color: #3b82f6;
+            --primary-hover: #60a5fa;
+            --accent-color: #f59e0b;
+            --accent-bg: rgba(245, 158, 11, 0.15);
+            --bg-body: #0f172a;
+            --bg-card: #1e293b;
+            --bg-toolbar: #1e293b;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.25s, color 0.25s;
+        }
+
+        /* ==========================================================================
+           2. 상단 헤더
+           ========================================================================== */
+        header {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            padding: 0.75rem 1.25rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        .header-inner {
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+
+        .brand-title {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #ffffff;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .header-pub-logo {
+            height: 34px;
+            width: auto;
+            max-width: 100px;
+            object-fit: contain;
+            border-radius: 6px;
+            background-color: #ffffff;
+            padding: 2px 4px;
+            flex-shrink: 0;
+        }
+
+        .brand-title span.title-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .back-library-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(255,255,255,0.15);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.4rem 0.9rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: background 0.2s;
+            flex-shrink: 0;
+        }
+
+        .back-library-btn:hover {
+            background: rgba(255,255,255,0.28);
+        }
+
+        /* ==========================================================================
+           3. 상단 컨트롤 툴바 (검색, 언어 전환, 글자 크기, 주제별 탭)
+           ========================================================================== */
+        .toolbar {
+            background-color: var(--bg-toolbar);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 90;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            padding: 0.65rem 1.25rem;
+        }
+
+        .toolbar-inner {
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .toolbar-top-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
+
+        .search-box {
+            position: relative;
+            flex: 1;
+            min-width: 200px;
+            max-width: 380px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.42rem 0.85rem 0.42rem 2.1rem;
+            border: 1.5px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-size: 0.88rem;
+            outline: none;
+        }
+
+        .search-box input:focus {
+            border-color: var(--primary-color);
+            background-color: var(--bg-card);
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 0.7rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-sub);
+            font-size: 0.85rem;
+        }
+
+        .controls-right {
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+
+        .lang-group {
+            display: inline-flex;
+            background-color: var(--bg-body);
+            padding: 3px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .lang-btn {
+            padding: 0.28rem 0.7rem;
+            border: none;
+            border-radius: 6px;
+            background: transparent;
+            color: var(--text-sub);
+            font-size: 0.78rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        .tool-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--bg-card);
+            color: var(--text-main);
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .tool-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* 주제별 파트 탭 (가로 스와이프 지원, 스크롤바 숨김) */
+        .part-tabs {
+            display: flex;
+            gap: 0.4rem;
+            overflow-x: auto;
+            padding-bottom: 2px;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .part-tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        .part-tab {
+            padding: 0.32rem 0.85rem;
+            border-radius: 999px;
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-body);
+            color: var(--text-sub);
+            font-size: 0.8rem;
+            font-weight: 700;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .part-tab.active {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
+        }
+
+        /* ==========================================================================
+           4. 메인 문답 카드 리스트
+           ========================================================================== */
+        main {
+            max-width: 1024px;
+            margin: 1.25rem auto;
+            padding: 0 1.25rem;
+            width: 100%;
+            flex: 1;
+        }
+
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-sub);
+            font-weight: 600;
+        }
+
+        .catechism-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.15rem;
+        }
+
+        .qa-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 1.35rem 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .qa-card:hover {
+            border-color: #93c5fd;
+        }
+
+        /* 질문(Question) 영역 */
+        .question-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding-bottom: 0.95rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .q-badge {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            font-size: 0.82rem;
+            font-weight: 800;
+            padding: 0.25rem 0.65rem;
+            border-radius: 8px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .q-content {
+            flex: 1;
+        }
+
+        .q-meta-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .q-category {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        .lords-day-badge {
+            font-size: 0.72rem;
+            font-weight: 700;
+            background-color: var(--bg-body);
+            color: var(--primary-color);
+            border: 1px solid var(--border-color);
+            padding: 1px 8px;
+            border-radius: 999px;
+        }
+
+        .q-text {
+            font-size: calc(var(--base-font-size) + 1px);
+            font-weight: 800;
+            color: var(--text-main);
+            line-height: 1.45;
+        }
+
+        /* 답변(Answer) 영역 */
+        .answer-body {
+            padding-top: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .a-badge {
+            background-color: var(--accent-bg);
+            color: var(--accent-color);
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 0.2rem 0.6rem;
+            border-radius: 8px;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .a-content {
+            flex: 1;
+            font-size: var(--base-font-size);
+            line-height: 1.75;
+            color: var(--text-main);
+            font-weight: 500;
+            white-space: pre-line;
+        }
+
+        /* 성경 증명 구절(Scripture Proofs) 영역 */
+        .proof-footer {
+            margin-top: 1.1rem;
+            padding-top: 0.85rem;
+            border-top: 1px dashed var(--border-color);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.45rem;
+        }
+
+        .proof-label {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--text-sub);
+            margin-right: 0.25rem;
+        }
+
+        .verse-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.24rem 0.65rem;
+            border-radius: 999px;
+            background-color: var(--accent-bg);
+            color: var(--accent-color);
+            border: 1px solid rgba(180, 83, 9, 0.25);
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .verse-chip:hover {
+            background-color: #b45309;
+            color: #ffffff;
+        }
+
+        /* ==========================================================================
+           5. 성경 본문 플로팅 팝업 모달 (structured_bible.json 연동)
+           ========================================================================== */
+        #tetun-bible-popup {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            left: 20px;
+            max-width: 520px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid #f59e0b;
+            border-radius: 14px;
+            box-shadow: 0 20px 30px -5px rgba(0, 0, 0, 0.25);
+            padding: 1.15rem 1.35rem;
+            z-index: 9999;
+        }
+
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .popup-title {
+            font-size: 1.02rem;
+            font-weight: 800;
+            color: var(--accent-color);
+        }
+
+        .popup-close {
+            background: none;
+            border: none;
+            font-size: 1.35rem;
+            cursor: pointer;
+            color: var(--text-sub);
+            line-height: 1;
+        }
+
+        .popup-body {
+            font-size: 0.96rem;
+            line-height: 1.7;
+            max-height: 250px;
+            overflow-y: auto;
+            margin-bottom: 0.85rem;
+        }
+
+        .popup-body p {
+            margin-bottom: 0.5rem;
+        }
+
+        .popup-footer {
+            text-align: right;
+        }
+
+        .popup-full-link {
+            font-size: 0.84rem;
+            color: var(--accent-color);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .popup-full-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.25rem;
+            font-size: 0.8rem;
+            color: var(--text-sub);
+            margin-top: 2rem;
+        }
+
+        /* ==========================================================================
+           6. 모바일 반응형 최적화 (휴대폰 화면 상단 고정 영역 최소화)
+           ========================================================================== */
+        @media screen and (max-width: 640px) {
+            header {
+                padding: 0.55rem 0.9rem;
+            }
+            .brand-title {
+                font-size: 0.92rem;
+            }
+            .back-library-btn {
+                padding: 0.32rem 0.75rem;
+                font-size: 0.78rem;
+            }
+            .toolbar {
+                position: static;
+                padding: 0.5rem 0.9rem 0 0.9rem;
+                box-shadow: none;
+            }
+            .toolbar-inner {
+                gap: 0.45rem;
+            }
+            .search-box {
+                max-width: 100%;
+                width: 100%;
+            }
+            .controls-right {
+                width: 100%;
+                justify-content: space-between;
+            }
+            .part-tabs {
+                position: sticky;
+                top: 0;
+                z-index: 95;
+                background-color: var(--bg-toolbar);
+                padding: 0.5rem 0;
+                border-bottom: 1px solid var(--border-color);
+            }
+            .qa-card {
+                padding: 1.1rem 1rem;
+            }
+            .question-header, .answer-body {
+                gap: 0.55rem;
+            }
+            .status-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 상단 헤더 -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="brand-title">
+                <img class="header-pub-logo" src="images/logo-Tiranu.jpeg" alt="Logo" onerror="this.style.display='none';">
+                <span class="title-text" id="docHeaderTitle">Katesizmu - Biblioteka Dijitál</span>
+            </a>
+            <a href="index.html" class="back-library-btn">
+                <i class="fa-solid fa-arrow-left"></i> Biblioteka
+            </a>
+        </div>
+    </header>
+
+    <!-- 상단 컨트롤 툴바 -->
+    <div class="toolbar">
+        <div class="toolbar-inner">
+            <div class="toolbar-top-row">
+                <!-- 검색창 -->
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Buka pergunta ka liafuan (ez: Maromak, 1, Sala)..." oninput="filterCatechism()">
+                </div>
+
+                <!-- 언어 전환(테툼어 기본 / 영어 전환) & 글자 크기 & 야간 모드 -->
+                <div class="controls-right">
+                    <div class="lang-group">
+                        <button type="button" class="lang-btn active" data-lang="tet" onclick="setLanguageMode('tet')">Tetun</button>
+                        <button type="button" class="lang-btn" data-lang="en" onclick="setLanguageMode('en')">English</button>
+                    </div>
+                    <button type="button" class="tool-btn" onclick="changeFontSize(-2)" title="Hamenu Letra">A-</button>
+                    <button type="button" class="tool-btn" onclick="changeFontSize(2)" title="Haboot Letra">A+</button>
+                    <button type="button" class="tool-btn" id="darkModeBtn" onclick="toggleDarkMode()" title="Modu Kalan">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 문서별 동적 파트 필터 탭 -->
+            <div class="part-tabs" id="partTabs"></div>
+        </div>
+    </div>
+
+    <!-- 메인 소책자 본문 영역 -->
+    <main>
+        <div class="status-bar">
+            <span id="resultCountLabel">Karrega hela dadus...</span>
+            <span>Klik iha referénsia Bíblia atu lee testu</span>
+        </div>
+
+        <div class="catechism-list" id="catechismList"></div>
+    </main>
+
+    <!-- 성경 구절 플로팅 팝업 카드 -->
+    <div id="tetun-bible-popup">
+        <div class="popup-header">
+            <span class="popup-title" id="tbp-title"></span>
+            <button type="button" class="popup-close" onclick="closeBiblePopup()">&times;</button>
+        </div>
+        <div class="popup-body" id="tbp-body"></div>
+        <div class="popup-footer">
+            <a id="tbp-full-link" class="popup-full-link" href="bible.html" target="_blank">
+                Lee kapítulu tomak iha Bíblia →
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p id="footerCopyText">&copy; 2026 Biblioteka Dijitál - Katesizmu (Tetun / English).</p>
+    </footer>
+
+    <script>
+        /* ==========================================================================
+           1. 문서별 메타 설정 (URL 파라미터 ?doc=wes 또는 ?doc=hei 지원)
+           ========================================================================== */
+        const DOC_CONFIGS = {
+            wes: {
+                titleTet: "Katesizmu Badak Westminster (1–107)",
+                titleEn: "Westminster Shorter Catechism (1–107)",
+                jsonPaths: [
+                    "data/res/catechism_wes.json",
+                    "./data/res/catechism_wes.json",
+                    "catechism_wes.json"
+                ],
+                parts: [
+                    { id: "ALL", labelTet: "Hotu-hotu (1–107)", labelEn: "All (1–107)", min: 1, max: 107 },
+                    { id: "PART1", labelTet: "Parte I: Maromak no Salvasaun (1–38)", labelEn: "Part I: God & Salvation (1–38)", min: 1, max: 38 },
+                    { id: "PART2", labelTet: "Parte II: Ukun-Fuan Nulu (39–84)", labelEn: "Part II: Ten Commandments (39–84)", min: 39, max: 84 },
+                    { id: "PART3", labelTet: "Parte III: Sakramentu no Orasaun (85–107)", labelEn: "Part III: Sacraments & Prayer (85–107)", min: 85, max: 107 }
+                ]
+            },
+            hei: {
+                titleTet: "Katesizmu Heidelberg (1–129)",
+                titleEn: "Heidelberg Catechism (1–129)",
+                jsonPaths: [
+                    "data/res/catechism_hei.json",
+                    "./data/res/catechism_hei.json",
+                    "catechism_hei.json"
+                ],
+                parts: [
+                    { id: "ALL", labelTet: "Hotu-hotu (1–129)", labelEn: "All (1–129)", min: 1, max: 129 },
+                    { id: "INTRO", labelTet: "Introdusaun: Kunsola (1–2)", labelEn: "Intro: Comfort (1–2)", min: 1, max: 2 },
+                    { id: "PART1", labelTet: "Parte I: Sala no Mizeria (3–11)", labelEn: "Part I: Sin & Misery (3–11)", min: 3, max: 11 },
+                    { id: "PART2", labelTet: "Parte II: Redensaun no Fiar (12–85)", labelEn: "Part II: Deliverance (12–85)", min: 12, max: 85 },
+                    { id: "PART3", labelTet: "Parte III: Agradesimentu (86–129)", labelEn: "Part III: Gratitude (86–129)", min: 86, max: 129 }
+                ]
+            }
+        };
+
+        // 하이델베르그 요리문답 제1주일 ~ 제52주일 문항 매핑 테이블
+        const HEIDELBERG_LORDS_DAYS = [
+            [1, 2], [3, 5], [6, 8], [9, 11], [12, 15], [16, 19], [20, 23], [24, 25],
+            [26, 26], [27, 28], [29, 30], [31, 32], [33, 34], [35, 36], [37, 39], [40, 44],
+            [45, 45], [46, 49], [50, 52], [53, 53], [54, 56], [57, 58], [59, 61], [62, 64],
+            [65, 68], [69, 71], [72, 74], [75, 77], [78, 79], [80, 82], [83, 85], [86, 87],
+            [88, 91], [92, 95], [96, 98], [99, 100], [101, 102], [103, 103], [104, 104], [105, 107],
+            [108, 109], [110, 111], [112, 112], [113, 115], [116, 119], [120, 121], [122, 122], [123, 123],
+            [124, 124], [125, 125], [126, 126], [127, 129]
+        ];
+
+        function getHeidelbergLordsDay(qNum) {
+            for (let i = 0; i < HEIDELBERG_LORDS_DAYS.length; i++) {
+                const [start, end] = HEIDELBERG_LORDS_DAYS[i];
+                if (qNum >= start && qNum <= end) return i + 1;
+            }
+            return null;
+        }
+
+        // 로컬(file://) 환경이나 JSON 미존재 시 기본 샘플 폴백 데이터
+        const FALLBACK_SAMPLE_DATA = [
+          {
+            "number": 1,
+            "category_tet": "Kunsola Mesak nian",
+            "question_tet": "Saida mak ó-nia kunsola mesak ida de'it iha moris no iha mate?",
+            "question_en": "What is your only comfort in life and death?",
+            "answer_tet": "Katak ha'u la'ós ha'u-nia an rasik nian, maibé ho isin no klamar, iha moris no iha mate, ha'u pertense ba ha'u-nia Salvadór laran-metin Jesuis Kristu.",
+            "answer_en": "That I am not my own, but belong with body and soul, both in life and in death, to my faithful Savior Jesus Christ.",
+            "proof_texts": ["1 Korinto 6:19-20", "Roma 14:7-9"]
+          }
+        ];
+
+        /* ==========================================================================
+           2. 상태 변수 및 초기화
+           ========================================================================== */
+        let currentDocKey = "wes";
+        let activeCatechismData = [];
+        let currentLang = "tet";
+        let currentPart = "ALL";
+        let currentFontSize = 17;
+        let cachedBibleData = null;
+
+        function normalizeText(str) {
+            return String(str)
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .toLowerCase();
+        }
+
+        async function loadJsonWithFallback(paths) {
+            if (window.location.protocol === "file:" || window.location.protocol === "blob:") {
+                throw new Error("LOCAL_FILE_CORS");
+            }
+            for (const path of paths) {
+                try {
+                    const res = await fetch(path);
+                    if (res.ok) return await res.json();
+                } catch (e) {
+                    // 다음 경로 시도
+                }
+            }
+            throw new Error("FILE_NOT_FOUND");
+        }
+
+        async function initCatechismPage() {
+            const params = new URLSearchParams(window.location.search);
+            const docParam = (params.get("doc") || "wes").toLowerCase();
+            currentDocKey = DOC_CONFIGS[docParam] ? docParam : "wes";
+
+            const config = DOC_CONFIGS[currentDocKey];
+            document.title = `${config.titleTet} - Biblioteka Dijitál`;
+            document.getElementById("docHeaderTitle").textContent = config.titleTet;
+            document.getElementById("footerCopyText").innerHTML = `&copy; 2026 Biblioteka Dijitál - ${config.titleEn}.`;
+
+            renderPartTabs();
+
+            try {
+                activeCatechismData = await loadJsonWithFallback(config.jsonPaths);
+            } catch (err) {
+                console.warn(`외부 JSON(${config.jsonPaths[0]}) 로드 실패:`, err.message);
+                activeCatechismData = FALLBACK_SAMPLE_DATA;
+                document.getElementById("catechismList").innerHTML = `
+                    <div class="qa-card" style="border-left: 4px solid #d97706;">
+                        <p style="font-weight:700; color:#d97706; margin-bottom:0.35rem;">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Avizu Karregamentu Dadus (${config.jsonPaths[0]})
+                        </p>
+                        <p style="font-size:0.9rem; color:var(--text-sub);">
+                            La konsege lee file <b>${config.jsonPaths[0]}</b>. Se ita loke file HTML diretamente husi komputadór (<code>file://</code>), favór uza <b>Live Server</b> ka servidor web atu bele lee file JSON sira.
+                        </p>
+                    </div>
+                `;
+                document.getElementById("resultCountLabel").textContent = "Erro karrega dadus JSON";
+                return;
+            }
+
+            filterCatechism();
+        }
+
+        function renderPartTabs() {
+            const config = DOC_CONFIGS[currentDocKey];
+            const tabsEl = document.getElementById("partTabs");
+
+            tabsEl.innerHTML = config.parts.map(p => {
+                const label = currentLang === "tet" ? p.labelTet : p.labelEn;
+                const activeClass = currentPart === p.id ? "active" : "";
+                return `<button type="button" class="part-tab ${activeClass}" data-part="${p.id}" onclick="selectPart('${p.id}')">${label}</button>`;
+            }).join("");
+        }
+
+        function matchesPart(number, partId) {
+            if (partId === "ALL") return true;
+            const config = DOC_CONFIGS[currentDocKey];
+            const partObj = config.parts.find(p => p.id === partId);
+            if (!partObj) return true;
+            return number >= partObj.min && number <= partObj.max;
+        }
+
+        function renderCatechismList(items) {
+            const listEl = document.getElementById("catechismList");
+            const countEl = document.getElementById("resultCountLabel");
+
+            const totalLabel = currentLang === "tet"
+                ? `Hatudu hela pergunta ${items.length} / ${activeCatechismData.length}`
+                : `Showing ${items.length} of ${activeCatechismData.length} questions`;
+            countEl.textContent = totalLabel;
+
+            if (items.length === 0) {
+                listEl.innerHTML = `
+                    <div class="qa-card" style="text-align:center; padding:2.5rem;">
+                        <p style="color:var(--text-sub); font-weight:600;">
+                            ${currentLang === "tet" ? "La hetan rezultadu ba ita-nia peskiza." : "No matching questions found."}
+                        </p>
+                    </div>
+                `;
+                return;
+            }
+
+            listEl.innerHTML = items.map(item => {
+                const qText = currentLang === "tet" ? item.question_tet : item.question_en;
+                const aText = currentLang === "tet" ? item.answer_tet : item.answer_en;
+                const proofLabel = currentLang === "tet" ? "Referénsia Bíblia:" : "Scripture Proofs:";
+
+                // 하이델베르그 요리문답일 경우 주일(Domingu / Lord's Day) 배지 자동 표시
+                let lordsDayHtml = "";
+                if (currentDocKey === "hei") {
+                    const ldNum = getHeidelbergLordsDay(item.number);
+                    if (ldNum) {
+                        const ldText = currentLang === "tet" ? `Domingu ${ldNum}` : `Lord's Day ${ldNum}`;
+                        lordsDayHtml = `<span class="lords-day-badge">${ldText}</span>`;
+                    }
+                }
+
+                const chipsHtml = (item.proof_texts || []).map(ref => {
+                    const safeRef = ref.replace(/'/g, "\\'");
+                    return `<button type="button" class="verse-chip" onclick="openBibleVerse('${safeRef}')">
+                                <i class="fa-solid fa-book-bible"></i> ${ref}
+                            </button>`;
+                }).join("");
+
+                return `
+                    <article class="qa-card" id="q-${item.number}">
+                        <div class="question-header">
+                            <span class="q-badge">P. ${item.number}</span>
+                            <div class="q-content">
+                                <div class="q-meta-row">
+                                    <span class="q-category">${item.category_tet || ""}</span>
+                                    ${lordsDayHtml}
+                                </div>
+                                <h2 class="q-text">${qText}</h2>
+                            </div>
+                        </div>
+                        <div class="answer-body">
+                            <span class="a-badge">R.</span>
+                            <div class="a-content">${aText}</div>
+                        </div>
+                        <div class="proof-footer">
+                            <span class="proof-label">${proofLabel}</span>
+                            ${chipsHtml}
+                        </div>
+                    </article>
+                `;
+            }).join("");
+        }
+
+        function filterCatechism() {
+            const rawQuery = document.getElementById("searchInput").value.trim();
+            const normQuery = normalizeText(rawQuery);
+
+            const filtered = activeCatechismData.filter(item => {
+                if (!matchesPart(item.number, currentPart)) return false;
+                if (!normQuery) return true;
+
+                if (String(item.number) === normQuery) return true;
+
+                const searchTarget = normalizeText(
+                    `${item.number} ${item.category_tet || ""} ${item.question_tet} ${item.answer_tet} ${item.question_en} ${item.answer_en}`
+                );
+                return searchTarget.includes(normQuery);
+            });
+
+            renderCatechismList(filtered);
+        }
+
+        function setLanguageMode(lang) {
+            currentLang = lang;
+            const config = DOC_CONFIGS[currentDocKey];
+            document.getElementById("docHeaderTitle").textContent = lang === "tet" ? config.titleTet : config.titleEn;
+
+            document.querySelectorAll(".lang-btn").forEach(btn => {
+                btn.classList.toggle("active", btn.dataset.lang === lang);
+            });
+            renderPartTabs();
+            filterCatechism();
+        }
+
+        function selectPart(part) {
+            currentPart = part;
+            document.querySelectorAll(".part-tab").forEach(tab => {
+                tab.classList.toggle("active", tab.dataset.part === part);
+            });
+            filterCatechism();
+        }
+
+        function changeFontSize(step) {
+            currentFontSize = Math.min(26, Math.max(14, currentFontSize + step));
+            document.documentElement.style.setProperty("--base-font-size", `${currentFontSize}px`);
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            const isDark = document.body.classList.contains("dark-mode");
+            document.getElementById("darkModeBtn").innerHTML = isDark
+                ? `<i class="fa-solid fa-sun"></i>`
+                : `<i class="fa-solid fa-moon"></i>`;
+        }
+
+        /* ==========================================================================
+           3. 성경 구절 클릭 시 structured_bible.json에서 본문 로드 및 팝업 표시
+           ========================================================================== */
+        async function openBibleVerse(refString) {
+            const popup = document.getElementById("tetun-bible-popup");
+            const titleEl = document.getElementById("tbp-title");
+            const bodyEl = document.getElementById("tbp-body");
+            const fullLinkEl = document.getElementById("tbp-full-link");
+
+            titleEl.textContent = refString;
+            bodyEl.innerHTML = `<p style="color:var(--text-sub);">Karrega hela testu Bíblia...</p>`;
+            popup.style.display = "block";
+
+            const match = refString.trim().match(/^([1-3]?\s*[a-zA-ZÀ-ÿ]+)\s+(\d+):(\d+)(?:-(\d+))?$/);
+            if (!match) {
+                bodyEl.innerHTML = `<p>Formatu referénsia la loos: ${refString}</p>`;
+                return;
+            }
+
+            const rawBookName = match[1].trim();
+            const chapNum = match[2];
+            const startVerse = Number(match[3]);
+            const endVerse = match[4] ? Number(match[4]) : startVerse;
+
+            const refParam = `${rawBookName}.${chapNum}.${startVerse}${endVerse !== startVerse ? '-' + endVerse : ''}`;
+            fullLinkEl.href = `bible.html?ref=${encodeURIComponent(refParam)}`;
+
+            if (!cachedBibleData) {
+                try {
+                    cachedBibleData = await loadJsonWithFallback([
+                        "data/res/structured_bible.json",
+                        "./data/res/structured_bible.json",
+                        "../data/res/structured_bible.json",
+                        "structured_bible.json"
+                    ]);
+                } catch (err) {
+                    if (err.message === "LOCAL_FILE_CORS") {
+                        bodyEl.innerHTML = `
+                            <p style="color:#d97706; font-weight:700; margin-bottom:6px;">
+                                <i class="fa-solid fa-triangle-exclamation"></i> Avizu Ambiente Lokál (file://)
+                            </p>
+                            <p style="font-size:0.88rem; color:var(--text-sub);">
+                                Browser blokeia asesu ba <b>data/res/structured_bible.json</b> bainhira loke file diretamente husi komputadór.<br>
+                                Favór uza <b>Live Server</b> ka <b>GitHub Pages</b>, ka klik link iha kraik atu loke iha pájina Bíblia.
+                            </p>
+                        `;
+                    } else {
+                        bodyEl.innerHTML = `
+                            <p style="color:#dc2626; font-weight:700;">Erro karrega Bíblia (Fetch Fail)</p>
+                            <p style="font-size:0.88rem; color:var(--text-sub);">
+                                La hetan file <b>data/res/structured_bible.json</b>.
+                            </p>
+                        `;
+                    }
+                    return;
+                }
+            }
+
+            // 단수/복수 책 이름 변형 대응 (예: Números -> Númeru)
+            let normTargetBook = normalizeText(rawBookName);
+            if (normTargetBook === "numeros") normTargetBook = "numeru";
+
+            const matchedBookKey = Object.keys(cachedBibleData).find(
+                key => normalizeText(key) === normTargetBook
+            );
+
+            const bookObj = matchedBookKey ? cachedBibleData[matchedBookKey] : null;
+            if (!bookObj || !bookObj[chapNum] || !bookObj[chapNum].verses) {
+                bodyEl.innerHTML = `<p>La hetan kapítulu <b>${rawBookName} ${chapNum}</b> iha dadus Bíblia.</p>`;
+                return;
+            }
+
+            const versesObj = bookObj[chapNum].verses;
+            let versesHtml = "";
+            for (let v = startVerse; v <= endVerse; v++) {
+                const text = versesObj[String(v)];
+                if (text) {
+                    versesHtml += `<p><sup style="color:var(--accent-color); font-weight:800; margin-right:4px;">${v}</sup>${text}</p>`;
+                }
+            }
+
+            bodyEl.innerHTML = versesHtml || `<p>La hetan versíkulu ${startVerse} iha ${rawBookName} ${chapNum}.</p>`;
+        }
+
+        function closeBiblePopup() {
+            document.getElementById("tetun-bible-popup").style.display = "none";
+        }
+
+        document.addEventListener("DOMContentLoaded", initCatechismPage);
+    </script>
+</body>
+</html>

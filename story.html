@@ -610,7 +610,7 @@
         /* ==========================================================================
            [동화책 공용 리더 로직]
            - URL 예시: story.html?book=sheperd&pub=pub-0
-             -> JSON 경로: data/stories-sheperd.json
+             -> JSON 경로: data/res/stories-sheperd.json
              -> 이미지 폴더: images/sheperd/ (단, lion_2의 경우 images/lion/ 자동 매핑 지원)
              -> 출판사 로고: PUBLISHER_LOGOS[pub] 자동 적용
            ========================================================================== */
@@ -663,7 +663,7 @@
             const imgFolder = IMAGE_FOLDER_OVERRIDES[bookSlug] || bookSlug;
 
             return {
-                jsonPath: `data/stories-${bookSlug}.json`,
+                jsonPath: `data/res/stories-${bookSlug}.json`,
                 imageFolder: `images/${imgFolder}/`,
                 pubId: params.get("pub") || "pub-1"
             };

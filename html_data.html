@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bíblia Santu - Tetun Dili (v3.6)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .bible-text {
+            font-family: 'Merriweather', serif;
+            line-height: 1.85;
+        }
+        .verse-highlight {
+            background-color: #fef08a;
+            border-left: 4px solid #eab308;
+            padding-left: 8px;
+            border-radius: 4px;
+            transition: background-color 0.5s ease;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    </style>
+</head>
+<body class="h-screen flex flex-col overflow-hidden">
+
+    <!-- 상단 네비게이션 바 -->
+    <header class="bg-slate-900 text-white shadow-md z-20 shrink-0">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+                <span class="bg-amber-500 text-slate-950 font-bold px-2 py-0.5 rounded text-xs">TETUN 3.6</span>
+                <h1 class="font-bold text-lg tracking-tight">Bíblia Santu</h1>
+            </div>
+
+            <!-- 책 / 장 선택 컨트롤 -->
+            <div class="flex items-center gap-2 flex-wrap">
+                <select id="testamentSelect" class="bg-slate-800 text-white text-sm rounded-lg px-3 py-1.5 border border-slate-700 focus:outline-none focus:border-amber-400">
+                    <option value="ALL">Hotu-hotu (전체)</option>
+                    <option value="OT">Testamentu Tuan (구약)</option>
+                    <option value="NT">Testamentu Foun (신약)</option>
+                </select>
+
+                <select id="bookSelect" class="bg-slate-800 text-white text-sm rounded-lg px-3 py-1.5 border border-slate-700 focus:outline-none focus:border-amber-400 min-w-[140px]">
+                    <option value="">Hili Livru...</option>
+                </select>
+
+                <select id="chapterSelect" class="bg-slate-800 text-white text-sm rounded-lg px-3 py-1.5 border border-slate-700 focus:outline-none focus:border-amber-400">
+                    <option value="">Kapítulu</option>
+                </select>
+            </div>
+
+            <!-- 검색 및 글자 크기 조절 -->
+            <div class="flex items-center gap-2">
+                <div class="relative">
+                    <input type="text" id="searchInput" placeholder="Buka liafuan..." 
+                           class="bg-slate-800 text-white text-sm rounded-lg pl-3 pr-8 py-1.5 border border-slate-700 focus:outline-none focus:border-amber-400 w-40 sm:w-52">
+                    <button id="searchBtn" class="absolute right-2 top-1.5 text-slate-400 hover:text-white text-sm">🔍</button>
+                </div>
+                <button id="fontDown" class="bg-slate-800 hover:bg-slate-700 px-2.5 py-1.5 rounded text-xs font-bold border border-slate-700">A-</button>
+                <button id="fontUp" class="bg-slate-800 hover:bg-slate-700 px-2.5 py-1.5 rounded text-xs font-bold border border-slate-700">A+</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main class="flex-1 overflow-y-auto px-4 py-6" id="mainContainer">
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm border border-slate-200 p-6 sm:p-10 min-h-full">
+            
+            <!-- 로딩 상태 -->
+            <div id="loadingState" class="text-center py-20 text-slate-500">
+                <div class="animate-spin inline-block w-8 h-8 border-4 border-amber-500 border-t-transparent rounded-full mb-3"></div>
+                <p>Karrega hela Bíblia Santu (tetun_bible.json)...</p>
+            </div>
+
+            <!-- 성경 본문 뷰 -->
+            <div id="readerView" class="hidden">
+                <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-6">
+                    <div>
+                        <span id="testamentBadge" class="text-xs font-semibold uppercase tracking-wider text-amber-600"></span>
+                        <h2 id="chapterTitle" class="text-2xl sm:text-3xl font-bold text-slate-900 mt-0.5"></h2>
+                    </div>
+                    <div class="flex gap-2">
+                        <button id="prevChapBtn" class="px-3 py-1.5 text-sm bg-slate-100 hover:bg-slate-200 rounded-lg font-medium text-slate-700 transition">← Uluk</button>
+                        <button id="nextChapBtn" class="px-3 py-1.5 text-sm bg-slate-100 hover:bg-slate-200 rounded-lg font-medium text-slate-700 transition">Tuir mai →</button>
+                    </div>
+                </div>
+
+                <!-- 구절 리스트 -->
+                <div id="versesContainer" class="bible-text text-lg space-y-3 text-slate-800"></div>
+            </div>
+
+            <!-- 검색 결과 뷰 -->
+            <div id="searchView" class="hidden">
+                <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-6">
+                    <h2 id="searchTitle" class="text-xl font-bold text-slate-900">Rezultadu Buka</h2>
+                    <button id="closeSearchBtn" class="text-sm text-amber-600 hover:underline font-medium">Fila ba lee Bíblia</button>
+                </div>
+                <div id="searchResultsList" class="space-y-4"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 분리된 성경 뷰어 JavaScript 파일 연결 -->
+    <script src="data/bible-viewer.js"></script>
+</body>
+</html>

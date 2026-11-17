@@ -3,721 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testamentu Foun (Tetun-Dili) - Biblioteka Dijitál</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Bíblia Tetun - Tekstu no Peskiza</title>
+    <!-- Tailwind CSS (스타일링 호환용) -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* ==========================================================================
-           1. 스타일 변수 (라이트 모드 & 다크(야간) 모드 지원)
-           ========================================================================== */
-        :root {
-            --primary-color: #1e3a8a;
-            --primary-hover: #1d4ed8;
-            --accent-color: #2563eb;
-            --bg-body: #f1f5f9;
-            --bg-paper: #ffffff;
-            --bg-toolbar: #ffffff;
-            --text-main: #1e293b;
-            --text-sub: #64748b;
-            --verse-num-color: #2563eb;
-            --border-color: #e2e8f0;
-            --highlight-bg: #fef08a;
-            --base-font-size: 18px;
-        }
-
-        body.dark-mode {
-            --primary-color: #3b82f6;
-            --primary-hover: #60a5fa;
-            --accent-color: #60a5fa;
-            --bg-body: #0f172a;
-            --bg-paper: #1e293b;
-            --bg-toolbar: #1e293b;
-            --text-main: #f1f5f9;
-            --text-sub: #94a3b8;
-            --verse-num-color: #60a5fa;
-            --border-color: #334155;
-            --highlight-bg: #854d0e;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-body);
-            color: var(--text-main);
-            line-height: 1.7;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            transition: background-color 0.25s, color 0.25s;
-        }
-
-        /* ==========================================================================
-           2. 상단 헤더 (웹도서관 복귀 및 타이틀)
-           ========================================================================== */
-        header {
-            background-color: #1e3a8a;
-            color: #ffffff;
-            padding: 0.75rem 1.5rem;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-        }
-
-        .header-inner {
-            max-width: 960px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-        }
-
-        .brand-title {
-            display: flex;
-            align-items: center;
-            gap: 0.65rem;
-            font-size: 1.15rem;
-            font-weight: 800;
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        .brand-badge {
-            font-size: 0.72rem;
-            background: rgba(255,255,255,0.2);
-            padding: 2px 8px;
-            border-radius: 999px;
-            font-weight: 600;
-        }
-
-        .back-library-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            background: rgba(255,255,255,0.15);
-            color: #ffffff;
-            text-decoration: none;
-            padding: 0.45rem 1rem;
-            border-radius: 999px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            border: 1px solid rgba(255,255,255,0.3);
-            transition: background 0.2s;
-        }
-
-        .back-library-btn:hover {
-            background: rgba(255,255,255,0.28);
-        }
-
-        /* ==========================================================================
-           3. 갓피아(Godpia) 스타일 상단 성경 내비게이션 바 (권/장 선택 + 도구 모음)
-           ========================================================================== */
-        .bible-toolbar {
-            background-color: var(--bg-toolbar);
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 90;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            padding: 0.75rem 1rem;
-        }
-
-        .toolbar-inner {
-            max-width: 960px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 0.75rem;
-        }
-
-        .selector-group {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .bible-select {
-            padding: 0.5rem 0.85rem;
-            border: 1.5px solid var(--border-color);
-            border-radius: 8px;
-            background-color: var(--bg-paper);
-            color: var(--text-main);
-            font-size: 0.95rem;
-            font-weight: 700;
-            cursor: pointer;
-            outline: none;
-        }
-
-        .bible-select:focus {
-            border-color: var(--accent-color);
-        }
-
-        .nav-chapter-btn {
-            padding: 0.5rem 0.85rem;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            background-color: var(--bg-paper);
-            color: var(--text-main);
-            font-size: 0.88rem;
-            font-weight: 700;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.35rem;
-            transition: all 0.2s;
-        }
-
-        .nav-chapter-btn:hover:not(:disabled) {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            border-color: var(--primary-color);
-        }
-
-        .nav-chapter-btn:disabled {
-            opacity: 0.4;
-            cursor: not-allowed;
-        }
-
-        /* 읽기 편의 도구 (글자 크기, 야간모드, 구절 검색) */
-        .tools-group {
-            display: flex;
-            align-items: center;
-            gap: 0.45rem;
-        }
-
-        .tool-btn {
-            width: 36px;
-            height: 36px;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            background-color: var(--bg-paper);
-            color: var(--text-main);
-            font-size: 0.88rem;
-            font-weight: 700;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s;
-        }
-
-        .tool-btn:hover {
-            border-color: var(--accent-color);
-            color: var(--accent-color);
-        }
-
-        .search-toggle-box {
-            display: flex;
-            align-items: center;
-            position: relative;
-            gap: 0.35rem;
-        }
-
-        .verse-search-input {
-            padding: 0.45rem 0.85rem 0.45rem 2.1rem;
-            border: 1.5px solid var(--border-color);
-            border-radius: 999px;
-            background-color: var(--bg-body);
-            color: var(--text-main);
-            font-size: 0.85rem;
-            width: 170px;
-            outline: none;
-            transition: width 0.25s, border-color 0.2s;
-        }
-
-        .verse-search-input:focus {
-            width: 210px;
-            border-color: var(--accent-color);
-            background-color: var(--bg-paper);
-        }
-
-        .search-toggle-box i.fa-magnifying-glass {
-            position: absolute;
-            left: 0.75rem;
-            color: var(--text-sub);
-            font-size: 0.82rem;
-            pointer-events: none;
-        }
-
-        .search-submit-btn {
-            padding: 0.45rem 0.8rem;
-            border: none;
-            border-radius: 999px;
-            background-color: var(--primary-color);
-            color: #ffffff;
-            font-size: 0.82rem;
-            font-weight: 700;
-            cursor: pointer;
-            white-space: nowrap;
-        }
-
-        .search-submit-btn:active {
-            transform: scale(0.96);
-        }
-
-        /* ==========================================================================
-           4. 성경 본문 읽기 영역 (가독성 중심 레이아웃)
-           ========================================================================== */
-        main {
-            max-width: 960px;
-            margin: 1.75rem auto;
-            padding: 0 1rem;
-            width: 100%;
-            flex: 1;
-        }
-
-        .reading-paper {
-            background-color: var(--bg-paper);
-            border: 1px solid var(--border-color);
-            border-radius: 14px;
-            padding: 2.25rem 2.5rem;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-        }
-
-        .chapter-header {
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 1rem;
-            margin-bottom: 1.75rem;
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .chapter-title {
-            font-size: 1.75rem;
-            font-weight: 800;
-            color: var(--primary-color);
-        }
-
-        .chapter-meta {
-            font-size: 0.85rem;
-            color: var(--text-sub);
-            font-weight: 600;
-        }
-
-        /* 절(Verse) 리스트 스타일 */
-        .verses-container {
-            font-size: var(--base-font-size);
-            line-height: 1.85;
-            display: flex;
-            flex-direction: column;
-            gap: 0.65rem;
-        }
-
-        .verse-row {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.75rem;
-            padding: 0.35rem 0.5rem;
-            border-radius: 8px;
-            transition: background-color 0.15s;
-            cursor: pointer;
-        }
-
-        .verse-row:hover {
-            background-color: rgba(37, 99, 235, 0.06);
-        }
-
-        .verse-row.selected {
-            background-color: var(--highlight-bg);
-        }
-
-        .verse-num {
-            font-size: 0.82em;
-            font-weight: 800;
-            color: var(--verse-num-color);
-            min-width: 26px;
-            text-align: right;
-            padding-top: 2px;
-            user-select: none;
-        }
-
-        .verse-text {
-            flex: 1;
-            word-break: keep-all;
-        }
-
-        /* 하단 이전장 / 다음장 버튼 */
-        .bottom-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 2.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border-color);
-        }
-
-        /* 검색 결과 모달/패널 */
-        .search-results-banner {
-            background-color: var(--bg-paper);
-            border: 1.5px solid var(--accent-color);
-            border-radius: 12px;
-            padding: 1.25rem;
-            margin-bottom: 1.5rem;
-            display: none;
-        }
-
-        .search-results-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.85rem;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-
-        .search-result-item {
-            padding: 0.65rem;
-            border-bottom: 1px solid var(--border-color);
-            cursor: pointer;
-            font-size: 0.92rem;
-        }
-
-        .search-result-item:hover {
-            background-color: rgba(37, 99, 235, 0.08);
-        }
-
-        .search-result-ref {
-            font-weight: 800;
-            color: var(--accent-color);
-            margin-right: 0.5rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            font-size: 0.82rem;
-            color: var(--text-sub);
-            margin-top: auto;
-        }
-
-        @media screen and (max-width: 640px) {
-            .reading-paper {
-                padding: 1.35rem 1.15rem;
-            }
-            .chapter-title {
-                font-size: 1.4rem;
-            }
-            .verse-search-input {
-                width: 140px;
-            }
-            .verse-search-input:focus {
-                width: 180px;
-            }
+        .verse-highlight {
+            background-color: #fef3c7;
+            border-left: 3px solid #d97706;
+            padding-left: 8px;
         }
     </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 font-sans">
 
-    <!-- 상단 헤더 -->
-    <header>
-        <div class="header-inner">
-            <a href="bible.html" class="brand-title">
-                <i class="fa-solid fa-book-bible"></i>
-                <span>TESTAMENTU FOUN</span>
-                <span class="brand-badge">Tetun-Dili (IBTTL)</span>
-            </a>
-            <a href="index.html" class="back-library-btn">
-                <i class="fa-solid fa-arrow-left"></i> Fila ba Biblioteka
-            </a>
+    <!-- 상단 네비게이션 및 검색 헤더 -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-10 shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex flex-col sm:flex-row gap-3 justify-between items-center">
+            
+            <!-- 책 및 장 선택 컨트롤 -->
+            <div class="flex flex-wrap items-center gap-2 w-full sm:w-auto">
+                <select id="testamentSelect" class="border border-slate-300 rounded px-2 py-1.5 text-sm bg-white">
+                    <option value="ALL">Hotu-hotu</option>
+                    <option value="OT">Testamentu Tuan</option>
+                    <option value="NT">Testamentu Foun</option>
+                </select>
+                <select id="bookSelect" class="border border-slate-300 rounded px-2 py-1.5 text-sm bg-white font-semibold"></select>
+                <select id="chapterSelect" class="border border-slate-300 rounded px-2 py-1.5 text-sm bg-white"></select>
+            </div>
+
+            <!-- 검색 영역 (기존 searchInput, searchBtn 유지) -->
+            <div class="bible-search-container flex items-center gap-1.5 w-full sm:w-auto">
+                <input type="text" id="searchInput" placeholder="단어 검색 (예: Maromak, Domin)..." 
+                       class="border border-slate-300 rounded px-3 py-1.5 text-sm w-full sm:w-56 focus:outline-none focus:border-amber-500">
+                <button id="searchBtn" class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-1.5 rounded text-sm font-medium transition">
+                    검색
+                </button>
+            </div>
+
         </div>
     </header>
 
-    <!-- 갓피아 스타일 성경 선택 및 도구 툴바 -->
-    <div class="bible-toolbar">
-        <div class="toolbar-inner">
-            <!-- 권 / 장 선택 & 이전/다음장 버튼 -->
-            <div class="selector-group">
-                <select id="bookSelect" class="bible-select" onchange="onBookChange()" aria-label="Hili Livru"></select>
-                <select id="chapterSelect" class="bible-select" onchange="onChapterChange()" aria-label="Hili Kapítulu"></select>
-
-                <button type="button" class="nav-chapter-btn" id="prevChapterBtn" onclick="moveChapter(-1)" title="Kapítulu Anterior">
-                    <i class="fa-solid fa-chevron-left"></i> Uluk
-                </button>
-                <button type="button" class="nav-chapter-btn" id="nextChapterBtn" onclick="moveChapter(1)" title="Kapítulu Tuirmai">
-                    Tuirmai <i class="fa-solid fa-chevron-right"></i>
-                </button>
-            </div>
-
-            <!-- 글자 크기, 야간 모드, 본문 검색 -->
-            <div class="tools-group">
-                <button type="button" class="tool-btn" onclick="changeFontSize(-2)" title="Hamenu Letra (A-)">A-</button>
-                <button type="button" class="tool-btn" onclick="changeFontSize(2)" title="Haboot Letra (A+)">A+</button>
-                <button type="button" class="tool-btn" id="darkModeBtn" onclick="toggleDarkMode()" title="Modu Kalan (Dark Mode)">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
-                <form class="search-toggle-box" onsubmit="event.preventDefault(); executeBibleSearch(true);">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" id="bibleSearchInput" class="verse-search-input" 
-                           placeholder="Buka liafuan..." oninput="executeBibleSearch(false)">
-                    <button type="submit" class="search-submit-btn">Buka</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- 성경 본문 읽기 메인 영역 -->
-    <main>
-        <!-- 구절 검색 결과 패널 -->
-        <div class="search-results-banner" id="searchResultsPanel">
-            <div class="search-results-header">
-                <span id="searchResultsCount">Rezultadu Buka</span>
-                <button type="button" class="nav-chapter-btn" onclick="closeSearchResults()">Taka &times;</button>
-            </div>
-            <div id="searchResultsList"></div>
+    <!-- 메인 컨텐츠 영역 -->
+    <main id="mainContainer" class="max-w-4xl mx-auto px-4 py-6">
+        
+        <!-- 로딩 상태 표시 -->
+        <div id="loadingState" class="text-center py-12 text-slate-500">
+            Karrega hela Bíblia Tetun...
         </div>
 
-        <!-- 성경 본문 종이 카드 -->
-        <article class="reading-paper">
-            <div class="chapter-header">
-                <h1 class="chapter-title" id="currentChapterTitle">MATEUS 1</h1>
-                <span class="chapter-meta" id="currentChapterMeta">Testamentu Foun • Tetun-Dili (IBTTL)</span>
-            </div>
-
-            <div class="verses-container" id="versesContainer">
-                <p style="color: var(--text-sub);">Karrega hela dadus Bíblia...</p>
-            </div>
-
-            <div class="bottom-nav">
-                <button type="button" class="nav-chapter-btn" id="bottomPrevBtn" onclick="moveChapter(-1)">
-                    <i class="fa-solid fa-arrow-left"></i> Kapítulu Anterior
-                </button>
-                <button type="button" class="nav-chapter-btn" id="bottomNextBtn" onclick="moveChapter(1)">
-                    Kapítulu Tuirmai <i class="fa-solid fa-arrow-right"></i>
+        <!-- 검색 결과 출력 영역 -->
+        <section id="searchView" class="hidden bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+            <div class="flex justify-between items-center border-b border-slate-200 pb-3 mb-4">
+                <h2 class="text-lg font-bold text-slate-800">Rezultadu Peskiza</h2>
+                <button id="closeSearchBtn" class="text-sm text-slate-500 hover:text-slate-800 px-2 py-1 rounded border border-slate-200">
+                    ✕ Taka (닫기)
                 </button>
             </div>
-        </article>
+            <div id="searchResultsList" class="space-y-3"></div>
+        </section>
+
+        <!-- 성경 본문 뷰어 영역 -->
+        <section id="readerView" class="hidden bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-slate-200">
+            <div class="flex justify-between items-center border-b border-slate-200 pb-4 mb-6">
+                <div>
+                    <span id="testamentBadge" class="text-xs font-semibold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded"></span>
+                    <h2 id="chapterTitle" class="text-2xl font-bold text-slate-900 mt-1"></h2>
+                </div>
+                <!-- 글자 크기 조절 버튼 -->
+                <div class="flex items-center gap-1">
+                    <button id="fontDown" class="w-8 h-8 rounded border border-slate-300 text-sm font-bold hover:bg-slate-100" title="글자 작게">A-</button>
+                    <button id="fontUp" class="w-8 h-8 rounded border border-slate-300 text-sm font-bold hover:bg-slate-100" title="글자 크게">A+</button>
+                </div>
+            </div>
+
+            <!-- 성경 절(Verse) 본문 출력 컨테이너 -->
+            <div id="versesContainer" class="text-lg text-slate-800 space-y-2"></div>
+
+            <!-- 이전 장 / 다음 장 이동 버튼 -->
+            <div class="flex justify-between items-center mt-8 pt-4 border-t border-slate-200">
+                <button id="prevChapBtn" class="px-4 py-2 rounded border border-slate-300 text-sm font-medium hover:bg-slate-50">
+                    ← Kapítulu Antes
+                </button>
+                <button id="nextChapBtn" class="px-4 py-2 rounded border border-slate-300 text-sm font-medium hover:bg-slate-50">
+                    Kapítulu Tuirmai →
+                </button>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>TESTAMENTU FOUN (Tetun-Dili) &copy; IBTTL (Institutu Bíblia Tetun Timor-Leste) &amp; HYANGGI GAJOG. SUE AND JUN Biblioteka Dijitál.</p>
-    </footer>
-
-    <script>
-        /* ==========================================================================
-           [성경 데이터 로드 및 갓피아 스타일 리더 로직]
-           - data 폴더의 'data/tetun_nt.json' 파일을 자동으로 불러옵니다.
-           - JSON 파일이 아직 업로드되지 않은 경우에도 기본 샘플(Mateus 1장)이 표시됩니다.
-           ========================================================================== */
-        const FALLBACK_SAMPLE_DATA = {
-            title: "TESTAMENTU FOUN (Tetun-Dili)",
-            books: [
-                {
-                    id: "MAT",
-                    name: "MATEUS",
-                    chapters: {
-                        "1": {
-                            "1": "Ida ne'e mak Jesus Kristu nian bei'ala sira, hosi David to'o Abraão mak ne'e.",
-                            "2": "Abraão mak Isaque nian aman, Isaque mak Jacó nia aman, Jacó mak Judá ho nia maun-alin sira nia aman,",
-                            "3": "Judá mak Farés ho Zerá nia aman hosi Tamar, Farés mak Esrom nia aman, Esrom mak Arão nia aman,",
-                            "18": "Jesus Kristu hetan moris mak hanesan tuir mai ne'e: Iha tempu Nia inan Maria noiva hela ho José, afinál nia isin-rua liuhosi Espíritu Santu, molok sira moris hamutuk nu'udar feen ho la'en.",
-                            "21": "Nia sei moris-mai oan mane no ó sei hanaran Nia Jesus, tanba Nia mak sei salva povu hosi sira nia sala."
-                        }
-                    }
-                }
-            ]
-        };
-
-        let bibleData = null;
-        let currentBookIndex = 0;
-        let currentChapterKey = "1";
-        let currentFontSize = 18;
-
-        async function loadBibleJson() {
-            try {
-                const response = await fetch("data/tetun_nt.json");
-                if (!response.ok) throw new Error("JSON file not found");
-                bibleData = await response.json();
-            } catch (err) {
-                console.warn("data/tetun_nt.json 파일을 찾을 수 없어 기본 샘플 데이터를 표시합니다.", err);
-                bibleData = FALLBACK_SAMPLE_DATA;
-            }
-
-            populateBookSelect();
-            renderChapter();
-        }
-
-        function populateBookSelect() {
-            const bookSelect = document.getElementById("bookSelect");
-            bookSelect.innerHTML = bibleData.books.map((book, index) => 
-                `<option value="${index}">${book.name}</option>`
-            ).join("");
-
-            populateChapterSelect();
-        }
-
-        function populateChapterSelect() {
-            const book = bibleData.books[currentBookIndex];
-            const chapterSelect = document.getElementById("chapterSelect");
-            const chapterKeys = Object.keys(book.chapters).sort((a, b) => Number(a) - Number(b));
-
-            chapterSelect.innerHTML = chapterKeys.map(ch => 
-                `<option value="${ch}">Kapítulu ${ch}</option>`
-            ).join("");
-
-            if (!chapterKeys.includes(currentChapterKey)) {
-                currentChapterKey = chapterKeys[0] || "1";
-            }
-            chapterSelect.value = currentChapterKey;
-        }
-
-        function onBookChange() {
-            currentBookIndex = Number(document.getElementById("bookSelect").value);
-            currentChapterKey = "1";
-            populateChapterSelect();
-            renderChapter();
-        }
-
-        function onChapterChange() {
-            currentChapterKey = document.getElementById("chapterSelect").value;
-            renderChapter();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-
-        function moveChapter(delta) {
-            const book = bibleData.books[currentBookIndex];
-            const chapterKeys = Object.keys(book.chapters).sort((a, b) => Number(a) - Number(b));
-            const curPos = chapterKeys.indexOf(currentChapterKey);
-
-            if (curPos + delta >= 0 && curPos + delta < chapterKeys.length) {
-                currentChapterKey = chapterKeys[curPos + delta];
-            } else if (delta > 0 && currentBookIndex + 1 < bibleData.books.length) {
-                currentBookIndex += 1;
-                document.getElementById("bookSelect").value = currentBookIndex;
-                populateChapterSelect();
-                const nextKeys = Object.keys(bibleData.books[currentBookIndex].chapters).sort((a, b) => Number(a) - Number(b));
-                currentChapterKey = nextKeys[0];
-            } else if (delta < 0 && currentBookIndex - 1 >= 0) {
-                currentBookIndex -= 1;
-                document.getElementById("bookSelect").value = currentBookIndex;
-                populateChapterSelect();
-                const prevKeys = Object.keys(bibleData.books[currentBookIndex].chapters).sort((a, b) => Number(a) - Number(b));
-                currentChapterKey = prevKeys[prevKeys.length - 1];
-            }
-
-            document.getElementById("chapterSelect").value = currentChapterKey;
-            renderChapter();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-
-        function renderChapter() {
-            const book = bibleData.books[currentBookIndex];
-            const versesObj = book.chapters[currentChapterKey] || {};
-            const verseKeys = Object.keys(versesObj).sort((a, b) => Number(a) - Number(b));
-
-            document.getElementById("currentChapterTitle").innerText = `${book.name} ${currentChapterKey}`;
-
-            const container = document.getElementById("versesContainer");
-            if (verseKeys.length === 0) {
-                container.innerHTML = `<p style="color: var(--text-sub);">Seidauk iha testu ba kapítulu ida-ne'e.</p>`;
-            } else {
-                container.innerHTML = verseKeys.map(vNum => `
-                    <div class="verse-row" onclick="this.classList.toggle('selected')" title="Klik atu marka versíkulu">
-                        <span class="verse-num">${vNum}</span>
-                        <span class="verse-text">${versesObj[vNum]}</span>
-                    </div>
-                `).join("");
-            }
-
-            const isFirst = (currentBookIndex === 0 && currentChapterKey === "1");
-            const lastBook = bibleData.books[bibleData.books.length - 1];
-            const lastChKeys = Object.keys(lastBook.chapters).sort((a, b) => Number(a) - Number(b));
-            const isLast = (currentBookIndex === bibleData.books.length - 1 && currentChapterKey === lastChKeys[lastChKeys.length - 1]);
-
-            document.getElementById("prevChapterBtn").disabled = isFirst;
-            document.getElementById("bottomPrevBtn").disabled = isFirst;
-            document.getElementById("nextChapterBtn").disabled = isLast;
-            document.getElementById("bottomNextBtn").disabled = isLast;
-        }
-
-        /* 글자 크기 조절 & 다크모드 */
-        function changeFontSize(step) {
-            currentFontSize = Math.min(28, Math.max(14, currentFontSize + step));
-            document.documentElement.style.setProperty("--base-font-size", `${currentFontSize}px`);
-        }
-
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-            const isDark = document.body.classList.contains("dark-mode");
-            document.getElementById("darkModeBtn").innerHTML = isDark
-                ? `<i class="fa-solid fa-sun"></i>`
-                : `<i class="fa-solid fa-moon"></i>`;
-        }
-
-        /* 성경 전체 구절 검색 */
-        function executeBibleSearch(isExplicitSubmit = false) {
-            if (!bibleData || !bibleData.books) return;
-
-            const inputEl = document.getElementById("bibleSearchInput");
-            const query = inputEl.value.trim().toLowerCase();
-            const panel = document.getElementById("searchResultsPanel");
-            const listEl = document.getElementById("searchResultsList");
-            const countEl = document.getElementById("searchResultsCount");
-
-            if (!query) {
-                panel.style.display = "none";
-                return;
-            }
-
-            if (!isExplicitSubmit && query.length < 2) {
-                panel.style.display = "none";
-                return;
-            }
-
-            const matches = [];
-            bibleData.books.forEach((book, bIdx) => {
-                Object.entries(book.chapters).forEach(([chNum, verses]) => {
-                    Object.entries(verses).forEach(([vNum, text]) => {
-                        if (String(text).toLowerCase().includes(query)) {
-                            matches.push({ bIdx, bookName: book.name, chNum, vNum, text });
-                        }
-                    });
-                });
-            });
-
-            panel.style.display = "block";
-            countEl.innerText = `Rezultadu buka "${query}": ${matches.length} versíkulu`;
-
-            if (matches.length === 0) {
-                listEl.innerHTML = `<p style="color: var(--text-sub); font-size: 0.9rem;">La hetan liafuan ne'e iha Testamentu Foun.</p>`;
-            } else {
-                listEl.innerHTML = matches.slice(0, 30).map(m => `
-                    <div class="search-result-item" onclick="jumpToVerse(${m.bIdx}, '${m.chNum}')">
-                        <span class="search-result-ref">${m.bookName} ${m.chNum}:${m.vNum}</span>
-                        <span>${m.text}</span>
-                    </div>
-                `).join("");
-            }
-
-            if (isExplicitSubmit) {
-                inputEl.blur();
-                panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
-            }
-        }
-
-        function jumpToVerse(bIdx, chNum) {
-            currentBookIndex = bIdx;
-            document.getElementById("bookSelect").value = bIdx;
-            populateChapterSelect();
-            currentChapterKey = chNum;
-            document.getElementById("chapterSelect").value = chNum;
-            renderChapter();
-            closeSearchResults();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-
-        function closeSearchResults() {
-            document.getElementById("searchResultsPanel").style.display = "none";
-        }
-
-        window.addEventListener("DOMContentLoaded", loadBibleJson);
-    </script>
+    <!-- 업데이트된 성경 뷰어 컨트롤러 연결 (경로 확인 필수) -->
+    <script src="data/res/bible-viewer-controller.js"></script>
 </body>
 </html>
