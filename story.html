@@ -82,7 +82,6 @@
             overflow: hidden;
         }
 
-        /* 로고 크기 강제 고정 CSS */
         .header-pub-logo {
             height: 34px !important;
             max-height: 34px !important;
@@ -132,7 +131,7 @@
         }
 
         /* ==========================================================================
-           3. 상단 컨트롤 툴바 (챕터 선택, 언어 전환, 글자 크기, 야간 모드)
+           3. 상단 컨트롤 툴바
            ========================================================================== */
         .story-toolbar {
             background-color: var(--bg-toolbar);
@@ -159,6 +158,7 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            flex-wrap: wrap;
         }
 
         .scene-select {
@@ -171,11 +171,23 @@
             font-weight: 700;
             cursor: pointer;
             outline: none;
-            max-width: 240px;
+            max-width: 230px;
         }
 
         .scene-select:focus {
             border-color: var(--accent-color);
+        }
+
+        /* 성경 인물 선택 드롭다운 강조 스타일 */
+        .char-select {
+            border-color: var(--primary-color);
+            background-color: #eff6ff;
+            color: #1e3a8a;
+        }
+
+        body.dark-mode .char-select {
+            background-color: #0f172a;
+            color: #60a5fa;
         }
 
         .lang-group {
@@ -210,8 +222,9 @@
         }
 
         .tool-btn {
-            width: 34px;
+            min-width: 34px;
             height: 34px;
+            padding: 0 8px;
             border: 1px solid var(--border-color);
             border-radius: 8px;
             background-color: var(--bg-paper);
@@ -222,12 +235,24 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            gap: 5px;
             transition: all 0.2s;
         }
 
         .tool-btn:hover {
             border-color: var(--accent-color);
             color: var(--accent-color);
+        }
+
+        .tool-btn.print-wb-btn {
+            background-color: #ea580c;
+            border-color: #ea580c;
+            color: #ffffff;
+        }
+
+        .tool-btn.print-wb-btn:hover {
+            background-color: #c2410c;
+            color: #ffffff;
         }
 
         /* ==========================================================================
@@ -254,7 +279,6 @@
             flex: 1;
         }
 
-        /* 상단 진행률 바 */
         .progress-bar-wrap {
             width: 100%;
             height: 5px;
@@ -269,7 +293,6 @@
             transition: width 0.3s ease;
         }
 
-        /* 좌우 2단 펼침 컨테이너 */
         .book-spread-layout {
             display: grid;
             grid-template-columns: 1.05fr 0.95fr;
@@ -277,7 +300,11 @@
             min-height: 0;
         }
 
-        /* 왼쪽 페이지: 삽화 영역 (블러 백드롭 + 액자 프레임) */
+        /* 성경 인물 마지막 슬라이드(생각 정리 & 생활 적용) 전용 전체 1단 레이아웃 */
+        .book-spread-layout.reflection-mode {
+            grid-template-columns: 1fr;
+        }
+
         .illustration-box {
             width: 100%;
             height: 100%;
@@ -295,7 +322,6 @@
             background-color: #0f172a;
         }
 
-        /* 여백을 자연스럽게 채워주는 흐림 배경 이미지 */
         .illustration-bg-blur {
             position: absolute;
             inset: -20px;
@@ -314,7 +340,6 @@
             opacity: 0.4;
         }
 
-        /* 메인 삽화 이미지 */
         .illustration-img {
             position: relative;
             z-index: 1;
@@ -343,7 +368,6 @@
             z-index: 2;
         }
 
-        /* 오른쪽 페이지: 본문 텍스트 영역 */
         .story-content-area {
             padding: 2rem 2.25rem;
             display: flex;
@@ -400,6 +424,30 @@
             font-size: 1em;
             padding-top: 0;
             border-top: none;
+        }
+
+        /* 성경 인물 생각 정리 & 생활 적용 카드 스타일 */
+        .reflection-card-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            max-width: 850px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .lesson-highlight {
+            background-color: rgba(37, 99, 235, 0.08);
+            border-left: 5px solid var(--primary-color);
+            padding: 1.25rem 1.5rem;
+            border-radius: 10px;
+        }
+
+        .question-highlight {
+            background-color: rgba(234, 88, 12, 0.08);
+            border: 2px dashed #ea580c;
+            padding: 1.4rem 1.5rem;
+            border-radius: 12px;
         }
 
         /* 하단 이전 / 다음 페이지 내비게이션 */
@@ -476,9 +524,6 @@
             flex-shrink: 0;
         }
 
-        /* ==========================================================================
-           5. 태블릿 및 스마트폰 반응형 (768px 이하에서는 상하 수직 배치로 자동 전환)
-           ========================================================================== */
         @media screen and (max-width: 768px) {
             main {
                 margin: 1rem auto;
@@ -514,6 +559,107 @@
                 display: none;
             }
         }
+
+        /* ==========================================================================
+           6. A4 인쇄용 워크북 전용 스타일 (@media print)
+           ========================================================================== */
+        #print-workbook {
+            display: none;
+        }
+
+        @media print {
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+            header, .story-toolbar, main, footer {
+                display: none !important;
+            }
+            #print-workbook {
+                display: block !important;
+                width: 100%;
+                padding: 6mm 10mm;
+            }
+            .wb-header {
+                border-bottom: 2px solid #000;
+                padding-bottom: 6px;
+                margin-bottom: 12px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            .wb-header h1 {
+                font-size: 16pt;
+                font-weight: 800;
+            }
+            .wb-student-info {
+                font-size: 10.5pt;
+            }
+            .wb-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+                align-items: start;
+            }
+            .wb-coloring {
+                border: 1.5px solid #222;
+                border-radius: 8px;
+                padding: 8px;
+                text-align: center;
+            }
+            .wb-coloring img {
+                width: 100%;
+                max-height: 140mm;
+                object-fit: contain;
+            }
+            .wb-puzzle-area {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .cw-table {
+                border-collapse: collapse;
+                margin: 0 auto;
+            }
+            .cw-table td {
+                width: 23px;
+                height: 23px;
+                border: 1px solid #000;
+                text-align: center;
+                font-size: 9pt;
+                font-weight: bold;
+                position: relative;
+            }
+            .cw-table td.empty {
+                border: none;
+            }
+            .cw-num {
+                position: absolute;
+                top: 1px;
+                left: 2px;
+                font-size: 6pt;
+                font-weight: normal;
+            }
+            .clues-box {
+                font-size: 9pt;
+                line-height: 1.38;
+            }
+            .clues-box h4 {
+                margin: 5px 0 2px;
+                text-decoration: underline;
+            }
+            .wb-reflection {
+                margin-top: 12px;
+                border: 2px solid #000;
+                border-radius: 8px;
+                padding: 10px 12px;
+            }
+            .write-lines {
+                margin-top: 8px;
+                height: 25mm;
+                background: repeating-linear-gradient(white, white 7.5mm, #888 7.8mm);
+            }
+        }
     </style>
 </head>
 <body>
@@ -525,7 +671,7 @@
                 <img id="storyHeaderLogo" class="header-pub-logo" src="images/logo-s-j.png" alt="Editora Logo"
                      onerror="this.style.display='none';">
                 <span id="headerBookTitle">Karrega hela istória...</span>
-                <span class="brand-badge">Istória</span>
+                <span class="brand-badge" id="headerBrandBadge">Istória</span>
             </a>
             <a href="index.html" class="back-library-btn">
                 <i class="fa-solid fa-arrow-left"></i> Fila ba Biblioteka
@@ -536,8 +682,10 @@
     <!-- 상단 컨트롤 툴바 -->
     <div class="story-toolbar">
         <div class="toolbar-inner">
-            <!-- 장면(챕터) 바로가기 드롭다운 -->
             <div class="selector-group">
+                <!-- 성경 인물 30선 모드일 때만 표시되는 인물 선택 드롭다운 -->
+                <select id="characterSelect" class="scene-select char-select" style="display:none;" onchange="onCharacterSelectChange()" aria-label="Hili Ema iha Bíblia"></select>
+                <!-- 장면(챕터) 바로가기 드롭다운 -->
                 <select id="sceneSelect" class="scene-select" onchange="onSceneSelectChange()" aria-label="Hili Pájina"></select>
             </div>
 
@@ -548,12 +696,18 @@
                 <button type="button" class="lang-btn" data-lang="en" onclick="setLanguageMode('en')">English</button>
             </div>
 
-            <!-- 글자 크기 & 야간 모드 -->
+            <!-- 글자 크기, 야간 모드, 프레젠테이션 전체화면 & 워크북 인쇄 -->
             <div class="tools-group">
                 <button type="button" class="tool-btn" onclick="changeFontSize(-2)" title="Hamenu Letra">A-</button>
                 <button type="button" class="tool-btn" onclick="changeFontSize(2)" title="Haboot Letra">A+</button>
                 <button type="button" class="tool-btn" id="darkModeBtn" onclick="toggleDarkMode()" title="Modu Kalan">
                     <i class="fa-solid fa-moon"></i>
+                </button>
+                <button type="button" class="tool-btn" id="fullscreenBtn" style="display:none;" onclick="toggleFullscreen()" title="Tela Tomak (Presentation)">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+                <button type="button" class="tool-btn print-wb-btn" id="printWorkbookBtn" style="display:none;" onclick="window.print()" title="Imprime Atividade A4">
+                    <i class="fa-solid fa-print"></i> Workbook
                 </button>
             </div>
         </div>
@@ -562,15 +716,13 @@
     <!-- 메인 동화책 뷰어 -->
     <main>
         <article class="story-book-card">
-            <!-- 상단 진행률 바 -->
             <div class="progress-bar-wrap">
                 <div class="progress-bar-fill" id="progressBarFill"></div>
             </div>
 
-            <!-- 좌우 2단 펼침 본문 -->
-            <div class="book-spread-layout">
-                <!-- 왼쪽: 삽화 (블러 배경 + 액자 프레임) -->
-                <div class="illustration-box">
+            <div class="book-spread-layout" id="bookSpreadLayout">
+                <!-- 왼쪽: 삽화 -->
+                <div class="illustration-box" id="illustrationBox">
                     <img id="sceneBgBlur" class="illustration-bg-blur" src="" alt="" aria-hidden="true">
                     <span class="page-indicator-pill" id="pageIndicatorPill">Pájina 1</span>
                     <img id="sceneImage" class="illustration-img" src="" alt="Ilustrasaun Istória">
@@ -602,17 +754,18 @@
         </article>
     </main>
 
+    <!-- A4 인쇄 전용 워크북 영역 -->
+    <div id="print-workbook"></div>
+
     <footer>
         <p>&copy; 2026 Biblioteka Dijitál - SUE AND JUN Vocational Training Center (Timor-Leste).</p>
     </footer>
 
     <script>
         /* ==========================================================================
-           [동화책 공용 리더 로직]
-           - URL 예시: story.html?book=sheperd&pub=pub-0
-             -> JSON 경로: data/res/stories-sheperd.json
-             -> 이미지 폴더: images/sheperd/ (단, lion_2의 경우 images/lion/ 자동 매핑 지원)
-             -> 출판사 로고: PUBLISHER_LOGOS[pub] 자동 적용
+           [통합 리더 로직]
+           1) 기존 동화책 모드: story.html?book=sheperd&pub=pub-3
+           2) 성경 인물 30선 모드: story.html?bible=01_abraham&pub=pub-2
            ========================================================================== */
         const PUBLISHER_LOGOS = {
             "pub-0": "images/logo-Tiranu.jpeg",
@@ -621,52 +774,52 @@
             "pub-3": "images/logo-siensia.png"
         };
 
-        // JSON 파일명과 이미지 폴더명이 다를 경우를 대비한 예외 매핑 테이블
         const IMAGE_FOLDER_OVERRIDES = {
             "lion_2": "lion"
         };
 
-        // 미리보기(blob) 환경이나 파일 미존재 시 화면 테스트를 위한 기본 샘플 데이터
         const FALLBACK_STORY_DATA = {
-            title: {
-                en: "The Shepherd Boy & the Wolf",
-                tet: "Bibi-atan Ki'ik ho Lobu",
-                ko: "양치기 소년과 늑대"
-            },
+            title: { en: "The Shepherd Boy & the Wolf", tet: "Bibi-atan Ki'ik ho Lobu" },
             scenes: [
                 {
                     scene_number: 1,
                     title: "Bored in the Pasture",
                     image_file: "6.jpeg",
-                    english_text: "A Shepherd Boy tended his master's sheep near a dark forest not far from the village. Soon he found life in the pasture very dull. All he could do to amuse himself was to talk to his dog or play on his shepherd's pipe.",
-                    tetum_translation: "Iha bibi-atan ki'ik ida ne'ebé hein nia na'i nia bibi-malae sira iha du'ut fatin, besik ai-laran metan ne'ebé la dook husi knua. Maibé lakteu nia sente baruk tebes ho moris iha ne'e. Nia bele ko'alia de'it ho nia asu ka toka flauta hodi halimar."
-                },
-                {
-                    scene_number: 2,
-                    title: "The First False Alarm",
-                    image_file: "5.jpeg",
-                    english_text: "One day, sitting near the quiet forest, he thought of a trick to amuse himself. So, even though there was no wolf, he ran toward the village shouting at the top of his voice, \"Wolf! Wolf!\"",
-                    tetum_translation: "Loron ida, bainhira tuur haree bibi-malae sira, nia hetan ideia di'ak ida hodi halimar. Maski la haree lobu ida, nia halai ba knua hodi hakilar ho lian boot: \"Lobu! Lobu mai ona!\""
+                    english_text: "A Shepherd Boy tended his master's sheep near a dark forest not far from the village.",
+                    tetum_translation: "Iha bibi-atan ki'ik ida ne'ebé hein nia na'i nia bibi-malae sira iha du'ut fatin."
                 }
             ]
         };
 
         let storyData = null;
+        let renderSlides = []; // 실제 화면에 렌더링할 슬라이드 목록 (성경 인물은 마지막에 reflection 슬라이드 추가)
         let currentSceneIndex = 0;
         let currentLangMode = "both";
         let currentFontSize = 18;
+        let isBibleMode = false;
+        let bibleCharId = null;
         let bookSlug = "sheperd";
 
-        function getBookConfig() {
+        function getPageConfig() {
             const params = new URLSearchParams(window.location.search);
-            bookSlug = params.get("book") || "sheperd";
-            const imgFolder = IMAGE_FOLDER_OVERRIDES[bookSlug] || bookSlug;
+            bibleCharId = params.get("bible");
+            isBibleMode = Boolean(bibleCharId);
 
-            return {
-                jsonPath: `data/res/stories-${bookSlug}.json`,
-                imageFolder: `images/${imgFolder}/`,
-                pubId: params.get("pub") || "pub-1"
-            };
+            if (isBibleMode) {
+                return {
+                    jsonPath: `data/bible_characters/${bibleCharId}.json`,
+                    imageFolder: `images/bible/${bibleCharId}/`,
+                    pubId: params.get("pub") || "pub-2"
+                };
+            } else {
+                bookSlug = params.get("book") || "sheperd";
+                const imgFolder = IMAGE_FOLDER_OVERRIDES[bookSlug] || bookSlug;
+                return {
+                    jsonPath: `data/res/stories-${bookSlug}.json`,
+                    imageFolder: `images/${imgFolder}/`,
+                    pubId: params.get("pub") || "pub-3"
+                };
+            }
         }
 
         function applyPublisherLogo(pubId) {
@@ -676,12 +829,41 @@
             }
         }
 
-        async function loadStoryBook() {
-            const config = getBookConfig();
-            applyPublisherLogo(config.pubId);
+        // 성경 인물 30명 드롭다운 로드
+        async function loadBibleManifest() {
+            const charSelect = document.getElementById("characterSelect");
+            charSelect.style.display = "inline-block";
+            document.getElementById("fullscreenBtn").style.display = "inline-flex";
+            document.getElementById("printWorkbookBtn").style.display = "inline-flex";
+            document.getElementById("headerBrandBadge").innerText = "Eskola Domingu";
 
             try {
-                // 미리보기(blob:) 환경에서는 상대 경로 fetch가 URL 파싱 오류를 일으키므로 즉시 폴백 처리
+                const res = await fetch("data/bible_characters/manifest.json");
+                if (!res.ok) throw new Error("manifest.json 없음");
+                const list = await res.json();
+                charSelect.innerHTML = list.map(item =>
+                    `<option value="${item.id}" ${item.id === bibleCharId ? "selected" : ""}>${item.id.split("_")[0]}. ${item.name_tet} (${item.name_en})</option>`
+                ).join("");
+            } catch (e) {
+                charSelect.innerHTML = `<option value="${bibleCharId}">${bibleCharId}</option>`;
+            }
+        }
+
+        function onCharacterSelectChange() {
+            const nextId = document.getElementById("characterSelect").value;
+            const pubId = new URLSearchParams(window.location.search).get("pub") || "pub-2";
+            window.location.href = `story.html?bible=${nextId}&pub=${pubId}`;
+        }
+
+        async function loadStoryBook() {
+            const config = getPageConfig();
+            applyPublisherLogo(config.pubId);
+
+            if (isBibleMode) {
+                loadBibleManifest();
+            }
+
+            try {
                 if (window.location.protocol === "blob:") {
                     throw new Error("Preview blob environment detected");
                 }
@@ -689,72 +871,127 @@
                 if (!response.ok) throw new Error(`JSON 파일을 찾을 수 없습니다: ${config.jsonPath}`);
                 storyData = await response.json();
             } catch (err) {
-                console.warn("외부 JSON을 불러올 수 없어 기본 샘플 데이터를 표시합니다:", err.message);
+                console.warn("외부 JSON 로드 실패:", err.message);
                 storyData = FALLBACK_STORY_DATA;
             }
 
-            const displayTitle = storyData.title?.tet || storyData.title?.en || "Istória";
+            // 제목 설정 (성경 인물 JSON vs 기존 동화 JSON 구조 모두 호환)
+            const displayTitle = isBibleMode
+                ? `${storyData.character_name_tet || storyData.character_name_en} (${storyData.bible_reference || ""})`
+                : (storyData.title?.tet || storyData.title?.en || "Istória");
+
             document.title = `${displayTitle} - Biblioteka Dijitál`;
             document.getElementById("headerBookTitle").innerText = displayTitle;
 
+            // 슬라이드 배열 구성
+            renderSlides = (storyData.scenes || []).map(s => ({ ...s, isReflection: false }));
+            if (isBibleMode && storyData.reflection) {
+                renderSlides.push({
+                    isReflection: true,
+                    scene_number: renderSlides.length + 1,
+                    title: "Hanoin no Halo Tuir (Think & Apply)",
+                    reflection: storyData.reflection
+                });
+            }
+
             populateSceneControls();
             renderScene(0);
+
+            if (isBibleMode) {
+                buildWorkbookPrintArea(config.imageFolder);
+            }
         }
 
         function populateSceneControls() {
             const selectEl = document.getElementById("sceneSelect");
             const dotsEl = document.getElementById("pageDots");
 
-            selectEl.innerHTML = storyData.scenes.map((scene, idx) => 
-                `<option value="${idx}">${scene.scene_number}. ${scene.title}</option>`
+            selectEl.innerHTML = renderSlides.map((slide, idx) =>
+                `<option value="${idx}">${slide.isReflection ? "💡" : slide.scene_number + "."} ${slide.title}</option>`
             ).join("");
 
-            dotsEl.innerHTML = storyData.scenes.map((_, idx) => 
-                `<button type="button" class="page-dot ${idx === 0 ? 'active' : ''}" onclick="renderScene(${idx})" aria-label="Pájina ${idx + 1}"></button>`
+            dotsEl.innerHTML = renderSlides.map((_, idx) =>
+                `<button type="button" class="page-dot ${idx === 0 ? "active" : ""}" onclick="renderScene(${idx})" aria-label="Pájina ${idx + 1}"></button>`
             ).join("");
         }
 
         function renderScene(index) {
-            if (!storyData || !storyData.scenes || storyData.scenes.length === 0) return;
+            if (!renderSlides || renderSlides.length === 0) return;
 
-            const total = storyData.scenes.length;
+            const total = renderSlides.length;
             currentSceneIndex = Math.max(0, Math.min(total - 1, index));
-            const scene = storyData.scenes[currentSceneIndex];
-            const config = getBookConfig();
+            const slide = renderSlides[currentSceneIndex];
+            const config = getPageConfig();
 
-            const imgEl = document.getElementById("sceneImage");
-            const bgBlurEl = document.getElementById("sceneBgBlur");
-            const fullImgPath = `${config.imageFolder}${scene.image_file}`;
+            const spreadLayout = document.getElementById("bookSpreadLayout");
+            const illusBox = document.getElementById("illustrationBox");
+            const textBlock = document.getElementById("storyTextBlock");
 
-            imgEl.src = fullImgPath;
-            if (bgBlurEl) bgBlurEl.src = fullImgPath;
-            imgEl.alt = scene.title;
-
-            imgEl.onerror = function() {
-                this.onerror = null;
-                const fallbackUrl = `https://placehold.co/800x600/1e3a8a/ffffff?text=Kapitulu+${scene.scene_number}`;
-                this.src = fallbackUrl;
-                if (bgBlurEl) bgBlurEl.src = fallbackUrl;
-            };
-
-            document.getElementById("sceneChapterLabel").innerText = `KAPÍTULU ${scene.scene_number}`;
-            document.getElementById("sceneTitle").innerText = scene.title;
-            document.getElementById("pageIndicatorPill").innerText = `Pájina ${currentSceneIndex + 1} / ${total}`;
             document.getElementById("progressBarFill").style.width = `${((currentSceneIndex + 1) / total) * 100}%`;
 
-            const textBlock = document.getElementById("storyTextBlock");
-            if (currentLangMode === "tet") {
-                textBlock.innerHTML = `<p class="text-tetum">${scene.tetum_translation}</p>`;
-            } else if (currentLangMode === "en") {
-                textBlock.innerHTML = `<p class="text-english solo">${scene.english_text}</p>`;
-            } else {
+            if (slide.isReflection) {
+                // 마지막 슬라이드: 생각 정리 & 생활 적용 카드
+                spreadLayout.classList.add("reflection-mode");
+                illusBox.style.display = "none";
+
+                document.getElementById("sceneChapterLabel").innerText = `REFLEXAUN • PÁJINA ${currentSceneIndex + 1} / ${total}`;
+                document.getElementById("sceneTitle").innerText = "Hanoin no Halo Tuir";
+
+                const ref = slide.reflection;
+                const lessonHtml = currentLangMode === "en"
+                    ? `<p class="text-english solo">📌 <b>Lesson:</b> ${ref.core_lesson_en}</p>`
+                    : currentLangMode === "tet"
+                    ? `<p class="text-tetum">📌 <b>Lisaun:</b> ${ref.core_lesson_tet}</p>`
+                    : `<p class="text-tetum">📌 <b>Lisaun:</b> ${ref.core_lesson_tet}</p><p class="text-english">${ref.core_lesson_en}</p>`;
+
+                const questionHtml = currentLangMode === "en"
+                    ? `<p class="text-english solo" style="font-size:1.1em; font-weight:700;">❓ ${ref.discussion_question_en}</p>`
+                    : currentLangMode === "tet"
+                    ? `<p class="text-tetum" style="font-size:1.15em; font-weight:700;">❓ ${ref.discussion_question_tet}</p>`
+                    : `<p class="text-tetum" style="font-size:1.15em; font-weight:700;">❓ ${ref.discussion_question_tet}</p><p class="text-english">${ref.discussion_question_en}</p>`;
+
                 textBlock.innerHTML = `
-                    <p class="text-tetum">${scene.tetum_translation}</p>
-                    <p class="text-english">${scene.english_text}</p>
+                    <div class="reflection-card-wrap">
+                        <div class="lesson-highlight">${lessonHtml}</div>
+                        <div class="question-highlight">${questionHtml}</div>
+                    </div>
                 `;
+            } else {
+                // 일반 스토리 장면 (좌측 일러스트 + 우측 본문)
+                spreadLayout.classList.remove("reflection-mode");
+                illusBox.style.display = "flex";
+
+                const imgEl = document.getElementById("sceneImage");
+                const bgBlurEl = document.getElementById("sceneBgBlur");
+                const fullImgPath = `${config.imageFolder}${slide.image_file}`;
+
+                imgEl.src = fullImgPath;
+                if (bgBlurEl) bgBlurEl.src = fullImgPath;
+                imgEl.alt = slide.title;
+
+                imgEl.onerror = function() {
+                    this.onerror = null;
+                    const fallbackUrl = `https://placehold.co/800x600/1e3a8a/ffffff?text=Kapitulu+${slide.scene_number}`;
+                    this.src = fallbackUrl;
+                    if (bgBlurEl) bgBlurEl.src = fallbackUrl;
+                };
+
+                document.getElementById("sceneChapterLabel").innerText = `KAPÍTULU ${slide.scene_number}`;
+                document.getElementById("sceneTitle").innerText = slide.title;
+                document.getElementById("pageIndicatorPill").innerText = `Pájina ${currentSceneIndex + 1} / ${total}`;
+
+                if (currentLangMode === "tet") {
+                    textBlock.innerHTML = `<p class="text-tetum">${slide.tetum_translation}</p>`;
+                } else if (currentLangMode === "en") {
+                    textBlock.innerHTML = `<p class="text-english solo">${slide.english_text}</p>`;
+                } else {
+                    textBlock.innerHTML = `
+                        <p class="text-tetum">${slide.tetum_translation}</p>
+                        <p class="text-english">${slide.english_text}</p>
+                    `;
+                }
             }
 
-            // 페이지 전환 시 오른쪽 텍스트 스크롤 위치 초기화
             const contentArea = document.getElementById("storyContentArea");
             if (contentArea) contentArea.scrollTop = 0;
 
@@ -783,8 +1020,7 @@
         }
 
         function onSceneSelectChange() {
-            const idx = Number(document.getElementById("sceneSelect").value);
-            renderScene(idx);
+            renderScene(Number(document.getElementById("sceneSelect").value));
         }
 
         function setLanguageMode(mode) {
@@ -808,10 +1044,181 @@
                 : `<i class="fa-solid fa-moon"></i>`;
         }
 
-        // 키보드 좌우 방향키로 페이지 이동 지원
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(() => {});
+            } else {
+                document.exitFullscreen().catch(() => {});
+            }
+        }
+
+        /* ==========================================================================
+           [A4 워크북 인쇄용 크로스워드 퍼즐 생성 및 조판 로직]
+           ========================================================================== */
+        function generateCrosswordGrid(wordsList) {
+            const cleanWords = wordsList
+                .map((w, idx) => ({
+                    word: (w.word_tet || w.word_en || "").toUpperCase().replace(/[^A-Z]/g, ""),
+                    clue: w.clue_tet || w.clue_en || "",
+                    origIdx: idx + 1
+                }))
+                .filter(w => w.word.length >= 2)
+                .sort((a, b) => b.word.length - a.word.length);
+
+            const size = 14;
+            const grid = Array.from({ length: size }, () => Array(size).fill(null));
+            const placed = [];
+
+            if (cleanWords.length === 0) return { grid, placed, size };
+
+            const first = cleanWords[0];
+            const startCol = Math.max(0, Math.floor((size - first.word.length) / 2));
+            const startRow = Math.floor(size / 2);
+            for (let i = 0; i < first.word.length; i++) {
+                grid[startRow][startCol + i] = first.word[i];
+            }
+            placed.push({ ...first, row: startRow, col: startCol, dir: "across", num: 1 });
+
+            let wordNum = 2;
+            for (let wIdx = 1; wIdx < cleanWords.length; wIdx++) {
+                const current = cleanWords[wIdx];
+                let isPlaced = false;
+
+                for (let r = 0; r < size && !isPlaced; r++) {
+                    for (let c = 0; c < size && !isPlaced; c++) {
+                        const cellChar = grid[r][c];
+                        if (!cellChar) continue;
+
+                        for (let i = 0; i < current.word.length; i++) {
+                            if (current.word[i] === cellChar) {
+                                // 세로 배치 검사
+                                const rStart = r - i;
+                                if (rStart >= 0 && rStart + current.word.length <= size) {
+                                    let ok = true;
+                                    for (let k = 0; k < current.word.length; k++) {
+                                        const existing = grid[rStart + k][c];
+                                        if (existing && existing !== current.word[k]) { ok = false; break; }
+                                        if (!existing) {
+                                            if ((c > 0 && grid[rStart + k][c - 1]) || (c < size - 1 && grid[rStart + k][c + 1])) { ok = false; break; }
+                                        }
+                                    }
+                                    if ((rStart > 0 && grid[rStart - 1][c]) || (rStart + current.word.length < size && grid[rStart + current.word.length][c])) ok = false;
+
+                                    if (ok) {
+                                        for (let k = 0; k < current.word.length; k++) grid[rStart + k][c] = current.word[k];
+                                        placed.push({ ...current, row: rStart, col: c, dir: "down", num: wordNum++ });
+                                        isPlaced = true;
+                                        break;
+                                    }
+                                }
+                                // 가로 배치 검사
+                                const cStart = c - i;
+                                if (!isPlaced && cStart >= 0 && cStart + current.word.length <= size) {
+                                    let ok = true;
+                                    for (let k = 0; k < current.word.length; k++) {
+                                        const existing = grid[r][cStart + k];
+                                        if (existing && existing !== current.word[k]) { ok = false; break; }
+                                        if (!existing) {
+                                            if ((r > 0 && grid[r - 1][cStart + k]) || (r < size - 1 && grid[r + 1][cStart + k])) { ok = false; break; }
+                                        }
+                                    }
+                                    if ((cStart > 0 && grid[r][cStart - 1]) || (cStart + current.word.length < size && grid[r][cStart + current.word.length])) ok = false;
+
+                                    if (ok) {
+                                        for (let k = 0; k < current.word.length; k++) grid[r][cStart + k] = current.word[k];
+                                        placed.push({ ...current, row: r, col: cStart, dir: "across", num: wordNum++ });
+                                        isPlaced = true;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return { grid, placed, size };
+        }
+
+        function buildWorkbookPrintArea(imageFolder) {
+            const wb = storyData.workbook || {};
+            const ref = storyData.reflection || {};
+            const coloringFile = (wb.coloring_page && wb.coloring_page.image_file) || "coloring.jpeg";
+            const coloringPath = `${imageFolder}${coloringFile}`;
+            const { grid, placed, size } = generateCrosswordGrid(wb.crossword_words || []);
+
+            const numMap = {};
+            placed.forEach(p => { numMap[`${p.row},${p.col}`] = p.num; });
+
+            let minR = size, maxR = 0, minC = size, maxC = 0;
+            for (let r = 0; r < size; r++) {
+                for (let c = 0; c < size; c++) {
+                    if (grid[r][c]) {
+                        if (r < minR) minR = r;
+                        if (r > maxR) maxR = r;
+                        if (c < minC) minC = c;
+                        if (c > maxC) maxC = c;
+                    }
+                }
+            }
+
+            let tableHtml = `<table class="cw-table">`;
+            if (placed.length > 0) {
+                for (let r = minR; r <= maxR; r++) {
+                    tableHtml += "<tr>";
+                    for (let c = minC; c <= maxC; c++) {
+                        if (grid[r][c]) {
+                            const num = numMap[`${r},${c}`] ? `<span class="cw-num">${numMap[`${r},${c}`]}</span>` : "";
+                            tableHtml += `<td>${num}</td>`;
+                        } else {
+                            tableHtml += `<td class="empty"></td>`;
+                        }
+                    }
+                    tableHtml += "</tr>";
+                }
+            }
+            tableHtml += "</table>";
+
+            const acrossClues = placed.filter(p => p.dir === "across").map(p => `<div><b>${p.num}.</b> ${p.clue} (${p.word.length})</div>`).join("");
+            const downClues = placed.filter(p => p.dir === "down").map(p => `<div><b>${p.num}.</b> ${p.clue} (${p.word.length})</div>`).join("");
+
+            document.getElementById("print-workbook").innerHTML = `
+                <div class="wb-header">
+                    <div>
+                        <h1>Atividade Eskola Domingu: ${storyData.character_name_tet || storyData.character_name_en}</h1>
+                        <small>${storyData.bible_reference || ""}</small>
+                    </div>
+                    <div class="wb-student-info">Naran: ______________________ &nbsp; Data: ____________</div>
+                </div>
+
+                <div class="wb-grid">
+                    <div class="wb-coloring">
+                        <div style="font-weight:bold; margin-bottom:5px;">🎨 Pinta Imajen (Coloring)</div>
+                        <img src="${coloringPath}" alt="Coloring Page">
+                    </div>
+
+                    <div class="wb-puzzle-area">
+                        <div style="font-weight:bold; text-align:center;">🧩 Liafuan Kruzadu (Crossword)</div>
+                        ${tableHtml}
+                        <div class="clues-box">
+                            <h4>➡️ Husi Karuk ba Loos (Across)</h4>
+                            ${acrossClues || "<div>-</div>"}
+                            <h4>⬇️ Husi Leten ba Kraik (Down)</h4>
+                            ${downClues || "<div>-</div>"}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wb-reflection">
+                    <div style="font-weight:bold;">✍️ Hanoin no Halo Tuir:</div>
+                    <div style="margin-top:4px; font-size:10.5pt;">${ref.discussion_question_tet || ""}</div>
+                    <div class="write-lines"></div>
+                </div>
+            `;
+        }
+
         window.addEventListener("keydown", (e) => {
             if (e.key === "ArrowLeft" && currentSceneIndex > 0) moveScene(-1);
-            if (e.key === "ArrowRight" && storyData && currentSceneIndex < storyData.scenes.length - 1) moveScene(1);
+            if (e.key === "ArrowRight" && renderSlides && currentSceneIndex < renderSlides.length - 1) moveScene(1);
         });
 
         window.addEventListener("DOMContentLoaded", loadStoryBook);

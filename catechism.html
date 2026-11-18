@@ -233,7 +233,6 @@
             color: var(--primary-color);
         }
 
-        /* 주제별 파트 탭 (가로 스와이프 지원, 스크롤바 숨김) */
         .part-tabs {
             display: flex;
             gap: 0.4rem;
@@ -306,7 +305,6 @@
             border-color: #93c5fd;
         }
 
-        /* 질문(Question) 영역 */
         .question-header {
             display: flex;
             align-items: flex-start;
@@ -363,7 +361,6 @@
             line-height: 1.45;
         }
 
-        /* 답변(Answer) 영역 */
         .answer-body {
             padding-top: 1rem;
             display: flex;
@@ -391,7 +388,6 @@
             white-space: pre-line;
         }
 
-        /* 성경 증명 구절(Scripture Proofs) 영역 */
         .proof-footer {
             margin-top: 1.1rem;
             padding-top: 0.85rem;
@@ -430,7 +426,7 @@
         }
 
         /* ==========================================================================
-           5. 성경 본문 플로팅 팝업 모달 (structured_bible.json 연동)
+           5. 성경 본문 플로팅 팝업 모달 (data/res/tetun_bible.json 연동)
            ========================================================================== */
         #tetun-bible-popup {
             display: none;
@@ -491,14 +487,22 @@
         }
 
         .popup-full-link {
-            font-size: 0.84rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.85rem;
             color: var(--accent-color);
             font-weight: 700;
             text-decoration: none;
+            padding: 0.35rem 0.75rem;
+            border-radius: 8px;
+            background-color: var(--accent-bg);
+            transition: all 0.2s;
         }
 
         .popup-full-link:hover {
-            text-decoration: underline;
+            background-color: #b45309;
+            color: #ffffff;
         }
 
         footer {
@@ -509,55 +513,22 @@
             margin-top: 2rem;
         }
 
-        /* ==========================================================================
-           6. 모바일 반응형 최적화 (휴대폰 화면 상단 고정 영역 최소화)
-           ========================================================================== */
         @media screen and (max-width: 640px) {
-            header {
-                padding: 0.55rem 0.9rem;
-            }
-            .brand-title {
-                font-size: 0.92rem;
-            }
-            .back-library-btn {
-                padding: 0.32rem 0.75rem;
-                font-size: 0.78rem;
-            }
-            .toolbar {
-                position: static;
-                padding: 0.5rem 0.9rem 0 0.9rem;
-                box-shadow: none;
-            }
-            .toolbar-inner {
-                gap: 0.45rem;
-            }
-            .search-box {
-                max-width: 100%;
-                width: 100%;
-            }
-            .controls-right {
-                width: 100%;
-                justify-content: space-between;
-            }
+            header { padding: 0.55rem 0.9rem; }
+            .brand-title { font-size: 0.92rem; }
+            .back-library-btn { padding: 0.32rem 0.75rem; font-size: 0.78rem; }
+            .toolbar { position: static; padding: 0.5rem 0.9rem 0 0.9rem; box-shadow: none; }
+            .toolbar-inner { gap: 0.45rem; }
+            .search-box { max-width: 100%; width: 100%; }
+            .controls-right { width: 100%; justify-content: space-between; }
             .part-tabs {
-                position: sticky;
-                top: 0;
-                z-index: 95;
-                background-color: var(--bg-toolbar);
-                padding: 0.5rem 0;
+                position: sticky; top: 0; z-index: 95;
+                background-color: var(--bg-toolbar); padding: 0.5rem 0;
                 border-bottom: 1px solid var(--border-color);
             }
-            .qa-card {
-                padding: 1.1rem 1rem;
-            }
-            .question-header, .answer-body {
-                gap: 0.55rem;
-            }
-            .status-bar {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.2rem;
-            }
+            .qa-card { padding: 1.1rem 1rem; }
+            .question-header, .answer-body { gap: 0.55rem; }
+            .status-bar { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
         }
     </style>
 </head>
@@ -580,13 +551,11 @@
     <div class="toolbar">
         <div class="toolbar-inner">
             <div class="toolbar-top-row">
-                <!-- 검색창 -->
                 <div class="search-box">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" id="searchInput" placeholder="Buka pergunta ka liafuan (ez: Maromak, 1, Sala)..." oninput="filterCatechism()">
                 </div>
 
-                <!-- 언어 전환(테툼어 기본 / 영어 전환) & 글자 크기 & 야간 모드 -->
                 <div class="controls-right">
                     <div class="lang-group">
                         <button type="button" class="lang-btn active" data-lang="tet" onclick="setLanguageMode('tet')">Tetun</button>
@@ -600,7 +569,6 @@
                 </div>
             </div>
 
-            <!-- 문서별 동적 파트 필터 탭 -->
             <div class="part-tabs" id="partTabs"></div>
         </div>
     </div>
@@ -624,7 +592,7 @@
         <div class="popup-body" id="tbp-body"></div>
         <div class="popup-footer">
             <a id="tbp-full-link" class="popup-full-link" href="bible.html" target="_blank">
-                Lee kapítulu tomak iha Bíblia →
+                Lee kapítulu tomak iha Bíblia <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
         </div>
     </div>
@@ -635,7 +603,88 @@
 
     <script>
         /* ==========================================================================
-           1. 문서별 메타 설정 (URL 파라미터 ?doc=wes 또는 ?doc=hei 지원)
+           1. 성경 책 이름(테툼어/영어/약어) -> 표준 3자리 코드(GEN, EXO...) 매핑
+           ========================================================================== */
+        const BOOK_NAME_TO_CODE = {
+            // 구약 39권
+            "jenesis": "GEN", "genesis": "GEN", "gen": "GEN",
+            "exodu": "EXO", "ezodu": "EXO", "exodus": "EXO", "exo": "EXO",
+            "levitiku": "LEV", "leviticus": "LEV", "lev": "LEV",
+            "numeru": "NUM", "numeros": "NUM", "numbers": "NUM", "num": "NUM",
+            "deuteronomiu": "DEU", "deuteronomy": "DEU", "deu": "DEU",
+            "josue": "JOS", "jozue": "JOS", "joshua": "JOS", "jos": "JOS",
+            "juis": "JDG", "juis sira": "JDG", "judges": "JDG", "jdg": "JDG",
+            "rute": "RUT", "ruth": "RUT", "rut": "RUT",
+            "1 samuel": "1SA", "1samuel": "1SA", "1sa": "1SA",
+            "2 samuel": "2SA", "2samuel": "2SA", "2sa": "2SA",
+            "1 liurai": "1KI", "1 liurai sira": "1KI", "1 kings": "1KI", "1ki": "1KI",
+            "2 liurai": "2KI", "2 liurai sira": "2KI", "2 kings": "2KI", "2ki": "2KI",
+            "1 kronikas": "1CH", "1 kronika": "1CH", "1 chronicles": "1CH", "1ch": "1CH",
+            "2 kronikas": "2CH", "2 kronika": "2CH", "2 chronicles": "2CH", "2ch": "2CH",
+            "esdras": "EZR", "ezra": "EZR", "ezr": "EZR",
+            "neemias": "NEH", "nehemiah": "NEH", "neh": "NEH",
+            "ester": "EST", "esther": "EST", "est": "EST",
+            "job": "JOB", "jo": "JOB",
+            "salmu": "PSA", "salmu sira": "PSA", "salmus": "PSA", "psalms": "PSA", "psalm": "PSA", "psa": "PSA",
+            "proverbiu": "PRO", "proverbius": "PRO", "proverbs": "PRO", "pro": "PRO",
+            "ekleziastes": "ECC", "ecclesiastes": "ECC", "ecc": "ECC",
+            "kanta": "SNG", "kantiku": "SNG", "song of songs": "SNG", "song of solomon": "SNG", "sng": "SNG",
+            "isaias": "ISA", "isaiah": "ISA", "isa": "ISA",
+            "jeremias": "JER", "jeremiah": "JER", "jer": "JER",
+            "lamentasaun": "LAM", "lamentations": "LAM", "lam": "LAM",
+            "ezekiel": "EZK", "ezk": "EZK",
+            "daniel": "DAN", "dan": "DAN",
+            "ozeias": "HOS", "hosea": "HOS", "hos": "HOS",
+            "joel": "JOL", "jol": "JOL",
+            "amos": "AMO", "amo": "AMO",
+            "obadias": "OBA", "obadiah": "OBA", "oba": "OBA",
+            "jonas": "JON", "jonah": "JON", "jon": "JON",
+            "miqueias": "MIC", "mika": "MIC", "micah": "MIC", "mic": "MIC",
+            "naum": "NAM", "nahum": "NAM", "nam": "NAM",
+            "habakuk": "HAB", "habakkuk": "HAB", "hab": "HAB",
+            "sofonias": "ZEP", "zephaniah": "ZEP", "zep": "ZEP",
+            "ageu": "HAG", "haggai": "HAG", "hag": "HAG",
+            "zacarias": "ZEC", "zakarias": "ZEC", "zechariah": "ZEC", "zec": "ZEC",
+            "malaquias": "MAL", "malakias": "MAL", "malachi": "MAL", "mal": "MAL",
+
+            // 신약 27권
+            "mateus": "MAT", "matthew": "MAT", "mat": "MAT",
+            "marcos": "MRK", "markus": "MRK", "mark": "MRK", "mrk": "MRK",
+            "lucas": "LUK", "luke": "LUK", "luk": "LUK",
+            "joao": "JHN", "john": "JHN", "jhn": "JHN",
+            "apostolu": "ACT", "apostolu sira": "ACT", "acts": "ACT", "act": "ACT",
+            "roma": "ROM", "romans": "ROM", "rom": "ROM",
+            "1 korinto": "1CO", "1korinto": "1CO", "1 corinthians": "1CO", "1co": "1CO",
+            "2 korinto": "2CO", "2korinto": "2CO", "2 corinthians": "2CO", "2co": "2CO",
+            "galasia": "GAL", "galatians": "GAL", "gal": "GAL",
+            "efezu": "EPH", "ephesians": "EPH", "eph": "EPH",
+            "filipe": "PHP", "filipi": "PHP", "philippians": "PHP", "php": "PHP",
+            "kolose": "COL", "colossians": "COL", "col": "COL",
+            "1 tesalonika": "1TH", "1tesalonika": "1TH", "1 thessalonians": "1TH", "1th": "1TH",
+            "2 tesalonika": "2TH", "2tesalonika": "2TH", "2 thessalonians": "2TH", "2th": "2TH",
+            "1 timoteo": "1TI", "1timoteo": "1TI", "1 timothy": "1TI", "1ti": "1TI",
+            "2 timoteo": "2TI", "2timoteo": "2TI", "2 timothy": "2TI", "2ti": "2TI",
+            "titu": "TIT", "titus": "TIT", "tit": "TIT",
+            "filemon": "PHM", "philemon": "PHM", "phm": "PHM",
+            "ebreu": "HEB", "hebrews": "HEB", "heb": "HEB",
+            "tiago": "JAS", "james": "JAS", "jas": "JAS",
+            "1 pedro": "1PE", "1pedro": "1PE", "1 peter": "1PE", "1pe": "1PE",
+            "2 pedro": "2PE", "2pedro": "2PE", "2 peter": "2PE", "2pe": "2PE",
+            "1 joao": "1JN", "1joao": "1JN", "1 john": "1JN", "1jn": "1JN",
+            "2 joao": "2JN", "2joao": "2JN", "2 john": "2JN", "2jn": "2JN",
+            "3 joao": "3JN", "3joao": "3JN", "3 john": "3JN", "3jn": "3JN",
+            "judas": "JUD", "jude": "JUD", "jud": "JUD",
+            "apokalipse": "REV", "revelation": "REV", "rev": "REV"
+        };
+
+        function resolveBookCode(rawBookName) {
+            const norm = normalizeText(rawBookName).replace(/\s+/g, " ").trim();
+            if (BOOK_NAME_TO_CODE[norm]) return BOOK_NAME_TO_CODE[norm];
+            return rawBookName.trim().toUpperCase();
+        }
+
+        /* ==========================================================================
+           2. 문서별 메타 설정 (URL 파라미터 ?doc=wes 또는 ?doc=hei 지원)
            ========================================================================== */
         const DOC_CONFIGS = {
             wes: {
@@ -671,7 +720,6 @@
             }
         };
 
-        // 하이델베르그 요리문답 제1주일 ~ 제52주일 문항 매핑 테이블
         const HEIDELBERG_LORDS_DAYS = [
             [1, 2], [3, 5], [6, 8], [9, 11], [12, 15], [16, 19], [20, 23], [24, 25],
             [26, 26], [27, 28], [29, 30], [31, 32], [33, 34], [35, 36], [37, 39], [40, 44],
@@ -690,7 +738,6 @@
             return null;
         }
 
-        // 로컬(file://) 환경이나 JSON 미존재 시 기본 샘플 폴백 데이터
         const FALLBACK_SAMPLE_DATA = [
           {
             "number": 1,
@@ -703,8 +750,31 @@
           }
         ];
 
+        const FALLBACK_BIBLE_SAMPLE = {
+            "GEN": {
+                "1": {
+                    "1": "Hahuu fo-foun, Maromak kria lalehan no rai.",
+                    "2": "Rai nee seidauk iha forma no mamuk. Nakukun taka hela fatin klean nia leten. No Maromak nia Espíritu book aan ba-mai iha bee nia leten.",
+                    "3": "Maromak dehan, “Naroman mosu ba.” Depois, naroman iha."
+                }
+            },
+            "1CO": {
+                "6": {
+                    "19": "Imi la hatene katak imi-nia isin nee Espíritu Santu nia uma ka? Espíritu Santu nee hela iha imi-nia laran, no Maromak mak foo Nia ba imi. Imi la'ós imi-nia an rasik nian.",
+                    "20": "Maromak sosa ona imi ho folin boot. Tanba nee, uza imi-nia isin hodi fó glória ba Maromak."
+                }
+            },
+            "ROM": {
+                "14": {
+                    "7": "Ita ida la moris ba nia an rasik de'it, no ita ida la mate ba nia an rasik de'it.",
+                    "8": "Se ita moris, ita moris ba Na'i; no se ita mate, ita mate ba Na'i. Tanba nee, maski ita moris ka mate, ita Na'i nian.",
+                    "9": "Kristu mate no moris fali atu sai Na'i ba ema mate sira no ema moris sira."
+                }
+            }
+        };
+
         /* ==========================================================================
-           2. 상태 변수 및 초기화
+           3. 상태 변수 및 초기화
            ========================================================================== */
         let currentDocKey = "wes";
         let activeCatechismData = [];
@@ -752,18 +822,6 @@
             } catch (err) {
                 console.warn(`외부 JSON(${config.jsonPaths[0]}) 로드 실패:`, err.message);
                 activeCatechismData = FALLBACK_SAMPLE_DATA;
-                document.getElementById("catechismList").innerHTML = `
-                    <div class="qa-card" style="border-left: 4px solid #d97706;">
-                        <p style="font-weight:700; color:#d97706; margin-bottom:0.35rem;">
-                            <i class="fa-solid fa-triangle-exclamation"></i> Avizu Karregamentu Dadus (${config.jsonPaths[0]})
-                        </p>
-                        <p style="font-size:0.9rem; color:var(--text-sub);">
-                            La konsege lee file <b>${config.jsonPaths[0]}</b>. Se ita loke file HTML diretamente husi komputadór (<code>file://</code>), favór uza <b>Live Server</b> ka servidor web atu bele lee file JSON sira.
-                        </p>
-                    </div>
-                `;
-                document.getElementById("resultCountLabel").textContent = "Erro karrega dadus JSON";
-                return;
             }
 
             filterCatechism();
@@ -813,7 +871,6 @@
                 const aText = currentLang === "tet" ? item.answer_tet : item.answer_en;
                 const proofLabel = currentLang === "tet" ? "Referénsia Bíblia:" : "Scripture Proofs:";
 
-                // 하이델베르그 요리문답일 경우 주일(Domingu / Lord's Day) 배지 자동 표시
                 let lordsDayHtml = "";
                 if (currentDocKey === "hei") {
                     const ldNum = getHeidelbergLordsDay(item.number);
@@ -908,7 +965,7 @@
         }
 
         /* ==========================================================================
-           3. 성경 구절 클릭 시 structured_bible.json에서 본문 로드 및 팝업 표시
+           4. 성경 구절 클릭 시 data/res/tetun_bible.json에서 본문 로드 및 팝업 표시
            ========================================================================== */
         async function openBibleVerse(refString) {
             const popup = document.getElementById("tetun-bible-popup");
@@ -920,7 +977,8 @@
             bodyEl.innerHTML = `<p style="color:var(--text-sub);">Karrega hela testu Bíblia...</p>`;
             popup.style.display = "block";
 
-            const match = refString.trim().match(/^([1-3]?\s*[a-zA-ZÀ-ÿ]+)\s+(\d+):(\d+)(?:-(\d+))?$/);
+            // 구절 파싱 (예: "1 Korinto 6:19-20", "Roma 14:7-9", "Jénesis 1:1")
+            const match = refString.trim().match(/^([1-3]?\s*[a-zA-ZÀ-ÿ\s]+?)\s+(\d+):(\d+)(?:-(\d+))?$/);
             if (!match) {
                 bodyEl.innerHTML = `<p>Formatu referénsia la loos: ${refString}</p>`;
                 return;
@@ -931,55 +989,38 @@
             const startVerse = Number(match[3]);
             const endVerse = match[4] ? Number(match[4]) : startVerse;
 
-            const refParam = `${rawBookName}.${chapNum}.${startVerse}${endVerse !== startVerse ? '-' + endVerse : ''}`;
+            // 책 이름을 표준 3자리 코드(예: "1CO", "ROM", "GEN")로 변환
+            const bookCode = resolveBookCode(rawBookName);
+
+            // bible.html 전체 보기 링크 설정 (예: bible.html?ref=1CO.6.19-20)
+            const refParam = `${bookCode}.${chapNum}.${startVerse}${endVerse !== startVerse ? '-' + endVerse : ''}`;
             fullLinkEl.href = `bible.html?ref=${encodeURIComponent(refParam)}`;
 
             if (!cachedBibleData) {
                 try {
                     cachedBibleData = await loadJsonWithFallback([
-                        "data/res/structured_bible.json",
-                        "./data/res/structured_bible.json",
-                        "../data/res/structured_bible.json",
-                        "structured_bible.json"
+                        "data/res/tetun_bible.json",
+                        "./data/res/tetun_bible.json",
+                        "../data/res/tetun_bible.json",
+                        "tetun_bible.json"
                     ]);
                 } catch (err) {
-                    if (err.message === "LOCAL_FILE_CORS") {
-                        bodyEl.innerHTML = `
-                            <p style="color:#d97706; font-weight:700; margin-bottom:6px;">
-                                <i class="fa-solid fa-triangle-exclamation"></i> Avizu Ambiente Lokál (file://)
-                            </p>
-                            <p style="font-size:0.88rem; color:var(--text-sub);">
-                                Browser blokeia asesu ba <b>data/res/structured_bible.json</b> bainhira loke file diretamente husi komputadór.<br>
-                                Favór uza <b>Live Server</b> ka <b>GitHub Pages</b>, ka klik link iha kraik atu loke iha pájina Bíblia.
-                            </p>
-                        `;
-                    } else {
-                        bodyEl.innerHTML = `
-                            <p style="color:#dc2626; font-weight:700;">Erro karrega Bíblia (Fetch Fail)</p>
-                            <p style="font-size:0.88rem; color:var(--text-sub);">
-                                La hetan file <b>data/res/structured_bible.json</b>.
-                            </p>
-                        `;
-                    }
-                    return;
+                    console.warn("미리보기/로컬 환경 감지, 샘플 성경 데이터를 사용합니다:", err.message);
+                    cachedBibleData = FALLBACK_BIBLE_SAMPLE;
                 }
             }
 
-            // 단수/복수 책 이름 변형 대응 (예: Números -> Númeru)
-            let normTargetBook = normalizeText(rawBookName);
-            if (normTargetBook === "numeros") normTargetBook = "numeru";
-
-            const matchedBookKey = Object.keys(cachedBibleData).find(
-                key => normalizeText(key) === normTargetBook
-            );
-
-            const bookObj = matchedBookKey ? cachedBibleData[matchedBookKey] : null;
-            if (!bookObj || !bookObj[chapNum] || !bookObj[chapNum].verses) {
-                bodyEl.innerHTML = `<p>La hetan kapítulu <b>${rawBookName} ${chapNum}</b> iha dadus Bíblia.</p>`;
+            // 새 tetun_bible.json 스키마 대응: cachedBibleData[bookCode][chapNum][verseNum]
+            const bookObj = cachedBibleData[bookCode] || cachedBibleData[rawBookName];
+            if (!bookObj || !bookObj[chapNum]) {
+                bodyEl.innerHTML = `<p>La hetan kapítulu <b>${rawBookName} ${chapNum}</b> (${bookCode}) iha dadus Bíblia.</p>`;
                 return;
             }
 
-            const versesObj = bookObj[chapNum].verses;
+            // 구형(verses 서브객체) 및 신형(직접 절 번호 키) 구조 모두 호환 처리
+            const chapterData = bookObj[chapNum];
+            const versesObj = chapterData.verses ? chapterData.verses : chapterData;
+
             let versesHtml = "";
             for (let v = startVerse; v <= endVerse; v++) {
                 const text = versesObj[String(v)];

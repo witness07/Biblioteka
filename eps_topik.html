@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="tet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPS-TOPIK Vocabuláriu (Koreanu - Tetun)</title>
+  <!-- Tailwind CSS 로드 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Noto Sans KR -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans KR', sans-serif;
+      background-color: #f8fafc;
+      -webkit-tap-highlight-color: transparent;
+    }
+    /* 플래시카드 3D 플립 애니메이션 */
+    .perspective {
+      perspective: 1000px;
+    }
+    .preserve-3d {
+      transform-style: preserve-3d;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+    }
+    /* 가로 스크롤바 숨김 (카테고리 칩용) */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="text-slate-800 min-h-screen flex flex-col">
+
+  <!-- 상단 헤더 (기존 index.html로 돌아가기 및 진도율 표시) -->
+  <header class="bg-blue-700 text-white shadow-md sticky top-0 z-30">
+    <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <!-- 기존 index.html로 복귀하는 버튼 -->
+        <a href="index.html" class="p-2 rounded-lg bg-blue-800 hover:bg-blue-600 transition flex items-center gap-1 text-sm font-medium" title="Fila ba Lista Livru">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          <span>Biblioteka</span>
+        </a>
+        <div>
+          <h1 class="font-bold text-base sm:text-lg leading-tight">EPS-TOPIK Vocabuláriu</h1>
+          <p class="text-xs text-blue-200">Koreanu 🇰🇷 ↔ Tetun 🇹🇱</p>
+        </div>
+      </div>
+      <!-- 암기 완료 카운터 -->
+      <div class="text-right">
+        <div class="text-xs text-blue-200">Hatene ona (암기)</div>
+        <div class="font-bold text-sm sm:text-base"><span id="masteredCount">0</span> / <span id="totalCount">0</span></div>
+      </div>
+    </div>
+
+    <!-- 전체 학습 진도 바 -->
+    <div class="w-full bg-blue-900 h-1.5">
+      <div id="progressBar" class="bg-emerald-400 h-1.5 transition-all duration-300" style="width: 0%"></div>
+    </div>
+  </header>
+
+  <!-- 메인 탭 네비게이션 -->
+  <nav class="bg-white border-b border-slate-200 sticky top-[62px] z-20">
+    <div class="max-w-3xl mx-auto flex">
+      <button onclick="switchTab('list')" id="tab-list" class="flex-1 py-3 text-sm font-semibold text-blue-700 border-b-2 border-blue-700 transition">
+        📖 Lista (단어목록)
+      </button>
+      <button onclick="switchTab('card')" id="tab-card" class="flex-1 py-3 text-sm font-semibold text-slate-500 hover:text-slate-700 border-b-2 border-transparent transition">
+        🗂️ Kartaun (카드학습)
+      </button>
+      <button onclick="switchTab('quiz')" id="tab-quiz" class="flex-1 py-3 text-sm font-semibold text-slate-500 hover:text-slate-700 border-b-2 border-transparent transition">
+        ✍️ Ezame (모의퀴즈)
+      </button>
+    </div>
+  </nav>
+
+  <!-- 검색 및 카테고리 필터 영역 (목록 & 카드 모드 공통) -->
+  <section id="filterSection" class="max-w-3xl w-full mx-auto px-4 pt-4 pb-2 space-y-3">
+    <!-- 검색창 & 필터 토글 -->
+    <div class="flex gap-2">
+      <div class="relative flex-1">
+        <input type="text" id="searchInput" oninput="applyFilters()" placeholder="Buka palavra (한국어, Tetun, 발음)..." 
+               class="w-full pl-9 pr-4 py-2.5 bg-white border border-slate-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm">
+        <svg class="w-4 h-4 text-slate-400 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+      </div>
+      <button onclick="toggleOnlyUnmastered()" id="btnUnmastered" class="px-3 py-2 bg-white border border-slate-300 rounded-xl text-xs font-medium text-slate-600 hover:bg-slate-50 shadow-sm whitespace-nowrap transition">
+        Seidauk hatene (미암기만)
+      </button>
+    </div>
+
+    <!-- 가로 스크롤 카테고리 칩 -->
+    <div id="categoryContainer" class="flex gap-2 overflow-x-auto no-scrollbar pb-1">
+      <!-- 자바스크립트로 카테고리 버튼 동적 생성 -->
+    </div>
+  </section>
+
+  <!-- 메인 콘텐츠 영역 -->
+  <main class="max-w-3xl w-full mx-auto px-4 py-3 flex-1">
+    
+    <!-- 1. 단어 목록 뷰 (List View) -->
+    <div id="view-list" class="space-y-3 pb-10">
+      <div id="wordListContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <!-- 단어 카드들이 여기에 렌더링됩니다 -->
+      </div>
+      <!-- 더 보기 버튼 (967개 전체 단어 탐색용) -->
+      <div id="loadMoreContainer" class="hidden pt-4 text-center">
+        <button onclick="loadMoreWords()" class="px-6 py-2.5 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-semibold text-sm rounded-xl shadow-sm transition">
+          Haree liután (더 보기) +<span id="remainingCount">0</span>
+        </button>
+      </div>
+      <div id="emptyState" class="hidden text-center py-12 text-slate-400">
+        <p class="text-base font-medium">La hetan palavra (검색 결과가 없습니다)</p>
+      </div>
+    </div>
+
+    <!-- 2. 플래시카드 뷰 (Flashcard View) -->
+    <div id="view-card" class="hidden flex flex-col items-center justify-center py-4">
+      <div class="w-full max-w-md">
+        <div class="flex justify-between items-center text-xs text-slate-500 mb-2 px-1">
+          <span id="cardCategoryBadge" class="bg-blue-100 text-blue-800 px-2.5 py-1 rounded-full font-medium">Kategori</span>
+          <span id="cardCounter">1 / 10</span>
+        </div>
+
+        <!-- 카드 본체 (클릭 시 뒤집힘) -->
+        <div onclick="flipCard()" class="perspective w-full h-72 cursor-pointer select-none">
+          <div id="flashcardInner" class="preserve-3d relative w-full h-full">
+            <!-- 앞면: 한국어 -->
+            <div class="backface-hidden absolute inset-0 bg-white rounded-2xl shadow-md border border-slate-200 p-6 flex flex-col items-center justify-center text-center">
+              <span class="text-xs text-slate-400 uppercase tracking-wider mb-3">Koreanu (한국어)</span>
+              <h2 id="cardKorean" class="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">안녕하세요</h2>
+              <p id="cardPron" class="text-base text-blue-600 font-medium mb-6">An-nyeong-ha-se-yo</p>
+              
+              <!-- 발음 듣기 버튼 (이벤트 전파 중단) -->
+              <button onclick="event.stopPropagation(); speakCurrentCard()" class="px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-full text-sm font-medium flex items-center gap-2 transition">
+                <span>🔊</span> <span>Rona Lian (듣기)</span>
+              </button>
+              <span class="text-xs text-slate-400 mt-6">Kube kartaun hodi haree tradusaun (터치하여 뜻 보기)</span>
+            </div>
+
+            <!-- 뒷면: 테툼어 뜻 -->
+            <div class="backface-hidden rotate-y-180 absolute inset-0 bg-blue-50 rounded-2xl shadow-md border-2 border-blue-300 p-6 flex flex-col items-center justify-center text-center">
+              <span class="text-xs text-blue-600 uppercase tracking-wider mb-2">Tradusaun Tetun</span>
+              <h3 id="cardTetum" class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">Bondia / Botarde</h3>
+              <p id="cardKoreanSub" class="text-sm text-slate-500">안녕하세요 (An-nyeong-ha-se-yo)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 카드 컨트롤 버튼 -->
+        <div class="flex items-center justify-between gap-3 mt-6">
+          <button onclick="prevCard()" class="flex-1 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 shadow-sm transition">
+            ← Kotuk (이전)
+          </button>
+          <button onclick="toggleCurrentCardMastered()" id="btnCardMaster" class="flex-1 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-semibold shadow-sm transition">
+            ✓ Hatene ona
+          </button>
+          <button onclick="nextCard()" class="flex-1 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold shadow-sm transition">
+            Tuirmai (다음) →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. EPS-TOPIK 모의 퀴즈 뷰 (Quiz View) -->
+    <div id="view-quiz" class="hidden max-w-md mx-auto py-4">
+      <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-6">
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-xs font-bold text-blue-700 bg-blue-100 px-2.5 py-1 rounded-full">Teste EPS-TOPIK</span>
+          <span class="text-sm font-semibold text-slate-600">Pontus: <span id="quizScore" class="text-blue-600">0</span></span>
+        </div>
+
+        <div class="text-center py-6 bg-slate-50 rounded-xl mb-5 border border-slate-100">
+          <p class="text-xs text-slate-500 mb-1">Saida mak signifikadu husi palavra ne'e?</p>
+          <h2 id="quizQuestion" class="text-3xl font-bold text-slate-900 mb-2">안전모</h2>
+          <button onclick="speakQuizWord()" class="text-xs text-blue-600 hover:underline font-medium">
+            🔊 Rona pronúnsia (발음 듣기)
+          </button>
+        </div>
+
+        <!-- 4지선다 보기 -->
+        <div id="quizOptions" class="space-y-2.5">
+          <!-- 자바스크립트로 보기 4개 생성 -->
+        </div>
+
+        <!-- 피드백 및 다음 문제 버튼 -->
+        <div id="quizFeedback" class="hidden mt-4 p-3 rounded-xl text-center text-sm font-medium"></div>
+        <button id="btnNextQuiz" onclick="generateQuiz()" class="hidden w-full mt-4 py-3 bg-blue-700 hover:bg-blue-800 text-white rounded-xl font-semibold shadow transition">
+          Pergunta Tuirmai (다음 문제) →
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- 토스트 알림 메시지 (alert 대체) -->
+  <div id="toastMsg" class="fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white text-xs px-4 py-2.5 rounded-full shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 z-50">
+    Mensajen
+  </div>
+
+  <script>
+    // ==========================================
+    // 1. 전역 상태 및 데이터 초기화
+    // ==========================================
+    let allWords = [];
+    let filteredWords = [];
+    let selectedCategory = 'ALL';
+    let onlyUnmastered = false;
+    let currentCardIndex = 0;
+    let visibleLimit = 60; // 초기 렌더링 개수 (모바일 성능 최적화)
+    let currentQuizWord = null;
+    let quizScore = 0;
+    let quizAnswered = false;
+
+    // 로컬 스토리지에서 암기 완료된 단어 ID 목록 불러오기
+    const STORAGE_KEY = 'eps_tetun_mastered_ids';
+    let masteredIds = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+
+    // 홈 루트의 /data/res/ 폴더 내 JSON 경로 후보군 (파일명에 상관없이 자동 탐색)
+    const JSON_CANDIDATE_PATHS = [
+      '/data/res/kor_tetun.json',
+      './data/res/kor_tetun.json',
+      '/data/res/kor_tetun_2.json',
+      './data/res/kor_tetun_2.json'
+    ];
+
+    // JSON 로드 실패 시(예: 로컬 파일 직접 실행 시) 대비 기본 샘플 데이터
+    const FALLBACK_DATA = [
+      {"id": 1, "category": "Kumprimentus (인사)", "korean": "안녕하세요", "pronunciation": "An-nyeong-ha-se-yo", "tetum": "Bondia / Botarde / Bonite"},
+      {"id": 2, "category": "Kumprimentus (인사)", "korean": "감사합니다", "pronunciation": "Gam-sa-ham-ni-da", "tetum": "Obrigadu / Obrigada"},
+      {"id": 11, "category": "Servisu (직장)", "korean": "공장", "pronunciation": "Gong-jang", "tetum": "Fábrika"},
+      {"id": 23, "category": "Seguransa (안전)", "korean": "안전모", "pronunciation": "An-jeon-mo", "tetum": "Kapasete seguransa"},
+      {"id": 24, "category": "Seguransa (안전)", "korean": "안전화", "pronunciation": "An-jeon-hwa", "tetum": "Sapatu seguransa"},
+      {"id": 31, "category": "Ferramenta (공구)", "korean": "망치", "pronunciation": "Mang-chi", "tetum": "Martelu"}
+    ];
+
+    // 페이지 로드 시 /data/res/ 폴더에서 JSON 데이터 가져오기
+    window.addEventListener('DOMContentLoaded', async () => {
+      let loadedData = null;
+
+      for (const path of JSON_CANDIDATE_PATHS) {
+        try {
+          const response = await fetch(path);
+          if (response.ok) {
+            loadedData = await response.json();
+            console.log(`✅ 데이터 로드 성공: ${path}`);
+            break;
+          }
+        } catch (err) {
+          // 다음 후보 경로 시도
+        }
+      }
+
+      if (loadedData && Array.isArray(loadedData)) {
+        // 중복 제거 및 정제 (안전장치)
+        const uniqueMap = new Map();
+        loadedData.forEach(item => {
+          if (!uniqueMap.has(item.korean)) {
+            uniqueMap.set(item.korean, item);
+          }
+        });
+        allWords = Array.from(uniqueMap.values());
+      } else {
+        console.warn('/data/res/ 경로에서 JSON 파일을 불러올 수 없어 내장 샘플 데이터를 사용합니다.');
+        allWords = FALLBACK_DATA;
+        showToast('Modu ezemplu (서버 환경 /data/res/ 에서 전체 단어가 로드됩니다)');
+      }
+
+      initCategories();
+      updateProgressUI();
+      applyFilters();
+      generateQuiz();
+    });
+
+    // ==========================================
+    // 2. 카테고리 및 필터링 로직
+    // ==========================================
+    function initCategories() {
+      const container = document.getElementById('categoryContainer');
+      const categories = ['ALL', ...new Set(allWords.map(w => w.category))];
+      
+      container.innerHTML = categories.map(cat => {
+        const label = cat === 'ALL' ? `Hotu-hotu (${allWords.length})` : cat.split(' (')[0];
+        const isActive = cat === selectedCategory;
+        return `
+          <button onclick="selectCategory('${cat.replace(/'/g, "\\'")}')" 
+                  class="cat-btn px-3.5 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition ${
+                    isActive 
+                      ? 'bg-blue-700 text-white shadow-sm' 
+                      : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-100'
+                  }" data-cat="${cat}">
+            ${label}
+          </button>
+        `;
+      }).join('');
+    }
+
+    function selectCategory(cat) {
+      selectedCategory = cat;
+      // 버튼 스타일 업데이트
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        if (btn.dataset.cat === cat) {
+          btn.className = 'cat-btn px-3.5 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-blue-700 text-white shadow-sm';
+        } else {
+          btn.className = 'cat-btn px-3.5 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition bg-white text-slate-600 border border-slate-200 hover:bg-slate-100';
+        }
+      });
+      applyFilters();
+    }
+
+    function toggleOnlyUnmastered() {
+      onlyUnmastered = !onlyUnmastered;
+      const btn = document.getElementById('btnUnmastered');
+      if (onlyUnmastered) {
+        btn.classList.add('bg-amber-100', 'border-amber-400', 'text-amber-800');
+        btn.classList.remove('bg-white', 'border-slate-300', 'text-slate-600');
+      } else {
+        btn.classList.remove('bg-amber-100', 'border-amber-400', 'text-amber-800');
+        btn.classList.add('bg-white', 'border-slate-300', 'text-slate-600');
+      }
+      applyFilters();
+    }
+
+    function applyFilters() {
+      const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
+      
+      filteredWords = allWords.filter(word => {
+        const matchCat = selectedCategory === 'ALL' || word.category === selectedCategory;
+        const matchMaster = !onlyUnmastered || !masteredIds.has(word.id);
+        const matchKeyword = !keyword || 
+          word.korean.toLowerCase().includes(keyword) ||
+          word.tetum.toLowerCase().includes(keyword) ||
+          word.pronunciation.toLowerCase().includes(keyword);
+        return matchCat && matchMaster && matchKeyword;
+      });
+
+      currentCardIndex = 0;
+      visibleLimit = 60; // 필터 변경 시 표시 개수 초기화
+      renderWordList();
+      renderFlashcard();
+    }
+
+    function loadMoreWords() {
+      visibleLimit += 60;
+      renderWordList();
+    }
+
+    // ==========================================
+    // 3. 단어 목록 렌더링 & 암기 체크
+    // ==========================================
+    function renderWordList() {
+      const container = document.getElementById('wordListContainer');
+      const emptyState = document.getElementById('emptyState');
+      const loadMoreContainer = document.getElementById('loadMoreContainer');
+
+      if (filteredWords.length === 0) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        loadMoreContainer.classList.add('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      const displayWords = filteredWords.slice(0, visibleLimit);
+
+      // 남은 단어가 있을 경우 '더 보기' 버튼 표시
+      if (filteredWords.length > visibleLimit) {
+        loadMoreContainer.classList.remove('hidden');
+        document.getElementById('remainingCount').textContent = filteredWords.length - visibleLimit;
+      } else {
+        loadMoreContainer.classList.add('hidden');
+      }
+
+      container.innerHTML = displayWords.map(word => {
+        const isMastered = masteredIds.has(word.id);
+        return `
+          <div class="bg-white rounded-xl p-4 shadow-sm border ${isMastered ? 'border-emerald-300 bg-emerald-50/30' : 'border-slate-200'} flex flex-col justify-between transition">
+            <div>
+              <div class="flex justify-between items-start gap-2 mb-1.5">
+                <span class="text-[11px] font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">${word.category}</span>
+                <button onclick="toggleMastered(${word.id})" class="text-xs px-2.5 py-1 rounded-full font-medium transition ${
+                  isMastered 
+                    ? 'bg-emerald-100 text-emerald-700' 
+                    : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
+                }">
+                  ${isMastered ? '✓ Hatene ona' : 'Marka'}
+                </button>
+              </div>
+              
+              <div class="flex items-center justify-between mt-1">
+                <div>
+                  <h3 class="text-xl font-bold text-slate-900">${word.korean}</h3>
+                  <p class="text-xs text-blue-600 font-medium">${word.pronunciation}</p>
+                </div>
+                <button onclick="speakKorean('${word.korean.replace(/'/g, "\\'")}')" 
+                        class="w-10 h-10 rounded-full bg-blue-50 hover:bg-blue-100 text-blue-600 flex items-center justify-center transition shrink-0" 
+                        title="Rona Lian">
+                  🔊
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-3 pt-2.5 border-t border-slate-100">
+              <p class="text-sm font-semibold text-slate-800">${word.tetum}</p>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function toggleMastered(id) {
+      if (masteredIds.has(id)) {
+        masteredIds.delete(id);
+      } else {
+        masteredIds.add(id);
+        showToast('Parabéns! Marka nu\'udar hatene ona ✓');
+      }
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...masteredIds]));
+      updateProgressUI();
+      renderWordList();
+      renderFlashcard();
+    }
+
+    function updateProgressUI() {
+      const total = allWords.length;
+      const mastered = masteredIds.size;
+      document.getElementById('totalCount').textContent = total;
+      document.getElementById('masteredCount').textContent = mastered;
+      const pct = total > 0 ? Math.round((mastered / total) * 100) : 0;
+      document.getElementById('progressBar').style.width = `${pct}%`;
+    }
+
+    // ==========================================
+    // 4. 플래시카드 모드 제어
+    // ==========================================
+    function renderFlashcard() {
+      const inner = document.getElementById('flashcardInner');
+      inner.classList.remove('rotate-y-180'); // 앞면으로 초기화
+
+      if (filteredWords.length === 0) {
+        document.getElementById('cardKorean').textContent = 'La iha palavra';
+        document.getElementById('cardPron').textContent = '-';
+        document.getElementById('cardTetum').textContent = '-';
+        document.getElementById('cardCounter').textContent = '0 / 0';
+        return;
+      }
+
+      if (currentCardIndex >= filteredWords.length) currentCardIndex = 0;
+      const word = filteredWords[currentCardIndex];
+
+      document.getElementById('cardCategoryBadge').textContent = word.category;
+      document.getElementById('cardCounter').textContent = `${currentCardIndex + 1} / ${filteredWords.length}`;
+      document.getElementById('cardKorean').textContent = word.korean;
+      document.getElementById('cardPron').textContent = word.pronunciation;
+      document.getElementById('cardTetum').textContent = word.tetum;
+      document.getElementById('cardKoreanSub').textContent = `${word.korean} (${word.pronunciation})`;
+
+      const isMastered = masteredIds.has(word.id);
+      const btnMaster = document.getElementById('btnCardMaster');
+      if (isMastered) {
+        btnMaster.textContent = '✓ Hatene ona';
+        btnMaster.className = 'flex-1 py-3 bg-emerald-100 text-emerald-800 border border-emerald-300 rounded-xl font-semibold shadow-sm transition';
+      } else {
+        btnMaster.textContent = 'Marka Hatene';
+        btnMaster.className = 'flex-1 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-semibold shadow-sm transition';
+      }
+    }
+
+    function flipCard() {
+      document.getElementById('flashcardInner').classList.toggle('rotate-y-180');
+    }
+
+    function nextCard() {
+      if (filteredWords.length === 0) return;
+      currentCardIndex = (currentCardIndex + 1) % filteredWords.length;
+      renderFlashcard();
+    }
+
+    function prevCard() {
+      if (filteredWords.length === 0) return;
+      currentCardIndex = (currentCardIndex - 1 + filteredWords.length) % filteredWords.length;
+      renderFlashcard();
+    }
+
+    function toggleCurrentCardMastered() {
+      if (filteredWords.length === 0) return;
+      toggleMastered(filteredWords[currentCardIndex].id);
+    }
+
+    function speakCurrentCard() {
+      if (filteredWords.length === 0) return;
+      speakKorean(filteredWords[currentCardIndex].korean);
+    }
+
+    // ==========================================
+    // 5. EPS-TOPIK 모의 퀴즈 로직
+    // ==========================================
+    function generateQuiz() {
+      if (allWords.length < 4) return;
+      quizAnswered = false;
+      document.getElementById('quizFeedback').classList.add('hidden');
+      document.getElementById('btnNextQuiz').classList.add('hidden');
+
+      // 현재 선택된 카테고리가 있으면 해당 카테고리 우선 출제, 없으면 전체에서 출제
+      const pool = filteredWords.length >= 4 ? filteredWords : allWords;
+      const correctWord = pool[Math.floor(Math.random() * pool.length)];
+      currentQuizWord = correctWord;
+
+      document.getElementById('quizQuestion').textContent = correctWord.korean;
+
+      // 오답 3개 무작위 추출
+      const distractors = [];
+      while (distractors.length < 3) {
+        const candidate = allWords[Math.floor(Math.random() * allWords.length)];
+        if (candidate.id !== correctWord.id && !distractors.some(d => d.id === candidate.id)) {
+          distractors.push(candidate);
+        }
+      }
+
+      // 보기 셔플
+      const options = [correctWord, ...distractors].sort(() => Math.random() - 0.5);
+      const optionsContainer = document.getElementById('quizOptions');
+
+      optionsContainer.innerHTML = options.map((opt, idx) => `
+        <button onclick="checkQuizAnswer(${opt.id}, this)" 
+                class="quiz-opt-btn w-full text-left p-3.5 rounded-xl border border-slate-200 hover:border-blue-400 hover:bg-blue-50/50 font-medium text-sm transition flex items-center gap-3">
+          <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 text-xs font-bold flex items-center justify-center shrink-0">${idx + 1}</span>
+          <span>${opt.tetum}</span>
+        </button>
+      `).join('');
+    }
+
+    function checkQuizAnswer(selectedId, btnElement) {
+      if (quizAnswered) return;
+      quizAnswered = true;
+
+      const isCorrect = selectedId === currentQuizWord.id;
+      const feedbackEl = document.getElementById('quizFeedback');
+      const allBtns = document.querySelectorAll('.quiz-opt-btn');
+
+      allBtns.forEach(btn => btn.disabled = true);
+
+      if (isCorrect) {
+        quizScore += 10;
+        document.getElementById('quizScore').textContent = quizScore;
+        btnElement.classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-900');
+        feedbackEl.textContent = `Loos duni! (${currentQuizWord.pronunciation}) 🎉`;
+        feedbackEl.className = 'mt-4 p-3 rounded-xl text-center text-sm font-semibold bg-emerald-100 text-emerald-800';
+      } else {
+        btnElement.classList.add('bg-rose-100', 'border-rose-500', 'text-rose-900');
+        feedbackEl.textContent = `Sala! Resposta loos: "${currentQuizWord.tetum}" (${currentQuizWord.pronunciation})`;
+        feedbackEl.className = 'mt-4 p-3 rounded-xl text-center text-sm font-semibold bg-rose-100 text-rose-800';
+      }
+
+      speakKorean(currentQuizWord.korean);
+      feedbackEl.classList.remove('hidden');
+      document.getElementById('btnNextQuiz').classList.remove('hidden');
+    }
+
+    function speakQuizWord() {
+      if (currentQuizWord) speakKorean(currentQuizWord.korean);
+    }
+
+    // ==========================================
+    // 6. 한국어 음성 합성 (Web Speech API - 데이터 소모 0)
+    // ==========================================
+    function speakKorean(text) {
+      if (!('speechSynthesis' in window)) {
+        showToast('Browser la suporta lian (음성 미지원 브라우저)');
+        return;
+      }
+      // 괄호 안의 부가 설명 제거 후 발음 (예: "일 (1)" -> "일")
+      const cleanText = text.replace(/\(.*?\)/g, '').trim();
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.lang = 'ko-KR';
+      utterance.rate = 0.85; // 학습자를 위해 약간 천천히 또박또박 발음
+      window.speechSynthesis.speak(utterance);
+    }
+
+    // ==========================================
+    // 7. 탭 전환 및 유틸리티
+    // ==========================================
+    function switchTab(tabName) {
+      ['list', 'card', 'quiz'].forEach(t => {
+        const view = document.getElementById(`view-${t}`);
+        const btn = document.getElementById(`tab-${t}`);
+        if (t === tabName) {
+          view.classList.remove('hidden');
+          btn.className = 'flex-1 py-3 text-sm font-semibold text-blue-700 border-b-2 border-blue-700 transition';
+        } else {
+          view.classList.add('hidden');
+          btn.className = 'flex-1 py-3 text-sm font-semibold text-slate-500 hover:text-slate-700 border-b-2 border-transparent transition';
+        }
+      });
+
+      // 퀴즈 탭에서는 검색창 숨김
+      const filterSec = document.getElementById('filterSection');
+      if (tabName === 'quiz') {
+        filterSec.classList.add('hidden');
+        generateQuiz();
+      } else {
+        filterSec.classList.remove('hidden');
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastMsg');
+      toast.textContent = msg;
+      toast.classList.remove('opacity-0');
+      setTimeout(() => {
+        toast.classList.add('opacity-0');
+      }, 2500);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="tet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bíblia Tetun - Tekstu no Peskiza</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .verse-highlight {
+            background-color: #fef3c7;
+            border-left: 3px solid #d97706;
+            padding-left: 8px;
+        }
+
+        /* 기본(휴대폰 767px 이하): 위 테툼어 / 아래 영어 NLT 한 절씩 세로 배치 */
+        .parallel-verse-row {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+            padding: 0.65rem 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .parallel-eng {
+            color: #64748b;
+            font-size: 0.92em;
+            padding-left: 0.75rem;
+            border-left: 2px solid #fde68a;
+        }
+
+        /* 태블릿 및 컴퓨터(768px 이상): 왼쪽 테툼어 / 오른쪽 영어 NLT 좌우 2단 분할 */
+        @media (min-width: 768px) {
+            .parallel-verse-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+                align-items: start;
+            }
+            .parallel-eng {
+                padding-left: 1.5rem;
+                border-left: 1px solid #e2e8f0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <!-- 상단 네비게이션 및 검색 헤더 -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-10 shadow-sm">
+        <div id="headerInner" class="max-w-4xl mx-auto px-4 py-3 flex flex-col sm:flex-row gap-3 justify-between items-center transition-all duration-300">
+            
+            <!-- 책 및 장 선택 컨트롤 -->
+            <div class="flex flex-wrap items-center gap-2 w-full sm:w-auto">
+                <select id="testamentSelect" class="border border-slate-300 rounded px-2 py-1.5 text-sm bg-white">
+                    <option value="ALL">Hotu-hotu</option>
+                    <option value="OT">Testamentu Tuan</option>
+                    <option value="NT">Testamentu Foun</option>
+                </select>
+                <select id="bookSelect" class="border border-slate-300 rounded px-2 py-1.5 text-sm bg-white font-semibold"></select>
+                <select id="chapterSelect" class="border border-slate-300 rounded px-2 py-1.5 text-sm bg-white"></select>
+            </div>
+
+            <!-- 검색 영역 -->
+            <div class="bible-search-container flex items-center gap-1.5 w-full sm:w-auto">
+                <input type="text" id="searchInput" placeholder="단어 검색 (예: Maromak, Domin)..." 
+                       class="border border-slate-300 rounded px-3 py-1.5 text-sm w-full sm:w-56 focus:outline-none focus:border-amber-500">
+                <button id="searchBtn" class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-1.5 rounded text-sm font-medium transition">
+                    검색
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- 메인 컨텐츠 영역 -->
+    <main id="mainContainer" class="max-w-4xl mx-auto px-4 py-6 transition-all duration-300">
+        
+        <!-- 로딩 상태 표시 -->
+        <div id="loadingState" class="text-center py-12 text-slate-500">
+            Karrega hela Bíblia Tetun...
+        </div>
+
+        <!-- 검색 결과 출력 영역 -->
+        <section id="searchView" class="hidden bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+            <div class="flex justify-between items-center border-b border-slate-200 pb-3 mb-4">
+                <h2 class="text-lg font-bold text-slate-800">Rezultadu Peskiza</h2>
+                <button id="closeSearchBtn" class="text-sm text-slate-500 hover:text-slate-800 px-2 py-1 rounded border border-slate-200">
+                    ✕ Taka (닫기)
+                </button>
+            </div>
+            <div id="searchResultsList" class="space-y-3"></div>
+        </section>
+
+        <!-- 성경 본문 뷰어 영역 -->
+        <section id="readerView" class="hidden bg-white p-5 sm:p-8 rounded-xl shadow-sm border border-slate-200">
+            <div class="flex justify-between items-center border-b border-slate-200 pb-4 mb-6">
+                <div>
+                    <span id="testamentBadge" class="text-xs font-semibold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded"></span>
+                    <h2 id="chapterTitle" class="text-2xl font-bold text-slate-900 mt-1"></h2>
+                </div>
+                <!-- NLT 토글 및 글자 크기 조절 버튼 -->
+                <div class="flex items-center gap-1.5">
+                    <button id="toggleNltBtn" class="px-2.5 h-8 rounded border border-slate-300 text-xs font-semibold text-slate-600 hover:bg-slate-100 transition" title="영어 NLT 대조 보기">
+                        + NLT
+                    </button>
+                    <button id="fontDown" class="w-8 h-8 rounded border border-slate-300 text-sm font-bold hover:bg-slate-100" title="글자 작게">A-</button>
+                    <button id="fontUp" class="w-8 h-8 rounded border border-slate-300 text-sm font-bold hover:bg-slate-100" title="글자 크게">A+</button>
+                </div>
+            </div>
+
+            <!-- 태블릿/PC 전용 대조 헤더 -->
+            <div id="parallelHeader" class="hidden md:grid md:grid-cols-2 md:gap-6 pb-2 mb-4 border-b border-slate-200 text-xs font-bold uppercase tracking-wider text-slate-400">
+                <div>Bíblia Tetun</div>
+                <div id="engHeaderLabel" class="pl-6 border-l border-slate-200">English (NLT)</div>
+            </div>
+
+            <!-- 성경 절(Verse) 본문 출력 컨테이너 -->
+            <div id="versesContainer" class="text-lg text-slate-800"></div>
+
+            <!-- 이전 장 / 다음 장 이동 버튼 -->
+            <div class="flex justify-between items-center mt-8 pt-4 border-t border-slate-200">
+                <button id="prevChapBtn" class="px-4 py-2 rounded border border-slate-300 text-sm font-medium hover:bg-slate-50">
+                    ← Kapítulu Antes
+                </button>
+                <button id="nextChapBtn" class="px-4 py-2 rounded border border-slate-300 text-sm font-medium hover:bg-slate-50">
+                    Kapítulu Tuirmai →
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- data/res/tetun_bible.json 전용 통합 뷰어 및 검색 컨트롤러 -->
+    <script>
+        // 1. 성경 66권 메타데이터 (구약 39권 OT, 신약 27권 NT)
+        const BIBLE_BOOKS = [
+            // Testamentu Tuan (구약 39권)
+            { code: "GEN", name: "Jénesis", testament: "OT", nlt: "Genesis" },
+            { code: "EXO", name: "Ézodu", testament: "OT", nlt: "Exodus" },
+            { code: "LEV", name: "Levítiku", testament: "OT", nlt: "Leviticus" },
+            { code: "NUM", name: "Númeru", testament: "OT", nlt: "Numbers" },
+            { code: "DEU", name: "Deuteronómiu", testament: "OT", nlt: "Deuteronomy" },
+            { code: "JOS", name: "Jozué", testament: "OT", nlt: "Joshua" },
+            { code: "JDG", name: "Juís sira", testament: "OT", nlt: "Judges" },
+            { code: "RUT", name: "Rute", testament: "OT", nlt: "Ruth" },
+            { code: "1SA", name: "1 Samuel", testament: "OT", nlt: "1 Samuel" },
+            { code: "2SA", name: "2 Samuel", testament: "OT", nlt: "2 Samuel" },
+            { code: "1KI", name: "1 Liurai sira", testament: "OT", nlt: "1 Kings" },
+            { code: "2KI", name: "2 Liurai sira", testament: "OT", nlt: "2 Kings" },
+            { code: "1CH", name: "1 Krónika", testament: "OT", nlt: "1 Chronicles" },
+            { code: "2CH", name: "2 Krónika", testament: "OT", nlt: "2 Chronicles" },
+            { code: "EZR", name: "Ezra", testament: "OT", nlt: "Ezra" },
+            { code: "NEH", name: "Neemias", testament: "OT", nlt: "Nehemiah" },
+            { code: "EST", name: "Ester", testament: "OT", nlt: "Esther" },
+            { code: "JOB", name: "Jó", testament: "OT", nlt: "Job" },
+            { code: "PSA", name: "Salmu sira", testament: "OT", nlt: "Psalms" },
+            { code: "PRO", name: "Provérbiu", testament: "OT", nlt: "Proverbs" },
+            { code: "ECC", name: "Ekleziastes", testament: "OT", nlt: "Ecclesiastes" },
+            { code: "SNG", name: "Kántiku", testament: "OT", nlt: "Song of Songs" },
+            { code: "ISA", name: "Isaías", testament: "OT", nlt: "Isaiah" },
+            { code: "JER", name: "Jeremias", testament: "OT", nlt: "Jeremiah" },
+            { code: "LAM", name: "Lamentasaun", testament: "OT", nlt: "Lamentations" },
+            { code: "EZK", name: "Ezekiel", testament: "OT", nlt: "Ezekiel" },
+            { code: "DAN", name: "Daniel", testament: "OT", nlt: "Daniel" },
+            { code: "HOS", name: "Ozeias", testament: "OT", nlt: "Hosea" },
+            { code: "JOL", name: "Joel", testament: "OT", nlt: "Joel" },
+            { code: "AMO", name: "Amós", testament: "OT", nlt: "Amos" },
+            { code: "OBA", name: "Obadias", testament: "OT", nlt: "Obadiah" },
+            { code: "JON", name: "Jonas", testament: "OT", nlt: "Jonah" },
+            { code: "MIC", name: "Mika", testament: "OT", nlt: "Micah" },
+            { code: "NAM", name: "Naum", testament: "OT", nlt: "Nahum" },
+            { code: "HAB", name: "Habakuk", testament: "OT", nlt: "Habakkuk" },
+            { code: "ZEP", name: "Sofonias", testament: "OT", nlt: "Zephaniah" },
+            { code: "HAG", name: "Ageu", testament: "OT", nlt: "Haggai" },
+            { code: "ZEC", name: "Zakarias", testament: "OT", nlt: "Zechariah" },
+            { code: "MAL", name: "Malakias", testament: "OT", nlt: "Malachi" },
+
+            // Testamentu Foun (신약 27권)
+            { code: "MAT", name: "Mateus", testament: "NT", nlt: "Matthew" },
+            { code: "MRK", name: "Markus", testament: "NT", nlt: "Mark" },
+            { code: "LUK", name: "Lucas", testament: "NT", nlt: "Luke" },
+            { code: "JHN", name: "João", testament: "NT", nlt: "John" },
+            { code: "ACT", name: "Apóstolu sira", testament: "NT", nlt: "Acts" },
+            { code: "ROM", name: "Roma", testament: "NT", nlt: "Romans" },
+            { code: "1CO", name: "1 Korintu", testament: "NT", nlt: "1 Corinthians" },
+            { code: "2CO", name: "2 Korintu", testament: "NT", nlt: "2 Corinthians" },
+            { code: "GAL", name: "Galásia", testament: "NT", nlt: "Galatians" },
+            { code: "EPH", name: "Éfezu", testament: "NT", nlt: "Ephesians" },
+            { code: "PHP", name: "Filipi", testament: "NT", nlt: "Philippians" },
+            { code: "COL", name: "Kolose", testament: "NT", nlt: "Colossians" },
+            { code: "1TH", name: "1 Tesalónika", testament: "NT", nlt: "1 Thessalonians" },
+            { code: "2TH", name: "2 Tesalónika", testament: "NT", nlt: "2 Thessalonians" },
+            { code: "1TI", name: "1 Timóteo", testament: "NT", nlt: "1 Timothy" },
+            { code: "2TI", name: "2 Timóteo", testament: "NT", nlt: "2 Timothy" },
+            { code: "TIT", name: "Titu", testament: "NT", nlt: "Titus" },
+            { code: "PHM", name: "Filemon", testament: "NT", nlt: "Philemon" },
+            { code: "HEB", name: "Ebreu", testament: "NT", nlt: "Hebrews" },
+            { code: "JAS", name: "Tiago", testament: "NT", nlt: "James" },
+            { code: "1PE", name: "1 Pedro", testament: "NT", nlt: "1 Peter" },
+            { code: "2PE", name: "2 Pedro", testament: "NT", nlt: "2 Peter" },
+            { code: "1JN", name: "1 João", testament: "NT", nlt: "1 John" },
+            { code: "2JN", name: "2 João", testament: "NT", nlt: "2 John" },
+            { code: "3JN", name: "3 João", testament: "NT", nlt: "3 John" },
+            { code: "JUD", name: "Judas", testament: "NT", nlt: "Jude" },
+            { code: "REV", name: "Apokalipse", testament: "NT", nlt: "Revelation" }
+        ];
+
+        const BOOK_MAP = Object.fromEntries(BIBLE_BOOKS.map(b => [b.code, b]));
+
+        // 상태 변수
+        let bibleData = {};
+        let nltData = null; // 영어 NLT JSON이 data/res/nlt_bible.json에 있을 경우 자동 연동
+        let searchIndex = [];
+        let currentBook = "GEN";
+        let currentChapter = "1";
+        let highlightVerse = null;
+        let showNlt = false;
+        let currentFontSize = 18; // px (text-lg 기본값)
+
+        // DOM 요소 참조 변수
+        let loadingState, readerView, searchView, testamentSelect, bookSelect, chapterSelect,
+            testamentBadge, chapterTitle, versesContainer, searchInput, searchBtn,
+            closeSearchBtn, searchResultsList, toggleNltBtn, parallelHeader, headerInner, mainContainer;
+
+        function bindDomElements() {
+            loadingState = document.getElementById('loadingState');
+            readerView = document.getElementById('readerView');
+            searchView = document.getElementById('searchView');
+            testamentSelect = document.getElementById('testamentSelect');
+            bookSelect = document.getElementById('bookSelect');
+            chapterSelect = document.getElementById('chapterSelect');
+            testamentBadge = document.getElementById('testamentBadge');
+            chapterTitle = document.getElementById('chapterTitle');
+            versesContainer = document.getElementById('versesContainer');
+            searchInput = document.getElementById('searchInput');
+            searchBtn = document.getElementById('searchBtn');
+            closeSearchBtn = document.getElementById('closeSearchBtn');
+            searchResultsList = document.getElementById('searchResultsList');
+            toggleNltBtn = document.getElementById('toggleNltBtn');
+            parallelHeader = document.getElementById('parallelHeader');
+            headerInner = document.getElementById('headerInner');
+            mainContainer = document.getElementById('mainContainer');
+        }
+
+        function safeAddListener(el, event, handler) {
+            if (el) {
+                el.addEventListener(event, handler);
+            }
+        }
+
+        // 2. 초기화: data/res/tetun_bible.json 로드
+        async function initBible() {
+            try {
+                const response = await fetch('data/res/tetun_bible.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: data/res/tetun_bible.json 파일을 찾을 수 없습니다.`);
+                }
+                bibleData = await response.json();
+
+                // 선택 사항: 영어 NLT 파일이 있으면 백그라운드에서 함께 로드
+                fetch('data/res/nlt_bible.json')
+                    .then(res => res.ok ? res.json() : null)
+                    .then(data => { nltData = data; })
+                    .catch(() => {});
+
+                buildSearchIndex();
+                populateBookSelect("ALL");
+
+                // 첫 번째 유효한 책으로 초기화
+                const availableCodes = Object.keys(bibleData);
+                if (availableCodes.length > 0 && !bibleData[currentBook]) {
+                    currentBook = availableCodes[0];
+                }
+                bookSelect.value = currentBook;
+                populateChapterSelect(currentBook);
+                renderChapter(currentBook, currentChapter);
+
+                loadingState.classList.add('hidden');
+                readerView.classList.remove('hidden');
+            } catch (error) {
+                console.error("성경 데이터 로드 오류:", error);
+                loadingState.innerHTML = `
+                    <div class="bg-rose-50 border border-rose-200 text-rose-700 p-4 rounded-lg max-w-lg mx-auto text-sm">
+                        <strong>⚠️ 데이터 로드 실패:</strong><br>${error.message}<br>
+                        <span class="text-xs text-rose-500 mt-1 block">파일 경로가 <code>data/res/tetun_bible.json</code>인지 확인해 주세요.</span>
+                    </div>
+                `;
+            }
+        }
+
+        // 3. 고속 검색을 위한 인덱싱
+        function buildSearchIndex() {
+            searchIndex = [];
+            Object.keys(bibleData).forEach(bookCode => {
+                const bookMeta = BOOK_MAP[bookCode] || { code: bookCode, name: bookCode, testament: "OT" };
+                const chapters = bibleData[bookCode];
+                if (!chapters || typeof chapters !== 'object') return;
+
+                Object.keys(chapters).forEach(chapNum => {
+                    const verses = chapters[chapNum];
+                    if (!verses || typeof verses !== 'object') return;
+
+                    Object.keys(verses).forEach(verseNum => {
+                        const text = verses[verseNum];
+                        if (typeof text === 'string') {
+                            searchIndex.push({
+                                book: bookCode,
+                                bookName: bookMeta.name,
+                                chapter: chapNum,
+                                verse: verseNum,
+                                text: text,
+                                lowerText: text.toLowerCase()
+                            });
+                        }
+                    });
+                });
+            });
+        }
+
+        // 4. 책 선택 드롭다운 채우기
+        function populateBookSelect(testamentFilter) {
+            bookSelect.innerHTML = "";
+            const availableBooks = BIBLE_BOOKS.filter(b => {
+                const existsInJson = Boolean(bibleData[b.code]);
+                const matchesTestament = testamentFilter === "ALL" || b.testament === testamentFilter;
+                return existsInJson && matchesTestament;
+            });
+
+            // 매핑 테이블에 없는 추가 코드가 JSON에 있을 경우 대비
+            Object.keys(bibleData).forEach(code => {
+                if (!BOOK_MAP[code] && testamentFilter === "ALL") {
+                    availableBooks.push({ code, name: code, testament: "OT" });
+                }
+            });
+
+            availableBooks.forEach(b => {
+                const opt = document.createElement('option');
+                opt.value = b.code;
+                opt.textContent = b.name;
+                bookSelect.appendChild(opt);
+            });
+        }
+
+        // 5. 장 선택 드롭다운 채우기
+        function populateChapterSelect(bookCode) {
+            chapterSelect.innerHTML = "";
+            const chapters = bibleData[bookCode] ? Object.keys(bibleData[bookCode]) : [];
+            chapters.sort((a, b) => Number(a) - Number(b));
+
+            chapters.forEach(chap => {
+                const opt = document.createElement('option');
+                opt.value = chap;
+                opt.textContent = `Kapítulu ${chap}`;
+                chapterSelect.appendChild(opt);
+            });
+
+            if (chapters.length > 0 && !chapters.includes(String(currentChapter))) {
+                currentChapter = chapters[0];
+            }
+            chapterSelect.value = currentChapter;
+        }
+
+        // 6. 성경 본문 렌더링 (새 스키마: bibleData[book][chapter][verse])
+        function renderChapter(bookCode, chapNum, targetVerse = null) {
+            currentBook = bookCode;
+            currentChapter = String(chapNum);
+            highlightVerse = targetVerse ? String(targetVerse) : null;
+
+            const bookMeta = BOOK_MAP[bookCode] || { name: bookCode, testament: "OT", nlt: bookCode };
+            testamentBadge.textContent = bookMeta.testament === "NT" ? "Testamentu Foun" : "Testamentu Tuan";
+            chapterTitle.textContent = `${bookMeta.name} ${currentChapter}`;
+
+            // NLT 대조 모드 레이아웃 조정
+            if (showNlt) {
+                headerInner.classList.replace('max-w-4xl', 'max-w-6xl');
+                mainContainer.classList.replace('max-w-4xl', 'max-w-6xl');
+                parallelHeader.classList.remove('hidden');
+                toggleNltBtn.classList.add('bg-amber-100', 'border-amber-400', 'text-amber-800');
+            } else {
+                headerInner.classList.replace('max-w-6xl', 'max-w-4xl');
+                mainContainer.classList.replace('max-w-6xl', 'max-w-4xl');
+                parallelHeader.classList.add('hidden');
+                toggleNltBtn.classList.remove('bg-amber-100', 'border-amber-400', 'text-amber-800');
+            }
+
+            const versesObj = (bibleData[bookCode] && bibleData[bookCode][currentChapter]) || {};
+            const verseNumbers = Object.keys(versesObj).sort((a, b) => Number(a) - Number(b));
+
+            versesContainer.innerHTML = "";
+            versesContainer.style.fontSize = `${currentFontSize}px`;
+
+            verseNumbers.forEach(vNum => {
+                const tetunText = versesObj[vNum];
+                const isHighlighted = highlightVerse === String(vNum);
+
+                if (showNlt) {
+                    const engText = getNltVerse(bookMeta, currentChapter, vNum);
+                    const row = document.createElement('div');
+                    row.id = `verse-${vNum}`;
+                    row.className = `parallel-verse-row ${isHighlighted ? 'verse-highlight' : ''}`;
+                    row.innerHTML = `
+                        <div class="leading-relaxed">
+                            <sup class="font-bold text-amber-700 mr-1.5 text-xs">${vNum}</sup>${escapeHtml(tetunText)}
+                        </div>
+                        <div class="parallel-eng leading-relaxed">
+                            <sup class="font-semibold text-slate-400 mr-1.5 text-xs">${vNum}</sup>${escapeHtml(engText)}
+                        </div>
+                    `;
+                    versesContainer.appendChild(row);
+                } else {
+                    const p = document.createElement('p');
+                    p.id = `verse-${vNum}`;
+                    p.className = `mb-3 leading-relaxed ${isHighlighted ? 'verse-highlight py-1 rounded-r' : ''}`;
+                    p.innerHTML = `<sup class="font-bold text-amber-700 mr-1.5 text-xs">${vNum}</sup>${escapeHtml(tetunText)}`;
+                    versesContainer.appendChild(p);
+                }
+            });
+
+            if (highlightVerse) {
+                setTimeout(() => {
+                    const el = document.getElementById(`verse-${highlightVerse}`);
+                    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
+            } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // 영어 NLT 구절 조회 헬퍼
+        function getNltVerse(bookMeta, chap, verse) {
+            if (!nltData) return "(NLT data la disponivel)";
+            const byCode = nltData[bookMeta.code]?.[chap]?.[verse] || nltData[bookMeta.code]?.[chap]?.verses?.[verse];
+            const byName = nltData[bookMeta.nlt]?.[chap]?.[verse] || nltData[bookMeta.nlt]?.[chap]?.verses?.[verse];
+            return byCode || byName || "—";
+        }
+
+        // 7. 단어 검색 실행
+        function executeSearch() {
+            const query = searchInput.value.trim();
+            if (!query) return;
+
+            const lowerQuery = query.toLowerCase();
+            const results = searchIndex.filter(item => item.lowerText.includes(lowerQuery));
+
+            readerView.classList.add('hidden');
+            searchView.classList.remove('hidden');
+
+            if (results.length === 0) {
+                searchResultsList.innerHTML = `
+                    <p class="text-slate-500 text-center py-8">La hetan rezultadu ba "<strong>${escapeHtml(query)}</strong>".</p>
+                `;
+                return;
+            }
+
+            const limit = Math.min(results.length, 150);
+            let html = `<p class="text-xs text-slate-500 mb-3">Hetan total <strong>${results.length.toLocaleString()}</strong> versíkulu${results.length > 150 ? ' (hatudu 150 dahuluk)' : ''}:</p>`;
+
+            const safeRegex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
+            for (let i = 0; i < limit; i++) {
+                const item = results[i];
+                const highlighted = escapeHtml(item.text).replace(safeRegex, '<mark class="bg-amber-200 text-amber-900 px-0.5 rounded font-semibold">$1</mark>');
+                html += `
+                    <div onclick="jumpToVerse('${item.book}', '${item.chapter}', '${item.verse}')" 
+                         class="p-3.5 rounded-lg border border-slate-200 hover:border-amber-400 hover:bg-amber-50/40 cursor-pointer transition">
+                        <div class="text-xs font-bold text-amber-700 mb-1">${item.bookName} ${item.chapter}:${item.verse}</div>
+                        <div class="text-sm text-slate-700 leading-relaxed">${highlighted}</div>
+                    </div>
+                `;
+            }
+            searchResultsList.innerHTML = html;
+        }
+
+        // 검색 결과 클릭 시 해당 성경 장/절로 이동
+        window.jumpToVerse = function(bookCode, chapNum, verseNum) {
+            searchView.classList.add('hidden');
+            readerView.classList.remove('hidden');
+
+            testamentSelect.value = "ALL";
+            populateBookSelect("ALL");
+            bookSelect.value = bookCode;
+            populateChapterSelect(bookCode);
+            chapterSelect.value = chapNum;
+            renderChapter(bookCode, chapNum, verseNum);
+        };
+
+        // 8. 이벤트 리스너 안전 등록
+        function registerEventListeners() {
+            safeAddListener(testamentSelect, 'change', (e) => {
+                populateBookSelect(e.target.value);
+                if (bookSelect && bookSelect.options.length > 0) {
+                    currentBook = bookSelect.value;
+                    populateChapterSelect(currentBook);
+                    renderChapter(currentBook, chapterSelect.value);
+                }
+            });
+
+            safeAddListener(bookSelect, 'change', (e) => {
+                currentBook = e.target.value;
+                populateChapterSelect(currentBook);
+                renderChapter(currentBook, chapterSelect.value);
+            });
+
+            safeAddListener(chapterSelect, 'change', (e) => {
+                renderChapter(currentBook, e.target.value);
+            });
+
+            safeAddListener(document.getElementById('prevChapBtn'), 'click', () => {
+                if (!chapterSelect || !bookSelect) return;
+                const idx = chapterSelect.selectedIndex;
+                if (idx > 0) {
+                    chapterSelect.selectedIndex = idx - 1;
+                    renderChapter(currentBook, chapterSelect.value);
+                } else if (bookSelect.selectedIndex > 0) {
+                    bookSelect.selectedIndex -= 1;
+                    currentBook = bookSelect.value;
+                    populateChapterSelect(currentBook);
+                    chapterSelect.selectedIndex = chapterSelect.options.length - 1;
+                    renderChapter(currentBook, chapterSelect.value);
+                }
+            });
+
+            safeAddListener(document.getElementById('nextChapBtn'), 'click', () => {
+                if (!chapterSelect || !bookSelect) return;
+                const idx = chapterSelect.selectedIndex;
+                if (idx < chapterSelect.options.length - 1) {
+                    chapterSelect.selectedIndex = idx + 1;
+                    renderChapter(currentBook, chapterSelect.value);
+                } else if (bookSelect.selectedIndex < bookSelect.options.length - 1) {
+                    bookSelect.selectedIndex += 1;
+                    currentBook = bookSelect.value;
+                    populateChapterSelect(currentBook);
+                    renderChapter(currentBook, chapterSelect.value);
+                }
+            });
+
+            safeAddListener(toggleNltBtn, 'click', () => {
+                showNlt = !showNlt;
+                renderChapter(currentBook, currentChapter, highlightVerse);
+            });
+
+            safeAddListener(document.getElementById('fontUp'), 'click', () => {
+                if (currentFontSize < 28 && versesContainer) {
+                    currentFontSize += 2;
+                    versesContainer.style.fontSize = `${currentFontSize}px`;
+                }
+            });
+
+            safeAddListener(document.getElementById('fontDown'), 'click', () => {
+                if (currentFontSize > 14 && versesContainer) {
+                    currentFontSize -= 2;
+                    versesContainer.style.fontSize = `${currentFontSize}px`;
+                }
+            });
+
+            safeAddListener(searchBtn, 'click', executeSearch);
+            safeAddListener(searchInput, 'keyup', (e) => {
+                if (e.key === 'Enter') executeSearch();
+            });
+
+            safeAddListener(closeSearchBtn, 'click', () => {
+                if (searchView) searchView.classList.add('hidden');
+                if (readerView) readerView.classList.remove('hidden');
+            });
+        }
+
+        function escapeHtml(str) {
+            return String(str).replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
+        }
+        function escapeRegExp(str) {
+            return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        // DOM 로드 완료 후 앱 시작
+        function bootstrapApp() {
+            bindDomElements();
+            registerEventListeners();
+            initBible();
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', bootstrapApp);
+        } else {
+            bootstrapApp();
+        }
+    </script>
+</body>
+</html>
