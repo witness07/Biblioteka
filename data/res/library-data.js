@@ -64,6 +64,32 @@ const BOOKS_DATABASE = [
     // ======================================================================
     // [신간 도서 (isNew: true)]
     // ======================================================================
+
+    {
+        id: 1008,
+        publisherId: "pub-2",
+        isNew: true,
+        title: "Istória Ema Sira iha Bíblia (30 Ema)",
+        author: "Eskola Domingu Timor-Leste",
+        issueLabel: "Moris • Bíblia 30",
+        description: "Istória Bíblia 30 ba labarik sira iha lian Tetun no Inglés, kompletu ho dezeñu no atividade.",
+        coverImage: "images/bible/01_abraham/1.jpeg",
+        customUrl: "story.html?bible=01_abraham&pub=pub-2"
+    },
+    
+    
+    {
+        id: 1007,
+        publisherId: "pub-1",
+        isNew: true,
+        title: "Liafuan Sira ba Lian Korea",
+        author: "SUE&JUN PRESS",
+        issueLabel: "Voca • Korean",
+        description: "Hodi Estuda Lian Korea ho Liafuan sira.",
+        coverImage: "images/kor-tetun.jpeg",
+        customUrl: "eps_topik.html"
+    },
+    
     {
         id: 1006,
         publisherId: "pub-2",
@@ -73,7 +99,7 @@ const BOOKS_DATABASE = [
         issueLabel: "Moris • Liafuan",
         description: "Pergunta sira no Resposta sira kona ba Fiar.",
         coverImage: "images/wes_cate.jpg",
-        customUrl: "catechism_wes.html?doc=wes"
+        customUrl: "catechism.html?doc=wes"
     },
 
      {
@@ -85,7 +111,7 @@ const BOOKS_DATABASE = [
         issueLabel: "Moris • Liafuan",
         description: "Pergunta sira no Resposta sira kona ba Fiar.",
         coverImage: "images/hei_cate.jpg",
-        customUrl: "catechism_wes.html?doc=hei"
+        customUrl: "catechism.html?doc=hei"
     },
     
     

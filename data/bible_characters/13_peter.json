@@ -1,0 +1,132 @@
+{
+  "character_id": "peter",
+  "character_name_en": "Peter",
+  "character_name_tet": "Pedru",
+  "category": "Core (8 Scenes)",
+  "bible_reference": "Matthew 4 - Acts 12",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Called to Be Fishers of Men",
+      "image_file": "1.jpeg",
+      "english_text": "One morning by the Sea of Galilee, a hardworking fisherman named Simon Peter had caught no fish all night. Jesus stepped into his boat and said, 'Launch out into the deep water and drop your nets.' When Peter obeyed, the nets were so full of fish that they began to tear! Amazed by this miracle, Peter left everything to follow Jesus as a fisher of men.",
+      "tetum_translation": "Iha dadeer ida iha Tasi Galileia sorin, peskadór ida ne'ebé servisu toos naran Simão Pedru la hetan ikan ida iha kalan tomak. Jesus sa'e ba nia ró no dehan, 'La'o ba bee kle'an no hatun ó-nia rede sira.' Bainhira Pedru halo tuir, rede sira nakonu ho ikan to'o hahú naklees! Tanba admira ho milagre ne'e, Pedru husik buat hotu atu tuir Jesus nu'udar peskadór ba ema.",
+      "scene_summary": "Jesus performs a miraculous catch of fish and calls fisherman Simon Peter to follow Him as a fisher of men.",
+      "nano_banana_prompt": "Nano Banana illustration style, a passionate Galilean fisherman with short curly dark hair and beard, wearing a rustic blue linen tunic, standing amazed in a wooden fishing boat pulling up heavy nets bursting with silvery fish alongside Jesus on the sunny Sea of Galilee. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Walking on Water",
+      "image_file": "2.jpeg",
+      "english_text": "During a stormy night on the sea, the disciples saw Jesus walking on top of the water! Peter boldly called out, 'Lord, tell me to come to You on the water.' When Jesus said, 'Come,' Peter stepped out of the boat and walked on water. But when he looked at the strong winds, he grew afraid and began to sink, crying out, 'Lord, save me!' Jesus gently caught his hand.",
+      "tetum_translation": "Iha kalan anin-boot ida iha tasi leten, eskolante sira haree Jesus la'o iha bee leten! Pedru ko'alia ho brani, 'Na'i, haruka ha'u mai ba Ita iha bee leten.' Bainhira Jesus dehan, 'Mai,' Pedru sai husi ró no la'o iha bee leten. Maibé bainhira nia haree anin boot, nia hahú ta'uk no mouu tun, hakilar, 'Na'i, salva ha'u!' Jesus kaer nia liman ho laran-di'ak.",
+      "scene_summary": "Peter steps out of the boat to walk on water toward Jesus, learning to keep his eyes fixed on the Lord.",
+      "nano_banana_prompt": "Nano Banana illustration style, a Galilean fisherman with short curly hair in a blue tunic walking on rolling blue ocean waves at night toward Jesus, reaching out his hand as golden light beams from Jesus' hand. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "The Great Confession of Faith",
+      "image_file": "3.jpeg",
+      "english_text": "One day near Caesarea Philippi, Jesus asked His disciples, 'Who do you say that I am?' Peter stepped forward with great conviction and declared, 'You are the Messiah, the Son of the living God!' Jesus blessed Peter, telling him that God Himself had revealed this divine truth to his heart.",
+      "tetum_translation": "Loron ida besik Sesareia Filipi, Jesus husu ba Nia eskolante sira, 'Imi dehan Ha'u ne'e sé?' Pedru la'o ba oin ho fiar kle'an no deklara, 'Ita mak Mesias, Maromak moris nia Oan!' Jesus haraik bensaun ba Pedru, hodi dehan ba nia katak Maromak rasik hatudu lia-loos santu ne'e ba nia laran.",
+      "scene_summary": "Peter courageously declares that Jesus is the Messiah, the Son of the living God.",
+      "nano_banana_prompt": "Nano Banana illustration style, a Galilean disciple with curly dark hair and beard, standing humbly before Jesus with open hands on a green grassy hill under a bright sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Washing the Disciples' Feet",
+      "image_file": "4.jpeg",
+      "english_text": "At the Last Supper, Jesus wrapped a towel around His waist and began washing His disciples' feet to show them how to love and serve one another. When Jesus came to Peter, Peter was surprised and hesitated. But Jesus gently explained, 'Unless I wash you, you have no part with Me.' Peter then happily asked Jesus to wash not just his feet, but his whole life.",
+      "tetum_translation": "Iha Han Kalan Ikus, Jesus kesi tais ida iha Nia knotak no hahú fasu Nia eskolante sira-nia ain atu hatudu ba sira oinsá domin no servisu malu. Bainhira Jesus mai ba Pedru, Pedru admira no lakohi uluk. Maibé Jesus esplika ho laran-di'ak, 'Se Ha'u la fasu ó, ó la iha parte ho Ha'u.' Pedru tuir mai husu ho haksolok atu Jesus fasu la'ós de'it nia ain, maibé nia moris tomak.",
+      "scene_summary": "Jesus washes Peter's feet at the Last Supper, teaching him the deep lesson of humble servant leadership.",
+      "nano_banana_prompt": "Nano Banana illustration style, Jesus kneeling with a basin of water and towel to wash the feet of a Galilean disciple named Peter, who looks at Jesus with deep awe inside a cozy upper room. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Tears of Repentance",
+      "image_file": "5.jpeg",
+      "english_text": "On the night Jesus was arrested, Peter was filled with fear while sitting in a courtyard. When people asked if he knew Jesus, Peter denied knowing Him three times. Suddenly, a rooster crowed, and Peter remembered Jesus' warning. Heartbroken over his failure, Peter went outside and wept bitterly, feeling deep sadness for his weakness.",
+      "tetum_translation": "Iha kalan ne'ebé Jesus hetan kaer, Pedru nakonu ho ta'uk bainhira tuur iha uma-kora laran. Bainhira ema husu se nia koñese Jesus, Pedru nega nia koñese Jesus dala tolu. Derrepente, manu-lakateu manufoti, no Pedru hanoin-hetan Jesus nia aviso. Tanba laran-tohos ho nia falha, Pedru sai ba li'ur no tanis ho laran-moras boot.",
+      "scene_summary": "After denying Jesus three times out of fear, Peter remembers Jesus' words and weeps bitter tears of repentance.",
+      "nano_banana_prompt": "Nano Banana illustration style, a Galilean disciple with curly dark hair weeping in deep sadness while kneeling outside a courtyard stone wall at dawn as a rooster sits on a fence. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 6,
+      "title": "Running to the Empty Tomb",
+      "image_file": "6.jpeg",
+      "english_text": "On Easter morning, Mary Magdalene brought the incredible news that Jesus' tomb was empty! Peter ran as fast as he could to the garden tomb. He stepped inside and saw the linen burial cloths lying neatly, realizing that Jesus had truly conquered death and risen from the dead!",
+      "tetum_translation": "Iha Páskoa dadeer, Maria Madalena lori lia-foun kmanek katak Jesus nia rate mamuk! Pedru halai lalais tebes ba kintál rate nian. Nia tama ba laran no haree hena rate nian namkari ho di'ak, hodi rekoñese katak Jesus manán duni mate no hari'is husi mate!",
+      "scene_summary": "Peter runs to the garden tomb on Easter morning and sees the linen wrappings, witnessing the empty tomb.",
+      "nano_banana_prompt": "Nano Banana illustration style, Peter the disciple entering a sunlit cave tomb carved in rock, looking in amazement at folded white linen cloths lying on a stone bench. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 7,
+      "title": "Restored by Jesus by the Lake",
+      "image_file": "7.jpeg",
+      "english_text": "By the Sea of Galilee, the risen Jesus prepared breakfast on the shore for His disciples. Sitting by a warm charcoal fire, Jesus asked Peter three times, 'Simon, son of John, do you love Me?' Peter answered with tears of love, 'Lord, You know all things; You know that I love You!' Jesus gently restored him, saying, 'Feed My sheep.'",
+      "tetum_translation": "Iha Tasi Galileia sorin, Jesus ne'ebé hari'is husi mate prepara han-dadeer iha tasi-ibun ba Nia eskolante sira. Tuur besik ahi-kraras manas, Jesus husu ba Pedru dala tolu, 'Simão, Joaun nia oan, ó domin Ha'u ka?' Pedru hatán ho matan-ben domin nian, 'Na'i, Ita hatene buat hotu; Ita hatene katak ha'u domin Ita!' Jesus haraik fali kbiit ba nia hodi dehan, 'Fó han Ha'u-nia bibi sira.'",
+      "scene_summary": "Jesus gently restores Peter by the campfire, asking him three times 'Do you love Me?' and commissioning him to feed His sheep.",
+      "nano_banana_prompt": "Nano Banana illustration style, Jesus sitting by a cozy morning campfire on a beach with Peter, resting a gentle hand on Peter's shoulder while Peter looks up with loving, repentant eyes. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 8,
+      "title": "Bold Apostle of the Early Church",
+      "image_file": "8.jpeg",
+      "english_text": "Filled with the Holy Spirit on Pentecost, Peter stood before thousands in Jerusalem and preached about Jesus with holy boldness! Three thousand people believed and were baptized that day. Peter spent the rest of his life boldly sharing the Gospel and performing miracles, giving all glory to Jesus.",
+      "tetum_translation": "Nakonu ho Espíritu Santu iha Pentekoste, Pedru hamriik iha ema rihun ba rihun nia oin iha Jeruzalém no haklaken kona-ba Jesus ho brani santu! Ema rihun tolu fiar no simu batizmu iha loron ne'e. Pedru gasta nia moris tomak hodi haklaken Evanjellu ho brani no halo milagre sira, hodi fó glória hotu ba Jesus.",
+      "scene_summary": "Filled with the Holy Spirit at Pentecost, Peter preaches boldly in Jerusalem and leads thousands to faith in Christ.",
+      "nano_banana_prompt": "Nano Banana illustration style, Peter the apostle standing courageously on stone steps in Jerusalem with arms raised, preaching joyfully to a massive crowd of diverse people under a radiant sun. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Peter teaches us that Jesus forgives our failures, heals our weak hearts, and empowers us to be bold witnesses for Him.",
+    "core_lesson_tet": "Pedru hanorin ita katak Jesus fó perdua ba ita-nia falha sira, kura ita-nia laran krekas, no fó kbiit mai ita atu sai testemuña brani ba Nia.",
+    "discussion_question_en": "When you make a mistake or feel weak at school or home, how can you ask Jesus for forgiveness and courage to follow Him again like Peter did?",
+    "discussion_question_tet": "Bainhira ó halo sala ka sente krekas iha eskola ka uma, oinsá ó bele husu perdua no korajen husi Jesus atu tuir Nia fali hanesan Pedru halo?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Fisherman Peter holding a fishing net next to a wooden boat.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, friendly Galilean fisherman Peter with short curly hair holding a woven fishing net near a wooden boat, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "PETER",
+        "word_tet": "PEDRU",
+        "clue_en": "The fisherman who became a bold apostle of Jesus.",
+        "clue_tet": "Peskadór ne'ebé sai apostolu brani ba Jesus."
+      },
+      {
+        "word_en": "FISHERMAN",
+        "word_tet": "PESKADOR",
+        "clue_en": "Peter's job before Jesus called him to follow Him.",
+        "clue_tet": "Pedru nia servisu uluk molok Jesus bolu nia atu tuir Nia."
+      },
+      {
+        "word_en": "WATER",
+        "word_tet": "BEE",
+        "clue_en": "What Peter courageously walked on when he looked at Jesus.",
+        "clue_tet": "Buat ne'ebé Pedru la'o iha leten ho brani bainhira nia haree ba Jesus."
+      },
+      {
+        "word_en": "ROOSTER",
+        "word_tet": "MANU",
+        "clue_en": "The bird that crowed after Peter denied Jesus three times.",
+        "clue_tet": "Manutolun/manu ne'ebé manufoti tuir Pedru nega Jesus dala tolu."
+      },
+      {
+        "word_en": "FORGIVE",
+        "word_tet": "PERDUA",
+        "clue_en": "What Jesus lovingly gave Peter by the campfire.",
+        "clue_tet": "Buat ne'ebé Jesus fó ho domin ba Pedru iha ahi-kraras sorin."
+      },
+      {
+        "word_en": "SHEEP",
+        "word_tet": "BIBI",
+        "clue_en": "What Jesus asked Peter to feed and care for.",
+        "clue_tet": "Buat ne'ebé Jesus husu Pedru atu fó han no tau matan."
+      }
+    ]
+  }
+}

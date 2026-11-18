@@ -1,0 +1,132 @@
+{
+  "character_id": "david",
+  "character_name_en": "David",
+  "character_name_tet": "David",
+  "category": "Core (8 Scenes)",
+  "bible_reference": "1 Samuel 16 - 2 Samuel 5",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "The Young Shepherd Boy",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago in Bethlehem, there lived a young boy named David who took care of his father's sheep. While watching his flock on the green hills, David loved to play his wooden harp and sing praises to God. Even when a lion or bear came to attack, David was brave and trusted God to protect his sheep.",
+      "tetum_translation": "Iha tempu uluk iha Belein, iha labarik-mane ida naran David ne'ebé tau matan ba nia aman nia bibi sira. Bainhira hein bibi iha foho matak sira leten, David gosta toca arpa no kanta kanti ksolok ba Maromak. Maski leão ka urso mai atakadu, David brani no fiar Maromak atu proteje nia bibi sira.",
+      "scene_summary": "Young David plays his harp and protects his father's sheep with brave trust in God on the hills of Bethlehem.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew shepherd boy with curly dark hair wearing a simple tunic, playing a small wooden harp while peaceful white sheep graze on green hills in Bethlehem. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Defeating Goliath with Faith",
+      "image_file": "2.jpeg",
+      "english_text": "When the giant warrior Goliath threatened the army of Israel, everyone was terrified. But young David stepped forward boldly and said, 'You come with a sword, but I come in the name of the Lord!' With a simple leather sling and one smooth stone, David defeated Goliath, bringing a great victory to God's people.",
+      "tetum_translation": "Bainhira soldadu boot Golias hamosu ta'uk ba Izraél nia soldadu sira, ema hotu ta'uk tebes. Maibé labarik David la'o ba oin ho brani no dehan, 'Ó mai ho tudik boot, maibé ha'u mai ho Na'i nia naran!' Ho mós-katapultu no fatuk belit ida, David hamonu Golias, hodi lori vitoria boot ba Maromak nia povu.",
+      "scene_summary": "David trusts God and defeats the giant Goliath with a slingshot and a single smooth stone.",
+      "nano_banana_prompt": "Nano Banana illustration style, a brave young Hebrew shepherd boy holding a wooden slingshot standing courageously before a giant warrior Goliath in armor on a rocky battlefield. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Trusting God in the Wilderness",
+      "image_file": "3.jpeg",
+      "english_text": "King Saul grew jealous of David and tried to harm him, forcing David to flee into the desert. Even while living inside dark caves and fleeing danger, David did not lose heart. He prayed continually and wrote beautiful songs of comfort that became the Psalms in our Bible.",
+      "tetum_translation": "Liurai Saul hahú laran-moras ba David no koko estraga nia, halo David la'o halai ba rai-maran. Maski hela iha kuak nakukun laran no halai husi perigu, David la lakon kbiit-laran. Nia harohan beibeik no hakerek knananuk furak sira ne'ebé sai Salmo iha ita-nia Bíblia.",
+      "scene_summary": "Fleeing jealous King Saul, David trusts God in desert caves and writes songs of praise.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew man with curly dark hair wearing a beige tunic sitting inside a desert cave at night, holding a wooden harp and looking up at the stars calmly. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Sparing King Saul's Life",
+      "image_file": "4.jpeg",
+      "english_text": "Twice, David had the chance to harm King Saul while Saul was sleeping in a cave. David's men urged him to take revenge, but David refused to harm God's anointed king. Instead, he quietly cut a small piece of Saul's robe to prove his loyalty, showing great mercy and self-control.",
+      "tetum_translation": "Dala rua, David iha oportunidade atu estraga Liurai Saul bainhira Saul toba iha kuak laran. David nia ema sira husu nia atu selu aat, maibé David lakohi halo aat ba Maromak nia liurai. Duké halo aat, nia ko'a ho nonook hena-rahun ki'ik ida husi Saul nia roupa atu hatudu nia laran-metin.",
+      "scene_summary": "David mercifully spares King Saul's life in a cave, leaving judgment in God's hands.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew warrior named David quietly cutting a piece of cloth from King Saul's robe inside a dark cave while Saul sleeps peacefully. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Anointed King of Israel",
+      "image_file": "5.jpeg",
+      "english_text": "After Saul died, God guided David to become the king of Judah, and later, all the tribes gathered to crown him king over all Israel in Jerusalem. King David ruled with justice and wisdom, honoring God and uniting the nation in peace.",
+      "tetum_translation": "Saul mate tiha, Maromak lori David atu sai liurai ba Judá, no tuir mai uma-kain hotu halibur atu foti nia sai liurai ba Izraél tomak iha Jeruzalém. Liurai David ukun ho hahalok loos no matenek, hodi hatudu respeitu ba Maromak no unifika nasaun iha pás laran.",
+      "scene_summary": "David is anointed king over all Israel in Jerusalem, uniting the nation under God's blessing.",
+      "nano_banana_prompt": "Nano Banana illustration style, a handsome 30-year-old Hebrew king wearing a golden crown and fine royal blue robe, being joyfully cheered by crowds of people in Jerusalem. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 6,
+      "title": "Dancing Before the Ark",
+      "image_file": "6.jpeg",
+      "english_text": "King David wanted God's holy presence to be at the center of his kingdom, so he brought the Ark of the Covenant into Jerusalem. As priests carried the Ark, David danced before the Lord with all his heart, shouting for joy and celebrating God's goodness with all the people.",
+      "tetum_translation": "Liurai David hakarak Maromak nia presenza santu hela iha nia reinu nia klaran, nune'i nia lori Bote Santu (Arkivua Aliança) tama ba Jeruzalém. Bainhira amululik sira lori Bote Santu, David toca musika no bidu iha Na'i nia oin ho laran tomak, hakilar ho ksolok ho povu hotu.",
+      "scene_summary": "King David joyously dances before the Ark of the Covenant as it enters Jerusalem.",
+      "nano_banana_prompt": "Nano Banana illustration style, King David wearing a simple linen robe dancing joyfully in front of the golden Ark of the Covenant being carried into Jerusalem by priests amidst cheering crowds. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 7,
+      "title": "Repentance and Forgiveness",
+      "image_file": "7.jpeg",
+      "english_text": "One day, King David committed a serious sin by taking Bathsheba and sending her husband Uriah to battle. When the prophet Nathan bravely confronted him, David did not make excuses. He wept bitterly, repented before God, and received God's merciful forgiveness.",
+      "tetum_translation": "Loron ida, Liurai David halo sala boot ida tanba foti Batseba no haruka nia la'en Urias ba funu. Bainhira profeta Natán brani atu korreje nia, David la halo desculpa. Nia tanis ho laran-moras, haraik-an iha Maromak nia oin, no simu Maromak nia perdua laran-luak.",
+      "scene_summary": "When confronted by Nathan the prophet, King David sincerely repents of his sin and finds God's mercy.",
+      "nano_banana_prompt": "Nano Banana illustration style, King David bowing low on his knees in sincere prayer before God in his palace room, with a prophet in robes standing near him under warm ambient light. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 8,
+      "title": "Preparing for the Temple",
+      "image_file": "8.jpeg",
+      "english_text": "Although God told David that his son Solomon would build the holy Temple, David lovingly gathered gold, silver, and stones to help. Before he passed away, David blessed young Solomon and reminded all Israel to love and serve God forever.",
+      "tetum_translation": "Maski Maromak dehan ba David katak nia oan Salomão mak sei harii Umaklesan Santu, David halibur ho domin osan-mutin, osan-mean, no fatuk sira atu ajulita. Molok nia mate, David haraik bensaun ba Salomão no hanoin-hetan Izraél tomak atu domin no servisu ba Maromak ba nafatin.",
+      "scene_summary": "King David gathers materials for God's Temple and passes the kingdom wisely to his son Solomon.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elder King David with grey hair and a golden crown, placing his hand lovingly on young Solomon's shoulder while holding blueprints of the Temple inside a royal palace. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "David shows us that God looks at the heart, and even when we mess up, sincere repentance brings God's forgiveness and joy.",
+    "core_lesson_tet": "David hatudu mai ita katak Maromak haree ba laran, no maski ita halo sala, arrepende loloos lori Maromak nia perdua no ksolok.",
+    "discussion_question_en": "When you face a giant problem or make a mistake this week, how can you trust God for courage and ask Him for a clean heart like David did?",
+    "discussion_question_tet": "Bainhira ó hasoru problema boot ka halo sala iha semana ne'e, oinsá ó bele fiar Maromak ba korajen no husu laran-moos hanesan David halo?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Young shepherd David holding a harp with peaceful sheep nearby.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, young shepherd boy David with curly hair holding a wooden harp smiling, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "DAVID",
+        "word_tet": "DAVID",
+        "clue_en": "The shepherd boy who defeated Goliath and became king.",
+        "clue_tet": "Labarik bibi-atan ne'ebé hamonu Golias no sai liurai."
+      },
+      {
+        "word_en": "HARP",
+        "word_tet": "ARPA",
+        "clue_en": "The musical instrument David played to praise God.",
+        "clue_tet": "Instrumentu muzika nian ne'ebé David toca atu hahi'i Maromak."
+      },
+      {
+        "word_en": "GOLIATH",
+        "word_tet": "GOLIAS",
+        "clue_en": "The giant warrior who was defeated by David's faith.",
+        "clue_tet": "Soldadu boot ne'ebé lakon tanba David nia fiar."
+      },
+      {
+        "word_en": "KING",
+        "word_tet": "LIURAI",
+        "clue_en": "The royal title given to David over all Israel.",
+        "clue_tet": "Títulu nobrasaun nian ne'ebé fó ba David iha Izraél tomak."
+      },
+      {
+        "word_en": "PSALMS",
+        "word_tet": "SALMO",
+        "clue_en": "The holy songs and prayers David wrote in the Bible.",
+        "clue_tet": "Knananuk santu no orasaun sira ne'ebé David hakerek iha Bíblia."
+      },
+      {
+        "word_en": "HEART",
+        "word_tet": "LARAN",
+        "clue_en": "What God looks at when choosing a faithful leader.",
+        "clue_tet": "Buat ne'ebé Maromak haree bainhira hili lider fiar-na'in."
+      }
+    ]
+  }
+}

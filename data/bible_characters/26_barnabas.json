@@ -1,0 +1,105 @@
+{
+  "character_id": "barnabas",
+  "character_name_en": "Barnabas",
+  "character_name_tet": "Barnabé",
+  "category": "Major (5 Scenes)",
+  "bible_reference": "Acts 4:36-37, 9:26-27, 11:19-26, 13:1-3, 15:36-41",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "The Son of Encouragement",
+      "image_file": "1.jpeg",
+      "english_text": "In the early church in Jerusalem, a generous Levite named Joseph was known for his warm and encouraging heart. The apostles gave him the special name Barnabas, which means 'Son of Encouragement.' Demonstrating great love and generosity, Barnabas sold a field he owned and brought all the money to the apostles to help believers who were in need.",
+      "tetum_translation": "Iha katuik uma-klesan dahuluk iha Jeruzalém, mane Levita ida ne'ebé laran-luak naran Jozé koñecido tanba nia laran-manas no motivador. Apóstolu sira fó naran espesiál ba nia katak Barnabé, ne'ebé dehan 'Oan Laran-manas'. Hodi hatudu domin no laran-luak boot, Barnabé fa'an nia to'os ida no lori osan hotu ba apóstolu sira atu ajulita fiar-na'in sira ne'ebé krise.",
+      "scene_summary": "Barnabas generously sells his field and brings the money to the apostles to support the needy in the early church.",
+      "nano_banana_prompt": "Nano Banana illustration style, a friendly Hebrew man named Barnabas with a kind smile, wearing a beige linen tunic, handing a bag of coins to the apostles in a sunny Jerusalem courtyard. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Welcoming Saul with Open Arms",
+      "image_file": "2.jpeg",
+      "english_text": "After Saul was transformed on the road to Damascus, he came to Jerusalem to join the disciples, but everyone was afraid of him because of his past. Only Barnabas stepped forward courageously, took Saul by the hand, and brought him to the apostles. Barnabas explained how Jesus had changed Saul's life and how boldly Saul had preached in Damascus.",
+      "tetum_translation": "Bainhira Saulo hetan transformasaun iha dalan ba Damasko, nia mai Jeruzalém atu hamutuk ho mezu sira, maibé ema hotu ta'uk nia tanba nia pastu. Barnabé mesak de'it la'o ba oin ho brani, kaer Saulo nia liman, no lori nia ba apóstolu sira. Barnabé esplika oinsá Jesus troka Saulo nia moris no oinsá Saulo haklaken ho brani iha Damasko.",
+      "scene_summary": "When the disciples fear Saul, Barnabas courageously steps forward to sponsor Saul and present him to the apostles.",
+      "nano_banana_prompt": "Nano Banana illustration style, kind Barnabas putting his hand warmly on the shoulder of Paul (Saul) and introducing him to the smiling apostles inside a warm wooden house in Jerusalem. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Encouraging Believers in Antioch",
+      "image_file": "3.jpeg",
+      "english_text": "When the church in Jerusalem heard that many Gentiles in Antioch had accepted Jesus, they sent Barnabas to investigate. When Barnabas arrived and saw the grace of God at work, he rejoiced greatly and encouraged them all to remain true to the Lord with all their hearts. Barnabas then brought Saul from Tarsus to Antioch, where disciples were first called Christians.",
+      "tetum_translation": "Bainhira katuik uma-klesan Jeruzalém rona katak ema jentiu barak iha Antioquia simu Jesus, sira haruka Barnabé atu haree. Bainhira Barnabé to'o no haree Maromak nia grasa servisu nian, nia haksolok tebes no fo laran-manas ba sira hotu atu hela laran-metin ba Na'i ho laran tomak. Tuir mai Barnabé lori Saulo husi Tarsu ba Antioquia, iha ne'ebé dixípulu sira primeiru hamutuk bolu ema Kristaun.",
+      "scene_summary": "Barnabas rejoices over the growth of the Antioch church and brings Saul to teach the new believers.",
+      "nano_banana_prompt": "Nano Banana illustration style, joyful Barnabas and Paul teaching a diverse, happy group of men and women gathered under an olive tree in Antioch under a bright blue sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "The First Missionary Journey",
+      "image_file": "4.jpeg",
+      "english_text": "Set apart by the Holy Spirit, Barnabas and Paul set sail on their first missionary journey, taking young John Mark with them. Traveling to Cyprus and Asia Minor, they shared the Gospel in synagogues and towns, healed the sick, and planted vibrant new churches despite facing strong opposition.",
+      "tetum_translation": "Hetan hili husi Espíritu Santu, Barnabé no Paulo sa'e roo ba sira-nia viajen misionáriu dahuluk, hodi lori Joaun Marcos ne'ebé jovik hamutuk ho sira. Viaje ba Sipre no Ásia Menór, sira fahe Evanjellu iha sinagoga no sidade sira, cura ema moras, no harii katuik uma-klesan foun sira maski hasoru oponasaun mehi.",
+      "scene_summary": "Barnabas, Paul, and John Mark embark on their first missionary journey by boat to spread the Gospel across the sea.",
+      "nano_banana_prompt": "Nano Banana illustration style, Barnabas, Paul, and young John Mark standing on the wooden deck of a sailing ship looking forward toward a Mediterranean harbor town with green hills. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Giving John Mark a Second Chance",
+      "image_file": "5.jpeg",
+      "english_text": "When planning a second missionary trip, Paul hesitated to bring John Mark because he had returned home earlier. But Barnabas, true to his encouraging nature, saw John Mark's potential and gave him a second chance. Barnabas took Mark to Cyprus to mentor him, helping him grow into a faithful leader who later wrote the Gospel of Mark.",
+      "tetum_translation": "Bainhira mehi viajen misionáriu daruak nian, Paulo duda atu lori Joaun Marcos tanba nia fila uluk ba uma. Maibé Barnabé, ne'ebé laran-manas beibeik, haree Joaun Marcos nia kbiit-laran no fó fali oportunidade daruak ba nia. Barnabé lori Marcos ba Sipre atu treina nia, hodi ajulita nia sai lider laran-metin ne'ebé tuir mai hakerek Evanjellu Marcos nian.",
+      "scene_summary": "Barnabas mentors young John Mark on Cyprus, giving him a second chance that prepares him to write his Gospel.",
+      "nano_banana_prompt": "Nano Banana illustration style, kind Barnabas sitting beside young John Mark on a bench overlooking the sea in Cyprus, unrolling a scroll together with encouraging smiles. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Barnabas shows us that being an encourager who believes in others and gives second chances can change lives and help God's kingdom grow.",
+    "core_lesson_tet": "Barnabé hatudu mai ita katak sai ema ne'ebé fo laran-manas, fiar ema seluk, no fo oportunidade daruak bele troka ema nia moris no halo Maromak nia reinu boot ba oin.",
+    "discussion_question_en": "Is there a friend who feels left out or made a mistake whom you can encourage and support this week like Barnabas did?",
+    "discussion_question_tet": "Iha belun ida ne'ebé sente mesak ka halo sala ida ne'ebé ó bele fo laran-manas no ajulita iha semana ne'e hanesan Barnabé halo?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Friendly Barnabas smiling warmly and giving a pouch of coins to help those in need.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, kind Hebrew man Barnabas with a friendly smile holding out a coin pouch in generosity, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "BARNABAS",
+        "word_tet": "BARNABE",
+        "clue_en": "The faithful believer known as the Son of Encouragement.",
+        "clue_tet": "Fiar-na'in laran-metin ne'ebé koñecido nu'udar Oan Laran-manas."
+      },
+      {
+        "word_en": "ENCOURAGE",
+        "word_tet": "MANAS",
+        "clue_en": "To lift up others and build their faith with kind words.",
+        "clue_tet": "Foti ema seluk nia laran-manas no harii sira-nia fiar ho liafuan di'ak."
+      },
+      {
+        "word_en": "SAUL",
+        "word_tet": "SAULO",
+        "clue_en": "The apostle Paul whom Barnabas welcomed when others feared him.",
+        "clue_tet": "Apóstolu Paulo ne'ebé Barnabé simu bainhira ema seluk ta'uk nia."
+      },
+      {
+        "word_en": "MARK",
+        "word_tet": "MARCOS",
+        "clue_en": "The young helper whom Barnabas mentored with patience.",
+        "clue_tet": "Ajudante jovik ne'ebé Barnabé treina ho pasiénsia."
+      },
+      {
+        "word_en": "ANTIOCH",
+        "word_tet": "ANTIOQUIA",
+        "clue_en": "The city where believers were first called Christians.",
+        "clue_tet": "Sidade ne'ebé fiar-na'in sira hetan bolu primeiru nu'udar Kristaun."
+      },
+      {
+        "word_en": "GIVE",
+        "word_tet": "FO",
+        "clue_en": "Sharing blessings and land generously to help the church.",
+        "clue_tet": "Fahe bensaun no rai ho laran-luak atu ajulita katuik uma-klesan."
+      }
+    ]
+  }
+}

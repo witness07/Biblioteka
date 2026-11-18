@@ -1,6 +1,6 @@
 /**
  * bible.html 전용 성경 뷰어 컨트롤러 (경로: data/res/bible-viewer-controller.js)
- * structured_bible.json 파일을 불러와 구약/신약 필터링, 장/절 렌더링, 검색, 딥링크(?ref=)를 처리합니다.
+ * structured_bible_2.json 로드, 반응형 역본 대조(NLT/WEB) 및 검색 지원
  */
 (function () {
     let bibleData = null;
@@ -8,7 +8,20 @@
     let currentChapter = "1";
     let fontSize = 18;
 
-    // 책 이름 및 약어 매핑 테이블 (외부 링크 및 검색 호환)
+    let showNlt = false;
+    const nltCache = {};
+
+    // 표준 66권 영문 약어 배열 (창세기 0번 인덱스 ~ 요한계시록 65번 인덱스)
+    const STANDARD_BOOK_CODES = [
+        "GEN", "EXO", "LEV", "NUM", "DEU", "JOS", "JDG", "RUT", "1SA", "2SA",
+        "1KI", "2KI", "1CH", "2CH", "EZR", "NEH", "EST", "JOB", "PSA", "PRO",
+        "ECC", "SNG", "ISA", "JER", "LAM", "EZK", "DAN", "HOS", "JOL", "AMO",
+        "OBA", "JON", "MIC", "NAM", "HAB", "ZEP", "HAG", "ZEC", "MAL",
+        "MAT", "MRK", "LUK", "JHN", "ACT", "ROM", "1CO", "2CO", "GAL", "EPH",
+        "PHP", "COL", "1TH", "2TH", "1TI", "2TI", "TIT", "PHM", "HEB", "JAS",
+        "1PE", "2PE", "1JN", "2JN", "3JN", "JUD", "REV"
+    ];
+
     const BOOK_ALIASES = {
         "gen": "Jénesis", "jénesis": "Jénesis", "genesis": "Jénesis", "창": "Jénesis", "창세기": "Jénesis",
         "exo": "Exodu", "exodu": "Exodu", "éxodo": "Exodu", "출": "Exodu", "출애굽기": "Exodu",
@@ -35,7 +48,6 @@
         "rev": "Apokalipse", "apokalipse": "Apokalipse", "계": "Apokalipse"
     };
 
-    // 구약(OT)과 신약(NT) 분류 리스트
     const OLD_TESTAMENT = [
         "Jénesis", "Exodu", "Levítiku", "Númeru", "Deuteronómiu", "Josué", "Juis", "Rute",
         "1 Samuel", "2 Samuel", "1 Liurai", "2 Liurai", "1 Krónikas", "2 Krónikas",
@@ -61,37 +73,122 @@
         closeSearchBtn: document.getElementById('closeSearchBtn'),
         prevChapBtn: document.getElementById('prevChapBtn'),
         nextChapBtn: document.getElementById('nextChapBtn'),
+        toggleNltBtn: document.getElementById('toggleNltBtn'),
+        parallelHeader: document.getElementById('parallelHeader'),
+        engHeaderLabel: document.getElementById('engHeaderLabel'),
+        headerInner: document.getElementById('headerInner'),
         fontUp: document.getElementById('fontUp'),
         fontDown: document.getElementById('fontDown'),
         mainContainer: document.getElementById('mainContainer')
     };
 
-    // 성경 책이 구약인지 판별하는 함수
     function getTestament(bookName) {
         return OLD_TESTAMENT.includes(bookName) ? 'OT' : 'NT';
     }
 
-    // JSON 데이터 로드 및 초기화
-    async function initBible() {
+    // 영문 성경 로드 (1순위: Bolls.life NLT / 2순위 폴백: bible-api.com WEB)
+    async function fetchEnglishChapter(bookName, chap) {
+        const cacheKey = `${bookName}_${chap}`;
+        if (nltCache[cacheKey]) return nltCache[cacheKey];
+
+        const bookNames = Object.keys(bibleData);
+        const bookIdx = bookNames.indexOf(bookName);
+        if (bookIdx < 0) return { version: 'NLT', verses: {} };
+
+        const bookNumber = bookIdx + 1;
+        const bookCode = STANDARD_BOOK_CODES[bookIdx] || "GEN";
+
+        // 1순위: Bolls.life API (NLT)
         try {
-            const res = await fetch('data/res/structured_bible.json');
-            if (!res.ok) throw new Error('structured_bible.json 파일을 찾을 수 없습니다.');
-            bibleData = await res.json();
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 5000);
+            const res = await fetch(`https://bolls.life/get-text/NLT/${bookNumber}/${chap}/`, { signal: controller.signal });
+            clearTimeout(timeoutId);
 
-            els.loadingState.classList.add('hidden');
-            els.readerView.classList.remove('hidden');
-
-            populateBookDropdown();
-            handleUrlReference();
+            if (res.ok) {
+                const data = await res.json();
+                if (Array.isArray(data) && data.length > 0) {
+                    const verseMap = {};
+                    data.forEach(item => {
+                        verseMap[String(item.verse)] = String(item.text || '').replace(/<[^>]*>/g, '').trim();
+                    });
+                    const result = { version: 'NLT', verses: verseMap };
+                    nltCache[cacheKey] = result;
+                    return result;
+                }
+            }
         } catch (err) {
-            els.loadingState.innerHTML = `
-                <p class="text-red-600 font-semibold">Erro: ${err.message}</p>
-                <p class="text-sm mt-2"><b>structured_bible.json</b> 파일 경로가 올바른지 확인해 주세요.</p>
-            `;
+            console.warn('Bolls.life NLT 호출 실패, 예비 API 시도:', err);
         }
+
+        // 2순위: 예비 API (bible-api.com - 공백 인코딩 및 타임아웃 적용)
+        try {
+            const controller2 = new AbortController();
+            const timeoutId2 = setTimeout(() => controller2.abort(), 5000);
+            const res2 = await fetch(`https://bible-api.com/${encodeURIComponent(bookCode + ' ' + chap)}?translation=web`, { signal: controller2.signal });
+            clearTimeout(timeoutId2);
+
+            if (res2.ok) {
+                const data2 = await res2.json();
+                if (data2 && Array.isArray(data2.verses)) {
+                    const verseMap = {};
+                    data2.verses.forEach(item => {
+                        verseMap[String(item.verse)] = String(item.text || '').replace(/\n/g, ' ').trim();
+                    });
+                    const result = { version: 'WEB', verses: verseMap };
+                    nltCache[cacheKey] = result;
+                    return result;
+                }
+            }
+        } catch (err2) {
+            console.error('영문 성경 API 모두 실패:', err2);
+        }
+
+        return { version: 'NLT', verses: null };
     }
-    
-    // 책 드롭다운 목록 채우기 (구약/신약 필터 반영)
+
+    async function initBible() {
+        const jsonPaths = [
+            'data/res/structured_bible_2.json',
+            'data/res/structured_bible.json'
+        ];
+
+        for (const path of jsonPaths) {
+            try {
+                const res = await fetch(path);
+                if (res.ok) {
+                    bibleData = await res.json();
+                    break;
+                }
+            } catch (e) {
+                console.warn(`${path} 로드 실패:`, e.message);
+            }
+        }
+
+        if (!bibleData) {
+            // 미리보기(Preview) 등 로컬 JSON 접근이 불가한 환경일 경우 테스트용 창세기 1장 샘플 로드
+            console.warn('로컬 JSON 파일을 모두 찾을 수 없어 테스트 샘플 데이터를 사용합니다.');
+            bibleData = {
+                "Jénesis": {
+                    "1": {
+                        "title": "Maromak Kria Buat Hotu",
+                        "verses": {
+                            "1": "Hahuu fo-foun, Maromak kria lalehan no rai.",
+                            "2": "Rai nee seidauk iha forma no mamuk. Nakukun taka hela fatin klean nia leten. No Maromak nia Espíritu book aan ba-mai iha bee nia leten.",
+                            "3": "Maromak dehan, “Naroman mosu ba.” Depois, naroman iha."
+                        }
+                    }
+                }
+            };
+        }
+
+        els.loadingState.classList.add('hidden');
+        els.readerView.classList.remove('hidden');
+
+        populateBookDropdown();
+        handleUrlReference();
+    }
+
     function populateBookDropdown() {
         const filter = els.testamentSelect.value;
         els.bookSelect.innerHTML = '';
@@ -108,7 +205,6 @@
         });
     }
 
-    // 장 드롭다운 목록 채우기
     function populateChapterDropdown(bookName) {
         els.chapterSelect.innerHTML = '';
         const chaptersObj = bibleData[bookName];
@@ -123,8 +219,33 @@
         });
     }
 
-    // 성경 본문 렌더링 (특정 절 하이라이트 및 소제목 지원)
-    window.renderChapter = function (bookName, chap, highlightVerses = []) {
+    function updateLayoutMode() {
+        if (showNlt) {
+            els.mainContainer.classList.remove('max-w-4xl');
+            els.mainContainer.classList.add('max-w-6xl');
+            if (els.headerInner) {
+                els.headerInner.classList.remove('max-w-4xl');
+                els.headerInner.classList.add('max-w-6xl');
+            }
+            if (els.parallelHeader) {
+                els.parallelHeader.classList.remove('hidden');
+                els.parallelHeader.classList.add('hidden', 'md:grid');
+            }
+        } else {
+            els.mainContainer.classList.remove('max-w-6xl');
+            els.mainContainer.classList.add('max-w-4xl');
+            if (els.headerInner) {
+                els.headerInner.classList.remove('max-w-6xl');
+                els.headerInner.classList.add('max-w-4xl');
+            }
+            if (els.parallelHeader) {
+                els.parallelHeader.classList.add('hidden');
+                els.parallelHeader.classList.remove('md:grid');
+            }
+        }
+    }
+
+    window.renderChapter = async function (bookName, chap, highlightVerses = []) {
         if (!bibleData[bookName] || !bibleData[bookName][chap]) return;
 
         currentBookName = bookName;
@@ -143,10 +264,13 @@
         els.testamentBadge.textContent = testament === 'OT' ? 'Testamentu Tuan' : 'Testamentu Foun';
         els.chapterTitle.textContent = `${currentBookName} ${currentChapter}`;
 
+        updateLayoutMode();
+
         const chapterData = bibleData[currentBookName][currentChapter];
         const verses = chapterData.verses || {};
         const verseNums = Object.keys(verses).sort((a, b) => Number(a) - Number(b));
 
+        // 1) 먼저 테툼어 본문(및 NLT 로딩 표시)을 즉시 화면에 출력해 반응성 확보
         let html = '';
         if (chapterData.title) {
             html += `<h4 class="font-bold text-amber-700 text-lg mb-3 mt-2 border-b pb-1">${chapterData.title}</h4>`;
@@ -154,9 +278,27 @@
 
         html += verseNums.map(vNum => {
             const isHighlighted = highlightVerses.includes(Number(vNum));
+            const highlightClass = isHighlighted ? 'verse-highlight bg-amber-50 p-2 rounded' : '';
+            // 특수 깨짐 기호() 자동 제거 및 빈 본문 안내 처리
+            const rawVerse = (verses[vNum] || '').replace(/\uFFFD/g, '').trim();
+            const verseText = rawVerse || '<span class="text-slate-400 italic text-sm">(Tekstu la iha)</span>';
+
+            if (showNlt) {
+                return `
+                    <div id="v-${vNum}" class="parallel-verse-row ${highlightClass}">
+                        <p class="leading-relaxed text-slate-800 m-0">
+                            <sup class="font-sans font-bold text-amber-600 mr-1.5 select-none">${vNum}</sup>${verseText}
+                        </p>
+                        <p id="nlt-v-${vNum}" class="parallel-eng leading-relaxed m-0 text-slate-400 italic text-sm">
+                            Loading NLT...
+                        </p>
+                    </div>
+                `;
+            }
+
             return `
-                <p id="v-${vNum}" class="leading-relaxed mb-2 ${isHighlighted ? 'verse-highlight bg-amber-50 p-1 rounded' : ''}">
-                    <sup class="font-sans font-bold text-amber-600 mr-1.5 select-none">${vNum}</sup>${verses[vNum]}
+                <p id="v-${vNum}" class="leading-relaxed mb-2 ${highlightClass}">
+                    <sup class="font-sans font-bold text-amber-600 mr-1.5 select-none">${vNum}</sup>${verseText}
                 </p>
             `;
         }).join('');
@@ -164,6 +306,28 @@
         els.versesContainer.innerHTML = html;
         els.searchView.classList.add('hidden');
         els.readerView.classList.remove('hidden');
+
+        // 2) NLT가 켜져 있으면 비동기로 영문 데이터를 받아 각 절의 오른쪽/아래칸에 채워 넣기
+        if (showNlt) {
+            const engData = await fetchEnglishChapter(currentBookName, currentChapter);
+            if (els.engHeaderLabel) {
+                els.engHeaderLabel.textContent = `English (${engData.version})`;
+            }
+
+            verseNums.forEach(vNum => {
+                const engEl = document.getElementById(`nlt-v-${vNum}`);
+                if (!engEl) return;
+
+                if (engData.verses && engData.verses[vNum]) {
+                    engEl.classList.remove('text-slate-400', 'italic', 'text-sm');
+                    engEl.innerHTML = `<sup class="font-sans font-semibold text-slate-400 mr-1.5 select-none md:hidden">${vNum}</sup>${engData.verses[vNum]}`;
+                } else if (engData.verses === null) {
+                    engEl.textContent = '(English text unavailable offline)';
+                } else {
+                    engEl.textContent = '';
+                }
+            });
+        }
 
         if (highlightVerses.length > 0) {
             const targetEl = document.getElementById(`v-${highlightVerses[0]}`);
@@ -175,7 +339,6 @@
         }
     };
 
-    // URL 파라미터(?ref=Jénesis.1.1-3 또는 #Jénesis 1:1) 파싱
     function handleUrlReference() {
         const params = new URLSearchParams(window.location.search);
         const ref = params.get('ref') || decodeURIComponent(window.location.hash.replace('#', ''));
@@ -207,7 +370,6 @@
         window.renderChapter(bookNames[0], "1");
     }
 
-    // 테툼어/포르투갈어 악센트 기호 제거 및 소문자 정규화 함수 (예: "Jénesis" -> "jenesis", "á, ã" -> "a")
     function normalizeText(str) {
         return str
             .normalize("NFD")
@@ -215,16 +377,10 @@
             .toLowerCase();
     }
 
-    // 악센트 무관 하이라이트를 위한 유연한 정규식 생성 함수
     function buildAccentInsensitiveRegex(query) {
         const accentMap = {
-            'a': '[aáàãâä]',
-            'e': '[eéèêë]',
-            'i': '[iíìîï]',
-            'o': '[oóòõôö]',
-            'u': '[uúùûü]',
-            'c': '[cç]',
-            'n': '[nñ]'
+            'a': '[aáàãâä]', 'e': '[eéèêë]', 'i': '[iíìîï]',
+            'o': '[oóòõôö]', 'u': '[uúùûü]', 'c': '[cç]', 'n': '[nñ]'
         };
         const normalizedQuery = normalizeText(query);
         const pattern = normalizedQuery.split('').map(char => {
@@ -234,7 +390,6 @@
         return new RegExp(`(${pattern})`, 'gi');
     }
 
-    // 전체 성경 단어 검색 기능 (악센트 양방향 호환)
     function performSearch() {
         const rawQuery = els.searchInput.value.trim();
         const normalizedQuery = normalizeText(rawQuery);
@@ -278,8 +433,23 @@
         els.searchView.classList.remove('hidden');
     }
 
-    // 이벤트 리스너 바인딩
     function bindEvents() {
+        if (els.toggleNltBtn) {
+            els.toggleNltBtn.addEventListener('click', () => {
+                showNlt = !showNlt;
+                if (showNlt) {
+                    els.toggleNltBtn.classList.remove('border-slate-300', 'text-slate-600');
+                    els.toggleNltBtn.classList.add('border-amber-500', 'bg-amber-100', 'text-amber-900');
+                    els.toggleNltBtn.textContent = '✓ NLT';
+                } else {
+                    els.toggleNltBtn.classList.add('border-slate-300', 'text-slate-600');
+                    els.toggleNltBtn.classList.remove('border-amber-500', 'bg-amber-100', 'text-amber-900');
+                    els.toggleNltBtn.textContent = '+ NLT';
+                }
+                window.renderChapter(currentBookName, currentChapter);
+            });
+        }
+
         els.testamentSelect.addEventListener('change', () => {
             populateBookDropdown();
             const firstOpt = els.bookSelect.options[0];

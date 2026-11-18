@@ -1,0 +1,105 @@
+{
+  "character_id": "timothy",
+  "character_name_en": "Timothy",
+  "character_name_tet": "Timóteo",
+  "category": "Major (5 Scenes)",
+  "bible_reference": "Acts 16, 1 & 2 Timothy",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Taught Scriptures from Youth",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago in Lystra, a young boy named Timothy grew up in a home filled with faith. His grandmother Lois and mother Eunice lovingly taught him the Holy Scriptures from the time he was small. Through their guidance and gentle care, Timothy learned to love God with all his heart.",
+      "tetum_translation": "Iha tempu uluk iha Lystra, labarik-mane ida naran Timóteo boot iha uma ne'ebé nakano ho fiar. Nia avó-feto Lóide no nia inan Eunice hanorin nia ho domin kona-ba Kuaresma Santu sira husi tempu ne'ebé nia ki'ik. Liuhusi sira-nia matadalan no nabilan kmaan, Timóteo aprende atu domin Maromak ho nia laran tomak.",
+      "scene_summary": "Young Timothy is lovingly taught the Holy Scriptures by his mother Eunice and grandmother Lois.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew boy named Timothy sitting between his kind mother Eunice and grandmother Lois, looking together at an open parchment scroll inside a cozy ancient home. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Chosen as Paul's Missionary Companion",
+      "image_file": "2.jpeg",
+      "english_text": "When the apostle Paul visited Lystra, he noticed Timothy's gentle spirit, sincere faith, and good reputation among believers. Paul invited young Timothy to join him as a missionary companion to travel across distant lands and share the Good News of Jesus Christ.",
+      "tetum_translation": "Bainhira apóstolu Paulu vizita Lystra, nia haree Timóteo nia espiritu kmaan, fiar loloos, no reputasaun di'ak iha fiar-na'in sira nia klaran. Paulu konvida Timóteo foura-hoin atu tuir nia nu'udar kompañeiru misionáriu atu la'o ba rai dook sira no fahe Evanjellu Di'ak kona-ba Jesus Kristu.",
+      "scene_summary": "Paul recognizes Timothy's sincere faith and invites him to join his missionary journeys.",
+      "nano_banana_prompt": "Nano Banana illustration style, apostle Paul wearing a simple travel tunic placing a warm hand of blessing on young Timothy's shoulder, with packed leather bags ready for a missionary journey under a bright morning sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Leading the Church in Ephesus",
+      "image_file": "3.jpeg",
+      "english_text": "Later, Paul entrusted Timothy with the important responsibility of guiding and leading the church in Ephesus. Although Timothy was younger than many elders, Paul wrote to encourage him: 'Don't let anyone look down on you because you are young, but set an example in speech, conduct, love, faith, and purity.'",
+      "tetum_translation": "Tuirmai, Paulu entrega ba Timóteo responsabilidade boot atu lori no matadalan kreda iha Éfeso. Maski Timóteo foura-hoin liu katuas barak, Paulu hakerek atu ksoit nia: 'Keta husik ema ida hamasa ó tanba ó-nia iidade juvenil, maibé sai ai-knanoik iha ko'alia, hahalok, domin, fiar, no laran-moos.'",
+      "scene_summary": "Paul encourages young Timothy to lead the church in Ephesus with courage and set an example for all believers.",
+      "nano_banana_prompt": "Nano Banana illustration style, young Timothy standing courageously in front of a warm gathering of church members in Ephesus, unrolling a parchment scroll and teaching them with a gentle smile. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Faithful Servant in Trials",
+      "image_file": "4.jpeg",
+      "english_text": "Leading a growing church brought many challenges and trials, but Timothy remained patient, gentle, and steadfast. He prayed continually, guarded the true message of the Gospel, and faithfully cared for the spiritual needs of God's people like a dedicated shepherd.",
+      "tetum_translation": "Lori kreda ne'ebé boot ba oin lori mós dezafiu no susar barak, maibé Timóteo kontinua ho pasiénsia, kmaan, no laran-metin. Nia harohan beibeik, proteje lia-los Evanjellu nian, no tau matan ho laran-metin ba povu Maromak nian hanesan bibi-atan dedicado ida.",
+      "scene_summary": "Timothy stays faithful, patient, and prayerful through trials, caring deeply for God's flock.",
+      "nano_banana_prompt": "Nano Banana illustration style, young pastor Timothy kneeling in quiet prayer beside an open Bible scroll in a candlelit room, holding a small wooden lamp with peaceful determination on his face. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Paul's Beloved Son in Faith",
+      "image_file": "5.jpeg",
+      "english_text": "Near the end of Paul's life, Paul wrote his final letter to Timothy, affectionately calling him his 'beloved son in faith.' Timothy carried on Paul's legacy with unwavering devotion, inspiring future generations of believers to follow Jesus courageously.",
+      "tetum_translation": "Besik Paulu nia rohan moris nian, Paulu hakerek nia karta ikus ba Timóteo, hodi bolu nia ho domin nu'udar nia 'oan-mane doben iha fiar.' Timóteo kontinua Paulu nia legado ho dedikasaun metin, hodi fó inspirasaun ba jerasaun futuru fiar-na'in sira atu tuir Jesus ho brani.",
+      "scene_summary": "Paul calls Timothy his beloved son, and Timothy faithfully carries forward the legacy of faith.",
+      "nano_banana_prompt": "Nano Banana illustration style, young leader Timothy holding a precious parchment letter written by Paul, standing outdoors on a green hill as warm sunlight breaks through soft clouds, symbolizing enduring hope and faith. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Timothy shows us that age does not limit how God can use us; being a faithful example in love, speech, and purity encourages everyone.",
+    "core_lesson_tet": "Timóteo hatudu mai ita katak iidade la haamutuk Maromak atu uza ita; sai ai-knanoik laran-metin iha domin, ko'alia, no laran-moos fó ksoit ba ema hotu.",
+    "discussion_question_en": "How can you be a good example in your words, love, and faith to your family and friends today, no matter your age?",
+    "discussion_question_tet": "Oinsá ó bele sai ai-knanoik di'ak iha ó-nia ko'alia, domin, no fiar ba ó-nia família no belun sira iha loron ne'e, maski ó-nia iidade hira?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Young Timothy smiling warmly while unrolling a sacred scroll.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, young Hebrew leader Timothy holding an open parchment scroll with a cheerful face, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "TIMOTHY",
+        "word_tet": "TIMOTEO",
+        "clue_en": "The young leader taught God's Word from childhood by his mother and grandmother.",
+        "clue_tet": "Lider foura-hoin ne'ebé aprende Maromak nia Liafuan husi ki'ik husi nia inan no avó."
+      },
+      {
+        "word_en": "PAUL",
+        "word_tet": "PAULU",
+        "clue_en": "The apostle who mentored Timothy and called him his beloved son in faith.",
+        "clue_tet": "Apóstolu ne'ebé fo matadalan ba Timóteo no bolu nia nu'udar oan-mane doben."
+      },
+      {
+        "word_en": "FAITH",
+        "word_tet": "FIAR",
+        "clue_en": "The sincere belief passed down to Timothy from his godly family.",
+        "clue_tet": "Fiar loloos ne'ebé pasa ba Timóteo husi nia família ne'ebé tauk Maromak."
+      },
+      {
+        "word_en": "EXAMPLE",
+        "word_tet": "AI-KNANOIK",
+        "clue_en": "Setting a godly pattern in speech, conduct, love, and purity for others to follow.",
+        "clue_tet": "Harii ai-knanoik di'ak iha ko'alia, hahalok, domin, no laran-moos atu ema tuir."
+      },
+      {
+        "word_en": "EPHESUS",
+        "word_tet": "EFESO",
+        "clue_en": "The city where Timothy faithfully led and cared for the church.",
+        "clue_tet": "Sidade ne'ebé Timóteo lori no tau matan ho laran-metin ba kreda."
+      },
+      {
+        "word_en": "YOUTH",
+        "word_tet": "FOURA-HOIN",
+        "clue_en": "Young age that God empowers to do great spiritual work.",
+        "clue_tet": "Iidade juvenil ne'ebé Maromak fó kbiit atu halo servisu espirituál boot."
+      }
+    ]
+  }
+}

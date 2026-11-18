@@ -1,0 +1,105 @@
+{
+  "character_id": "nehemiah",
+  "character_name_en": "Nehemiah",
+  "character_name_tet": "Neemias",
+  "category": "Major (5 Scenes)",
+  "bible_reference": "Nehemiah 1 - 13",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Mourning and Praying for Jerusalem",
+      "image_file": "1.jpeg",
+      "english_text": "In the palace of Susa, Nehemiah heard that Jerusalem's walls were broken down and its gates burned with fire. Saddened by the news, Nehemiah wept, fasted, and prayed earnestly to God for help. God gave him favor before King Artaxerxes, who granted him permission and materials to return to Jerusalem and rebuild its walls.",
+      "tetum_translation": "Iha palásiu Susa, Neemias rona katak Jeruzalém nia lutu-fatuk harohan no odamatan sira motu ho ahi. Triste ho novidade ne'e, Neemias tanis, jejum, no harohan ho laran tomak ba Maromak atu hetan ajuda. Maromak fó grasa ba nia iha Liurai Artaxerxes nia oin, ne'ebé fó lisensa no sasán sira ba nia atu fila ba Jeruzalém no harii hias nia lutu-fatuk sira.",
+      "scene_summary": "Nehemiah hears of Jerusalem's broken walls, prays earnestly to God, and receives the king's permission to rebuild them.",
+      "nano_banana_prompt": "Nano Banana illustration style, a faithful Hebrew cupbearer named Nehemiah wearing clean royal Persian robes, kneeling in prayer inside a grand palace hall with arched windows. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Inspecting the Ruined Walls by Night",
+      "image_file": "2.jpeg",
+      "english_text": "Nehemiah arrived safely in Jerusalem. Night fell, and Nehemiah rode quietly on his donkey to inspect the broken stone walls and burned wooden gates around the city. Knowing that God's hand was upon him, he encouraged the leaders and people, saying, 'Come, let us rebuild the wall of Jerusalem, and we will no longer be in disgrace!'",
+      "tetum_translation": "Neemias to'o ho seguru iha Jeruzalém. Kalan monu tun, no Neemias sa'e nia burro ho nonook atu haree lutu-fatuk harohan no odamatan-ai ne'ebé motu hale'u sidade. Hatene katak Maromak nia liman hela ho nia, nia fó kbiit ba lider no povu sira, hodi dehan, 'Mai, ita harii hias Jeruzalém nia lutu, no ita sei la tuir tan hamutuk moos!'",
+      "scene_summary": "Nehemiah inspects Jerusalem's ruined walls by night and rallies the people to rebuild with faith.",
+      "nano_banana_prompt": "Nano Banana illustration style, Nehemiah riding a small donkey by torchlight at night, inspecting ancient ruined stone city walls in Jerusalem under a starry sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Rebuilding Together with Trowel and Sword",
+      "image_file": "3.jpeg",
+      "english_text": "Families gathered all around Jerusalem to rebuild the walls side by side. When enemies threatened to attack and stop the work, Nehemiah wisely organized guards and instructed the builders: 'Work with one hand and hold a spear in the other!' With courage, prayer, and hard work, the wall was amazingly completed in just fifty-two days!",
+      "tetum_translation": "Família sira halibur hale'u Jeruzalém tomak atu harii hias lutu keta sorin-sorin. Bainhira inimigu sira ameasa atu atakadu no para servisu, Neemias ho matenek organiza guarda sira no haruka badaen sira: 'Servisu ho liman ida no ka'er diman iha liman seluk!' Ho brani, orasaun, no servisu maas, lutu ne'e ramata miragru de'it iha loron lima-nulu-resin-rua laran!",
+      "scene_summary": "The people work courageously with tools and weapons, completing Jerusalem's wall in just 52 days.",
+      "nano_banana_prompt": "Nano Banana illustration style, happy Hebrew men and women working together building stone city walls, some holding trowels and bricks while others stand guard with spears under a bright blue sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Ezra Reads the Law to the People",
+      "image_file": "4.jpeg",
+      "english_text": "With the walls finished and gates restored, all the people gathered joyfully in the square. Ezra the priest brought out the Book of the Law of Moses and read it aloud from morning until noon. As the people heard God's word, they bowed down and wept, but Nehemiah comforted them, saying, 'Do not mourn! The joy of the Lord is your strength!'",
+      "tetum_translation": "Ho lutu ramata tiha no odamatan furak fila fali, povu hotu halibur ho haksolok iha praça boot laran. Amululik Esdras lori sai Livru Ukun-fuan Moisés nian no lee ho lian boot husi dadeer to'o meiu-dia. Bainhira povu rona Maromak nia liafuan, sira hakru'uk no tanis, maibé Neemias konsola sira, hodi dehan, 'Keta triste! Na'i nia ksolok mak imi-nia kbiit!'",
+      "scene_summary": "Ezra reads God's Law to the gathered people, and Nehemiah reminds them that the joy of the Lord is their strength.",
+      "nano_banana_prompt": "Nano Banana illustration style, Ezra the priest standing on a high wooden platform reading from a scroll to a large crowd of cheerful Hebrew families standing in a grand stone square. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Rededication and Praise in Jerusalem",
+      "image_file": "5.jpeg",
+      "english_text": "To celebrate the completion of the wall, Nehemiah led two large choirs of thanksgiving around the top of Jerusalem's new walls. Joyful music, harps, and songs filled the air. The sound of rejoicing in Jerusalem could be heard from far away, as the nation rededicated their lives and city to God with overflowing gratitude.",
+      "tetum_translation": "Atu celebra lutu ne'ebé ramata tiha, Neemias lori koru boot rua atu hahi'i no agradese hodi la'o iha Jeruzalém nia lutu foun leten. Múzika ksolok, arpa, no knananuk nakano ar laran. Lian haksolok iha Jeruzalém bele rona husi dook, bainhira nasaun sagra fali sira-nia moris no sidade ba Maromak ho agradesimentu nakfakar.",
+      "scene_summary": "Choirs walk atop Jerusalem's rebuilt walls praising God, and the joyful sounds echo far and wide.",
+      "nano_banana_prompt": "Nano Banana illustration style, two large joyous processions of people wearing white robes, playing harps and cymbals, walking atop a high restored stone city wall overlooking Jerusalem at sunset. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Nehemiah teaches us that prayer combined with practical action, teamwork, and reliance on God's joy can overcome any obstacle and rebuild what was broken.",
+    "core_lesson_tet": "Neemias hanorin ita katak orasaun no acsaun loloos, servisu hamutuk, no fiar iha Maromak nia ksolok bele manán obstáklu hotu no harii hias buat ne'ebé harohan.",
+    "discussion_question_en": "When something seems broken or difficult at school or home, how can you pray first and work together with others to rebuild it like Nehemiah did?",
+    "discussion_question_tet": "Bainhira buat ruma haree harohan ka susar iha eskola ka uma, oinsá ó bele harohan uluk no servisu hamutuk ho ema seluk atu harii hias hanesan Neemias halo?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Nehemiah standing proudly in front of a newly rebuilt stone wall, holding a blueprint scroll and a trowel.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, Nehemiah standing courageously in front of a stone city wall holding a scroll and a builder trowel, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "NEHEMIAH",
+        "word_tet": "NEEMIAS",
+        "clue_en": "The faithful leader who led the rebuilding of Jerusalem's walls.",
+        "clue_tet": "Lider laran-metin ne'ebé lori ksaun harii hias Jeruzalém nia lutu-fatuk."
+      },
+      {
+        "word_en": "WALL",
+        "word_tet": "LUTU",
+        "clue_en": "The stone protection around Jerusalem that was rebuilt in 52 days.",
+        "clue_tet": "Protesaun fatuk hale'u Jeruzalém ne'ebé harii hias iha loron 52 laran."
+      },
+      {
+        "word_en": "PRAYER",
+        "word_tet": "ORASAUN",
+        "clue_en": "What Nehemiah did first before talking to the king or building.",
+        "clue_tet": "Buat ne'ebé Neemias halo uluk molok ko'alia ba liurai ka harii."
+      },
+      {
+        "word_en": "JOY",
+        "word_tet": "KSOLOK",
+        "clue_en": "The strength of the Lord that comforted the people when listening to God's word.",
+        "clue_tet": "Na'i nia kbiit ne'ebé konsola povu bainhira rona Maromak nia liafuan."
+      },
+      {
+        "word_en": "BUILD",
+        "word_tet": "HARII",
+        "clue_en": "Working together as families to restore the city gates and walls.",
+        "clue_tet": "Servisu hamutuk nu'udar família sira atu restaura sidade nia odamatan no lutu."
+      },
+      {
+        "word_en": "EZRA",
+        "word_tet": "ESDRAS",
+        "clue_en": "The priest who read God's Law aloud to all the people in the square.",
+        "clue_tet": "Amululik ne'ebé lee Maromak nia Ukun-fuan ho lian boot ba povu hotu iha praça."
+      }
+    ]
+  }
+}

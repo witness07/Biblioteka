@@ -1,0 +1,105 @@
+{
+  "character_id": "samson",
+  "character_name_en": "Samson",
+  "character_name_tet": "Sansão",
+  "category": "Major (5 Scenes)",
+  "bible_reference": "Judges 13 - 16",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Born as a Nazirite of God",
+      "image_file": "1.jpeg",
+      "english_text": "Before Samson was born, an angel of the Lord appeared to his mother and promised that she would have a special son. God chose Samson to be a Nazirite, set apart for Him from birth, and his long hair was a sign of God's holy blessing. As Samson grew, the Holy Spirit gave him incredible, miraculous strength to help protect Israel.",
+      "tetum_translation": "Molok Sansão moris, Maromak nia anju ida mosu ba nia inan no promete katak nia sei ko'us oan-mane espesiál ida. Maromak hili Sansão atu sai Nazireu ida, foti ketak ba Nia husi moris mai, no nia fuuk naruk sai sinal bensaun santu Maromak nian. Nu'udar Sansão boot ba, Espíritu Santu fó kbiit boot milagrozuk ba nia atu proteje Izraél.",
+      "scene_summary": "An angel announces Samson's birth as a Nazirite blessed with supernatural strength from God.",
+      "nano_banana_prompt": "Nano Banana illustration style, a muscular young Hebrew man named Samson with long flowing dark hair and a simple tan linen tunic, standing strong in a sunny field while bright golden rays of divine light beam down on him. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Great Miracles of Strength",
+      "image_file": "2.jpeg",
+      "english_text": "God's Spirit came powerfully upon Samson whenever Israel was in trouble. Once, when a young lion roared at him, Samson defeated it with his bare hands. Later, when surrounded by a huge Philistine army, Samson picked up the jawbone of a donkey and bravely defeated one thousand enemy soldiers, saving his people.",
+      "tetum_translation": "Maromak nia Espíritu mai ho kbiit boot ba Sansão bainhira Izraél iha susar laran. Dala ida, bainhira leão ki'ik ida halera ba nia, Sansão hamonu nia ho liman tanan. Tuir mai, bainhira soldadu Filisteu barak Hale'u nia, Sansão foti asiniku (karau-ruin) nia kelen-ruin no ho brani hamonu soldadu rihun ida, hodi salva nia povu.",
+      "scene_summary": "Empowered by the Spirit of God, Samson performs heroic feats of miraculous strength to defend Israel.",
+      "nano_banana_prompt": "Nano Banana illustration style, a powerful muscular Hebrew hero Samson with long dark braided hair and a tunic, standing heroically on a rocky hill holding a simple wooden jawbone, looking courageous and victorious. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Delilah and the Lost Strength",
+      "image_file": "3.jpeg",
+      "english_text": "As time passed, Samson fell in love with a woman named Delilah. The Philistine leaders offered Delilah much silver to discover the secret of Samson's strength. After nagging him repeatedly, Samson foolishly revealed that if his hair were cut, his vow to God would be broken. While Samson slept, Delilah cut his long hair, and his great strength left him.",
+      "tetum_translation": "Nu'udar tempu la'o, Sansão hahú domin feto ida naran Dalila. Lider Filisteu sira fó osan-mutin barak ba Dalila atu hatene Sansão nia kbiit segredu. Tuir tiha husu beibeik, Sansão ho moeleke hateten katak se nia fuuk ko'a tiha, nia juramentu ba Maromak sei nakfera. Bainhira Sansão toba, Dalila ko'a tiha nia fuuk naruk, no nia kbiit boot husik tiha nia.",
+      "scene_summary": "Samson reveals his secret vow to Delilah, who cuts his hair while he sleeps, causing him to lose God's strength.",
+      "nano_banana_prompt": "Nano Banana illustration style, a muscular Hebrew man named Samson sleeping peacefully in a colorful room, while a cunning woman in blue robes quietly cuts his long braided hair. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Humble Repentance in Prison",
+      "image_file": "4.jpeg",
+      "english_text": "Without God's strength, Samson was captured by the Philistines, who blinded his eyes and forced him to turn a heavy stone mill inside a dark prison. In his deep sorrow and humility, Samson remembered God and repented for breaking his Nazirite vow. As the days passed, Samson's hair slowly began to grow back.",
+      "tetum_translation": "Sem Maromak nia kbiit, soldadu Filisteu sira kaer Sansão, foti tiha nia matan no obriga nia mosu moenda fatuk todan iha kadeia nakukun laran. Iha nia tristeza no haraik-an kle'an, Sansão hanoin-hetan Maromak no arrepende husi nia juramentu ne'ebé nakfera. Nu'udar loron liu ba, Sansão nia fuuk hahú moris fali neineik-neineik.",
+      "scene_summary": "Imprisoned and humbled, Samson repents before God in prayer while his hair slowly begins to regrow.",
+      "nano_banana_prompt": "Nano Banana illustration style, a humbled muscular Hebrew man wearing a simple brown tunic pushing a large stone grinding wheel inside a stone prison, while soft sunlight shines through a small window onto his growing dark hair. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Final Victory and God's Mercy",
+      "image_file": "5.jpeg",
+      "english_text": "One day, thousands of Philistines gathered in their temple to mock Samson and praise their idol. Samson was brought out and placed between two giant stone pillars. Samson prayed earnestly, 'Lord God, remember me and give me strength just once more!' God mercifully granted his prayer, and Samson pushed the pillars down, defeating the enemies of God's people.",
+      "tetum_translation": "Loron ida, ema Filisteu rihun ba rihun halibur iha sira-nia tempulu atu hamasa Sansão no hahi'i sira-nia estátua idolatriku. Ema lori Sansão sai no tau nia iha fatuk-riin boot rua nia klaran. Sansão harohan ho laran-manas, 'Na'i Maromak, hanoin-hetan ha'u no fó kbiit mai ha'u dala ida tan!' Maromak ho laran-sadi'ak simu nia orasaun, no Sansão dudu tun fatuk-riin sira-ne'e, hodi hamonu Maromak nia povu nia inimigu sira.",
+      "scene_summary": "God hears Samson's earnest prayer, granting him final strength to push down the temple pillars and save Israel.",
+      "nano_banana_prompt": "Nano Banana illustration style, a powerful Hebrew man Samson with regrown dark hair, standing heroically between two massive stone temple pillars with his hands outstretched against them, bathed in golden heavenly light. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Samson teaches us that real strength comes from trusting God and keeping our promises, and that God mercifully forgives us when we repent.",
+    "core_lesson_tet": "Sansão hanorin ita katak kbiit loloos mai husi fiar ba Maromak no kumpre ita-nia promesa sira, no Maromak ho laran-sadi'ak fó perdua bainhira ita arrepende.",
+    "discussion_question_en": "When you make a mistake or break a promise this week, how can you pray to God for forgiveness and ask Him for strength to do right?",
+    "discussion_question_tet": "Bainhira ó halo sala ka nakfera promesa ida iha semana ne'e, oinsá ó bele harohan ba Maromak ba perdua no husu Nia kbiit atu halo buat ne'ebé loosa?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Strong Samson standing heroically with long braided hair and open arms.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, strong heroic man Samson with long dark hair wearing a simple tunic standing tall with a friendly brave smile, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "SAMSON",
+        "word_tet": "SANSAO",
+        "clue_en": "The strong judge of Israel blessed with great power.",
+        "clue_tet": "Juis forte Izraél nian ne'ebé simu bensaun kbiit boot."
+      },
+      {
+        "word_en": "STRENGTH",
+        "word_tet": "KBIIT",
+        "clue_en": "The amazing power God gave Samson to protect Israel.",
+        "clue_tet": "Kbiit milagrozuk ne'ebé Maromak fó ba Sansão atu proteje Izraél."
+      },
+      {
+        "word_en": "HAIR",
+        "word_tet": "FUUK",
+        "clue_en": "The sign of Samson's special Nazirite vow to God.",
+        "clue_tet": "Sinal kona-ba Sansão nia juramentu Nazireu nian ba Maromak."
+      },
+      {
+        "word_en": "DELILAH",
+        "word_tet": "DALILA",
+        "clue_en": "The woman who discovered and betrayed Samson's secret.",
+        "clue_tet": "Feto ne'ebé hetan no tranka Sansão nia segredu."
+      },
+      {
+        "word_en": "PRAYER",
+        "word_tet": "ORASAUN",
+        "clue_en": "Samson's earnest request to God for mercy and strength.",
+        "clue_tet": "Sansão nia husu ho laran-manas ba Maromak ba laran-sadi'ak no kbiit."
+      },
+      {
+        "word_en": "REPENT",
+        "word_tet": "ARREPENDE",
+        "clue_en": "Turning back to God with a humble heart in prison.",
+        "clue_tet": "Fila fali ba Maromak ho laran haraik-an iha kadeia laran."
+      }
+    ]
+  }
+}

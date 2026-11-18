@@ -1,0 +1,105 @@
+{
+  "character_id": "noah",
+  "character_name_en": "Noah",
+  "character_name_tet": "Noé",
+  "category": "Major (5 Scenes)",
+  "bible_reference": "Genesis 6 - 9",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "A Righteous Man in a Wicked World",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago, the world became full of wickedness and violence, which brought great sadness to God's heart. But among all the people, there was one righteous man named Noah who walked closely with God and found favor in His eyes. God spoke to Noah and warned him that a great flood was coming to cleanse the earth. God lovingly gave Noah detailed instructions to build a huge wooden ark to keep his family and animals safe.",
+      "tetum_translation": "Iha tempu uluk, raiklaran nakano ho hahalok aat no violénsia, ne'ebé lori tristeza boot ba Maromak nia laran. Maibé iha ema hotu nia klaran, iha mane laran-di'ak ida naran Noé ne'ebé la'o besik ho Maromak no simu grasa iha Nia oin. Maromak ko'alia ba Noé no fo aviso katak udan-boot no bee-sa'e boot sei mai atu hamoos raiklaran. Maromak ho domin fó matadalan ho klaru ba Noé atu harii bote ai boot ida atu proteje nia família no animál sira ho seguru.",
+      "scene_summary": "Noah finds favor in God's eyes amid a wicked world and receives divine instructions to build a giant ark.",
+      "nano_banana_prompt": "Nano Banana illustration style, a gentle elderly Hebrew man named Noah with a grey beard, wearing a simple brown linen tunic, kneeling humbly in prayer in a countryside setting while golden heavenly light shines down on him. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Building the Ark in Faith",
+      "image_file": "2.jpeg",
+      "english_text": "Noah obeyed God immediately, even though he had never seen a flood before. Day after day, Noah and his sons hammered cypress wood, sealed the giant ship with pitch, and built three spacious decks inside. People passed by and laughed at Noah for building a boat on dry land, but Noah stayed faithful and kept building.",
+      "tetum_translation": "Noé halo tuir Maromak kedas, maski nia seidauk haree bee-sa'e boot ida uluk. Loron ba loron, Noé no nia oan-mane sira tesi ai-gopher, tau graxa atu satan bee, no harii andár tolu iha bote laran. Ema sira la'o liu no hamasa Noé tanba harii bote iha rai-maran, maibé Noé ne'ebé laran-metin kontinua harii ba oin.",
+      "scene_summary": "Noah and his family faithfully build the giant wooden ark despite mockery from neighbors.",
+      "nano_banana_prompt": "Nano Banana illustration style, a gentle elderly Hebrew man with a grey beard wearing a brown tunic holding a wooden mallet, working together with his sons to construct a massive wooden boat on a grassy hill under a bright sunny sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Safe Inside the Ark During the Flood",
+      "image_file": "3.jpeg",
+      "english_text": "When the ark was completed, God brought pairs of all living creatures—birds, land animals, and creeping things—to Noah. Noah, his family, and all the animals entered the ark, and God Himself shut the heavy door securely. Soon, the rain fell in torrents for forty days and forty nights, but inside the ark, everyone was warm, safe, and protected by God.",
+      "tetum_translation": "Bainhira bote ne'e hotu tiha, Maromak lori animál oparu husi kriatura moris hotu—manu sira, animál rai nian, no animál ne'ebé da'an—ba Noé. Noé, nia família, no animál hotu tama ba bote laran, no Maromak rasik taku odamatan boot ne'e metin. Udan-boot haraik fali ba loron haatnulu no kalan haatnulu, maibé iha bote laran, ema hotu sente manas, seguru, no hetan protesaun husi Maromak.",
+      "scene_summary": "God gathers animals into the ark, shuts the door, and protects Noah's family through forty days of floodwaters.",
+      "nano_banana_prompt": "Nano Banana illustration style, gentle elderly Noah standing at the open door of a massive wooden ark as pairs of friendly animals like lions, elephants, giraffes, and birds walk peacefully inside under cloudy skies. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "The Dove and Dry Land",
+      "image_file": "4.jpeg",
+      "english_text": "After the floodwaters began to dry up, the ark rested safely on the mountains of Ararat. Noah sent out a raven and later a white dove to see if the land was dry. When the dove returned holding a fresh green olive leaf in its beak, Noah knew the earth was healing. Soon, God told Noah to step out onto the dry ground and offer a heart of thanksgiving.",
+      "tetum_translation": "Bainhira bee-sa'e hahú maran, bote ne'e para ho seguru iha foho Ararat nian leten. Noé haruka manu-ka'ak ida no tuir mai manu-pomba mutin ida atu haree se rai maran tiha ona. Bainhira manu-pomba fila mai hodi lori ai-oliveira matak tahan iha nia baka, Noé hatene katak rai di'ak fali ona. Sedu tan, Maromak dehan ba Noé atu sai ba rai-maran no fó agradesimentu husi laran.",
+      "scene_summary": "A dove returns with an olive branch, signaling dry land, and Noah steps out to offer a sacrifice of praise.",
+      "nano_banana_prompt": "Nano Banana illustration style, gentle elderly Noah wearing a brown tunic standing on top of the wooden ark, reaching out his hand to receive a cute white dove holding a green olive leaf in its beak under a clearing sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "The Rainbow of God's Promise",
+      "image_file": "5.jpeg",
+      "english_text": "Noah built an altar and praised God for saving his family. God smelled the sweet sacrifice and placed a beautiful, multi-colored rainbow across the sky as a glorious sign. God promised, 'Whenever you see the rainbow in the clouds, remember My eternal covenant that I will never again destroy the earth with a flood.' Noah's family smiled with hope for a bright new future.",
+      "tetum_translation": "Noé harii altár ida no hahi'i Maromak tanba salva nia família. Maromak simu ho haksolok no tau arkus-íris (baura) kór-oi-oin furak iha lalehan nu'udar sinal glória nian. Maromak promete, 'Bainhira imi haree baura iha kalohan laran, hanoin-hetan Ha'u-nia aliansa ba nafatin katak Ha'u sei la estraga tan raiklaran ho bee-sa'e boot.' Noé nia família oin-haksolok ho esperansa ba futuru foun ne'ebé naroman.",
+      "scene_summary": "God places a beautiful rainbow in the sky as an everlasting covenant promise never to flood the earth again.",
+      "nano_banana_prompt": "Nano Banana illustration style, gentle elderly Noah and his joyful family standing around a stone altar with soft smoke rising, looking up happily at a giant, vibrant rainbow stretching across a magnificent blue sky over a green landscape. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Noah shows us that obeying God faithfully even when others laugh brings God's safety, blessing, and hope for a fresh start.",
+    "core_lesson_tet": "Noé hatudu mai ita katak halo tuir Maromak ho laran-metin maski ema seluk hamasa lori Maromak nia protesaun, bensaun, no esperansa foun.",
+    "discussion_question_en": "When your classmates or friends make fun of you for doing what is right, how can you stay faithful to God like Noah did?",
+    "discussion_question_tet": "Bainhira ó-nia maluk eskola ka belun sira hamasa ó tanba halo buat ne'ebé loosa, oinsá ó bele hatudu laran-metin ba Maromak hanesan Noé halo?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Elderly Noah standing happily under a big rainbow with a white dove on his hand.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, gentle elderly man Noah with a grey beard holding a white dove with a rainbow arching overhead, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "NOAH",
+        "word_tet": "NOE",
+        "clue_en": "The righteous man who built a giant boat to save his family.",
+        "clue_tet": "Mane laran-di'ak ne'ebé harii bote boot atu salva nia família."
+      },
+      {
+        "word_en": "ARK",
+        "word_tet": "BOTE",
+        "clue_en": "The huge wooden boat that floated safely during the flood.",
+        "clue_tet": "Bote ai boot ne'ebé mumu ho seguru iha bee-sa'e laran."
+      },
+      {
+        "word_en": "RAINBOW",
+        "word_tet": "BAURA",
+        "clue_en": "The colorful sign in the sky of God's promise.",
+        "clue_tet": "Sinal kór-oi-oin iha lalehan kona-ba Maromak nia promesa."
+      },
+      {
+        "word_en": "DOVE",
+        "word_tet": "POMBA",
+        "clue_en": "The bird that brought back a green olive leaf.",
+        "clue_tet": "Manu ne'ebé lori fali ai-oliveira tahan matak ida."
+      },
+      {
+        "word_en": "OBEY",
+        "word_tet": "TUIR",
+        "clue_en": "Doing everything God commanded faithfully.",
+        "clue_tet": "Halo buat hotu ne'ebé Maromak haruka ho laran-metin."
+      },
+      {
+        "word_en": "PROMISE",
+        "word_tet": "PROMESA",
+        "clue_en": "God's everlasting agreement never to flood the earth again.",
+        "clue_tet": "Maromak nia aliansa ba nafatin katak nia sei la estraga tan raiklaran ho bee-sa'e."
+      }
+    ]
+  }
+}

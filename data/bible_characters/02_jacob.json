@@ -1,0 +1,132 @@
+{
+  "character_id": "jacob",
+  "character_name_en": "Jacob",
+  "character_name_tet": "Jacó",
+  "category": "Core (8 Scenes)",
+  "bible_reference": "Genesis 25 - 50",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "The Birthright and the Blessing",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago, Jacob and his twin brother Esau grew up together in a happy home. One day, Esau came home very hungry from hunting, and Jacob traded a warm bowl of stew for Esau's birthright. Later, with his mother's help, Jacob tricked his blind father Isaac to get the special blessing. Jacob got what he wanted, but his brother was very angry, and Jacob had to run away.",
+      "tetum_translation": "Iha tempu uluk, Jacó ho nia maun-feta Esau bo'ot hamutuk iha uma haksolok ida. Loron ida, Esau fila husi kasu ho hamlaha tebes, no Jacó troca modo manas mose ida ho Esau nia direitu nu'udar oan-mane bo'ot. Depois, ho nia inan nia tulun, Jacó lohi nia aman matan-delek Isak atu simu bensaun espesiál. Jacó hetan buat ne'ebé nia hakarak, maibé nia maun hirus tebes, no Jacó tenke halai lakon.",
+      "scene_summary": "Young Jacob trades red stew for Esau's birthright and later tricks his father Isaac to receive the blessing.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew man with smooth skin and dark brown hair wearing a simple blue tunic, offering a steaming red bowl of lentil stew inside a tent to his hairy twin brother in hunting clothes. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Jacob's Dream at Bethel",
+      "image_file": "2.jpeg",
+      "english_text": "All alone in the quiet wilderness, Jacob rested his head on a stone to sleep. As he slept, he saw a wondrous dream of a giant ladder reaching from earth all the way up to heaven! God's bright angels were walking up and down the ladder. God stood above it and lovingly promised, 'I am with you and will protect you wherever you go.' Jacob woke up comforted and full of hope.",
+      "tetum_translation": "Mesak iha rai-fuik ne'ebé hakmatek, Jacó tau nia ulun iha fatuk ida no toba. Bainhira nia toba, nia haree mehi furak ida kona-ba escada boot ida ne'ebé to'o lalehan! Maromak nia anju naroman sira la'o sa'e no tuun iha escada ne'e. Maromak hamriik iha leten no promete ho domin, 'Ha'u hamutuk ho ó no sei proteje ó iha ne'ebé de'it ó ba.' Jacó haseer ho laran-kmanek no yen ho esperansa.",
+      "scene_summary": "Jacob dreams of a ladder reaching heaven with angels ascending and descending, and God promises to protect him.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew man sleeping under a starry night sky with his head resting on a smooth stone, as a glowing golden ladder of light stretches up to heaven with radiant angels walking on it. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Years of Hard Work in Haran",
+      "image_file": "3.jpeg",
+      "english_text": "Jacob arrived in the land of Haran and worked for his uncle Laban. He loved Laban's younger daughter Rachel so much that he willingly worked seven long years for her, but Laban tricked him into marrying Leah first. Jacob stayed faithful, worked another seven years for Rachel, and cared for the flocks in rain and heat. Through all the hard work, God blessed Jacob with a large, beautiful family.",
+      "tetum_translation": "Jacó to'o iha rai Harão no servisu ba nia tio Labão. Nia mahein no domin tebes Labão nia oan-feto ikun Raquel, to'o nia pronto atu servisu tinan hitu ba nia, maibé Labão lohi nia hodi kaben uluk ho Lia. Jacó kontinua fidél, servisu tinan hitu tan ba Raquel, no hein bibi sira iha udan no manas okos. Liu husi servisu todan hotu, Maromak haraik bensaun ba Jacó ho família boot no furak.",
+      "scene_summary": "Jacob works faithfully for twenty years caring for Laban's sheep, marrying Leah and Rachel, and growing his family.",
+      "nano_banana_prompt": "Nano Banana illustration style, a hardworking Hebrew man with smooth skin and dark brown hair wearing a simple blue tunic, tending a large flock of fluffy white sheep in green pastures under bright sunshine. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Wrestling at Peniel",
+      "image_file": "4.jpeg",
+      "english_text": "After twenty years, Jacob prepared to return home, but he was terrified to meet his brother Esau. At night by the Jabbok River, a heavenly visitor appeared, and Jacob wrestled with him until the morning light. Jacob held on tight with all his strength and cried, 'I will not let you go unless you bless me!' Jacob showed how deeply he desired God's true blessing.",
+      "tetum_translation": "Depois de tinan naruk ruanulu, Jacó prepara atu fila ba uma, maibé nia ta'uk tebes atu hasoru nia maun Esau. Iha kalan iha mót Jaboque ninin, mahein celestial ida mosu, no Jacó lori kbiit hotu atu hakuak no sosa ho nia to'o rai naroman. Jacó kaer metin ho nia kbiit tomak no hakilar, 'Ha'u sei la husik Ita ba se Ita la haraik bensaun mai ha'u!' Jacó hatudu katak nia hakarak tebes Maromak nia bensaun loloos.",
+      "scene_summary": "Jacob wrestles all night with a divine messenger by the Jabbok stream, refusing to let go until he receives a blessing.",
+      "nano_banana_prompt": "Nano Banana illustration style, a strong Hebrew man with dark hair in a simple blue tunic wrestling courageously with a glowing divine angelic figure beside a sparkling river under the early morning twilight sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "A New Name: Israel",
+      "image_file": "5.jpeg",
+      "english_text": "As the morning sun rose over the river, the divine messenger touched Jacob's hip and said, 'Your name will no longer be Jacob the trickster, but Israel, because you have struggled with God and humans and have prevailed.' Jacob's heart was completely changed. He was no longer a man who relied on his own tricks, but a humble servant who trusted in God.",
+      "tetum_translation": "Bainhira loron matan sa'e iha mót ninin, mansebu celestial ne'e kona Jacó nia kuak-lubun no dehan, 'Ó-nia naran sei la'ós tan Jacó ne'ebé lohi-na'in, maibé Israel, tanba ó sosa tiha ho Maromak no ema sira no ó manán.' Jacó nia laran nakfila duni. Nia la'ós tan mane ne'ebé sadere ba nia mehi no lohi rasik, maibé atan haraik-an ne'ebé fiar ba Maromak.",
+      "scene_summary": "God changes Jacob's name to Israel, signifying his transformed heart and reliance on God's grace.",
+      "nano_banana_prompt": "Nano Banana illustration style, a Hebrew man with dark hair wearing a blue tunic, limping gently with a wooden walking stick while looking up at a magnificent golden sunrise with a radiant smile of peace. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 6,
+      "title": "Forgiveness and Reconciliation with Esau",
+      "image_file": "6.jpeg",
+      "english_text": "Jacob looked up and saw Esau coming toward him with four hundred men. Instead of hiding, Jacob bowed down humbly seven times as he approached his brother. To Jacob's joy, Esau ran to meet him, threw his arms around his neck, and wept with tears of love. The two brothers forgave each other and made peace at last.",
+      "tetum_translation": "Jacó hateke no haree Esau mai ho ema atus haat. Duké subar, Jacó hakru'uk haraik-an ba rai balun ba dala hitu nu'udar nia hakbesik ba nia maun. Ba Jacó nia ksolok, Esau halai mai hasoru nia, hakuak metin nia kakorok, no tanis ho matan-ben domin nian. Maun-alin nain rua ne'e fó perdua ba malu no halo pás ikusmai.",
+      "scene_summary": "Jacob humbly meets Esau, and the two brothers embrace with tears, forgiving each other completely.",
+      "nano_banana_prompt": "Nano Banana illustration style, two Hebrew twin brothers embracing warmly with happy tears on a dusty path, one in a blue tunic and the other in hunter's clothes, surrounded by peaceful tents and animals. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 7,
+      "title": "Holding On to Faith Through Sorrow",
+      "image_file": "7.jpeg",
+      "english_text": "As the years went by, Jacob loved his young son Joseph deeply and gave him a beautiful coat of many colors. But when Joseph's brothers brought back the torn coat stained with blood, Jacob wept bitterly, believing a wild beast had killed his boy. Even in his deepest grief and long years of waiting, Jacob never abandoned his faith in the God of his fathers.",
+      "tetum_translation": "Nu'udar tinan sira liu ba, Jacó domin tebes nia oan-mane ki'ik José no fó ba nia kapa furak ho kór oioin. Maibé bainhira José nia maun sira lori fila kapa ne'ebé nakbit no ho ran, Jacó tanis ho laran moruk, fiar katak animál fuik ne'e ho maran nia oan. Maski iha triste kle'an no tinan naruk atu hein, Jacó nunka husik nia fiar ba nia bei-ala sira-nia Maromak.",
+      "scene_summary": "Jacob grieves deeply when presented with Joseph's colorful coat, yet he holds on to faith through hardship.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly Hebrew patriarch with dark gray hair and a neat beard, wearing a long blue robe, holding a colorful patchwork coat gently against his face with a sorrowful yet faithful expression inside his tent. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 8,
+      "title": "Reunion and Blessing the Twelve Tribes",
+      "image_file": "8.jpeg",
+      "english_text": "God had a wonderful surprise for Jacob! During a great famine, Jacob discovered that Joseph was alive and serving as the governor of Egypt. Jacob traveled happily to Egypt, hugged his long-lost son with tears of joy, and met his sweet grandchildren. Before he passed away peacefully, Jacob laid his hands on his sons and blessed the twelve tribes of Israel.",
+      "tetum_translation": "Maromak iha mehi furak ida ba Jacó! Iha tempu hamlaha boot, Jacó descubre katak José moris hele no servisu nu'udar governador iha Ejiptu. Jacó viaja ho haksolok ba Ejiptu, hakuak nia oan ne'ebé lakon naruk ho matan-ben ksolok, no hasoru nia netik sira. Antes nia mate ho hakmatek, Jacó tau nia liman iha nia oan-mane sira nia ulun no haraik bensaun ba Israel nia tribu sanulu-naruan.",
+      "scene_summary": "Jacob reunites with Joseph in Egypt, praises God for His goodness, and blesses his twelve sons who become the twelve tribes.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly Hebrew patriarch sitting up in a wooden bed inside a brightly lit room in Egypt, resting his gentle hands on the heads of young children and sons surrounding him in love. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Jacob's life shows us that God can transform our weak and selfish hearts into faithful servants through His grace and patience.",
+    "core_lesson_tet": "Jacó nia moris hatudu mai ita katak Maromak bele nakfila ita-nia laran kbiit-laek no kaan-an sai atan fidél sira liu husi Nia grasian no pásia.",
+    "discussion_question_en": "Is there a time when you made a mistake or argued with someone at home or school? How can you ask for forgiveness and show peace like Jacob did?",
+    "discussion_question_tet": "Iha tempu ruma ne'ebé ó halo sala ka istoriadu ho ema ida iha uma ka eskola? Oinsá ó bele husu perdua no hatudu pás hanesan Jacó halo?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Young Jacob sleeping under the starry night sky with angels on a ladder to heaven.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, young man Jacob sleeping peacefully with his head resting on a stone under a ladder stretching into starry heaven with angels, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "JACOB",
+        "word_tet": "JACO",
+        "clue_en": "The man who wrestled with God and received a new heart.",
+        "clue_tet": "Mane ne'ebé sosa ho Maromak no simu laran foun."
+      },
+      {
+        "word_en": "ISRAEL",
+        "word_tet": "ISRAEL",
+        "clue_en": "The new name God gave to Jacob meaning he struggled with God.",
+        "clue_tet": "Naran foun ne'ebé Maromak fó ba Jacó."
+      },
+      {
+        "word_en": "LADDER",
+        "word_tet": "ESCADA",
+        "clue_en": "What Jacob saw in his dream reaching up to heaven at Bethel.",
+        "clue_tet": "Buat ne'ebé Jacó haree iha nia mehi to'o lalehan iha Betel."
+      },
+      {
+        "word_en": "BLESSING",
+        "word_tet": "BENSAUN",
+        "clue_en": "God's special gift of grace, love, and protection.",
+        "clue_tet": "Maromak nia prezente espesiál ho grasia, domin no protesaun."
+      },
+      {
+        "word_en": "DREAM",
+        "word_tet": "MEHI",
+        "clue_en": "How God showed Jacob angels and His wonderful promise at night.",
+        "clue_tet": "Dalan ne'ebé Maromak hatudu anju sira no Nia promesa ba Jacó iha kalan."
+      },
+      {
+        "word_en": "PEACE",
+        "word_tet": "PAS",
+        "clue_en": "Making things right and forgiving others like Jacob and Esau.",
+        "clue_tet": "Halo buat hotu loos no fó perdua ba ema seluk hanesan Jacó no Esau."
+      }
+    ]
+  }
+}

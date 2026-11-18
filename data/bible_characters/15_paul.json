@@ -1,0 +1,132 @@
+{
+  "character_id": "paul",
+  "character_name_en": "Paul",
+  "character_name_tet": "Paulu",
+  "category": "Core (8 Scenes)",
+  "bible_reference": "Acts 9 - 28",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Saul the Persecutor",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago, a young Pharisee named Saul was fiercely opposed to the followers of Jesus. Believing he was pleasing God, Saul went from house to house in Jerusalem to arrest believers and put them in prison. The early Christians were terrified whenever they heard Saul's name.",
+      "tetum_translation": "Iha tempu uluk, Farizeu foin-sa'e ida naran Saulo kontra kras tebes Jesus nia tuir-na'in sira. Tanba hanoin nia halo Maromak haksolok, Saulo ba husi uma ba uma iha Jeruzalém atu kaer fiar-na'in sira no tau sira iha kadeia. Krestan uluk sira ta'uk tebes bainhira rona Saulo nia naran.",
+      "scene_summary": "Saul the Pharisee zealously persecutes early believers in Jerusalem, arresting Christians.",
+      "nano_banana_prompt": "Nano Banana illustration style, a stern young Jewish leader named Saul with dark hair and a beard, wearing a formal Pharisee robe, pointing angrily while Roman guards arrest early believers in an ancient Jerusalem street. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Light on the Road to Damascus",
+      "image_file": "2.jpeg",
+      "english_text": "While traveling to Damascus to arrest more Christians, a sudden blinding light from heaven flashed around Saul. He fell to the ground and heard a voice saying, 'Saul, Saul, why do you persecute Me?' When Saul asked who was speaking, the Lord replied, 'I am Jesus, whom you are persecuting.' Saul got up, but he was completely blind for three days until Ananias prayed for him.",
+      "tetum_translation": "Bainhira la'o ba Damasko atu kaer krestan sira seluk, naroman boot husi lalehan nabilan hale'u Saulo. Nia monu ba rai no rona lian ida dehan, 'Saulo, Saulo, tansá ó hanehan Ha'u?' Bainhira Saulo husu sé mak ko'alia, Na'i hatán, 'Ha'u mak Jesus, ne'ebé ó hanehan.' Saulo hamriik, maibé nia matan de'it-de'it ba loron tolu to'o Ananias harohan ba nia.",
+      "scene_summary": "Saul experiences a miraculous encounter with the risen Jesus on the road to Damascus, blinding him temporarily.",
+      "nano_banana_prompt": "Nano Banana illustration style, Saul falling to the dusty ground on a desert road under a brilliant, heavenly beam of golden white light shining from above, with his traveling companions looking astonished. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "First Missionary Journey with Barnabas",
+      "image_file": "3.jpeg",
+      "english_text": "Transformed by Jesus, Saul became known as Paul and dedicated his life to preaching the Gospel. The Holy Spirit called Paul and his encouraging friend Barnabas to go on their first missionary trip. They sailed across the Mediterranean Sea, telling Jews and Gentiles alike that Jesus is the Savior of the world.",
+      "tetum_translation": "Troka tiha husi Jesus, Saulo sai koñesidu nu'udar Paulu no dedika nia moris atu hakesi Evanjellu. Espíritu Santu bolu Paulu no nia belun laran-di'ak Barnabé atu ba sira-nia vijen misioñária primeiru. Sira sa'e ro ba Tasi Mediteráneu, hodi konta ba ema Judeu no Jentiu sira katak Jesus mak Salvadór raiklaran nian.",
+      "scene_summary": "Paul and Barnabas set sail on their first missionary journey to preach the Gospel across nations.",
+      "nano_banana_prompt": "Nano Banana illustration style, the apostle Paul with short dark hair and beard wearing a tan linen tunic and cloak, standing beside his friend Barnabas on the wooden deck of an ancient sailing ship on a clear blue sea. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "The Macedonian Vision",
+      "image_file": "4.jpeg",
+      "english_text": "One night during his second journey, Paul had a vision from God. He saw a man from Macedonia standing and begging him, 'Come over to Macedonia and help us!' Paul immediately realized God was calling him to bring the Good News to Europe, spreading light to brand new lands.",
+      "tetum_translation": "Kalan ida iha nia vijen daruak laran, Paulu haree mehi husi Maromak. Nia haree mane ida husi Masedónia hamriik no husu ho laran-sadik, 'Mai Masedónia no ajulita ami!' Paulu komprende kedas katak Maromak bolu nia atu lori Lia-foun Di'ak ba Europa, hodi hakat naroman ba rai foun sira.",
+      "scene_summary": "Paul receives the Macedonian vision calling him to cross over into Europe to share the Gospel.",
+      "nano_banana_prompt": "Nano Banana illustration style, Paul sitting in a cozy room at night looking up thoughtfully as a soft glowing figure of a Macedonian man appears in a heavenly vision beside his bed. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Praising God in Philippi Jail",
+      "image_file": "5.jpeg",
+      "english_text": "In Philippi, Paul and Silas were beaten and put into the inner cell of a dark prison with their feet fastened in chains. Instead of complaining, around midnight they prayed and sang hymns to God while other prisoners listened. Suddenly, a powerful earthquake shook the prison, opening all the doors and freeing the chains!",
+      "tetum_translation": "Iha Filippos, ema baku Paulu no Silas no tau sira iha kadeia nakukun laran ho korrente iha sira-nia ain. Duké muras, iha kalan-boot sira harohan no kanta knananuk hahi'i ba Maromak bainhira kadei-na'in sira seluk rona. Derrepente, rai-hamulak boot ida doko kadeia, nakloke odamatan hotu no hamoos korrente sira!",
+      "scene_summary": "Paul and Silas sing praises in a Philippian prison, triggering a miraculous earthquake that opens the doors.",
+      "nano_banana_prompt": "Nano Banana illustration style, Paul and Silas with wooden stocks on their feet, sitting in a stone dungeon cell under torchlight, smiling and raising hands in worship while chains fall miraculously around them. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 6,
+      "title": "Writing Letters to the Churches",
+      "image_file": "6.jpeg",
+      "english_text": "Paul traveled tirelessly, establishing churches in cities like Ephesus, Corinth, and Rome. Whenever he was far away, he wrote loving letters to teach, encourage, and correct the believers. These holy letters became a major part of our New Testament, teaching Christians how to live in faith and love.",
+      "tetum_translation": "Paulu la'o rai ho laran-manas, harii kreda sira iha sidade sira hanesan Éfeso, Korinto, no Roma. Bainhira nia dook, nia hakerek surat ho domin atu hanorin, Fó kbiit, no korreje fiar-na'in sira. Surat santu sira-ne'e sai parte boot husi ita-nia Testamentu Foun, hodi hanorin krestan sira oinsá moris iha fiar no domin laran.",
+      "scene_summary": "Paul writes inspired epistles to encourage and instruct early churches across the Roman Empire.",
+      "nano_banana_prompt": "Nano Banana illustration style, Paul sitting at a small wooden desk by candlelight inside a simple room, carefully writing with a feather quill on a long parchment scroll. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 7,
+      "title": "Voyage to Rome and Shipwreck",
+      "image_file": "7.jpeg",
+      "english_text": "When Paul was arrested in Jerusalem, he boldly appealed to Caesar to share the Gospel in Rome. On the voyage, a terrible storm destroyed the ship, but God sent an angel to promise that everyone on board would survive. Sure enough, all 276 people swam safely to the island of Malta!",
+      "tetum_translation": "Bainhira ema kaer Paulu iha Jeruzalém, nia husu ho brani ba César atu fahe Evanjellu iha Roma. Iha la'o tasi laran, anin-boot aat ida estraga ro, maibé Maromak haruka anju ida promete katak ema hotu iha ro laran sei moris. Loloos duni, ema nulu-resin-hitu nulu-resin-neen (276) nani ho seguru ba rai-oan Malta!",
+      "scene_summary": "Paul survives a stormy shipwreck on his way to Rome, comforted by God's promise that all aboard would be saved.",
+      "nano_banana_prompt": "Nano Banana illustration style, Paul standing calmly on a rain-slicked wooden ship deck amidst huge ocean waves and dark storm clouds, encouraging frightened sailors with an outstretched hand. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 8,
+      "title": "Finishing the Race in Rome",
+      "image_file": "8.jpeg",
+      "english_text": "In Rome, even while under house arrest, Paul welcomed everyone who came to visit and kept preaching the Kingdom of God with great boldness. At the end of his life, he joyously declared, 'I have fought the good fight, I have finished the race, I have kept the faith.' Paul remains an inspiring apostle of grace.",
+      "tetum_translation": "Iha Roma, maski metin iha uma-kadeia laran, Paulu simu ema hotu ne'ebé mai vizita no kontinua hakesi Maromak nia Reinu ho brani boot. Iha nia moris nia rohan, nia deklara ho haksolok, 'Ha'u funu tiha funu di'ak, ha'u halai tiha to'o rohan, ha'u rai tiha fiar.' Paulu sai koñesidu ba nafatin nu'udar apóstolu laran-luak nian ne'ebé fó kbiit.",
+      "scene_summary": "Paul faithfully finishes his life's mission in Rome, having fought the good fight and kept the faith.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elder apostle Paul with a grey-streaked beard wearing a simple brown robe, looking peacefully out a window in Rome toward a glowing sunrise with a gentle smile. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Paul shows us that no matter who we were in the past, God's grace can change our heart to share Jesus' love bravely.",
+    "core_lesson_tet": "Paulu hatudu mai ita katak maski ita iha tempu uluk halo aat, Maromak nia grasas bele troka ita-nia laran atu fahe Jesus nia domin ho brani.",
+    "discussion_question_en": "When you see someone who seems different or unkind, how can you pray for them and share Jesus' love with them like Paul did?",
+    "discussion_question_tet": "Bainhira ó haree ema ida ne'ebé parese seluk ka la laran-di'ak, oinsá ó bele harohan ba sira no fahe Jesus nia domin ho sira hanesan Paulu halo?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Paul writing a epistle scroll by candlelight with a quill.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, apostle Paul with a beard sitting at a small desk holding a feather quill writing on a parchment scroll, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "PAUL",
+        "word_tet": "PAULU",
+        "clue_en": "The missionary apostle who wrote many letters to early churches.",
+        "clue_tet": "Apóstolu misioñáriu ne'ebé hakerek surat barak ba kreda uluk sira."
+      },
+      {
+        "word_en": "LIGHT",
+        "word_tet": "NAROMAN",
+        "clue_en": "The bright heavenly flash Saul saw on the road to Damascus.",
+        "clue_tet": "Naroman nabilan husi lalehan ne'ebé Saulo haree iha dalan ba Damasko."
+      },
+      {
+        "word_en": "GOSPEL",
+        "word_tet": "EVANJELLU",
+        "clue_en": "The Good News of Jesus Christ Paul preached to all nations.",
+        "clue_tet": "Lia-foun Di'ak Jesus Kristu nian ne'ebé Paulu hakesi ba nasaun hotu."
+      },
+      {
+        "word_en": "LETTER",
+        "word_tet": "SURAT",
+        "clue_en": "What Paul wrote to encourage and teach Christians in different cities.",
+        "clue_tet": "Buat ne'ebé Paulu hakerek atu Fó kbiit no hanorin krestan sira iha sidade sira."
+      },
+      {
+        "word_en": "FAITH",
+        "word_tet": "FIAR",
+        "clue_en": "What Paul kept faithfully until the end of his life race.",
+        "clue_tet": "Buat ne'ebé Paulu rai ho laran-metin to'o nia moris nia rohan."
+      },
+      {
+        "word_en": "GRACE",
+        "word_tet": "GRASAS",
+        "clue_en": "God's unmerited love that changed Saul into a powerful apostle.",
+        "clue_tet": "Maromak nia domin laran-luak ne'ebé troka Saulo sai apóstolu kbiit-na'in."
+      }
+    ]
+  }
+}

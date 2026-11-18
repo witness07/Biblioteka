@@ -1,0 +1,105 @@
+{
+  "character_id": "mary",
+  "character_name_en": "Mary",
+  "character_name_tet": "Maria",
+  "category": "Major (5 Scenes)",
+  "bible_reference": "Luke 1 - 2, John 19",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "The Angel's Announcement",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago in Nazareth, an angel named Gabriel appeared to a humble young woman named Mary. Gabriel said, 'Do not be afraid, Mary! You have found favor with God. You will give birth to a Son, and you shall name Him Jesus.' Mary humbly surrendered her heart, saying, 'I am the Lord's servant; let it be to me according to your word.'",
+      "tetum_translation": "Iha tempu uluk iha Nazaré, anju ida naran Gabriel mosu ba feto jovem haraik-an ida naran Maria. Gabriel dehan, 'Keta ta'uk, Maria! Ó hetan grasa iha Maromak nia oin. Ó sei tuur-ahi Oan-mane ida, no ó sei hanaran Nia Jesus.' Maria haraik-an entregu nia laran, hodi dehan, 'Ha'u mak Na'i nia ata-feto; halo ba ha'u tuir Ó-nia liafuan.'",
+      "scene_summary": "Angel Gabriel visits Mary in Nazareth to announce she will give birth to Jesus, the Son of God.",
+      "nano_banana_prompt": "Nano Banana illustration style, a gentle young Hebrew woman named Mary in a simple blue dress and head covering, looking up in awe as a glowing heavenly angel Gabriel appears with soft warm light in a cozy house in Nazareth. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Joyful Song of Praise",
+      "image_file": "2.jpeg",
+      "english_text": "Mary traveled to the hill country of Judea to visit her relative Elizabeth. As soon as Mary greeted her, Elizabeth's baby jumped for joy inside her, and Elizabeth praised God. Mary sang a beautiful song of thanksgiving, praising God for lifting up the humble and filling the hungry with good things.",
+      "tetum_translation": "Maria la'o ba foho rai Judá nian atu visita nia parenti Izabel. Bainhira Maria kumprimenta nia, Izabel nia kosok-oan haksoit ho ksolok iha nia kabun laran, no Izabel hahi'i Maromak. Maria kanta knananuk furak ida husi agradesimentu, hodi hahi'i Maromak tanba foti sa'e ema haraik-an no halo nakano ema hamlaha ho buat di'ak.",
+      "scene_summary": "Mary visits her cousin Elizabeth and sings a magnificent song of praise and thanksgiving to God.",
+      "nano_banana_prompt": "Nano Banana illustration style, two happy Hebrew women, young Mary in a blue gown and older Elizabeth in warm beige robes, embracing joyfully outside a stone cottage surrounded by blooming flowers under a bright sunny sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "The Birth of Jesus in Bethlehem",
+      "image_file": "3.jpeg",
+      "english_text": "Mary and Joseph traveled to Bethlehem. When the time came for the baby to be born, there was no room in the inn, so Mary gave birth to Jesus in a humble stable. She lovingly wrapped her newborn baby in swaddling clothes and laid Him in a manger, while angels announced the good news to shepherds nearby.",
+      "tetum_translation": "Maria no José la'o ba Belein. Bainhira tempu to'o atu kosok-oan moris, la iha fatin iha estalajem laran, nune'i Maria tuur-ahi Jesus iha bibi-luhan haraik-an ida laran. Nia falun nia kosok-oan foun ho hena no tau Nia iha bibi-han-fatin laran, bainhira anju sira fó sai liafuan di'ak ba bibi-atan sira iha besik.",
+      "scene_summary": "Mary gives birth to baby Jesus in a cozy stable in Bethlehem and places Him lovingly in a manger.",
+      "nano_banana_prompt": "Nano Banana illustration style, loving young mother Mary in a blue robe kneeling beside a wooden manger filled with warm hay, smiling softly at newborn baby Jesus glowing with gentle light inside a cozy rustic stable under a bright star. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Dedication in the Temple",
+      "image_file": "4.jpeg",
+      "english_text": "Mary and Joseph brought baby Jesus to the Temple in Jerusalem to present Him to God. An elderly righteous man named Simeon took the baby into his arms and praised God, declaring that Jesus was the Light for all nations. Simeon spoke a blessing over Mary and her special child.",
+      "tetum_translation": "Maria no José lori kosok-oan Jesus ba Umaklesan Santu iha Jeruzalém atu hatudu Nia ba Maromak. Katuas laran-di'ak ida naran Simeão foti kosok-oan ne'e iha nia liman no hahi'i Maromak, hodi deklara katak Jesus mak Naroman ba nasaun hotu-hotu. Simeão fó bensaun ba Maria no nia oan spesial ne'e.",
+      "scene_summary": "Mary and Joseph bring baby Jesus to the Temple, where righteous Simeon praises God and blesses the holy family.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly white-bearded priest named Simeon holding baby Jesus gently, while young Mary and Joseph watch with happy reverent smiles inside the majestic Temple in Jerusalem. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Faithful Mother and Everlasting Hope",
+      "image_file": "5.jpeg",
+      "english_text": "Throughout Jesus's life, Mary faithfully watched Him teach, heal, and love people. Even in great sorrow at the cross, Mary trusted God's divine plan. After Jesus rose from the dead, Mary joyously prayed with the disciples, giving thanks for God's eternal love and salvation.",
+      "tetum_translation": "Iha Jesus nia moris tomak, Maria haree Nia hanorin, kura, no domin ema sira ho laran-metin. Maski iha tristeza boot iha krus oin, Maria fiar Maromak nia planu lalehan nian. Jesus moris hias tiha husi mate, Maria harohan ho ksolok hamutuk ho dixíputu sira, hodi fó agradesimentu ba Maromak nia domin no salvasaun ba nafatin.",
+      "scene_summary": "Mary remains faithful through Jesus's ministry and resurrection, rejoicing with the early believers in prayer.",
+      "nano_banana_prompt": "Nano Banana illustration style, serene Mary in a soft blue veil praying joyfully with a group of early believers and disciples in an upper room filled with warm morning sunlight. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Mary shows us that saying 'Yes' to God with a humble and trusting heart brings His greatest blessings and light into the world.",
+    "core_lesson_tet": "Maria hatudu mai ita katak dehan 'Sim' ba Maromak ho laran haraik-an no fiar lori Nia bensaun boot no naroman ba raiklaran.",
+    "discussion_question_en": "How can you respond with trust and joy like Mary when God asks you to obey or help others?",
+    "discussion_question_tet": "Oinsá ó bele hatán ho fiar no ksolok hanesan Maria bainhira Maromak husu ó atu halo tuir ka ajulita ema seluk?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Young Mary holding baby Jesus lovingly in her arms.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, young mother Mary wearing a head covering holding baby Jesus gently in her arms with a warm loving smile, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "MARY",
+        "word_tet": "MARIA",
+        "clue_en": "The humble mother chosen by God to give birth to Jesus.",
+        "clue_tet": "Inan haraik-an ne'ebé Maromak hili atu tuur-ahi Jesus."
+      },
+      {
+        "word_en": "GABRIEL",
+        "word_tet": "GABRIEL",
+        "clue_en": "The angel who brought God's good message to Mary.",
+        "clue_tet": "Anju ne'ebé lori Maromak nia liafuan di'ak ba Maria."
+      },
+      {
+        "word_en": "JESUS",
+        "word_tet": "JESUS",
+        "clue_en": "The Son of God born in Bethlehem.",
+        "clue_tet": "Maromak nia Oan-mane ne'ebé moris iha Belein."
+      },
+      {
+        "word_en": "MANGER",
+        "word_tet": "BIBIHANFATIN",
+        "clue_en": "The feeding trough where baby Jesus was laid.",
+        "clue_tet": "Bibi-han-fatin ne'ebé kosok-oan Jesus hela ba."
+      },
+      {
+        "word_en": "BLESSING",
+        "word_tet": "BENSAUN",
+        "clue_en": "The divine joy and grace God gave to Mary.",
+        "clue_tet": "Ksolok no grasa lalehan nian ne'ebé Maromak fó ba Maria."
+      },
+      {
+        "word_en": "OBEY",
+        "word_tet": "TUIR",
+        "clue_en": "Surrendering one's heart humbly to God's will.",
+        "clue_tet": "Entregu laran ho haraik-an ba Maromak nia hakarak."
+      }
+    ]
+  }
+}

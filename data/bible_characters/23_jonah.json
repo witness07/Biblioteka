@@ -1,0 +1,105 @@
+{
+  "character_id": "jonah",
+  "character_name_en": "Jonah",
+  "character_name_tet": "Jonas",
+  "category": "Major (5 Scenes)",
+  "bible_reference": "Jonah 1 - 4",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Fleeing from God's Call",
+      "image_file": "1.jpeg",
+      "english_text": "God commanded the prophet Jonah to go to the big city of Nineveh and preach to the people to stop doing evil. But Jonah was afraid and did not want to go. Instead of obeying God, Jonah boarded a ship bound for Tarshish to run away from God's presence.",
+      "tetum_translation": "Maromak haruka profeta Jonas atu ba sidade boot Nínive no haklaken ba povu atu para halo hahalok aat. Maibé Jonas ta'uk no lakohi ba. Duké halo tuir Maromak, Jonas sa'e ro-ahi ida ne'ebé atu ba Tarsis atu halai hasees husi Maromak nia oin.",
+      "scene_summary": "Jonah disobeys God's command to preach in Nineveh and boards a ship to Tarshish.",
+      "nano_banana_prompt": "Nano Banana illustration style, a Hebrew prophet Jonah with dark hair and a simple tunic, walking onto an ancient wooden sailing ship at a busy Mediterranean port under cloudy skies. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "The Storm and the Great Fish",
+      "image_file": "2.jpeg",
+      "english_text": "While at sea, God sent a mighty storm that tossed the ship violently. Recognizing that the storm was his fault, Jonah told the terrified sailors to throw him into the sea. As soon as Jonah hit the water, the storm stopped, and God provided a great fish to swallow Jonah whole, keeping him safe inside.",
+      "tetum_translation": "Bainhira iha tasi laran, Maromak haruka anin-boot ne'ebé book ro-ahi ho violénsia. Tanba hatene katak anin-boot ne'e mai husi nia sala, Jonas husu marinheiru ta'uk sira atu soe nia ba tasi laran. Bainhira Jonas monu ba bee laran, tasi dame kedas, no Maromak preparas ikan boot ida atu tolan Jonas tomak, hodi rai nia seguru iha laran.",
+      "scene_summary": "Jonah is thrown overboard during a violent storm, and God sends a great fish to swallow him.",
+      "nano_banana_prompt": "Nano Banana illustration style, a giant friendly sea creature underwater opening its mouth as Jonah falls into the dark blue ocean waves during a dramatic storm. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Prayer and Deliverance",
+      "image_file": "3.jpeg",
+      "english_text": "For three days and three nights, Jonah remained inside the belly of the fish. In the darkness, Jonah prayed earnestly to God, thanking Him for saving his life and promising to obey Him. God heard Jonah's humble prayer and commanded the great fish to spit Jonah out safely onto dry land.",
+      "tetum_translation": "Iha loron tolu no kalan tolu laran, Jonas hela iha ikan nia kabun laran. Iha nakukun laran, Jonas harohan ho laran tomak ba Maromak, agradese tanba salva nia moris no promete atu halo tuir Nia. Maromak rona Jonas nia orasaun haraik-an no haruka ikan boot ne'e muta Jonas sai ho seguru ba rai-maran.",
+      "scene_summary": "Jonah prays inside the fish for three days, repents, and is spit out safely onto dry land.",
+      "nano_banana_prompt": "Nano Banana illustration style, Hebrew prophet Jonah kneeling on a sandy beach at sunrise with hands raised in gratitude, while a massive sea creature swims away in the blue sea behind him. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Nineveh Repents",
+      "image_file": "4.jpeg",
+      "english_text": "God called Jonah a second time, and this time Jonah obeyed. He walked through Nineveh shouting God's warning. Miraculously, the King of Nineveh and all the citizens believed God, repented of their bad behavior, and put on sackcloth. Seeing their humble hearts, God showed great mercy and saved the city.",
+      "tetum_translation": "Maromak bolu Jonas dala rua, no tempu ne'e Jonas halo tuir. Nia la'o liu husi Nínive hodi hakilar Maromak nia aviso. Ho milagre, Liurai Nínive no povu hotu fiar Maromak, arrepende husi sira-nia hahalok aat, no hatais hena-saku. Tanba haree sira-nia laran haraik-an, Maromak hatudu laran-sadi'ak boot no salva sidade ne'e.",
+      "scene_summary": "Jonah preaches to Nineveh, and the whole city from king to commoner repents, receiving God's mercy.",
+      "nano_banana_prompt": "Nano Banana illustration style, Jonah standing in the center of Nineveh's stone city square, preaching to crowds of repentant people and a king wearing simple sackcloth robes. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "God's Lesson of Compassion",
+      "image_file": "5.jpeg",
+      "english_text": "Instead of rejoicing over Nineveh's salvation, Jonah sat outside the city feeling angry. God caused a leafy plant to grow over Jonah to shade him from the hot sun, but the next day a worm withered the plant. When Jonah complained, God gently taught him that if Jonah cared about a plant, God cares far more for every single person and child in Nineveh.",
+      "tetum_translation": "Duké haksolok kona-ba Nínive nia salvasaun, Jonas tuur iha sidade nian sorin ho laran-hirus. Maromak halo ai-horis kramak ida moris iha Jonas leten atu fó mahon husi loran-manas, maibé loron tuir mai uluk-oan ida hamaras ai-horis ne'e. Bainhira Jonas muras, Maromak hanorin nia ho laran-luak katak se Jonas hanoin ai-horis ida, Maromak hanoin liutan ema no labarik ida-idak iha Nínive.",
+      "scene_summary": "God uses a withered plant to teach Jonah that God loves and cares for all people in the world.",
+      "nano_banana_prompt": "Nano Banana illustration style, Jonah sitting under a hillside shelter looking out over the city of Nineveh, with a leafy vine plant growing overhead under a warm golden sun sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Jonah teaches us that God loves everyone in the world and wants us to obey Him with love, mercy, and compassion for all people.",
+    "core_lesson_tet": "Jonas hanorin ita katak Maromak domin ema hotu-hotu iha raiklaran no hakarak ita halo tuir Nia ho domin, laran-sadi'ak, no laran-luak ba ema hotu.",
+    "discussion_question_en": "When someone who was unkind to you says sorry or needs help, how can you show God's forgiving love and compassion like God showed Nineveh?",
+    "discussion_question_tet": "Bainhira ema ruma ne'ebé la di'ak ba ó dehan desculpa ka precisa ajuda, oinsá ó bele hatudu Maromak nia domin perdua no laran-sadi'ak hanesan Maromak hatudu ba Nínive?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Jonah sitting on a sandy beach smiling as a big friendly sea creature swims in the ocean.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, friendly prophet Jonah sitting on a sandy beach next to a big smiling sea creature in the ocean, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "JONAH",
+        "word_tet": "JONAS",
+        "clue_en": "The prophet who was swallowed by a great fish.",
+        "clue_tet": "Profeta ne'ebé ikan boot tolan."
+      },
+      {
+        "word_en": "FISH",
+        "word_tet": "IKAN",
+        "clue_en": "The large creature God provided to save Jonah in the ocean.",
+        "clue_tet": "Kriatura boot ne'ebé Maromak preparas atu salva Jonas."
+      },
+      {
+        "word_en": "NINEVEH",
+        "word_tet": "NINIVE",
+        "clue_en": "The great city that repented when Jonah preached God's word.",
+        "clue_tet": "Sidade boot ne'ebé arrepende bainhira Jonas haklaken."
+      },
+      {
+        "word_en": "STORM",
+        "word_tet": "ANINBOOT",
+        "clue_en": "The violent wind on the sea that stopped when Jonah was cast out.",
+        "clue_tet": "Anin boot iha tasi leten ne'ebé para tiha bainhira soe Jonas."
+      },
+      {
+        "word_en": "OBEY",
+        "word_tet": "TUIR",
+        "clue_en": "Following God's calling instead of running away.",
+        "clue_tet": "Halo tuir Maromak nia bolu duké halai hasees."
+      },
+      {
+        "word_en": "MERCY",
+        "word_tet": "LARANSADIAK",
+        "clue_en": "God's forgiving love for all the people of Nineveh.",
+        "clue_tet": "Maromak nia domin perdua ba povu Nínive tomak."
+      }
+    ]
+  }
+}

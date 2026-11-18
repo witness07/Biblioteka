@@ -1,0 +1,132 @@
+{
+  "character_id": "joseph",
+  "character_name_en": "Joseph",
+  "character_name_tet": "José",
+  "category": "Core (8 Scenes)",
+  "bible_reference": "Genesis 37 - 50",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "The Coat of Many Colors and Dreams",
+      "image_file": "1.jpeg",
+      "english_text": "In the land of Canaan, young Joseph was loved deeply by his father Jacob, who gave him a beautiful coat of many colors. One night, Joseph had a dream where his brothers' sheaves of wheat bowed down to his sheaf. He also dreamed that the sun, moon, and eleven stars bowed to him. Joseph excitedly shared his dreams, but his older brothers became jealous of him.",
+      "tetum_translation": "Iha rai Kanaán, labarik-mane José simu domin boot husi nia aman Jacó, ne'ebé fó ba nia hena kór-oi-oin ne'ebé furak tebes. Kalan ida, José mehi katak nia maun sira-nia trigu-kaban hakru'uk ba nia trigu-kaban. Nia mós mehi katak loran, fulan, no fitun sanulu-resin-ida hakru'uk ba nia. José konta nia mehi sira ho haksolok, maibé nia maun sira hahú laran-moras ba nia.",
+      "scene_summary": "Young Joseph receives a coat of many colors from Jacob and dreams of wheat sheaves and stars bowing to him.",
+      "nano_banana_prompt": "Nano Banana illustration style, a handsome 17-year-old Hebrew boy with short wavy dark hair wearing a vibrant, bright colorful tunic with geometric patterns, standing happily in a sunny field surrounded by golden sheaves of wheat. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Sold into Egypt",
+      "image_file": "2.jpeg",
+      "english_text": "One day, Joseph went out to the fields to check on his brothers. Because their hearts were filled with envy, the brothers threw Joseph into a deep, dry pit. Soon, a caravan of traders passed by on their way to Egypt. The brothers sold Joseph for twenty pieces of silver, taking his beautiful coat and dipping it in goat's blood to deceive their father.",
+      "tetum_translation": "Loron ida, José ba iha du'ut-laran atu haree nia maun sira. Tanba sira-nia laran nakonu ho laran-moras, maun sira soe José ba kuak naruk ne'ebé maram. Lakeur tan, negosiante sira-nia karavana liu husi ne'ebá atu ba Ejiptu. Maun sira fa'an José ba meiu prata hodi simu osan-mutin ruanulu, no foti nia hena furak hodi suki ba bibi-ran atu lohi sira-nia aman.",
+      "scene_summary": "Jealous brothers throw Joseph into a pit and sell him to merchants traveling to Egypt.",
+      "nano_banana_prompt": "Nano Banana illustration style, a handsome young Hebrew boy with short wavy dark hair wearing a simple beige undershirt, being pulled out of a stone pit by desert traders with camels while his brothers watch from a distance in a rocky desert landscape. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Faithful in Potiphar's House",
+      "image_file": "3.jpeg",
+      "english_text": "In Egypt, Joseph was bought by an officer named Potiphar. God was with Joseph, and everything he did prospered, so Potiphar placed Joseph in charge of his entire household. But when Potiphar's wife lied about Joseph because he refused to do wrong, Joseph was unfairly thrown into prison. Even in the dark jail, Joseph stayed faithful and trusted God.",
+      "tetum_translation": "Iha Ejiptu, offisial ida naran Potifar sosa José. Maromak hela ho José, no buat hotu ne'ebé nia halo hetan susesu, nune'i Potifar tau José atu ukun nia uma tomak. Maibé bainhira Potifar nia feen bosok kona-ba José tanba nia lakohi halo aat, ema soe José ba kadeia ho injustu. Maski iha kadeia nakukun laran, José ne'ebé laran-metin kontinua fiar ba Maromak.",
+      "scene_summary": "Joseph serves faithfully in Potiphar's household and trusts God even when falsely accused and imprisoned.",
+      "nano_banana_prompt": "Nano Banana illustration style, a handsome young Hebrew man with short dark hair wearing a clean white linen tunic with gold trim, organizing scrolls and jars inside a grand Egyptian palace hall with carved stone pillars. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Interpreting Dreams in Prison",
+      "image_file": "4.jpeg",
+      "english_text": "While in prison, Joseph took care of the other prisoners with kindness. One night, Pharaoh's cupbearer and baker both had strange dreams that made them sad. Joseph listened gently and said, 'Interpretations belong to God.' With divine wisdom, Joseph accurately explained what their dreams meant, asking the cupbearer to remember him when he was freed.",
+      "tetum_translation": "Bainhira iha kadeia laran, José tau matan ba kadei-na'in sira seluk ho laran-di'ak. Kalan ida, Faraó nia ko-na'in no padeiru parese mehi karradas ne'ebé halo sira triste. José rona ho laran-luak no dehan, 'Guan mehi nian mai husi Maromak.' Ho matenek husi lalehan, José esplika loloos mehi sira-ne'e nia sentidu, no husu ba ko-na'in atu hanoin-hetan nia bainhira nia livre.",
+      "scene_summary": "God grants Joseph wisdom in prison to accurately interpret the dreams of Pharaoh's cupbearer and baker.",
+      "nano_banana_prompt": "Nano Banana illustration style, a handsome young Hebrew man with short dark hair in a simple tunic sitting inside a stone prison cell, speaking kindly to two worried Egyptian men in white robes under soft torchlight. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Pharaoh's Dreams and Promotion to Governor",
+      "image_file": "5.jpeg",
+      "english_text": "Two years later, Pharaoh had troubling dreams about seven fat cows eaten by seven skinny cows. None of the wise men in Egypt could explain it. The cupbearer finally remembered Joseph! Joseph was brought out of prison and explained that God was revealing seven years of plenty followed by seven years of severe famine. Impressed by Joseph's wisdom, Pharaoh appointed him governor of all Egypt.",
+      "tetum_translation": "Tinan rua liu tiha, Faraó mehi susar kona-ba karau-bika isin-di'ak hitu ne'ebé karau krekas hitu han tiha. Ema matenek sira iha Ejiptu ida la bele esplika. Ko-na'in ikusmai hanoin-hetan José! Ema lori José sai husi kadeia no nia esplika katak Maromak hatudu tinan hitu aihan barak tuir mai tinan hitu hamlaha boot. Tanba admira José nia matenek, Faraó foti nia sai governadór ba Ejiptu tomak.",
+      "scene_summary": "Joseph interprets Pharaoh's cows dream, warning of famine, and Pharaoh appoints him Governor of Egypt.",
+      "nano_banana_prompt": "Nano Banana illustration style, a handsome young Hebrew man with short dark hair wearing a regal Egyptian governor's white linen robe, gold collar necklace, and golden crown band, standing next to Pharaoh's golden throne inside a grand Egyptian palace. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 6,
+      "title": "Storing Grain to Save Nations",
+      "image_file": "6.jpeg",
+      "english_text": "During the seven good years, Governor Joseph prepared wisely by storing huge amounts of grain in big barns across Egypt. When the terrible famine struck the whole world, people came from many lands to buy food. Because Joseph listened to God and planned ahead, countless lives were saved from starvation.",
+      "tetum_translation": "Iha tinan di'ak hitu laran, Governadór José prepara ho matenek hodi rai trigu barak tebes iha uma-rai boot sira iha Ejiptu tomak. Bainhira hamlaha boot kona raiklaran tomak, ema husi rai barak mai sosa aihan. Tanba José rona Maromak no prepara uluk, ema rihun ba rihun hetan katis husi hamlaha.",
+      "scene_summary": "Governor Joseph stores grain during seven bountiful years, saving countless lives when the global famine strikes.",
+      "nano_banana_prompt": "Nano Banana illustration style, a handsome young Hebrew man wearing an Egyptian governor's robe and gold necklace, overseeing workers carrying sacks of wheat into huge stone grain storehouses under a bright blue sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 7,
+      "title": "Reconciling with His Brothers",
+      "image_file": "7.jpeg",
+      "english_text": "Joseph's brothers came to Egypt to buy grain, not recognizing their powerful brother. When Joseph saw their changed and humble hearts, he could no longer hold back his tears. He revealed himself, saying, 'I am your brother Joseph! Do not be afraid.' Instead of seeking revenge, Joseph hugged his brothers warmly and forgave them completely.",
+      "tetum_translation": "José nia maun sira mai Ejiptu atu sosa trigu, no la koñese sira-nia maun-alin ne'ebé kbiit-na'in. Bainhira José haree sira-nia laran troka no haraik-an, nia la bele tahan tan nia matan-ben. Nia hatudu nia an ba sira hodi dehan, 'Ha'u mak imi-nia alin José! Keta ta'uk.' Duké selu aat ho aat, José hakuak nia maun sira ho laran-manas no fó perdua ba sira ho laran tomak.",
+      "scene_summary": "Joseph reveals his identity to his remorseful brothers in Egypt and forgives them with joyful tears.",
+      "nano_banana_prompt": "Nano Banana illustration style, a handsome young Hebrew man wearing an Egyptian governor's outfit weeping joyfully while embracing his emotional Hebrew brothers inside a royal palace hall. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 8,
+      "title": "God Turned Evil into Good",
+      "image_file": "8.jpeg",
+      "english_text": "Joseph invited his father Jacob and his whole family to live safely in the fertile land of Goshen. Jacob wept with joy to see his beloved son alive again! Joseph lovingly reassured his brothers, saying, 'You intended to harm me, but God intended it for good to accomplish what is now being done, the saving of many lives.' Joseph's family flourished under God's loving care.",
+      "tetum_translation": "José convida nia aman Jacó no nia família tomak atu hela ho seguru iha rai Gozen ne'ebé bokur. Jacó tanis ho haksolok tanba haree fali nia oan stima moris! José ko'alia ho domin ba nia maun sira, 'Imi hanoin atu halo aat mai ha'u, maibé Maromak halo buat ne'e sai di'ak atu salva ema barak nia moris.' José nia família buras iha Maromak nia domok okos.",
+      "scene_summary": "Joseph welcomes Jacob and his family to Goshen, declaring that God turned human evil into divine good.",
+      "nano_banana_prompt": "Nano Banana illustration style, a handsome Hebrew governor in fine Egyptian robes embracing his elderly, white-bearded father Jacob happily in a green pastured landscape in Goshen with tents and sheep in the background. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Joseph teaches us that even when bad things happen, God can turn trouble into good and help us forgive others.",
+    "core_lesson_tet": "José hanorin ita katak maski buat aat mosu, Maromak bele troka susar sai di'ak no ajulita ita atu fó perdua ba ema seluk.",
+    "discussion_question_en": "When someone hurts your feelings at school or home, how can you choose forgiveness and trust God's good plan like Joseph did?",
+    "discussion_question_tet": "Bainhira ema ruma halo moras ó-nia laran iha eskola ka uma, oinsá ó bele hili atu fó perdua no fiar Maromak nia planu di'ak hanesan José halo?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Young Joseph wearing his coat of many colors with open arms.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, handsome young boy Joseph with short wavy hair wearing a long patterned tunic with open arms smiling happily, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "JOSEPH",
+        "word_tet": "JOSE",
+        "clue_en": "The young boy with a coat of many colors who saved Egypt.",
+        "clue_tet": "Labarik-mane ho hena kór-oi-oin ne'ebé salva Ejiptu."
+      },
+      {
+        "word_en": "DREAMS",
+        "word_tet": "MEHI",
+        "clue_en": "Messages from God about wheat sheaves and stars.",
+        "clue_tet": "Mensajen husi Maromak kona-ba trigu-kaban no fitun sira."
+      },
+      {
+        "word_en": "COAT",
+        "word_tet": "HENA",
+        "clue_en": "The special colorful gift Jacob gave to his son Joseph.",
+        "clue_tet": "Prezente kór-oi-oin ne'ebé Jacó fó ba nia oan José."
+      },
+      {
+        "word_en": "EGYPT",
+        "word_tet": "EJIPTU",
+        "clue_en": "The land where Joseph became governor and saved people.",
+        "clue_tet": "Rai ne'ebé José sai governadór no salva ema sira."
+      },
+      {
+        "word_en": "GRAIN",
+        "word_tet": "TRIGU",
+        "clue_en": "Food Joseph gathered and stored during the seven good years.",
+        "clue_tet": "Aihan ne'ebé José halibur no rai iha tinan di'ak hitu laran."
+      },
+      {
+        "word_en": "FORGIVE",
+        "word_tet": "PERDUA",
+        "clue_en": "What Joseph did lovingly when he met his brothers again.",
+        "clue_tet": "Buat ne'ebé José halo ho domin bainhira nia sibu nia maun sira fali."
+      }
+    ]
+  }
+}

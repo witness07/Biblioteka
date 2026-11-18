@@ -1,36 +1,49 @@
 /**
  * 기독교 서적 HTML 문서 하단에 <script src="data/res/book-verse-linker.js"></script> 를 추가하면
  * 본문 속 테툼어 성경 구절(예: Jénesis 1:1-3)을 자동으로 링크로 변환하고,
- * 클릭 시 data/tetun_bible.json에서 해당 구절을 읽어와 플로팅 팝업으로 보여줍니다.
+ * 클릭 시 data/res/tetun_bible.json에서 해당 구절을 읽어와 플로팅 팝업으로 보여줍니다.
  */
 (function () {
     let cachedBible = null;
 
-    // 66권 테툼어 성경 책 이름 -> 표준 ID 매핑
+    // 66권 테툼어 성경 책 이름(단수/복수 및 철자 변형 포함) -> 표준 3자리 ID 매핑
     const BOOK_MAP = {
-        "1 Tesalónika": "1TH", "2 Tesalónika": "2TH", "1 Krónikas": "1CH", "2 Krónikas": "2CH",
+        "1 Tesalónika": "1TH", "2 Tesalónika": "2TH",
+        "1 Krónikas": "1CH", "2 Krónikas": "2CH", "1 Krónika": "1CH", "2 Krónika": "2CH",
         "Deuteronómiu": "DEU", "Lamentasaun": "LAM", "Ekleziastes": "ECC", "Apokalipse": "REV",
         "1 Korinto": "1CO", "2 Korinto": "2CO", "1 Timóteo": "1TI", "2 Timóteo": "2TI",
-        "1 Samuel": "1SA", "2 Samuel": "2SA", "1 Liurai": "1KI", "2 Liurai": "2KI",
-        "Provérbiu": "PRO", "Malaquias": "MAL", "Miqueias": "MIC", "Sofonias": "ZEP",
-        "Zacarias": "ZEC", "Apostolu": "ACT", "Levítiku": "LEV", "Jeremias": "JER",
-        "Ezekiel": "EZK", "Obadias": "OBA", "Habakuk": "HAB", "Neemias": "NEH",
-        "Jénesis": "GEN", "Númeru": "NUM", "Galásia": "GAL", "Filemon": "PHM",
-        "1 Pedro": "1PE", "2 Pedro": "2PE", "1 João": "1JN", "2 João": "2JN", "3 João": "3JN",
-        "Marcos": "MRK", "Mateus": "MAT", "Isaias": "ISA", "Daniel": "DAN",
-        "Ozeias": "HOS", "Esdras": "EZR", "Filipe": "PHP", "Kolose": "COL",
-        "Exodu": "EXO", "Josué": "JOS", "Salmu": "PSA", "Kanta": "SNG",
+        "1 Samuel": "1SA", "2 Samuel": "2SA",
+        "1 Liurai sira": "1KI", "2 Liurai sira": "2KI", "1 Liurai": "1KI", "2 Liurai": "2KI",
+        "Provérbiu": "PRO", "Malaquias": "MAL", "Malakias": "MAL",
+        "Miqueias": "MIC", "Mika": "MIC", "Sofonias": "ZEP",
+        "Zacarias": "ZEC", "Zakarias": "ZEC",
+        "Apóstolu sira": "ACT", "Apostolu sira": "ACT", "Apostolu": "ACT",
+        "Levítiku": "LEV", "Jeremias": "JER", "Ezekiel": "EZK",
+        "Obadias": "OBA", "Habakuk": "HAB", "Neemias": "NEH",
+        "Jénesis": "GEN", "Númeru": "NUM", "Números": "NUM",
+        "Galásia": "GAL", "Filemon": "PHM",
+        "1 Pedro": "1PE", "2 Pedro": "2PE",
+        "1 João": "1JN", "2 João": "2JN", "3 João": "3JN",
+        "Marcos": "MRK", "Markus": "MRK", "Mateus": "MAT",
+        "Isaías": "ISA", "Isaias": "ISA", "Daniel": "DAN",
+        "Ozeias": "HOS", "Esdras": "EZR", "Ezra": "EZR",
+        "Filipe": "PHP", "Filipi": "PHP", "Kolose": "COL",
+        "Exodu": "EXO", "Ézodu": "EXO", "Josué": "JOS", "Jozué": "JOS",
+        "Salmu sira": "PSA", "Salmu": "PSA",
+        "Kántiku": "SNG", "Kanta": "SNG",
         "Ester": "EST", "Lucas": "LUK", "Éfezu": "EPH", "Ebreu": "HEB",
-        "Tiago": "JAS", "Judas": "JUD", "Jonas": "JON", "Juis": "JDG",
+        "Tiago": "JAS", "Judas": "JUD", "Jonas": "JON",
+        "Juís sira": "JDG", "Juis": "JDG",
         "Rute": "RUT", "Amós": "AMO", "Naum": "NAM", "Ageu": "HAG",
-        "Joel": "JOL", "João": "JHN", "Roma": "ROM", "Titu": "TIT", "Job": "JOB"
+        "Joel": "JOL", "João": "JHN", "Roma": "ROM", "Titu": "TIT",
+        "Job": "JOB", "Jó": "JOB"
     };
 
     const bookNamesPattern = Object.keys(BOOK_MAP)
         .sort((a, b) => b.length - a.length)
         .map(name => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
         .join('|');
-    
+
     const REF_REGEX = new RegExp(`\\b(${bookNamesPattern})\\s+(\\d+):(\\d+)(?:-(\\d+))?`, 'g');
 
     // 플로팅 팝업 카드 UI 생성
@@ -67,7 +80,7 @@
         const textNodes = [];
         let node;
         while ((node = walker.nextNode())) {
-            if (node.parentElement && !['SCRIPT', 'STYLE', 'A'].includes(node.parentElement.tagName)) {
+            if (node.parentElement && !['SCRIPT', 'STYLE', 'A', 'TEXTAREA', 'INPUT'].includes(node.parentElement.tagName)) {
                 if (REF_REGEX.test(node.nodeValue)) {
                     textNodes.push(node);
                 }
@@ -87,7 +100,28 @@
         });
     }
 
-    // data/tetun_bible.json에서 구절 데이터를 가져와 팝업에 표시
+    // 여러 상대 경로 후보에서 data/res/tetun_bible.json 안전 로드
+    async function loadTetunBibleJson() {
+        const paths = [
+            'data/res/tetun_bible.json',
+            './data/res/tetun_bible.json',
+            '../data/res/tetun_bible.json',
+            'data/tetun_bible.json'
+        ];
+        for (const path of paths) {
+            try {
+                const res = await fetch(path);
+                if (res.ok) {
+                    return await res.json();
+                }
+            } catch (e) {
+                // 다음 경로 시도
+            }
+        }
+        throw new Error('tetun_bible.json 파일을 찾을 수 없습니다.');
+    }
+
+    // data/res/tetun_bible.json에서 구절 데이터를 가져와 팝업에 표시
     async function showVersePopup(refCode, label) {
         createPopupModal();
         const modal = document.getElementById('tetun-bible-popup');
@@ -97,15 +131,14 @@
 
         titleEl.textContent = label;
         bodyEl.innerHTML = '<span style="color:#64748b;">Karrega hela...</span>';
-        fullLinkEl.href = `bible.html?ref=${refCode}`;
+        fullLinkEl.href = `bible.html?ref=${encodeURIComponent(refCode)}`;
         modal.style.display = 'block';
 
         if (!cachedBible) {
             try {
-                const res = await fetch('data/tetun_bible.json');
-                cachedBible = await res.json();
+                cachedBible = await loadTetunBibleJson();
             } catch (e) {
-                bodyEl.textContent = "Erro karrega data/tetun_bible.json.";
+                bodyEl.textContent = "Erro karrega data/res/tetun_bible.json.";
                 return;
             }
         }
@@ -114,15 +147,20 @@
         const [startV, endV] = verseRange.split('-').map(Number);
         const lastV = endV || startV;
 
-        const book = cachedBible.books.find(b => b.id === bookId);
-        if (!book || !book.chapters[chap]) {
+        // 새 스키마 대응: cachedBible[bookId][chap][verseNum]
+        const bookObj = cachedBible[bookId];
+        if (!bookObj || !bookObj[chap]) {
             bodyEl.textContent = "La hetan testu ba versíkulu nee.";
             return;
         }
 
+        // 신형(직접 절 번호 키) 및 구형(verses 서브객체) 모두 호환
+        const chapterData = bookObj[chap];
+        const versesObj = chapterData.verses ? chapterData.verses : chapterData;
+
         let html = '';
         for (let v = startV; v <= lastV; v++) {
-            const text = book.chapters[chap][String(v)];
+            const text = versesObj[String(v)];
             if (text) {
                 html += `<p style="margin:0 0 6px 0;"><sup style="color:#d97706; font-weight:bold; margin-right:4px;">${v}</sup>${text}</p>`;
             }

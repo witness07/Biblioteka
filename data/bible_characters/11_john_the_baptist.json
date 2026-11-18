@@ -1,0 +1,132 @@
+{
+  "character_id": "john_the_baptist",
+  "character_name_en": "John the Baptist",
+  "character_name_tet": "Joaun Batista",
+  "category": "Core (8 Scenes)",
+  "bible_reference": "Luke 1, 3; Matthew 3, 14; John 1, 3",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Promised Birth to Zechariah and Elizabeth",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago, an elderly priest named Zechariah and his wife Elizabeth prayed for a child for many years. One day, while Zechariah was serving in the Temple, the angel Gabriel appeared and announced, 'Your prayer is heard! Elizabeth will bear a son, and you shall name him John. He will be filled with the Holy Spirit and prepare the way for the Lord.'",
+      "tetum_translation": "Iha tempu uluk, amululik katuas ida naran Zacarias no nia feen Isabel harohan beibeik atu hetan oan. Loron ida, bainhira Zacarias servisu iha Umaklesan Santu, anju Gabriel mosu no dehan, 'Ó-nia orasaun simu tiha! Isabel sei ko'us oan-mane ida, no ó sei fó naran Joaun ba nia. Nia sei nakenu ho Espíritu Santu no prepara dalan ba Na'i.'",
+      "scene_summary": "Angel Gabriel appears to priest Zechariah in the Temple, promising the birth of John the Baptist.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly Hebrew priest with a white beard wearing sacred white linen robes standing in awe inside a golden candlelit Temple as a bright glowing white angel appears before him. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Growing Up in the Wilderness",
+      "image_file": "2.jpeg",
+      "english_text": "As John grew up, he went into the wild desert to prepare his heart for God's holy mission. He wore humble clothes made of camel's hair with a leather belt around his waist, and he ate wild honey and locusts. John spent long hours praying and seeking God's wisdom in the quiet wilderness.",
+      "tetum_translation": "Bainhira Joaun boot daudaun, nia ba hela iha rai-maran fuik atu prepara nia laran ba Maromak nia misaun santu. Nia hatais hena karradas husi kiamel nia fulun ho sinto kudo matan iha nia knotak, no nia han uani-ben fuik no karau-la'o fuik. Joaun gasta oras barak hodi harohan no buka Maromak nia matenek iha rai-maran ne'ebé nonook.",
+      "scene_summary": "John grows up in the desert, wearing camel's hair clothing and eating wild honey and locusts.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew man with long dark hair and a beard wearing a simple camel hair tunic with a leather belt, sitting peacefully on a rock in a desert canyon at sunrise. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Preaching Repentance at the Jordan River",
+      "image_file": "3.jpeg",
+      "english_text": "When the right time came, John began preaching boldly near the Jordan River. Crowds of people came from all over to hear his strong message: 'Repent, for the kingdom of heaven is near!' Many people admitted their sins and were baptized by John in the river waters.",
+      "tetum_translation": "Bainhira tempu loloos to'o, Joaun hahú hano'in ho brani iha Mota Jordão nian sorin. Ema-lubun boot mai husi fatin hotu atu rona nia mensajen forte: 'Arrepende imi-nia sala, tanba Reinu Lalehan nian besik tiha maizenu!' Ema barak foti sira-nia sala no simu batizmu husi Joaun iha mota-been laran.",
+      "scene_summary": "John preaches repentance at the Jordan River, baptizing large crowds of people.",
+      "nano_banana_prompt": "Nano Banana illustration style, a passionate Hebrew prophet named John with dark hair and a leather belt standing in the shallow waters of the blue Jordan River, raising his hand to preach to a crowd gathered on the muddy riverbank. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Baptizing Jesus Christ",
+      "image_file": "4.jpeg",
+      "english_text": "One day, Jesus came to the Jordan River to be baptized by John. John humbly said, 'I need to be baptized by You!' But Jesus replied, 'Let it be so now to fulfill all righteousness.' When Jesus came up out of the water, heaven opened, and the Holy Spirit descended like a dove upon Him.",
+      "tetum_translation": "Loron ida, Jesus mai iha Mota Jordão atu simu batizmu husi Joaun. Joaun haraik-an dehan, 'Ha'u precisu simu batizmu husi Ita-Boot!' Maibé Jesus hatán, 'Husik halo nune'i to'o ikus atu kumpre hahalok loos hotu.' Bainhira Jesus sai husi bee laran, lalehan nakloke, no Espíritu Santu tun mai hanesan manu-pomba iha Nia leten.",
+      "scene_summary": "John baptizes Jesus in the Jordan River as the Holy Spirit descends like a dove from heaven.",
+      "nano_banana_prompt": "Nano Banana illustration style, John the Baptist placing his hand gently on Jesus standing in the Jordan River, as a glowing white dove descends from a golden beam of heavenly light opening above them. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Behold the Lamb of God",
+      "image_file": "5.jpeg",
+      "english_text": "The next day, John saw Jesus walking toward him again. Pointing at Jesus with great joy, John announced to all his followers, 'Behold the Lamb of God who takes away the sin of the world!' John gladly encouraged his own disciples to follow Jesus, the true Savior.",
+      "tetum_translation": "Iha loron tuir mai, Joaun haree Jesus la'o mai iha nia oin. Hodi hatudu liman ba Jesus ho ksolok boot, Joaun deklara ba nia seguidór sira hotu, 'Haree Bibi-Oan Maromak nian ne'ebé hamoos sala raiklaran nian!' Joaun halo nia dixípulu sira haksolok atu tuir Jesus, Salvadór loloos.",
+      "scene_summary": "John points to Jesus and declares Him to be the Lamb of God who takes away the sin of the world.",
+      "nano_banana_prompt": "Nano Banana illustration style, John the Baptist pointing joyously toward Jesus who is walking peacefully on a grassy pathway, while eager followers watch in awe. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 6,
+      "title": "He Must Increase, I Must Decrease",
+      "image_file": "6.jpeg",
+      "english_text": "When people told John that many crowds were now following Jesus, John was not jealous at all. He explained with a humble smile, 'A friend of the bridegroom rejoices to hear his voice. He must become greater, and I must become less.' John knew his purpose was simply to point others to Christ.",
+      "tetum_translation": "Bainhira ema hateten ba Joaun katak ema-lubun barak tuir daudaun Jesus, Joaun la laran-moras aituan. Nia esplika ho oin-midar haraik-an, 'Noiva-la'en nia belun haksolok boot atu rona nia lian. Nia temke sai boot liu, no ha'u temke sai ki'ik liu.' Joaun hatene nia fin mak atu hatudu ema seluk ba Kristu.",
+      "scene_summary": "John humbly rejoices in Jesus' growing ministry, stating 'He must increase, but I must decrease.'",
+      "nano_banana_prompt": "Nano Banana illustration style, John the Baptist wearing camel hair clothing, talking with a joyful and humble smile to two young disciples under the shade of an olive tree. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 7,
+      "title": "Standing Courageously for Truth",
+      "image_file": "7.jpeg",
+      "english_text": "John was never afraid to speak God's truth to powerful people. When King Herod Antipas committed evil actions and married his brother's wife unlawfully, John boldly confronted him. Because of his brave words for God's righteousness, Herod threw John into a dark prison.",
+      "tetum_translation": "Joaun nunka ta'uk atu ko'alia Maromak nia lia-loos ba ema kbiit-na'in sira. Bainhira Liurai Herodes Antipas halo hahalok aat no kaben ho nia maun nia feen ho kontra ukun, Joaun brani atu korreje nia. Tanba nia liafuan brani ba Maromak nia hahalok loos, Herodes soe Joaun ba kadeia nakukun.",
+      "scene_summary": "John courageously rebukes King Herod for his sinful marriage and is thrown into prison.",
+      "nano_banana_prompt": "Nano Banana illustration style, John the Baptist standing courageously in his simple robes, pointing his hand firmly toward an arrogant King Herod seated on a throne inside a palace hall. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 8,
+      "title": "A Faithful Witness and Hero of Faith",
+      "image_file": "8.jpeg",
+      "english_text": "Even inside the prison cell, John stayed faithful until the end of his life, giving his life as a holy martyr for God. Jesus Himself praised John, calling him the greatest born among women. John completed his mission faithfully, leaving a bright light of faith and courage for all of us.",
+      "tetum_translation": "Maski iha kadeia-kuak laran, Joaun kaer metin ba nia fiar to'o nia moris nia rohan, fo nia moris nu'udar martir santu ba Maromak. Jesus rasik hahi'i Joaun, foti nia nu'udar boot liu iha ema hotu ne'ebé moris husi feto. Joaun ramata nia misaun ho laran-metin, soe naroman fiar no korajen nian ba ita hotu.",
+      "scene_summary": "John completes his faithful witness in prison, praised by Jesus as the greatest prophet born of women.",
+      "nano_banana_prompt": "Nano Banana illustration style, a glowing heavenly beam of sunlight shining into a humble stone room, illuminating a leather belt and a wooden water cup resting on a stone ledge, symbolizing a faithful life completed. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "John the Baptist teaches us to live with true humility, putting Jesus first and standing boldly for God's truth.",
+    "core_lesson_tet": "Joaun Batista hanorin ita atu moris ho haraik-an loloos, tau Jesus iha fatin dahuluk no hamriik ho brani ba Maromak nia lia-loos.",
+    "discussion_question_en": "How can you put Jesus first at home and school this week, pointing your friends to Him through your kind words and actions?",
+    "discussion_question_tet": "Oinsá ó bele tau Jesus iha fatin dahuluk iha uma no eskola iha semana ne'e, hodi hatudu ó-nia belun sira ba Nia ho liafuan no hahalok di'ak?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "John the Baptist standing in the Jordan River with raised hand, preaching with joy.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, prophet John the Baptist wearing camel hair tunic standing in river water with arm raised in praise, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "JOHN",
+        "word_tet": "JOAUN",
+        "clue_en": "The prophet who prepared the way for Jesus.",
+        "clue_tet": "Profeta ne'ebé prepara dalan ba Jesus."
+      },
+      {
+        "word_en": "JORDAN",
+        "word_tet": "JORDAO",
+        "clue_en": "The river where John preached and baptized people.",
+        "clue_tet": "Mota ne'ebé Joaun hano'in no fó batizmu ba ema sira."
+      },
+      {
+        "word_en": "BAPTISM",
+        "word_tet": "BATIZMU",
+        "clue_en": "Washing in water as a sign of repentance and new life.",
+        "clue_tet": "Fase ho bee nu'udar sinal arrepende no moris foun."
+      },
+      {
+        "word_en": "LAMB",
+        "word_tet": "BIBIOAN",
+        "clue_en": "What John called Jesus: 'The ____ of God'.",
+        "clue_tet": "Buat ne'ebé Joaun bolu ba Jesus: 'Maromak nia ____'."
+      },
+      {
+        "word_en": "HUMBLE",
+        "word_tet": "HARAIKAN",
+        "clue_en": "Putting Jesus first and making yourself lesser.",
+        "clue_tet": "Tau Jesus iha fatin dahuluk no halo ó-nia an sai ki'ik liu."
+      },
+      {
+        "word_en": "TRUTH",
+        "word_tet": "LIALOOS",
+        "clue_en": "What John spoke courageously even to kings.",
+        "clue_tet": "Buat ne'ebé Joaun ko'alia ho brani maski ba liurai sira."
+      }
+    ]
+  }
+}

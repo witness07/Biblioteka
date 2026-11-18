@@ -1,0 +1,105 @@
+{
+  "character_id": "ruth",
+  "character_name_en": "Ruth",
+  "character_name_tet": "Rute",
+  "category": "Major (5 Scenes)",
+  "bible_reference": "Ruth 1 - 4",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "A Faithful Promise to Naomi",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago, a young woman named Ruth lived in the land of Moab. When her husband died, her mother-in-law Naomi decided to return home to Bethlehem. Naomi gently told Ruth to stay in Moab, but Ruth loved Naomi deeply. Ruth held Naomi's hand and promised, 'Where you go, I will go, and your God will be my God!'",
+      "tetum_translation": "Iha tempu uluk, feto nurak ida naran Rute hela iha rai Moab. Bainhira nia la'en mate tiha, nia banin-feto Noemi deside fila ba nia uma iha Belein. Noemi ho laran-luak dehan ba Rute atu hela iha Moab, maibé Rute domin Noemi tebes. Rute kaer Noemi nia liman no promete, 'Iha fatin ne'ebé ó ba, ha'u mós sei ba, no ó-nia Maromak sei sai ha'u-nia Maromak!'",
+      "scene_summary": "Young widow Ruth loyally promises to stay with Naomi and serve the God of Israel.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Moabite woman named Ruth with long dark hair tied back with a headscarf, wearing a simple blue linen dress and tan shawl, walking arm-in-arm with an elderly woman Naomi along a dusty countryside road at sunset. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Gleaning in the Harvest Fields",
+      "image_file": "2.jpeg",
+      "english_text": "When Ruth and Naomi arrived in Bethlehem, they were very poor and needed food. Ruth humbly went out into the barley fields to glean the leftover grain behind the harvesters. The field belonged to a kind and wealthy man named Boaz, who noticed Ruth's hard work and loved her dutiful heart.",
+      "tetum_translation": "Bainhira Rute no Noemi to'o iha Belein, sira ki'ak tebes no precisa aihan. Rute ho haraik-an ba iha to'os cevada nian atu halibur trigu restu iha kolleitadór sira-nia kotuk. To'os ne'e sira-nia na'in mak mane laran-di'ak no riku ida naran Boaz, ne'ebé haree Rute nia servisu toos no gosta nia hahalok di'ak.",
+      "scene_summary": "Ruth humbly gleans leftover barley in the fields of Boaz to care for her mother-in-law Naomi.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Moabite woman named Ruth with long dark hair wearing a blue linen dress, gathering fallen golden barley stalks in a sunny field while harvesters work in the background. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Special Kindness and Protection",
+      "image_file": "3.jpeg",
+      "english_text": "Boaz came to Ruth and said, 'I have heard how lovingly you cared for Naomi. May the Lord God of Israel reward you under whose wings you have come for refuge!' Boaz instructed his workers to protect Ruth, leave extra grain for her, and invited her to eat bread with his workers in peace.",
+      "tetum_translation": "Boaz mai besik Rute no dehan, 'Ha'u rona tiha oinsá ó tau matan ho domin ba Noemi. Na'i Maromak Izraél nian ne'ebé ó mai subar iha Nia lakan okos sei haraik balada ba ó!' Boaz haruka nia trebadór sira atu proteje Rute, husik trigu barak liu ba nia, no convidadu nia atu han paun hamutuk ho nia trebadór sira iha pás laran.",
+      "scene_summary": "Boaz blesses Ruth for her loyalty to Naomi and provides abundant grain and protection for her.",
+      "nano_banana_prompt": "Nano Banana illustration style, a kind wealthy Hebrew landowner named Boaz with a short beard wearing a fine brown tunic, speaking gently to young Ruth who holds a large bundle of golden barley under a bright blue sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "The Redeemer at the Gate",
+      "image_file": "4.jpeg",
+      "english_text": "Naomi encouraged Ruth to seek Boaz as their family redeemer according to God's law. Ruth went to Boaz with respect, and Boaz happily agreed to care for them. The next day, Boaz met with the city elders at Bethlehem's gate and legally redeemed Naomi's land to marry Ruth with great joy.",
+      "tetum_translation": "Noemi fó kbiit ba Rute atu husu Boaz sai sira-nia resgatadór família nian tuir Maromak nia ukun-fuan. Rute ba husu Boaz ho respeitu, no Boaz haksolok tebes atu tau matan ba sira. Iha loron tuir mai, Boaz sibu no kote ho katuas sidade nian sira iha sidade Belein nia odamatan boot atu sosa fali Noemi nia rai no kaben ho Rute ho ksolok boot.",
+      "scene_summary": "Boaz acts as guardian-redeemer at Bethlehem's gate, agreeing to redeem Naomi's land and marry Ruth.",
+      "nano_banana_prompt": "Nano Banana illustration style, a wealthy Hebrew man named Boaz standing before elders in traditional robes near the stone entrance gate of Bethlehem, shaking hands happily to finalize an agreement. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "A Blessed Son and Glorious Lineage",
+      "image_file": "5.jpeg",
+      "english_text": "Boaz married Ruth, and God blessed them with a precious baby boy named Obed. Naomi held her little grandson close with overwhelming happiness! God used loyal Ruth to restore her family, and years later, Obed became the grandfather of King David, leading directly to the birth of Jesus Christ.",
+      "tetum_translation": "Boaz kaben ho Rute, no Maromak haraik bensaun ba sira ho kosok-oan mane furak ida naran Obed. Noemi hakuak nia katuas-oan ki'ik ho haksolok boot tebes! Maromak usadu Rute ne'ebé laran-metin atu restabelece nia família, no tinan barak liu ba, Obed sai Liurai David nia avó, ne'ebé lori loloos ba Jesus Kristu nia moris.",
+      "scene_summary": "Ruth and Boaz welcome baby Obed, bringing joy to Naomi and placing Ruth in the lineage of King David and Jesus.",
+      "nano_banana_prompt": "Nano Banana illustration style, a happy young woman Ruth and her husband Boaz standing inside a cozy home beside grandmother Naomi, who is holding a swaddled baby boy Obed with beaming smiles. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Ruth shows us that loving loyalty, humble work, and putting family first bring God's unexpected blessings and great redemption.",
+    "core_lesson_tet": "Rute hatudu mai ita katak lealdade domin nian, servisu haraik-an, no tau família iha fatin primeiru lori Maromak nia bensaun no resgate boot ne'ebé ita la hein.",
+    "discussion_question_en": "How can you show kindness, loyalty, and helpfulness to your family members or elders at home this week like Ruth did?",
+    "discussion_question_tet": "Oinsá ó bele hatudu laran-di'ak, lealdade, no kbiit ba ó-nia família ka katuas sira iha uma iha semana ne'e hanesan Rute halo?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Young Ruth holding a bundle of golden barley in the harvest field.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, young Moabite woman Ruth holding a bundle of wheat barley with a gentle smile, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "RUTH",
+        "word_tet": "RUTE",
+        "clue_en": "The loyal young woman who followed Naomi to Bethlehem.",
+        "clue_tet": "Feto nurak laran-metin ne'ebé tuir Noemi ba Belein."
+      },
+      {
+        "word_en": "NAOMI",
+        "word_tet": "NOEMI",
+        "clue_en": "Ruth's beloved mother-in-law whom she cared for.",
+        "clue_tet": "Rute nia banin-feto stima ne'ebé nia tau matan ba."
+      },
+      {
+        "word_en": "BOAZ",
+        "word_tet": "BOAZ",
+        "clue_en": "The kind landowner who became Ruth's redeemer.",
+        "clue_tet": "Na'in-to'os laran-di'ak ne'ebé sai Rute nia resgatadór."
+      },
+      {
+        "word_en": "BARLEY",
+        "word_tet": "CEVADA",
+        "clue_en": "The golden grain Ruth gathered in the fields.",
+        "clue_tet": "Trigu kor-os-mean ne'ebé Rute halibur iha to'os laran."
+      },
+      {
+        "word_en": "OBED",
+        "word_tet": "OBED",
+        "clue_en": "The baby boy born to Ruth who became David's grandfather.",
+        "clue_tet": "Kosok-oan mane ne'ebé moris ba Rute ne'ebé sai Liurai David nia avó."
+      },
+      {
+        "word_en": "LOYAL",
+        "word_tet": "METIN",
+        "clue_en": "Staying faithful and devoted to family and God.",
+        "clue_tet": "Hela laran-metin no dedikadu ba família no Maromak."
+      }
+    ]
+  }
+}

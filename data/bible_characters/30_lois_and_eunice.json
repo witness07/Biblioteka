@@ -1,0 +1,105 @@
+{
+  "character_id": "lois_and_eunice",
+  "character_name_en": "Lois and Eunice",
+  "character_name_tet": "Loide no Eunice",
+  "category": "Major (5 Scenes)",
+  "bible_reference": "2 Timothy 1:5, 3:14-15",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "A Home Filled with Faith",
+      "image_file": "1.jpeg",
+      "english_text": "In the town of Lystra, there lived a godly grandmother named Lois and her faithful daughter, Eunice. Though living in a culture with many different beliefs, they filled their home with love, prayer, and devotion to God. Together, they cherished the Holy Scriptures and passed down a sincere, pure faith from generation to generation.",
+      "tetum_translation": "Iha sidade Listra, hela avó-feto ida ne'ebé ta'uk Maromak naran Loide no nia oan-feto laran-metin, Eunice. Maski hela iha kultura ida ne'ebé ho fiar oin-oin, sira hanoin metin sira-nia uma ho domin, orasaun, no dedikasaun ba Maromak. Sira hamutuk valoriza Kuaresma (Eskritura Sante) no haraik fiar ne'ebé laran-moos husi gerasaun ba gerasaun.",
+      "scene_summary": "Grandmother Lois and mother Eunice live a godly life in Lystra, cultivating sincere faith at home.",
+      "nano_banana_prompt": "Nano Banana illustration style, a gentle elderly Jewish grandmother with grey hair in a mantle named Lois and a kind mother named Eunice wearing traditional blue and beige tunics sitting together in a warm stone home, sharing a scroll and praying. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Teaching Young Timothy the Scriptures",
+      "image_file": "2.jpeg",
+      "english_text": "Eunice gave birth to a sweet boy named Timothy. From the time he was a small child, Lois and Eunice patiently taught Timothy the ancient Scriptures every single day. They read holy stories, recited verses, and explained God's wisdom, instilling in Timothy's heart a deep love for God's truth.",
+      "tetum_translation": "Eunice mós hanoin hetan oan-mane kmas ida naran Timóteo. Husi tempu nia kianuk kikiik, Loide no Eunice ho pasiénsia hanorin Timóteo Eskritura Sante sira loron-loron. Sira lee istória santu sira, dekora versíklu sira, no esplika Maromak nia sabedoria, hodi kuda iha Timóteo nia laran domin kle'an ba Maromak nia lian loolos.",
+      "scene_summary": "Lois and Eunice lovingly teach young Timothy the Holy Scriptures from his early childhood.",
+      "nano_banana_prompt": "Nano Banana illustration style, a loving grandmother and mother sitting on soft cushions with a young boy named Timothy, unrolling a parchment scroll together with warm smiles. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Welcoming Apostle Paul into Their Home",
+      "image_file": "3.jpeg",
+      "english_text": "When Apostle Paul visited Lystra during his missionary journey, he met Lois, Eunice, and young Timothy. Paul noticed the genuine, unfeigned faith that first lived in grandmother Lois and mother Eunice, and now burned brightly in Timothy. Paul rejoiced seeing how faithful training at home produced a wonderful young disciple.",
+      "tetum_translation": "Bainhira Apostolu Paulu visita sidade Listra iha nia viajen misionáriu, nia konese Loide, Eunice, no Timóteo nurak. Paulu nota fiar loosi no kle'an ne'ebé moris uluk iha avó Loide no inan Eunice, no agora lakan nabilan iha Timóteo laran. Paulu haksolok boot haree oinsá hanorin laran-metin iha uma gasta oan-mane misionáriu furak ida.",
+      "scene_summary": "Paul visits Lystra and recognizes the genuine faith passed down from Lois and Eunice to Timothy.",
+      "nano_banana_prompt": "Nano Banana illustration style, Apostle Paul in a traveling cloak greeting grandmother Lois, mother Eunice, and young Timothy warmly outside their home under olive trees. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Blessing Timothy for Mission Work",
+      "image_file": "4.jpeg",
+      "english_text": "Recognizing Timothy's spiritual maturity and good reputation, Paul invited Timothy to join him in spreading the Gospel. Though it was hard to let him go, Lois and Eunice selflessly prayed over Timothy, blessed him, and sent him out to serve God. Their faithful investment at home was now bearing fruit for the entire world.",
+      "tetum_translation": "Reconese Timóteo nia brani espiritual no reputasaun di'ak, Paulu konvida Timóteo atu belun ho nia lori lia-foun di'ak (Evanjellu). Maski susar atu husik nia ba, Loide no Eunice ho laran-luak harohan ba Timóteo, haraik bensaun ba nia, no haruka nia sai atu serbí Maromak. Sira-nia serbisu laran-metin iha uma agora fo foliage ba raiklaran hotu.",
+      "scene_summary": "Lois and Eunice selflessly bless Timothy and send him off to serve as Paul's missionary partner.",
+      "nano_banana_prompt": "Nano Banana illustration style, grandmother Lois and mother Eunice laying gentle hands on young adult Timothy's shoulders in prayer, blessing him as he prepares for a journey with a leather bag. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "A Lasting Legacy of Generational Faith",
+      "image_file": "5.jpeg",
+      "english_text": "Years later, Paul wrote letters encouraging Timothy, remembering the sincere faith of his mother Eunice and grandmother Lois. Their quiet, daily dedication to teaching God's Word at home transformed Timothy into a great leader of the early church. Their story reminds us that a godly family leaves a legacy of faith that endures forever.",
+      "tetum_translation": "Tinan balu tuir mai, Paulu hakerek surat sira atu fo ksolok ba Timóteo, hodi hanoin hetan fiar moos husi nia inan Eunice no avó Loide. Sira-nia dedikasaun ne'e loron-loron iha uma transforma Timóteo sai lidun boot iha Kreda baisekur. Sira-nia istória fó hanoin mai ita katak família kmas sobakar haraik eransa fiar ne'ebé nabilan ba nafatin.",
+      "scene_summary": "The legacy of Lois and Eunice's faithful teaching lives on through Timothy's leadership in the early church.",
+      "nano_banana_prompt": "Nano Banana illustration style, a serene portrait of grandmother Lois and mother Eunice looking out from a sunlit window with joyful hearts, while in the background Timothy preaches passionately to a congregation. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Lois and Eunice teach us that sharing God's truth and love at home builds a powerful foundation of faith that shapes future generations.",
+    "core_lesson_tet": "Loide no Eunice hanorin mai ita katak fahe Maromak nia lian no domin iha uma harii fundasaun fiar forte ne'ebé kria gerasaun futuru sira.",
+    "discussion_question_en": "How can you share God's word and pray together with your family or friends at home every day?",
+    "discussion_question_tet": "Oinsá ó bele fahe Maromak nia lian no harohan hamutuk ho ó-nia família ka belun sira iha uma loron-loron?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Grandmother Lois and mother Eunice reading a Holy Scripture scroll together with young Timothy.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, grandmother Lois and mother Eunice teaching young Timothy from a scroll in a warm home, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "LOIS",
+        "word_tet": "LOIDE",
+        "clue_en": "The faithful grandmother who taught Timothy about God.",
+        "clue_tet": "Avó-feto laran-metin ne'ebé hanorin Timóteo kona-ba Maromak."
+      },
+      {
+        "word_en": "EUNICE",
+        "word_tet": "EUNICE",
+        "clue_en": "Timothy's godly mother who passed down sincere faith.",
+        "clue_tet": "Timóteo nia inan laran-moos ne'ebé haraik fiar loolos."
+      },
+      {
+        "word_en": "FAITH",
+        "word_tet": "FIAR",
+        "clue_en": "Sincere trust in God passed from generation to generation.",
+        "clue_tet": "Laran-metin loolos ba Maromak ne'ebé haraik husi gerasaun ba gerasaun."
+      },
+      {
+        "word_en": "FAMILY",
+        "word_tet": "FAMILIA",
+        "clue_en": "The home environment where Timothy learned God's Word.",
+        "clue_tet": "Uma no ema sira ne'ebé hanorin Maromak nia lian ba Timóteo."
+      },
+      {
+        "word_en": "SCROLL",
+        "word_tet": "SURAT",
+        "clue_en": "The Holy Scriptures read and studied together at home.",
+        "clue_tet": "Eskritura Sante ne'ebé sira lee no estudu hamutuk iha uma."
+      },
+      {
+        "word_en": "LEGACY",
+        "word_tet": "ERANSA",
+        "clue_en": "The lasting gift of faith left for future generations.",
+        "clue_tet": "Bensaun fiar ne'ebé hela ba gerasaun futuru sira."
+      }
+    ]
+  }
+}

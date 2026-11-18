@@ -1,0 +1,132 @@
+{
+  "character_id": "samuel",
+  "character_name_en": "Samuel",
+  "character_name_tet": "Samuel",
+  "category": "Core (8 Scenes)",
+  "bible_reference": "1 Samuel 1 - 25",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Born in Answer to Prayer",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago, a woman named Hannah prayed teardrops to God because she had no child. God remembered Hannah's sincere prayer and gave her a wonderful baby boy named Samuel. As she promised God, when Samuel was a little boy, she brought him to serve in God's tabernacle under Eli the priest.",
+      "tetum_translation": "Iha tempu uluk, feto ida naran Ana harohan ho matan-ben ba Maromak tanba nia la iha oan. Maromak hanoin-hetan Ana nia orasaun laran-nook no fó ba nia oan-mane furak ida naran Samuel. Hanesan nia promete ba Maromak, bainhira Samuel sei labarik, nia lori Samuel atu servisu iha Maromak nia tabernákulu iha amululik Eli nian okos.",
+      "scene_summary": "God answers Hannah's tears with baby Samuel, who is dedicated to serve in God's tabernacle.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew boy around 5 years old wearing a small white linen tunic, standing happily beside his loving mother Hannah inside a warm wooden tabernacle tent with gold lamps. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Here I Am, Lord",
+      "image_file": "2.jpeg",
+      "english_text": "One dark night while sleeping near the Ark of God, young Samuel heard a voice call his name, 'Samuel! Samuel!' He ran to old Eli thinking Eli had called him. Eli realized God was speaking to the boy and told him to answer, 'Speak, Lord, for Your servant is listening.' Samuel listened faithfully to God's first message.",
+      "tetum_translation": "Iha kalan nakukun ida bainhira toba besik Bote Santu, labarik Samuel rona lian ida bolu nia naran, 'Samuel! Samuel!' Nia halai ba katuas Eli tanba hanoin Eli mak bolu nia. Eli komprende katak Maromak mak ko'alia ba labarik ne'e no dehan ba nia atu hatán, 'Ko'alia ba Na'i, tanba Ita-nia atan rona daudaun.' Samuel rona ho laran-metin ba Maromak nia mensajen primeiru.",
+      "scene_summary": "Young Samuel hears God calling his name at night in the tabernacle and humbly responds.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew boy around 10 years old with dark curly hair wearing a white linen tunic, sitting up in a cozy bed at night inside the tabernacle, surrounded by soft golden light as God speaks. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Repentance at Mizpah",
+      "image_file": "3.jpeg",
+      "english_text": "As Samuel grew up, all Israel knew he was a true prophet of God. When the nation was troubled by enemies, Samuel gathered all the people at Mizpah. He urged them to throw away their idols and return to God with all their hearts. The people repented, fasted, and prayed together.",
+      "tetum_translation": "Bainhira Samuel boot ba daudaun, Izraél tomak hatene katak nia sai profeta loloos husi Maromak. Bainhira nasaun iha susar laran tanba inimigu sira, Samuel halibur povu hotu iha Mizpá. Nia ksolok sira atu soe tiha sira-nia estátua no fila fali ba Maromak ho sira-nia laran tomak. Povu arrepende, jejum, no harohan hamutuk.",
+      "scene_summary": "Samuel gathers Israel at Mizpah to repent, fast, and return to the Lord wholeheartedly.",
+      "nano_banana_prompt": "Nano Banana illustration style, a mature Hebrew prophet with a dark beard wearing a brown cloak and tan linen robe, raising his hands in prayer on a grassy hill surrounded by repenting Israelite families. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Ebenezer, Stone of Help",
+      "image_file": "4.jpeg",
+      "english_text": "While the people prayed at Mizpah, the Philistine army attacked. Samuel offered a sacrifice and cried out to God for help. God answered with mighty thunder, driving the enemy away! Samuel set up a large stone and named it Ebenezer, saying, 'Thus far the Lord has helped us.'",
+      "tetum_translation": "Bainhira povu harohan daudaun iha Mizpá, soldadu Filisteu sira mai atakadu. Samuel sakrifika no hakilar ba Maromak atu husu tulun. Maromak hatán ho raihan boot tebes, hodi duni inimigu sira dook! Samuel harii fatuk boot ida no fó naran Ebenezer, dehan, 'To'o iha ne'e Na'i tulun tiha ita.'",
+      "scene_summary": "God sends thunder to defeat the Philistines, and Samuel sets up the Ebenezer memorial stone.",
+      "nano_banana_prompt": "Nano Banana illustration style, a middle-aged Hebrew prophet named Samuel standing next to a large stone pillar monument on a grassy hill, raising his hands under a bright rainbow after a thunderstorm. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Anointing Israel's First King",
+      "image_file": "5.jpeg",
+      "english_text": "When Samuel became old, the people demanded a king so they could be like other nations. Though Samuel was grieved, God told him to give them their request. Samuel met a tall young man named Saul and poured olive oil on his head, anointing Saul as Israel's very first king.",
+      "tetum_translation": "Bainhira Samuel katuas tiha, povu husu liurai ida nune'i sira bele hanesan nasaun seluk sira. Maski Samuel laran-triste, Maromak dehan ba nia atu fó tuir sira-nia husu. Samuel sibu mane aas ida naran Saul no foti azeite fakar ba nia ulun, hodi unje Saul sai Izraél nia liurai primeiru.",
+      "scene_summary": "Samuel reluctantly obeys God and anoints Saul as Israel's first king using olive oil.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly Hebrew prophet with grey hair pouring golden oil from a horn over the head of a tall young man named Saul wearing a simple tunic. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 6,
+      "title": "Obedience Is Better Than Sacrifice",
+      "image_file": "6.jpeg",
+      "english_text": "King Saul became proud and disobeyed God's clear commands in battle. Samuel courageously confronted the king and declared God's message: 'To obey is better than sacrifice, and to heed is better than the fat of rams.' Samuel warned Saul that God had rejected him as king.",
+      "tetum_translation": "Liurai Saul sai foti-an no la halo tuir Maromak nia ukun-fuan ne'ebé moos iha funu laran. Samuel ho brani hasoru liurai ne'e no deklara Maromak nia mensajen: 'Halo tuir di'ak liu fali sakrifísiu, no rona di'ak liu fali bibi-rafe nia bokur.' Samuel avisa Saul katak Maromak rejeita tiha nia nu'udar liurai.",
+      "scene_summary": "Samuel rebukes King Saul for disobedience, declaring that obedience is better than sacrifice.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly Hebrew prophet with grey hair wearing a brown mantle, standing firm and holding a staff while speaking boldly to a repentant king in bronze armor. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 7,
+      "title": "Anointing Young David",
+      "image_file": "7.jpeg",
+      "english_text": "God sent Samuel to Bethlehem to the house of Jesse to find a new king. Jesse presented his older, strong sons, but God told Samuel, 'People look at the outward appearance, but the Lord looks at the heart.' When young shepherd boy David arrived, Samuel anointed him with oil, and God's Spirit filled David.",
+      "tetum_translation": "Maromak haruka Samuel ba Belein ba Jese nia uma atu hetan liurai foun. Jese hatudu nia oan-mane boot sira ne'ebé forte, maibé Maromak dehan ba Samuel, 'Ema haree ba oin li'ur nian, maibé Na'i haree ba laran.' Bainhira labarik bibi-atan David to'o mai, Samuel unje nia ho azeite, no Maromak nia Espíritu nakonu iha David.",
+      "scene_summary": "Samuel visits Jesse's family in Bethlehem and anoints young David as God's chosen future king.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly white-bearded Hebrew prophet pouring golden oil from a horn onto the head of a young boy with curly dark hair inside a cozy stone home surrounded by his family. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 8,
+      "title": "A Lifetime of Faithful Prayer",
+      "image_file": "8.jpeg",
+      "english_text": "Throughout his whole life, Samuel served God and the people faithfully as a judge, priest, and prophet. Before he rested, he reassured Israel, 'Far be it from me that I should sin against the Lord by failing to pray for you.' All Israel mourned Samuel as a beloved man of God.",
+      "tetum_translation": "Iha nia moris tomak laran, Samuel servisu ba Maromak no povu ho laran-metin nu'udar juís, amululik, no profeta. Sura nia deskansa, nia reafirma Izraél, 'Dook husi ha'u atu halo sala ba Na'i hodi la harohan ba imi.' Izraél tomak tanis ba Samuel nu'udar Maromak nia emar ne'ebé domin-na'in.",
+      "scene_summary": "Samuel finishes his life faithful in prayer and service, honored by all Israel as a holy prophet.",
+      "nano_banana_prompt": "Nano Banana illustration style, a peaceful elderly Hebrew prophet with a long white beard wearing a white robe and tan cloak, kneeling with hands lifted in prayer on a hill overlooking peaceful green villages under a golden sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Samuel teaches us to listen carefully to God's voice, obey Him completely, and never stop praying for others.",
+    "core_lesson_tet": "Samuel hanorin ita atu rona ho di'ak ba Maromak nia lian, halo tuir Nia ho laran tomak, no keta para atu harohan ba ema seluk.",
+    "discussion_question_en": "When God speaks to your heart through the Bible or your teachers, how can you say 'Here I am, Lord' and obey Him this week?",
+    "discussion_question_tet": "Bainhira Maromak ko'alia ba ó-nia laran liuhusi Bíblia ka ó-nia mestre sira, oinsá ó bele dehan 'Ha'u iha ne'e, Na'i' no halo tuir Nia iha semana ne'e?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Young Samuel kneeling in prayer beside his bed in the tabernacle.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, young Hebrew boy Samuel with curly hair wearing a simple tunic, kneeling with folded hands in prayer beside a bed, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "SAMUEL",
+        "word_tet": "SAMUEL",
+        "clue_en": "The boy prophet who heard God calling his name in the night.",
+        "clue_tet": "Labarik profeta ne'ebé rona Maromak bolu nia naran iha kalan."
+      },
+      {
+        "word_en": "HANNAH",
+        "word_tet": "ANA",
+        "clue_en": "Samuel's praying mother who dedicated him to the Lord.",
+        "clue_tet": "Samuel nia inan harohan-na'in ne'ebé lori nia ba Na'i."
+      },
+      {
+        "word_en": "LISTEN",
+        "word_tet": "RONA",
+        "clue_en": "What Samuel did when God spoke to him in the temple.",
+        "clue_tet": "Buat ne'ebé Samuel halo bainhira Maromak ko'alia ba nia."
+      },
+      {
+        "word_en": "OBEY",
+        "word_tet": "TUIR",
+        "clue_en": "What Samuel reminded King Saul is better than sacrifice.",
+        "clue_tet": "Buat ne'ebé Samuel hanoin-hetan Liurai Saul katak di'ak liu sakrifísiu."
+      },
+      {
+        "word_en": "PROPHET",
+        "word_tet": "PROFETA",
+        "clue_en": "A holy speaker chosen to deliver God's words to the people.",
+        "clue_tet": "Ema lian-santu ne'ebé hili atu lori Maromak nia liafuan ba povu."
+      },
+      {
+        "word_en": "PRAYER",
+        "word_tet": "ORASAUN",
+        "clue_en": "Talking to God faithfully every day like Samuel did.",
+        "clue_tet": "Ko'alia ba Maromak ho laran-metin loron-loron hanesan Samuel halo."
+      }
+    ]
+  }
+}

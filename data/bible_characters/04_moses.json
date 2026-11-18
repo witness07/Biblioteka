@@ -1,0 +1,132 @@
+{
+  "character_id": "moses",
+  "character_name_en": "Moses",
+  "character_name_tet": "Moisés",
+  "category": "Core (8 Scenes)",
+  "bible_reference": "Exodus 2 - Deuteronomy 34",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Rescued from the Nile",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago in Egypt, a Hebrew baby boy was hidden in a floating basket on the Nile River to save his life. Pharaoh's daughter found the crying baby, took pity on him, and named him Moses. He grew up safely inside the royal palace as an Egyptian prince.",
+      "tetum_translation": "Iha tempu uluk iha Ejiptu, kosok-oan mane Ebreu ida hetan subar iha bote laran iha Mota Nilus atu salva nia moris. Faraó nia oan-feto hetan labarik ne'ebé tanis, sente laran-sadi'ak, no fó naran Moisés ba nia. Nia moris no boot ho seguru iha palásiu liurai nian nu'udar liurai-oan Ejiptu.",
+      "scene_summary": "Baby Moses is placed in a reed basket on the Nile River and rescued by Pharaoh's daughter.",
+      "nano_banana_prompt": "Nano Banana illustration style, an Egyptian princess in fine white robes and gold jewelry finding a cute Hebrew baby in a woven reed basket among the tall papyrus plants along the sunny Nile River. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Fleeing to Midian",
+      "image_file": "2.jpeg",
+      "english_text": "When Moses grew up, he saw an Egyptian beating a Hebrew slave. Moses tried to help his fellow Hebrew, but in his anger, he killed the Egyptian. Fearing Pharaoh's punishment, Moses fled far away to the desert land of Midian, where he became a humble shepherd.",
+      "tetum_translation": "Bainhira Moisés boot tiha, nia haree ema Ejiptu ida baku ata Ebreu ida. Moisés koko ajulita nia maluk Ebreu, maibé ho hirus, nia oho ema Ejiptu ne'e. Tanba ta'uk Faraó nia kastigu, Moisés halai dook ba rai-maran Midian, ne'ebé nia sai bibi-atan haraik-an ida.",
+      "scene_summary": "Moses defends a Hebrew, kills an Egyptian, and flees to Midian to live as a shepherd.",
+      "nano_banana_prompt": "Nano Banana illustration style, a 40-year-old Hebrew man with dark hair and a simple tunic, walking with a shepherd's staff in a rocky desert landscape under a warm sunset sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "The Burning Bush",
+      "image_file": "3.jpeg",
+      "english_text": "One day while watching sheep near Mount Horeb, Moses saw a bush on fire that was not burning up! When he stepped closer, God called from the flames, 'Moses! Take off your sandals, for you are on holy ground. I have heard My people's cries, and I am sending you to lead them out of Egypt.'",
+      "tetum_translation": "Loron ida bainhira hein bibi iha Foho Horeb nian sorin, Moisés haree ai-hun ida lakan ho ahi maibé la motu! Bainhira nia la'o besik ba, Maromak bolu husi ahi-lakan ne'e, 'Moisés! Hamonu ó-nia chinela sira, tanba fatin ne'e santu. Ha'u rona tiha Ha'u-nia povu nia tanis, no Ha'u haruka ó atu lori sira sai husi Ejiptu.'",
+      "scene_summary": "God calls Moses from a miraculous burning bush at Mount Horeb to free the Israelites.",
+      "nano_banana_prompt": "Nano Banana illustration style, an 80-year-old Hebrew shepherd with a graying beard wearing a simple tan tunic, standing barefoot in wonder before a glowing, brightly burning bush that remains unharmed by the flames. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "The Ten Plagues and Passover",
+      "image_file": "4.jpeg",
+      "english_text": "Moses and his brother Aaron went to Pharaoh and said, 'Let God's people go!' When Pharaoh stubbornly refused, God sent ten plagues upon Egypt. On the final night, the Israelites marked their doorposts with lamb's blood for protection during the Passover, and Pharaoh finally allowed them to leave.",
+      "tetum_translation": "Moisés no nia maun Aarão ba Faraó no dehan, 'Lori Maromak nia povu ba!' Bainhira Faraó lakohi rona ho ulun-toos, Maromak haruka kastigu hitu-resin-haat (sanulu) ba Ejiptu. Iha kalan ikus, ema Izraél sira tau bibi-ran iha sira-nia odamatan di'ak atu proteje iha Páskoa laran, no Faraó ikusmai husik sira la'o.",
+      "scene_summary": "Moses confronts Pharaoh with ten plagues, and God protects Israel during the first Passover.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly Hebrew leader with a white beard wearing a brown cloak holding a wooden staff, standing courageously beside his brother Aaron in Pharaoh's grand throne room. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Parting of the Red Sea",
+      "image_file": "5.jpeg",
+      "english_text": "Pharaoh changed his mind and chased the Israelites with his army. Trapped at the edge of the Red Sea, the people were terrified. Moses stretched out his hand over the sea, and God sent a strong wind that parted the waters! Israel walked safely across on dry ground to freedom.",
+      "tetum_translation": "Faraó troka nia hanoin no duni tuir ema Izraél sira ho nia soldadu sira. Tanba metin iha Tasi Mean nian sorin, povu ta'uk tebes. Moisés foti nia liman ba tasi leten, no Maromak haruka anin boot ne'ebé fahe tasi-been! Ema Izraél sira la'o ho seguru iha rai-maran ba liberdade.",
+      "scene_summary": "God parts the Red Sea through Moses' staff, allowing the Israelites to walk through safely.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly Hebrew leader with a flowing white beard holding up a wooden staff, standing on the shore as massive walls of blue ocean water stand tall on both sides, revealing a dry pathway. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 6,
+      "title": "The Ten Commandments at Sinai",
+      "image_file": "6.jpeg",
+      "english_text": "God led His people into the wilderness to Mount Sinai. Moses went up the mountain into God's holy presence. There, God wrote the Ten Commandments on two stone tablets to teach His people how to love Him and love one another.",
+      "tetum_translation": "Maromak lori Nia povu ba rai-maran iha Foho Sinai. Moisés sa'e ba foho laran iha Maromak nia oin santu. Iha ne'ebá, Maromak hakerek Ukun-fuan Sanulu iha fatuk-rahun rua leten atu hanorin Nia povu oinsá domin Nia no domin malu.",
+      "scene_summary": "Moses receives the Ten Commandments written on stone tablets atop cloud-covered Mount Sinai.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly Hebrew leader with a white beard holding two heavy stone tablets engraved with ancient letters, standing atop a rugged mountain surrounded by heavenly glowing clouds. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 7,
+      "title": "Interceding in the Wilderness",
+      "image_file": "7.jpeg",
+      "english_text": "For forty years in the desert, God provided manna from heaven and water from rocks. When the people complained and turned away from God, Moses patiently prayed and interceded for them, asking God to forgive their sins and guide them lovingly.",
+      "tetum_translation": "Tinan haatnulu iha rai-maran laran, Maromak providensia mana husi lalehan no bee husi fatuk. Bainhira povu muras no hasees husi Maromak, Moisés ko'alia ho pásia no husu perdua ba sira, husu Maromak atu fó perdua ba sira-nia sala no lori sira ho domin.",
+      "scene_summary": "Moses faithfully intercedes for the complaining Israelites during forty years of desert wandering.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly Hebrew leader with a white beard wearing a tan tunic and brown cloak, kneeling in prayer outside desert tents while tiny white bread-like manna covers the golden sand. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 8,
+      "title": "Viewing the Promised Land from Nebo",
+      "image_file": "8.jpeg",
+      "english_text": "At the end of his long journey, God led Moses to the top of Mount Nebo. God showed Moses the whole beautiful Promised Land spread out before him. Moses completed his faithful mission with peace, knowing that God would lead Joshua and the next generation into the land.",
+      "tetum_translation": "Iha nia la'o naruk nian rohan, Maromak lori Moisés sa'e ba Foho Nebo nia tutun. Maromak hatudu ba Moisés rai promesa furak tomak ne'ebé nakloke iha nia oin. Moisés ramata nia misaun ho pás, hatene katak Maromak sei lori Josué no jerasaun tuir mai ba rai ne'e.",
+      "scene_summary": "From Mount Nebo, Moses views the Promised Land and completes his life's mission in God's peace.",
+      "nano_banana_prompt": "Nano Banana illustration style, a venerable elderly Hebrew prophet with a long white beard standing on a high mountain summit, looking out peacefully over a breathtaking green valley with rivers under a golden sunset. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Moses shows us that true leaders listen to God's voice, obey Him bravely, and pray for others with patience and love.",
+    "core_lesson_tet": "Moisés hatudu mai ita katak lideir loloos sira rona Maromak nia lian, halo tuir Nia ho brani, no harohan ba ema seluk ho pásia no domin.",
+    "discussion_question_en": "When your friends or classmates make mistakes, how can you pray for them and help them patiently like Moses did?",
+    "discussion_question_tet": "Bainhira ó-nia belun ka maluk eskola halo sala, oinsá ó bele harohan ba sira no ajulita sira ho pásia hanesan Moisés halo?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Elderly Moses holding the two stone tablets of the Ten Commandments.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, elderly leader Moses with a long white beard wearing simple robes holding two stone tablets upright with a warm smile, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "MOSES",
+        "word_tet": "MOISES",
+        "clue_en": "The leader who led God's people out of Egypt.",
+        "clue_tet": "Lider ne'ebé lori Maromak nia povu sai husi Ejiptu."
+      },
+      {
+        "word_en": "EGYPT",
+        "word_tet": "EJIPTU",
+        "clue_en": "The land where the Israelites were slaves before God freed them.",
+        "clue_tet": "Rai ne'ebé ema Izraél sira sai ata uluk."
+      },
+      {
+        "word_en": "SEA",
+        "word_tet": "TASI",
+        "clue_en": "The waters God parted to create a dry path.",
+        "clue_tet": "Bee ne'ebé Maromak fahe atu halo dalan maran."
+      },
+      {
+        "word_en": "COMMANDMENTS",
+        "word_tet": "UKUNFUAN",
+        "clue_en": "The ten holy rules God wrote on stone tablets.",
+        "clue_tet": "Ukun-fuan santu sanulu ne'ebé Maromak hakerek iha fatuk-rahun leten."
+      },
+      {
+        "word_en": "MANNA",
+        "word_tet": "MANA",
+        "clue_en": "The heavenly food God gave in the desert.",
+        "clue_tet": "Aihan lalehan nian ne'ebé Maromak fó iha rai-maran."
+      },
+      {
+        "word_en": "OBEY",
+        "word_tet": "TUIR",
+        "clue_en": "Following God's voice courageously like Moses did.",
+        "clue_tet": "Tuir Maromak nia lian ho brani hanesan Moisés halo."
+      }
+    ]
+  }
+}

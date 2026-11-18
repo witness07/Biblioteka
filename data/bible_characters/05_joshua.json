@@ -1,0 +1,132 @@
+{
+  "character_id": "joshua",
+  "character_name_en": "Joshua",
+  "character_name_tet": "Josué",
+  "category": "Core (8 Scenes)",
+  "bible_reference": "Joshua 1 - 24",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Faithful Report of the Spies",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago, Moses sent twelve spies to explore the land of Canaan. While ten spies were afraid of giants, Joshua and Caleb trusted God with bold hearts. They declared, 'The land is very good! Do not be afraid, for the Lord is with us!' Their strong faith pleased God deeply.",
+      "tetum_translation": "Iha tempu uluk, Moisés haruka maun-alin sanulu-resin-rua ba haree rai Kanaán. Maski ema sanulu ta'uk ema boot sira, Josué no Kaleb fiar Maromak ho laran brani. Sira dehan, 'Rai ne'e di'ak tebes! Keta ta'uk, tanba Na'i hela ho ita!' Sira-nia fiar boot halo Maromak haksolok tebes.",
+      "scene_summary": "Joshua and Caleb bring a report of strong faith among the twelve spies sent to explore Canaan.",
+      "nano_banana_prompt": "Nano Banana illustration style, a strong young Hebrew warrior named Joshua with short dark hair, wearing a bronze armor chestplate and tan tunic, standing courageously holding a scroll on a hilltop overlooking a lush green valley. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Be Strong and Courageous",
+      "image_file": "2.jpeg",
+      "english_text": "After Moses died, God chose Joshua to be the new leader of Israel. God encouraged him, saying, 'Be strong and courageous! Do not be afraid or discouraged, for the Lord your God will be with you wherever you go.' Joshua listened carefully and prepared the people to move forward.",
+      "tetum_translation": "Moisés mate tiha, Maromak hili Josué atu sai lider foun ba Izraél. Maromak Fó kbiit ba nia hodi dehan, 'Sai forte no brani! Keta ta'uk ka laran-kraik, tanba Na'i ó-nia Maromak sei hela ho ó iha fatin hotu ne'ebé ó ba.' Josué rona ho di'ak no prepara povu atu la'o ba oin.",
+      "scene_summary": "God appoints Joshua as the leader of Israel, commanding him to be strong and courageous.",
+      "nano_banana_prompt": "Nano Banana illustration style, a strong Hebrew leader named Joshua with short dark hair wearing a bronze chestplate and red cloak, standing at sunset looking up at glowing golden clouds as God speaks to his heart. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Crossing the Jordan River",
+      "image_file": "3.jpeg",
+      "english_text": "Joshua led the Israelites to the overflowing Jordan River. As soon as the priests carrying the golden Ark of the Covenant stepped into the water, God miraculously stopped the river! The water backed up, allowing all the people to cross safely on dry ground.",
+      "tetum_translation": "Josué lori ema Izraél sira ba Mota Jordão ne'ebé nakfakar. Bainhira amululik sira ne'ebé lori Bote Santu (Arkivua Aliança) hahú ain ba bee laran, Maromak halo milagre hodi para mota-been! Bee para kedas, halo povu hotu la'o ho seguru iha rai-maran.",
+      "scene_summary": "Priests carry the Ark of the Covenant into the Jordan River, and God stops the water so Israel can cross.",
+      "nano_banana_prompt": "Nano Banana illustration style, Hebrew priests in white linen robes carrying the golden Ark of the Covenant, stepping onto dry ground while a river stands still like a tall wall of water under a bright blue sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "The Fall of Jericho",
+      "image_file": "4.jpeg",
+      "english_text": "Next, Israel faced the huge stone walls of Jericho. God gave Joshua a special plan: march around the city once a day for six days, and seven times on the seventh day. When the priests blew their ram's horns and the people shouted with faith, the giant walls crumbled to the ground!",
+      "tetum_translation": "Tuir mai, Izraél hasoru sidade Jerikó ne'ebé iha lutu-fatuk boot tebes. Maromak fó planu spesial ba Josué: la'o hale'u sidade ne'e loron ida dala ida ba loron neen, no loron hitu la'o hale'u dala hitu. Bainhira amululik sira hu'u dikur-dikur no povu hakilar ho fiar, lutu-fatuk boot sira monu tun ba rai!",
+      "scene_summary": "The walls of Jericho collapse after Joshua and the Israelites obey God by marching and shouting.",
+      "nano_banana_prompt": "Nano Banana illustration style, Joshua leading a joyous crowd of Israelites blowing trumpets as the high stone city walls of Jericho magically crumble down in clouds of dust. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Repentance and Victory at Ai",
+      "image_file": "5.jpeg",
+      "english_text": "When Israel suffered a sudden defeat at the small city of Ai, Joshua humbly fell on his face to pray. God showed him that a soldier named Achan had disobeyed and stolen forbidden goods. After cleansing the camp of sin, Joshua led the army with renewed faith and gained victory at Ai.",
+      "tetum_translation": "Bainhira Izraél lakon derrepente iha sidade ki'ik Ai, Josué monu ba rai atu harohan ho haraik-an. Maromak hatudu ba nia katak soldadu ida naran Acan la halo tuir no na'ok sasan ne'ebé bandu. Bainhira sira hamoos tiha sala husi kampañu, Josué lori soldadu sira ho fiar foun no hetan vitoria iha Ai.",
+      "scene_summary": "Joshua prays after a setback, cleanses sin from the camp, and leads Israel to victory at Ai.",
+      "nano_banana_prompt": "Nano Banana illustration style, a Hebrew leader named Joshua wearing armor kneeling in prayer before an altar, surrounded by repentant Israelite soldiers in desert tents. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 6,
+      "title": "The Sun Stands Still",
+      "image_file": "6.jpeg",
+      "english_text": "During a crucial battle to defend Gibeon, Joshua needed more daylight to complete the victory. In front of all Israel, Joshua prayed boldly to God. Miraculously, the sun stood still over Gibeon and the moon stopped over the Valley of Ajalon for a full day!",
+      "tetum_translation": "Iha funu boot ida atu defende Gibeón, Josué precisa loron-naroman barak tan atu ramata vitoria. Iha ema Izraél hotu nia oin, Josué harohan ho brani ba Maromak. Ho milagre, loran para tiha iha Gibeón nian leten no fulan para iha Rai-Klean Ajalón ba loron tomak!",
+      "scene_summary": "God answers Joshua's bold prayer, making the sun stand still over Gibeon until the battle is won.",
+      "nano_banana_prompt": "Nano Banana illustration style, Joshua the Hebrew commander raising his sword toward a bright sun hovering still in a golden daytime sky over a dramatic mountain battle landscape. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 7,
+      "title": "Dividing the Promised Land",
+      "image_file": "7.jpeg",
+      "english_text": "With the major battles won, Joshua faithfully divided the beautiful Promised Land among the twelve tribes of Israel. Every family received their own heritage of fertile fields, vineyards, and peaceful homes, just as God had promised to Abraham long ago.",
+      "tetum_translation": "Ho funu boot sira ne'ebé manán tiha, Josué fahe ho laran-metin Rai Promesa furak ba uma-kain sanulu-resin-rua Izraél nian. Uma-kain ida-idak simu sira-nia liman-rohan fatuk-rai ne'ebé bokur, ai-voti laran, no uma laek pás, hanesan Maromak promete tiha ba Abraão uluk.",
+      "scene_summary": "Joshua faithfully divides the conquered land of Canaan among the twelve tribes of Israel.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elder Joshua wearing a beige robe standing over a large parchment map of Canaan, surrounded by happy leaders of the twelve tribes of Israel. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 8,
+      "title": "As for Me and My House",
+      "image_file": "8.jpeg",
+      "english_text": "At the end of his life, Joshua gathered all the people of Israel at Shechem. He reminded them of God's great faithfulness and boldly declared, 'Choose today whom you will serve. But as for me and my house, we will serve the Lord!' All the people answered together that they would love and serve God.",
+      "tetum_translation": "Iha nia moris nia rohan, Josué halibur ema Izraél hotu iha Sikem. Nia hanoin-hetan sira kona-ba Maromak nia laran-metin boot no deklara ho brani, 'Hili ohin imi hakarak servisu ba sé. Maibé ha'u no ha'u-nia umakain, ami sei servisu ba Na'i!' Povu hotu hatán hamutuk katak sira sei domin no servisu ba Maromak.",
+      "scene_summary": "Joshua gathers Israel at Shechem, committing his house to serve the Lord and calling the nation to covenant faith.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly patriarch Joshua with grey hair raising his hands before a massive gathering of happy Israelite families gathered under giant oak trees in Shechem. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Joshua teaches us to be strong and courageous by obeying God's Word and choosing to serve Him with our whole family.",
+    "core_lesson_tet": "Josué hanorin ita atu sai forte no brani hodi halo tuir Maromak nia Liafuan no hili atu servisu ba Nia ho ita-nia umakain tomak.",
+    "discussion_question_en": "How can you show courage like Joshua this week when facing a hard choice or big challenge at school or home?",
+    "discussion_question_tet": "Oinsá ó bele hatudu korajen hanesan Josué iha semana ne'e bainhira hasoru hili-ba susar ka desaffiu boot iha eskola ka uma?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Joshua holding a bronze sword and banner, looking courageous.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, strong Hebrew leader Joshua wearing armor holding a flag banner and sword with a brave smile, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "JOSHUA",
+        "word_tet": "JOSUE",
+        "clue_en": "The brave leader who brought Israel into the Promised Land.",
+        "clue_tet": "Lider brani ne'ebé lori Izraél ba Rai Promesa laran."
+      },
+      {
+        "word_en": "COURAGE",
+        "word_tet": "BRANI",
+        "clue_en": "Being brave because God is with you everywhere.",
+        "clue_tet": "Hatudu brani tanba Maromak hela ho ó iha fatin hotu."
+      },
+      {
+        "word_en": "JERICHO",
+        "word_tet": "JERIKO",
+        "clue_en": "The city whose walls fell down after seven days of marching.",
+        "clue_tet": "Sidade ne'ebé nia lutu-fatuk monu tun ba rai tuir loron hitu la'o hale'u."
+      },
+      {
+        "word_en": "JORDAN",
+        "word_tet": "JORDAO",
+        "clue_en": "The river that stopped flowing when the Ark entered the water.",
+        "clue_tet": "Mota ne'ebé para suli bainhira Bote Santu tama iha bee laran."
+      },
+      {
+        "word_en": "SUN",
+        "word_tet": "LORAN",
+        "clue_en": "The light in the sky that stood still when Joshua prayed.",
+        "clue_tet": "Naroman iha lalehan ne'ebé para tiha bainhira Josué harohan."
+      },
+      {
+        "word_en": "SERVE",
+        "word_tet": "SERVISU",
+        "clue_en": "Choosing to love and follow God with your whole house.",
+        "clue_tet": "Hili atu domin no tuir Maromak ho ó-nia umakain tomak."
+      }
+    ]
+  }
+}

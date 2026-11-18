@@ -1,0 +1,105 @@
+{
+  "character_id": "isaiah",
+  "character_name_en": "Isaiah",
+  "character_name_tet": "Isaías",
+  "category": "Major (5 Scenes)",
+  "bible_reference": "Isaiah 1 - 66",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Vision of God's Glory",
+      "image_file": "1.jpeg",
+      "english_text": "In the year King Uzziah died, the prophet Isaiah saw a glorious vision of the Lord sitting high on a throne in the heavenly Temple. Heavenly angels called seraphim flew around, singing, 'Holy, holy, holy is the Lord of hosts; the whole earth is full of His glory!' When an angel touched Isaiah's lips with a burning coal from the altar, his sins were cleansed.",
+      "tetum_translation": "Iha tinan ne'ebé Liurai Uzias mate, profeta Isaías haree mehi karradas glória nian kona-ba Na'i ne'ebé tuur iha kadunan aas iha Umaklesan Lalehan nian. Anju lalehan sira naran serafins semo hale'u, hodi kanta, 'Santu, santu, santu mak Na'i kbiit-na'in; raiklaran tomak nakenu ho Nia glória!' Bainhira anju ida kona Isaías nia ibun-kulit ho ahi-klaak lakan husi altár, nia sala sira hetan hamoos.",
+      "scene_summary": "Isaiah sees a vision of God's holy throne in the Temple and is cleansed by a burning coal.",
+      "nano_banana_prompt": "Nano Banana illustration style, a Hebrew prophet named Isaiah wearing linen robes, kneeling reverently inside a majestic Temple filled with golden light and soft smoke while heavenly seraphim angels with six wings hover above. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Here Am I, Send Me",
+      "image_file": "2.jpeg",
+      "english_text": "After being cleansed by God, Isaiah heard the voice of the Lord asking, 'Whom shall I send, and who will go for Us?' Without any hesitation, Isaiah raised his hand boldly and answered, 'Here am I! Send me!' Isaiah trusted God completely and became a faithful prophet to speak God's word to the nation.",
+      "tetum_translation": "Bainhira hetan tiha hamoos husi Maromak, Isaías rona Na'i nia lian husu, 'Sé mak Ha'u sei haruka, no sé mak sei ba ba Ita?' Senza duda ruma, Isaías foti nia liman ho brani no hatán, 'Ha'u iha ne'e! Haruka ha'u!' Isaías fiar Maromak ho laran tomak no sai profeta laran-metin atu ko'alia Maromak nia liafuan ba nasaun.",
+      "scene_summary": "Isaiah willingly answers God's call to be a prophet, saying 'Here am I! Send me!'",
+      "nano_banana_prompt": "Nano Banana illustration style, a Hebrew prophet named Isaiah raising his hand courageously with a bright smile before a heavenly golden light in the Temple hall. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Prophecy of the Prince of Peace",
+      "image_file": "3.jpeg",
+      "english_text": "God gave Isaiah wonderful messages of hope for the future. Isaiah wrote down the famous prophecy: 'For to us a child is born, to us a son is given... and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace.' This message filled God's people with joyful expectation for the coming Savior.",
+      "tetum_translation": "Maromak fó ba Isaías mensajen esperansa furak nian ba futuru. Isaías hakerek profesia fohuk ne'e: 'Tanba labarik ida moris mai ita, oan-mane ida hetan fó mai ita... no nia naran sei bolu nu'udar Konselleiru Espetakulár, Maromak Kbiit-na'in, Aman ba Nafatin, Prínsipe Pás nian.' Mensajen ne'e preenxe Maromak nia povu ho ksolok hein ba Ema Ne'ebé Salva ne'ebé sei mai.",
+      "scene_summary": "Isaiah prophesies the birth of the Messiah, calling Him Wonderful Counselor and Prince of Peace.",
+      "nano_banana_prompt": "Nano Banana illustration style, Hebrew prophet Isaiah sitting at a wooden desk writing with a quill on a long scroll, surrounded by a soft glowing golden aura depicting a shining star and a peaceful baby in a manger in the background. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "The Suffering Servant Prophecy",
+      "image_file": "4.jpeg",
+      "english_text": "Isaiah also foretold how the Savior would show God's ultimate love. He wrote that the Messiah would be a peaceful servant who would take away our sadness and bear our sins. 'By His wounds we are healed,' Isaiah declared, pointing forward to the deep love and salvation Jesus Christ would bring to the whole world.",
+      "tetum_translation": "Isaías mós hatudu uluk oinsá Ema Ne'ebé Salva sei hatudu Maromak nia domin boot liu. Nia hakerek katak Mesiás sei sai ata pás nian ne'ebé lori ita-nia tristeza no naha ita-nia sala sira. 'Ho Nia kanek sira ita hetan kura,' Isaías deklara, hatudu ba oin ba domin kle'an no salvasaun ne'ebé Jesus Kristu sei lori ba raiklaran tomak.",
+      "scene_summary": "Isaiah prophesies about the Suffering Servant whose sacrifice brings healing and forgiveness to all.",
+      "nano_banana_prompt": "Nano Banana illustration style, Hebrew prophet Isaiah standing on a mountain peak at sunrise, holding a scroll open toward a distant glowing cross on a gentle hill. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "A New Heaven and New Earth",
+      "image_file": "5.jpeg",
+      "english_text": "In his final grand vision, Isaiah saw God's glorious promise to recreate the universe into a place of perfect peace. He described a new heaven and a new earth where there will be no more tears or pain, and where wolves and lambs will graze together happily in total safety and joy.",
+      "tetum_translation": "Iha nia mehi karradas ikus nian, Isaías haree Maromak nia promesa glória nian atu kria fali universu ba fatin pás perfeitu nian. Nia deskreve lalehan foun no rai foun ne'ebé sei la iha tan matan-ben ka moras, no ne'ebé asu-lous no bibi-malae sei han du'ut hamutuk ho haksolok iha segurança no ksolok tomak.",
+      "scene_summary": "Isaiah envisions a new heaven and new earth where all creation lives in eternal peace and harmony.",
+      "nano_banana_prompt": "Nano Banana illustration style, Hebrew prophet Isaiah standing peacefully in a radiant, colorful new world where a wolf and a lamb lie down happily together on a lush green meadow under a brilliant rainbow sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Isaiah teaches us to listen for God's voice, offer ourselves willingly to serve Him, and share His bright promise of peace with others.",
+    "core_lesson_tet": "Isaías hanorin ita atu rona Maromak nia lian, fó ita-nia an ho laran-luak atu servisu ba Nia, no fahe Nia promesa pás naroman nian ho ema seluk.",
+    "discussion_question_en": "When God asks you to help someone or do a good job at school, how can you gladly say 'Here am I, send me!' like Isaiah?",
+    "discussion_question_tet": "Bainhira Maromak husu ó atu ajulita ema ruma ka halo servisu di'ak iha eskola, oinsá ó bele dehan ho haksolok 'Ha'u iha ne'e, haruka ha'u!' hanesan Isaías?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Prophet Isaiah writing on a parchment scroll with a peaceful smile.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, friendly Hebrew prophet Isaiah wearing robes writing on a long scroll with a wooden feather quill, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "ISAIAH",
+        "word_tet": "ISAIAS",
+        "clue_en": "The great prophet who saw God's holy throne and wrote about the Savior.",
+        "clue_tet": "Profeta boot ne'ebé haree Maromak nia kadunan santu no hakerek kona-ba Ema Ne'ebé Salva."
+      },
+      {
+        "word_en": "HOLY",
+        "word_tet": "SANTU",
+        "clue_en": "The song of the seraphim angels in the Temple vision.",
+        "clue_tet": "Knananuk husi anju serafins sira iha mehi Umaklesan nian."
+      },
+      {
+        "word_en": "PROPHET",
+        "word_tet": "PROFETA",
+        "clue_en": "A faithful messenger who speaks God's word to the people.",
+        "clue_tet": "Mensafeiru laran-metin ne'ebé ko'alia Maromak nia liafuan ba povu."
+      },
+      {
+        "word_en": "PEACE",
+        "word_tet": "PAS",
+        "clue_en": "The quiet comfort brought by the promised Savior.",
+        "clue_tet": "Ksolok no hakmatek ne'ebé Ema Ne'ebé Salva lori mai."
+      },
+      {
+        "word_en": "SCROLL",
+        "word_tet": "ROLU",
+        "clue_en": "The long parchment paper Isaiah used to write down God's prophecies.",
+        "clue_tet": "Karta-naruk ne'ebé Isaías gasta atu hakerek Maromak nia profesia sira."
+      },
+      {
+        "word_en": "SEND",
+        "word_tet": "HARUKA",
+        "clue_en": "What Isaiah asked God to do when he answered 'Here am I!'",
+        "clue_tet": "Buat ne'ebé Isaías husu Maromak atu halo bainhira nia hatán 'Ha'u iha ne'e!'"
+      }
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "character_id": "jesus_christ",
+  "character_name_en": "Jesus Christ",
+  "character_name_tet": "Jesus Kristu",
+  "category": "Core (8 Scenes)",
+  "bible_reference": "Matthew 1 - Acts 1",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Born in Bethlehem",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago on a starry night in Bethlehem, God sent His only Son into the world. Baby Jesus was born in a humble stable because there was no room in the inn. His loving mother Mary wrapped Him warmly and placed Him gently in a wooden manger of hay. Shepherds and bright angels rejoiced together for the Savior was born!",
+      "tetum_translation": "Iha tempu uluk iha kalan fitun nakroman iha Belein, Maromak haruka Nia Oan-Mane mesak mai mundu. Kosok-oan Jesus moris iha bibi-uma haraik-an laran tanba uma-hein la iha fatin. Nia inan doben Maria falun Nia ho manas no tau Nia ho neneik iha du'ut-maran laran. Bibi-atan sira no anju naroman sira haksolok hamutuk tanba Salvadór moris tiha!",
+      "scene_summary": "Baby Jesus is born in a humble manger in Bethlehem, celebrated by Mary, Joseph, shepherds, and heavenly angels.",
+      "nano_banana_prompt": "Nano Banana illustration style, a gentle newborn baby sleeping peacefully in a wooden manger filled with golden hay inside a cozy stable, with Mary and Joseph watching lovingly under a glowing bright star in the night sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Baptism and Overcoming Temptation",
+      "image_file": "2.jpeg",
+      "english_text": "When Jesus grew up, He went to the Jordan River to be baptized by John the Baptist. As Jesus came out of the water, the heavens opened and the Holy Spirit descended like a dove upon Him, while God's voice declared, 'This is My beloved Son!' Afterwards, Jesus fasted forty days in the wilderness and victoriously defeated the devil's temptations using God's holy Word.",
+      "tetum_translation": "Bainhira Jesus boot tiha, Nia ba Mota Jordão atu simu batizmu husi Joaun Batista. Bainhira Jesus sai husi bee laran, lalehan nakloke no Espíritu Santu tun hanesan manu-pombu iha Nia leten, mentre Maromak nia lian deklara, 'Ne'e mak Ha'u-nia Oan-Mane stima!' Depoiz ne'e, Jesus jejum loron haatnulu iha rai-maran no ho vitoria manán diabu nia tentasaun sira hodi uza Maromak nia Liafuan santu.",
+      "scene_summary": "Jesus is baptized in the Jordan River as the Holy Spirit descends like a dove, and later overcomes desert temptations with Scripture.",
+      "nano_banana_prompt": "Nano Banana illustration style, a gentle 30-year-old Hebrew man with shoulder-length wavy brown hair, a soft beard, wearing a plain white linen tunic, standing in the Jordan River while a white dove glows under a beam of golden heavenly light. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Calling the Disciples and Teaching Love",
+      "image_file": "3.jpeg",
+      "english_text": "Jesus walked along the shores of Galilee and called twelve ordinary men, including fishermen like Peter and John, saying, 'Follow Me, and I will make you fishers of men.' Jesus sat on a green hillside and taught huge crowds the Good News, encouraging them to love God, love their neighbors, and be peacemakers.",
+      "tetum_translation": "Jesus la'o iha Mota Galiléia nian sorin no bolu mane baibain sanulu-resin-rua, inklui kuitado bibi hanesan Pedru no Joaun, hodi dehan, 'Tuir Ha'u, no Ha'u sei halo imi sai kuitado ema nian.' Jesus tuur iha foho matak nia leten no hanorin povu boot sira Liafuan Di'ak, hodi ksolok sira atu domin Maromak, domin sira-nia baibain, no sai ema kria pás.",
+      "scene_summary": "Jesus calls His twelve disciples and teaches the Sermon on the Mount, sharing God's kingdom message of love and peace.",
+      "nano_banana_prompt": "Nano Banana illustration style, a gentle Hebrew teacher with shoulder-length wavy brown hair, wearing a white linen tunic and soft blue cloak, sitting on a grassy hill surrounded by smiling children and listening crowds under a warm sun. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Miracles of Healing and Compassion",
+      "image_file": "4.jpeg",
+      "english_text": "Wherever Jesus went, He showed God's amazing power and gentle love. He made the blind see, healed the sick, fed over five thousand people with just five loaves of bread and two small fish, and calmed roaring storms on the sea with a single command: 'Peace, be still!'",
+      "tetum_translation": "Iha fatin hotu ne'ebé Jesus ba, Nia hatudu Maromak nia kbiit karradas no domin kmaan. Nia halo ema matan-delek haree, hamoos ema moras sira, fó aihan ba ema rihun lima liutiha ho paun lima no ikan ki'ik rua de'it, no halo anin-boot iha tasi kidun kalma ho ukun ida de'it: 'Pás, hakmatek!'",
+      "scene_summary": "Jesus performs powerful miracles—healing the sick, feeding thousands, and calming the stormy sea.",
+      "nano_banana_prompt": "Nano Banana illustration style, a gentle Hebrew man in a white tunic and blue cloak standing on a wooden fishing boat, raising His hand peacefully to calm roaring sea waves while His astonished disciples watch. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Praying in the Garden of Gethsemane",
+      "image_file": "5.jpeg",
+      "english_text": "On the night before He suffered, Jesus went to the Garden of Gethsemane to pray. Knowing the heavy burden He would bear for the world's sins, His heart was deeply sorrowful. Yet Jesus surrendered His will to God, praying humbly, 'Father, not My will, but Yours be done.'",
+      "tetum_translation": "Iha kalan molok Nia simu susar, Jesus ba Kintal Getsemani atu harohan. Tanba hatene naha todan ne'ebé Nia sei lori ba mundu nia sala sira, Nia laran triste tebes. Maski nune'e Jesus husik Nia hakarak ba Maromak, hodi harohan ho haraik-an, 'Aman, la'ós Ha'u-nia hakarak, maibé Ita-nia hakarak mak halo tiha.'",
+      "scene_summary": "Jesus prays with deep grief and complete obedience to the Father in the Garden of Gethsemane.",
+      "nano_banana_prompt": "Nano Banana illustration style, a gentle Hebrew man in a white linen tunic kneeling in prayer against a large stone in an olive garden under moonlight, with a soft comforting ray of heavenly light shining upon Him. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 6,
+      "title": "The Cross of Love and Redemption",
+      "image_file": "6.jpeg",
+      "english_text": "Out of incredible love for us, Jesus willingly gave His life on the cross at Golgotha to forgive our sins. Even while suffering, Jesus prayed for those who hurt Him, saying, 'Father, forgive them.' Before He breathed His last, Jesus declared victorious words: 'It is finished!'",
+      "tetum_translation": "Ho domin karradas mai ita, Jesus fó Nia moris ho laran-luak iha krús leten iha Golgota atu fó perdua ba ita-nia sala sira. Maski simu susar, Jesus harohan ba sira ne'ebé halo moras Nia, hodi dehan, 'Aman, fó perdua ba sira.' Molok Nia dada ihas ikus, Jesus deklara liafuan vitoria nian: 'Ramata tiha!'",
+      "scene_summary": "Jesus sacrifices His life on the cross at Golgotha out of love to redeem humanity from sin.",
+      "nano_banana_prompt": "Nano Banana illustration style, a wooden cross standing atop a hill under a warm sunset sky with soft golden beams breaking through purple clouds, conveying peace, love, and salvation. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 7,
+      "title": "The Glorious Resurrection",
+      "image_file": "7.jpeg",
+      "english_text": "On the third day, early in the morning, women went to the tomb and found the giant stone rolled away! A glowing angel appeared and announced joyfully, 'He is not here; He has risen, just as He said!' Jesus appeared alive to Mary Magdalene and His disciples, conquering death forever.",
+      "tetum_translation": "Iha loron terfeiru, dadeer-saan kene, feto sira ba rate no hetan fatuk boot tiha soe ba sorin! Anju naroman ida mosu no anunsia ho haksolok, 'Nia la iha ne'e; Nia moris hi'as tiha, hanesan Nia dehan uluk!' Jesus hatudu Nia an moris ba Maria Madalena no Nia eskolante sira, hamonu mate ba nafatin.",
+      "scene_summary": "Jesus breaks the power of death and rises glorified on the third day, appearing alive to His disciples.",
+      "nano_banana_prompt": "Nano Banana illustration style, the resurrected Jesus with a glowing white robe standing victorious outside an open stone cave tomb at sunrise, with bright golden sunbeams filling the spring garden. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 8,
+      "title": "The Great Commission and Ascension",
+      "image_file": "8.jpeg",
+      "english_text": "Before returning to heaven, Jesus gathered His followers on the Mount of Olives and gave them a great mission: 'Go and make disciples of all nations, teaching them to obey everything I have commanded you. And I am with you always!' Then, Jesus was lifted up into heaven in glory.",
+      "tetum_translation": "Molok fila ba lalehan, Jesus halibur Nia tuir-na'in sira iha Foho Oliveira nian leten no fó misaun boot ba sira: 'La'o no halo ema husi nasaun hotu sai tuir-na'in, hanorin sira atu halo tuir buat hotu ne'ebé Ha'u ukun imi. No Ha'u hela ho imi beibeik!' Tuir mai, Jesus hetan foti sa'e ba lalehan ho gloria.",
+      "scene_summary": "Jesus gives the Great Commission to His disciples and ascends into heaven, promising to be with them always.",
+      "nano_banana_prompt": "Nano Banana illustration style, Jesus wearing white robes gently ascending into bright golden heavenly clouds while His eleven joyful disciples watch from a hilltop with hands raised in worship. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Jesus is our loving Savior who gave His life for our sins, conquered death, and promises to be with us forever.",
+    "core_lesson_tet": "Jesus mak ita-nia Salvadór laran-luak ne'ebé fó Nia moris ba ita-nia sala sira, manán mate, no promete atu hela ho ita ba nafatin.",
+    "discussion_question_en": "How can you share Jesus's love and kindness with your family, friends, or neighbors this week?",
+    "discussion_question_tet": "Oinsá ó bele fahe Jesus nia domin no hahalok di'ak ba ó-nia umakain, belun sira, ka viziñu sira iha semana ne'e?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Gentle Jesus welcoming little children with open arms.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, gentle Jesus in simple robes smiling warmly and welcoming happy children with open arms, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "JESUS",
+        "word_tet": "JESUS",
+        "clue_en": "The Son of God and Savior of the world.",
+        "clue_tet": "Maromak nia Oan-Mane no Salvadór mundu nian."
+      },
+      {
+        "word_en": "SAVIOR",
+        "word_tet": "SALVADOR",
+        "clue_en": "The holy title of Jesus who rescues us from sin.",
+        "clue_tet": "Títulu santu Jesus nian ne'ebé sosa ita husi sala."
+      },
+      {
+        "word_en": "CROSS",
+        "word_tet": "KRUS",
+        "clue_en": "Where Jesus gave His life out of great love for us.",
+        "clue_tet": "Fatin ne'ebé Jesus fó Nia moris ho domin boot mai ita."
+      },
+      {
+        "word_en": "RESURRECTION",
+        "word_tet": "MORIS",
+        "clue_en": "Jesus rising alive from the dead on the third day.",
+        "clue_tet": "Jesus moris hi'as husi mate iha loron terfeiru."
+      },
+      {
+        "word_en": "LOVE",
+        "word_tet": "DOMIN",
+        "clue_en": "The core message and heart of Jesus's teachings.",
+        "clue_tet": "Mensajen klaretu no laran husi Jesus nia hanorin sira."
+      },
+      {
+        "word_en": "MIRACLE",
+        "word_tet": "MILAGRE",
+        "clue_en": "Amazing acts of healing and power performed by Jesus.",
+        "clue_tet": "Hahalok karradas hamoos no kbiit ne'ebé Jesus halo."
+      }
+    ]
+  }
+}

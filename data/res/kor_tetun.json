@@ -1,0 +1,6771 @@
+[
+  {
+    "id": 1,
+    "category": "Kumprimentus (인사)",
+    "korean": "안녕하세요",
+    "pronunciation": "An-nyeong-ha-se-yo",
+    "tetum": "Bondia / Botarde / Bonite"
+  },
+  {
+    "id": 2,
+    "category": "Kumprimentus (인사)",
+    "korean": "감사합니다",
+    "pronunciation": "Gam-sa-ham-ni-da",
+    "tetum": "Obrigadu / Obrigada"
+  },
+  {
+    "id": 3,
+    "category": "Kumprimentus (인사)",
+    "korean": "죄송합니다",
+    "pronunciation": "Joe-song-ham-ni-da",
+    "tetum": "Deskulpa"
+  },
+  {
+    "id": 4,
+    "category": "Kumprimentus (인사)",
+    "korean": "수고하셨습니다",
+    "pronunciation": "Su-go-ha-syeot-seum-ni-da",
+    "tetum": "Obrigadu ba ita-nia servisu"
+  },
+  {
+    "id": 5,
+    "category": "Kumprimentus (인사)",
+    "korean": "처음 뵙겠습니다",
+    "pronunciation": "Cheo-eum boep-get-seum-ni-da",
+    "tetum": "Kontente hasoru ita ba dala uluk"
+  },
+  {
+    "id": 6,
+    "category": "Báziku (기초)",
+    "korean": "네",
+    "pronunciation": "Ne",
+    "tetum": "Sin"
+  },
+  {
+    "id": 7,
+    "category": "Báziku (기초)",
+    "korean": "아니요",
+    "pronunciation": "A-ni-yo",
+    "tetum": "Lae"
+  },
+  {
+    "id": 8,
+    "category": "Báziku (기초)",
+    "korean": "괜찮아요",
+    "pronunciation": "Gwaen-cha-na-yo",
+    "tetum": "Di'ak hela / La buat ida"
+  },
+  {
+    "id": 9,
+    "category": "Báziku (기초)",
+    "korean": "알겠습니다",
+    "pronunciation": "Al-get-seum-ni-da",
+    "tetum": "Ha'u komprende"
+  },
+  {
+    "id": 10,
+    "category": "Báziku (기초)",
+    "korean": "모르겠습니다",
+    "pronunciation": "Mo-reu-get-seum-ni-da",
+    "tetum": "Ha'u la hatene"
+  },
+  {
+    "id": 11,
+    "category": "Servisu (직장)",
+    "korean": "공장",
+    "pronunciation": "Gong-jang",
+    "tetum": "Fábrika"
+  },
+  {
+    "id": 12,
+    "category": "Servisu (직장)",
+    "korean": "회사",
+    "pronunciation": "Hoe-sa",
+    "tetum": "Kompañia"
+  },
+  {
+    "id": 13,
+    "category": "Servisu (직장)",
+    "korean": "사장님",
+    "pronunciation": "Sa-jang-nim",
+    "tetum": "Patraun / Diretór"
+  },
+  {
+    "id": 14,
+    "category": "Servisu (직장)",
+    "korean": "반장님",
+    "pronunciation": "Ban-jang-nim",
+    "tetum": "Xefe ekipa / Mandór"
+  },
+  {
+    "id": 15,
+    "category": "Servisu (직장)",
+    "korean": "동료",
+    "pronunciation": "Dong-nyo",
+    "tetum": "Kolega servisu"
+  },
+  {
+    "id": 16,
+    "category": "Servisu (직장)",
+    "korean": "출근",
+    "pronunciation": "Chul-geun",
+    "tetum": "Bá servisu"
+  },
+  {
+    "id": 17,
+    "category": "Servisu (직장)",
+    "korean": "퇴근",
+    "pronunciation": "Toe-geun",
+    "tetum": "Fila husi servisu"
+  },
+  {
+    "id": 18,
+    "category": "Servisu (직장)",
+    "korean": "야근",
+    "pronunciation": "Ya-geun",
+    "tetum": "Servisu kalan / Lembur"
+  },
+  {
+    "id": 19,
+    "category": "Servisu (직장)",
+    "korean": "휴식",
+    "pronunciation": "Hyu-sik",
+    "tetum": "Deskansa"
+  },
+  {
+    "id": 20,
+    "category": "Servisu (직장)",
+    "korean": "월급",
+    "pronunciation": "Wol-geup",
+    "tetum": "Saláriu fulan-fulan"
+  },
+  {
+    "id": 21,
+    "category": "Servisu (직장)",
+    "korean": "기숙사",
+    "pronunciation": "Gi-suk-sa",
+    "tetum": "Dormitóriu"
+  },
+  {
+    "id": 22,
+    "category": "Servisu (직장)",
+    "korean": "작업복",
+    "pronunciation": "Ja-geop-bok",
+    "tetum": "Roupa servisu"
+  },
+  {
+    "id": 23,
+    "category": "Seguransa (안전)",
+    "korean": "안전모",
+    "pronunciation": "An-jeon-mo",
+    "tetum": "Kapasete seguransa"
+  },
+  {
+    "id": 24,
+    "category": "Seguransa (안전)",
+    "korean": "안전화",
+    "pronunciation": "An-jeon-hwa",
+    "tetum": "Sapatu seguransa"
+  },
+  {
+    "id": 25,
+    "category": "Seguransa (안전)",
+    "korean": "장갑",
+    "pronunciation": "Jang-gap",
+    "tetum": "Luvas"
+  },
+  {
+    "id": 26,
+    "category": "Seguransa (안전)",
+    "korean": "마스크",
+    "pronunciation": "Ma-seu-keu",
+    "tetum": "Máskara"
+  },
+  {
+    "id": 27,
+    "category": "Seguransa (안전)",
+    "korean": "위험하다",
+    "pronunciation": "Wi-heom-ha-da",
+    "tetum": "Perigu"
+  },
+  {
+    "id": 28,
+    "category": "Seguransa (안전)",
+    "korean": "조심하다",
+    "pronunciation": "Jo-sim-ha-da",
+    "tetum": "Kuidadu"
+  },
+  {
+    "id": 29,
+    "category": "Seguransa (안전)",
+    "korean": "사고",
+    "pronunciation": "Sa-go",
+    "tetum": "Asidente"
+  },
+  {
+    "id": 30,
+    "category": "Seguransa (안전)",
+    "korean": "다치다",
+    "pronunciation": "Da-chi-da",
+    "tetum": "Kanek / Hetan kanek"
+  },
+  {
+    "id": 31,
+    "category": "Ferramenta (공구)",
+    "korean": "망치",
+    "pronunciation": "Mang-chi",
+    "tetum": "Martelu"
+  },
+  {
+    "id": 32,
+    "category": "Ferramenta (공구)",
+    "korean": "드라이버",
+    "pronunciation": "Deu-ra-i-beo",
+    "tetum": "Xave-fenda"
+  },
+  {
+    "id": 33,
+    "category": "Ferramenta (공구)",
+    "korean": "톱",
+    "pronunciation": "Top",
+    "tetum": "Serrote"
+  },
+  {
+    "id": 34,
+    "category": "Ferramenta (공구)",
+    "korean": "가위",
+    "pronunciation": "Ga-wi",
+    "tetum": "Tezoura"
+  },
+  {
+    "id": 35,
+    "category": "Ferramenta (공구)",
+    "korean": "칼",
+    "pronunciation": "Kal",
+    "tetum": "Tudik"
+  },
+  {
+    "id": 36,
+    "category": "Ferramenta (공구)",
+    "korean": "사다리",
+    "pronunciation": "Sa-da-ri",
+    "tetum": "Eskada"
+  },
+  {
+    "id": 37,
+    "category": "Verbu (동사)",
+    "korean": "일하다",
+    "pronunciation": "Il-ha-da",
+    "tetum": "Servisu"
+  },
+  {
+    "id": 38,
+    "category": "Verbu (동사)",
+    "korean": "가다",
+    "pronunciation": "Ga-da",
+    "tetum": "Bá"
+  },
+  {
+    "id": 39,
+    "category": "Verbu (동사)",
+    "korean": "오다",
+    "pronunciation": "O-da",
+    "tetum": "Mai"
+  },
+  {
+    "id": 40,
+    "category": "Verbu (동사)",
+    "korean": "먹다",
+    "pronunciation": "Meok-da",
+    "tetum": "Han"
+  },
+  {
+    "id": 41,
+    "category": "Verbu (동사)",
+    "korean": "마시다",
+    "pronunciation": "Ma-si-da",
+    "tetum": "Hemu"
+  },
+  {
+    "id": 42,
+    "category": "Verbu (동사)",
+    "korean": "자다",
+    "pronunciation": "Ja-da",
+    "tetum": "Toba"
+  },
+  {
+    "id": 43,
+    "category": "Verbu (동사)",
+    "korean": "만들다",
+    "pronunciation": "Man-deul-da",
+    "tetum": "Halo / Kria"
+  },
+  {
+    "id": 44,
+    "category": "Verbu (동사)",
+    "korean": "자르다",
+    "pronunciation": "Ja-reu-da",
+    "tetum": "Koa / Tesi"
+  },
+  {
+    "id": 45,
+    "category": "Verbu (동사)",
+    "korean": "옮기다",
+    "pronunciation": "Om-gi-da",
+    "tetum": "Muda / Lali'an"
+  },
+  {
+    "id": 46,
+    "category": "Verbu (동사)",
+    "korean": "청소하다",
+    "pronunciation": "Cheong-so-ha-da",
+    "tetum": "Hamoos"
+  },
+  {
+    "id": 47,
+    "category": "Lugar (장소)",
+    "korean": "병원",
+    "pronunciation": "Byeong-won",
+    "tetum": "Ospitál"
+  },
+  {
+    "id": 48,
+    "category": "Lugar (장소)",
+    "korean": "약국",
+    "pronunciation": "Yak-guk",
+    "tetum": "Farmásia"
+  },
+  {
+    "id": 49,
+    "category": "Lugar (장소)",
+    "korean": "은행",
+    "pronunciation": "Eun-haeng",
+    "tetum": "Banku"
+  },
+  {
+    "id": 50,
+    "category": "Lugar (장소)",
+    "korean": "화장실",
+    "pronunciation": "Hwa-jang-sil",
+    "tetum": "Haris-fatin / Sintina"
+  },
+  {
+    "id": 51,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "일 (1)",
+    "pronunciation": "Il",
+    "tetum": "Ida"
+  },
+  {
+    "id": 52,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "이 (2)",
+    "pronunciation": "I",
+    "tetum": "Rua"
+  },
+  {
+    "id": 53,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "삼 (3)",
+    "pronunciation": "Sam",
+    "tetum": "Tolu"
+  },
+  {
+    "id": 54,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "사 (4)",
+    "pronunciation": "Sa",
+    "tetum": "Haat"
+  },
+  {
+    "id": 55,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "오 (5)",
+    "pronunciation": "O",
+    "tetum": "Lima"
+  },
+  {
+    "id": 56,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "육 (6)",
+    "pronunciation": "Yuk",
+    "tetum": "Neen"
+  },
+  {
+    "id": 57,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "칠 (7)",
+    "pronunciation": "Chil",
+    "tetum": "Hitu"
+  },
+  {
+    "id": 58,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "팔 (8)",
+    "pronunciation": "Pal",
+    "tetum": "Ualu"
+  },
+  {
+    "id": 59,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "구 (9)",
+    "pronunciation": "Gu",
+    "tetum": "Sia"
+  },
+  {
+    "id": 60,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "십 (10)",
+    "pronunciation": "Sip",
+    "tetum": "Sanulu"
+  },
+  {
+    "id": 61,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "백 (100)",
+    "pronunciation": "Baek",
+    "tetum": "Atus ida"
+  },
+  {
+    "id": 62,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "천 (1,000)",
+    "pronunciation": "Cheon",
+    "tetum": "Rihun ida"
+  },
+  {
+    "id": 63,
+    "category": "Númeru (숫자-한자어)",
+    "korean": "만 (10,000)",
+    "pronunciation": "Man",
+    "tetum": "Rihun sanulu"
+  },
+  {
+    "id": 64,
+    "category": "Númeru (숫자-고유어)",
+    "korean": "하나",
+    "pronunciation": "Ha-na",
+    "tetum": "Ida"
+  },
+  {
+    "id": 65,
+    "category": "Númeru (숫자-고유어)",
+    "korean": "둘",
+    "pronunciation": "Dul",
+    "tetum": "Rua"
+  },
+  {
+    "id": 66,
+    "category": "Númeru (숫자-고유어)",
+    "korean": "셋",
+    "pronunciation": "Set",
+    "tetum": "Tolu"
+  },
+  {
+    "id": 67,
+    "category": "Númeru (숫자-고유어)",
+    "korean": "넷",
+    "pronunciation": "Net",
+    "tetum": "Haat"
+  },
+  {
+    "id": 68,
+    "category": "Númeru (숫자-고유어)",
+    "korean": "다섯",
+    "pronunciation": "Da-seot",
+    "tetum": "Lima"
+  },
+  {
+    "id": 69,
+    "category": "Númeru (숫자-고유어)",
+    "korean": "여섯",
+    "pronunciation": "Yeo-seot",
+    "tetum": "Neen"
+  },
+  {
+    "id": 70,
+    "category": "Númeru (숫자-고유어)",
+    "korean": "일곱",
+    "pronunciation": "Il-gop",
+    "tetum": "Hitu"
+  },
+  {
+    "id": 71,
+    "category": "Númeru (숫자-고유어)",
+    "korean": "여덟",
+    "pronunciation": "Yeo-deol",
+    "tetum": "Ualu"
+  },
+  {
+    "id": 72,
+    "category": "Númeru (숫자-고유어)",
+    "korean": "아홉",
+    "pronunciation": "A-hop",
+    "tetum": "Sia"
+  },
+  {
+    "id": 73,
+    "category": "Númeru (숫자-고유어)",
+    "korean": "열",
+    "pronunciation": "Yeol",
+    "tetum": "Sanulu"
+  },
+  {
+    "id": 74,
+    "category": "Tempu (시간/날짜)",
+    "korean": "오늘",
+    "pronunciation": "O-neul",
+    "tetum": "Ohin"
+  },
+  {
+    "id": 75,
+    "category": "Tempu (시간/날짜)",
+    "korean": "내일",
+    "pronunciation": "Nae-il",
+    "tetum": "Aban"
+  },
+  {
+    "id": 76,
+    "category": "Tempu (시간/날짜)",
+    "korean": "어제",
+    "pronunciation": "Eo-je",
+    "tetum": "Horiseik"
+  },
+  {
+    "id": 77,
+    "category": "Tempu (시간/날짜)",
+    "korean": "지금",
+    "pronunciation": "Ji-geum",
+    "tetum": "Agora"
+  },
+  {
+    "id": 78,
+    "category": "Tempu (시간/날짜)",
+    "korean": "아침",
+    "pronunciation": "A-chim",
+    "tetum": "Dadeer"
+  },
+  {
+    "id": 79,
+    "category": "Tempu (시간/날짜)",
+    "korean": "점심",
+    "pronunciation": "Jeom-sim",
+    "tetum": "Meiudia / Almosu"
+  },
+  {
+    "id": 80,
+    "category": "Tempu (시간/날짜)",
+    "korean": "저녁",
+    "pronunciation": "Jeo-nyeok",
+    "tetum": "Kalan / Jantar"
+  },
+  {
+    "id": 81,
+    "category": "Tempu (시간/날짜)",
+    "korean": "밤",
+    "pronunciation": "Bam",
+    "tetum": "Kalan boot"
+  },
+  {
+    "id": 82,
+    "category": "Tempu (시간/날짜)",
+    "korean": "시간",
+    "pronunciation": "Si-gan",
+    "tetum": "Oras / Tempu"
+  },
+  {
+    "id": 83,
+    "category": "Tempu (시간/날짜)",
+    "korean": "분",
+    "pronunciation": "Bun",
+    "tetum": "Minutu"
+  },
+  {
+    "id": 84,
+    "category": "Tempu (시간/날짜)",
+    "korean": "주말",
+    "pronunciation": "Ju-mal",
+    "tetum": "Fim-de-semana"
+  },
+  {
+    "id": 85,
+    "category": "Tempu (시간/날짜)",
+    "korean": "휴일",
+    "pronunciation": "Hyu-il",
+    "tetum": "Loron feriadu"
+  },
+  {
+    "id": 86,
+    "category": "Loron (요일)",
+    "korean": "월요일",
+    "pronunciation": "Wo-ryo-il",
+    "tetum": "Segunda-feira"
+  },
+  {
+    "id": 87,
+    "category": "Loron (요일)",
+    "korean": "화요일",
+    "pronunciation": "Hwa-yo-il",
+    "tetum": "Tersa-feira"
+  },
+  {
+    "id": 88,
+    "category": "Loron (요일)",
+    "korean": "수요일",
+    "pronunciation": "Su-yo-il",
+    "tetum": "Kuarta-feira"
+  },
+  {
+    "id": 89,
+    "category": "Loron (요일)",
+    "korean": "목요일",
+    "pronunciation": "Mo-gyo-il",
+    "tetum": "Kinta-feira"
+  },
+  {
+    "id": 90,
+    "category": "Loron (요일)",
+    "korean": "금요일",
+    "pronunciation": "Geu-myo-il",
+    "tetum": "Sesta-feira"
+  },
+  {
+    "id": 91,
+    "category": "Loron (요일)",
+    "korean": "토요일",
+    "pronunciation": "To-yo-il",
+    "tetum": "Sábadu"
+  },
+  {
+    "id": 92,
+    "category": "Loron (요일)",
+    "korean": "일요일",
+    "pronunciation": "I-ryo-il",
+    "tetum": "Domingu"
+  },
+  {
+    "id": 93,
+    "category": "Hahán (음식/식당)",
+    "korean": "물",
+    "pronunciation": "Mul",
+    "tetum": "Bee"
+  },
+  {
+    "id": 94,
+    "category": "Hahán (음식/식당)",
+    "korean": "밥",
+    "pronunciation": "Bap",
+    "tetum": "Etun / Foos"
+  },
+  {
+    "id": 95,
+    "category": "Hahán (음식/식당)",
+    "korean": "빵",
+    "pronunciation": "Ppang",
+    "tetum": "Paun"
+  },
+  {
+    "id": 96,
+    "category": "Hahán (음식/식당)",
+    "korean": "고기",
+    "pronunciation": "Go-gi",
+    "tetum": "Na'an"
+  },
+  {
+    "id": 97,
+    "category": "Hahán (음식/식당)",
+    "korean": "생선",
+    "pronunciation": "Saeng-seon",
+    "tetum": "Ikan"
+  },
+  {
+    "id": 98,
+    "category": "Hahán (음식/식당)",
+    "korean": "채소",
+    "pronunciation": "Chae-so",
+    "tetum": "Modo"
+  },
+  {
+    "id": 99,
+    "category": "Hahán (음식/식당)",
+    "korean": "과일",
+    "pronunciation": "Gwa-il",
+    "tetum": "Ai-fuan"
+  },
+  {
+    "id": 100,
+    "category": "Hahán (음식/식당)",
+    "korean": "커피",
+    "pronunciation": "Keo-pi",
+    "tetum": "Kafé"
+  },
+  {
+    "id": 101,
+    "category": "Hahán (음식/식당)",
+    "korean": "식당",
+    "pronunciation": "Sik-dang",
+    "tetum": "Restaurante / Fatin han"
+  },
+  {
+    "id": 102,
+    "category": "Hahán (음식/식당)",
+    "korean": "숟가락",
+    "pronunciation": "Sut-ga-rak",
+    "tetum": "Kanuru"
+  },
+  {
+    "id": 103,
+    "category": "Hahán (음식/식당)",
+    "korean": "젓가락",
+    "pronunciation": "Jeot-ga-rak",
+    "tetum": "Hasi / Ai-kadu"
+  },
+  {
+    "id": 104,
+    "category": "Hahán (음식/식당)",
+    "korean": "컵",
+    "pronunciation": "Keop",
+    "tetum": "Kopu"
+  },
+  {
+    "id": 105,
+    "category": "Kompras (쇼핑/돈)",
+    "korean": "돈",
+    "pronunciation": "Don",
+    "tetum": "Osan"
+  },
+  {
+    "id": 106,
+    "category": "Kompras (쇼핑/돈)",
+    "korean": "가격",
+    "pronunciation": "Ga-gyeok",
+    "tetum": "Folin / Presu"
+  },
+  {
+    "id": 107,
+    "category": "Kompras (쇼핑/돈)",
+    "korean": "얼마예요?",
+    "pronunciation": "Eol-ma-ye-yo",
+    "tetum": "Folin hira?"
+  },
+  {
+    "id": 108,
+    "category": "Kompras (쇼핑/돈)",
+    "korean": "비싸다",
+    "pronunciation": "Bi-ssa-da",
+    "tetum": "Karun"
+  },
+  {
+    "id": 109,
+    "category": "Kompras (쇼핑/돈)",
+    "korean": "싸다",
+    "pronunciation": "Ssa-da",
+    "tetum": "Baratu"
+  },
+  {
+    "id": 110,
+    "category": "Kompras (쇼핑/돈)",
+    "korean": "영수증",
+    "pronunciation": "Yeong-su-jeung",
+    "tetum": "Resibu"
+  },
+  {
+    "id": 111,
+    "category": "Kompras (쇼핑/돈)",
+    "korean": "카드",
+    "pronunciation": "Ka-deu",
+    "tetum": "Kartaun"
+  },
+  {
+    "id": 112,
+    "category": "Kompras (쇼핑/돈)",
+    "korean": "현금",
+    "pronunciation": "Hyeon-geum",
+    "tetum": "Osan cash"
+  },
+  {
+    "id": 113,
+    "category": "Kompras (쇼핑/돈)",
+    "korean": "시장",
+    "pronunciation": "Si-jang",
+    "tetum": "Merkadu"
+  },
+  {
+    "id": 114,
+    "category": "Kompras (쇼핑/돈)",
+    "korean": "마트",
+    "pronunciation": "Ma-teu",
+    "tetum": "Supermerkadu"
+  },
+  {
+    "id": 115,
+    "category": "Transporte (교통)",
+    "korean": "버스",
+    "pronunciation": "Beo-seu",
+    "tetum": "Autokarru / Bus"
+  },
+  {
+    "id": 116,
+    "category": "Transporte (교통)",
+    "korean": "지하철",
+    "pronunciation": "Ji-ha-cheol",
+    "tetum": "Komboiu okos / Metro"
+  },
+  {
+    "id": 117,
+    "category": "Transporte (교통)",
+    "korean": "택시",
+    "pronunciation": "Taek-si",
+    "tetum": "Taksi"
+  },
+  {
+    "id": 118,
+    "category": "Transporte (교통)",
+    "korean": "정류장",
+    "pronunciation": "Jeong-nyu-jang",
+    "tetum": "Parajen"
+  },
+  {
+    "id": 119,
+    "category": "Transporte (교통)",
+    "korean": "표",
+    "pronunciation": "Pyo",
+    "tetum": "Billete"
+  },
+  {
+    "id": 120,
+    "category": "Transporte (교통)",
+    "korean": "길",
+    "pronunciation": "Gil",
+    "tetum": "Dalan"
+  },
+  {
+    "id": 121,
+    "category": "Direksau (방향/위치)",
+    "korean": "위",
+    "pronunciation": "Wi",
+    "tetum": "Leten"
+  },
+  {
+    "id": 122,
+    "category": "Direksau (방향/위치)",
+    "korean": "아래",
+    "pronunciation": "A-rae",
+    "tetum": "Kraik / Okos"
+  },
+  {
+    "id": 123,
+    "category": "Direksau (방향/위치)",
+    "korean": "앞",
+    "pronunciation": "Ap",
+    "tetum": "Oin"
+  },
+  {
+    "id": 124,
+    "category": "Direksau (방향/위치)",
+    "korean": "뒤",
+    "pronunciation": "Dwi",
+    "tetum": "Kotuk"
+  },
+  {
+    "id": 125,
+    "category": "Direksau (방향/위치)",
+    "korean": "안",
+    "pronunciation": "An",
+    "tetum": "Laran"
+  },
+  {
+    "id": 126,
+    "category": "Direksau (방향/위치)",
+    "korean": "밖",
+    "pronunciation": "Bak",
+    "tetum": "Li'ur"
+  },
+  {
+    "id": 127,
+    "category": "Direksau (방향/위치)",
+    "korean": "오른쪽",
+    "pronunciation": "O-reun-jjok",
+    "tetum": "Liman-loos"
+  },
+  {
+    "id": 128,
+    "category": "Direksau (방향/위치)",
+    "korean": "왼쪽",
+    "pronunciation": "Oen-jjok",
+    "tetum": "Liman-karuk"
+  },
+  {
+    "id": 129,
+    "category": "Adjetivu (형용사)",
+    "korean": "크다",
+    "pronunciation": "Keu-da",
+    "tetum": "Boot"
+  },
+  {
+    "id": 130,
+    "category": "Adjetivu (형용사)",
+    "korean": "작다",
+    "pronunciation": "Jak-da",
+    "tetum": "Ki'ik"
+  },
+  {
+    "id": 131,
+    "category": "Adjetivu (형용사)",
+    "korean": "많다",
+    "pronunciation": "Man-ta",
+    "tetum": "Barak"
+  },
+  {
+    "id": 132,
+    "category": "Adjetivu (형용사)",
+    "korean": "적다",
+    "pronunciation": "Jeok-da",
+    "tetum": "Uitoan"
+  },
+  {
+    "id": 133,
+    "category": "Adjetivu (형용사)",
+    "korean": "좋다",
+    "pronunciation": "Jo-ta",
+    "tetum": "Di'ak"
+  },
+  {
+    "id": 134,
+    "category": "Adjetivu (형용사)",
+    "korean": "나쁘다",
+    "pronunciation": "Na-ppeu-da",
+    "tetum": "Aat"
+  },
+  {
+    "id": 135,
+    "category": "Adjetivu (형용사)",
+    "korean": "덥다",
+    "pronunciation": "Deop-da",
+    "tetum": "Manas (klima)"
+  },
+  {
+    "id": 136,
+    "category": "Adjetivu (형용사)",
+    "korean": "춥다",
+    "pronunciation": "Chup-da",
+    "tetum": "Malirin (klima)"
+  },
+  {
+    "id": 137,
+    "category": "Adjetivu (형용사)",
+    "korean": "뜨겁다",
+    "pronunciation": "Tteu-geop-da",
+    "tetum": "Manas (sasán)"
+  },
+  {
+    "id": 138,
+    "category": "Adjetivu (형용사)",
+    "korean": "차갑다",
+    "pronunciation": "Cha-gap-da",
+    "tetum": "Malirin (sasán)"
+  },
+  {
+    "id": 139,
+    "category": "Adjetivu (형용사)",
+    "korean": "무겁다",
+    "pronunciation": "Mu-geop-da",
+    "tetum": "Todan"
+  },
+  {
+    "id": 140,
+    "category": "Adjetivu (형용사)",
+    "korean": "가볍다",
+    "pronunciation": "Ga-byeop-da",
+    "tetum": "Kmaan"
+  },
+  {
+    "id": 141,
+    "category": "Adjetivu (형용사)",
+    "korean": "빠르다",
+    "pronunciation": "Ppa-reu-da",
+    "tetum": "Lalais"
+  },
+  {
+    "id": 142,
+    "category": "Adjetivu (형용사)",
+    "korean": "느리다",
+    "pronunciation": "Neu-ri-da",
+    "tetum": "Neneik"
+  },
+  {
+    "id": 143,
+    "category": "Adjetivu (형용사)",
+    "korean": "바쁘다",
+    "pronunciation": "Ba-ppeu-da",
+    "tetum": "Okupadu"
+  },
+  {
+    "id": 144,
+    "category": "Adjetivu (형용사)",
+    "korean": "피곤하다",
+    "pronunciation": "Pi-gon-ha-da",
+    "tetum": "Kole"
+  },
+  {
+    "id": 145,
+    "category": "Adjetivu (형용사)",
+    "korean": "아프다",
+    "pronunciation": "A-peu-da",
+    "tetum": "Moras"
+  },
+  {
+    "id": 146,
+    "category": "Adjetivu (형용사)",
+    "korean": "배고프다",
+    "pronunciation": "Bae-go-peu-da",
+    "tetum": "Hamlaha"
+  },
+  {
+    "id": 147,
+    "category": "Adjetivu (형용사)",
+    "korean": "목마르다",
+    "pronunciation": "Mok-ma-reu-da",
+    "tetum": "Hamrook"
+  },
+  {
+    "id": 148,
+    "category": "Adjetivu (형용사)",
+    "korean": "깨끗하다",
+    "pronunciation": "Kkae-kkeu-ta-da",
+    "tetum": "Moos"
+  },
+  {
+    "id": 149,
+    "category": "Adjetivu (형용사)",
+    "korean": "더럽다",
+    "pronunciation": "Deo-reop-da",
+    "tetum": "Fo'er"
+  },
+  {
+    "id": 150,
+    "category": "Adjetivu (형용사)",
+    "korean": "어렵다",
+    "pronunciation": "Eo-ryeop-da",
+    "tetum": "Susar / Difísil"
+  },
+  {
+    "id": 151,
+    "category": "Fábrika (제조업)",
+    "korean": "기계",
+    "pronunciation": "Gi-gye",
+    "tetum": "Mákina"
+  },
+  {
+    "id": 152,
+    "category": "Fábrika (제조업)",
+    "korean": "전원",
+    "pronunciation": "Jeon-won",
+    "tetum": "Enerjia / Power"
+  },
+  {
+    "id": 153,
+    "category": "Fábrika (제조업)",
+    "korean": "스위치",
+    "pronunciation": "Seu-wi-chi",
+    "tetum": "Botaun / Switch"
+  },
+  {
+    "id": 154,
+    "category": "Fábrika (제조업)",
+    "korean": "버튼",
+    "pronunciation": "Beo-teun",
+    "tetum": "Botaun"
+  },
+  {
+    "id": 155,
+    "category": "Fábrika (제조업)",
+    "korean": "작동하다",
+    "pronunciation": "Jak-dong-ha-da",
+    "tetum": "Funsiona / Opera"
+  },
+  {
+    "id": 156,
+    "category": "Fábrika (제조업)",
+    "korean": "멈추다",
+    "pronunciation": "Meom-chu-da",
+    "tetum": "Para"
+  },
+  {
+    "id": 157,
+    "category": "Fábrika (제조업)",
+    "korean": "고장 나다",
+    "pronunciation": "Go-jang na-da",
+    "tetum": "Aat / Estragadu"
+  },
+  {
+    "id": 158,
+    "category": "Fábrika (제조업)",
+    "korean": "수리하다",
+    "pronunciation": "Su-ri-ha-da",
+    "tetum": "Hadia"
+  },
+  {
+    "id": 159,
+    "category": "Fábrika (제조업)",
+    "korean": "조립하다",
+    "pronunciation": "Jo-rip-ha-da",
+    "tetum": "Monta / Ranka hamutuk"
+  },
+  {
+    "id": 160,
+    "category": "Fábrika (제조업)",
+    "korean": "분해하다",
+    "pronunciation": "Bun-hae-ha-da",
+    "tetum": "Desmonta / Sobu"
+  },
+  {
+    "id": 161,
+    "category": "Fábrika (제조업)",
+    "korean": "포장하다",
+    "pronunciation": "Po-jang-ha-da",
+    "tetum": "Embrulla / Falun"
+  },
+  {
+    "id": 162,
+    "category": "Fábrika (제조업)",
+    "korean": "불량품",
+    "pronunciation": "Bul-lyang-pum",
+    "tetum": "Produtu aat"
+  },
+  {
+    "id": 163,
+    "category": "Fábrika (제조업)",
+    "korean": "완제품",
+    "pronunciation": "Wan-je-pum",
+    "tetum": "Produtu remata"
+  },
+  {
+    "id": 164,
+    "category": "Fábrika (제조업)",
+    "korean": "창고",
+    "pronunciation": "Chang-go",
+    "tetum": "Armazén"
+  },
+  {
+    "id": 165,
+    "category": "Fábrika (제조업)",
+    "korean": "상자",
+    "pronunciation": "Sang-ja",
+    "tetum": "Kaixa"
+  },
+  {
+    "id": 166,
+    "category": "Fábrika (제조업)",
+    "korean": "지게차",
+    "pronunciation": "Ji-ge-cha",
+    "tetum": "Empilhadeira / Forklift"
+  },
+  {
+    "id": 167,
+    "category": "Fábrika (제조업)",
+    "korean": "용접하다",
+    "pronunciation": "Yong-jeop-ha-da",
+    "tetum": "Solda"
+  },
+  {
+    "id": 168,
+    "category": "Fábrika (제조업)",
+    "korean": "구부리다",
+    "pronunciation": "Gu-bu-ri-da",
+    "tetum": "Hakuluk"
+  },
+  {
+    "id": 169,
+    "category": "Fábrika (제조업)",
+    "korean": "뚫다",
+    "pronunciation": "Ttul-ta",
+    "tetum": "Fura / Halo kuak"
+  },
+  {
+    "id": 170,
+    "category": "Fábrika (제조업)",
+    "korean": "갈다",
+    "pronunciation": "Gal-da",
+    "tetum": "Kadi / Hamoos ho lixa"
+  },
+  {
+    "id": 171,
+    "category": "Konstrusaun (건설업)",
+    "korean": "공사장",
+    "pronunciation": "Gong-sa-jang",
+    "tetum": "Fatin konstrusaun"
+  },
+  {
+    "id": 172,
+    "category": "Konstrusaun (건설업)",
+    "korean": "벽돌",
+    "pronunciation": "Byeok-dol",
+    "tetum": "Tijolu / Bloku"
+  },
+  {
+    "id": 173,
+    "category": "Konstrusaun (건설업)",
+    "korean": "시멘트",
+    "pronunciation": "Si-men-teu",
+    "tetum": "Simentu"
+  },
+  {
+    "id": 174,
+    "category": "Konstrusaun (건설업)",
+    "korean": "철근",
+    "pronunciation": "Cheol-geun",
+    "tetum": "Ferru konstrusaun"
+  },
+  {
+    "id": 175,
+    "category": "Konstrusaun (건설업)",
+    "korean": "비계",
+    "pronunciation": "Bi-gye",
+    "tetum": "Andaimes"
+  },
+  {
+    "id": 176,
+    "category": "Konstrusaun (건설업)",
+    "korean": "안전대",
+    "pronunciation": "An-jeon-dae",
+    "tetum": "Sinturaun seguransa"
+  },
+  {
+    "id": 177,
+    "category": "Konstrusaun (건설업)",
+    "korean": "크레인",
+    "pronunciation": "Keu-re-in",
+    "tetum": "Guindaste / Crane"
+  },
+  {
+    "id": 178,
+    "category": "Konstrusaun (건설업)",
+    "korean": "굴착기",
+    "pronunciation": "Gul-chak-gi",
+    "tetum": "Eskavadeira"
+  },
+  {
+    "id": 179,
+    "category": "Konstrusaun (건설업)",
+    "korean": "삽",
+    "pronunciation": "Sap",
+    "tetum": "Pá"
+  },
+  {
+    "id": 180,
+    "category": "Konstrusaun (건설업)",
+    "korean": "곡괭이",
+    "pronunciation": "Gok-kkwaeng-i",
+    "tetum": "Pikareta"
+  },
+  {
+    "id": 181,
+    "category": "Konstrusaun (건설업)",
+    "korean": "줄자",
+    "pronunciation": "Jul-ja",
+    "tetum": "Fita-métrika"
+  },
+  {
+    "id": 182,
+    "category": "Konstrusaun (건설업)",
+    "korean": "수평계",
+    "pronunciation": "Su-pyeong-gye",
+    "tetum": "Nível"
+  },
+  {
+    "id": 183,
+    "category": "Konstrusaun (건설업)",
+    "korean": "전선",
+    "pronunciation": "Jeon-seon",
+    "tetum": "Fiu eletrisidade"
+  },
+  {
+    "id": 184,
+    "category": "Konstrusaun (건설업)",
+    "korean": "파이프",
+    "pronunciation": "Pa-i-peu",
+    "tetum": "Kanu / Tubu"
+  },
+  {
+    "id": 185,
+    "category": "Konstrusaun (건설업)",
+    "korean": "페인트",
+    "pronunciation": "Pe-in-teu",
+    "tetum": "Tinta"
+  },
+  {
+    "id": 186,
+    "category": "Ferramenta (공구)",
+    "korean": "펜치",
+    "pronunciation": "Pen-chi",
+    "tetum": "Alikate"
+  },
+  {
+    "id": 187,
+    "category": "Ferramenta (공구)",
+    "korean": "니퍼",
+    "pronunciation": "Ni-peo",
+    "tetum": "Alikate tesi fiu"
+  },
+  {
+    "id": 188,
+    "category": "Ferramenta (공구)",
+    "korean": "스패너",
+    "pronunciation": "Seu-pae-neo",
+    "tetum": "Xave-boka"
+  },
+  {
+    "id": 189,
+    "category": "Ferramenta (공구)",
+    "korean": "렌치",
+    "pronunciation": "Ren-chi",
+    "tetum": "Xave-ingleza"
+  },
+  {
+    "id": 190,
+    "category": "Ferramenta (공구)",
+    "korean": "전기 드릴",
+    "pronunciation": "Jeon-gi deu-ril",
+    "tetum": "Berbekin elétriku"
+  },
+  {
+    "id": 191,
+    "category": "Ferramenta (공구)",
+    "korean": "못",
+    "pronunciation": "Mot",
+    "tetum": "Pregu"
+  },
+  {
+    "id": 192,
+    "category": "Ferramenta (공구)",
+    "korean": "나사",
+    "pronunciation": "Na-sa",
+    "tetum": "Parafuzu"
+  },
+  {
+    "id": 193,
+    "category": "Ferramenta (공구)",
+    "korean": "볼트",
+    "pronunciation": "Bol-teu",
+    "tetum": "Baut / Bolt"
+  },
+  {
+    "id": 194,
+    "category": "Ferramenta (공구)",
+    "korean": "너트",
+    "pronunciation": "Neo-teu",
+    "tetum": "Porka / Nut"
+  },
+  {
+    "id": 195,
+    "category": "Ferramenta (공구)",
+    "korean": "사포",
+    "pronunciation": "Sa-po",
+    "tetum": "Lixa"
+  },
+  {
+    "id": 196,
+    "category": "Agrikultura (농축산업)",
+    "korean": "농장",
+    "pronunciation": "Nong-jang",
+    "tetum": "To'os / Quinta"
+  },
+  {
+    "id": 197,
+    "category": "Agrikultura (농축산업)",
+    "korean": "밭",
+    "pronunciation": "Bat",
+    "tetum": "To'os maran"
+  },
+  {
+    "id": 198,
+    "category": "Agrikultura (농축산업)",
+    "korean": "논",
+    "pronunciation": "Non",
+    "tetum": "Natar"
+  },
+  {
+    "id": 199,
+    "category": "Agrikultura (농축산업)",
+    "korean": "비닐하우스",
+    "pronunciation": "Bi-nil-ha-u-seu",
+    "tetum": "Estufa plástiku"
+  },
+  {
+    "id": 200,
+    "category": "Agrikultura (농축산업)",
+    "korean": "씨앗",
+    "pronunciation": "Ssi-at",
+    "tetum": "Fini"
+  },
+  {
+    "id": 201,
+    "category": "Agrikultura (농축산업)",
+    "korean": "비료",
+    "pronunciation": "Bi-ryo",
+    "tetum": "Adubu"
+  },
+  {
+    "id": 202,
+    "category": "Agrikultura (농축산업)",
+    "korean": "농약",
+    "pronunciation": "Nong-yak",
+    "tetum": "Pestísida"
+  },
+  {
+    "id": 203,
+    "category": "Agrikultura (농축산업)",
+    "korean": "심다",
+    "pronunciation": "Sim-da",
+    "tetum": "Kuda"
+  },
+  {
+    "id": 204,
+    "category": "Agrikultura (농축산업)",
+    "korean": "수확하다",
+    "pronunciation": "Su-hwak-ha-da",
+    "tetum": "Ko'a / Kolleita"
+  },
+  {
+    "id": 205,
+    "category": "Agrikultura (농축산업)",
+    "korean": "물을 주다",
+    "pronunciation": "Mu-reul ju-da",
+    "tetum": "Rega bee"
+  },
+  {
+    "id": 206,
+    "category": "Agrikultura (농축산업)",
+    "korean": "잡초를 뽑다",
+    "pronunciation": "Jap-cho-reul ppop-da",
+    "tetum": "Hamoos du'ut"
+  },
+  {
+    "id": 207,
+    "category": "Agrikultura (농축산업)",
+    "korean": "호미",
+    "pronunciation": "Ho-mi",
+    "tetum": "Enxada ki'ik"
+  },
+  {
+    "id": 208,
+    "category": "Agrikultura (농축산업)",
+    "korean": "괭이",
+    "pronunciation": "Gwaeng-i",
+    "tetum": "Enxada"
+  },
+  {
+    "id": 209,
+    "category": "Agrikultura (농축산업)",
+    "korean": "낫",
+    "pronunciation": "Nat",
+    "tetum": "Foise / Katana ki'ik"
+  },
+  {
+    "id": 210,
+    "category": "Agrikultura (농축산업)",
+    "korean": "경운기",
+    "pronunciation": "Gyeong-un-gi",
+    "tetum": "Tratór-liman"
+  },
+  {
+    "id": 211,
+    "category": "Agrikultura (농축산업)",
+    "korean": "트랙터",
+    "pronunciation": "Teu-raek-teo",
+    "tetum": "Tratór"
+  },
+  {
+    "id": 212,
+    "category": "Agrikultura (농축산업)",
+    "korean": "축사",
+    "pronunciation": "Chuk-sa",
+    "tetum": "Luhan"
+  },
+  {
+    "id": 213,
+    "category": "Agrikultura (농축산업)",
+    "korean": "사료",
+    "pronunciation": "Sa-ryo",
+    "tetum": "Hahán animál"
+  },
+  {
+    "id": 214,
+    "category": "Agrikultura (농축산업)",
+    "korean": "소",
+    "pronunciation": "So",
+    "tetum": "Karau"
+  },
+  {
+    "id": 215,
+    "category": "Agrikultura (농축산업)",
+    "korean": "돼지",
+    "pronunciation": "Dwae-ji",
+    "tetum": "Fahi"
+  },
+  {
+    "id": 216,
+    "category": "Agrikultura (농축산업)",
+    "korean": "닭",
+    "pronunciation": "Dak",
+    "tetum": "Manu"
+  },
+  {
+    "id": 217,
+    "category": "Peska (어업)",
+    "korean": "배",
+    "pronunciation": "Bae",
+    "tetum": "Ró"
+  },
+  {
+    "id": 218,
+    "category": "Peska (어업)",
+    "korean": "그물",
+    "pronunciation": "Geu-mul",
+    "tetum": "Rede peska"
+  },
+  {
+    "id": 219,
+    "category": "Peska (어업)",
+    "korean": "낚싯대",
+    "pronunciation": "Nak-sit-dae",
+    "tetum": "Kail"
+  },
+  {
+    "id": 220,
+    "category": "Peska (어업)",
+    "korean": "양식장",
+    "pronunciation": "Yang-sik-jang",
+    "tetum": "Kolam hakiak ikan"
+  },
+  {
+    "id": 221,
+    "category": "Seguransa (안전표지)",
+    "korean": "출입 금지",
+    "pronunciation": "Chu-rip geum-ji",
+    "tetum": "Proibidu tama"
+  },
+  {
+    "id": 222,
+    "category": "Seguransa (안전표지)",
+    "korean": "금연",
+    "pronunciation": "Geu-myeon",
+    "tetum": "Proibidu fuma"
+  },
+  {
+    "id": 223,
+    "category": "Seguransa (안전표지)",
+    "korean": "화기 엄금",
+    "pronunciation": "Hwa-gi eom-geum",
+    "tetum": "Proibidu ahi"
+  },
+  {
+    "id": 224,
+    "category": "Seguransa (안전표지)",
+    "korean": "낙하물 주의",
+    "pronunciation": "Nak-ha-mul ju-ui",
+    "tetum": "Kuidadu sasán monu"
+  },
+  {
+    "id": 225,
+    "category": "Seguransa (안전표지)",
+    "korean": "감전 주의",
+    "pronunciation": "Gam-jeon ju-ui",
+    "tetum": "Kuidadu xoke elétriku"
+  },
+  {
+    "id": 226,
+    "category": "Seguransa (안전표지)",
+    "korean": "비상구",
+    "pronunciation": "Bi-sang-gu",
+    "tetum": "Odamatan emerjénsia"
+  },
+  {
+    "id": 227,
+    "category": "Seguransa (안전표지)",
+    "korean": "소화기",
+    "pronunciation": "So-hwa-gi",
+    "tetum": "Estintór ahi"
+  },
+  {
+    "id": 228,
+    "category": "Seguransa (안전표지)",
+    "korean": "보안경",
+    "pronunciation": "Bo-an-gyeong",
+    "tetum": "Ókulu seguransa"
+  },
+  {
+    "id": 229,
+    "category": "Seguransa (안전표지)",
+    "korean": "귀마개",
+    "pronunciation": "Gwi-ma-gae",
+    "tetum": "Tapa-tilun"
+  },
+  {
+    "id": 230,
+    "category": "Seguransa (안전표지)",
+    "korean": "안전장갑",
+    "pronunciation": "An-jeon-jang-gap",
+    "tetum": "Luvas seguransa"
+  },
+  {
+    "id": 231,
+    "category": "Administrasaun (근로행정)",
+    "korean": "근로계약서",
+    "pronunciation": "Geul-lo-gye-yak-seo",
+    "tetum": "Kontratu servisu"
+  },
+  {
+    "id": 232,
+    "category": "Administrasaun (근로행정)",
+    "korean": "여권",
+    "pronunciation": "Yeo-gwon",
+    "tetum": "Pasaporte"
+  },
+  {
+    "id": 233,
+    "category": "Administrasaun (근로행정)",
+    "korean": "비자",
+    "pronunciation": "Bi-ja",
+    "tetum": "Vistu"
+  },
+  {
+    "id": 234,
+    "category": "Administrasaun (근로행정)",
+    "korean": "외국인등록증",
+    "pronunciation": "Oe-gu-gin-deung-nok-jeung",
+    "tetum": "Kartaun rejistu estranjeiru"
+  },
+  {
+    "id": 235,
+    "category": "Administrasaun (근로행정)",
+    "korean": "출입국관리사무소",
+    "pronunciation": "Chu-rip-guk-gwal-li-sa-mu-so",
+    "tetum": "Servisu Imigrasaun"
+  },
+  {
+    "id": 236,
+    "category": "Administrasaun (근로행정)",
+    "korean": "고용센터",
+    "pronunciation": "Go-yong-sen-teo",
+    "tetum": "Sentru Empregu"
+  },
+  {
+    "id": 237,
+    "category": "Administrasaun (근로행정)",
+    "korean": "통장",
+    "pronunciation": "Tong-jang",
+    "tetum": "Kaderneta banku"
+  },
+  {
+    "id": 238,
+    "category": "Administrasaun (근로행정)",
+    "korean": "송금하다",
+    "pronunciation": "Song-geum-ha-da",
+    "tetum": "Haruka osan"
+  },
+  {
+    "id": 239,
+    "category": "Administrasaun (근로행정)",
+    "korean": "환전하다",
+    "pronunciation": "Hwan-jeon-ha-da",
+    "tetum": "Troka osan"
+  },
+  {
+    "id": 240,
+    "category": "Administrasaun (근로행정)",
+    "korean": "수당",
+    "pronunciation": "Su-dang",
+    "tetum": "Subsídiu / Bonus"
+  },
+  {
+    "id": 241,
+    "category": "Administrasaun (근로행정)",
+    "korean": "퇴직금",
+    "pronunciation": "Toe-jik-geum",
+    "tetum": "Osan reforma / Indenizasaun"
+  },
+  {
+    "id": 242,
+    "category": "Administrasaun (근로행정)",
+    "korean": "보험",
+    "pronunciation": "Bo-heom",
+    "tetum": "Seguru"
+  },
+  {
+    "id": 243,
+    "category": "Administrasaun (근로행정)",
+    "korean": "산재보험",
+    "pronunciation": "San-jae-bo-heom",
+    "tetum": "Seguru asidente servisu"
+  },
+  {
+    "id": 244,
+    "category": "Administrasaun (근로행정)",
+    "korean": "건강보험",
+    "pronunciation": "Geon-gang-bo-heom",
+    "tetum": "Seguru saúde"
+  },
+  {
+    "id": 245,
+    "category": "Administrasaun (근로행정)",
+    "korean": "휴가",
+    "pronunciation": "Hyu-ga",
+    "tetum": "Lisensa / Férias"
+  },
+  {
+    "id": 246,
+    "category": "Administrasaun (근로행정)",
+    "korean": "병가",
+    "pronunciation": "Byeong-ga",
+    "tetum": "Lisensa moras"
+  },
+  {
+    "id": 247,
+    "category": "Administrasaun (근로행정)",
+    "korean": "결근하다",
+    "pronunciation": "Gyeol-geun-ha-da",
+    "tetum": "Falta servisu"
+  },
+  {
+    "id": 248,
+    "category": "Administrasaun (근로행정)",
+    "korean": "지각하다",
+    "pronunciation": "Ji-gak-ha-da",
+    "tetum": "Mai tarde servisu"
+  },
+  {
+    "id": 249,
+    "category": "Administrasaun (근로행정)",
+    "korean": "조퇴하다",
+    "pronunciation": "Jo-toe-ha-da",
+    "tetum": "Fila sedu husi servisu"
+  },
+  {
+    "id": 250,
+    "category": "Administrasaun (근로행정)",
+    "korean": "사업장 변경",
+    "pronunciation": "Sa-eop-jang byeon-gyeong",
+    "tetum": "Muda fatin servisu"
+  },
+  {
+    "id": 251,
+    "category": "Isin-lolon (신체)",
+    "korean": "머리",
+    "pronunciation": "Meo-ri",
+    "tetum": "Ulun"
+  },
+  {
+    "id": 252,
+    "category": "Isin-lolon (신체)",
+    "korean": "눈",
+    "pronunciation": "Nun",
+    "tetum": "Matan"
+  },
+  {
+    "id": 253,
+    "category": "Isin-lolon (신체)",
+    "korean": "코",
+    "pronunciation": "Ko",
+    "tetum": "Inus"
+  },
+  {
+    "id": 254,
+    "category": "Isin-lolon (신체)",
+    "korean": "입",
+    "pronunciation": "Ip",
+    "tetum": "Ibun"
+  },
+  {
+    "id": 255,
+    "category": "Isin-lolon (신체)",
+    "korean": "귀",
+    "pronunciation": "Gwi",
+    "tetum": "Tilun"
+  },
+  {
+    "id": 256,
+    "category": "Isin-lolon (신체)",
+    "korean": "목",
+    "pronunciation": "Mok",
+    "tetum": "Kakorok"
+  },
+  {
+    "id": 257,
+    "category": "Isin-lolon (신체)",
+    "korean": "어깨",
+    "pronunciation": "Eo-kkae",
+    "tetum": "Kabaas"
+  },
+  {
+    "id": 258,
+    "category": "Isin-lolon (신체)",
+    "korean": "팔",
+    "pronunciation": "Pal",
+    "tetum": "Liman-parte leten"
+  },
+  {
+    "id": 259,
+    "category": "Isin-lolon (신체)",
+    "korean": "손",
+    "pronunciation": "Son",
+    "tetum": "Liman"
+  },
+  {
+    "id": 260,
+    "category": "Isin-lolon (신체)",
+    "korean": "손가락",
+    "pronunciation": "Son-ga-rak",
+    "tetum": "Liman-fuan"
+  },
+  {
+    "id": 261,
+    "category": "Isin-lolon (신체)",
+    "korean": "허리",
+    "pronunciation": "Heo-ri",
+    "tetum": "Knotak"
+  },
+  {
+    "id": 262,
+    "category": "Isin-lolon (신체)",
+    "korean": "다리",
+    "pronunciation": "Da-ri",
+    "tetum": "Ain"
+  },
+  {
+    "id": 263,
+    "category": "Isin-lolon (신체)",
+    "korean": "무릎",
+    "pronunciation": "Mu-reup",
+    "tetum": "Ain-tuur"
+  },
+  {
+    "id": 264,
+    "category": "Isin-lolon (신체)",
+    "korean": "발",
+    "pronunciation": "Bal",
+    "tetum": "Ain-tanen"
+  },
+  {
+    "id": 265,
+    "category": "Isin-lolon (신체)",
+    "korean": "피",
+    "pronunciation": "Pi",
+    "tetum": "Raan"
+  },
+  {
+    "id": 266,
+    "category": "Isin-lolon (신체)",
+    "korean": "뼈",
+    "pronunciation": "Ppyeo",
+    "tetum": "Ruin"
+  },
+  {
+    "id": 267,
+    "category": "Saúde (병원/증상)",
+    "korean": "감기",
+    "pronunciation": "Gam-gi",
+    "tetum": "Inus-metin / Gripe"
+  },
+  {
+    "id": 268,
+    "category": "Saúde (병원/증상)",
+    "korean": "열이 나다",
+    "pronunciation": "Yeo-ri na-da",
+    "tetum": "Isin-manas"
+  },
+  {
+    "id": 269,
+    "category": "Saúde (병원/증상)",
+    "korean": "기침",
+    "pronunciation": "Gi-chim",
+    "tetum": "Mear"
+  },
+  {
+    "id": 270,
+    "category": "Saúde (병원/증상)",
+    "korean": "두통",
+    "pronunciation": "Du-tong",
+    "tetum": "Ulun-moras"
+  },
+  {
+    "id": 271,
+    "category": "Saúde (병원/증상)",
+    "korean": "복통",
+    "pronunciation": "Bok-tong",
+    "tetum": "Kabun-moras"
+  },
+  {
+    "id": 272,
+    "category": "Saúde (병원/증상)",
+    "korean": "설사",
+    "pronunciation": "Seol-sa",
+    "tetum": "Tee-been"
+  },
+  {
+    "id": 273,
+    "category": "Saúde (병원/증상)",
+    "korean": "소화제",
+    "pronunciation": "So-hwa-je",
+    "tetum": "Ai-moruk kabun-moras"
+  },
+  {
+    "id": 274,
+    "category": "Saúde (병원/증상)",
+    "korean": "진통제",
+    "pronunciation": "Jin-tong-je",
+    "tetum": "Ai-moruk hamenus moras"
+  },
+  {
+    "id": 275,
+    "category": "Saúde (병원/증상)",
+    "korean": "감기약",
+    "pronunciation": "Gam-gi-yak",
+    "tetum": "Ai-moruk gripe"
+  },
+  {
+    "id": 276,
+    "category": "Saúde (병원/증상)",
+    "korean": "연고",
+    "pronunciation": "Yeon-go",
+    "tetum": "Pomada"
+  },
+  {
+    "id": 277,
+    "category": "Saúde (병원/증상)",
+    "korean": "밴드",
+    "pronunciation": "Baen-deu",
+    "tetum": "Pensu / Band-aid"
+  },
+  {
+    "id": 278,
+    "category": "Saúde (병원/증상)",
+    "korean": "파스",
+    "pronunciation": "Pa-seu",
+    "tetum": "Koyo / Adesivu moras"
+  },
+  {
+    "id": 279,
+    "category": "Saúde (병원/증상)",
+    "korean": "주사",
+    "pronunciation": "Ju-sa",
+    "tetum": "Injesaun"
+  },
+  {
+    "id": 280,
+    "category": "Saúde (병원/증상)",
+    "korean": "처방전",
+    "pronunciation": "Cheo-bang-jeon",
+    "tetum": "Reseita médiku"
+  },
+  {
+    "id": 281,
+    "category": "Saúde (병원/증상)",
+    "korean": "의사",
+    "pronunciation": "Ui-sa",
+    "tetum": "Doutór / Médiku"
+  },
+  {
+    "id": 282,
+    "category": "Saúde (병원/증상)",
+    "korean": "간호사",
+    "pronunciation": "Gan-ho-sa",
+    "tetum": "Enfermeiru / Enfermeira"
+  },
+  {
+    "id": 283,
+    "category": "Saúde (병원/증상)",
+    "korean": "환자",
+    "pronunciation": "Hwan-ja",
+    "tetum": "Pasiente"
+  },
+  {
+    "id": 284,
+    "category": "Saúde (병원/증상)",
+    "korean": "응급실",
+    "pronunciation": "Eung-geup-sil",
+    "tetum": "Sala emerjénsia"
+  },
+  {
+    "id": 285,
+    "category": "Klima (날씨/계절)",
+    "korean": "날씨",
+    "pronunciation": "Nal-ssi",
+    "tetum": "Klima / Tempu"
+  },
+  {
+    "id": 286,
+    "category": "Klima (날씨/계절)",
+    "korean": "비",
+    "pronunciation": "Bi",
+    "tetum": "Udan"
+  },
+  {
+    "id": 287,
+    "category": "Klima (날씨/계절)",
+    "korean": "눈 (하늘)",
+    "pronunciation": "Nun",
+    "tetum": "Neve"
+  },
+  {
+    "id": 288,
+    "category": "Klima (날씨/계절)",
+    "korean": "바람",
+    "pronunciation": "Ba-ram",
+    "tetum": "Anin"
+  },
+  {
+    "id": 289,
+    "category": "Klima (날씨/계절)",
+    "korean": "구름",
+    "pronunciation": "Gu-reum",
+    "tetum": "Kalohan"
+  },
+  {
+    "id": 290,
+    "category": "Klima (날씨/계절)",
+    "korean": "맑다",
+    "pronunciation": "Mak-da",
+    "tetum": "Lalehan moos / Loron di'ak"
+  },
+  {
+    "id": 291,
+    "category": "Klima (날씨/계절)",
+    "korean": "흐리다",
+    "pronunciation": "Heu-ri-da",
+    "tetum": "Kalohan taka"
+  },
+  {
+    "id": 292,
+    "category": "Klima (날씨/계절)",
+    "korean": "봄",
+    "pronunciation": "Bom",
+    "tetum": "Primavera"
+  },
+  {
+    "id": 293,
+    "category": "Klima (날씨/계절)",
+    "korean": "여름",
+    "pronunciation": "Yeo-reum",
+    "tetum": "Veraun / Tempu manas"
+  },
+  {
+    "id": 294,
+    "category": "Klima (날씨/계절)",
+    "korean": "가을",
+    "pronunciation": "Ga-eul",
+    "tetum": "Outonu"
+  },
+  {
+    "id": 295,
+    "category": "Klima (날씨/계절)",
+    "korean": "겨울",
+    "pronunciation": "Gyeo-ul",
+    "tetum": "Invernu / Tempu malirin"
+  },
+  {
+    "id": 296,
+    "category": "Klima (날씨/계절)",
+    "korean": "우산",
+    "pronunciation": "U-san",
+    "tetum": "Guardaxuva / Sombrinha"
+  },
+  {
+    "id": 297,
+    "category": "Família (가족/사람)",
+    "korean": "가족",
+    "pronunciation": "Ga-jok",
+    "tetum": "Família"
+  },
+  {
+    "id": 298,
+    "category": "Família (가족/사람)",
+    "korean": "부모님",
+    "pronunciation": "Bu-mo-nim",
+    "tetum": "Inan-aman"
+  },
+  {
+    "id": 299,
+    "category": "Família (가족/사람)",
+    "korean": "아버지",
+    "pronunciation": "A-beo-ji",
+    "tetum": "Aman / Pai"
+  },
+  {
+    "id": 300,
+    "category": "Família (가족/사람)",
+    "korean": "어머니",
+    "pronunciation": "Eo-meo-ni",
+    "tetum": "Inan / Mãe"
+  },
+  {
+    "id": 301,
+    "category": "Família (가족/사람)",
+    "korean": "남편",
+    "pronunciation": "Nam-pyeon",
+    "tetum": "La'en"
+  },
+  {
+    "id": 302,
+    "category": "Família (가족/사람)",
+    "korean": "아내",
+    "pronunciation": "A-nae",
+    "tetum": "Feen"
+  },
+  {
+    "id": 303,
+    "category": "Família (가족/사람)",
+    "korean": "아들",
+    "pronunciation": "A-deul",
+    "tetum": "Oan-mane"
+  },
+  {
+    "id": 304,
+    "category": "Família (가족/사람)",
+    "korean": "딸",
+    "pronunciation": "Ttal",
+    "tetum": "Oan-feto"
+  },
+  {
+    "id": 305,
+    "category": "Família (가족/사람)",
+    "korean": "형 / 오빠",
+    "pronunciation": "Hyeong / O-ppa",
+    "tetum": "Maun"
+  },
+  {
+    "id": 306,
+    "category": "Família (가족/사람)",
+    "korean": "누나 / 언니",
+    "pronunciation": "Nu-na / Eon-ni",
+    "tetum": "Biin"
+  },
+  {
+    "id": 307,
+    "category": "Família (가족/사람)",
+    "korean": "동생",
+    "pronunciation": "Dong-saeng",
+    "tetum": "Alin"
+  },
+  {
+    "id": 308,
+    "category": "Família (가족/사람)",
+    "korean": "친구",
+    "pronunciation": "Chin-gu",
+    "tetum": "Kolega / Belun"
+  },
+  {
+    "id": 309,
+    "category": "Família (가족/사람)",
+    "korean": "남자",
+    "pronunciation": "Nam-ja",
+    "tetum": "Mane"
+  },
+  {
+    "id": 310,
+    "category": "Família (가족/사람)",
+    "korean": "여자",
+    "pronunciation": "Yeo-ja",
+    "tetum": "Feto"
+  },
+  {
+    "id": 311,
+    "category": "Família (가족/사람)",
+    "korean": "사람",
+    "pronunciation": "Sa-ram",
+    "tetum": "Ema"
+  },
+  {
+    "id": 312,
+    "category": "Sentimentu (감정/상태)",
+    "korean": "기쁘다",
+    "pronunciation": "Gi-ppeu-da",
+    "tetum": "Kontente / Haksolok"
+  },
+  {
+    "id": 313,
+    "category": "Sentimentu (감정/상태)",
+    "korean": "슬프다",
+    "pronunciation": "Seul-peu-da",
+    "tetum": "Triste"
+  },
+  {
+    "id": 314,
+    "category": "Sentimentu (감정/상태)",
+    "korean": "화나다",
+    "pronunciation": "Hwa-na-da",
+    "tetum": "Hirus"
+  },
+  {
+    "id": 315,
+    "category": "Sentimentu (감정/상태)",
+    "korean": "무섭다",
+    "pronunciation": "Mu-seop-da",
+    "tetum": "Ta'uk"
+  },
+  {
+    "id": 316,
+    "category": "Sentimentu (감정/상태)",
+    "korean": "걱정되다",
+    "pronunciation": "Geok-jeong-doe-da",
+    "tetum": "Preokupadu"
+  },
+  {
+    "id": 317,
+    "category": "Sentimentu (감정/상태)",
+    "korean": "보고 싶다",
+    "pronunciation": "Bo-go sip-da",
+    "tetum": "Saudades / Hakarak haree"
+  },
+  {
+    "id": 318,
+    "category": "Sentimentu (감정/상태)",
+    "korean": "반갑다",
+    "pronunciation": "Ban-gap-da",
+    "tetum": "Kontente hasoru"
+  },
+  {
+    "id": 319,
+    "category": "Sentimentu (감정/상태)",
+    "korean": "미안하다",
+    "pronunciation": "Mi-an-ha-da",
+    "tetum": "Deskulpa"
+  },
+  {
+    "id": 320,
+    "category": "Sentimentu (감정/상태)",
+    "korean": "고맙다",
+    "pronunciation": "Go-map-da",
+    "tetum": "Obrigadu"
+  },
+  {
+    "id": 321,
+    "category": "Sentimentu (감정/상태)",
+    "korean": "괜찮다",
+    "pronunciation": "Gwaen-chan-ta",
+    "tetum": "Di'ak hela"
+  },
+  {
+    "id": 322,
+    "category": "Verbu (일상동사)",
+    "korean": "보다",
+    "pronunciation": "Bo-da",
+    "tetum": "Haree"
+  },
+  {
+    "id": 323,
+    "category": "Verbu (일상동사)",
+    "korean": "듣다",
+    "pronunciation": "Deut-da",
+    "tetum": "Rona"
+  },
+  {
+    "id": 324,
+    "category": "Verbu (일상동사)",
+    "korean": "말하다",
+    "pronunciation": "Mal-ha-da",
+    "tetum": "Ko'alia"
+  },
+  {
+    "id": 325,
+    "category": "Verbu (일상동사)",
+    "korean": "읽다",
+    "pronunciation": "Ik-da",
+    "tetum": "Lee"
+  },
+  {
+    "id": 326,
+    "category": "Verbu (일상동사)",
+    "korean": "쓰다 (글)",
+    "pronunciation": "Sseu-da",
+    "tetum": "Hakerek"
+  },
+  {
+    "id": 327,
+    "category": "Verbu (일상동사)",
+    "korean": "배우다",
+    "pronunciation": "Bae-u-da",
+    "tetum": "Estuda / Aprende"
+  },
+  {
+    "id": 328,
+    "category": "Verbu (일상동사)",
+    "korean": "가르치다",
+    "pronunciation": "Ga-reu-chi-da",
+    "tetum": "Hanorin"
+  },
+  {
+    "id": 329,
+    "category": "Verbu (일상동사)",
+    "korean": "사다",
+    "pronunciation": "Sa-da",
+    "tetum": "Sosa"
+  },
+  {
+    "id": 330,
+    "category": "Verbu (일상동사)",
+    "korean": "팔다",
+    "pronunciation": "Pal-da",
+    "tetum": "Fa'an"
+  },
+  {
+    "id": 331,
+    "category": "Verbu (일상동사)",
+    "korean": "주다",
+    "pronunciation": "Ju-da",
+    "tetum": "Fó"
+  },
+  {
+    "id": 332,
+    "category": "Verbu (일상동사)",
+    "korean": "받다",
+    "pronunciation": "Bat-da",
+    "tetum": "Simu"
+  },
+  {
+    "id": 333,
+    "category": "Verbu (일상동사)",
+    "korean": "열다",
+    "pronunciation": "Yeol-da",
+    "tetum": "Loke"
+  },
+  {
+    "id": 334,
+    "category": "Verbu (일상동사)",
+    "korean": "닫다",
+    "pronunciation": "Dat-da",
+    "tetum": "Taka"
+  },
+  {
+    "id": 335,
+    "category": "Verbu (일상동사)",
+    "korean": "켜다",
+    "pronunciation": "Kyeo-da",
+    "tetum": "Lakan / Halo moris"
+  },
+  {
+    "id": 336,
+    "category": "Verbu (일상동사)",
+    "korean": "끄다",
+    "pronunciation": "Kkeu-da",
+    "tetum": "Hamate"
+  },
+  {
+    "id": 337,
+    "category": "Verbu (일상동사)",
+    "korean": "입다",
+    "pronunciation": "Ip-da",
+    "tetum": "Hatais"
+  },
+  {
+    "id": 338,
+    "category": "Verbu (일상동사)",
+    "korean": "벗다",
+    "pronunciation": "Beot-da",
+    "tetum": "Hasai roupa"
+  },
+  {
+    "id": 339,
+    "category": "Verbu (일상동사)",
+    "korean": "신다",
+    "pronunciation": "Sin-da",
+    "tetum": "Hatais sapatu"
+  },
+  {
+    "id": 340,
+    "category": "Verbu (일상동사)",
+    "korean": "씻다",
+    "pronunciation": "Ssit-da",
+    "tetum": "Fase"
+  },
+  {
+    "id": 341,
+    "category": "Verbu (일상동사)",
+    "korean": "요리하다",
+    "pronunciation": "Yo-ri-ha-da",
+    "tetum": "Te'in"
+  },
+  {
+    "id": 342,
+    "category": "Verbu (일상동사)",
+    "korean": "빨래하다",
+    "pronunciation": "Ppal-lae-ha-da",
+    "tetum": "Fase roupa"
+  },
+  {
+    "id": 343,
+    "category": "Verbu (일상동사)",
+    "korean": "운전하다",
+    "pronunciation": "Un-jeon-ha-da",
+    "tetum": "Lori karreta"
+  },
+  {
+    "id": 344,
+    "category": "Verbu (일상동사)",
+    "korean": "전화하다",
+    "pronunciation": "Jeon-hwa-ha-da",
+    "tetum": "Telefona"
+  },
+  {
+    "id": 345,
+    "category": "Verbu (일상동사)",
+    "korean": "기다리다",
+    "pronunciation": "Gi-da-ri-da",
+    "tetum": "Hein"
+  },
+  {
+    "id": 346,
+    "category": "Verbu (일상동사)",
+    "korean": "만나다",
+    "pronunciation": "Man-na-da",
+    "tetum": "Hasoru"
+  },
+  {
+    "id": 347,
+    "category": "Verbu (일상동사)",
+    "korean": "도와주다",
+    "pronunciation": "Do-wa-ju-da",
+    "tetum": "Ajuda"
+  },
+  {
+    "id": 348,
+    "category": "Verbu (일상동사)",
+    "korean": "휴식하다",
+    "pronunciation": "Hyu-sik-ha-da",
+    "tetum": "Deskansa"
+  },
+  {
+    "id": 349,
+    "category": "Uma (집/기숙사)",
+    "korean": "방",
+    "pronunciation": "Bang",
+    "tetum": "Kuartu"
+  },
+  {
+    "id": 350,
+    "category": "Uma (집/기숙사)",
+    "korean": "거실",
+    "pronunciation": "Geo-sil",
+    "tetum": "Sala vizita"
+  },
+  {
+    "id": 351,
+    "category": "Uma (집/기숙사)",
+    "korean": "부엌",
+    "pronunciation": "Bu-eok",
+    "tetum": "Kuziña"
+  },
+  {
+    "id": 352,
+    "category": "Uma (집/기숙사)",
+    "korean": "문",
+    "pronunciation": "Mun",
+    "tetum": "Odamatan"
+  },
+  {
+    "id": 353,
+    "category": "Uma (집/기숙사)",
+    "korean": "창문",
+    "pronunciation": "Chang-mun",
+    "tetum": "Janela"
+  },
+  {
+    "id": 354,
+    "category": "Uma (집/기숙사)",
+    "korean": "계단",
+    "pronunciation": "Gye-dan",
+    "tetum": "Eskada"
+  },
+  {
+    "id": 355,
+    "category": "Uma (집/기숙사)",
+    "korean": "엘리베이터",
+    "pronunciation": "El-li-be-i-teo",
+    "tetum": "Elevadór"
+  },
+  {
+    "id": 356,
+    "category": "Uma (집/기숙사)",
+    "korean": "침대",
+    "pronunciation": "Chim-dae",
+    "tetum": "Kama"
+  },
+  {
+    "id": 357,
+    "category": "Uma (집/기숙사)",
+    "korean": "이불",
+    "pronunciation": "I-bul",
+    "tetum": "Manta / Koalxa"
+  },
+  {
+    "id": 358,
+    "category": "Uma (집/기숙사)",
+    "korean": "베개",
+    "pronunciation": "Be-gae",
+    "tetum": "Sumasu"
+  },
+  {
+    "id": 359,
+    "category": "Uma (집/기숙사)",
+    "korean": "책상",
+    "pronunciation": "Chaek-sang",
+    "tetum": "Meza estuda"
+  },
+  {
+    "id": 360,
+    "category": "Uma (집/기숙사)",
+    "korean": "의자",
+    "pronunciation": "Ui-ja",
+    "tetum": "Kadeira"
+  },
+  {
+    "id": 361,
+    "category": "Uma (집/기숙사)",
+    "korean": "옷장",
+    "pronunciation": "Ot-jang",
+    "tetum": "Armáriu roupa"
+  },
+  {
+    "id": 362,
+    "category": "Uma (집/기숙사)",
+    "korean": "거울",
+    "pronunciation": "Geo-ul",
+    "tetum": "Espellu"
+  },
+  {
+    "id": 363,
+    "category": "Uma (집/기숙사)",
+    "korean": "수건",
+    "pronunciation": "Su-geon",
+    "tetum": "Toalla"
+  },
+  {
+    "id": 364,
+    "category": "Uma (집/기숙사)",
+    "korean": "비누",
+    "pronunciation": "Bi-nu",
+    "tetum": "Sabaun"
+  },
+  {
+    "id": 365,
+    "category": "Uma (집/기숙사)",
+    "korean": "샴푸",
+    "pronunciation": "Syam-pu",
+    "tetum": "Xampu"
+  },
+  {
+    "id": 366,
+    "category": "Uma (집/기숙사)",
+    "korean": "치약",
+    "pronunciation": "Chi-yak",
+    "tetum": "Pasta nehan"
+  },
+  {
+    "id": 367,
+    "category": "Uma (집/기숙사)",
+    "korean": "칫솔",
+    "pronunciation": "Chit-sol",
+    "tetum": "Eskova nehan"
+  },
+  {
+    "id": 368,
+    "category": "Uma (집/기숙사)",
+    "korean": "휴지",
+    "pronunciation": "Hyu-ji",
+    "tetum": "Tisu / Papel hijiéniku"
+  },
+  {
+    "id": 369,
+    "category": "Uma (집/기숙사)",
+    "korean": "세제",
+    "pronunciation": "Se-je",
+    "tetum": "Deterjente / Sabaun rahuk"
+  },
+  {
+    "id": 370,
+    "category": "Uma (집/기숙사)",
+    "korean": "빗자루",
+    "pronunciation": "Bit-ja-ru",
+    "tetum": "Ai-saar"
+  },
+  {
+    "id": 371,
+    "category": "Uma (집/기숙사)",
+    "korean": "쓰레기통",
+    "pronunciation": "Sseu-re-gi-tong",
+    "tetum": "Lixu-fatin"
+  },
+  {
+    "id": 372,
+    "category": "Uma (집/기숙사)",
+    "korean": "열쇠",
+    "pronunciation": "Yeol-soe",
+    "tetum": "Xave"
+  },
+  {
+    "id": 373,
+    "category": "Eletróniku (전자제품)",
+    "korean": "휴대폰",
+    "pronunciation": "Hyu-dae-pon",
+    "tetum": "Telemóvel"
+  },
+  {
+    "id": 374,
+    "category": "Eletróniku (전자제품)",
+    "korean": "충전기",
+    "pronunciation": "Chung-jeon-gi",
+    "tetum": "Karregadór"
+  },
+  {
+    "id": 375,
+    "category": "Eletróniku (전자제품)",
+    "korean": "냉장고",
+    "pronunciation": "Naeng-jang-go",
+    "tetum": "Jeleira"
+  },
+  {
+    "id": 376,
+    "category": "Eletróniku (전자제품)",
+    "korean": "세탁기",
+    "pronunciation": "Se-tak-gi",
+    "tetum": "Mákina fase roupa"
+  },
+  {
+    "id": 377,
+    "category": "Eletróniku (전자제품)",
+    "korean": "에어컨",
+    "pronunciation": "E-eo-keon",
+    "tetum": "AC / Ar kondisionadu"
+  },
+  {
+    "id": 378,
+    "category": "Eletróniku (전자제품)",
+    "korean": "선풍기",
+    "pronunciation": "Seon-pung-gi",
+    "tetum": "Ventoinha"
+  },
+  {
+    "id": 379,
+    "category": "Eletróniku (전자제품)",
+    "korean": "전기밥솥",
+    "pronunciation": "Jeon-gi-bap-sot",
+    "tetum": "Panel te'in etun elétriku"
+  },
+  {
+    "id": 380,
+    "category": "Eletróniku (전자제품)",
+    "korean": "전자레인지",
+    "pronunciation": "Jeon-ja-re-in-ji",
+    "tetum": "Mikro-ondas"
+  },
+  {
+    "id": 381,
+    "category": "Eletróniku (전자제품)",
+    "korean": "청소기",
+    "pronunciation": "Cheong-so-gi",
+    "tetum": "Aspiradór"
+  },
+  {
+    "id": 382,
+    "category": "Eletróniku (전자제품)",
+    "korean": "텔레비전",
+    "pronunciation": "Tel-le-bi-jeon",
+    "tetum": "Televizaun / TV"
+  },
+  {
+    "id": 383,
+    "category": "Eletróniku (전자제품)",
+    "korean": "컴퓨터",
+    "pronunciation": "Keom-pyu-teo",
+    "tetum": "Komputadór"
+  },
+  {
+    "id": 384,
+    "category": "Roupa (의류/잡화)",
+    "korean": "옷",
+    "pronunciation": "Ot",
+    "tetum": "Roupa"
+  },
+  {
+    "id": 385,
+    "category": "Roupa (의류/잡화)",
+    "korean": "티셔츠",
+    "pronunciation": "Ti-syeo-cheu",
+    "tetum": "Kamizola"
+  },
+  {
+    "id": 386,
+    "category": "Roupa (의류/잡화)",
+    "korean": "바지",
+    "pronunciation": "Ba-ji",
+    "tetum": "Kalsa"
+  },
+  {
+    "id": 387,
+    "category": "Roupa (의류/잡화)",
+    "korean": "점퍼",
+    "pronunciation": "Jeom-peo",
+    "tetum": "Jaketa"
+  },
+  {
+    "id": 388,
+    "category": "Roupa (의류/잡화)",
+    "korean": "속옷",
+    "pronunciation": "So-got",
+    "tetum": "Roupa laran"
+  },
+  {
+    "id": 389,
+    "category": "Roupa (의류/잡화)",
+    "korean": "양말",
+    "pronunciation": "Yang-mal",
+    "tetum": "Meias"
+  },
+  {
+    "id": 390,
+    "category": "Roupa (의류/잡화)",
+    "korean": "신발",
+    "pronunciation": "Sin-bal",
+    "tetum": "Sapatu"
+  },
+  {
+    "id": 391,
+    "category": "Roupa (의류/잡화)",
+    "korean": "운동화",
+    "pronunciation": "Un-dong-hwa",
+    "tetum": "Sapatu desportu"
+  },
+  {
+    "id": 392,
+    "category": "Roupa (의류/잡화)",
+    "korean": "슬리퍼",
+    "pronunciation": "Seul-li-peo",
+    "tetum": "Xinelus / Sandália"
+  },
+  {
+    "id": 393,
+    "category": "Roupa (의류/잡화)",
+    "korean": "장화",
+    "pronunciation": "Jang-hwa",
+    "tetum": "Bota"
+  },
+  {
+    "id": 394,
+    "category": "Roupa (의류/잡화)",
+    "korean": "모자",
+    "pronunciation": "Mo-ja",
+    "tetum": "Xapeu"
+  },
+  {
+    "id": 395,
+    "category": "Roupa (의류/잡화)",
+    "korean": "가방",
+    "pronunciation": "Ga-bang",
+    "tetum": "Pasta / Saku"
+  },
+  {
+    "id": 396,
+    "category": "Roupa (의류/잡화)",
+    "korean": "지갑",
+    "pronunciation": "Ji-gap",
+    "tetum": "Karteira"
+  },
+  {
+    "id": 397,
+    "category": "Roupa (의류/잡화)",
+    "korean": "안경",
+    "pronunciation": "An-gyeong",
+    "tetum": "Ókulu"
+  },
+  {
+    "id": 398,
+    "category": "Roupa (의류/잡화)",
+    "korean": "시계",
+    "pronunciation": "Si-gye",
+    "tetum": "Relójiu"
+  },
+  {
+    "id": 399,
+    "category": "Kór (색깔)",
+    "korean": "빨간색",
+    "pronunciation": "Ppal-gan-saek",
+    "tetum": "Mean"
+  },
+  {
+    "id": 400,
+    "category": "Kór (색깔)",
+    "korean": "파란색",
+    "pronunciation": "Pa-ran-saek",
+    "tetum": "Azúl"
+  },
+  {
+    "id": 401,
+    "category": "Kór (색깔)",
+    "korean": "노란색",
+    "pronunciation": "No-ran-saek",
+    "tetum": "Kinur"
+  },
+  {
+    "id": 402,
+    "category": "Kór (색깔)",
+    "korean": "초록색",
+    "pronunciation": "Cho-rok-saek",
+    "tetum": "Matak / Verde"
+  },
+  {
+    "id": 403,
+    "category": "Kór (색깔)",
+    "korean": "하얀색",
+    "pronunciation": "Ha-yan-saek",
+    "tetum": "Mutin"
+  },
+  {
+    "id": 404,
+    "category": "Kór (색깔)",
+    "korean": "까만색",
+    "pronunciation": "Kka-man-saek",
+    "tetum": "Metan"
+  },
+  {
+    "id": 405,
+    "category": "Kór (색깔)",
+    "korean": "회색",
+    "pronunciation": "Hoe-saek",
+    "tetum": "Sinzentu"
+  },
+  {
+    "id": 406,
+    "category": "Kór (색깔)",
+    "korean": "갈색",
+    "pronunciation": "Gal-saek",
+    "tetum": "Kastanyu / Kór-kafé"
+  },
+  {
+    "id": 407,
+    "category": "Forma (모양/상태)",
+    "korean": "동그라미",
+    "pronunciation": "Dong-geu-ra-mi",
+    "tetum": "Kabu'ar / Sirkulu"
+  },
+  {
+    "id": 408,
+    "category": "Forma (모양/상태)",
+    "korean": "네모",
+    "pronunciation": "Ne-mo",
+    "tetum": "Kuadradu"
+  },
+  {
+    "id": 409,
+    "category": "Forma (모양/상태)",
+    "korean": "세모",
+    "pronunciation": "Se-mo",
+    "tetum": "Triángulu"
+  },
+  {
+    "id": 410,
+    "category": "Forma (모양/상태)",
+    "korean": "길다",
+    "pronunciation": "Gil-da",
+    "tetum": "Naruk"
+  },
+  {
+    "id": 411,
+    "category": "Forma (모양/상태)",
+    "korean": "짧다",
+    "pronunciation": "Jjal-da",
+    "tetum": "Badak"
+  },
+  {
+    "id": 412,
+    "category": "Forma (모양/상태)",
+    "korean": "높다",
+    "pronunciation": "Nop-da",
+    "tetum": "Aas"
+  },
+  {
+    "id": 413,
+    "category": "Forma (모양/상태)",
+    "korean": "낮다",
+    "pronunciation": "Nat-da",
+    "tetum": "Badak / Kraik"
+  },
+  {
+    "id": 414,
+    "category": "Forma (모양/상태)",
+    "korean": "넓다",
+    "pronunciation": "Neol-da",
+    "tetum": "Luan"
+  },
+  {
+    "id": 415,
+    "category": "Forma (모양/상태)",
+    "korean": "좁다",
+    "pronunciation": "Jop-da",
+    "tetum": "Kloot"
+  },
+  {
+    "id": 416,
+    "category": "Forma (모양/상태)",
+    "korean": "두껍다",
+    "pronunciation": "Du-kkeop-da",
+    "tetum": "Mahar"
+  },
+  {
+    "id": 417,
+    "category": "Forma (모양/상태)",
+    "korean": "얇다",
+    "pronunciation": "Yal-da",
+    "tetum": "Mihis"
+  },
+  {
+    "id": 418,
+    "category": "Forma (모양/상태)",
+    "korean": "딱딱하다",
+    "pronunciation": "Ttak-ttak-ha-da",
+    "tetum": "Toos"
+  },
+  {
+    "id": 419,
+    "category": "Forma (모양/상태)",
+    "korean": "부드럽다",
+    "pronunciation": "Bu-deu-reop-da",
+    "tetum": "Mamar"
+  },
+  {
+    "id": 420,
+    "category": "Unidade (단위명사)",
+    "korean": "개",
+    "pronunciation": "Gae",
+    "tetum": "Fuan / Unidade"
+  },
+  {
+    "id": 421,
+    "category": "Unidade (단위명사)",
+    "korean": "명",
+    "pronunciation": "Myeong",
+    "tetum": "Na'in (ema)"
+  },
+  {
+    "id": 422,
+    "category": "Unidade (단위명사)",
+    "korean": "마리",
+    "pronunciation": "Ma-ri",
+    "tetum": "Hún (animál)"
+  },
+  {
+    "id": 423,
+    "category": "Unidade (단위명사)",
+    "korean": "병",
+    "pronunciation": "Byeong",
+    "tetum": "Botir"
+  },
+  {
+    "id": 424,
+    "category": "Unidade (단위명사)",
+    "korean": "잔",
+    "pronunciation": "Jan",
+    "tetum": "Kopu / Xíkra"
+  },
+  {
+    "id": 425,
+    "category": "Unidade (단위명사)",
+    "korean": "그릇",
+    "pronunciation": "Geu-reut",
+    "tetum": "Bikan"
+  },
+  {
+    "id": 426,
+    "category": "Unidade (단위명사)",
+    "korean": "장",
+    "pronunciation": "Jang",
+    "tetum": "Tahan (papel)"
+  },
+  {
+    "id": 427,
+    "category": "Unidade (단위명사)",
+    "korean": "권",
+    "pronunciation": "Gwon",
+    "tetum": "Livru (unidade)"
+  },
+  {
+    "id": 428,
+    "category": "Unidade (단위명사)",
+    "korean": "대",
+    "pronunciation": "Dae",
+    "tetum": "Unidade (mákina/karreta)"
+  },
+  {
+    "id": 429,
+    "category": "Unidade (단위명사)",
+    "korean": "벌",
+    "pronunciation": "Beol",
+    "tetum": "Pár (roupa)"
+  },
+  {
+    "id": 430,
+    "category": "Unidade (단위명사)",
+    "korean": "켤레",
+    "pronunciation": "Kyeol-le",
+    "tetum": "Pár (sapatu/meias)"
+  },
+  {
+    "id": 431,
+    "category": "Unidade (단위명사)",
+    "korean": "박스",
+    "pronunciation": "Bak-seu",
+    "tetum": "Kaixa"
+  },
+  {
+    "id": 432,
+    "category": "Unidade (단위명사)",
+    "korean": "봉지",
+    "pronunciation": "Bong-ji",
+    "tetum": "Saku plástiku"
+  },
+  {
+    "id": 433,
+    "category": "Unidade (단위명사)",
+    "korean": "포대",
+    "pronunciation": "Po-dae",
+    "tetum": "Saku boot"
+  },
+  {
+    "id": 434,
+    "category": "Advérbiu (부사)",
+    "korean": "빨리",
+    "pronunciation": "Ppal-li",
+    "tetum": "Lalais"
+  },
+  {
+    "id": 435,
+    "category": "Advérbiu (부사)",
+    "korean": "천천히",
+    "pronunciation": "Cheon-cheon-hi",
+    "tetum": "Neneik"
+  },
+  {
+    "id": 436,
+    "category": "Advérbiu (부사)",
+    "korean": "많이",
+    "pronunciation": "Ma-ni",
+    "tetum": "Barak"
+  },
+  {
+    "id": 437,
+    "category": "Advérbiu (부사)",
+    "korean": "조금",
+    "pronunciation": "Jo-geum",
+    "tetum": "Uitoan"
+  },
+  {
+    "id": 438,
+    "category": "Advérbiu (부사)",
+    "korean": "아주 / 매우",
+    "pronunciation": "A-ju / Mae-u",
+    "tetum": "Loos / Tebes"
+  },
+  {
+    "id": 439,
+    "category": "Advérbiu (부사)",
+    "korean": "항상 / 늘",
+    "pronunciation": "Hang-sang / Neul",
+    "tetum": "Sempre"
+  },
+  {
+    "id": 440,
+    "category": "Advérbiu (부사)",
+    "korean": "가끔",
+    "pronunciation": "Ga-kkeum",
+    "tetum": "Dalaruma"
+  },
+  {
+    "id": 441,
+    "category": "Advérbiu (부사)",
+    "korean": "아직",
+    "pronunciation": "A-jik",
+    "tetum": "Seidauk"
+  },
+  {
+    "id": 442,
+    "category": "Advérbiu (부사)",
+    "korean": "벌써 / 이미",
+    "pronunciation": "Beol-sseo / I-mi",
+    "tetum": "Ona"
+  },
+  {
+    "id": 443,
+    "category": "Advérbiu (부사)",
+    "korean": "다시",
+    "pronunciation": "Da-si",
+    "tetum": "Fali"
+  },
+  {
+    "id": 444,
+    "category": "Advérbiu (부사)",
+    "korean": "함께 / 같이",
+    "pronunciation": "Ham-kke / Ga-chi",
+    "tetum": "Hamutuk"
+  },
+  {
+    "id": 445,
+    "category": "Advérbiu (부사)",
+    "korean": "혼자",
+    "pronunciation": "Hon-ja",
+    "tetum": "Mesak"
+  },
+  {
+    "id": 446,
+    "category": "Advérbiu (부사)",
+    "korean": "직접",
+    "pronunciation": "Jik-jeop",
+    "tetum": "Diretamente"
+  },
+  {
+    "id": 447,
+    "category": "Advérbiu (부사)",
+    "korean": "미리",
+    "pronunciation": "Mi-ri",
+    "tetum": "Antes / Uluk"
+  },
+  {
+    "id": 448,
+    "category": "Advérbiu (부사)",
+    "korean": "꼭",
+    "pronunciation": "Kkok",
+    "tetum": "Tenke / Duni"
+  },
+  {
+    "id": 449,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "우체국",
+    "pronunciation": "U-che-guk",
+    "tetum": "Koreiu / Postu"
+  },
+  {
+    "id": 450,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "소포 / 택배",
+    "pronunciation": "So-po / Taek-bae",
+    "tetum": "Enkomenda / Pakote"
+  },
+  {
+    "id": 451,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "편지",
+    "pronunciation": "Pyeon-ji",
+    "tetum": "Karta"
+  },
+  {
+    "id": 452,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "우표",
+    "pronunciation": "U-pyo",
+    "tetum": "Selu koreiu"
+  },
+  {
+    "id": 453,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "봉투",
+    "pronunciation": "Bong-tu",
+    "tetum": "Envelope"
+  },
+  {
+    "id": 454,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "주소",
+    "pronunciation": "Ju-so",
+    "tetum": "Enderesu"
+  },
+  {
+    "id": 455,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "우편번호",
+    "pronunciation": "U-pyeon-beon-ho",
+    "tetum": "Kódigu postál"
+  },
+  {
+    "id": 456,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "보내다",
+    "pronunciation": "Bo-nae-da",
+    "tetum": "Haruka"
+  },
+  {
+    "id": 457,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "무게",
+    "pronunciation": "Mu-ge",
+    "tetum": "Todan / Pezu"
+  },
+  {
+    "id": 458,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "저울",
+    "pronunciation": "Jeo-ul",
+    "tetum": "Balansa"
+  },
+  {
+    "id": 459,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "주민센터",
+    "pronunciation": "Ju-min-sen-teo",
+    "tetum": "Sentru komunidade / Administrasaun lokál"
+  },
+  {
+    "id": 460,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "경찰서",
+    "pronunciation": "Gyeong-chal-seo",
+    "tetum": "Eskuadra polísia"
+  },
+  {
+    "id": 461,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "소방서",
+    "pronunciation": "So-bang-seo",
+    "tetum": "Bombeirus"
+  },
+  {
+    "id": 462,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "보건소",
+    "pronunciation": "Bo-geon-so",
+    "tetum": "Sentru saúde"
+  },
+  {
+    "id": 463,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "대사관",
+    "pronunciation": "Dae-sa-gwan",
+    "tetum": "Embaixada"
+  },
+  {
+    "id": 464,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "신청서",
+    "pronunciation": "Sin-cheong-seo",
+    "tetum": "Formuláriu pedidu"
+  },
+  {
+    "id": 465,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "서명 / 사인",
+    "pronunciation": "Seo-myeong / Sa-in",
+    "tetum": "Asinatura"
+  },
+  {
+    "id": 466,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "도장",
+    "pronunciation": "Do-jang",
+    "tetum": "Karimbu"
+  },
+  {
+    "id": 467,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "수수료",
+    "pronunciation": "Su-su-ryo",
+    "tetum": "Taxa servisu"
+  },
+  {
+    "id": 468,
+    "category": "Instituisaun (공공기관/우체국)",
+    "korean": "신분증",
+    "pronunciation": "Sin-bun-jeung",
+    "tetum": "Kartaun identidade"
+  },
+  {
+    "id": 469,
+    "category": "Komunikasaun (통신/인터넷)",
+    "korean": "인터넷",
+    "pronunciation": "In-teo-net",
+    "tetum": "Internét"
+  },
+  {
+    "id": 470,
+    "category": "Komunikasaun (통신/인터넷)",
+    "korean": "와이파이",
+    "pronunciation": "Wa-i-pa-i",
+    "tetum": "Wi-Fi"
+  },
+  {
+    "id": 471,
+    "category": "Komunikasaun (통신/인터넷)",
+    "korean": "비밀번호",
+    "pronunciation": "Bi-mil-beon-ho",
+    "tetum": "Password / Xave segredu"
+  },
+  {
+    "id": 472,
+    "category": "Komunikasaun (통신/인터넷)",
+    "korean": "문자 메시지",
+    "pronunciation": "Mun-ja me-si-ji",
+    "tetum": "Mensajen / SMS"
+  },
+  {
+    "id": 473,
+    "category": "Komunikasaun (통신/인터넷)",
+    "korean": "유심칩",
+    "pronunciation": "Yu-sim-chip",
+    "tetum": "Kartaun SIM"
+  },
+  {
+    "id": 474,
+    "category": "Komunikasaun (통신/인터넷)",
+    "korean": "요금",
+    "pronunciation": "Yo-geum",
+    "tetum": "Tarifa / Konta"
+  },
+  {
+    "id": 475,
+    "category": "Komunikasaun (통신/인터넷)",
+    "korean": "충전하다",
+    "pronunciation": "Chung-jeon-ha-da",
+    "tetum": "Karrega / Enxe pulsa"
+  },
+  {
+    "id": 476,
+    "category": "Komunikasaun (통신/인터넷)",
+    "korean": "검색하다",
+    "pronunciation": "Geom-saek-ha-da",
+    "tetum": "Buka / Pesquisa"
+  },
+  {
+    "id": 477,
+    "category": "Komunikasaun (통신/인터넷)",
+    "korean": "다운로드",
+    "pronunciation": "Da-un-ro-deu",
+    "tetum": "Download / Hatún"
+  },
+  {
+    "id": 478,
+    "category": "Komunikasaun (통신/인터넷)",
+    "korean": "화상 통화",
+    "pronunciation": "Hwa-sang tong-hwa",
+    "tetum": "Xamada vídeo"
+  },
+  {
+    "id": 479,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "인사하다",
+    "pronunciation": "In-sa-ha-da",
+    "tetum": "Kumprimenta"
+  },
+  {
+    "id": 480,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "예절",
+    "pronunciation": "Ye-jeol",
+    "tetum": "Etiketa / Kostume di'ak"
+  },
+  {
+    "id": 481,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "존댓말",
+    "pronunciation": "Jon-daet-mal",
+    "tetum": "Lian respeitu"
+  },
+  {
+    "id": 482,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "반말",
+    "pronunciation": "Ban-mal",
+    "tetum": "Lian familiár"
+  },
+  {
+    "id": 483,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "어른",
+    "pronunciation": "Eo-reun",
+    "tetum": "Ema boot / Katuas-ferik"
+  },
+  {
+    "id": 484,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "나이",
+    "pronunciation": "Na-i",
+    "tetum": "Idade / Tinan"
+  },
+  {
+    "id": 485,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "생일",
+    "pronunciation": "Saeng-il",
+    "tetum": "Loron moris / Aniversáriu"
+  },
+  {
+    "id": 486,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "선물",
+    "pronunciation": "Seon-mul",
+    "tetum": "Prezente"
+  },
+  {
+    "id": 487,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "초대하다",
+    "pronunciation": "Cho-dae-ha-da",
+    "tetum": "Konvida"
+  },
+  {
+    "id": 488,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "회식",
+    "pronunciation": "Hoe-sik",
+    "tetum": "Han hamutuk ho kolega servisu"
+  },
+  {
+    "id": 489,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "건배",
+    "pronunciation": "Geon-bae",
+    "tetum": "Saúde / Brindis"
+  },
+  {
+    "id": 490,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "명절",
+    "pronunciation": "Myeong-jeol",
+    "tetum": "Loron boot tradisionál"
+  },
+  {
+    "id": 491,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "설날",
+    "pronunciation": "Seol-lal",
+    "tetum": "Tinan Foun Koreia"
+  },
+  {
+    "id": 492,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "추석",
+    "pronunciation": "Chu-seok",
+    "tetum": "Festa kolleita Koreia"
+  },
+  {
+    "id": 493,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "한복",
+    "pronunciation": "Han-bok",
+    "tetum": "Roupa tradisionál Koreia"
+  },
+  {
+    "id": 494,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "노래방",
+    "pronunciation": "No-rae-bang",
+    "tetum": "Karaoke"
+  },
+  {
+    "id": 495,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "찜질방",
+    "pronunciation": "Jjim-jil-bang",
+    "tetum": "Sauna Koreia"
+  },
+  {
+    "id": 496,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "분리수거",
+    "pronunciation": "Bul-li-su-geo",
+    "tetum": "Haketak lixu"
+  },
+  {
+    "id": 497,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "종량제 봉투",
+    "pronunciation": "Jong-nyang-je bong-tu",
+    "tetum": "Saku lixu ofisiál"
+  },
+  {
+    "id": 498,
+    "category": "Kultura (한국 문화/예절)",
+    "korean": "규칙을 지키다",
+    "pronunciation": "Gyu-chi-geul ji-ki-da",
+    "tetum": "Kumpre regra"
+  },
+  {
+    "id": 499,
+    "category": "Ingredientes (식재료)",
+    "korean": "쌀",
+    "pronunciation": "Ssal",
+    "tetum": "Foos"
+  },
+  {
+    "id": 500,
+    "category": "Ingredientes (식재료)",
+    "korean": "밀가루",
+    "pronunciation": "Mil-ga-ru",
+    "tetum": "Trigu / Farinha"
+  },
+  {
+    "id": 501,
+    "category": "Ingredientes (식재료)",
+    "korean": "소고기",
+    "pronunciation": "So-go-gi",
+    "tetum": "Na'an karau"
+  },
+  {
+    "id": 502,
+    "category": "Ingredientes (식재료)",
+    "korean": "돼지고기",
+    "pronunciation": "Dwae-ji-go-gi",
+    "tetum": "Na'an fahi"
+  },
+  {
+    "id": 503,
+    "category": "Ingredientes (식재료)",
+    "korean": "닭고기",
+    "pronunciation": "Dak-go-gi",
+    "tetum": "Na'an manu"
+  },
+  {
+    "id": 504,
+    "category": "Ingredientes (식재료)",
+    "korean": "달걀 / 계란",
+    "pronunciation": "Dal-gyal / Gye-ran",
+    "tetum": "Manu-tolun"
+  },
+  {
+    "id": 505,
+    "category": "Ingredientes (식재료)",
+    "korean": "양파",
+    "pronunciation": "Yang-pa",
+    "tetum": "Lis-boot"
+  },
+  {
+    "id": 506,
+    "category": "Ingredientes (식재료)",
+    "korean": "마늘",
+    "pronunciation": "Ma-neul",
+    "tetum": "Lis-mutin"
+  },
+  {
+    "id": 507,
+    "category": "Ingredientes (식재료)",
+    "korean": "파",
+    "pronunciation": "Pa",
+    "tetum": "Lis-tahan"
+  },
+  {
+    "id": 508,
+    "category": "Ingredientes (식재료)",
+    "korean": "고추",
+    "pronunciation": "Go-chu",
+    "tetum": "Ai-manas"
+  },
+  {
+    "id": 509,
+    "category": "Ingredientes (식재료)",
+    "korean": "감자",
+    "pronunciation": "Gam-ja",
+    "tetum": "Batata"
+  },
+  {
+    "id": 510,
+    "category": "Ingredientes (식재료)",
+    "korean": "당근",
+    "pronunciation": "Dang-geun",
+    "tetum": "Senoura"
+  },
+  {
+    "id": 511,
+    "category": "Ingredientes (식재료)",
+    "korean": "배추",
+    "pronunciation": "Bae-chu",
+    "tetum": "Kove xina"
+  },
+  {
+    "id": 512,
+    "category": "Ingredientes (식재료)",
+    "korean": "무",
+    "pronunciation": "Mu",
+    "tetum": "Rabanete mutin"
+  },
+  {
+    "id": 513,
+    "category": "Ingredientes (식재료)",
+    "korean": "오이",
+    "pronunciation": "O-i",
+    "tetum": "Pipinu"
+  },
+  {
+    "id": 514,
+    "category": "Ingredientes (식재료)",
+    "korean": "토마토",
+    "pronunciation": "To-ma-to",
+    "tetum": "Tomate"
+  },
+  {
+    "id": 515,
+    "category": "Ingredientes (식재료)",
+    "korean": "사과",
+    "pronunciation": "Sa-gwa",
+    "tetum": "Masán"
+  },
+  {
+    "id": 516,
+    "category": "Ingredientes (식재료)",
+    "korean": "바나나",
+    "pronunciation": "Ba-na-na",
+    "tetum": "Hudi"
+  },
+  {
+    "id": 517,
+    "category": "Ingredientes (식재료)",
+    "korean": "오렌지",
+    "pronunciation": "O-ren-ji",
+    "tetum": "Sabraka"
+  },
+  {
+    "id": 518,
+    "category": "Ingredientes (식재료)",
+    "korean": "수박",
+    "pronunciation": "Su-bak",
+    "tetum": "Pateka"
+  },
+  {
+    "id": 519,
+    "category": "Temperu (양념/조미료)",
+    "korean": "소금",
+    "pronunciation": "So-geum",
+    "tetum": "Masin"
+  },
+  {
+    "id": 520,
+    "category": "Temperu (양념/조미료)",
+    "korean": "설탕",
+    "pronunciation": "Seol-tang",
+    "tetum": "Masin-midar"
+  },
+  {
+    "id": 521,
+    "category": "Temperu (양념/조미료)",
+    "korean": "간장",
+    "pronunciation": "Gan-jang",
+    "tetum": "Mollo soja"
+  },
+  {
+    "id": 522,
+    "category": "Temperu (양념/조미료)",
+    "korean": "고추장",
+    "pronunciation": "Go-chu-jang",
+    "tetum": "Pasta ai-manas"
+  },
+  {
+    "id": 523,
+    "category": "Temperu (양념/조미료)",
+    "korean": "된장",
+    "pronunciation": "Doen-jang",
+    "tetum": "Pasta koto fermentadu"
+  },
+  {
+    "id": 524,
+    "category": "Temperu (양념/조미료)",
+    "korean": "식용유",
+    "pronunciation": "Si-gyong-yu",
+    "tetum": "Mina te'in"
+  },
+  {
+    "id": 525,
+    "category": "Temperu (양념/조미료)",
+    "korean": "참기름",
+    "pronunciation": "Cham-gi-reum",
+    "tetum": "Mina sézamu"
+  },
+  {
+    "id": 526,
+    "category": "Temperu (양념/조미료)",
+    "korean": "후추",
+    "pronunciation": "Hu-chu",
+    "tetum": "Pimenta"
+  },
+  {
+    "id": 527,
+    "category": "Temperu (양념/조미료)",
+    "korean": "식초",
+    "pronunciation": "Sik-cho",
+    "tetum": "Vinagre"
+  },
+  {
+    "id": 528,
+    "category": "Temperu (양념/조미료)",
+    "korean": "라면",
+    "pronunciation": "Ra-myeon",
+    "tetum": "Mee / Supermie"
+  },
+  {
+    "id": 529,
+    "category": "Te'in (조리법/맛)",
+    "korean": "끓이다",
+    "pronunciation": "Kkeu-ri-da",
+    "tetum": "Ferve"
+  },
+  {
+    "id": 530,
+    "category": "Te'in (조리법/맛)",
+    "korean": "삶다",
+    "pronunciation": "Sam-da",
+    "tetum": "Da'an (iha bee)"
+  },
+  {
+    "id": 531,
+    "category": "Te'in (조리법/맛)",
+    "korean": "굽다",
+    "pronunciation": "Gup-da",
+    "tetum": "Tunu"
+  },
+  {
+    "id": 532,
+    "category": "Te'in (조리법/맛)",
+    "korean": "볶다",
+    "pronunciation": "Bok-da",
+    "tetum": "Frite ho mina uitoan"
+  },
+  {
+    "id": 533,
+    "category": "Te'in (조리법/맛)",
+    "korean": "튀기다",
+    "pronunciation": "Twi-gi-da",
+    "tetum": "Frite ho mina barak"
+  },
+  {
+    "id": 534,
+    "category": "Te'in (조리법/맛)",
+    "korean": "썰다",
+    "pronunciation": "Sseol-da",
+    "tetum": "Koa / Tesi"
+  },
+  {
+    "id": 535,
+    "category": "Te'in (조리법/맛)",
+    "korean": "섞다",
+    "pronunciation": "Seok-da",
+    "tetum": "Kahur"
+  },
+  {
+    "id": 536,
+    "category": "Te'in (조리법/맛)",
+    "korean": "맛있다",
+    "pronunciation": "Ma-sit-da",
+    "tetum": "Midar / Gostu"
+  },
+  {
+    "id": 537,
+    "category": "Te'in (조리법/맛)",
+    "korean": "맛없다",
+    "pronunciation": "Ma-deop-da",
+    "tetum": "La gostu"
+  },
+  {
+    "id": 538,
+    "category": "Te'in (조리법/맛)",
+    "korean": "맵다",
+    "pronunciation": "Maep-da",
+    "tetum": "Manas (ai-manas)"
+  },
+  {
+    "id": 539,
+    "category": "Te'in (조리법/맛)",
+    "korean": "달다",
+    "pronunciation": "Dal-da",
+    "tetum": "Midar"
+  },
+  {
+    "id": 540,
+    "category": "Te'in (조리법/맛)",
+    "korean": "짜다",
+    "pronunciation": "Jja-da",
+    "tetum": "Meek / Masin liu"
+  },
+  {
+    "id": 541,
+    "category": "Te'in (조리법/맛)",
+    "korean": "싱겁다",
+    "pronunciation": "Sing-geop-da",
+    "tetum": "La iha masin / Miis"
+  },
+  {
+    "id": 542,
+    "category": "Te'in (조리법/맛)",
+    "korean": "시다",
+    "pronunciation": "Si-da",
+    "tetum": "Siin"
+  },
+  {
+    "id": 543,
+    "category": "Te'in (조리법/맛)",
+    "korean": "쓰다 (맛)",
+    "pronunciation": "Sseu-da",
+    "tetum": "Moruk"
+  },
+  {
+    "id": 544,
+    "category": "Te'in (조리법/맛)",
+    "korean": "냄비",
+    "pronunciation": "Naem-bi",
+    "tetum": "Panel"
+  },
+  {
+    "id": 545,
+    "category": "Te'in (조리법/맛)",
+    "korean": "프라이팬",
+    "pronunciation": "Peu-ra-i-paen",
+    "tetum": "Taxu / Sertán"
+  },
+  {
+    "id": 546,
+    "category": "Te'in (조리법/맛)",
+    "korean": "도마",
+    "pronunciation": "Do-ma",
+    "tetum": "Ai-kabelak koa modo"
+  },
+  {
+    "id": 547,
+    "category": "Te'in (조리법/맛)",
+    "korean": "접시",
+    "pronunciation": "Jeop-si",
+    "tetum": "Bikan belar"
+  },
+  {
+    "id": 548,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "선생님",
+    "pronunciation": "Seon-saeng-nim",
+    "tetum": "Mestre / Profesór"
+  },
+  {
+    "id": 549,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "학생",
+    "pronunciation": "Hak-saeng",
+    "tetum": "Estudante"
+  },
+  {
+    "id": 550,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "근로자",
+    "pronunciation": "Geul-lo-ja",
+    "tetum": "Traballadór"
+  },
+  {
+    "id": 551,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "기술자",
+    "pronunciation": "Gi-sul-ja",
+    "tetum": "Tékniku"
+  },
+  {
+    "id": 552,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "운전기사",
+    "pronunciation": "Un-jeon-gi-sa",
+    "tetum": "Kondutór / Xofér"
+  },
+  {
+    "id": 553,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "요리사",
+    "pronunciation": "Yo-ri-sa",
+    "tetum": "Koziñeiru"
+  },
+  {
+    "id": 554,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "농부",
+    "pronunciation": "Nong-bu",
+    "tetum": "Agrikultór"
+  },
+  {
+    "id": 555,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "어부",
+    "pronunciation": "Eo-bu",
+    "tetum": "Peskadór"
+  },
+  {
+    "id": 556,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "목수",
+    "pronunciation": "Mok-su",
+    "tetum": "Karpinteiru"
+  },
+  {
+    "id": 557,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "용접공",
+    "pronunciation": "Yong-jeop-gong",
+    "tetum": "Soldadór"
+  },
+  {
+    "id": 558,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "경찰관",
+    "pronunciation": "Gyeong-chal-gwan",
+    "tetum": "Polísia"
+  },
+  {
+    "id": 559,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "소방관",
+    "pronunciation": "So-bang-gwan",
+    "tetum": "Bombeiru"
+  },
+  {
+    "id": 560,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "약사",
+    "pronunciation": "Yak-sa",
+    "tetum": "Farmaséutiku"
+  },
+  {
+    "id": 561,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "통역사",
+    "pronunciation": "Tong-yeok-sa",
+    "tetum": "Intérprete / Tradutór"
+  },
+  {
+    "id": 562,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "회사원",
+    "pronunciation": "Hoe-sa-won",
+    "tetum": "Funsionáriu kompañia"
+  },
+  {
+    "id": 563,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "공무원",
+    "pronunciation": "Gong-mu-won",
+    "tetum": "Funsionáriu públiku"
+  },
+  {
+    "id": 564,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "점원",
+    "pronunciation": "Jeom-won",
+    "tetum": "Atendente loja"
+  },
+  {
+    "id": 565,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "미용사",
+    "pronunciation": "Mi-yong-sa",
+    "tetum": "Kabeleireiru"
+  },
+  {
+    "id": 566,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "가수",
+    "pronunciation": "Ga-su",
+    "tetum": "Kantór / Kantora"
+  },
+  {
+    "id": 567,
+    "category": "Profisaun (직업/전문직)",
+    "korean": "운동선수",
+    "pronunciation": "Un-dong-seon-su",
+    "tetum": "Atleta"
+  },
+  {
+    "id": 568,
+    "category": "Hobbi (취미/여가)",
+    "korean": "취미",
+    "pronunciation": "Chwi-mi",
+    "tetum": "Hobbi / Gostu"
+  },
+  {
+    "id": 569,
+    "category": "Hobbi (취미/여가)",
+    "korean": "운동",
+    "pronunciation": "Un-dong",
+    "tetum": "Desportu / Ezersísiu"
+  },
+  {
+    "id": 570,
+    "category": "Hobbi (취미/여가)",
+    "korean": "축구",
+    "pronunciation": "Chuk-gu",
+    "tetum": "Futeból"
+  },
+  {
+    "id": 571,
+    "category": "Hobbi (취미/여가)",
+    "korean": "농구",
+    "pronunciation": "Nong-gu",
+    "tetum": "Baskete"
+  },
+  {
+    "id": 572,
+    "category": "Hobbi (취미/여가)",
+    "korean": "배구",
+    "pronunciation": "Bae-gu",
+    "tetum": "Voleiból"
+  },
+  {
+    "id": 573,
+    "category": "Hobbi (취미/여가)",
+    "korean": "야구",
+    "pronunciation": "Ya-gu",
+    "tetum": "Beizeból"
+  },
+  {
+    "id": 574,
+    "category": "Hobbi (취미/여가)",
+    "korean": "탁구",
+    "pronunciation": "Tak-gu",
+    "tetum": "Ténis meza"
+  },
+  {
+    "id": 575,
+    "category": "Hobbi (취미/여가)",
+    "korean": "수영",
+    "pronunciation": "Su-yeong",
+    "tetum": "Natasaun / Nani"
+  },
+  {
+    "id": 576,
+    "category": "Hobbi (취미/여가)",
+    "korean": "등산",
+    "pronunciation": "Deung-san",
+    "tetum": "Sa'e foho"
+  },
+  {
+    "id": 577,
+    "category": "Hobbi (취미/여가)",
+    "korean": "낚시",
+    "pronunciation": "Nak-ssi",
+    "tetum": "Peska / Kail ikan"
+  },
+  {
+    "id": 578,
+    "category": "Hobbi (취미/여가)",
+    "korean": "독서",
+    "pronunciation": "Dok-seo",
+    "tetum": "Lee livru"
+  },
+  {
+    "id": 579,
+    "category": "Hobbi (취미/여가)",
+    "korean": "영화",
+    "pronunciation": "Yeong-hwa",
+    "tetum": "Filme"
+  },
+  {
+    "id": 580,
+    "category": "Hobbi (취미/여가)",
+    "korean": "음악",
+    "pronunciation": "Eu-mak",
+    "tetum": "Múzika"
+  },
+  {
+    "id": 581,
+    "category": "Hobbi (취미/여가)",
+    "korean": "노래하다",
+    "pronunciation": "No-rae-ha-da",
+    "tetum": "Kanta"
+  },
+  {
+    "id": 582,
+    "category": "Hobbi (취미/여가)",
+    "korean": "춤추다",
+    "pronunciation": "Chum-chu-da",
+    "tetum": "Dansa"
+  },
+  {
+    "id": 583,
+    "category": "Hobbi (취미/여가)",
+    "korean": "사진을 찍다",
+    "pronunciation": "Sa-ji-neul jjik-da",
+    "tetum": "Hasai foto"
+  },
+  {
+    "id": 584,
+    "category": "Hobbi (취미/여가)",
+    "korean": "그림을 그리다",
+    "pronunciation": "Geu-ri-meul geu-ri-da",
+    "tetum": "Dezeña / Pinta"
+  },
+  {
+    "id": 585,
+    "category": "Hobbi (취미/여가)",
+    "korean": "자전거를 타다",
+    "pronunciation": "Ja-jeon-geo-reul ta-da",
+    "tetum": "Sa'e bisikleta"
+  },
+  {
+    "id": 586,
+    "category": "Hobbi (취미/여가)",
+    "korean": "산책하다",
+    "pronunciation": "San-chaek-ha-da",
+    "tetum": "Pasiar / La'o halimar"
+  },
+  {
+    "id": 587,
+    "category": "Hobbi (취미/여가)",
+    "korean": "게임하다",
+    "pronunciation": "Ge-im-ha-da",
+    "tetum": "Joga game"
+  },
+  {
+    "id": 588,
+    "category": "Viajen (여행/관광지)",
+    "korean": "여행",
+    "pronunciation": "Yeo-haeng",
+    "tetum": "Viajen"
+  },
+  {
+    "id": 589,
+    "category": "Viajen (여행/관광지)",
+    "korean": "관광지",
+    "pronunciation": "Gwan-gwang-ji",
+    "tetum": "Fatin turizmu"
+  },
+  {
+    "id": 590,
+    "category": "Viajen (여행/관광지)",
+    "korean": "공항",
+    "pronunciation": "Gong-hang",
+    "tetum": "Aeroportu"
+  },
+  {
+    "id": 591,
+    "category": "Viajen (여행/관광지)",
+    "korean": "비행기",
+    "pronunciation": "Bi-haeng-gi",
+    "tetum": "Aviaun"
+  },
+  {
+    "id": 592,
+    "category": "Viajen (여행/관광지)",
+    "korean": "기차",
+    "pronunciation": "Gi-cha",
+    "tetum": "Komboiu"
+  },
+  {
+    "id": 593,
+    "category": "Viajen (여행/관광지)",
+    "korean": "기차역",
+    "pronunciation": "Gi-cha-yeok",
+    "tetum": "Estasaun komboiu"
+  },
+  {
+    "id": 594,
+    "category": "Viajen (여행/관광지)",
+    "korean": "터미널",
+    "pronunciation": "Teo-mi-neol",
+    "tetum": "Terminál autokarru"
+  },
+  {
+    "id": 595,
+    "category": "Viajen (여행/관광지)",
+    "korean": "호텔",
+    "pronunciation": "Ho-tel",
+    "tetum": "Otél"
+  },
+  {
+    "id": 596,
+    "category": "Viajen (여행/관광지)",
+    "korean": "예약하다",
+    "pronunciation": "Ye-yak-ha-da",
+    "tetum": "Rezerva"
+  },
+  {
+    "id": 597,
+    "category": "Viajen (여행/관광지)",
+    "korean": "짐",
+    "pronunciation": "Jim",
+    "tetum": "Bagajen / Sasán"
+  },
+  {
+    "id": 598,
+    "category": "Viajen (여행/관광지)",
+    "korean": "지도",
+    "pronunciation": "Ji-do",
+    "tetum": "Mapa"
+  },
+  {
+    "id": 599,
+    "category": "Viajen (여행/관광지)",
+    "korean": "안내소",
+    "pronunciation": "An-nae-so",
+    "tetum": "Sentru informasaun"
+  },
+  {
+    "id": 600,
+    "category": "Viajen (여행/관광지)",
+    "korean": "입장권",
+    "pronunciation": "Ip-jang-gwon",
+    "tetum": "Billete tama"
+  },
+  {
+    "id": 601,
+    "category": "Viajen (여행/관광지)",
+    "korean": "박물관",
+    "pronunciation": "Bak-mul-gwan",
+    "tetum": "Muzeu"
+  },
+  {
+    "id": 602,
+    "category": "Viajen (여행/관광지)",
+    "korean": "공원",
+    "pronunciation": "Gong-won",
+    "tetum": "Parke"
+  },
+  {
+    "id": 603,
+    "category": "Viajen (여행/관광지)",
+    "korean": "놀이공원",
+    "pronunciation": "No-ri-gong-won",
+    "tetum": "Parke divertimentu"
+  },
+  {
+    "id": 604,
+    "category": "Viajen (여행/관광지)",
+    "korean": "해수욕장",
+    "pronunciation": "Hae-su-yok-jang",
+    "tetum": "Tasi-ibun hariis"
+  },
+  {
+    "id": 605,
+    "category": "Viajen (여행/관광지)",
+    "korean": "온천",
+    "pronunciation": "On-cheon",
+    "tetum": "Bee-manas naturál"
+  },
+  {
+    "id": 606,
+    "category": "Viajen (여행/관광지)",
+    "korean": "유적지",
+    "pronunciation": "Yu-jeok-ji",
+    "tetum": "Sítio istóriku"
+  },
+  {
+    "id": 607,
+    "category": "Viajen (여행/관광지)",
+    "korean": "기념품",
+    "pronunciation": "Gi-nyeom-pum",
+    "tetum": "Lemransa / Souvenir"
+  },
+  {
+    "id": 608,
+    "category": "Natureza (자연)",
+    "korean": "산",
+    "pronunciation": "San",
+    "tetum": "Foho"
+  },
+  {
+    "id": 609,
+    "category": "Natureza (자연)",
+    "korean": "바다",
+    "pronunciation": "Ba-da",
+    "tetum": "Tasi"
+  },
+  {
+    "id": 610,
+    "category": "Natureza (자연)",
+    "korean": "강",
+    "pronunciation": "Gang",
+    "tetum": "Mota"
+  },
+  {
+    "id": 611,
+    "category": "Natureza (자연)",
+    "korean": "호수",
+    "pronunciation": "Ho-su",
+    "tetum": "Lagoa / Bee-lihun"
+  },
+  {
+    "id": 612,
+    "category": "Natureza (자연)",
+    "korean": "섬",
+    "pronunciation": "Seom",
+    "tetum": "Illa"
+  },
+  {
+    "id": 613,
+    "category": "Natureza (자연)",
+    "korean": "숲",
+    "pronunciation": "Sup",
+    "tetum": "Ai-laran"
+  },
+  {
+    "id": 614,
+    "category": "Natureza (자연)",
+    "korean": "나무",
+    "pronunciation": "Na-mu",
+    "tetum": "Ai-hun"
+  },
+  {
+    "id": 615,
+    "category": "Natureza (자연)",
+    "korean": "꽃",
+    "pronunciation": "Kkot",
+    "tetum": "Ai-funan"
+  },
+  {
+    "id": 616,
+    "category": "Natureza (자연)",
+    "korean": "풀",
+    "pronunciation": "Pul",
+    "tetum": "Du'ut"
+  },
+  {
+    "id": 617,
+    "category": "Natureza (자연)",
+    "korean": "하늘",
+    "pronunciation": "Ha-neul",
+    "tetum": "Lalehan"
+  },
+  {
+    "id": 618,
+    "category": "Natureza (자연)",
+    "korean": "땅",
+    "pronunciation": "Ttang",
+    "tetum": "Rai"
+  },
+  {
+    "id": 619,
+    "category": "Natureza (자연)",
+    "korean": "돌",
+    "pronunciation": "Dol",
+    "tetum": "Fatuk"
+  },
+  {
+    "id": 620,
+    "category": "Natureza (자연)",
+    "korean": "모래",
+    "pronunciation": "Mo-rae",
+    "tetum": "Rai-henek"
+  },
+  {
+    "id": 621,
+    "category": "Natureza (자연)",
+    "korean": "불",
+    "pronunciation": "Bul",
+    "tetum": "Ahi"
+  },
+  {
+    "id": 622,
+    "category": "Natureza (자연)",
+    "korean": "공기",
+    "pronunciation": "Gong-gi",
+    "tetum": "Anin / Ar"
+  },
+  {
+    "id": 623,
+    "category": "Natureza (자연)",
+    "korean": "해 / 태양",
+    "pronunciation": "Hae / Tae-yang",
+    "tetum": "Loro"
+  },
+  {
+    "id": 624,
+    "category": "Natureza (자연)",
+    "korean": "달",
+    "pronunciation": "Dal",
+    "tetum": "Fulan"
+  },
+  {
+    "id": 625,
+    "category": "Natureza (자연)",
+    "korean": "별",
+    "pronunciation": "Byeol",
+    "tetum": "Fitun"
+  },
+  {
+    "id": 626,
+    "category": "Natureza (자연)",
+    "korean": "무지개",
+    "pronunciation": "Mu-ji-gae",
+    "tetum": "Baur"
+  },
+  {
+    "id": 627,
+    "category": "Natureza (자연)",
+    "korean": "환경",
+    "pronunciation": "Hwan-gyeong",
+    "tetum": "Meiu-ambiente"
+  },
+  {
+    "id": 628,
+    "category": "Animál (동물)",
+    "korean": "동물",
+    "pronunciation": "Dong-mul",
+    "tetum": "Animál"
+  },
+  {
+    "id": 629,
+    "category": "Animál (동물)",
+    "korean": "개 / 강아지",
+    "pronunciation": "Gae / Gang-a-ji",
+    "tetum": "Asu"
+  },
+  {
+    "id": 630,
+    "category": "Animál (동물)",
+    "korean": "고양이",
+    "pronunciation": "Go-yang-i",
+    "tetum": "Busa"
+  },
+  {
+    "id": 631,
+    "category": "Animál (동물)",
+    "korean": "새",
+    "pronunciation": "Sae",
+    "tetum": "Manu-fuik"
+  },
+  {
+    "id": 632,
+    "category": "Animál (동물)",
+    "korean": "물고기",
+    "pronunciation": "Mul-go-gi",
+    "tetum": "Ikan"
+  },
+  {
+    "id": 633,
+    "category": "Animál (동물)",
+    "korean": "말",
+    "pronunciation": "Mal",
+    "tetum": "Kuda"
+  },
+  {
+    "id": 634,
+    "category": "Animál (동물)",
+    "korean": "양",
+    "pronunciation": "Yang",
+    "tetum": "Bibi-malae"
+  },
+  {
+    "id": 635,
+    "category": "Animál (동물)",
+    "korean": "염소",
+    "pronunciation": "Yeom-so",
+    "tetum": "Bibi"
+  },
+  {
+    "id": 636,
+    "category": "Animál (동물)",
+    "korean": "오리",
+    "pronunciation": "O-ri",
+    "tetum": "Bebe"
+  },
+  {
+    "id": 637,
+    "category": "Animál (동물)",
+    "korean": "토끼",
+    "pronunciation": "To-kki",
+    "tetum": "Koellu"
+  },
+  {
+    "id": 638,
+    "category": "Animál (동물)",
+    "korean": "쥐",
+    "pronunciation": "Jwi",
+    "tetum": "Laho"
+  },
+  {
+    "id": 639,
+    "category": "Animál (동물)",
+    "korean": "호랑이",
+    "pronunciation": "Ho-rang-i",
+    "tetum": "Tigri"
+  },
+  {
+    "id": 640,
+    "category": "Animál (동물)",
+    "korean": "사자",
+    "pronunciation": "Sa-ja",
+    "tetum": "Leaun"
+  },
+  {
+    "id": 641,
+    "category": "Animál (동물)",
+    "korean": "곰",
+    "pronunciation": "Gom",
+    "tetum": "Ursu"
+  },
+  {
+    "id": 642,
+    "category": "Animál (동물)",
+    "korean": "원숭이",
+    "pronunciation": "Won-sung-i",
+    "tetum": "Lekirauk"
+  },
+  {
+    "id": 643,
+    "category": "Animál (동물)",
+    "korean": "코끼리",
+    "pronunciation": "Ko-kki-ri",
+    "tetum": "Elefante"
+  },
+  {
+    "id": 644,
+    "category": "Animál (동물)",
+    "korean": "뱀",
+    "pronunciation": "Baem",
+    "tetum": "Samea"
+  },
+  {
+    "id": 645,
+    "category": "Animál (동물)",
+    "korean": "악어",
+    "pronunciation": "A-geo",
+    "tetum": "Lafaek"
+  },
+  {
+    "id": 646,
+    "category": "Animál (동물)",
+    "korean": "모기",
+    "pronunciation": "Mo-gi",
+    "tetum": "Susuk"
+  },
+  {
+    "id": 647,
+    "category": "Animál (동물)",
+    "korean": "개미",
+    "pronunciation": "Gae-mi",
+    "tetum": "Nehek"
+  },
+  {
+    "id": 648,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "학교",
+    "pronunciation": "Hak-gyo",
+    "tetum": "Eskola"
+  },
+  {
+    "id": 649,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "대학교",
+    "pronunciation": "Dae-hak-gyo",
+    "tetum": "Universidade"
+  },
+  {
+    "id": 650,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "교실",
+    "pronunciation": "Gyo-sil",
+    "tetum": "Sala aula"
+  },
+  {
+    "id": 651,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "수업",
+    "pronunciation": "Su-eop",
+    "tetum": "Aula / Lisaun"
+  },
+  {
+    "id": 652,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "시험",
+    "pronunciation": "Si-heom",
+    "tetum": "Ezame / Teste"
+  },
+  {
+    "id": 653,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "합격하다",
+    "pronunciation": "Hap-gyeok-ha-da",
+    "tetum": "Passa ezame"
+  },
+  {
+    "id": 654,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "불합격하다",
+    "pronunciation": "Bul-hap-gyeok-ha-da",
+    "tetum": "La passa ezame / Xumba"
+  },
+  {
+    "id": 655,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "숙제",
+    "pronunciation": "Suk-je",
+    "tetum": "TPC / Traballu uma"
+  },
+  {
+    "id": 656,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "책",
+    "pronunciation": "Chaek",
+    "tetum": "Livru"
+  },
+  {
+    "id": 657,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "공책",
+    "pronunciation": "Gong-chaek",
+    "tetum": "Kadernu"
+  },
+  {
+    "id": 658,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "사전",
+    "pronunciation": "Sa-jeon",
+    "tetum": "Disionáriu"
+  },
+  {
+    "id": 659,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "연필",
+    "pronunciation": "Yeon-pil",
+    "tetum": "Lápis"
+  },
+  {
+    "id": 660,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "볼펜",
+    "pronunciation": "Bol-pen",
+    "tetum": "Lapizeira"
+  },
+  {
+    "id": 661,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "지우개",
+    "pronunciation": "Ji-u-gae",
+    "tetum": "Borracha"
+  },
+  {
+    "id": 662,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "칠판",
+    "pronunciation": "Chil-pan",
+    "tetum": "Kuadru hakerek"
+  },
+  {
+    "id": 663,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "질문",
+    "pronunciation": "Jil-mun",
+    "tetum": "Pergunta"
+  },
+  {
+    "id": 664,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "대답",
+    "pronunciation": "Dae-dap",
+    "tetum": "Resposta"
+  },
+  {
+    "id": 665,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "뜻 / 의미",
+    "pronunciation": "Tteut / Ui-mi",
+    "tetum": "Signifikadu"
+  },
+  {
+    "id": 666,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "발음",
+    "pronunciation": "Ba-reum",
+    "tetum": "Pronúnsia"
+  },
+  {
+    "id": 667,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "문법",
+    "pronunciation": "Mun-beop",
+    "tetum": "Gramátika"
+  },
+  {
+    "id": 668,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "단어",
+    "pronunciation": "Da-neo",
+    "tetum": "Palavra / Liafuan"
+  },
+  {
+    "id": 669,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "문장",
+    "pronunciation": "Mun-jang",
+    "tetum": "Fraze"
+  },
+  {
+    "id": 670,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "교육",
+    "pronunciation": "Gyo-yuk",
+    "tetum": "Edukasaun / Formasaun"
+  },
+  {
+    "id": 671,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "훈련",
+    "pronunciation": "Hul-lyeon",
+    "tetum": "Treinamentu"
+  },
+  {
+    "id": 672,
+    "category": "Edukasaun (교육/학교)",
+    "korean": "수료증",
+    "pronunciation": "Su-ryo-jeung",
+    "tetum": "Sertifikadu remata kursu"
+  },
+  {
+    "id": 673,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "종교",
+    "pronunciation": "Jong-gyo",
+    "tetum": "Relijiaun"
+  },
+  {
+    "id": 674,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "천주교",
+    "pronunciation": "Cheon-ju-gyo",
+    "tetum": "Katóliku"
+  },
+  {
+    "id": 675,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "개신교 / 기독교",
+    "pronunciation": "Gae-sin-gyo / Gi-dok-gyo",
+    "tetum": "Protestante / Kristaun"
+  },
+  {
+    "id": 676,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "불교",
+    "pronunciation": "Bul-gyo",
+    "tetum": "Budizmu"
+  },
+  {
+    "id": 677,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "이슬람교",
+    "pronunciation": "I-seul-lam-gyo",
+    "tetum": "Izlaun"
+  },
+  {
+    "id": 678,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "성당",
+    "pronunciation": "Seong-dang",
+    "tetum": "Igreja Katóliku"
+  },
+  {
+    "id": 679,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "교회",
+    "pronunciation": "Gyo-hoe",
+    "tetum": "Igreja Protestante"
+  },
+  {
+    "id": 680,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "절",
+    "pronunciation": "Jeol",
+    "tetum": "Templu Budista"
+  },
+  {
+    "id": 681,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "신부님",
+    "pronunciation": "Sin-bu-nim",
+    "tetum": "Amu-lulik / Padre"
+  },
+  {
+    "id": 682,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "수녀님",
+    "pronunciation": "Su-nyeo-nim",
+    "tetum": "Madre"
+  },
+  {
+    "id": 683,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "목사님",
+    "pronunciation": "Mok-sa-nim",
+    "tetum": "Pastór"
+  },
+  {
+    "id": 684,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "미사",
+    "pronunciation": "Mi-sa",
+    "tetum": "Misa"
+  },
+  {
+    "id": 685,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "예배",
+    "pronunciation": "Ye-bae",
+    "tetum": "Kultu"
+  },
+  {
+    "id": 686,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "기도하다",
+    "pronunciation": "Gi-do-ha-da",
+    "tetum": "Reza / Halo orasaun"
+  },
+  {
+    "id": 687,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "성경",
+    "pronunciation": "Seong-gyeong",
+    "tetum": "Bíblia"
+  },
+  {
+    "id": 688,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "크리스마스 / 성탄절",
+    "pronunciation": "Keu-ri-seu-ma-seu / Seong-tan-jeol",
+    "tetum": "Natál"
+  },
+  {
+    "id": 689,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "부활절",
+    "pronunciation": "Bu-hwal-jeol",
+    "tetum": "Páskua"
+  },
+  {
+    "id": 690,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "결혼식",
+    "pronunciation": "Gyeol-hon-sik",
+    "tetum": "Festa kazamentu"
+  },
+  {
+    "id": 691,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "장례식",
+    "pronunciation": "Jang-nye-sik",
+    "tetum": "Funerál"
+  },
+  {
+    "id": 692,
+    "category": "Relijiaun (종교/행사)",
+    "korean": "축하하다",
+    "pronunciation": "Chuk-ha-ha-da",
+    "tetum": "Parabéns / Kongratula"
+  },
+  {
+    "id": 693,
+    "category": "Finansa (금융/경제)",
+    "korean": "계좌",
+    "pronunciation": "Gye-jwa",
+    "tetum": "Konta bankária"
+  },
+  {
+    "id": 694,
+    "category": "Finansa (금융/경제)",
+    "korean": "계좌번호",
+    "pronunciation": "Gye-jwa-beon-ho",
+    "tetum": "Númeru konta banku"
+  },
+  {
+    "id": 695,
+    "category": "Finansa (금융/경제)",
+    "korean": "입금하다",
+    "pronunciation": "Ip-geum-ha-da",
+    "tetum": "Depozita osan"
+  },
+  {
+    "id": 696,
+    "category": "Finansa (금융/경제)",
+    "korean": "출금하다",
+    "pronunciation": "Chul-geum-ha-da",
+    "tetum": "Hasai osan"
+  },
+  {
+    "id": 697,
+    "category": "Finansa (금융/경제)",
+    "korean": "이체하다",
+    "pronunciation": "I-che-ha-da",
+    "tetum": "Transfere osan"
+  },
+  {
+    "id": 698,
+    "category": "Finansa (금융/경제)",
+    "korean": "잔액",
+    "pronunciation": "Ja-naek",
+    "tetum": "Saldu"
+  },
+  {
+    "id": 699,
+    "category": "Finansa (금융/경제)",
+    "korean": "저축하다",
+    "pronunciation": "Jeo-chuk-ha-da",
+    "tetum": "Poupansa / Rai osan"
+  },
+  {
+    "id": 700,
+    "category": "Finansa (금융/경제)",
+    "korean": "대출",
+    "pronunciation": "Dae-chul",
+    "tetum": "Empréstimu"
+  },
+  {
+    "id": 701,
+    "category": "Finansa (금융/경제)",
+    "korean": "이자",
+    "pronunciation": "I-ja",
+    "tetum": "Jurus"
+  },
+  {
+    "id": 702,
+    "category": "Finansa (금융/경제)",
+    "korean": "환율",
+    "pronunciation": "Hwan-yul",
+    "tetum": "Taxa kámbiu"
+  },
+  {
+    "id": 703,
+    "category": "Finansa (금융/경제)",
+    "korean": "세금",
+    "pronunciation": "Se-geum",
+    "tetum": "Impostu"
+  },
+  {
+    "id": 704,
+    "category": "Finansa (금융/경제)",
+    "korean": "연말정산",
+    "pronunciation": "Yeon-mal-jeong-san",
+    "tetum": "Ajuste impostu tinan nian"
+  },
+  {
+    "id": 705,
+    "category": "Finansa (금융/경제)",
+    "korean": "현금인출기 (ATM)",
+    "pronunciation": "Hyeon-geum-in-chul-gi",
+    "tetum": "Mákina ATM"
+  },
+  {
+    "id": 706,
+    "category": "Finansa (금융/경제)",
+    "korean": "체크카드",
+    "pronunciation": "Che-keu-ka-deu",
+    "tetum": "Kartaun débitu"
+  },
+  {
+    "id": 707,
+    "category": "Finansa (금융/경제)",
+    "korean": "신용카드",
+    "pronunciation": "Si-nyong-ka-deu",
+    "tetum": "Kartaun kréditu"
+  },
+  {
+    "id": 708,
+    "category": "Finansa (금융/경제)",
+    "korean": "지폐",
+    "pronunciation": "Ji-pye",
+    "tetum": "Osan surat-tahan"
+  },
+  {
+    "id": 709,
+    "category": "Finansa (금융/경제)",
+    "korean": "동전",
+    "pronunciation": "Dong-jeon",
+    "tetum": "Moeda / Sentavu"
+  },
+  {
+    "id": 710,
+    "category": "Finansa (금융/경제)",
+    "korean": "거스름돈",
+    "pronunciation": "Geo-seu-reum-don",
+    "tetum": "Troku"
+  },
+  {
+    "id": 711,
+    "category": "Finansa (금융/경제)",
+    "korean": "할인",
+    "pronunciation": "Ha-rin",
+    "tetum": "Deskontu"
+  },
+  {
+    "id": 712,
+    "category": "Finansa (금융/경제)",
+    "korean": "무료 / 공짜",
+    "pronunciation": "Mu-ryo / Gong-jja",
+    "tetum": "Gratis"
+  },
+  {
+    "id": 713,
+    "category": "Lei (법률/체류행정)",
+    "korean": "법 / 법률",
+    "pronunciation": "Beop / Beom-nyul",
+    "tetum": "Lei"
+  },
+  {
+    "id": 714,
+    "category": "Lei (법률/체류행정)",
+    "korean": "체류 기간",
+    "pronunciation": "Che-ryu gi-gan",
+    "tetum": "Períodu estadia"
+  },
+  {
+    "id": 715,
+    "category": "Lei (법률/체류행정)",
+    "korean": "연장하다",
+    "pronunciation": "Yeon-jang-ha-da",
+    "tetum": "Estende / Hanaruk"
+  },
+  {
+    "id": 716,
+    "category": "Lei (법률/체류행정)",
+    "korean": "만료되다",
+    "pronunciation": "Mal-lyo-doe-da",
+    "tetum": "Expira / Remata prazu"
+  },
+  {
+    "id": 717,
+    "category": "Lei (법률/체류행정)",
+    "korean": "입국",
+    "pronunciation": "Ip-guk",
+    "tetum": "Tama rai (Entrada)"
+  },
+  {
+    "id": 718,
+    "category": "Lei (법률/체류행정)",
+    "korean": "출국",
+    "pronunciation": "Chul-guk",
+    "tetum": "Sai husi rai (Saída)"
+  },
+  {
+    "id": 719,
+    "category": "Lei (법률/체류행정)",
+    "korean": "재입국",
+    "pronunciation": "Jae-ip-guk",
+    "tetum": "Tama fali"
+  },
+  {
+    "id": 720,
+    "category": "Lei (법률/체류행정)",
+    "korean": "불법 체류",
+    "pronunciation": "Bul-beop che-ryu",
+    "tetum": "Estadia ilegál"
+  },
+  {
+    "id": 721,
+    "category": "Lei (법률/체류행정)",
+    "korean": "강제 추방",
+    "pronunciation": "Gang-je chu-bang",
+    "tetum": "Deportasaun"
+  },
+  {
+    "id": 722,
+    "category": "Lei (법률/체류행정)",
+    "korean": "벌금",
+    "pronunciation": "Beol-geum",
+    "tetum": "Multa"
+  },
+  {
+    "id": 723,
+    "category": "Lei (법률/체류행정)",
+    "korean": "신고하다",
+    "pronunciation": "Sin-go-ha-da",
+    "tetum": "Reporta / Rejista"
+  },
+  {
+    "id": 724,
+    "category": "Lei (법률/체류행정)",
+    "korean": "허가",
+    "pronunciation": "Heo-ga",
+    "tetum": "Lisensa / Autorizasaun"
+  },
+  {
+    "id": 725,
+    "category": "Lei (법률/체류행정)",
+    "korean": "자격",
+    "pronunciation": "Ja-gyeok",
+    "tetum": "Kualifikasaun / Estatutu"
+  },
+  {
+    "id": 726,
+    "category": "Lei (법률/체류행정)",
+    "korean": "권리",
+    "pronunciation": "Gwol-li",
+    "tetum": "Direitu"
+  },
+  {
+    "id": 727,
+    "category": "Lei (법률/체류행정)",
+    "korean": "의무",
+    "pronunciation": "Ui-mu",
+    "tetum": "Dever / Obrigasaun"
+  },
+  {
+    "id": 728,
+    "category": "Lei (법률/체류행정)",
+    "korean": "계약",
+    "pronunciation": "Gye-yak",
+    "tetum": "Kontratu"
+  },
+  {
+    "id": 729,
+    "category": "Lei (법률/체류행정)",
+    "korean": "갱신하다",
+    "pronunciation": "Gaeng-sin-ha-da",
+    "tetum": "Renova"
+  },
+  {
+    "id": 730,
+    "category": "Lei (법률/체류행정)",
+    "korean": "해지하다",
+    "pronunciation": "Hae-ji-ha-da",
+    "tetum": "Kansela kontratu"
+  },
+  {
+    "id": 731,
+    "category": "Lei (법률/체류행정)",
+    "korean": "임금 체불",
+    "pronunciation": "Im-geum che-bul",
+    "tetum": "Atrazu selu saláriu"
+  },
+  {
+    "id": 732,
+    "category": "Lei (법률/체류행정)",
+    "korean": "최저임금",
+    "pronunciation": "Choe-jeo-im-geum",
+    "tetum": "Saláriu mínimu"
+  },
+  {
+    "id": 733,
+    "category": "Lei (법률/체류행정)",
+    "korean": "근로시간",
+    "pronunciation": "Geul-lo-si-gan",
+    "tetum": "Oras servisu"
+  },
+  {
+    "id": 734,
+    "category": "Lei (법률/체류행정)",
+    "korean": "연장근로",
+    "pronunciation": "Yeon-jang-geul-lo",
+    "tetum": "Servisu estra / Overtime"
+  },
+  {
+    "id": 735,
+    "category": "Lei (법률/체류행정)",
+    "korean": "야간근로",
+    "pronunciation": "Ya-gan-geul-lo",
+    "tetum": "Servisu kalan"
+  },
+  {
+    "id": 736,
+    "category": "Lei (법률/체류행정)",
+    "korean": "휴일근로",
+    "pronunciation": "Hyu-il-geul-lo",
+    "tetum": "Servisu loron feriadu"
+  },
+  {
+    "id": 737,
+    "category": "Lei (법률/체류행정)",
+    "korean": "상담하다",
+    "pronunciation": "Sang-dam-ha-da",
+    "tetum": "Konsulta / Husu konsellu"
+  },
+  {
+    "id": 738,
+    "category": "Lei (법률/체류행정)",
+    "korean": "지원센터",
+    "pronunciation": "Ji-won-sen-teo",
+    "tetum": "Sentru apoiu"
+  },
+  {
+    "id": 739,
+    "category": "Lei (법률/체류행정)",
+    "korean": "증명서",
+    "pronunciation": "Jeung-myeong-seo",
+    "tetum": "Sertidaun / Komprovativu"
+  },
+  {
+    "id": 740,
+    "category": "Lei (법률/체류행정)",
+    "korean": "발급받다",
+    "pronunciation": "Bal-geup-bat-da",
+    "tetum": "Simu dokumentu ofisiál"
+  },
+  {
+    "id": 741,
+    "category": "Lei (법률/체류행정)",
+    "korean": "사본",
+    "pronunciation": "Sa-bon",
+    "tetum": "Fotokópia"
+  },
+  {
+    "id": 742,
+    "category": "Lei (법률/체류행정)",
+    "korean": "원본",
+    "pronunciation": "Won-bon",
+    "tetum": "Orijinál"
+  },
+  {
+    "id": 743,
+    "category": "Lei (법률/체류행정)",
+    "korean": "분실하다",
+    "pronunciation": "Bun-sil-ha-da",
+    "tetum": "Lakon"
+  },
+  {
+    "id": 744,
+    "category": "Lei (법률/체류행정)",
+    "korean": "습득하다",
+    "pronunciation": "Seup-deuk-ha-da",
+    "tetum": "Hetan fali"
+  },
+  {
+    "id": 745,
+    "category": "Lei (법률/체류행정)",
+    "korean": "범죄",
+    "pronunciation": "Beom-joe",
+    "tetum": "Krime"
+  },
+  {
+    "id": 746,
+    "category": "Lei (법률/체류행정)",
+    "korean": "폭행",
+    "pronunciation": "Pok-haeng",
+    "tetum": "Violénsia fízika / Baku"
+  },
+  {
+    "id": 747,
+    "category": "Lei (법률/체류행정)",
+    "korean": "성희롱",
+    "pronunciation": "Seong-hui-rong",
+    "tetum": "Asédiu seksuál"
+  },
+  {
+    "id": 748,
+    "category": "Pronome (대명사/지시어)",
+    "korean": "저 / 나",
+    "pronunciation": "Jeo / Na",
+    "tetum": "Ha'u"
+  },
+  {
+    "id": 749,
+    "category": "Pronome (대명사/지시어)",
+    "korean": "우리",
+    "pronunciation": "U-ri",
+    "tetum": "Ita / Ami"
+  },
+  {
+    "id": 750,
+    "category": "Pronome (대명사/지시어)",
+    "korean": "당신 / 그쪽",
+    "pronunciation": "Dang-sin / Geu-jjok",
+    "tetum": "Ita / Ó"
+  },
+  {
+    "id": 751,
+    "category": "Pronome (대명사/지시어)",
+    "korean": "이것",
+    "pronunciation": "I-geot",
+    "tetum": "Ida-ne'e"
+  },
+  {
+    "id": 752,
+    "category": "Pronome (대명사/지시어)",
+    "korean": "그것",
+    "pronunciation": "Geu-geot",
+    "tetum": "Ida-ne'ebá (besik)"
+  },
+  {
+    "id": 753,
+    "category": "Pronome (대명사/지시어)",
+    "korean": "저것",
+    "pronunciation": "Jeo-geot",
+    "tetum": "Ida-ne'ebá (dook)"
+  },
+  {
+    "id": 754,
+    "category": "Pronome (대명사/지시어)",
+    "korean": "여기",
+    "pronunciation": "Yeo-gi",
+    "tetum": "Iha ne'e"
+  },
+  {
+    "id": 755,
+    "category": "Pronome (대명사/지시어)",
+    "korean": "거기",
+    "pronunciation": "Geo-gi",
+    "tetum": "Iha ne'ebá (besik)"
+  },
+  {
+    "id": 756,
+    "category": "Pronome (대명사/지시어)",
+    "korean": "저기",
+    "pronunciation": "Jeo-gi",
+    "tetum": "Iha ne'ebá (dook)"
+  },
+  {
+    "id": 757,
+    "category": "Pronome (대명사/지시어)",
+    "korean": "이쪽",
+    "pronunciation": "I-jjok",
+    "tetum": "Parte ida-ne'e"
+  },
+  {
+    "id": 758,
+    "category": "Pronome (대명사/지시어)",
+    "korean": "그쪽",
+    "pronunciation": "Geu-jjok",
+    "tetum": "Parte ne'ebá"
+  },
+  {
+    "id": 759,
+    "category": "Pronome (대명사/지시어)",
+    "korean": "저쪽",
+    "pronunciation": "Jeo-jjok",
+    "tetum": "Parte dook ne'ebá"
+  },
+  {
+    "id": 760,
+    "category": "Interrogativu (의문사)",
+    "korean": "누구",
+    "pronunciation": "Nu-gu",
+    "tetum": "Sé"
+  },
+  {
+    "id": 761,
+    "category": "Interrogativu (의문사)",
+    "korean": "무엇 / 뭐",
+    "pronunciation": "Mu-eot / Mwo",
+    "tetum": "Saida"
+  },
+  {
+    "id": 762,
+    "category": "Interrogativu (의문사)",
+    "korean": "어디",
+    "pronunciation": "Eo-di",
+    "tetum": "Iha ne'ebé"
+  },
+  {
+    "id": 763,
+    "category": "Interrogativu (의문사)",
+    "korean": "언제",
+    "pronunciation": "Eon-je",
+    "tetum": "Bainhira"
+  },
+  {
+    "id": 764,
+    "category": "Interrogativu (의문사)",
+    "korean": "왜",
+    "pronunciation": "Wae",
+    "tetum": "Tanbasá"
+  },
+  {
+    "id": 765,
+    "category": "Interrogativu (의문사)",
+    "korean": "어떻게",
+    "pronunciation": "Eo-tteo-ke",
+    "tetum": "Oinsá"
+  },
+  {
+    "id": 766,
+    "category": "Interrogativu (의문사)",
+    "korean": "얼마",
+    "pronunciation": "Eol-ma",
+    "tetum": "Hira (presu/kuantidade)"
+  },
+  {
+    "id": 767,
+    "category": "Interrogativu (의문사)",
+    "korean": "몇",
+    "pronunciation": "Myeot",
+    "tetum": "Hira (númeru)"
+  },
+  {
+    "id": 768,
+    "category": "Interrogativu (의문사)",
+    "korean": "무슨",
+    "pronunciation": "Mu-seun",
+    "tetum": "Saida mak / Tipu saida"
+  },
+  {
+    "id": 769,
+    "category": "Interrogativu (의문사)",
+    "korean": "어느",
+    "pronunciation": "Eo-neu",
+    "tetum": "Ida ne'ebé"
+  },
+  {
+    "id": 770,
+    "category": "Konjunsaun (접속사)",
+    "korean": "그리고",
+    "pronunciation": "Geu-ri-go",
+    "tetum": "No / Depois"
+  },
+  {
+    "id": 771,
+    "category": "Konjunsaun (접속사)",
+    "korean": "그러나 / 하지만",
+    "pronunciation": "Geu-reo-na / Ha-ji-man",
+    "tetum": "Maibé"
+  },
+  {
+    "id": 772,
+    "category": "Konjunsaun (접속사)",
+    "korean": "그래서",
+    "pronunciation": "Geu-rae-seo",
+    "tetum": "Tanba ne'e"
+  },
+  {
+    "id": 773,
+    "category": "Konjunsaun (접속사)",
+    "korean": "그러면 / 그럼",
+    "pronunciation": "Geu-reo-myeon / Geu-reom",
+    "tetum": "Entaun"
+  },
+  {
+    "id": 774,
+    "category": "Konjunsaun (접속사)",
+    "korean": "그런데",
+    "pronunciation": "Geu-reon-de",
+    "tetum": "Maibé / Aleinde ne'e"
+  },
+  {
+    "id": 775,
+    "category": "Konjunsaun (접속사)",
+    "korean": "또는 / 혹은",
+    "pronunciation": "Tto-neun / Ho-geun",
+    "tetum": "Ka"
+  },
+  {
+    "id": 776,
+    "category": "Konjunsaun (접속사)",
+    "korean": "왜냐하면",
+    "pronunciation": "Wae-nya-ha-myeon",
+    "tetum": "Tanba"
+  },
+  {
+    "id": 777,
+    "category": "Konjunsaun (접속사)",
+    "korean": "만약",
+    "pronunciation": "Ma-nyak",
+    "tetum": "Karik / Se"
+  },
+  {
+    "id": 778,
+    "category": "Konseitu (추상명사)",
+    "korean": "생각",
+    "pronunciation": "Saeng-gak",
+    "tetum": "Hanoin / Ideia"
+  },
+  {
+    "id": 779,
+    "category": "Konseitu (추상명사)",
+    "korean": "마음",
+    "pronunciation": "Ma-eum",
+    "tetum": "Laran / Sentimentu"
+  },
+  {
+    "id": 780,
+    "category": "Konseitu (추상명사)",
+    "korean": "기분",
+    "pronunciation": "Gi-bun",
+    "tetum": "Umór / Sentimentu"
+  },
+  {
+    "id": 781,
+    "category": "Konseitu (추상명사)",
+    "korean": "사랑",
+    "pronunciation": "Sa-rang",
+    "tetum": "Domin"
+  },
+  {
+    "id": 782,
+    "category": "Konseitu (추상명사)",
+    "korean": "희망",
+    "pronunciation": "Hui-mang",
+    "tetum": "Esperansa"
+  },
+  {
+    "id": 783,
+    "category": "Konseitu (추상명사)",
+    "korean": "꿈",
+    "pronunciation": "Kkum",
+    "tetum": "Mehi"
+  },
+  {
+    "id": 784,
+    "category": "Konseitu (추상명사)",
+    "korean": "목표",
+    "pronunciation": "Mok-pyo",
+    "tetum": "Objetivu / Meta"
+  },
+  {
+    "id": 785,
+    "category": "Konseitu (추상명사)",
+    "korean": "계획",
+    "pronunciation": "Gye-hoek",
+    "tetum": "Planu"
+  },
+  {
+    "id": 786,
+    "category": "Konseitu (추상명사)",
+    "korean": "준비",
+    "pronunciation": "Jun-bi",
+    "tetum": "Preparasaun"
+  },
+  {
+    "id": 787,
+    "category": "Konseitu (추상명사)",
+    "korean": "시작",
+    "pronunciation": "Si-jak",
+    "tetum": "Inísiu / Komesa"
+  },
+  {
+    "id": 788,
+    "category": "Konseitu (추상명사)",
+    "korean": "끝",
+    "pronunciation": "Kkeut",
+    "tetum": "Fim / Ramata"
+  },
+  {
+    "id": 789,
+    "category": "Konseitu (추상명사)",
+    "korean": "문제",
+    "pronunciation": "Mun-je",
+    "tetum": "Problema"
+  },
+  {
+    "id": 790,
+    "category": "Konseitu (추상명사)",
+    "korean": "해결",
+    "pronunciation": "Hae-gyeol",
+    "tetum": "Solusaun"
+  },
+  {
+    "id": 791,
+    "category": "Konseitu (추상명사)",
+    "korean": "이유",
+    "pronunciation": "I-yu",
+    "tetum": "Razaun / Motivu"
+  },
+  {
+    "id": 792,
+    "category": "Konseitu (추상명사)",
+    "korean": "결과",
+    "pronunciation": "Gyeol-gwa",
+    "tetum": "Rezultadu"
+  },
+  {
+    "id": 793,
+    "category": "Konseitu (추상명사)",
+    "korean": "방법",
+    "pronunciation": "Bang-beop",
+    "tetum": "Maneira / Métodu"
+  },
+  {
+    "id": 794,
+    "category": "Konseitu (추상명사)",
+    "korean": "순서",
+    "pronunciation": "Sun-seo",
+    "tetum": "Ordem / Sekuénsia"
+  },
+  {
+    "id": 795,
+    "category": "Konseitu (추상명사)",
+    "korean": "실수",
+    "pronunciation": "Sil-su",
+    "tetum": "Sala / Erru"
+  },
+  {
+    "id": 796,
+    "category": "Konseitu (추상명사)",
+    "korean": "성공",
+    "pronunciation": "Seong-gong",
+    "tetum": "Susesu"
+  },
+  {
+    "id": 797,
+    "category": "Konseitu (추상명사)",
+    "korean": "실패",
+    "pronunciation": "Sil-pae",
+    "tetum": "Falla / Frakasu"
+  },
+  {
+    "id": 798,
+    "category": "Verbu (필수동사)",
+    "korean": "알다",
+    "pronunciation": "Al-da",
+    "tetum": "Hatene"
+  },
+  {
+    "id": 799,
+    "category": "Verbu (필수동사)",
+    "korean": "모르다",
+    "pronunciation": "Mo-reu-da",
+    "tetum": "La hatene"
+  },
+  {
+    "id": 800,
+    "category": "Verbu (필수동사)",
+    "korean": "이해하다",
+    "pronunciation": "I-hae-ha-da",
+    "tetum": "Komprende"
+  },
+  {
+    "id": 801,
+    "category": "Verbu (필수동사)",
+    "korean": "기억하다",
+    "pronunciation": "Gi-eok-ha-da",
+    "tetum": "Hanoin-hetan / Lembra"
+  },
+  {
+    "id": 802,
+    "category": "Verbu (필수동사)",
+    "korean": "잊어버리다",
+    "pronunciation": "I-jeo-beo-ri-da",
+    "tetum": "Haluha"
+  },
+  {
+    "id": 803,
+    "category": "Verbu (필수동사)",
+    "korean": "생각하다",
+    "pronunciation": "Saeng-gak-ha-da",
+    "tetum": "Hanoin"
+  },
+  {
+    "id": 804,
+    "category": "Verbu (필수동사)",
+    "korean": "결정하다",
+    "pronunciation": "Gyeol-jeong-ha-da",
+    "tetum": "Deside"
+  },
+  {
+    "id": 805,
+    "category": "Verbu (필수동사)",
+    "korean": "선택하다",
+    "pronunciation": "Seon-taek-ha-da",
+    "tetum": "Hili"
+  },
+  {
+    "id": 806,
+    "category": "Verbu (필수동사)",
+    "korean": "찾다",
+    "pronunciation": "Chat-da",
+    "tetum": "Buka / Hetan"
+  },
+  {
+    "id": 807,
+    "category": "Verbu (필수동사)",
+    "korean": "잃어버리다",
+    "pronunciation": "I-reo-beo-ri-da",
+    "tetum": "Lakon"
+  },
+  {
+    "id": 808,
+    "category": "Verbu (필수동사)",
+    "korean": "넣다",
+    "pronunciation": "Neo-ta",
+    "tetum": "Tau iha laran"
+  },
+  {
+    "id": 809,
+    "category": "Verbu (필수동사)",
+    "korean": "꺼내다",
+    "pronunciation": "Kkeo-nae-da",
+    "tetum": "Hasai husi laran"
+  },
+  {
+    "id": 810,
+    "category": "Verbu (필수동사)",
+    "korean": "올리다",
+    "pronunciation": "Ol-li-da",
+    "tetum": "Hasa'e / Tau iha leten"
+  },
+  {
+    "id": 811,
+    "category": "Verbu (필수동사)",
+    "korean": "내리다",
+    "pronunciation": "Nae-ri-da",
+    "tetum": "Hatún / Tun"
+  },
+  {
+    "id": 812,
+    "category": "Verbu (필수동사)",
+    "korean": "들다",
+    "pronunciation": "Deul-da",
+    "tetum": "Foti / Kaer"
+  },
+  {
+    "id": 813,
+    "category": "Verbu (필수동사)",
+    "korean": "놓다",
+    "pronunciation": "No-ta",
+    "tetum": "Tau / Husik"
+  },
+  {
+    "id": 814,
+    "category": "Verbu (필수동사)",
+    "korean": "밀다",
+    "pronunciation": "Mil-da",
+    "tetum": "Dudu"
+  },
+  {
+    "id": 815,
+    "category": "Verbu (필수동사)",
+    "korean": "당기다",
+    "pronunciation": "Dang-gi-da",
+    "tetum": "Dada"
+  },
+  {
+    "id": 816,
+    "category": "Verbu (필수동사)",
+    "korean": "누르다",
+    "pronunciation": "Nu-reu-da",
+    "tetum": "Hanehan / Buti"
+  },
+  {
+    "id": 817,
+    "category": "Verbu (필수동사)",
+    "korean": "돌리다",
+    "pronunciation": "Dol-li-da",
+    "tetum": "Dulas / Fila"
+  },
+  {
+    "id": 818,
+    "category": "Verbu (필수동사)",
+    "korean": "묶다",
+    "pronunciation": "Muk-da",
+    "tetum": "Kesi"
+  },
+  {
+    "id": 819,
+    "category": "Verbu (필수동사)",
+    "korean": "풀다",
+    "pronunciation": "Pul-da",
+    "tetum": "Kore"
+  },
+  {
+    "id": 820,
+    "category": "Verbu (필수동사)",
+    "korean": "붙이다",
+    "pronunciation": "Bu-chi-da",
+    "tetum": "Kola / Taka metin"
+  },
+  {
+    "id": 821,
+    "category": "Verbu (필수동사)",
+    "korean": "떼다",
+    "pronunciation": "Tte-da",
+    "tetum": "Hasai / Loke"
+  },
+  {
+    "id": 822,
+    "category": "Verbu (필수동사)",
+    "korean": "닦다",
+    "pronunciation": "Dak-da",
+    "tetum": "Hamaran / Hamoos"
+  },
+  {
+    "id": 823,
+    "category": "Verbu (필수동사)",
+    "korean": "버리다",
+    "pronunciation": "Beo-ri-da",
+    "tetum": "Soe"
+  },
+  {
+    "id": 824,
+    "category": "Verbu (필수동사)",
+    "korean": "모으다",
+    "pronunciation": "Mo-eu-da",
+    "tetum": "Halibur"
+  },
+  {
+    "id": 825,
+    "category": "Verbu (필수동사)",
+    "korean": "나누다",
+    "pronunciation": "Na-nu-da",
+    "tetum": "Fahe"
+  },
+  {
+    "id": 826,
+    "category": "Verbu (필수동사)",
+    "korean": "바꾸다",
+    "pronunciation": "Ba-kku-da",
+    "tetum": "Troka / Muda"
+  },
+  {
+    "id": 827,
+    "category": "Verbu (필수동사)",
+    "korean": "고치다",
+    "pronunciation": "Go-chi-da",
+    "tetum": "Hadia / Korrije"
+  },
+  {
+    "id": 828,
+    "category": "Verbu (필수동사)",
+    "korean": "사용하다",
+    "pronunciation": "Sa-yong-ha-da",
+    "tetum": "Uza"
+  },
+  {
+    "id": 829,
+    "category": "Verbu (필수동사)",
+    "korean": "필요하다",
+    "pronunciation": "Pi-ryo-ha-da",
+    "tetum": "Presiza"
+  },
+  {
+    "id": 830,
+    "category": "Verbu (필수동사)",
+    "korean": "확인하다",
+    "pronunciation": "Hwa-gin-ha-da",
+    "tetum": "Konfirma / Verifika"
+  },
+  {
+    "id": 831,
+    "category": "Verbu (필수동사)",
+    "korean": "검사하다",
+    "pronunciation": "Geom-sa-ha-da",
+    "tetum": "Inspeksiona / Ezamina"
+  },
+  {
+    "id": 832,
+    "category": "Verbu (필수동사)",
+    "korean": "정리하다",
+    "pronunciation": "Jeong-ni-ha-da",
+    "tetum": "Arruma / Organiza"
+  },
+  {
+    "id": 833,
+    "category": "Verbu (필수동사)",
+    "korean": "준비하다",
+    "pronunciation": "Jun-bi-ha-da",
+    "tetum": "Prepara"
+  },
+  {
+    "id": 834,
+    "category": "Verbu (필수동사)",
+    "korean": "시작하다",
+    "pronunciation": "Si-jak-ha-da",
+    "tetum": "Komesa"
+  },
+  {
+    "id": 835,
+    "category": "Verbu (필수동사)",
+    "korean": "끝나다",
+    "pronunciation": "Kkeun-na-da",
+    "tetum": "Remata"
+  },
+  {
+    "id": 836,
+    "category": "Verbu (필수동사)",
+    "korean": "계속하다",
+    "pronunciation": "Gye-sok-ha-da",
+    "tetum": "Kontinua"
+  },
+  {
+    "id": 837,
+    "category": "Verbu (필수동사)",
+    "korean": "포기하다",
+    "pronunciation": "Po-gi-ha-da",
+    "tetum": "Deziste"
+  },
+  {
+    "id": 838,
+    "category": "Verbu (필수동사)",
+    "korean": "노력하다",
+    "pronunciation": "No-ryeok-ha-da",
+    "tetum": "Esforsa / Haka'as an"
+  },
+  {
+    "id": 839,
+    "category": "Verbu (필수동사)",
+    "korean": "연습하다",
+    "pronunciation": "Yeon-seup-ha-da",
+    "tetum": "Pratika / Treinu"
+  },
+  {
+    "id": 840,
+    "category": "Verbu (필수동사)",
+    "korean": "약속하다",
+    "pronunciation": "Yak-sok-ha-da",
+    "tetum": "Promete / Marka enkontru"
+  },
+  {
+    "id": 841,
+    "category": "Verbu (필수동사)",
+    "korean": "거절하다",
+    "pronunciation": "Geo-jeol-ha-da",
+    "tetum": "Rejeita / La simu"
+  },
+  {
+    "id": 842,
+    "category": "Verbu (필수동사)",
+    "korean": "허락하다",
+    "pronunciation": "Heo-rak-ha-da",
+    "tetum": "Autoriza / Fó lisensa"
+  },
+  {
+    "id": 843,
+    "category": "Verbu (필수동사)",
+    "korean": "부탁하다",
+    "pronunciation": "Bu-tak-ha-da",
+    "tetum": "Husu favór"
+  },
+  {
+    "id": 844,
+    "category": "Verbu (필수동사)",
+    "korean": "설명하다",
+    "pronunciation": "Seol-myeong-ha-da",
+    "tetum": "Esplika"
+  },
+  {
+    "id": 845,
+    "category": "Verbu (필수동사)",
+    "korean": "소개하다",
+    "pronunciation": "So-gae-ha-da",
+    "tetum": "Aprezenta"
+  },
+  {
+    "id": 846,
+    "category": "Verbu (필수동사)",
+    "korean": "이별하다 / 헤어지다",
+    "pronunciation": "I-byeol-ha-da / He-eo-ji-da",
+    "tetum": "Separa / Despede"
+  },
+  {
+    "id": 847,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "화상",
+    "pronunciation": "Hwa-sang",
+    "tetum": "Kanek husi ahi / Sunu"
+  },
+  {
+    "id": 848,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "골절",
+    "pronunciation": "Gol-jeol",
+    "tetum": "Ruin tohar"
+  },
+  {
+    "id": 849,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "출혈",
+    "pronunciation": "Chul-hyeol",
+    "tetum": "Raan suli"
+  },
+  {
+    "id": 850,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "기절하다",
+    "pronunciation": "Gi-jeol-ha-da",
+    "tetum": "Dezmaia"
+  },
+  {
+    "id": 851,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "중독",
+    "pronunciation": "Jung-dok",
+    "tetum": "Intoksikasaun / Venenu"
+  },
+  {
+    "id": 852,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "교통사고",
+    "pronunciation": "Gyo-tong-sa-go",
+    "tetum": "Asidente tráfegu"
+  },
+  {
+    "id": 853,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "신호등",
+    "pronunciation": "Sin-ho-deung",
+    "tetum": "Semáforu / Sinál tráfegu"
+  },
+  {
+    "id": 854,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "횡단보도",
+    "pronunciation": "Hoeng-dan-bo-do",
+    "tetum": "Fatin hakat dalan"
+  },
+  {
+    "id": 855,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "육교",
+    "pronunciation": "Yuk-gyo",
+    "tetum": "Ponte hakat dalan"
+  },
+  {
+    "id": 856,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "지하도",
+    "pronunciation": "Ji-ha-do",
+    "tetum": "Dalan okos"
+  },
+  {
+    "id": 857,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "건너다",
+    "pronunciation": "Geon-neo-da",
+    "tetum": "Hakat / Atravesa"
+  },
+  {
+    "id": 858,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "조심해서 가세요",
+    "pronunciation": "Jo-sim-hae-seo ga-se-yo",
+    "tetum": "Bá ho kuidadu"
+  },
+  {
+    "id": 859,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "안전 제일",
+    "pronunciation": "An-jeon je-il",
+    "tetum": "Seguransa dahuluk"
+  },
+  {
+    "id": 860,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "보호구",
+    "pronunciation": "Bo-ho-gu",
+    "tetum": "Ekipamentu protesaun"
+  },
+  {
+    "id": 861,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "착용하다",
+    "pronunciation": "Cha-gyong-ha-da",
+    "tetum": "Uza / Hatais (ekipamentu)"
+  },
+  {
+    "id": 862,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "점검하다",
+    "pronunciation": "Jeom-geom-ha-da",
+    "tetum": "Verifika / Kontrolu"
+  },
+  {
+    "id": 863,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "예방하다",
+    "pronunciation": "Ye-bang-ha-da",
+    "tetum": "Prevene"
+  },
+  {
+    "id": 864,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "금지하다",
+    "pronunciation": "Geum-ji-ha-da",
+    "tetum": "Proibe"
+  },
+  {
+    "id": 865,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "주의하다",
+    "pronunciation": "Ju-ui-ha-da",
+    "tetum": "Kuidadu / Atensaun"
+  },
+  {
+    "id": 866,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "위반하다",
+    "pronunciation": "Wi-ban-ha-da",
+    "tetum": "Viola regra"
+  },
+  {
+    "id": 867,
+    "category": "Emerjénsia (응급/재난)",
+    "korean": "안전하다",
+    "pronunciation": "An-jeon-ha-da",
+    "tetum": "Seguru"
+  },
+  {
+    "id": 868,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "교환하다",
+    "pronunciation": "Gyo-hwan-ha-da",
+    "tetum": "Troka sasán"
+  },
+  {
+    "id": 869,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "환불하다",
+    "pronunciation": "Hwan-bul-ha-da",
+    "tetum": "Fila osan / Reembolsa"
+  },
+  {
+    "id": 870,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "사이즈 / 치수",
+    "pronunciation": "Sa-i-jeu / Chi-su",
+    "tetum": "Tamañu / Medida"
+  },
+  {
+    "id": 871,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "디자인",
+    "pronunciation": "Di-ja-in",
+    "tetum": "Dezeñu / Modelu"
+  },
+  {
+    "id": 872,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "색상",
+    "pronunciation": "Saek-sang",
+    "tetum": "Kór"
+  },
+  {
+    "id": 873,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "어울리다",
+    "pronunciation": "Eo-ul-li-da",
+    "tetum": "Kombina / Furak ba ita"
+  },
+  {
+    "id": 874,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "맞다 (치수)",
+    "pronunciation": "Mat-da",
+    "tetum": "Kabe / Medidas loos"
+  },
+  {
+    "id": 875,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "끼다 (옷/신발)",
+    "pronunciation": "Kki-da",
+    "tetum": "Apertadu / Kloot liu"
+  },
+  {
+    "id": 876,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "헐렁하다",
+    "pronunciation": "Heol-leong-ha-da",
+    "tetum": "Luan liu / Mamuk"
+  },
+  {
+    "id": 877,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "입어 보다",
+    "pronunciation": "I-beo bo-da",
+    "tetum": "Prova roupa"
+  },
+  {
+    "id": 878,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "신어 보다",
+    "pronunciation": "Si-neo bo-da",
+    "tetum": "Prova sapatu"
+  },
+  {
+    "id": 879,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "깎아 주다",
+    "pronunciation": "Kka-kka ju-da",
+    "tetum": "Hamenus presu / Fó deskontu"
+  },
+  {
+    "id": 880,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "포장지",
+    "pronunciation": "Po-jang-ji",
+    "tetum": "Papel embrulla"
+  },
+  {
+    "id": 881,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "장바구니",
+    "pronunciation": "Jang-ba-gu-ni",
+    "tetum": "Raga kompras"
+  },
+  {
+    "id": 882,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "계산대",
+    "pronunciation": "Gye-san-dae",
+    "tetum": "Kaixa selu osan"
+  },
+  {
+    "id": 883,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "편의점",
+    "pronunciation": "Pyeo-nui-jeom",
+    "tetum": "Loja konveniénsia 24 oras"
+  },
+  {
+    "id": 884,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "백화점",
+    "pronunciation": "Baek-hwa-jeom",
+    "tetum": "Sentru komersiál boot"
+  },
+  {
+    "id": 885,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "중고",
+    "pronunciation": "Jung-go",
+    "tetum": "Sasán segunda-maun / Uza ona"
+  },
+  {
+    "id": 886,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "새것",
+    "pronunciation": "Sae-geot",
+    "tetum": "Sasán foun"
+  },
+  {
+    "id": 887,
+    "category": "Kompras (쇼핑상세)",
+    "korean": "품절",
+    "pronunciation": "Pum-jeol",
+    "tetum": "Sasán hotu ona"
+  },
+  {
+    "id": 888,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "미용실",
+    "pronunciation": "Mi-yong-sil",
+    "tetum": "Salaun kabeleireiru"
+  },
+  {
+    "id": 889,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "머리를 자르다",
+    "pronunciation": "Meo-ri-reul ja-reu-da",
+    "tetum": "Tesi fuuk"
+  },
+  {
+    "id": 890,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "머리를 감다",
+    "pronunciation": "Meo-ri-reul gam-da",
+    "tetum": "Fase fuuk"
+  },
+  {
+    "id": 891,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "염색하다",
+    "pronunciation": "Yeom-saek-ha-da",
+    "tetum": "Pinta fuuk"
+  },
+  {
+    "id": 892,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "파마하다",
+    "pronunciation": "Pa-ma-ha-da",
+    "tetum": "Halo fuuk kaku'uk"
+  },
+  {
+    "id": 893,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "다듬다",
+    "pronunciation": "Da-deum-da",
+    "tetum": "Hadia / Tesi uitoan"
+  },
+  {
+    "id": 894,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "면도하다",
+    "pronunciation": "Myeon-do-ha-da",
+    "tetum": "Barbeia / Tesi hasan-rahun"
+  },
+  {
+    "id": 895,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "세탁소",
+    "pronunciation": "Se-tak-so",
+    "tetum": "Lavandaria"
+  },
+  {
+    "id": 896,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "드라이클리닝",
+    "pronunciation": "Deu-ra-i-keul-li-ning",
+    "tetum": "Fase maran / Dry cleaning"
+  },
+  {
+    "id": 897,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "다림질하다",
+    "pronunciation": "Da-rim-jil-ha-da",
+    "tetum": "Estrika roupa"
+  },
+  {
+    "id": 898,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "얼룩",
+    "pronunciation": "Eol-luk",
+    "tetum": "Nódoa / Fo'er"
+  },
+  {
+    "id": 899,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "수선집",
+    "pronunciation": "Su-seon-jip",
+    "tetum": "Fatin hadia roupa"
+  },
+  {
+    "id": 900,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "줄이다 (길이)",
+    "pronunciation": "Ju-ri-da",
+    "tetum": "Habada / Hamenus naruk"
+  },
+  {
+    "id": 901,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "늘리다 (길이)",
+    "pronunciation": "Neul-li-da",
+    "tetum": "Hanaruk"
+  },
+  {
+    "id": 902,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "단추",
+    "pronunciation": "Dan-chu",
+    "tetum": "Botaun roupa"
+  },
+  {
+    "id": 903,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "지퍼",
+    "pronunciation": "Ji-peo",
+    "tetum": "Zíper / Fecho"
+  },
+  {
+    "id": 904,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "구두 수선",
+    "pronunciation": "Gu-du su-seon",
+    "tetum": "Hadia sapatu"
+  },
+  {
+    "id": 905,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "열쇠 수리",
+    "pronunciation": "Yeol-soe su-ri",
+    "tetum": "Hadia xave"
+  },
+  {
+    "id": 906,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "배달하다",
+    "pronunciation": "Bae-dal-ha-da",
+    "tetum": "Entrega"
+  },
+  {
+    "id": 907,
+    "category": "Servisu-Sidade (미용/세탁/수선)",
+    "korean": "배달비",
+    "pronunciation": "Bae-dal-bi",
+    "tetum": "Taxa entrega"
+  },
+  {
+    "id": 908,
+    "category": "Espresaun (필수관용구)",
+    "korean": "눈치가 빠르다",
+    "pronunciation": "Nun-chi-ga ppa-reu-da",
+    "tetum": "Matenek komprende situasaun lalais"
+  },
+  {
+    "id": 909,
+    "category": "Espresaun (필수관용구)",
+    "korean": "손이 빠르다",
+    "pronunciation": "So-ni ppa-reu-da",
+    "tetum": "Servisu lalais"
+  },
+  {
+    "id": 910,
+    "category": "Espresaun (필수관용구)",
+    "korean": "손이 크다",
+    "pronunciation": "So-ni keu-da",
+    "tetum": "Laran-luak / Fó barak"
+  },
+  {
+    "id": 911,
+    "category": "Espresaun (필수관용구)",
+    "korean": "발이 넓다",
+    "pronunciation": "Ba-ri neol-da",
+    "tetum": "Koñese ema barak"
+  },
+  {
+    "id": 912,
+    "category": "Espresaun (필수관용구)",
+    "korean": "입이 무겁다",
+    "pronunciation": "I-bi mu-geop-da",
+    "tetum": "Rai segredu di'ak"
+  },
+  {
+    "id": 913,
+    "category": "Espresaun (필수관용구)",
+    "korean": "입이 가볍다",
+    "pronunciation": "I-bi ga-byeop-da",
+    "tetum": "Ko'alia barak / La rai segredu"
+  },
+  {
+    "id": 914,
+    "category": "Espresaun (필수관용구)",
+    "korean": "마음에 들다",
+    "pronunciation": "Ma-eu-me deul-da",
+    "tetum": "Gostu / Kontente ho"
+  },
+  {
+    "id": 915,
+    "category": "Espresaun (필수관용구)",
+    "korean": "신경을 쓰다",
+    "pronunciation": "Sin-gyeong-eul sseu-da",
+    "tetum": "Preokupa / Tau atensaun"
+  },
+  {
+    "id": 916,
+    "category": "Espresaun (필수관용구)",
+    "korean": "한턱내다",
+    "pronunciation": "Han-teok-nae-da",
+    "tetum": "Selu han ba kolega sira"
+  },
+  {
+    "id": 917,
+    "category": "Espresaun (필수관용구)",
+    "korean": "잘 부탁드립니다",
+    "pronunciation": "Jal bu-tak-deu-rim-ni-da",
+    "tetum": "Favór ajuda ha'u / Kolabora di'ak"
+  },
+  {
+    "id": 918,
+    "category": "Espresaun (필수관용구)",
+    "korean": "수고하세요",
+    "pronunciation": "Su-go-ha-se-yo",
+    "tetum": "Bom traballu / Servisu di'ak"
+  },
+  {
+    "id": 919,
+    "category": "Espresaun (필수관용구)",
+    "korean": "먼저 들어가겠습니다",
+    "pronunciation": "Meon-jeo deu-reo-ga-get-seum-ni-da",
+    "tetum": "Ha'u fila uluk ona"
+  },
+  {
+    "id": 920,
+    "category": "Espresaun (필수관용구)",
+    "korean": "다녀오겠습니다",
+    "pronunciation": "Da-nyeo-o-get-seum-ni-da",
+    "tetum": "Ha'u bá lai"
+  },
+  {
+    "id": 921,
+    "category": "Espresaun (필수관용구)",
+    "korean": "다녀왔습니다",
+    "pronunciation": "Da-nyeo-wat-seum-ni-da",
+    "tetum": "Ha'u fila ona"
+  },
+  {
+    "id": 922,
+    "category": "Espresaun (필수관용구)",
+    "korean": "잘 먹겠습니다",
+    "pronunciation": "Jal meok-get-seum-ni-da",
+    "tetum": "Obrigadu ba hahán (antes han)"
+  },
+  {
+    "id": 923,
+    "category": "Espresaun (필수관용구)",
+    "korean": "잘 먹었습니다",
+    "pronunciation": "Jal meo-geot-seum-ni-da",
+    "tetum": "Obrigadu ba hahán (depois han)"
+  },
+  {
+    "id": 924,
+    "category": "Espresaun (필수관용구)",
+    "korean": "실례합니다",
+    "pronunciation": "Sil-lye-ham-ni-da",
+    "tetum": "Deskulpa / Lisensa"
+  },
+  {
+    "id": 925,
+    "category": "Espresaun (필수관용구)",
+    "korean": "잠시만요",
+    "pronunciation": "Jam-si-man-yo",
+    "tetum": "Hein uitoan"
+  },
+  {
+    "id": 926,
+    "category": "Espresaun (필수관용구)",
+    "korean": "천만에요",
+    "pronunciation": "Cheon-ma-ne-yo",
+    "tetum": "Nada / La buat ida"
+  },
+  {
+    "id": 927,
+    "category": "Espresaun (필수관용구)",
+    "korean": "별말씀을요",
+    "pronunciation": "Byeol-mal-sseu-meul-lyo",
+    "tetum": "La presiza agradese"
+  },
+  {
+    "id": 928,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "늘다 (실력)",
+    "pronunciation": "Neul-da",
+    "tetum": "Aumenta / Di'ak liután"
+  },
+  {
+    "id": 929,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "줄다",
+    "pronunciation": "Jul-da",
+    "tetum": "Hamenus / Ki'ik ba"
+  },
+  {
+    "id": 930,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "생기다",
+    "pronunciation": "Saeng-gi-da",
+    "tetum": "Mosu / Iha foun"
+  },
+  {
+    "id": 931,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "없어지다",
+    "pronunciation": "Eop-seo-ji-da",
+    "tetum": "Lakon / La iha ona"
+  },
+  {
+    "id": 932,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "변하다",
+    "pronunciation": "Byeon-ha-da",
+    "tetum": "Muda"
+  },
+  {
+    "id": 933,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "익숙해지다",
+    "pronunciation": "Ik-suk-hae-ji-da",
+    "tetum": "Kostume ona"
+  },
+  {
+    "id": 934,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "불편하다",
+    "pronunciation": "Bul-pyeon-ha-da",
+    "tetum": "La konfortável / Susar"
+  },
+  {
+    "id": 935,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "편리하다",
+    "pronunciation": "Pyeol-li-ha-da",
+    "tetum": "Fásil / Konveniente"
+  },
+  {
+    "id": 936,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "복잡하다",
+    "pronunciation": "Bok-jap-ha-da",
+    "tetum": "Komplikadu / Rame"
+  },
+  {
+    "id": 937,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "단순하다",
+    "pronunciation": "Dan-sun-ha-da",
+    "tetum": "Simples"
+  },
+  {
+    "id": 938,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "비슷하다",
+    "pronunciation": "Bi-seu-ta-da",
+    "tetum": "Hanesan uitoan / Kuaze hanesan"
+  },
+  {
+    "id": 939,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "다르다",
+    "pronunciation": "Da-reu-da",
+    "tetum": "Diferente / La hanesan"
+  },
+  {
+    "id": 940,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "같다",
+    "pronunciation": "Gat-da",
+    "tetum": "Hanesan"
+  },
+  {
+    "id": 941,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "필요 없다",
+    "pronunciation": "Pi-ryo eop-da",
+    "tetum": "La presiza"
+  },
+  {
+    "id": 942,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "소용없다",
+    "pronunciation": "So-yong-eop-da",
+    "tetum": "La iha utilidade"
+  },
+  {
+    "id": 943,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "부족하다",
+    "pronunciation": "Bu-jok-ha-da",
+    "tetum": "Kuran / La to'o"
+  },
+  {
+    "id": 944,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "충분하다",
+    "pronunciation": "Chung-bun-ha-da",
+    "tetum": "To'o ona / Sufisiente"
+  },
+  {
+    "id": 945,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "가득 차다",
+    "pronunciation": "Ga-deuk cha-da",
+    "tetum": "Penu / Nakunu"
+  },
+  {
+    "id": 946,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "비다",
+    "pronunciation": "Bi-da",
+    "tetum": "Mamuk"
+  },
+  {
+    "id": 947,
+    "category": "Verbu-Estadu (상태/변화동사)",
+    "korean": "막히다",
+    "pronunciation": "Ma-ki-da",
+    "tetum": "Intupidu / Tráfegu metin"
+  },
+  {
+    "id": 948,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "첫 번째",
+    "pronunciation": "Cheot beon-jjae",
+    "tetum": "Dahuluk / Primeiru"
+  },
+  {
+    "id": 949,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "두 번째",
+    "pronunciation": "Du beon-jjae",
+    "tetum": "Daruak / Segundu"
+  },
+  {
+    "id": 950,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "세 번째",
+    "pronunciation": "Se beon-jjae",
+    "tetum": "Datoluk / Terseiru"
+  },
+  {
+    "id": 951,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "마지막",
+    "pronunciation": "Ma-ji-mak",
+    "tetum": "Ikus liu"
+  },
+  {
+    "id": 952,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "다음",
+    "pronunciation": "Da-eum",
+    "tetum": "Tuirmai"
+  },
+  {
+    "id": 953,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "전 / 이전",
+    "pronunciation": "Jeon / I-jeon",
+    "tetum": "Antes"
+  },
+  {
+    "id": 954,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "후 / 이후",
+    "pronunciation": "Hu / I-hu",
+    "tetum": "Depois"
+  },
+  {
+    "id": 955,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "동안",
+    "pronunciation": "Dong-an",
+    "tetum": "Durante"
+  },
+  {
+    "id": 956,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "마다",
+    "pronunciation": "Ma-da",
+    "tetum": "Kada"
+  },
+  {
+    "id": 957,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "보통",
+    "pronunciation": "Bo-tong",
+    "tetum": "Normalmente / Baibain"
+  },
+  {
+    "id": 958,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "자주",
+    "pronunciation": "Ja-ju",
+    "tetum": "Beibeik"
+  },
+  {
+    "id": 959,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "전혀",
+    "pronunciation": "Jeon-hyeo",
+    "tetum": "Lae duni / Nunka"
+  },
+  {
+    "id": 960,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "거의",
+    "pronunciation": "Geo-ui",
+    "tetum": "Kuaze"
+  },
+  {
+    "id": 961,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "약 / 대략",
+    "pronunciation": "Yak / Dae-ryak",
+    "tetum": "Mais ou menus / Kuaze"
+  },
+  {
+    "id": 962,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "정확히",
+    "pronunciation": "Jeong-hwak-hi",
+    "tetum": "Ezatamente / Loos duni"
+  },
+  {
+    "id": 963,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "갑자기",
+    "pronunciation": "Gap-ja-gi",
+    "tetum": "Derepente"
+  },
+  {
+    "id": 964,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "점점",
+    "pronunciation": "Jeom-jeom",
+    "tetum": "Neineik ba neineik"
+  },
+  {
+    "id": 965,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "결국",
+    "pronunciation": "Gyeol-guk",
+    "tetum": "Ikusmai"
+  },
+  {
+    "id": 966,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "특히",
+    "pronunciation": "Teu-ki",
+    "tetum": "Liu-liu / Espesialmente"
+  },
+  {
+    "id": 967,
+    "category": "Númeru-Ordem (순서/빈도)",
+    "korean": "물론",
+    "pronunciation": "Mul-lon",
+    "tetum": "Klaru / Lo-loos"
+  }
+]

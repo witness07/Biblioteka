@@ -1,0 +1,105 @@
+{
+  "character_id": "esther",
+  "character_name_en": "Esther",
+  "character_name_tet": "Ester",
+  "category": "Major (5 Scenes)",
+  "bible_reference": "Esther 1 - 10",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Chosen as Queen of Persia",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago in Persia, a beautiful young Jewish orphan girl named Esther lived with her wise cousin Mordecai. When King Ahasuerus looked for a new queen, Esther was chosen for her grace, beauty, and gentle heart. Mordecai advised her to keep her Jewish heritage secret for a time, trusting in God's hidden providence.",
+      "tetum_translation": "Iha tempu uluk iha Pérsia, labarik-feto faluk Judeu furak ida naran Ester hela ho nia maun-alin matenek Mordecai. Bainhira Liurai Assuero buka liurai-feto foun ida, Ester hetan hili tanba nia kmanek, bonitas, no laran-di'ak. Mordecai fó consello ba nia atu subar nia rasa Judeu ba tempu balu, fiar iha Maromak nia providénsia ne'ebé subar.",
+      "scene_summary": "Young orphan Esther is chosen by King Ahasuerus to become the Queen of Persia.",
+      "nano_banana_prompt": "Nano Banana illustration style, a beautiful young Jewish queen named Esther with long dark wavy hair wearing a regal royal purple gown and small gold crown, sitting gracefully in a Persian palace garden. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "Haman's Evil Decree",
+      "image_file": "2.jpeg",
+      "english_text": "A proud official named Haman became angry because Mordecai would only bow to God, not to him. Haman tricked the king into signing a terrible law to destroy all the Jewish people in the kingdom. When Mordecai heard the news, he put on sackcloth, wept, and sent a message to Queen Esther urging her to speak to the king.",
+      "tetum_translation": "Offisial foti-an ida naran Haman sai hirus tanba Mordecai hakru'uk de'it ba Maromak, la'ós ba nia. Haman lohi liurai atu assina ukun-fuan aat ida atu estraga ema Judeu hotu iha reinu laran. Bainhira Mordecai rona notisia ne'e, nia uza hena-saku, tanis, no haruka mensajen ba Liurai-Feto Ester hodi husu nia atu ko'alia ba liurai.",
+      "scene_summary": "Haman plots to destroy the Jews, and Mordecai sends word to Queen Esther for help.",
+      "nano_banana_prompt": "Nano Banana illustration style, Mordecai wearing rough sackcloth robes speaking urgently to a royal messenger outside a magnificent Persian palace gate under a cloudy sky. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "For Such a Time as This",
+      "image_file": "3.jpeg",
+      "english_text": "Mordecai told Esther, 'Who knows whether you have come to royal position for such a time as this?' Though entering the king's presence uninvited could mean death, Esther bravely declared, 'If I perish, I perish.' She asked all the Jews to fast and pray with her for three days before she approached the king.",
+      "tetum_translation": "Mordecai dehan ba Ester, 'Sé mak hatene se ó sai liurai-feto loloos ba tempu hanesan ne'e?' Maski tama ba liurai nia oin la ho konvite bele sosa mate, Ester deklara ho brani, 'Se ha'u mate, ha'u mate.' Nia husu ema Judeu hotu atu jejum no harohan ho nia ba loron tolu molok nia hakbesik ba liurai.",
+      "scene_summary": "Esther calls for three days of fasting and prayer before risking her life to enter the King's presence.",
+      "nano_banana_prompt": "Nano Banana illustration style, Queen Esther in fine white and gold robes kneeling in reverent prayer inside her royal room, with soft golden rays of divine light shining through the window. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Courage Before the King",
+      "image_file": "4.jpeg",
+      "english_text": "On the third day, Queen Esther put on her royal robes and stepped into the inner court. King Ahasuerus smiled, held out his golden scepter, and spared her life. Esther invited the king and Haman to two special banquets, where she courageously revealed Haman's plot and pleaded for the lives of her people.",
+      "tetum_translation": "Iha loron terseiru, Liurai-Feto Ester uza nia vestidu liurai nian no la'o tama ba pátiu laran. Liurai Assuero oin-haksolok, foti nia kbiit-ai (cetro) osan-mean ba nia, no salva nia moris. Ester convida liurai no Haman ba festa spesial rua, ne'ebé nia hatudu ho brani Haman nia planu aat no husu sadi'ak ba nia povu nia moris.",
+      "scene_summary": "Queen Esther approaches King Ahasuerus, receives the golden scepter, and exposes Haman's evil scheme at a banquet.",
+      "nano_banana_prompt": "Nano Banana illustration style, Queen Esther in a breathtaking royal dress approaching a Persian King seated on a golden throne, as the King extends a shiny golden scepter toward her with a warm smile. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Deliverance and Purim Joy",
+      "image_file": "5.jpeg",
+      "english_text": "The king was furious at Haman's cruelty and saved the Jewish people, raising Mordecai to high honor instead. God's people celebrated their miraculous deliverance with great joy, feasting, and sending gifts to one another. Esther's courage was remembered forever as the feast of Purim.",
+      "tetum_translation": "Liurai hirus tebes ba Haman nia laran-aat no salva ema Judeu sira, hodi foti Mordecai ba honra boot. Maromak nia povu celebra sira-nia salvasaun ho milagre ho ksolok boot, festa, no haruka prezente ba malu. Ester nia korajen hetan hanoin-hetan ba nafatin nu'udar festa Purim.",
+      "scene_summary": "God saves the Jewish people through Esther's bravery, establishing the joyful celebration of Purim.",
+      "nano_banana_prompt": "Nano Banana illustration style, Queen Esther and Mordecai celebrating happily with crowds of joyful Jewish families at a colorful feast with baskets of bread and fruits. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "Esther shows us that God places us in specific places for a purpose, and we can stand up bravely for others when we trust Him.",
+    "core_lesson_tet": "Ester hatudu mai ita katak Maromak tau ita iha fatin spesial ba motivu ida, no ita bele hamriik ho brani ba ema seluk bainhira ita fiar ba Nia.",
+    "discussion_question_en": "When you see a classmate being treated unfairly this week, how can you show courage like Queen Esther to help them?",
+    "discussion_question_tet": "Bainhira ó haree maluk eskola ida hetan hahalok injustu iha semana ne'e, oinsá ó bele hatudu korajen hanesan Liurai-Feto Ester atu ajulita sira?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Queen Esther standing gracefully wearing a royal crown and beautiful robes.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, beautiful queen Esther wearing a royal gown and crown with a soft smile, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "ESTHER",
+        "word_tet": "ESTER",
+        "clue_en": "The brave Jewish queen who saved her people.",
+        "clue_tet": "Liurai-feto brani Judeu ne'ebé salva nia povu."
+      },
+      {
+        "word_en": "QUEEN",
+        "word_tet": "LIURAIFETO",
+        "clue_en": "The royal title given to Esther by King Ahasuerus.",
+        "clue_tet": "Títulu nobrasaun nian ne'ebé fó ba Ester."
+      },
+      {
+        "word_en": "COURAGE",
+        "word_tet": "BRANI",
+        "clue_en": "Standing up for what is right even when it is scary.",
+        "clue_tet": "Hamriik ba buat ne'ebé loosa maski ta'uk."
+      },
+      {
+        "word_en": "PRAYER",
+        "word_tet": "ORASAUN",
+        "clue_en": "Asking God for help and fasting for three days.",
+        "clue_tet": "Husu ajuda ba Maromak no jejum ba loron tolu."
+      },
+      {
+        "word_en": "MORDECAI",
+        "word_tet": "MORDECAI",
+        "clue_en": "Esther's wise cousin who encouraged her to help.",
+        "clue_tet": "Ester nia maun-alin matenek ne'ebé fó kbiit ba nia."
+      },
+      {
+        "word_en": "PURIM",
+        "word_tet": "PURIM",
+        "clue_en": "The joyful festival celebrating God's deliverance of His people.",
+        "clue_tet": "Festa ksolok nian ne'ebé celebra Maromak nia salvasaun."
+      }
+    ]
+  }
+}

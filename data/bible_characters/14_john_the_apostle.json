@@ -1,0 +1,132 @@
+{
+  "character_id": "john_the_apostle",
+  "character_name_en": "John the Apostle",
+  "character_name_tet": "Joaun",
+  "category": "Core (8 Scenes)",
+  "bible_reference": "Gospel of John, 1 John, Revelation",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "title": "Son of Thunder Called by Jesus",
+      "image_file": "1.jpeg",
+      "english_text": "Long ago by the Sea of Galilee, a young fisherman named John worked with his brother James. Jesus walked along the shore, called them to follow Him, and gave them the name 'Sons of Thunder' because of their fiery passion. John left his fishing nets immediately and dedicated his whole heart to Jesus.",
+      "tetum_translation": "Iha tempu uluk besik Tasi Galileia, peskadór fouraon ida naran Joaun servisu ho nia maun Tiago. Jesus la'o iha tasi-ibun, bolu sira atu tuir Nia, no fó naran 'Rai-tarutu nia Oan' ba sira tanba sira-nia laran-manas boot. Joaun husik kedas nia rede sira no entregar nia laran tomak ba Jesus.",
+      "scene_summary": "Jesus calls young John and James by the Sea of Galilee, naming them the Sons of Thunder.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew fisherman with short dark hair wearing a simple tunic, standing by wooden fishing boats on the shore of the Sea of Galilee, looking with awe at Jesus in white robes. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 2,
+      "title": "The Beloved Disciple at the Last Supper",
+      "image_file": "2.jpeg",
+      "english_text": "During the Last Supper before Jesus suffered, John sat right next to Jesus as the disciple whom Jesus loved. With deep trust and affection, John leaned back against Jesus' chest, listening carefully to every loving word the Master shared with His disciples.",
+      "tetum_translation": "Iha Jantar Ikus molok Jesus susar, Joaun tuur iha Jesus nia sorin-loloos nu'udar ata-kna'in ne'ebé Jesus domin tebes. Ho fiar kle'an no domin, Joaun sadere ba Jesus nia hirus-matan, rona ho di'ak ba liafuan domin hotu ne'ebé Mestre fahe ho Nia ata-kna'in sira.",
+      "scene_summary": "John leans close to Jesus' chest during the Last Supper as the beloved disciple.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew disciple with short dark hair in a beige linen tunic leaning gently against Jesus in warm candlelight inside an upper room at a wooden dining table. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 3,
+      "title": "Faithful Beside the Cross",
+      "image_file": "3.jpeg",
+      "english_text": "When Jesus was crucified, most disciples fled out of fear, but John stayed bravely at the foot of the cross. Jesus looked down lovingly at John and His mother Mary, saying to Mary, 'Woman, here is your son,' and to John, 'Here is your mother.' From that moment, John took Mary into his home as his own mother.",
+      "tetum_translation": "Bainhira Jesus hetan prega iha kruz, ata-kna'in barak la'o halai tanba ta'uk, maibé Joaun hamriik ho brani iha kruz nia ain-okos. Jesus hateke tun ho domin ba Joaun no Nia inan Maria, hodi dehan ba Maria, 'Inan, haree ó-nia oan,' no ba Joaun, 'Haree ó-nia inan.' Husi tempu ne'e, Joaun lori Maria ba nia uma nu'udar nia inan rasik.",
+      "scene_summary": "John stands faithfully by the cross, where Jesus entrusts His mother Mary into John's loving care.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew disciple standing comfortingly next to Mary at the foot of the wooden cross under a dramatic sky with golden sun rays breaking through dark clouds. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 4,
+      "title": "Running to the Empty Tomb",
+      "image_file": "4.jpeg",
+      "english_text": "On Sunday morning, Mary Magdalene brought news that Jesus' tomb was empty. John ran as fast as he could alongside Peter, arriving at the garden tomb first. Looking inside and seeing the folded linen burial cloths, John saw and believed with immense joy that Jesus had truly risen from the dead!",
+      "tetum_translation": "Iha domingu dadeer, Maria Madalena lori lia-foun katak Jesus nia rate mamuk. Joaun halai lalais tebes ho Pedru, to'o uluk iha rate du'ut-laran. Bainhira hateke ba laran no haree hena-falun sira ne'ebé falun tiha, Joaun haree no fiar ho ksolok boot katak Jesus moris hi'as duni husi mate!",
+      "scene_summary": "John runs to the empty tomb with Peter, sees the grave clothes, and believes in Jesus' resurrection.",
+      "nano_banana_prompt": "Nano Banana illustration style, a young Hebrew disciple looking inside a stone garden tomb filled with radiant heavenly light, seeing neatly folded white linen cloths on a stone slab. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 5,
+      "title": "Pillar of the Early Church",
+      "image_file": "5.jpeg",
+      "english_text": "After Pentecost, John worked tirelessly alongside Peter in Jerusalem to preach the Gospel. They healed a lame man at the Temple gate and stood bravely before hostile leaders, declaring that they must obey God rather than men. John became a firm pillar of faith for all believers.",
+      "tetum_translation": "Pentekostes liu tiha, Joaun servisu ho laran-manas ho Pedru iha Jeruzalém atu haklaken Evanjellu. Sira kura ema ain-maten ida iha odamatan Umaklesan nian no hamriik ho brani iha lider balun nia oin, deklara katak sira temke halo tuir Maromak duké ema. Joaun sai riin fiar nian ne'ebé metin ba fiar-na'in hotu.",
+      "scene_summary": "John preaches boldly alongside Peter in Jerusalem, serving as a pillar of the early Christian church.",
+      "nano_banana_prompt": "Nano Banana illustration style, John the apostle with a warm smile and Peter standing together preaching to a crowd of people in front of Jerusalem's grand temple portico. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 6,
+      "title": "Writing the Gospel of Love",
+      "image_file": "6.jpeg",
+      "english_text": "As an elder, John wrote his wonderful Gospel and letters to teach the world about God's eternal love. He penned the famous verse, 'God so loved the world that He gave His only Son.' John continually reminded early Christians to love one another, saying, 'God is love!'",
+      "tetum_translation": "Nu'udar katuas ida, Joaun hakerek nia Evanjellu furak no karta sira atu hanorin raiklaran kona-ba Maromak nia domin rohan-laek. Nia hakerek eskritura koñesidu, 'Maromak domin tebes raiklaran to'o fó Nia Oan-Mane mesak.' Joaun hanoin-hetan beibeik kristaon sira atu domin malu, hodi dehan, 'Maromak mak domin!'",
+      "scene_summary": "John writes his Gospel and epistles, testifying that God is love and calling all believers to love one another.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly apostle John with a gentle white beard sitting at a wooden desk writing with a quill feather on parchment under warm lamp light. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 7,
+      "title": "Visions of Heaven on Patmos",
+      "image_file": "7.jpeg",
+      "english_text": "Because of his preaching, John was exiled to the rocky island of Patmos. While there in prayer on the Lord's Day, the glorified Jesus appeared to him in radiant glory! Jesus gave John amazing visions of the new heaven, the new earth, and the glorious victory of God's kingdom.",
+      "tetum_translation": "Tanba nia haklaken, ema duni Joaun ba illa fatuk Patmos. Bainhira iha ne'ebá iha orasaun laran iha Na'i nia Loron, Jesus glorifikadu mosu ba nia ho naroman boot! Jesus fó ba Joaun mehi-visaun furak sira kona-ba lalehan foun, rai foun, no vitoria ho ksolok nian husi Maromak nia reinu.",
+      "scene_summary": "Exiled on Patmos, John receives miraculous heavenly visions from Jesus recorded in the Book of Revelation.",
+      "nano_banana_prompt": "Nano Banana illustration style, an elderly apostle John kneeling on a rocky island cliff looking up in holy awe as a magnificent vision of a golden heavenly city appears in colorful glowing clouds. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    },
+    {
+      "scene_number": 8,
+      "title": "Teaching Love to the End",
+      "image_file": "8.jpeg",
+      "english_text": "John lived to a very old age, nurturing the young churches with fatherly warmth. When he was too frail to walk, his disciples carried him into gatherings where he repeated his simple, powerful message: 'Little children, love one another.' John completed his long life faithfully, leaving a legacy of pure love.",
+      "tetum_translation": "Joaun moris to'o katuas tebes, tau matan ba uma-kristaun foun sira ho domin aman nian. Bainhira nia katuas liu atu la'o, nia ata-kna'in sira lori nia ba maktapuk sira ne'ebé nia ko'alia beibeik nia mensajen ki'ik no kbiit-na'in: 'Oan ki'ik sira, domin malu ba.' Joaun ramata nia moris naruk ho laran-metin, husik liman-rohan domin pura.",
+      "scene_summary": "Elderly John finishes his faithful life encouraging believers with the enduring command to love one another.",
+      "nano_banana_prompt": "Nano Banana illustration style, a very gentle elderly apostle John with a long white beard sitting in a wooden chair, surrounded by smiling children and young believers listening attentively. Whimsical fairytale picture book watercolor texture, rich vibrant pastel colors, no text, 4:3 aspect ratio."
+    }
+  ],
+  "reflection": {
+    "core_lesson_en": "John shows us that knowing Jesus deeply transforms us into people of love, truth, and unwavering faithfulness.",
+    "core_lesson_tet": "Joaun hatudu mai ita katak koñese Jesus ho kle'an troka ita sai ema ne'ebé nakonu ho domin, lia-loos, no laran-metin.",
+    "discussion_question_en": "How can you show genuine love to your family members and classmates this week, just as Jesus and John taught us?",
+    "discussion_question_tet": "Oinsá ó bele hatudu domin loloos ba ó-nia umakain no maluk eskola sira iha semana ne'e, hanesan Jesus no Joaun hanorin ita?"
+  },
+  "workbook": {
+    "coloring_page": {
+      "image_file": "coloring.jpeg",
+      "scene_description": "Apostle John writing on a scroll with an eagle symbol near him.",
+      "nano_banana_coloring_prompt": "Black and white coloring book page for kids, clean bold black outlines, white background, no shading, no grayscale, elderly apostle John with a long white beard writing with a quill feather on parchment scroll, simple friendly cartoon style, no text, 3:4 portrait aspect ratio."
+    },
+    "crossword_words": [
+      {
+        "word_en": "JOHN",
+        "word_tet": "JOAUN",
+        "clue_en": "The beloved disciple who wrote about God's eternal love.",
+        "clue_tet": "Ata-kna'in ne'ebé Jesus domin tebes no hakerek kona-ba Maromak nia domin."
+      },
+      {
+        "word_en": "LOVE",
+        "word_tet": "DOMIN",
+        "clue_en": "The central message of John's writings: God is love.",
+        "clue_tet": "Mensajen boot husi Joaun nia hakerek: Maromak mak domin."
+      },
+      {
+        "word_en": "CROSS",
+        "word_tet": "KRUZ",
+        "clue_en": "Where John stood faithfully while Jesus placed Mary in his care.",
+        "clue_tet": "Fatin ne'ebé Joaun hamriik ho fiar bainhira Jesus husik Maria ba nia."
+      },
+      {
+        "word_en": "LIGHT",
+        "word_tet": "NAROMAN",
+        "clue_en": "Jesus is described by John as the true light of the world.",
+        "clue_tet": "Jesus koñesidu husi Joaun nu'udar raiklaran nia naroman loloos."
+      },
+      {
+        "word_en": "PATMOS",
+        "word_tet": "PATMOS",
+        "clue_en": "The island where John received wonderful heavenly visions.",
+        "clue_tet": "Illa ne'ebé Joaun simu mehi-visaun furak sira husi lalehan."
+      },
+      {
+        "word_en": "TRUTH",
+        "word_tet": "LIALOOS",
+        "clue_en": "What John always taught alongside love in his Gospel.",
+        "clue_tet": "Buat ne'ebé Joaun hanorin beibeik ho domin iha nia Evanjellu."
+      }
+    ]
+  }
+}
