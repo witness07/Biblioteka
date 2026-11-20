@@ -22,8 +22,8 @@
             border-bottom: 1px solid #f1f5f9;
         }
         .parallel-eng {
-            color: #64748b;
-            font-size: 0.92em;
+            color: #475569;
+            font-size: 0.94em;
             padding-left: 0.75rem;
             border-left: 2px solid #fde68a;
         }
@@ -130,96 +130,98 @@
 
     </main>
 
-    <!-- data/res/tetun_bible.json 전용 통합 뷰어 및 검색 컨트롤러 -->
+    <!-- data/res/tetun_bible.json 전용 통합 뷰어 및 NLT 실시간 대조 컨트롤러 -->
     <script>
-        // 1. 성경 66권 메타데이터 (구약 39권 OT, 신약 27권 NT)
+        // 1. 성경 66권 메타데이터 (구약 39권 OT, 신약 27권 NT + Bolls API 책 번호 num 포함)
         const BIBLE_BOOKS = [
-            // Testamentu Tuan (구약 39권)
-            { code: "GEN", name: "Jénesis", testament: "OT", nlt: "Genesis" },
-            { code: "EXO", name: "Ézodu", testament: "OT", nlt: "Exodus" },
-            { code: "LEV", name: "Levítiku", testament: "OT", nlt: "Leviticus" },
-            { code: "NUM", name: "Númeru", testament: "OT", nlt: "Numbers" },
-            { code: "DEU", name: "Deuteronómiu", testament: "OT", nlt: "Deuteronomy" },
-            { code: "JOS", name: "Jozué", testament: "OT", nlt: "Joshua" },
-            { code: "JDG", name: "Juís sira", testament: "OT", nlt: "Judges" },
-            { code: "RUT", name: "Rute", testament: "OT", nlt: "Ruth" },
-            { code: "1SA", name: "1 Samuel", testament: "OT", nlt: "1 Samuel" },
-            { code: "2SA", name: "2 Samuel", testament: "OT", nlt: "2 Samuel" },
-            { code: "1KI", name: "1 Liurai sira", testament: "OT", nlt: "1 Kings" },
-            { code: "2KI", name: "2 Liurai sira", testament: "OT", nlt: "2 Kings" },
-            { code: "1CH", name: "1 Krónika", testament: "OT", nlt: "1 Chronicles" },
-            { code: "2CH", name: "2 Krónika", testament: "OT", nlt: "2 Chronicles" },
-            { code: "EZR", name: "Ezra", testament: "OT", nlt: "Ezra" },
-            { code: "NEH", name: "Neemias", testament: "OT", nlt: "Nehemiah" },
-            { code: "EST", name: "Ester", testament: "OT", nlt: "Esther" },
-            { code: "JOB", name: "Jó", testament: "OT", nlt: "Job" },
-            { code: "PSA", name: "Salmu sira", testament: "OT", nlt: "Psalms" },
-            { code: "PRO", name: "Provérbiu", testament: "OT", nlt: "Proverbs" },
-            { code: "ECC", name: "Ekleziastes", testament: "OT", nlt: "Ecclesiastes" },
-            { code: "SNG", name: "Kántiku", testament: "OT", nlt: "Song of Songs" },
-            { code: "ISA", name: "Isaías", testament: "OT", nlt: "Isaiah" },
-            { code: "JER", name: "Jeremias", testament: "OT", nlt: "Jeremiah" },
-            { code: "LAM", name: "Lamentasaun", testament: "OT", nlt: "Lamentations" },
-            { code: "EZK", name: "Ezekiel", testament: "OT", nlt: "Ezekiel" },
-            { code: "DAN", name: "Daniel", testament: "OT", nlt: "Daniel" },
-            { code: "HOS", name: "Ozeias", testament: "OT", nlt: "Hosea" },
-            { code: "JOL", name: "Joel", testament: "OT", nlt: "Joel" },
-            { code: "AMO", name: "Amós", testament: "OT", nlt: "Amos" },
-            { code: "OBA", name: "Obadias", testament: "OT", nlt: "Obadiah" },
-            { code: "JON", name: "Jonas", testament: "OT", nlt: "Jonah" },
-            { code: "MIC", name: "Mika", testament: "OT", nlt: "Micah" },
-            { code: "NAM", name: "Naum", testament: "OT", nlt: "Nahum" },
-            { code: "HAB", name: "Habakuk", testament: "OT", nlt: "Habakkuk" },
-            { code: "ZEP", name: "Sofonias", testament: "OT", nlt: "Zephaniah" },
-            { code: "HAG", name: "Ageu", testament: "OT", nlt: "Haggai" },
-            { code: "ZEC", name: "Zakarias", testament: "OT", nlt: "Zechariah" },
-            { code: "MAL", name: "Malakias", testament: "OT", nlt: "Malachi" },
+            // Testamentu Tuan (구약 39권: 1~39)
+            { num: 1,  code: "GEN", name: "Jénesis", testament: "OT", nlt: "Genesis" },
+            { num: 2,  code: "EXO", name: "Ézodu", testament: "OT", nlt: "Exodus" },
+            { num: 3,  code: "LEV", name: "Levítiku", testament: "OT", nlt: "Leviticus" },
+            { num: 4,  code: "NUM", name: "Númeru", testament: "OT", nlt: "Numbers" },
+            { num: 5,  code: "DEU", name: "Deuteronómiu", testament: "OT", nlt: "Deuteronomy" },
+            { num: 6,  code: "JOS", name: "Jozué", testament: "OT", nlt: "Joshua" },
+            { num: 7,  code: "JDG", name: "Juís sira", testament: "OT", nlt: "Judges" },
+            { num: 8,  code: "RUT", name: "Rute", testament: "OT", nlt: "Ruth" },
+            { num: 9,  code: "1SA", name: "1 Samuel", testament: "OT", nlt: "1 Samuel" },
+            { num: 10, code: "2SA", name: "2 Samuel", testament: "OT", nlt: "2 Samuel" },
+            { num: 11, code: "1KI", name: "1 Liurai sira", testament: "OT", nlt: "1 Kings" },
+            { num: 12, code: "2KI", name: "2 Liurai sira", testament: "OT", nlt: "2 Kings" },
+            { num: 13, code: "1CH", name: "1 Krónika", testament: "OT", nlt: "1 Chronicles" },
+            { num: 14, code: "2CH", name: "2 Krónika", testament: "OT", nlt: "2 Chronicles" },
+            { num: 15, code: "EZR", name: "Ezra", testament: "OT", nlt: "Ezra" },
+            { num: 16, code: "NEH", name: "Neemias", testament: "OT", nlt: "Nehemiah" },
+            { num: 17, code: "EST", name: "Ester", testament: "OT", nlt: "Esther" },
+            { num: 18, code: "JOB", name: "Jó", testament: "OT", nlt: "Job" },
+            { num: 19, code: "PSA", name: "Salmu sira", testament: "OT", nlt: "Psalms" },
+            { num: 20, code: "PRO", name: "Provérbiu", testament: "OT", nlt: "Proverbs" },
+            { num: 21, code: "ECC", name: "Ekleziastes", testament: "OT", nlt: "Ecclesiastes" },
+            { num: 22, code: "SNG", name: "Kántiku", testament: "OT", nlt: "Song of Songs" },
+            { num: 23, code: "ISA", name: "Isaías", testament: "OT", nlt: "Isaiah" },
+            { num: 24, code: "JER", name: "Jeremias", testament: "OT", nlt: "Jeremiah" },
+            { num: 25, code: "LAM", name: "Lamentasaun", testament: "OT", nlt: "Lamentations" },
+            { num: 26, code: "EZK", name: "Ezekiel", testament: "OT", nlt: "Ezekiel" },
+            { num: 27, code: "DAN", name: "Daniel", testament: "OT", nlt: "Daniel" },
+            { num: 28, code: "HOS", name: "Ozeias", testament: "OT", nlt: "Hosea" },
+            { num: 29, code: "JOL", name: "Joel", testament: "OT", nlt: "Joel" },
+            { num: 30, code: "AMO", name: "Amós", testament: "OT", nlt: "Amos" },
+            { num: 31, code: "OBA", name: "Obadias", testament: "OT", nlt: "Obadiah" },
+            { num: 32, code: "JON", name: "Jonas", testament: "OT", nlt: "Jonah" },
+            { num: 33, code: "MIC", name: "Mika", testament: "OT", nlt: "Micah" },
+            { num: 34, code: "NAM", name: "Naum", testament: "OT", nlt: "Nahum" },
+            { num: 35, code: "HAB", name: "Habakuk", testament: "OT", nlt: "Habakkuk" },
+            { num: 36, code: "ZEP", name: "Sofonias", testament: "OT", nlt: "Zephaniah" },
+            { num: 37, code: "HAG", name: "Ageu", testament: "OT", nlt: "Haggai" },
+            { num: 38, code: "ZEC", name: "Zakarias", testament: "OT", nlt: "Zechariah" },
+            { num: 39, code: "MAL", name: "Malakias", testament: "OT", nlt: "Malachi" },
 
-            // Testamentu Foun (신약 27권)
-            { code: "MAT", name: "Mateus", testament: "NT", nlt: "Matthew" },
-            { code: "MRK", name: "Markus", testament: "NT", nlt: "Mark" },
-            { code: "LUK", name: "Lucas", testament: "NT", nlt: "Luke" },
-            { code: "JHN", name: "João", testament: "NT", nlt: "John" },
-            { code: "ACT", name: "Apóstolu sira", testament: "NT", nlt: "Acts" },
-            { code: "ROM", name: "Roma", testament: "NT", nlt: "Romans" },
-            { code: "1CO", name: "1 Korintu", testament: "NT", nlt: "1 Corinthians" },
-            { code: "2CO", name: "2 Korintu", testament: "NT", nlt: "2 Corinthians" },
-            { code: "GAL", name: "Galásia", testament: "NT", nlt: "Galatians" },
-            { code: "EPH", name: "Éfezu", testament: "NT", nlt: "Ephesians" },
-            { code: "PHP", name: "Filipi", testament: "NT", nlt: "Philippians" },
-            { code: "COL", name: "Kolose", testament: "NT", nlt: "Colossians" },
-            { code: "1TH", name: "1 Tesalónika", testament: "NT", nlt: "1 Thessalonians" },
-            { code: "2TH", name: "2 Tesalónika", testament: "NT", nlt: "2 Thessalonians" },
-            { code: "1TI", name: "1 Timóteo", testament: "NT", nlt: "1 Timothy" },
-            { code: "2TI", name: "2 Timóteo", testament: "NT", nlt: "2 Timothy" },
-            { code: "TIT", name: "Titu", testament: "NT", nlt: "Titus" },
-            { code: "PHM", name: "Filemon", testament: "NT", nlt: "Philemon" },
-            { code: "HEB", name: "Ebreu", testament: "NT", nlt: "Hebrews" },
-            { code: "JAS", name: "Tiago", testament: "NT", nlt: "James" },
-            { code: "1PE", name: "1 Pedro", testament: "NT", nlt: "1 Peter" },
-            { code: "2PE", name: "2 Pedro", testament: "NT", nlt: "2 Peter" },
-            { code: "1JN", name: "1 João", testament: "NT", nlt: "1 John" },
-            { code: "2JN", name: "2 João", testament: "NT", nlt: "2 John" },
-            { code: "3JN", name: "3 João", testament: "NT", nlt: "3 John" },
-            { code: "JUD", name: "Judas", testament: "NT", nlt: "Jude" },
-            { code: "REV", name: "Apokalipse", testament: "NT", nlt: "Revelation" }
+            // Testamentu Foun (신약 27권: 40~66)
+            { num: 40, code: "MAT", name: "Mateus", testament: "NT", nlt: "Matthew" },
+            { num: 41, code: "MRK", name: "Markus", testament: "NT", nlt: "Mark" },
+            { num: 42, code: "LUK", name: "Lucas", testament: "NT", nlt: "Luke" },
+            { num: 43, code: "JHN", name: "João", testament: "NT", nlt: "John" },
+            { num: 44, code: "ACT", name: "Apóstolu sira", testament: "NT", nlt: "Acts" },
+            { num: 45, code: "ROM", name: "Roma", testament: "NT", nlt: "Romans" },
+            { num: 46, code: "1CO", name: "1 Korintu", testament: "NT", nlt: "1 Corinthians" },
+            { num: 47, code: "2CO", name: "2 Korintu", testament: "NT", nlt: "2 Corinthians" },
+            { num: 48, code: "GAL", name: "Galásia", testament: "NT", nlt: "Galatians" },
+            { num: 49, code: "EPH", name: "Éfezu", testament: "NT", nlt: "Ephesians" },
+            { num: 50, code: "PHP", name: "Filipi", testament: "NT", nlt: "Philippians" },
+            { num: 51, code: "COL", name: "Kolose", testament: "NT", nlt: "Colossians" },
+            { num: 52, code: "1TH", name: "1 Tesalónika", testament: "NT", nlt: "1 Thessalonians" },
+            { num: 53, code: "2TH", name: "2 Tesalónika", testament: "NT", nlt: "2 Thessalonians" },
+            { num: 54, code: "1TI", name: "1 Timóteo", testament: "NT", nlt: "1 Timothy" },
+            { num: 55, code: "2TI", name: "2 Timóteo", testament: "NT", nlt: "2 Timothy" },
+            { num: 56, code: "TIT", name: "Titu", testament: "NT", nlt: "Titus" },
+            { num: 57, code: "PHM", name: "Filemon", testament: "NT", nlt: "Philemon" },
+            { num: 58, code: "HEB", name: "Ebreu", testament: "NT", nlt: "Hebrews" },
+            { num: 59, code: "JAS", name: "Tiago", testament: "NT", nlt: "James" },
+            { num: 60, code: "1PE", name: "1 Pedro", testament: "NT", nlt: "1 Peter" },
+            { num: 61, code: "2PE", name: "2 Pedro", testament: "NT", nlt: "2 Peter" },
+            { num: 62, code: "1JN", name: "1 João", testament: "NT", nlt: "1 John" },
+            { num: 63, code: "2JN", name: "2 João", testament: "NT", nlt: "2 John" },
+            { num: 64, code: "3JN", name: "3 João", testament: "NT", nlt: "3 John" },
+            { num: 65, code: "JUD", name: "Judas", testament: "NT", nlt: "Jude" },
+            { num: 66, code: "REV", name: "Apokalipse", testament: "NT", nlt: "Revelation" }
         ];
 
         const BOOK_MAP = Object.fromEntries(BIBLE_BOOKS.map(b => [b.code, b]));
 
         // 상태 변수
         let bibleData = {};
-        let nltData = null;
+        const englishChapterCache = {}; // 메모리 캐시: { "1PE_1": { version: "NLT", verses: { "18": "..." } } }
         let searchIndex = [];
         let currentBook = "GEN";
         let currentChapter = "1";
-        let highlightVerses = []; // 복수 절 하이라이트 지원 (예: [19, 20])
+        let highlightVerses = [];
         let showNlt = false;
         let currentFontSize = 18;
+        let renderSequence = 0;
 
         let loadingState, readerView, searchView, testamentSelect, bookSelect, chapterSelect,
             testamentBadge, chapterTitle, versesContainer, searchInput, searchBtn,
-            closeSearchBtn, searchResultsList, toggleNltBtn, parallelHeader, headerInner, mainContainer;
+            closeSearchBtn, searchResultsList, toggleNltBtn, parallelHeader, engHeaderLabel,
+            headerInner, mainContainer;
 
         function bindDomElements() {
             loadingState = document.getElementById('loadingState');
@@ -237,27 +239,25 @@
             searchResultsList = document.getElementById('searchResultsList');
             toggleNltBtn = document.getElementById('toggleNltBtn');
             parallelHeader = document.getElementById('parallelHeader');
+            engHeaderLabel = document.getElementById('engHeaderLabel');
             headerInner = document.getElementById('headerInner');
             mainContainer = document.getElementById('mainContainer');
         }
 
         function safeAddListener(el, event, handler) {
-            if (el) {
-                el.addEventListener(event, handler);
-            }
+            if (el) el.addEventListener(event, handler);
         }
 
         function normalizeStr(s) {
             return String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
         }
 
-        // URL 파라미터 (?ref=1CO.6.19-20 또는 ?ref=Jénesis 1:1) 파싱 및 초기 위치 결정
+        // URL 파라미터 (?ref=1PE.1.18-19 또는 ?ref=Jénesis 1:1) 파싱
         function parseInitialReference() {
             const params = new URLSearchParams(window.location.search);
             const rawRef = params.get('ref') || decodeURIComponent(window.location.hash.replace('#', ''));
             if (!rawRef) return null;
 
-            // 1) 점(.) 구분 포맷 (예: 1CO.6.19-20 또는 GEN.1.1)
             const dotMatch = rawRef.trim().match(/^([1-3]?[A-Za-z]+)\.(\d+)(?:\.(\d+)(?:-(\d+))?)?$/);
             if (dotMatch) {
                 const code = dotMatch[1].toUpperCase();
@@ -271,7 +271,6 @@
                 return { bookCode: code, chapter: chap, verses };
             }
 
-            // 2) 공백/콜론 구분 포맷 (예: 1 Korinto 6:19-20)
             const textMatch = rawRef.trim().match(/^([1-3]?\s*[a-zA-ZÀ-ÿ\s]+?)\s+(\d+)(?:[:.](\d+)(?:-(\d+))?)?$/);
             if (textMatch) {
                 const normBook = normalizeStr(textMatch[1]);
@@ -294,7 +293,72 @@
             return null;
         }
 
-        // 2. 초기화: data/res/tetun_bible.json 로드 (미리보기 blob/file 환경 폴백 지원)
+        // 외부 API에서 영어 NLT(실패 시 WEB 폴백) 장 단위 데이터 가져오기
+        async function fetchEnglishChapter(bookMeta, chapNum) {
+            const cacheKey = `${bookMeta.code}_${chapNum}`;
+            if (englishChapterCache[cacheKey]) {
+                return englishChapterCache[cacheKey];
+            }
+
+            // 1순위: Bolls.life API (NLT)
+            if (bookMeta.num) {
+                try {
+                    const res = await fetch(`https://bolls.life/get-text/NLT/${bookMeta.num}/${chapNum}/`);
+                    if (res.ok) {
+                        const list = await res.json();
+                        if (Array.isArray(list) && list.length > 0) {
+                            const versesMap = {};
+                            list.forEach(item => {
+                                if (item && item.verse != null && item.text != null) {
+                                    versesMap[String(item.verse)] = String(item.text)
+                                        .replace(/<br\s*\/?>/gi, ' ')
+                                        .replace(/<\/?[^>]+(>|$)/g, '')
+                                        .replace(/\s+/g, ' ')
+                                        .trim();
+                                }
+                            });
+                            if (Object.keys(versesMap).length > 0) {
+                                const result = { version: 'NLT', verses: versesMap };
+                                englishChapterCache[cacheKey] = result;
+                                return result;
+                            }
+                        }
+                    }
+                } catch (err) {
+                    console.warn("Bolls NLT API 호출 실패, WEB 폴백 시도:", err);
+                }
+            }
+
+            // 2순위: bible-api.com (WEB 폴백)
+            if (bookMeta.nlt) {
+                try {
+                    const query = encodeURIComponent(`${bookMeta.nlt} ${chapNum}`);
+                    const res = await fetch(`https://bible-api.com/${query}?translation=web`);
+                    if (res.ok) {
+                        const data = await res.json();
+                        if (data && Array.isArray(data.verses) && data.verses.length > 0) {
+                            const versesMap = {};
+                            data.verses.forEach(v => {
+                                if (v && v.verse != null && v.text != null) {
+                                    versesMap[String(v.verse)] = String(v.text).replace(/\s+/g, ' ').trim();
+                                }
+                            });
+                            if (Object.keys(versesMap).length > 0) {
+                                const result = { version: 'WEB', verses: versesMap };
+                                englishChapterCache[cacheKey] = result;
+                                return result;
+                            }
+                        }
+                    }
+                } catch (err) {
+                    console.error("Fallback bible-api 호출 실패:", err);
+                }
+            }
+
+            return { version: 'NLT', verses: null };
+        }
+
+        // 2. 초기화: data/res/tetun_bible.json 로드 (404 유발하는 nlt_bible.json 요청 제거)
         async function initBible() {
             try {
                 if (window.location.protocol === 'blob:' || window.location.protocol === 'file:') {
@@ -306,11 +370,6 @@
                     throw new Error(`HTTP ${response.status}: data/res/tetun_bible.json 파일을 찾을 수 없습니다.`);
                 }
                 bibleData = await response.json();
-
-                fetch('data/res/nlt_bible.json')
-                    .then(res => res.ok ? res.json() : null)
-                    .then(data => { nltData = data; })
-                    .catch(() => {});
             } catch (error) {
                 console.warn("로컬/미리보기 환경 감지 또는 JSON 로드 실패로 테스트 샘플 데이터를 표시합니다:", error.message);
                 bibleData = {
@@ -323,17 +382,10 @@
                             "5": "Maromak foo naran ba naroman nee, ‘Loron’, no nakukun nee Nia foo naran, ‘Kalan’. Hosi kalan too dadeer nee mak loron primeiru."
                         }
                     },
-                    "1CO": {
-                        "6": {
-                            "19": "Imi la hatene katak imi-nia isin nee Espíritu Santu nia uma ka? Espíritu Santu nee hela iha imi-nia laran, no Maromak mak foo Nia ba imi. Imi la'ós imi-nia an rasik nian.",
-                            "20": "Maromak sosa ona imi ho folin boot. Tanba nee, uza imi-nia isin hodi fó glória ba Maromak."
-                        }
-                    },
-                    "ROM": {
-                        "14": {
-                            "7": "Ita ida la moris ba nia an rasik de'it, no ita ida la mate ba nia an rasik de'it.",
-                            "8": "Se ita moris, ita moris ba Na'i; no se ita mate, ita mate ba Na'i. Tanba nee, maski ita moris ka mate, ita Na'i nian.",
-                            "9": "Kristu mate no moris fali atu sai Na'i ba ema mate sira no ema moris sira."
+                    "1PE": {
+                        "1": {
+                            "18": "Imi hatene katak Maromak sosa fali imi hosi imi-nia moris mamuk ne'ebé imi simu hosi imi-nia bei'ala sira. Nia la sosa imi ho sasán ne'ebé bele lakon hanesan osan-mean ka osan-mutin,",
+                            "19": "maibé ho Kristu nia raan ne'ebé folin boot tebes, hanesan bibi-oan ne'ebé la iha sala no la iha fo'er ida."
                         }
                     }
                 };
@@ -347,7 +399,6 @@
                 currentBook = availableCodes[0];
             }
 
-            // URL ?ref= 파라미터가 있으면 해당 책/장/절로 바로 이동
             const parsedRef = parseInitialReference();
             if (parsedRef && bibleData[parsedRef.bookCode]) {
                 currentBook = parsedRef.bookCode;
@@ -357,7 +408,7 @@
 
             bookSelect.value = currentBook;
             populateChapterSelect(currentBook);
-            renderChapter(currentBook, currentChapter, highlightVerses);
+            await renderChapter(currentBook, currentChapter, highlightVerses);
 
             loadingState.classList.add('hidden');
             readerView.classList.remove('hidden');
@@ -435,26 +486,31 @@
             chapterSelect.value = currentChapter;
         }
 
-        // 6. 성경 본문 렌더링
-        function renderChapter(bookCode, chapNum, targetVerses = []) {
+        // 6. 성경 본문 렌더링 (Tetun 즉시 렌더링 후 NLT 비동기 채우기)
+        async function renderChapter(bookCode, chapNum, targetVerses = []) {
             currentBook = bookCode;
             currentChapter = String(chapNum);
             highlightVerses = Array.isArray(targetVerses) ? targetVerses.map(String) : (targetVerses ? [String(targetVerses)] : []);
+            const seq = ++renderSequence;
 
-            const bookMeta = BOOK_MAP[bookCode] || { name: bookCode, testament: "OT", nlt: bookCode };
+            const bookMeta = BOOK_MAP[bookCode] || { code: bookCode, name: bookCode, testament: "OT", nlt: bookCode };
             testamentBadge.textContent = bookMeta.testament === "NT" ? "Testamentu Foun" : "Testamentu Tuan";
-            chapterTitle.textContent = `${bookMeta.name} ${currentChapter}`;
+            chapterTitle.textContent = showNlt && bookMeta.nlt
+                ? `${bookMeta.name} / ${bookMeta.nlt} ${currentChapter}`
+                : `${bookMeta.name} ${currentChapter}`;
 
             if (showNlt) {
                 headerInner.classList.replace('max-w-4xl', 'max-w-6xl');
                 mainContainer.classList.replace('max-w-4xl', 'max-w-6xl');
                 parallelHeader.classList.remove('hidden');
                 toggleNltBtn.classList.add('bg-amber-100', 'border-amber-400', 'text-amber-800');
+                toggleNltBtn.textContent = '✓ NLT';
             } else {
                 headerInner.classList.replace('max-w-6xl', 'max-w-4xl');
                 mainContainer.classList.replace('max-w-6xl', 'max-w-4xl');
                 parallelHeader.classList.add('hidden');
                 toggleNltBtn.classList.remove('bg-amber-100', 'border-amber-400', 'text-amber-800');
+                toggleNltBtn.textContent = '+ NLT';
             }
 
             const chapData = (bibleData[bookCode] && bibleData[bookCode][currentChapter]) || {};
@@ -470,7 +526,6 @@
                 const isHighlighted = highlightVerses.includes(String(vNum));
 
                 if (showNlt) {
-                    const engText = getNltVerse(bookMeta, currentChapter, vNum);
                     const row = document.createElement('div');
                     row.id = `verse-${vNum}`;
                     row.className = `parallel-verse-row ${isHighlighted ? 'verse-highlight' : ''}`;
@@ -478,8 +533,8 @@
                         <div class="leading-relaxed">
                             <sup class="font-bold text-amber-700 mr-1.5 text-xs">${vNum}</sup>${escapeHtml(tetunText)}
                         </div>
-                        <div class="parallel-eng leading-relaxed">
-                            <sup class="font-semibold text-slate-400 mr-1.5 text-xs">${vNum}</sup>${escapeHtml(engText)}
+                        <div id="nlt-verse-${vNum}" class="parallel-eng leading-relaxed text-slate-400 italic text-sm">
+                            <sup class="font-semibold text-slate-400 mr-1.5 text-xs">${vNum}</sup>Loading NLT...
                         </div>
                     `;
                     versesContainer.appendChild(row);
@@ -500,13 +555,33 @@
             } else {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
-        }
 
-        function getNltVerse(bookMeta, chap, verse) {
-            if (!nltData) return "(NLT data la disponivel)";
-            const byCode = nltData[bookMeta.code]?.[chap]?.[verse] || nltData[bookMeta.code]?.[chap]?.verses?.[verse];
-            const byName = nltData[bookMeta.nlt]?.[chap]?.[verse] || nltData[bookMeta.nlt]?.[chap]?.verses?.[verse];
-            return byCode || byName || "—";
+            // NLT 대조 모드가 켜져 있으면 외부 API에서 해당 장의 영어 본문을 불러와 채움
+            if (showNlt) {
+                if (engHeaderLabel) engHeaderLabel.textContent = 'English (Loading NLT...)';
+                const engData = await fetchEnglishChapter(bookMeta, currentChapter);
+
+                // 비동기 요청 중 다른 장으로 이동했거나 NLT를 껐으면 중단
+                if (seq !== renderSequence || !showNlt) return;
+
+                if (engHeaderLabel) {
+                    engHeaderLabel.textContent = `English (${engData.version})`;
+                }
+
+                verseNumbers.forEach(vNum => {
+                    const engEl = document.getElementById(`nlt-verse-${vNum}`);
+                    if (!engEl) return;
+
+                    if (engData.verses && engData.verses[vNum]) {
+                        engEl.classList.remove('text-slate-400', 'italic', 'text-sm');
+                        engEl.innerHTML = `<sup class="font-semibold text-slate-400 mr-1.5 text-xs">${vNum}</sup>${escapeHtml(engData.verses[vNum])}`;
+                    } else if (engData.verses === null) {
+                        engEl.textContent = '(English NLT/WEB service unavailable - check internet)';
+                    } else {
+                        engEl.textContent = '—';
+                    }
+                });
+            }
         }
 
         // 7. 단어 검색 실행
