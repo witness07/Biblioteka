@@ -64,11 +64,61 @@ const BOOKS_DATABASE = [
     // ======================================================================
     // [신간 도서 (isNew: true)]
     // ======================================================================
-
     {
-        id: 1008,
+        id: 1009,
         publisherId: "pub-2",
         isNew: true,
+        title: "Kurríkulu Eskola Domingu — Vol. 1 (Semana 1–12)",
+        author: "Eskola Domingu Timor-Leste",
+        issueLabel: "Disípulu • Vol. 1",
+        description: "Lisaun semana 1 to'o 12 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
+        coverImage: "images/sundaySchool/vol-1.jpeg",
+        heyzineUrl: "https://heyzine.com/flip-book/e842712a7f.html"
+    },
+    {
+        id: 1010,
+        publisherId: "pub-2",
+        isNew: true,
+        title: "Kurríkulu Eskola Domingu — Vol. 2 (Semana 13–24)",
+        author: "Eskola Domingu Timor-Leste",
+        issueLabel: "Disípulu • Vol. 2",
+        description: "Lisaun semana 12 to'o 24 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
+        coverImage: "images/sundaySchool/vol-2.jpeg",
+        heyzineUrl: "https://heyzine.com/flip-book/05d5095fd4.html"
+    },
+    {
+        id: 1011,
+        publisherId: "pub-2",
+        isNew: true,
+        title: "Kurríkulu Eskola Domingu — Vol. 3 (Semana 25–36)",
+        author: "Eskola Domingu Timor-Leste",
+        issueLabel: "Disípulu • Vol. 3",
+        description: "Lisaun semana 25 to'o 36 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
+        coverImage: "images/sundaySchool/vol-3.jpeg",
+        heyzineUrl: "https://heyzine.com/flip-book/c563f9df83.html"
+    },
+     {
+        id: 1012,
+        publisherId: "pub-2",
+        isNew: true,
+        title: "Kurríkulu Eskola Domingu — Vol. 4 (Semana 37–52)",
+        author: "Eskola Domingu Timor-Leste",
+        issueLabel: "Disípulu • Vol. 3",
+        description: "Lisaun semana 37 to'o 52 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
+        coverImage: "images/sundaySchool/vol-4.jpeg",
+        heyzineUrl: "https://heyzine.com/flip-book/48cd4f78e4.html"
+    },
+
+   
+    // ======================================================================
+    // [지난 출판물 (isNew: false)]
+    // ======================================================================
+    
+     
+     {
+        id: 1008,
+        publisherId: "pub-2",
+        isNew: false,
         title: "Istória Ema Sira iha Bíblia (30 Ema)",
         author: "Eskola Domingu Timor-Leste",
         issueLabel: "Moris • Bíblia 30",
@@ -81,7 +131,7 @@ const BOOKS_DATABASE = [
     {
         id: 1007,
         publisherId: "pub-1",
-        isNew: true,
+        isNew: false,
         title: "Liafuan Sira ba Lian Korea",
         author: "SUE&JUN PRESS",
         issueLabel: "Voca • Korean",
@@ -93,7 +143,7 @@ const BOOKS_DATABASE = [
     {
         id: 1006,
         publisherId: "pub-2",
-        isNew: true,
+        isNew: false,
         title: "KATESISMU BADAK Westminster",
         author: "Westminster Assembly",
         issueLabel: "Moris • Liafuan",
@@ -105,7 +155,7 @@ const BOOKS_DATABASE = [
      {
         id: 1005,
         publisherId: "pub-2",
-        isNew: true,
+        isNew: false,
         title: "KATESISMU BADAK Heidelberg",
         author: "Zacharias Ursinus",
         issueLabel: "Moris • Liafuan",
@@ -118,7 +168,7 @@ const BOOKS_DATABASE = [
     {
         id: 1004,
         publisherId: "pub-3",
-        isNew: true,
+        isNew: false,
         title: "Manduku Sira ne'ebé Husu Liurai Ida (The Frogs Who Wished for a King.)",
         author: "Esopu (Aesop's Fables)",
         issueLabel: "Foun • Istória",
@@ -129,7 +179,7 @@ const BOOKS_DATABASE = [
     {
         id: 1003,
         publisherId: "pub-3",
-        isNew: true,
+        isNew: false,
         title: "Lioun ho Ratu (The Lion & the Mouse)",
         author: "Esopu (Aesop's Fables)",
         issueLabel: "Foun • Istória",
@@ -140,7 +190,7 @@ const BOOKS_DATABASE = [
     {
         id: 1002,
         publisherId: "pub-3",
-        isNew: true,
+        isNew: false,
         title: "Bibi-atan Ki'ik ho Lobu (The Shepherd Boy & the Wolf)",
         author: "Esopu (Aesop's Fables)",
         issueLabel: "Foun • Istória",
@@ -151,7 +201,7 @@ const BOOKS_DATABASE = [
      {
         id: 1001,
         publisherId: "pub-0",
-        isNew: true,
+        isNew: false,
         title: "Testamentu Foun (Tetun-Dili) - IBTTL",
         author: "Institutu Bíblia Tetun Timor-Leste (IBTTL)",
         issueLabel: "Bíblia • Kompletu",
@@ -162,7 +212,7 @@ const BOOKS_DATABASE = [
     {
         id: 1,
         publisherId: "pub-0",
-        isNew: true,
+        isNew: false,
         title: "BibleTime - Testamentu Foun (Volum 11)",
         author: "BibleTime Timor-Leste",
         issueLabel: "Vol. 11",
@@ -171,47 +221,7 @@ const BOOKS_DATABASE = [
         heyzineUrl: "https://heyzine.com/flip-book/fc63f38965.html"
     },
   
-    {
-        id: 200,
-        publisherId: "pub-1",
-        isNew: true,
-        title: "Introdusaun ba Dezenvolvimentu Web",
-        author: "SUE AND JUN Formadór",
-        issueLabel: "Foun • IT",
-        description: "Matadalan prátiku kona-ba HTML, CSS no dezeñu responsivu ba estudante sira.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 300,
-        publisherId: "pub-2",
-        isNew: true,
-        title: "Istória no Kultura Timor-Leste",
-        author: "Grupu Peskiza Kultura",
-        issueLabel: "Foun • Kultura",
-        description: "Kolesaun istória tradisionál no valór morál husi munisípiu hotu-hotu.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 400,
-        publisherId: "pub-3",
-        isNew: true,
-        title: "Matadalan Siénsia no Teknolojia",
-        author: "Departamentu Edukasaun",
-        issueLabel: "Foun • Siénsia",
-        description: "Kompreende mundu modernu no inovasaun dijitál ho maneira fásil.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-
-    // ======================================================================
-    // [지난 출판물 (isNew: false)]
-    // ======================================================================
-    
-     
-    
-    
+        
     {
         id: 2,
         publisherId: "pub-0",
@@ -255,161 +265,9 @@ const BOOKS_DATABASE = [
         description: "Revista fulan-fulan!",
         coverImage: "images/dromos-vol12.png",
         heyzineUrl: "https://heyzine.com/flip-book/9afc3291c8.html"
-    },
-    {
-        id: 102,
-        publisherId: "pub-0",
-        isNew: false,
-        title: "Dromos VOL.11",
-        author: "Tiranu Hera",
-        issueLabel: "Volum 11",
-        description: "Revista fulan-fulan!",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 103,
-        publisherId: "pub-0",
-        isNew: false,
-        title: "BibleTime - Testamentu Foun (Volum 08)",
-        author: "BibleTime Timor-Leste",
-        issueLabel: "Volum 08",
-        description: "Kolesaun leitura diáriu no orasaun ba labarik no joven sira.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 104,
-        publisherId: "pub-0",
-        isNew: false,
-        title: "BibleTime - Testamentu Foun (Volum 07)",
-        author: "BibleTime Timor-Leste",
-        issueLabel: "Volum 07",
-        description: "Haree no aprende kona-ba Jesus nia milagre no hanorin sira.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 105,
-        publisherId: "pub-0",
-        isNew: false,
-        title: "BibleTime - Testamentu Foun (Volum 06)",
-        author: "BibleTime Timor-Leste",
-        issueLabel: "Volum 06",
-        description: "Estudu mensál kona-ba fiar, esperansa no domin iha moris loron-loron.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 106,
-        publisherId: "pub-0",
-        isNew: false,
-        title: "BibleTime - Testamentu Foun (Volum 05)",
-        author: "BibleTime Timor-Leste",
-        issueLabel: "Volum 05",
-        description: "Livru traballu no atividade edukativa ba eskola dominggu.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 107,
-        publisherId: "pub-0",
-        isNew: false,
-        title: "BibleTime - Testamentu Foun (Volum 04)",
-        author: "BibleTime Timor-Leste",
-        issueLabel: "Volum 04",
-        description: "Liafuan murak husi Salmu no Provérbiu sira ba foin-sa'e.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 108,
-        publisherId: "pub-0",
-        isNew: false,
-        title: "BibleTime - Testamentu Foun (Volum 03)",
-        author: "BibleTime Timor-Leste",
-        issueLabel: "Volum 03",
-        description: "Istória kona-ba profeta sira iha Testamentu Tuan no Foun.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 109,
-        publisherId: "pub-0",
-        isNew: false,
-        title: "BibleTime - Testamentu Foun (Volum 02)",
-        author: "BibleTime Timor-Leste",
-        issueLabel: "Volum 02",
-        description: "Matadalan leitura ba família no grupu estudu komunitáriu.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 110,
-        publisherId: "pub-0",
-        isNew: false,
-        title: "BibleTime - Testamentu Foun (Volum 01)",
-        author: "BibleTime Timor-Leste",
-        issueLabel: "Volum 01",
-        description: "Edisaun dahuluk husi série BibleTime iha lian Tetum.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 111,
-        publisherId: "pub-0",
-        isNew: false,
-        title: "BibleTime - Edisaun Espesiál (Antigu)",
-        author: "BibleTime Timor-Leste",
-        issueLabel: "Arkivu Antigu",
-        description: "Edisaun ida-ne'e la mosu tanba liu ona limite livru 10 ikus.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 201,
-        publisherId: "pub-1",
-        isNew: false,
-        title: "Manuál Komputadór Báziku",
-        author: "SUE AND JUN Formadór",
-        issueLabel: "2025 • IT",
-        description: "Aprende uza komputadór, dokumentu no internet ho seguru.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 202,
-        publisherId: "pub-1",
-        isNew: false,
-        title: "Dezeñu Gráfiku ho Ferramenta Livre",
-        author: "SUE AND JUN Formadór",
-        issueLabel: "2025 • Design",
-        description: "Kria poster, broxura no imajen dijitál ba negosiu ki'ik.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 301,
-        publisherId: "pub-2",
-        isNew: false,
-        title: "Ai-knanoik Husi Avó Sira",
-        author: "Literatura Lafaek",
-        issueLabel: "2025 • Istória",
-        description: "Kolesaun ai-knanoik tradisionál Timor nian ba labarik sira.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
-    },
-    {
-        id: 401,
-        publisherId: "pub-3",
-        isNew: false,
-        title: "Ekonomia no Agrikultura Sustentável",
-        author: "Siénsia no Edukasaun",
-        issueLabel: "2025 • Ekonomia",
-        description: "Técnika moderna atu hasa'e produsaun agríkola iha Timor-Leste.",
-        coverImage: "images/edited-image.jpg",
-        heyzineUrl: "https://heyzine.com/flip-book/d123456789.html"
     }
+    
+   
 ];
 
 /* ==========================================================================
