@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="tet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Q.T. in Timor-Leste</title>
+  <style>
+    :root {
+      --qt-bg: #f8fafc;
+      --qt-surface: #ffffff;
+      --qt-border: #e2e8f0;
+      --qt-text: #0f172a;
+      --qt-muted: #64748b;
+
+      --qt-primary: #4f46e5;
+      --qt-primary-soft: #eef2ff;
+
+      --qt-scripture: #0284c7;
+      --qt-scripture-bg: #f0f9ff;
+      --qt-scripture-border: #bae6fd;
+
+      --qt-insight: #d97706;
+      --qt-insight-bg: #fffbeb;
+      --qt-insight-border: #fde68a;
+
+      --qt-meditation: #0d9488;
+      --qt-meditation-bg: #f0fdfa;
+      --qt-meditation-border: #99f6e4;
+
+      --qt-question: #7c3aed;
+      --qt-question-bg: #f5f3ff;
+      --qt-question-border: #ddd6fe;
+
+      --qt-prayer: #e11d48;
+      --qt-prayer-bg: #fff1f2;
+      --qt-prayer-border: #fecdd3;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(79, 70, 229, 0.06), transparent 42%),
+        radial-gradient(circle at bottom left, rgba(13, 148, 136, 0.05), transparent 45%),
+        var(--qt-bg);
+      color: var(--qt-text);
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .qt-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--qt-border);
+    }
+
+    .qt-header-inner {
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .qt-page-title {
+      margin: 0;
+      font-size: 1.125rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      color: var(--qt-text);
+    }
+
+    .qt-status-text {
+      margin: 0.15rem 0 0;
+      font-size: 0.75rem;
+      color: var(--qt-muted);
+    }
+
+    .qt-lang-group {
+      display: inline-flex;
+      border-radius: 9999px;
+      border: 1px solid var(--qt-border);
+      background: #f1f5f9;
+      padding: 0.2rem;
+    }
+
+    .qt-lang-btn {
+      padding: 0.3rem 0.85rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: 9999px;
+      border: none;
+      background: transparent;
+      color: #475569;
+      cursor: pointer;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    .qt-lang-btn.is-active {
+      background: #0f172a;
+      color: #ffffff;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+    }
+
+    .qt-cal-bar {
+      position: relative;
+      border-top: 1px solid #f1f5f9;
+      background: rgba(248, 250, 252, 0.92);
+    }
+
+    .qt-cal-bar-inner {
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 0.5rem 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .qt-step-btn {
+      flex-shrink: 0;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 9999px;
+      border: 1px solid var(--qt-border);
+      background: #ffffff;
+      color: #334155;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qt-step-btn:hover:not(:disabled) {
+      background: #f1f5f9;
+    }
+
+    .qt-step-btn:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+
+    .qt-date-trigger {
+      flex: 1;
+      max-width: 20rem;
+      margin: 0 auto;
+      padding: 0.38rem 0.9rem;
+      border-radius: 9999px;
+      border: 1px solid var(--qt-border);
+      background: #ffffff;
+      color: #1e293b;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+    }
+
+    .qt-date-trigger:hover {
+      border-color: #a5b4fc;
+    }
+
+    .qt-cal-popover {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 0.25rem;
+      width: min(calc(100vw - 2rem), 20rem);
+      background: #ffffff;
+      border: 1px solid var(--qt-border);
+      border-radius: 1rem;
+      box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.12), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
+      padding: 0.875rem;
+      z-index: 40;
+    }
+
+    .qt-cal-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.6rem;
+    }
+
+    .qt-cal-month-btn {
+      width: 1.75rem;
+      height: 1.75rem;
+      border-radius: 9999px;
+      border: none;
+      background: transparent;
+      color: #475569;
+      cursor: pointer;
+    }
+
+    .qt-cal-month-btn:hover {
+      background: #f1f5f9;
+    }
+
+    .qt-cal-month-title {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    .qt-cal-weekdays,
+    .qt-cal-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 0.25rem;
+      text-align: center;
+    }
+
+    .qt-cal-weekdays {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #94a3b8;
+      margin-bottom: 0.25rem;
+    }
+
+    .qt-cal-day-btn {
+      height: 2rem;
+      width: 100%;
+      border-radius: 0.5rem;
+      border: none;
+      font-size: 0.78rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qt-cal-day-btn--empty {
+      background: transparent;
+      color: #cbd5e1;
+      cursor: default;
+    }
+
+    .qt-cal-day-btn--available {
+      background: #eef2ff;
+      color: #4338ca;
+      font-weight: 600;
+    }
+
+    .qt-cal-day-btn--available:hover {
+      background: #e0e7ff;
+    }
+
+    .qt-cal-day-btn--selected {
+      background: #4f46e5;
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .qt-cal-hint {
+      margin-top: 0.6rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #f1f5f9;
+      font-size: 0.7rem;
+      color: #64748b;
+      text-align: center;
+    }
+
+    .qt-main {
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    .qt-main-card {
+      background: var(--qt-surface);
+      border: 1px solid var(--qt-border);
+      border-radius: 1.25rem;
+      padding: 1.25rem;
+      box-shadow: 0 10px 25px -12px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 640px) {
+      .qt-main-card {
+        padding: 1.75rem;
+      }
+    }
+
+    .qt-hero-box {
+      background: linear-gradient(135deg, #f8faff 0%, #f1f5ff 100%);
+      border: 1px solid #e0e7ff;
+      border-radius: 1rem;
+      padding: 1.15rem 1.25rem;
+    }
+
+    .qt-badges {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 0.55rem;
+    }
+
+    .qt-badge-day {
+      padding: 0.2rem 0.65rem;
+      border-radius: 9999px;
+      background: #4f46e5;
+      color: #ffffff;
+    }
+
+    .qt-badge-date {
+      padding: 0.2rem 0.65rem;
+      border-radius: 9999px;
+      background: #ffffff;
+      color: #475569;
+      border: 1px solid #e0e7ff;
+    }
+
+    .qt-badge-book {
+      padding: 0.2rem 0.65rem;
+      border-radius: 9999px;
+      background: #e0e7ff;
+      color: #3730a3;
+    }
+
+    .qt-devotion-title {
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: 1.38;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    @media (min-width: 640px) {
+      .qt-devotion-title {
+        font-size: 1.5rem;
+      }
+    }
+
+    .qt-ref-actions {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .qt-reference-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 0.85rem;
+      border-radius: 0.65rem;
+      border: none;
+      background: var(--qt-primary-soft);
+      color: #3730a3;
+      border-left: 4px solid var(--qt-primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .qt-reference-btn:hover {
+      background: #e0e7ff;
+      transform: translateX(2px);
+    }
+
+    .qt-back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.42rem 0.85rem;
+      border-radius: 9999px;
+      background: #f1f5f9;
+      color: #0f172a;
+      border: 1px solid #cbd5e1;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .qt-back-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .qt-section-card {
+      border-radius: 1rem;
+      padding: 1.15rem 1.25rem;
+      border: 1px solid transparent;
+    }
+
+    @media (min-width: 640px) {
+      .qt-section-card {
+        padding: 1.35rem 1.5rem;
+      }
+    }
+
+    .qt-section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.65rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .qt-section-heading-left {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .qt-icon-badge {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.6rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .qt-section-title {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .qt-prose {
+      font-size: 1rem;
+      line-height: 1.82;
+      color: #1e293b;
+      white-space: pre-line;
+    }
+
+    /* Scripture Passage Box (Tetun / NLT English) */
+    .qt-card--scripture {
+      background: var(--qt-scripture-bg);
+      border-color: var(--qt-scripture-border);
+      border-left: 4px solid var(--qt-scripture);
+    }
+    .qt-card--scripture .qt-icon-badge {
+      background: #e0f2fe;
+      color: var(--qt-scripture);
+    }
+    .qt-card--scripture .qt-section-title {
+      color: #0369a1;
+    }
+
+    .qt-verse-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      font-size: 0.98rem;
+      line-height: 1.78;
+      color: #0f172a;
+    }
+
+    .qt-verse-line {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.55rem;
+    }
+
+    .qt-verse-num {
+      flex-shrink: 0;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #0284c7;
+      min-width: 1.35rem;
+      padding-top: 0.15rem;
+    }
+
+    .qt-scripture-note {
+      margin-top: 0.65rem;
+      font-size: 0.85rem;
+      color: #475569;
+    }
+
+    /* Theological Insight */
+    .qt-card--insight {
+      background: var(--qt-insight-bg);
+      border-color: var(--qt-insight-border);
+    }
+    .qt-card--insight .qt-icon-badge {
+      background: #fef3c7;
+      color: var(--qt-insight);
+    }
+    .qt-card--insight .qt-section-title {
+      color: #92400e;
+    }
+
+    /* Meditation */
+    .qt-card--meditation {
+      background: #ffffff;
+      border-color: #cbd5e1;
+      border-left: 4px solid var(--qt-meditation);
+    }
+    .qt-card--meditation .qt-icon-badge {
+      background: var(--qt-meditation-bg);
+      color: var(--qt-meditation);
+    }
+    .qt-card--meditation .qt-section-title {
+      color: #115e59;
+    }
+
+    /* Reflection Questions */
+    .qt-card--questions {
+      background: var(--qt-question-bg);
+      border-color: var(--qt-question-border);
+    }
+    .qt-card--questions .qt-icon-badge {
+      background: #ede9fe;
+      color: var(--qt-question);
+    }
+    .qt-card--questions .qt-section-title {
+      color: #5b21b6;
+    }
+
+    .qt-question-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .qt-question-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid #e9d5ff;
+      border-radius: 0.8rem;
+      padding: 0.8rem 0.95rem;
+      line-height: 1.68;
+      color: #1e293b;
+      font-size: 0.96rem;
+    }
+
+    .qt-q-num {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 9999px;
+      background: var(--qt-question);
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.12rem;
+    }
+
+    /* Prayer */
+    .qt-card--prayer {
+      background: linear-gradient(180deg, var(--qt-prayer-bg) 0%, #ffffff 100%);
+      border-color: var(--qt-prayer-border);
+    }
+    .qt-card--prayer .qt-icon-badge {
+      background: #ffe4e6;
+      color: var(--qt-prayer);
+    }
+    .qt-card--prayer .qt-section-title {
+      color: #9f1239;
+    }
+  </style>
+</head>
+<body>
+  <header id="mainHeader" class="qt-header">
+    <div class="qt-header-inner">
+      <div>
+        <h1 id="pageTitle" class="qt-page-title">Q.T. in Timor-Leste</h1>
+        <p id="statusText" class="qt-status-text">Lian úniku: Tetun</p>
+      </div>
+
+      <div class="qt-lang-group" role="group" aria-label="Language selector">
+        <button
+          id="btnTet"
+          type="button"
+          onclick="setLanguage('tet')"
+          class="qt-lang-btn is-active"
+        >
+          Tetun
+        </button>
+        <button
+          id="btnEn"
+          type="button"
+          onclick="setLanguage('en')"
+          class="qt-lang-btn"
+        >
+          English (NLT)
+        </button>
+      </div>
+    </div>
+
+    <div id="calendarBarWrapper" class="qt-cal-bar">
+      <div class="qt-cal-bar-inner">
+        <button
+          id="btnPrevDay"
+          type="button"
+          onclick="stepDay(-1)"
+          aria-label="Previous day"
+          class="qt-step-btn"
+        >
+          ‹
+        </button>
+
+        <button
+          id="btnOpenCalendar"
+          type="button"
+          onclick="toggleCalendarPopover()"
+          aria-expanded="false"
+          class="qt-date-trigger"
+        >
+          <span id="currentDayLabel">Loron 1</span>
+          <span id="currentDateLabel" style="color:#94a3b8;font-weight:400;"></span>
+          <span style="color:#4f46e5;font-size:0.75rem;">▾</span>
+        </button>
+
+        <button
+          id="btnNextDay"
+          type="button"
+          onclick="stepDay(1)"
+          aria-label="Next day"
+          class="qt-step-btn"
+        >
+          ›
+        </button>
+      </div>
+
+      <div id="calendarPopover" class="qt-cal-popover hidden">
+        <div class="qt-cal-head">
+          <button
+            id="btnCalPrevMonth"
+            type="button"
+            onclick="shiftCalendarMonth(-1)"
+            class="qt-cal-month-btn"
+            aria-label="Previous month"
+          >
+            ‹
+          </button>
+          <div id="calendarMonthTitle" class="qt-cal-month-title"></div>
+          <button
+            id="btnCalNextMonth"
+            type="button"
+            onclick="shiftCalendarMonth(1)"
+            class="qt-cal-month-btn"
+            aria-label="Next month"
+          >
+            ›
+          </button>
+        </div>
+
+        <div id="calendarWeekdays" class="qt-cal-weekdays"></div>
+        <div id="calendarGrid" class="qt-cal-grid"></div>
+        <div id="calendarHint" class="qt-cal-hint"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="qt-main">
+    <article id="devotionCard" class="qt-main-card">
+      <div id="devotionHeroBox" class="qt-hero-box">
+        <div class="qt-badges">
+          <span id="dayBadge" class="qt-badge-day"></span>
+          <span id="dateBadge" class="qt-badge-date"></span>
+          <span id="bookBadge" class="qt-badge-book"></span>
+        </div>
+        <h2 id="devotionTitle" class="qt-devotion-title"></h2>
+        <div id="devotionReferenceWrap" class="qt-ref-actions">
+          <button
+            id="devotionReferenceBtn"
+            type="button"
+            onclick="toggleDayScriptureView()"
+            class="qt-reference-btn"
+          >
+            <span id="devotionReferenceText"></span>
+            <span id="devotionRefArrow" aria-hidden="true" style="color:#4f46e5;font-size:0.8rem;">↓</span>
+          </button>
+          <button
+            id="btnBackFromScripture"
+            type="button"
+            onclick="closeDayScriptureView()"
+            class="hidden qt-back-btn"
+          >
+            <span>←</span>
+            <span id="backFromScriptureLabel"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 그날의 성경 본문 (Tetun JSON / NLT API) -->
+      <section id="scriptureSection" class="hidden qt-section-card qt-card--scripture">
+        <div class="qt-section-header">
+          <div class="qt-section-heading-left">
+            <span class="qt-icon-badge" aria-hidden="true">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </span>
+            <div>
+              <h3 id="scriptureLabel" class="qt-section-title"></h3>
+              <p id="scriptureSubMeta" style="margin:0.15rem 0 0;font-size:0.75rem;font-weight:600;color:#0369a1;"></p>
+            </div>
+          </div>
+        </div>
+        <div id="scriptureVersesContainer" class="qt-verse-list"></div>
+        <p id="scriptureStatusNote" class="hidden qt-scripture-note"></p>
+      </section>
+
+      <!-- 1. 신학 인사이트 -->
+      <section id="insightSection" class="qt-section-card qt-card--insight">
+        <div class="qt-section-header">
+          <div class="qt-section-heading-left">
+            <span class="qt-icon-badge" aria-hidden="true">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </span>
+            <h3 id="insightLabel" class="qt-section-title"></h3>
+          </div>
+        </div>
+        <p id="devotionInsight" class="qt-prose"></p>
+      </section>
+
+      <!-- 2. 묵상 본문 -->
+      <section id="meditationSection" class="qt-section-card qt-card--meditation">
+        <div class="qt-section-header">
+          <div class="qt-section-heading-left">
+            <span class="qt-icon-badge" aria-hidden="true">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </span>
+            <h3 id="meditationLabel" class="qt-section-title"></h3>
+          </div>
+        </div>
+        <div id="devotionMeditation" class="qt-prose"></div>
+      </section>
+
+      <!-- 3. 묵상 질문 -->
+      <section id="questionsSection" class="qt-section-card qt-card--questions">
+        <div class="qt-section-header">
+          <div class="qt-section-heading-left">
+            <span class="qt-icon-badge" aria-hidden="true">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+            <h3 id="questionsLabel" class="qt-section-title"></h3>
+          </div>
+        </div>
+        <ol id="devotionQuestions" class="qt-question-list"></ol>
+      </section>
+
+      <!-- 4. 기도문 -->
+      <section id="prayerSection" class="qt-section-card qt-card--prayer">
+        <div class="qt-section-header">
+          <div class="qt-section-heading-left">
+            <span class="qt-icon-badge" aria-hidden="true">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </span>
+            <h3 id="prayerLabel" class="qt-section-title"></h3>
+          </div>
+        </div>
+        <p id="devotionPrayer" class="qt-prose"></p>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    const DATA_URL = './data/res/q-month-12.json';
+    const TETUN_BIBLE_URL = './data/res/tetun_bible.json';
+    const TARGET_MONTH = 12;
+
+    // bible.html과 동일한 66권 메타데이터 (Bolls API num 및 NLT 책명 포함)
+    const BIBLE_BOOKS = [
+      { num: 1, code: "GEN", name: "Jénesis", nlt: "Genesis" },
+      { num: 2, code: "EXO", name: "Ézodu", nlt: "Exodus" },
+      { num: 3, code: "LEV", name: "Levítiku", nlt: "Leviticus" },
+      { num: 4, code: "NUM", name: "Númeru", nlt: "Numbers" },
+      { num: 5, code: "DEU", name: "Deuteronómiu", nlt: "Deuteronomy" },
+      { num: 6, code: "JOS", name: "Jozué", nlt: "Joshua" },
+      { num: 7, code: "JDG", name: "Juís sira", nlt: "Judges" },
+      { num: 8, code: "RUT", name: "Rute", nlt: "Ruth" },
+      { num: 9, code: "1SA", name: "1 Samuel", nlt: "1 Samuel" },
+      { num: 10, code: "2SA", name: "2 Samuel", nlt: "2 Samuel" },
+      { num: 11, code: "1KI", name: "1 Liurai sira", nlt: "1 Kings" },
+      { num: 12, code: "2KI", name: "2 Liurai sira", nlt: "2 Kings" },
+      { num: 13, code: "1CH", name: "1 Krónika", nlt: "1 Chronicles" },
+      { num: 14, code: "2CH", name: "2 Krónika", nlt: "2 Chronicles" },
+      { num: 15, code: "EZR", name: "Ezra", nlt: "Ezra" },
+      { num: 16, code: "NEH", name: "Neemias", nlt: "Nehemiah" },
+      { num: 17, code: "EST", name: "Ester", nlt: "Esther" },
+      { num: 18, code: "JOB", name: "Jó", nlt: "Job" },
+      { num: 19, code: "PSA", name: "Salmu sira", nlt: "Psalms" },
+      { num: 20, code: "PRO", name: "Provérbiu", nlt: "Proverbs" },
+      { num: 21, code: "ECC", name: "Ekleziastes", nlt: "Ecclesiastes" },
+      { num: 22, code: "SNG", name: "Kántiku", nlt: "Song of Songs" },
+      { num: 23, code: "ISA", name: "Isaías", nlt: "Isaiah" },
+      { num: 24, code: "JER", name: "Jeremias", nlt: "Jeremiah" },
+      { num: 25, code: "LAM", name: "Lamentasaun", nlt: "Lamentations" },
+      { num: 26, code: "EZK", name: "Ezekiel", nlt: "Ezekiel" },
+      { num: 27, code: "DAN", name: "Daniel", nlt: "Daniel" },
+      { num: 28, code: "HOS", name: "Ozeias", nlt: "Hosea" },
+      { num: 29, code: "JOL", name: "Joel", nlt: "Joel" },
+      { num: 30, code: "AMO", name: "Amós", nlt: "Amos" },
+      { num: 31, code: "OBA", name: "Obadias", nlt: "Obadiah" },
+      { num: 32, code: "JON", name: "Jonas", nlt: "Jonah" },
+      { num: 33, code: "MIC", name: "Mika", nlt: "Micah" },
+      { num: 34, code: "NAM", name: "Naum", nlt: "Nahum" },
+      { num: 35, code: "HAB", name: "Habakuk", nlt: "Habakkuk" },
+      { num: 36, code: "ZEP", name: "Sofonias", nlt: "Zephaniah" },
+      { num: 37, code: "HAG", name: "Ageu", nlt: "Haggai" },
+      { num: 38, code: "ZEC", name: "Zakarias", nlt: "Zechariah" },
+      { num: 39, code: "MAL", name: "Malakias", nlt: "Malachi" },
+      { num: 40, code: "MAT", name: "Mateus", nlt: "Matthew" },
+      { num: 41, code: "MRK", name: "Markus", nlt: "Mark" },
+      { num: 42, code: "LUK", name: "Lucas", nlt: "Luke" },
+      { num: 43, code: "JHN", name: "João", nlt: "John" },
+      { num: 44, code: "ACT", name: "Apóstolu sira", nlt: "Acts" },
+      { num: 45, code: "ROM", name: "Roma", nlt: "Romans" },
+      { num: 46, code: "1CO", name: "1 Korintu", nlt: "1 Corinthians" },
+      { num: 47, code: "2CO", name: "2 Korintu", nlt: "2 Corinthians" },
+      { num: 48, code: "GAL", name: "Galásia", nlt: "Galatians" },
+      { num: 49, code: "EPH", name: "Éfezu", nlt: "Ephesians" },
+      { num: 50, code: "PHP", name: "Filipi", nlt: "Philippians" },
+      { num: 51, code: "COL", name: "Kolose", nlt: "Colossians" },
+      { num: 52, code: "1TH", name: "1 Tesalónika", nlt: "1 Thessalonians" },
+      { num: 53, code: "2TH", name: "2 Tesalónika", nlt: "2 Thessalonians" },
+      { num: 54, code: "1TI", name: "1 Timóteo", nlt: "1 Timothy" },
+      { num: 55, code: "2TI", name: "2 Timóteo", nlt: "2 Timothy" },
+      { num: 56, code: "TIT", name: "Titu", nlt: "Titus" },
+      { num: 57, code: "PHM", name: "Filemon", nlt: "Philemon" },
+      { num: 58, code: "HEB", name: "Ebreu", nlt: "Hebrews" },
+      { num: 59, code: "JAS", name: "Tiago", nlt: "James" },
+      { num: 60, code: "1PE", name: "1 Pedro", nlt: "1 Peter" },
+      { num: 61, code: "2PE", name: "2 Pedro", nlt: "2 Peter" },
+      { num: 62, code: "1JN", name: "1 João", nlt: "1 John" },
+      { num: 63, code: "2JN", name: "2 João", nlt: "2 John" },
+      { num: 64, code: "3JN", name: "3 João", nlt: "3 John" },
+      { num: 65, code: "JUD", name: "Judas", nlt: "Jude" },
+      { num: 66, code: "REV", name: "Apokalipse", nlt: "Revelation" }
+    ];
+    const BOOK_MAP = Object.fromEntries(BIBLE_BOOKS.map((b) => [b.code, b]));
+
+    let rawMeta = {};
+    let devotions = [];
+    let dateToIndex = new Map();
+    let selectedIndex = 0;
+    let currentLang = 'tet'; // 'tet' | 'en'
+    let scriptureOnlyView = false;
+    let scriptureRenderSeq = 0;
+    let calYear = 2026;
+    let calMonth = TARGET_MONTH - 1;
+
+    let tetunBibleCache = null;
+    const englishChapterCache = {}; // { "JHN_1": { version: "NLT", verses: { "1": "..." } } }
+
+    const LABELS = {
+      tet: {
+        langName: 'Tetun',
+        dayPrefix: 'Loron',
+        scriptureTitle: 'Testu Bíblia (Tetun)',
+        backToFull: 'Haree Devosaun Kompletu',
+        loadingBible: 'Karrega hela testu Bíblia Tetun...',
+        missingBible: 'La hetan testu Bíblia Tetun ba versíkulu sira-ne’e.',
+        weekdays: ['Dom', 'Seg', 'Ter', 'Kua', 'Kin', 'Sáb', 'Dom'],
+        monthNames: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+        calHint: 'Hili loron Dezembru ne’ebé marka ho kór',
+        insight: 'Hanoin Teolójiku',
+        meditation: 'Meditasaun',
+        questions: 'Pergunta Reflesaun',
+        prayer: 'Orasaun',
+        noDataTitle: 'Dadus la iha',
+        noDataBody: 'La iha artigu devosaun ba loron ida-ne’e.'
+      },
+      en: {
+        langName: 'English (NLT)',
+        dayPrefix: 'Day',
+        scriptureTitle: 'Scripture Passage',
+        backToFull: 'Back to Full Devotion',
+        loadingBible: 'Loading NLT Scripture passage...',
+        missingBible: 'Could not load English Scripture passage for this entry.',
+        weekdays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        calHint: 'Tap a highlighted December date',
+        insight: 'Theological Insight',
+        meditation: 'Meditation',
+        questions: 'Reflection Questions',
+        prayer: 'Prayer',
+        noDataTitle: 'No data available',
+        noDataBody: 'There is no devotion entry for this day.'
+      }
+    };
+
+    function pickLang(obj, lang) {
+      if (!obj || typeof obj !== 'object') return '';
+      return obj[lang] || obj.tet || obj.en || '';
+    }
+
+    function parseChapterFromRef(refText) {
+      if (!refText || typeof refText !== 'string') return '';
+      const match = refText.match(/(\d+)\s*:/);
+      return match ? match[1] : '';
+    }
+
+    function parseVerseRange(versesStr, refText) {
+      let raw = typeof versesStr === 'string' && versesStr.trim() ? versesStr.trim() : '';
+      if (!raw && typeof refText === 'string') {
+        const m = refText.match(/\d+\s*:\s*([0-9,\-\s]+)/);
+        if (m) raw = m[1].trim();
+      }
+      if (!raw) return null;
+
+      const allowed = new Set();
+      raw.split(',').forEach((part) => {
+        const clean = part.trim();
+        if (!clean) return;
+        const rangeMatch = clean.match(/^(\d+)\s*[-–]\s*(\d+)$/);
+        if (rangeMatch) {
+          const start = Number(rangeMatch[1]);
+          const end = Number(rangeMatch[2]);
+          if (!Number.isNaN(start) && !Number.isNaN(end)) {
+            const minV = Math.min(start, end);
+            const maxV = Math.max(start, end);
+            for (let v = minV; v <= maxV; v++) allowed.add(String(v));
+          }
+        } else {
+          const single = Number(clean);
+          if (!Number.isNaN(single)) allowed.add(String(single));
+        }
+      });
+
+      return allowed.size > 0 ? allowed : null;
+    }
+
+    // bible.html과 동일한 data/res/tetun_bible.json 로드
+    async function loadTetunBible() {
+      if (tetunBibleCache) return tetunBibleCache;
+      const res = await fetch(TETUN_BIBLE_URL, { cache: 'no-store' });
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}: ${TETUN_BIBLE_URL}`);
+      }
+      tetunBibleCache = await res.json();
+      return tetunBibleCache;
+    }
+
+    function extractTetunVersesMap(bibleJson, bookCode, chapter) {
+      if (!bibleJson || typeof bibleJson !== 'object') return {};
+      const bookObj = bibleJson[bookCode] || bibleJson[String(bookCode).toUpperCase()];
+      if (!bookObj || typeof bookObj !== 'object') return {};
+      const chapData = bookObj[String(chapter)] || bookObj[Number(chapter)];
+      if (!chapData || typeof chapData !== 'object') return {};
+      return chapData.verses && typeof chapData.verses === 'object' ? chapData.verses : chapData;
+    }
+
+    // bible.html과 동일한 방식: Bolls NLT API 우선, 실패 시 bible-api.com(WEB) 폴백
+    async function fetchEnglishChapter(bookMeta, chapNum) {
+      const cacheKey = `${bookMeta.code}_${chapNum}`;
+      if (englishChapterCache[cacheKey]) {
+        return englishChapterCache[cacheKey];
+      }
+
+      if (bookMeta.num) {
+        try {
+          const res = await fetch(`https://bolls.life/get-text/NLT/${bookMeta.num}/${chapNum}/`);
+          if (res.ok) {
+            const list = await res.json();
+            if (Array.isArray(list) && list.length > 0) {
+              const versesMap = {};
+              list.forEach((item) => {
+                if (item && item.verse != null && item.text != null) {
+                  versesMap[String(item.verse)] = String(item.text)
+                    .replace(/<br\s*\/?>/gi, ' ')
+                    .replace(/<\/?[^>]+(>|$)/g, '')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+                }
+              });
+              if (Object.keys(versesMap).length > 0) {
+                const result = { version: 'NLT', verses: versesMap };
+                englishChapterCache[cacheKey] = result;
+                return result;
+              }
+            }
+          }
+        } catch (err) {
+          console.warn('Bolls NLT API 호출 실패, WEB 폴백 시도:', err);
+        }
+      }
+
+      if (bookMeta.nlt) {
+        try {
+          const query = encodeURIComponent(`${bookMeta.nlt} ${chapNum}`);
+          const res = await fetch(`https://bible-api.com/${query}?translation=web`);
+          if (res.ok) {
+            const data = await res.json();
+            if (data && Array.isArray(data.verses) && data.verses.length > 0) {
+              const versesMap = {};
+              data.verses.forEach((v) => {
+                if (v && v.verse != null && v.text != null) {
+                  versesMap[String(v.verse)] = String(v.text).replace(/\s+/g, ' ').trim();
+                }
+              });
+              if (Object.keys(versesMap).length > 0) {
+                const result = { version: 'WEB', verses: versesMap };
+                englishChapterCache[cacheKey] = result;
+                return result;
+              }
+            }
+          }
+        } catch (err) {
+          console.error('Fallback bible-api 호출 실패:', err);
+        }
+      }
+
+      return { version: 'NLT', verses: null };
+    }
+
+    async function renderDayScripture(entry, refText, ui) {
+      const seq = ++scriptureRenderSeq;
+      const versesEl = document.getElementById('scriptureVersesContainer');
+      const noteEl = document.getElementById('scriptureStatusNote');
+      const metaEl = document.getElementById('scriptureSubMeta');
+      const labelEl = document.getElementById('scriptureLabel');
+
+      const bookCode = String(entry?.book_code || rawMeta?.book_code || 'JHN').trim().toUpperCase();
+      const bookMeta = BOOK_MAP[bookCode] || { code: bookCode, name: bookCode, nlt: bookCode };
+      const chapter = String(entry?.chapter ?? parseChapterFromRef(refText) ?? '').trim();
+      const allowedSet = parseVerseRange(entry?.verses, refText);
+
+      labelEl.textContent = currentLang === 'en' ? 'Scripture Passage (NLT)' : 'Testu Bíblia (Tetun)';
+      metaEl.textContent = refText || `${bookCode} ${chapter}`;
+      versesEl.innerHTML = '';
+      noteEl.classList.add('hidden');
+      noteEl.textContent = '';
+
+      const loadingLine = document.createElement('div');
+      loadingLine.style.color = '#64748b';
+      loadingLine.textContent = ui.loadingBible;
+      versesEl.appendChild(loadingLine);
+
+      try {
+        let versesObj = {};
+        if (currentLang === 'en') {
+          const engData = await fetchEnglishChapter(bookMeta, chapter);
+          if (seq !== scriptureRenderSeq) return;
+          labelEl.textContent = `Scripture Passage (${engData.version})`;
+          versesObj = engData.verses || {};
+        } else {
+          const tetJson = await loadTetunBible();
+          if (seq !== scriptureRenderSeq) return;
+          versesObj = extractTetunVersesMap(tetJson, bookCode, chapter);
+        }
+
+        const verseNumbers = Object.keys(versesObj)
+          .sort((a, b) => Number(a) - Number(b))
+          .filter((vNum) => !allowedSet || allowedSet.has(String(vNum)));
+
+        versesEl.innerHTML = '';
+
+        if (!verseNumbers.length) {
+          noteEl.textContent = ui.missingBible;
+          noteEl.classList.remove('hidden');
+          return;
+        }
+
+        verseNumbers.forEach((vNum) => {
+          const text = versesObj[vNum];
+          if (typeof text !== 'string' || !text.trim()) return;
+
+          const row = document.createElement('div');
+          row.className = 'qt-verse-line';
+
+          const numSpan = document.createElement('span');
+          numSpan.className = 'qt-verse-num';
+          numSpan.textContent = String(vNum);
+
+          const textSpan = document.createElement('span');
+          textSpan.style.flex = '1';
+          textSpan.textContent = text.trim();
+
+          row.appendChild(numSpan);
+          row.appendChild(textSpan);
+          versesEl.appendChild(row);
+        });
+      } catch (err) {
+        if (seq !== scriptureRenderSeq) return;
+        console.error('Scripture load error:', err);
+        versesEl.innerHTML = '';
+        noteEl.textContent = `${ui.missingBible} (${err.message})`;
+        noteEl.classList.remove('hidden');
+      }
+    }
+
+    function toggleDayScriptureView() {
+      scriptureOnlyView = !scriptureOnlyView;
+      renderDevotion();
+    }
+
+    function closeDayScriptureView() {
+      scriptureOnlyView = false;
+      renderDevotion();
+    }
+
+    function formatIsoDate(year, monthIndex, day) {
+      const m = String(monthIndex + 1).padStart(2, '0');
+      const d = String(day).padStart(2, '0');
+      return `${year}-${m}-${d}`;
+    }
+
+    function resolveDecemberDate(entry, fallbackIdx) {
+      const rawDay = Number(entry?.day);
+      const dayNum = Number.isInteger(rawDay) && rawDay >= 1 && rawDay <= 31
+        ? rawDay
+        : (fallbackIdx + 1);
+
+      let year = 2026;
+      if (typeof entry?.date === 'string') {
+        const match = entry.date.trim().match(/^(\d{4})-/);
+        if (match) year = Number(match[1]);
+      } else if (typeof rawMeta?.year === 'number') {
+        year = rawMeta.year;
+      }
+
+      const clampedDay = Math.min(dayNum, new Date(year, TARGET_MONTH, 0).getDate());
+      return formatIsoDate(year, TARGET_MONTH - 1, clampedDay);
+    }
+
+    function normalizeAndIndexDevotions() {
+      dateToIndex = new Map();
+      devotions = devotions.map((item, idx) => {
+        const mappedDate = resolveDecemberDate(item, idx);
+        return {
+          ...item,
+          mappedDate
+        };
+      });
+
+      devotions.forEach((item, idx) => {
+        if (item.mappedDate && !dateToIndex.has(item.mappedDate)) {
+          dateToIndex.set(item.mappedDate, idx);
+        }
+      });
+
+      const currentEntry = devotions[selectedIndex];
+      if (currentEntry?.mappedDate) {
+        const [y, m] = currentEntry.mappedDate.split('-').map(Number);
+        calYear = y;
+        calMonth = m - 1;
+      } else {
+        calYear = 2026;
+        calMonth = TARGET_MONTH - 1;
+      }
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      const btnTet = document.getElementById('btnTet');
+      const btnEn = document.getElementById('btnEn');
+
+      btnTet.classList.toggle('is-active', lang === 'tet');
+      btnEn.classList.toggle('is-active', lang === 'en');
+
+      renderCalendar();
+      renderDevotion();
+    }
+
+    function selectDay(idx, closePopover = true) {
+      if (!devotions.length) return;
+      selectedIndex = Math.max(0, Math.min(idx, devotions.length - 1));
+      scriptureOnlyView = false;
+
+      const entry = devotions[selectedIndex];
+      if (entry?.mappedDate) {
+        const [y, m] = entry.mappedDate.split('-').map(Number);
+        calYear = y;
+        calMonth = m - 1;
+      }
+
+      if (closePopover) {
+        setCalendarOpen(false);
+      } else {
+        renderCalendar();
+      }
+      renderDevotion();
+    }
+
+    function stepDay(delta) {
+      selectDay(selectedIndex + delta, false);
+    }
+
+    function setCalendarOpen(isOpen) {
+      const popover = document.getElementById('calendarPopover');
+      const btn = document.getElementById('btnOpenCalendar');
+      popover.classList.toggle('hidden', !isOpen);
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      if (isOpen) {
+        renderCalendar();
+      }
+    }
+
+    function toggleCalendarPopover() {
+      const popover = document.getElementById('calendarPopover');
+      const willOpen = popover.classList.contains('hidden');
+      setCalendarOpen(willOpen);
+    }
+
+    function shiftCalendarMonth(delta) {
+      calMonth += delta;
+      if (calMonth < 0) {
+        calMonth = 11;
+        calYear -= 1;
+      } else if (calMonth > 11) {
+        calMonth = 0;
+        calYear += 1;
+      }
+      renderCalendar();
+    }
+
+    function renderCalendar() {
+      const ui = LABELS[currentLang] || LABELS.tet;
+      const monthTitle = document.getElementById('calendarMonthTitle');
+      const weekdaysEl = document.getElementById('calendarWeekdays');
+      const gridEl = document.getElementById('calendarGrid');
+      const hintEl = document.getElementById('calendarHint');
+
+      monthTitle.textContent = `${ui.monthNames[calMonth]} ${calYear}`;
+      hintEl.textContent = ui.calHint;
+      weekdaysEl.innerHTML = ui.weekdays.map((w) => `<div>${w}</div>`).join('');
+
+      gridEl.innerHTML = '';
+      const firstDayOfWeek = new Date(calYear, calMonth, 1).getDay();
+      const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+      const activeDateStr = devotions[selectedIndex]?.mappedDate || '';
+
+      for (let i = 0; i < firstDayOfWeek; i++) {
+        const blank = document.createElement('div');
+        blank.style.height = '2rem';
+        gridEl.appendChild(blank);
+      }
+
+      for (let d = 1; d <= daysInMonth; d++) {
+        const iso = formatIsoDate(calYear, calMonth, d);
+        const targetIdx = dateToIndex.get(iso);
+        const hasEntry = targetIdx !== undefined;
+        const isSelected = iso === activeDateStr;
+
+        const cell = document.createElement('button');
+        cell.type = 'button';
+        cell.textContent = String(d);
+
+        if (!hasEntry) {
+          cell.disabled = true;
+          cell.className = 'qt-cal-day-btn qt-cal-day-btn--empty';
+        } else if (isSelected) {
+          cell.className = 'qt-cal-day-btn qt-cal-day-btn--selected';
+          cell.onclick = () => selectDay(targetIdx, true);
+        } else {
+          cell.className = 'qt-cal-day-btn qt-cal-day-btn--available';
+          cell.onclick = () => selectDay(targetIdx, true);
+        }
+
+        gridEl.appendChild(cell);
+      }
+    }
+
+    function updateNavBar() {
+      const ui = LABELS[currentLang] || LABELS.tet;
+      const entry = devotions[selectedIndex];
+      const dayNum = entry?.day ?? (selectedIndex + 1);
+      const mappedDate = entry?.mappedDate || '';
+
+      document.getElementById('currentDayLabel').textContent = devotions.length
+        ? `${ui.dayPrefix} ${dayNum}`
+        : ui.noDataTitle;
+      document.getElementById('currentDateLabel').textContent = mappedDate ? `· ${mappedDate}` : '';
+
+      document.getElementById('btnPrevDay').disabled = devotions.length === 0 || selectedIndex <= 0;
+      document.getElementById('btnNextDay').disabled = devotions.length === 0 || selectedIndex >= devotions.length - 1;
+    }
+
+    function setSectionVisibility(sectionId, isVisible) {
+      const el = document.getElementById(sectionId);
+      if (el) el.classList.toggle('hidden', !isVisible);
+    }
+
+    function renderDevotion() {
+      const entry = devotions[selectedIndex];
+      const ui = LABELS[currentLang] || LABELS.tet;
+
+      if (rawMeta.project) {
+        document.getElementById('pageTitle').textContent = rawMeta.project;
+      }
+      document.getElementById('statusText').textContent = `Lian úniku: ${ui.langName}`;
+      document.getElementById('scriptureLabel').textContent = ui.scriptureTitle;
+      document.getElementById('backFromScriptureLabel').textContent = ui.backToFull;
+      document.getElementById('insightLabel').textContent = ui.insight;
+      document.getElementById('meditationLabel').textContent = ui.meditation;
+      document.getElementById('questionsLabel').textContent = ui.questions;
+      document.getElementById('prayerLabel').textContent = ui.prayer;
+
+      updateNavBar();
+
+      if (!entry) {
+        scriptureOnlyView = false;
+        document.getElementById('dayBadge').textContent = '';
+        document.getElementById('dateBadge').textContent = '';
+        document.getElementById('bookBadge').textContent = '';
+        document.getElementById('devotionTitle').textContent = ui.noDataTitle;
+        document.getElementById('devotionReferenceText').textContent = '';
+        document.getElementById('devotionReferenceWrap').classList.add('hidden');
+        document.getElementById('devotionInsight').textContent = '';
+        document.getElementById('devotionMeditation').textContent = ui.noDataBody;
+        document.getElementById('devotionQuestions').innerHTML = '';
+        document.getElementById('devotionPrayer').textContent = '';
+        setSectionVisibility('scriptureSection', false);
+        setSectionVisibility('insightSection', false);
+        setSectionVisibility('meditationSection', true);
+        setSectionVisibility('questionsSection', false);
+        setSectionVisibility('prayerSection', false);
+        return;
+      }
+
+      const refText = pickLang(entry.reference, currentLang);
+      const insightText = pickLang(entry.theological_insight, currentLang);
+      const meditationText = pickLang(entry.meditation, currentLang);
+      const prayerText = pickLang(entry.prayer, currentLang);
+
+      document.getElementById('dayBadge').textContent = entry.day ? `${ui.dayPrefix} ${entry.day}` : '';
+      document.getElementById('dateBadge').textContent = entry.mappedDate || '';
+      document.getElementById('bookBadge').textContent = pickLang(rawMeta.book_name, currentLang) || rawMeta.book_code || '';
+      document.getElementById('devotionTitle').textContent = pickLang(entry.title, currentLang);
+
+      document.getElementById('devotionReferenceText').textContent = refText;
+      document.getElementById('devotionReferenceWrap').classList.toggle('hidden', !refText);
+      document.getElementById('devotionRefArrow').textContent = scriptureOnlyView ? '↑' : '↓';
+      document.getElementById('btnBackFromScripture').classList.toggle('hidden', !scriptureOnlyView);
+
+      document.getElementById('devotionInsight').textContent = insightText;
+      document.getElementById('devotionMeditation').textContent = meditationText;
+      document.getElementById('devotionPrayer').textContent = prayerText;
+
+      const qList = document.getElementById('devotionQuestions');
+      qList.innerHTML = '';
+      const questions = Array.isArray(entry.reflection_questions) ? entry.reflection_questions : [];
+      let renderedQCount = 0;
+
+      questions.forEach((q, idx) => {
+        const text = typeof q === 'string' ? q : pickLang(q, currentLang);
+        if (!text) return;
+        renderedQCount += 1;
+
+        const li = document.createElement('li');
+        li.className = 'qt-question-item';
+
+        const numBadge = document.createElement('span');
+        numBadge.className = 'qt-q-num';
+        numBadge.textContent = String(q?.id ?? (idx + 1));
+
+        const textSpan = document.createElement('span');
+        textSpan.style.flex = '1';
+        textSpan.textContent = text;
+
+        li.appendChild(numBadge);
+        li.appendChild(textSpan);
+        qList.appendChild(li);
+      });
+
+      if (scriptureOnlyView) {
+        setSectionVisibility('scriptureSection', true);
+        setSectionVisibility('insightSection', false);
+        setSectionVisibility('meditationSection', false);
+        setSectionVisibility('questionsSection', false);
+        setSectionVisibility('prayerSection', false);
+        renderDayScripture(entry, refText, ui);
+      } else {
+        setSectionVisibility('scriptureSection', false);
+        setSectionVisibility('insightSection', Boolean(insightText));
+        setSectionVisibility('meditationSection', Boolean(meditationText));
+        setSectionVisibility('questionsSection', renderedQCount > 0);
+        setSectionVisibility('prayerSection', Boolean(prayerText));
+      }
+    }
+
+    document.addEventListener('click', (event) => {
+      const wrapper = document.getElementById('calendarBarWrapper');
+      if (wrapper && !wrapper.contains(event.target)) {
+        setCalendarOpen(false);
+      }
+    });
+
+    async function init() {
+      try {
+        const res = await fetch(DATA_URL, { cache: 'no-store' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+
+        if (Array.isArray(data)) {
+          devotions = data;
+        } else {
+          rawMeta = data || {};
+          devotions = Array.isArray(data.devotionals) ? data.devotionals : [];
+        }
+
+        selectedIndex = 0;
+        normalizeAndIndexDevotions();
+        renderDevotion();
+      } catch (err) {
+        console.error('Q-Time load error:', err);
+        document.getElementById('statusText').textContent = `Erro: ${err.message}`;
+        document.getElementById('devotionTitle').textContent = 'Erro loke JSON';
+        document.getElementById('devotionMeditation').textContent =
+          `La konsege loke ficheiru JSON (${DATA_URL}). Haree fali dalan ficheiru no formatu JSON.`;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
