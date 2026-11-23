@@ -1,0 +1,2253 @@
+<!DOCTYPE html>
+<html lang="tet">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kurikulum Disípulu Kanorok ba Labarik (Semana 1-16)</title>
+<style>
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #e2e8f0;
+        font-family: 'Noto Sans', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        color: #1e293b;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+        padding: 20px 0;
+    }
+
+    .page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0 auto 20px auto;
+        padding: 13mm 15mm 10mm 15mm;
+        background-color: #ffffff;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cover-main-title {
+        font-size: 22pt;
+        font-weight: 900;
+        color: #0f172a;
+        line-height: 1.2;
+        margin: 0 0 8px 0;
+        letter-spacing: -0.01em;
+    }
+
+    .cover-desc {
+        font-size: 10pt;
+        color: #475569;
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .toc-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 8px;
+        margin-bottom: 12px;
+    }
+
+    .toc-row {
+        background: #ffffff;
+    }
+
+    .toc-lisaun-num {
+        display: block;
+        font-size: 13pt;
+        font-weight: 900;
+        color: #0f172a;
+    }
+
+    .toc-cell-info {
+        width: 60%;
+        border-top: 1.5px solid #cbd5e1;
+        border-bottom: 1.5px solid #cbd5e1;
+        padding: 10px 14px;
+        vertical-align: middle;
+    }
+
+    .toc-lesson-name {
+        font-size: 11pt;
+        font-weight: 800;
+        color: #0f172a;
+        margin: 0 0 3px 0;
+    }
+
+    .toc-lesson-summary {
+        font-size: 8.8pt;
+        color: #475569;
+        margin: 0;
+        line-height: 1.35;
+    }
+
+    .toc-cell-thumb {
+        width: 22%;
+        border: 1.5px solid #cbd5e1;
+        border-left: none;
+        border-radius: 0 12px 12px 0;
+        padding: 6px;
+        text-align: center;
+        vertical-align: middle;
+        background: #f8fafc;
+    }
+
+    .toc-thumb-img {
+        width: 100%;
+        height: 54px;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+    }
+
+    .lesson-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3px;
+    }
+
+    .lesson-title {
+        font-size: 15pt;
+        font-weight: 900;
+        color: #0f172a;
+        margin: 2px 0 0 0;
+        line-height: 1.2;
+    }
+
+    .hero-split-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 8px;
+    }
+
+    .hero-img-cell {
+        width: 44%;
+        vertical-align: top;
+        padding-right: 10px;
+    }
+
+    .hero-cards-cell {
+        width: 56%;
+        vertical-align: top;
+    }
+
+    .image-slot-card img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+    }
+
+    .topic-card {
+        border-left: 4.5px solid #f59e0b;
+        background-color: #fef9c3;
+        border-top: 1.5px solid #facc15;
+        border-right: 1.5px solid #facc15;
+        border-bottom: 1.5px solid #facc15;
+        border-radius: 0 10px 10px 0;
+        padding: 7px 11px;
+        font-size: 9.8pt;
+        line-height: 1.38;
+        margin-bottom: 7px;
+    }
+
+    .topic-label {
+        font-weight: 800;
+        color: #b45309;
+        display: block;
+        margin-bottom: 1px;
+        font-size: 9pt;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+    }
+
+    .verse-text {
+        font-style: italic;
+        font-weight: 500;
+        color: #0f172a;
+        margin: 0;
+    }
+
+    .section-card {
+        border: 1.5px solid #cbd5e1;
+        border-radius: 11px;
+        padding: 8px 13px;
+        background-color: #ffffff;
+        margin-bottom: 8px;
+    }
+
+    .section-card h3 {
+        font-size: 11pt;
+        font-weight: 800;
+        margin: 0 0 5px 0;
+        padding-bottom: 3px;
+        border-bottom: 1.5px solid #e2e8f0;
+    }
+
+    .story-card {
+        border-color: #99f6e4;
+        background-color: #f0fdfa;
+    }
+
+    .story-card h3 {
+        color: #0f766e;
+        border-bottom-color: #99f6e4;
+    }
+
+    .story-card p:last-child {
+        margin-bottom: 0;
+    }
+
+    .question-card {
+        background-color: #eef2ff;
+        border-color: #a5b4fc;
+    }
+
+    .question-card h3 {
+        color: #3730a3;
+        border-bottom-color: #c7d2fe;
+    }
+
+    .question-card li {
+        margin-bottom: 3px;
+    }
+
+    .question-card li:last-child {
+        margin-bottom: 0;
+    }
+
+    .mission-card {
+        background-color: #dcfce7;
+        border: 1.5px solid #4ade80;
+        margin-bottom: 0;
+    }
+
+    .mission-card h3 {
+        color: #15803d;
+        border-bottom-color: #86efac;
+    }
+
+    .page-footer {
+        margin-top: auto;
+        padding-top: 3mm;
+        border-top: 1px solid #e2e8f0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 8.5pt;
+        font-weight: 600;
+        color: #64748b;
+    }
+
+    @media screen and (max-width: 820px) {
+        body {
+            padding: 10px;
+        }
+        .page {
+            width: 100%;
+            height: auto;
+            min-height: 297mm;
+            padding: 16px;
+        }
+        .hero-split-table, .hero-split-table tbody, .hero-split-table tr, .hero-img-cell, .hero-cards-cell {
+            display: block;
+            width: 100%;
+            padding-right: 0;
+        }
+        .hero-img-cell {
+            margin-bottom: 10px;
+        }
+    }
+
+    @media print {
+        html, body {
+            background: #ffffff !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .page {
+            margin: 0 !important;
+            box-shadow: none !important;
+            border: none !important;
+            page-break-after: always;
+            break-after: page;
+        }
+        .page:last-child {
+            page-break-after: auto;
+            break-after: auto;
+        }
+        * {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+    }
+
+    /* ==================== Módulu 1 Theme ==================== */
+    .module-1 .cover-page {
+        background: linear-gradient(155deg, #ecfdf5 0%, #ffffff 42%, #e0f2fe 85%, #fefce8 100%);
+        padding: 16mm 18mm 12mm 18mm;
+        border: 1px solid #a7f3d0;
+    }
+    .module-1 .cover-top-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #059669, #0d9488);
+        color: #ffffff;
+        font-size: 9.5pt;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        padding: 5px 16px;
+        border-radius: 999px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    .module-1 .cover-hero {
+        border: 2.5px solid #059669;
+        border-radius: 18px;
+        padding: 22px 24px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 8px 20px rgba(5, 150, 105, 0.08);
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .module-1 .cover-sub-title {
+        font-size: 12pt;
+        font-weight: 700;
+        color: #047857;
+        margin: 0 0 10px 0;
+    }
+    .module-1 .cover-grid-title {
+        font-size: 11pt;
+        font-weight: 800;
+        color: #047857;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin: 0 0 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .module-1 .cover-grid-title::after {
+        content: "";
+        flex: 1;
+        height: 1.5px;
+        background: #a7f3d0;
+    }
+    .module-1 .toc-cell-num {
+        width: 18%;
+        background: #d1fae5;
+        border: 1.5px solid #34d399;
+        border-right: none;
+        border-radius: 12px 0 0 12px;
+        padding: 10px 12px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .module-1 .toc-semana {
+        display: block;
+        font-size: 8.5pt;
+        font-weight: 800;
+        color: #059669;
+        text-transform: uppercase;
+    }
+    .module-1 .toc-lesson-verse {
+        font-size: 9pt;
+        font-weight: 700;
+        color: #0d9488;
+        margin: 0 0 2px 0;
+    }
+    .module-1 .cover-guide-box {
+        background: #fefce8;
+        border: 1.5px solid #facc15;
+        border-radius: 12px;
+        padding: 11px 16px;
+        font-size: 9.2pt;
+        line-height: 1.45;
+        color: #713f12;
+    }
+    .module-1 .cover-guide-box strong {
+        color: #92400e;
+    }
+    .module-1 .lesson-header {
+        border-radius: 12px;
+        padding: 10px 15px;
+        background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+        border: 2px solid #059669;
+        margin-bottom: 8px;
+    }
+    .module-1 .semana-tag {
+        display: inline-block;
+        font-size: 9pt;
+        font-weight: 800;
+        padding: 2.5px 11px;
+        border-radius: 999px;
+        background-color: #059669;
+        color: #ffffff;
+        letter-spacing: 0.04em;
+    }
+    .module-1 .quarter-label {
+        font-size: 9pt;
+        font-weight: 700;
+        color: #065f46;
+    }
+    .module-1 .image-slot-card {
+        border: 2px solid #34d399;
+        background-color: #ecfdf5;
+        border-radius: 12px;
+        padding: 5px;
+        box-shadow: 0 3px 10px rgba(5, 150, 105, 0.08);
+    }
+    .module-1 .image-caption {
+        font-size: 8pt;
+        font-weight: 700;
+        color: #047857;
+        text-align: center;
+        margin: 4px 0 1px 0;
+        line-height: 1.25;
+    }
+    .module-1 .verse-card {
+        border: 1.5px solid #7dd3fc;
+        background-color: #f0f9ff;
+        border-radius: 10px;
+        padding: 7px 11px;
+        font-size: 9.3pt;
+        line-height: 1.34;
+    }
+    .module-1 .verse-header {
+        font-weight: 800;
+        color: #0369a1;
+        margin-bottom: 2px;
+        font-size: 9pt;
+    }
+    .module-1 .story-card p {
+        font-size: 9.8pt;
+        line-height: 1.4;
+        margin: 0 0 5px 0;
+        color: #0f172a;
+        text-align: justify;
+    }
+    .module-1 .question-card ol {
+        margin: 0;
+        padding-left: 18px;
+        font-size: 9.6pt;
+        line-height: 1.36;
+        color: #1e1b4b;
+    }
+    .module-1 .mission-card p {
+        font-size: 9.6pt;
+        line-height: 1.36;
+        margin: 0;
+        color: #14532d;
+    }
+
+    /* ==================== Módulu 2 Theme ==================== */
+    .module-2 .cover-page {
+        background: linear-gradient(155deg, #f0f9ff 0%, #ffffff 42%, #ecfdf5 85%, #fefce8 100%);
+        padding: 16mm 18mm 12mm 18mm;
+        border: 1px solid #bae6fd;
+    }
+    .module-2 .cover-top-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #0284c7, #0d9488);
+        color: #ffffff;
+        font-size: 9.5pt;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        padding: 5px 16px;
+        border-radius: 999px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    .module-2 .cover-hero {
+        border: 2.5px solid #0284c7;
+        border-radius: 18px;
+        padding: 22px 24px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 8px 20px rgba(2, 132, 199, 0.08);
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .module-2 .cover-sub-title {
+        font-size: 12pt;
+        font-weight: 700;
+        color: #0369a1;
+        margin: 0 0 10px 0;
+    }
+    .module-2 .cover-grid-title {
+        font-size: 11pt;
+        font-weight: 800;
+        color: #0369a1;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin: 0 0 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .module-2 .cover-grid-title::after {
+        content: "";
+        flex: 1;
+        height: 1.5px;
+        background: #bae6fd;
+    }
+    .module-2 .toc-cell-num {
+        width: 18%;
+        background: #e0f2fe;
+        border: 1.5px solid #38bdf8;
+        border-right: none;
+        border-radius: 12px 0 0 12px;
+        padding: 10px 12px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .module-2 .toc-semana {
+        display: block;
+        font-size: 8.5pt;
+        font-weight: 800;
+        color: #0284c7;
+        text-transform: uppercase;
+    }
+    .module-2 .toc-lesson-verse {
+        font-size: 9pt;
+        font-weight: 700;
+        color: #0d9488;
+        margin: 0 0 2px 0;
+    }
+    .module-2 .cover-guide-box {
+        background: #fefce8;
+        border: 1.5px solid #facc15;
+        border-radius: 12px;
+        padding: 11px 16px;
+        font-size: 9.2pt;
+        line-height: 1.45;
+        color: #713f12;
+    }
+    .module-2 .cover-guide-box strong {
+        color: #92400e;
+    }
+    .module-2 .lesson-header {
+        border-radius: 12px;
+        padding: 10px 15px;
+        background: linear-gradient(135deg, #e0f2fe 0%, #ccfbf1 100%);
+        border: 2px solid #0284c7;
+        margin-bottom: 8px;
+    }
+    .module-2 .semana-tag {
+        display: inline-block;
+        font-size: 9pt;
+        font-weight: 800;
+        padding: 2.5px 11px;
+        border-radius: 999px;
+        background-color: #0284c7;
+        color: #ffffff;
+        letter-spacing: 0.04em;
+    }
+    .module-2 .quarter-label {
+        font-size: 9pt;
+        font-weight: 700;
+        color: #0369a1;
+    }
+    .module-2 .image-slot-card {
+        border: 2px solid #38bdf8;
+        background-color: #f0f9ff;
+        border-radius: 12px;
+        padding: 5px;
+        box-shadow: 0 3px 10px rgba(2, 132, 199, 0.08);
+    }
+    .module-2 .image-caption {
+        font-size: 8pt;
+        font-weight: 700;
+        color: #0369a1;
+        text-align: center;
+        margin: 4px 0 1px 0;
+        line-height: 1.25;
+    }
+    .module-2 .verse-card {
+        border: 1.5px solid #5eead4;
+        background-color: #f0fdfa;
+        border-radius: 10px;
+        padding: 7px 11px;
+        font-size: 9.4pt;
+        line-height: 1.36;
+    }
+    .module-2 .verse-header {
+        font-weight: 800;
+        color: #0f766e;
+        margin-bottom: 2px;
+        font-size: 9pt;
+    }
+    .module-2 .story-card p {
+        font-size: 10pt;
+        line-height: 1.42;
+        margin: 0 0 5px 0;
+        color: #0f172a;
+        text-align: justify;
+    }
+    .module-2 .question-card ol {
+        margin: 0;
+        padding-left: 18px;
+        font-size: 9.8pt;
+        line-height: 1.38;
+        color: #1e1b4b;
+    }
+    .module-2 .mission-card p {
+        font-size: 9.8pt;
+        line-height: 1.38;
+        margin: 0;
+        color: #14532d;
+    }
+
+    /* ==================== Módulu 3 Theme ==================== */
+    .module-3 .cover-page {
+        background: linear-gradient(155deg, #fffbeb 0%, #ffffff 42%, #ecfdf5 85%, #f0f9ff 100%);
+        padding: 16mm 18mm 12mm 18mm;
+        border: 1px solid #fde68a;
+    }
+    .module-3 .cover-top-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #d97706, #059669);
+        color: #ffffff;
+        font-size: 9.5pt;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        padding: 5px 16px;
+        border-radius: 999px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    .module-3 .cover-hero {
+        border: 2.5px solid #d97706;
+        border-radius: 18px;
+        padding: 22px 24px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 8px 20px rgba(217, 119, 6, 0.09);
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .module-3 .cover-sub-title {
+        font-size: 12pt;
+        font-weight: 700;
+        color: #b45309;
+        margin: 0 0 10px 0;
+    }
+    .module-3 .cover-grid-title {
+        font-size: 11pt;
+        font-weight: 800;
+        color: #b45309;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin: 0 0 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .module-3 .cover-grid-title::after {
+        content: "";
+        flex: 1;
+        height: 1.5px;
+        background: #fde68a;
+    }
+    .module-3 .toc-cell-num {
+        width: 18%;
+        background: #fef3c7;
+        border: 1.5px solid #f59e0b;
+        border-right: none;
+        border-radius: 12px 0 0 12px;
+        padding: 10px 12px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .module-3 .toc-semana {
+        display: block;
+        font-size: 8.5pt;
+        font-weight: 800;
+        color: #b45309;
+        text-transform: uppercase;
+    }
+    .module-3 .toc-lesson-verse {
+        font-size: 9pt;
+        font-weight: 700;
+        color: #059669;
+        margin: 0 0 2px 0;
+    }
+    .module-3 .cover-guide-box {
+        background: #ecfdf5;
+        border: 1.5px solid #34d399;
+        border-radius: 12px;
+        padding: 11px 16px;
+        font-size: 9.2pt;
+        line-height: 1.45;
+        color: #065f46;
+    }
+    .module-3 .cover-guide-box strong {
+        color: #047857;
+    }
+    .module-3 .lesson-header {
+        border-radius: 12px;
+        padding: 10px 15px;
+        background: linear-gradient(135deg, #fef3c7 0%, #d1fae5 100%);
+        border: 2px solid #d97706;
+        margin-bottom: 8px;
+    }
+    .module-3 .semana-tag {
+        display: inline-block;
+        font-size: 9pt;
+        font-weight: 800;
+        padding: 2.5px 11px;
+        border-radius: 999px;
+        background-color: #d97706;
+        color: #ffffff;
+        letter-spacing: 0.04em;
+    }
+    .module-3 .quarter-label {
+        font-size: 9pt;
+        font-weight: 700;
+        color: #92400e;
+    }
+    .module-3 .image-slot-card {
+        border: 2px solid #f59e0b;
+        background-color: #fffbeb;
+        border-radius: 12px;
+        padding: 5px;
+        box-shadow: 0 3px 10px rgba(217, 119, 6, 0.08);
+    }
+    .module-3 .image-caption {
+        font-size: 8pt;
+        font-weight: 700;
+        color: #b45309;
+        text-align: center;
+        margin: 4px 0 1px 0;
+        line-height: 1.25;
+    }
+    .module-3 .verse-card {
+        border: 1.5px solid #5eead4;
+        background-color: #f0fdfa;
+        border-radius: 10px;
+        padding: 7px 11px;
+        font-size: 9.4pt;
+        line-height: 1.36;
+    }
+    .module-3 .verse-header {
+        font-weight: 800;
+        color: #0f766e;
+        margin-bottom: 2px;
+        font-size: 9pt;
+    }
+    .module-3 .story-card p {
+        font-size: 10pt;
+        line-height: 1.42;
+        margin: 0 0 5px 0;
+        color: #0f172a;
+        text-align: justify;
+    }
+    .module-3 .question-card ol {
+        margin: 0;
+        padding-left: 18px;
+        font-size: 9.8pt;
+        line-height: 1.38;
+        color: #1e1b4b;
+    }
+    .module-3 .mission-card p {
+        font-size: 9.8pt;
+        line-height: 1.38;
+        margin: 0;
+        color: #14532d;
+    }
+
+    /* ==================== Módulu 4 Theme ==================== */
+    .module-4 .cover-page {
+        background: linear-gradient(155deg, #fff1f2 0%, #ffffff 42%, #eef2ff 85%, #fefce8 100%);
+        padding: 16mm 18mm 12mm 18mm;
+        border: 1px solid #fecdd3;
+    }
+    .module-4 .cover-top-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #e11d48, #4f46e5);
+        color: #ffffff;
+        font-size: 9.5pt;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        padding: 5px 16px;
+        border-radius: 999px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    .module-4 .cover-hero {
+        border: 2.5px solid #e11d48;
+        border-radius: 18px;
+        padding: 22px 24px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 8px 20px rgba(225, 29, 72, 0.08);
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .module-4 .cover-sub-title {
+        font-size: 12pt;
+        font-weight: 700;
+        color: #be123c;
+        margin: 0 0 10px 0;
+    }
+    .module-4 .cover-grid-title {
+        font-size: 11pt;
+        font-weight: 800;
+        color: #be123c;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin: 0 0 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .module-4 .cover-grid-title::after {
+        content: "";
+        flex: 1;
+        height: 1.5px;
+        background: #fecdd3;
+    }
+    .module-4 .toc-cell-num {
+        width: 18%;
+        background: #ffe4e6;
+        border: 1.5px solid #fb7185;
+        border-right: none;
+        border-radius: 12px 0 0 12px;
+        padding: 10px 12px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .module-4 .toc-semana {
+        display: block;
+        font-size: 8.5pt;
+        font-weight: 800;
+        color: #be123c;
+        text-transform: uppercase;
+    }
+    .module-4 .toc-lesson-verse {
+        font-size: 9pt;
+        font-weight: 700;
+        color: #4f46e5;
+        margin: 0 0 2px 0;
+    }
+    .module-4 .cover-guide-box {
+        background: #eef2ff;
+        border: 1.5px solid #818cf8;
+        border-radius: 12px;
+        padding: 11px 16px;
+        font-size: 9.2pt;
+        line-height: 1.45;
+        color: #1e1b4b;
+    }
+    .module-4 .cover-guide-box strong {
+        color: #3730a3;
+    }
+    .module-4 .lesson-header {
+        border-radius: 12px;
+        padding: 10px 15px;
+        background: linear-gradient(135deg, #ffe4e6 0%, #e0e7ff 100%);
+        border: 2px solid #e11d48;
+        margin-bottom: 8px;
+    }
+    .module-4 .semana-tag {
+        display: inline-block;
+        font-size: 9pt;
+        font-weight: 800;
+        padding: 2.5px 11px;
+        border-radius: 999px;
+        background-color: #e11d48;
+        color: #ffffff;
+        letter-spacing: 0.04em;
+    }
+    .module-4 .quarter-label {
+        font-size: 9pt;
+        font-weight: 700;
+        color: #9f1239;
+    }
+    .module-4 .image-slot-card {
+        border: 2px solid #fb7185;
+        background-color: #fff1f2;
+        border-radius: 12px;
+        padding: 5px;
+        box-shadow: 0 3px 10px rgba(225, 29, 72, 0.08);
+    }
+    .module-4 .image-caption {
+        font-size: 8pt;
+        font-weight: 700;
+        color: #be123c;
+        text-align: center;
+        margin: 4px 0 1px 0;
+        line-height: 1.25;
+    }
+    .module-4 .verse-card {
+        border: 1.5px solid #5eead4;
+        background-color: #f0fdfa;
+        border-radius: 10px;
+        padding: 7px 11px;
+        font-size: 9.4pt;
+        line-height: 1.36;
+    }
+    .module-4 .verse-header {
+        font-weight: 800;
+        color: #0f766e;
+        margin-bottom: 2px;
+        font-size: 9pt;
+    }
+    .module-4 .story-card p {
+        font-size: 10pt;
+        line-height: 1.42;
+        margin: 0 0 5px 0;
+        color: #0f172a;
+        text-align: justify;
+    }
+    .module-4 .question-card ol {
+        margin: 0;
+        padding-left: 18px;
+        font-size: 9.8pt;
+        line-height: 1.38;
+        color: #1e1b4b;
+    }
+    .module-4 .mission-card p {
+        font-size: 9.8pt;
+        line-height: 1.38;
+        margin: 0;
+        color: #14532d;
+    }
+</style>
+</head>
+<body>
+
+<!-- ==================== MÓDULU 1 ==================== -->
+<div class="module-1">
+<!-- ==================== PAGE 1: COVER & MODULE OVERVIEW ==================== -->
+<section class="page cover-page">
+    <div>
+        <div style="text-align: center;">
+            <span class="cover-top-badge">Kurikulum Treinu Disípulu Ki'ik · Timór-Leste (Tetun Dili)</span>
+        </div>
+
+        <div class="cover-hero">
+            <h1 class="cover-main-title">KURIKULUM DISÍPULU KANOROK BA LABARIK</h1>
+            <p class="cover-sub-title">Módulu 1 (Semana 1 – 4): Fundasaun Fiar no Salvasaun</p>
+            <p class="cover-desc">
+                Livru lisaun Súnday School hodi hanorin labarik sira iha Timór-Leste atu hatene katak Maromak kria sira ho folin boot, simu Jesus nu'udar Salvadór, no moris ho brani nu'udar Maromak nia oan.
+            </p>
+        </div>
+
+        <h2 class="cover-grid-title">Konteúdu Módulu 1 (Semana 1 to'o Semana 4)</h2>
+
+        <table class="toc-table">
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 1</span>
+                    <span class="toc-lisaun-num">Lisaun 1</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Maromak Kria Ha'u</p>
+                    <p class="toc-lesson-verse">📖 Jenesis 1:27-28</p>
+                    <p class="toc-lesson-summary">Lino iha foho matak Ermera aprende katak Maromak kria nia hodi tuir Maromak nia oin ho folin boot.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/1-1.jpeg" alt="Lisaun 1" class="toc-thumb-img">
+                </td>
+            </tr>
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 2</span>
+                    <span class="toc-lisaun-num">Lisaun 2</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Ita Hetan Maromak Nia Salvasaun</p>
+                    <p class="toc-lesson-verse">📖 Jenesis 3:15 · Isaías 55:7</p>
+                    <p class="toc-lesson-summary">Bella iha Dili aprende katak bainhira ita fila fali ho lialos, Maromak loke dalan salvasaun no perdua.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/2-1.jpeg" alt="Lisaun 2" class="toc-thumb-img">
+                </td>
+            </tr>
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 3</span>
+                    <span class="toc-lisaun-num">Lisaun 3</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Jesus Katak Ha'u-nia Salvadór</p>
+                    <p class="toc-lesson-verse">📖 Roma 10:9-10</p>
+                    <p class="toc-lesson-summary">Antonio iha Baucau konfesa fiar ho ksolok katak Jesus mate iha krus no moris hi'as hodi salva nia.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/3-1.jpeg" alt="Lisaun 3" class="toc-thumb-img">
+                </td>
+            </tr>
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 4</span>
+                    <span class="toc-lisaun-num">Lisaun 4</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Ha'u Katak Maromak Nia Oan Ne'ebé Santu</p>
+                    <p class="toc-lesson-verse">📖 Joaõ 1:12</p>
+                    <p class="toc-lesson-summary">Rosa hamriik ho oin-midar no brani tanba ema hotu ne'ebé simu Jesus hetan kbiit atu sai Maromak nia oan.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/4-1.jpeg" alt="Lisaun 4" class="toc-thumb-img">
+                </td>
+            </tr>
+        </table>
+
+        <div class="cover-guide-box">
+            <strong>Matadalan ba Mestre Súnday School:</strong> Kada lisaun prepara ba sesaun minutu 45–60. Hahú ho kantiku no orasaun, lee versíkulu Bíblia hamutuk, konta istória moris hodi hatudu imajem ba labarik sira, diskute pergunta 3, no enkoraja labarik sira hala'o <em>Misaun Prátika</em> iha semana laran.
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Módulu 1 (Semana 1–4) · Pájina 1</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 2: LISAUN 1 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 1 · LISAUN 1</span>
+                <span class="quarter-label">Trimestre 1 · Fundasaun Fiar no Salvasaun</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 1. Maromak Kria Ha'u</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/1-1.jpeg" alt="Lisaun 1 - Lino iha foho Ermera haree ba tasi no illa Ataúro">
+                        <p class="image-caption">Lino iha foho matak Ermera haree ba tasi no illa Ataúro</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Maromak kria ha'u hodi tuir Nia oin brani no kmanek, no ha'u folin boot tebes iha Nia oin.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Jenesis 1:27-28</div>
+                        <p class="verse-text">"Maromak kria ema hodi tuir Nia oin: Nia kria ema hodi tuir Maromak nia oin; Nia kria sira mane no feto. Maromak haraik ben ba sira, no Maromak dehan ba sira: 'Bikan no foti barak, halo nakonu rai no domina rai ne'e; ukun ika iha tasi, manu iha lalehan, no kualkér animál ne'ebé book an iha rai.'"</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Maromak kria lalehan, rai, tasi furak, no ai-horis hotu-hotu. Depoiz ne'e, Maromak kria ema nu'udar kriasaun kmanek liu iha mundu. La hanesan ho balada ka ai-horis sira, Maromak kria ema hodi tuir 'Maromak nia oin'. Ne'e katak ita iha Maromak nia domin no karákter kmanek, no ita ida-idak folin boot tebes iha Maromak nia oin.</p>
+            <p>Iha foho matak Ermera, labarik-mane ida ho tinan ualu naran Lino gosta tebes haree kafé-fuan sira ne'ebé mean no saborozu iha dader-saan. Loron ida, Lino sa'e ba foho aas, haree lalehan azúl no tasi ne'ebé dook haree husi illa Ataúro, no nia hanoin: 'Maromak ne'ebé kria mundu boot no furak ne'e kmanek tebes! Maibé ha'u ne'e ki'ik, no dalaruma halo sala barak, Maromak sei domina no ama ha'u ka?'</p>
+            <p>Iha tempu ne'e, mestre Súnday School kaer Lino nia liman ho domin no dehan: 'Lino, foho Ramelau ne'ebé aas ne'e furak, maibé kriasaun kmanek ne'ebé Maromak kria ho laran kompletu mak ó rasik! Maromak kria Lino hodi tuir Nia oin, no fo misaun kmanek atu kuida natureza no belun sira ho domin.' Lino nia laran haksolok tebes. Nia hatene katak nia ne'e ema kmanek no folin boot ne'ebé Maromak ama tebes!</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Maromak kria ema hodi tuir sé-nia oin? (Jenesis 1:27)</li>
+                <li>Lino iha foho Ermera aprende saida husi mestre Súnday School kona-ba nia an?</li>
+                <li>Bainhira ó hatene katak ó kria hodi tuir Maromak nia oin, oinsá ó-nia hanoin no hahalok ba ó-nia an rasik sei troka?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Ha'u mós Maromak nia oan ne'ebé folin boot! Semana ne'e, bainhira ó haree espellu, dehan ba Maromak: "Maromak, obrigadu barak tanba Kria ha'u ho folin boot!" no halo hahalok ida hodi kuida ó-nia isin no klamar (ezemplu: fase liman molok han, toba sedu, no ko'alia liafuan di'ak).</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 1 · Pájina 2</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 3: LISAUN 2 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 2 · LISAUN 2</span>
+                <span class="quarter-label">Trimestre 1 · Fundasaun Fiar no Salvasaun</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 2. Ita Hetan Maromak Nia Salvasaun</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/2-1.jpeg" alt="Lisaun 2 - Bella simu hakuak domin husi nia inan iha Dili">
+                        <p class="image-caption">Bella simu hakuak domin husi nia inan iha uma Dili</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Maske sala haketak ita husi Maromak, Maromak lolo Nia liman ho domin hodi tatoli dalan salvasaun mai ita.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Jenesis 3:15 · Isaías 55:7</div>
+                        <p class="verse-text">"Ha'u sei hatuur inimizade iha ó no feto ne'e nia leet, no iha ó-nia bei-oan no feto nia bei-oan nia leet; feto nia bei-oan sei sama ó-nia ulun, no ó sei haas nia ain-tuur. (Jenesis 3:15) / Ema aat tenke husik nia dalan, no ema nakdedar husik nia hanoin; mai fila ba Na'i, nune'e Nia sei haraik mizerikórdia ba nia, no ba ita-nia Maromak, tanba Nia sei fo perdua ho laran-luak. (Isaías 55:7)"</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Iha mundu furak ne'ebé Maromak kria, ema nia la-sofrer no la-rona hamosu 'sala'. Sala ne'e haketak ema husi Maromak, no lori kanek ho mizéria ba ema nia laran. Maibé Maromak domin la husik ita iha sala laran. Husi hahú, Maromak fo promesa atu haruka Salvadór ida atu nakloke fali dalan salvasaun mai ita.</p>
+            <p>Iha suku tasi-ibun Dili, labarik-feto ida naran Bella halimar ho nia alin no la kuidadu to'o boneka nuu-tahan nian harat. Bella ta'uk tebes, nune'e nia subar boneka nakharat iha kantu kintál no bosok ba nia alin: 'Ha'u la hatene.' Iha kalan ne'e, Bella nia laran todan no la di'ak atu toba. Sala bosok ne'e haketak Bella husi Maromak no haketak nia husi nia família.</p>
+            <p>Iha aban dader, Bella brani atu hato'o lialos ba nia inan no husu perdua. Bella nia inan hakuak nia ho domin no dehan: 'Bella, bainhira halo sala, keta subar, maibé fila fali ho lialos ne'e mak foti folin boot. Maromak mós nunka husik ita bainhira ita halo sala, Nia loke dalan atu hakuak no perdua ita.' Bella simu no komprende Maromak Nia salvasaun no perdua ne'ebé luan tebes!</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Bainhira ema monu ba sala, Maromak fo promesa boot saida ba ema? (Jenesis 3:15)</li>
+                <li>Bella sente oinsá bainhira nia bosok, no nia simu esperiénsia saida husi nia inan nia domin?</li>
+                <li>Bainhira ó halo sala ruma no sente todan iha laran, oinsá ó tenke hakbesik ba Maromak ne'ebé fo perdua?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Maromak ne'ebé salva ita pronto atu fo perdua bainhira ita arrepende an ho lialos. Semana ne'e, se ó iha sala ruma, harohan franku ba Maromak, no se ó halo sala ba belun ka família, bá ko'alia uluk: "Deskulpa, ha'u sala" ka "Ha'u fo perdua ba ó."</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 2 · Pájina 3</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 4: LISAUN 3 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 3 · LISAUN 3</span>
+                <span class="quarter-label">Trimestre 1 · Fundasaun Fiar no Salvasaun</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 3. Jesus Katak Ha'u-nia Salvadór</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/3-1.jpeg" alt="Lisaun 3 - Antonio iha Baucau konfesa fiar ho ksolok">
+                        <p class="image-caption">Antonio iha Baucau konfesa fiar ho ksolok ba Jesus Salvadór</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Ita fiar no foti lian katak Jesus mate iha krus no moris hi'as hodi sosa ita husi sala.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Roma 10:9-10</div>
+                        <p class="verse-text">"Tanba se ó foti lian ho ó-nia ibun katak Jesus ne'e Na'i, no fiar iha ó-nia laran katak Maromak harii Nia husi mate, ó sei hetan salvasaun. Tanba ho laran ema fiar hodi hetan justisa, no ho ibun ema foti lian hodi hetan salvasaun."</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Salvadór ne'ebé Maromak promete mak Jesus Kristu! Jesus foti ita-nia kastigu sala nian hodi mate iha krus ba ita. Depoiz loron tolu, Nia moris hi'as husi mate no manán kbiit mate nian. Ema hotu ne'ebé fiar iha laran no foti lian ho ibun sei hetan salvasaun no moris rohan-laek.</p>
+            <p>Iha Baucau, besik bee-matan nakloke furak ida, labarik-mane ida naran Antonio la hatene nani maibé monu ba bee kbiit laran. 'Ajuda ha'u! Salva ha'u!' Antonio husu tulun ho lian manas. Iha tempu ne'e, maun ida iha ninin haksoit sai ba bee laran, hakuak Antonio metin no foti nia sai ba rai-maran.</p>
+            <p>Antonio dada iis ho ksolok no hakru'uk ba maun ne'e: 'Maun, obrigadu barak! Se maun la mai, ha'u mate tiha karik. Maun mak ha'u-nia salvadór!' Iha Domingu iha Igreja, Antonio rona mestre nia hanorin no simu kbiit iha laran: 'Bainhira ha'u monu iha tasi sala nian, Jesus lolo Nia liman krus nian hodi foti ha'u sai!' Antonio foti lian ho ksolok: 'Jesus mak ha'u-nia Salvadór!'</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Atu hetan salvasaun, ita tenke fiar no foti lian kona-ba sé no saida? (Roma 10:9-10)</li>
+                <li>Antonio haksolok oinsá bainhira maun ne'e salva nia husi bee laran?</li>
+                <li>Nusaa liafuan katak Jesus mate no moris hi'as ba ita sai nu'udar lia-foun di'ak (Evanjellu) ne'ebé kmanek liu ba ó?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Foti lian brani katak Jesus mak ha'u-nia Salvadór! Semana ne'e, iha ó-nia orasaun loron-loron no iha amigu/família nia oin, dehan ho lian klaru no moos ba dala 3: "Jesus mak ha'u-nia Salvadór ne'ebé salva ha'u!"</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 3 · Pájina 4</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 5: LISAUN 4 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 4 · LISAUN 4</span>
+                <span class="quarter-label">Trimestre 1 · Fundasaun Fiar no Salvasaun</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 4. Ha'u Katak Maromak Nia Oan Ne'ebé Santu</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/4-1.jpeg" alt="Lisaun 4 - Rosa hatais Tais hamriik ho oin-midar no brani">
+                        <p class="image-caption">Rosa hatais Tais hamriik ho oin-midar nu'udar Maromak nia oan</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Sira ne'ebé simu Jesus hetan kbiit no direitu kmanek nu'udar Maromak nia oan.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Joaõ 1:12</div>
+                        <p class="verse-text">"Maibé ba sira hotu ne'ebé simu Nia, no fiar ba Nia naran, Nia fo kbiit ba sira atu sai Maromak nia oan."</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Ba ema ne'ebé simu Jesus ba sira-nia laran, Maromak fo prezente ne'ebé boot liu: kbiit no direitu atu sai 'Maromak Nia Oan'. Ita la'ós mesak ka ki'ak tan. Maromak sai ita-nia Aman, ne'ebé sempre kuida, proteje, no fo buat hotu ne'ebé ita presiza.</p>
+            <p>Iha kintál rai-rahun suku nian, Rosa halimar futeból no nia sapatu kotu, nune'e nia tuur iha rai no tanis. Belun balu goza nia: 'Rosa la iha sapatu.' Iha tempu ne'e, Rosa nia avó-mane ne'ebé fila husi Igreja hakuak Rosa ho manas no dehan: 'Rosa, keta triste tan sapatu ka buat li'ur. Ó ne'e Liurai Boot liu Maromak nia oan-feto kmanek!'</p>
+            <p>Rona tiha avó nia liafuan, Rosa sente kbiit no ksolok foun iha nia laran: 'Lialos tebes! Ha'u-nia kotuk iha Maromak Aman ne'ebé kbiit boot liu no ama ha'u!' Rosa hamriik hodi oin-midar. Nu'udar Maromak nia oan, Rosa la triste tan ba goza, maibé brani hatudu hahalok di'ak no santu nu'udar Maromak nia oan kmanek.</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Maromak fo kbiit saida ba sira ne'ebé simu no fiar ba Jesus? (Joaõ 1:12)</li>
+                <li>Rosa oinsá hamriik fali ho brani no oin-midar bainhira nia avó-mane fo hanoin ba nia kona-ba Maromak nia oan?</li>
+                <li>Nu'udar Maromak nia oan ne'ebé simu domin boot, priviléjiu saida mak ó iha, no oinsá ó tenke hatudu hahalok iha eskola no uma?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Maromak nia oan iha brani no santidade! Semana ne'e, bainhira ó enfrenta susar ka triste iha eskola, dehan ba ó-nia laran: "Ha'u ne'e Maromak nia oan kmanek!" no hatudu hahalok di'ak 1 (ezemplu: ajuda belun ida, hatudu oin-midar no ko'alia morin).</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 4 · Pájina 5</span>
+    </footer>
+</section>
+</div>
+<!-- ==================== MÓDULU 2 ==================== -->
+<div class="module-2">
+<!-- ==================== PAGE 1: COVER & MODULE OVERVIEW ==================== -->
+<section class="page cover-page">
+    <div>
+        <div style="text-align: center;">
+            <span class="cover-top-badge">Kurikulum Treinu Disípulu Ki'ik · Timór-Leste (Tetun Dili)</span>
+        </div>
+
+        <div class="cover-hero">
+            <h1 class="cover-main-title">KURIKULUM DISÍPULU KANOROK BA LABARIK</h1>
+            <p class="cover-sub-title">Módulu 2 (Semana 5 – 8): Adorasaun, Orasaun no Liafuan Moris</p>
+            <p class="cover-desc">
+                Livru lisaun Súnday School hodi hanorin labarik sira iha Timór-Leste atu adora Maromak ho laran kompletu, ko'alia ho Maromak liuhusi orasaun, la'o iha Maromak nia Liafuan nia naroman, no hadomi Maromak liu buat hotu.
+            </p>
+        </div>
+
+        <h2 class="cover-grid-title">Konteúdu Módulu 2 (Semana 5 to'o Semana 8)</h2>
+
+        <table class="toc-table">
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 5</span>
+                    <span class="toc-lisaun-num">Lisaun 5</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Hadora Maromak ho Laran Kompletu</p>
+                    <p class="toc-lesson-verse">📖 Joaõ 4:24</p>
+                    <p class="toc-lesson-summary">Manuel iha Lospalos aprende adora Maromak iha espíritu no lialos laran bainhira halimar babadok no kantik.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/5-1.jpeg" alt="Lisaun 5" class="toc-thumb-img">
+                </td>
+            </tr>
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 6</span>
+                    <span class="toc-lisaun-num">Lisaun 6</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Harohan: Ko'alia ho Maromak</p>
+                    <p class="toc-lesson-verse">📖 Mateus 6:9-13</p>
+                    <p class="toc-lesson-summary">Fatima iha Liquiçá harohan ho laran moos ba nia avó-feto ne'ebé moras no simu paz husi Aman Maromak.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/6-1.jpeg" alt="Lisaun 6" class="toc-thumb-img">
+                </td>
+            </tr>
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 7</span>
+                    <span class="toc-lisaun-num">Lisaun 7</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Maromak nia Liafuan Nu'udar Na'i nia Naroman</p>
+                    <p class="toc-lesson-verse">📖 Salmu 119:105 · 2 Timóteo 3:16-17</p>
+                    <p class="toc-lesson-summary">Tomas iha Manatuto hatene katak Bíblia mak ahi-oan no naroman lialos ne'ebé gia ita-nia ain loron-loron.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/7-1.jpeg" alt="Lisaun 7" class="toc-thumb-img">
+                </td>
+            </tr>
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 8</span>
+                    <span class="toc-lisaun-num">Lisaun 8</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Hadomi Maromak ho Laran, Klamar, no Kbiit Hotu</p>
+                    <p class="toc-lesson-verse">📖 Deuteronómio 6:4-5</p>
+                    <p class="toc-lesson-summary">Maria iha Ainaro hili hadomi Maromak uluk liu fali halimar no konvida nia belun sira bá Súnday School hamutuk.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/8-1.jpeg" alt="Lisaun 8" class="toc-thumb-img">
+                </td>
+            </tr>
+        </table>
+
+        <div class="cover-guide-box">
+            <strong>Matadalan ba Mestre Súnday School:</strong> Kada lisaun prepara ba sesaun minutu 45–60. Hahú ho kantiku no orasaun, lee versíkulu Bíblia hamutuk, konta istória moris hodi hatudu imajem ba labarik sira, diskute pergunta 3, no enkoraja labarik sira hala'o <em>Misaun Prátika</em> iha semana laran.
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Módulu 2 (Semana 5–8) · Pájina 1</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 2: LISAUN 5 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 5 · LISAUN 5</span>
+                <span class="quarter-label">Trimestre 1 · Adorasaun no Liafuan Moris</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 5. Hadora Maromak ho Laran Kompletu</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/5-1.jpeg" alt="Lisaun 5 - Manuel iha Lospalos halimar babadok no kantik">
+                        <p class="image-caption">Manuel iha Lospalos kantik no halimar babadok adora Maromak</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Hadora ne'e tempu santu hodi fo agradesimentu no ksolok laran kompletu ba Maromak.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Joaõ 4:24</div>
+                        <p class="verse-text">"Maromak ne'e Espíritu; no sira ne'ebé adora Nia tenke adora iha espíritu no lialos laran."</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Maromak kria ita atu adora no fo glória ba Nia! Hadora ne'e la'ós de'it kantik múzika ho ibun sin hanoin, maibé ne'e mak fo ita-nia laran kompletu, agradesimentu, no respeitu ba Maromak ne'ebé kria no ama ita. Bainhira ita adora Maromak iha espíritu no lialos laran, Maromak haksolok no fo kbiit santu ba ita-nia klamar.</p>
+            <p>Iha suku kmanek Lospalos (Lautém), labarik-mane ida ho tinan sia naran Manuel gosta tebes halimar babadok (tambur tradisionál Timór nian) no kantik iha Súnday School. Loron ida, bainhira kantik iha oin, Manuel haree de'it ba nia belun sira atu hatudu katak nia halimar babadok ho kapás. Iha tempu ne'e, mestre Súnday School ko'alia ho domin no fo hanoin ba nia: "Manuel, ita kantik no halimar babadok la'ós atu hatudu an ba ema, maibé atu foti lian adora Maromak ne'ebé tuur iha tronu lalehan."</p>
+            <p>Manuel simu liafuan ne'e no troka nia laran. Iha semana ne'e nia laran, bainhira kantik fali, Manuel taka matan, foti lian ho laran ksolok, no dehan ba Maromak: "Maromak, ha'u adora Ita ho ha'u-nia laran kompletu!" Manuel sente ksolok no paz kmanek foun ida ne'ebé halo nia laran nakenu ho Espíritu Santu.</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Tuir Joaõ 4:24, Maromak ne'e sé, no ita tenke adora Nia iha ne'ebé no oinsá?</li>
+                <li>Manuel iha Lospalos aprende saida husi mestre Súnday School kona-ba adora Maromak ho lialos?</li>
+                <li>Bainhira ó kantik no harohan iha Igreja, oinsá ó bele fo ó-nia laran kompletu ba Maromak sin fahe hanoin ba buat seluk?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Hadora Maromak ho laran kompletu! Semana ne'e, bainhira kantik ka harohan iha Igreja no iha uma, fekit matan ka haree ba lalehan, no fo agradesimentu lialos ba Maromak tanba Nia di'ak no ama ó.</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 5 · Pájina 2</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 3: LISAUN 6 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 6 · LISAUN 6</span>
+                <span class="quarter-label">Trimestre 1 · Adorasaun no Liafuan Moris</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 6. Harohan: Ko'alia ho Maromak</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/6-1.jpeg" alt="Lisaun 6 - Fatima iha Liquiçá harohan iha ai-mangga okos">
+                        <p class="image-caption">Fatima tuur iha ai-mangga okos iha Liquiçá harohan ho laran moos</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Harohan mak ko'alia laran moos no belun metin ho Maromak nu'udar ita-nia Aman kmanek.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Mateus 6:9-13</div>
+                        <p class="verse-text">"Nune'e imi tenke harohan nune'e: 'Ami-nia Aman iha lalehan, halo Ita-nia Naran santu; Ita-nia Reinu mai; Ita-nia hakarak halo iha rai hanesan iha lalehan...'"</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Harohan la'ós ko'alia liafuan susar ka naruk ne'ebé foti husi livru boot sira. Harohan mak ko'alia laran moos no neineik ho Maromak ne'ebé rona ita hanesan Aman ne'ebé ama nia oan. Ita bele harohan iha kualkér tempu: bainhira ita haksolok, bainhira ita triste, no bainhira ita presiza ajuda.</p>
+            <p>Iha Liquiçá besik tasi fatuk sira, labarik-feto ida ho tinan sanulu naran Fatima sente triste no ta'uk tanba nia avó-feto moras boot. Fatima la hatene liafuan igreja nian ne'ebé kmanek atu harohan. Mestre Súnday School hanorin nia ko'alia kona-ba Na'i nia Orasaun (Ami-nia Aman) no dehan: "Fatima, harohan ne'e hanesan ko'alia ho ó-nia Aman ne'ebé ama ó tebes. Ó bele ko'alia buat hotu ne'ebé iha ó-nia laran."</p>
+            <p>Fatima bá tuur iha ai-mangga nia okos iha ninin tasi, kaer liman hamutuk no dehan ho laran moos: "Aman Maromak, ha'u ama ha'u-nia avó. Favór fo kbiit no kura nia moras. Ha'u fiar ba Ita-nia domin." Iha tempu ne'e rasik, Fatima sente paz no ksolok luan tama ba nia laran tanba nia hatene katak Maromak rona tiha nia orasaun.</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Jesus hanorin ita atu harohan hodi hanaran Maromak nu'udar sé? (Mateus 6:9)</li>
+                <li>Fatima iha Liquiçá sente oinsá bainhira nia harohan ho laran moos ba nia avó-feto ne'ebé moras?</li>
+                <li>Oinsá ó bele ko'alia ho Maromak loron-loron iha kualkér fatin no kualkér tempu sin ta'uk ka moe?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Harohan loron-loron nu'udar ko'alia ho belun! Semana ne'e, molok toba no dader-saan, husik minutu 3 atu ko'alia ho Maromak franku kona-ba ó-nia ksolok, ta'uk, no harohan mós ba família no belun sira.</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 6 · Pájina 3</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 4: LISAUN 7 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 7 · LISAUN 7</span>
+                <span class="quarter-label">Trimestre 1 · Adorasaun no Liafuan Moris</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 7. Maromak nia Liafuan Nu'udar Na'i nia Naroman</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/7-1.jpeg" alt="Lisaun 7 - Tomas iha Manatuto lee Bíblia iha ahi-oan okos">
+                        <p class="image-caption">Tomas iha Manatuto lee Bíblia iha naroman ahi-oan nia okos</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Maromak nia Liafuan (Bíblia) mak naroman lialos ne'ebé gia ita-nia ain no fo ai-han ba klamar loron-loron.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Salmu 119:105 · 2 Timóteo 3:16-17</div>
+                        <p class="verse-text">"Ita-nia Liafuan ne'e nu'udar ahi-oan ba ha'u-nia ain, no naroman ba ha'u-nia dalan. (Salmu 119:105) / Eskritura hotu-hotu mai husi Maromak nia iis, no di'ak atu hanorin, atu korrije, atu kore sala, no atu fo forma iha justisa laran. (2 Timóteo 3:16-17)"</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Bíblia la'ós livru tuan baibain ida, maibé ne'e mak Maromak nia lian moris ne'ebé ko'alia mai ita. Iha mundu ne'ebé nakukun no nakenu ho tentasaun aat barak, Maromak nia Liafuan funsiona hanesan sulu ka ahi-oan ne'ebé fo naroman ba ita-nia ain, nune'e ita la monu no la la'o sala dalan.</p>
+            <p>Iha Manatuto, labarik-mane ida ho tinan ualu naran Tomas la'o fila ba uma iha lokraik bainhira loron-matan tun tiha. Dalan nakukun no nia la haree fatuk no ai-tahan sira, nune'e nia ta'uk atu monu. Iha tempu ne'e, nia maun lori sulu (flashlight) naroman boot ida hodi fo naroman ba dalan. Tomas sente seguru no la'o ho ksolok.</p>
+            <p>Mestre Súnday School fo hatene Tomas katak: "Tomas, bainhira ó badinas no lee Bíblia loron-loron, Maromak nia Liafuan fo naroman ba ó-nia hanoin, atu ó hatene hili dalan lialos no la monu ba halo sala." Tomas foti desizaun atu lee versíkulu ki'ik sira loron-loron nu'udar naroman ba nia moris.</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Salmu 119:105 dehan Maromak nia Liafuan ne'e hanesan saida ba ita-nia ain no dalan?</li>
+                <li>Tomas iha Manatuto sente oinsá naroman sulu (flashlight) nian tulun nia iha kalan, no oinsá ne'e hanesan ho Bíblia?</li>
+                <li>Oinsá ó bele lee no rona Maromak nia Liafuan loron-loron atu proteje ó-nia hahalok husi dalan aat?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Maromak nia Liafuan mak naroman ba ha'u! Semana ne'e, lee no dekora versíkulu 1 (Salmu 119:105) hamutuk ho ó-nia família, no hakerek versíkulu ne'e iha kadernu atu hanoin loron-loron.</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 7 · Pájina 4</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 5: LISAUN 8 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 8 · LISAUN 8</span>
+                <span class="quarter-label">Trimestre 1 · Adorasaun no Liafuan Moris</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 8. Hadomi Maromak ho Laran, Klamar, no Kbiit Hotu</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/8-1.jpeg" alt="Lisaun 8 - Maria iha Ainaro konvida belun bá Súnday School">
+                        <p class="image-caption">Maria iha Ainaro konvida nia belun sira bá Súnday School hamutuk</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Ita hili atu hadomi Maromak uluk liu no boot liu buat hotu-hotu ho laran, klamar, no kbiit tomak.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Deuteronómio 6:4-5</div>
+                        <p class="verse-text">"Rona, ó Israel: Na'i ita-nia Maromak ne'e Na'i mesak ida. Ó tenke hadomi Na'i ó-nia Maromak ho ó-nia laran tomak, ho ó-nia klamar tomak, no ho ó-nia kbiit tomak."</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Hadomi Maromak la'ós de'it ko'alia iha ibun, maibé tau Maromak uluk liu fali buat hotu-hotu iha ita-nia moris. Ne'e katak tau Maromak uluk liu fali halimar, telemóvel, ka hanoin an rasik. Bainhira ita hadomi Maromak ho laran, klamar, no kbiit tomak, ita-nia moris sai nakenu ho domin no foti glória ba Maromak.</p>
+            <p>Iha Ainaro iha foho Ramelau okos, labarik-feto ida ho tinan sia naran Maria gosta tebes halimar finta no kosta ho nia belun sira. Iha dader Domingu ida, nia belun sira mai bolu nia: "Maria, mai ita halimar iha kintál sin bá Súnday School!" Maria hanoin uitoan maibé hanoin fali versíkulu Deuteronómio 6:5 ne'ebé mestre hanorin.</p>
+            <p>Maria oin-midar no ko'alia kmanek ba nia belun sira: "Ha'u hadomi Maromak uluk liu, mai ita bá Súnday School hamutuk uluk, depoiz ida-ne'e ita halimar ho ksolok boot liu!" Nia belun sira rona no bá Súnday School hamutuk ho Maria. Maria hatudu katak hadomi Maromak ho laran kompletu lori bensaun boot ba nia no ba nia amigu sira!</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Deuteronómio 6:5 fo mandamentu kmanek saida mai ita kona-ba hadomi Maromak?</li>
+                <li>Maria iha Ainaro hatudu oinsá katak nia tau Maromak uluk liu fali halimar no belun sira?</li>
+                <li>Iha ó-nia moris loron-loron, buat saida mak dalaruma halo ó haluha Maromak, no oinsá ó bele tau Maromak uluk liu buat hotu?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Hadomi Maromak uluk liu buat hotu! Semana ne'e, foti desizaun ida hodi tau Maromak uluk (ezemplu: harohan no lee Bíblia molok halimar telemóvel/halimar iha li'ur, ka mai Súnday School la atrasu).</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 8 · Pájina 5</span>
+    </footer>
+</section>
+</div>
+<!-- ==================== MÓDULU 3 ==================== -->
+<div class="module-3">
+<!-- ==================== PAGE 1: COVER & MODULE OVERVIEW ==================== -->
+<section class="page cover-page">
+    <div>
+        <div style="text-align: center;">
+            <span class="cover-top-badge">Kurikulum Treinu Disípulu Ki'ik · Timór-Leste (Tetun Dili)</span>
+        </div>
+
+        <div class="cover-hero">
+            <h1 class="cover-main-title">KURIKULUM DISÍPULU KANOROK BA LABARIK</h1>
+            <p class="cover-sub-title">Módulu 3 (Semana 9 – 12): Ksolok, Paz, Obediénsia no Agradesimentu</p>
+            <p class="cover-desc">
+                Livru lisaun Súnday School hodi hanorin labarik sira iha Timór-Leste atu moris ho ksolok husi Espíritu Santu, simu paz ne'ebé manán tauk, halo tuir Maromak nia Liafuan ho ksolok, no hato'o agradesimentu ba Maromak nia grasa hotu.
+            </p>
+        </div>
+
+        <h2 class="cover-grid-title">Konteúdu Módulu 3 (Semana 9 to'o Semana 12)</h2>
+
+        <table class="toc-table">
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 9</span>
+                    <span class="toc-lisaun-num">Lisaun 9</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Ksolok Nakenu iha Ha'u-nia Laran</p>
+                    <p class="toc-lesson-verse">📖 Galásia 5:22 · Filipos 4:4</p>
+                    <p class="toc-lesson-summary">Gabriel iha Bobonaro aprende katak ksolok lialos husi Jesus hela metin iha laran maske udan boot iha li'ur.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/9-1.jpeg" alt="Lisaun 9" class="toc-thumb-img">
+                </td>
+            </tr>
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 10</span>
+                    <span class="toc-lisaun-num">Lisaun 10</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Paz husi Maromak ne'ebé Manán Tauk</p>
+                    <p class="toc-lesson-verse">📖 Joaõ 14:27</p>
+                    <p class="toc-lesson-summary">Isabela iha Suai harohan no simu paz celestial husi Jesus hodi toba hakmatek iha kalan anin boot.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/10-1.jpeg" alt="Lisaun 10" class="toc-thumb-img">
+                </td>
+            </tr>
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 11</span>
+                    <span class="toc-lisaun-num">Lisaun 11</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Halo Tuir Maromak nia Liafuan ho Ksolok</p>
+                    <p class="toc-lesson-verse">📖 1 Samuel 15:22</p>
+                    <p class="toc-lesson-summary">Daniel iha Oecusse rega kintál ho oin-midar hodi hatudu katak rona no halo tuir di'ak liu sakrifísiu.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/13-1.jpeg" alt="Lisaun 11" class="toc-thumb-img">
+                </td>
+            </tr>
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 12</span>
+                    <span class="toc-lisaun-num">Lisaun 12</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Hato'o Agradesimentu ba Grasias Hotu</p>
+                    <p class="toc-lesson-verse">📖 Lucas 17:15-16</p>
+                    <p class="toc-lesson-summary">Beatriz iha Viqueque hakuak kadernu foun ho laran nakenu ho agradesimentu ba Maromak no nia mestre.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/14-1.jpeg" alt="Lisaun 12" class="toc-thumb-img">
+                </td>
+            </tr>
+        </table>
+
+        <div class="cover-guide-box">
+            <strong>Matadalan ba Mestre Súnday School:</strong> Kada lisaun prepara ba sesaun minutu 45–60. Hahú ho kantiku no orasaun, lee versíkulu Bíblia hamutuk, konta istória moris hodi hatudu imajem ba labarik sira, diskute pergunta 3, no enkoraja labarik sira hala'o <em>Misaun Prátika</em> iha semana laran.
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Módulu 3 (Semana 9–12) · Pájina 1</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 2: LISAUN 9 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 9 · LISAUN 9</span>
+                <span class="quarter-label">Trimestre 1 · Ksolok, Paz no Obediénsia</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 9. Ksolok Nakenu iha Ha'u-nia Laran</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/9-1.jpeg" alt="Lisaun 9 - Gabriel no nia avó-feto kantik iha varanda Bobonaro">
+                        <p class="image-caption">Gabriel no nia avó-feto kantik ho ksolok iha varanda Bobonaro</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Ksolok husi Maromak la'ós depende ba meiu ka sasán sira, maibé ne'e kbiit santu ne'ebé hela iha ita-nia laran loron-loron.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Galásia 5:22 · Filipos 4:4</div>
+                        <p class="verse-text">"Maibé Espíritu nia fuan mak: domin, ksolok, paz, laran-luak, laran-di'ak, kbiit-an, fiar... (Galásia 5:22) / Haksolok nafatin iha Na'i; ha'u dehan fali: haksolok ba! (Filipos 4:4)"</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Espíritu Santu nia fuan ida mak 'ksolok' (joy). Ksolok la'ós de'it tanba ita simu presente foun ka han hahán midar. Ksolok lialos mak prezente husi Maromak ne'ebé hela metin iha ita-nia laran, maske iha loron ne'ebé udan boot ka ita enfrenta susar ki'ik sira.</p>
+            <p>Iha foho Bobonaro, labarik-mane ida ho tinan ualu naran Gabriel tuur iha varanda uma nian tanba udan boot halo nia la bele bá halimar bola ho belun sira. Gabriel triste no tuur husik oin. Iha tempu ne'e, nia avó-feto katuas fo kafé mamoos kmaan ida ba nia no foti babadok kantik kantiku igreja nian ne'ebé haksolok.</p>
+            <p>Avó-feto dehan ba Gabriel: "Gabriel, bei-oan, ksolok lialos husi Jesus la lakon tanba udan ka tanba bola la iha. Maromak fo ksolok iha ita-nia laran tanba Nia kria no ama ita. Mai ita kantik hahi'i Maromak hamutuk!" Gabriel sente naroman ksolok foun mosu iha nia laran. Nia foti lian kantik no basa-liman hamutuk ho nia avó, hodi aprende katak Jesus Nia ksolok hela metin iha nia laran nafatin!</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Tuir Filipos 4:4, Bíblia hanorin ita atu halo saida nafatin iha Na'i?</li>
+                <li>Gabriel iha Bobonaro aprende saida husi nia avó-feto kona-ba diferensa husi ksolok halimar nian no ksolok husi Jesus?</li>
+                <li>Bainhira buat sira la la'o tuir ó-nia hakarak, oinsá ó bele hetan no hatudu fali ksolok ne'ebé Espíritu Santu fo ba ó?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Ksolok nakenu iha ha'u-nia laran! Semana ne'e, bainhira ó enfrenta triste ka susar ki'ik ruma, dehan ba ó-nia an: "Jesus nia ksolok mak ha'u-nia kbiit!" no hatudu oin-midar hodi kantik kantiku 1 ne'ebé foti ó-nia laran.</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 9 · Pájina 2</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 3: LISAUN 10 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 10 · LISAUN 10</span>
+                <span class="quarter-label">Trimestre 1 · Ksolok, Paz no Obediénsia</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 10. Paz husi Maromak ne'ebé Manán Tauk</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/10-1.jpeg" alt="Lisaun 10 - Isabela iha Suai toba hakmatek ho Jesus nia paz">
+                        <p class="image-caption">Isabela iha Suai toba hakmatek ho paz husi Jesus iha kalan udan</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Maromak fo paz lialos nian ne'ebé maka'as liu ta'uk no bilán hotu-hotu iha ita-nia moris.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Joaõ 14:27</div>
+                        <p class="verse-text">"Ha'u husik paz mai imi; ha'u fo ha'u-nia paz mai imi. Ha'u la fo nune'e hanesan mundu fo. Keta halo imi-nia laran nakdedar no keta ta'uk."</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Dalaruma ita sente ta'uk ba nakukun, kbiit anin boot, moras, ka situasaun ruma ne'ebé ita la hatene. Maibé Jesus fo promesa kmanek ida mai ita: "Ha'u fo ha'u-nia paz mai imi." Paz ne'e mak hakmatek no metin iha klamar laran ne'ebé halakon ta'uk hotu-hotu.</p>
+            <p>Iha Cova Lima (Suai) besik tasi-ibun anin mahan, labarik-feto ida ho tinan sia naran Isabela la toba di'ak iha kalan tanba rona lian anin boot no rai-tarutu iha li'ur. Isabela nakdedar no taka hena ba oin. Iha tempu ne'e, nia inan mai tuur besik nia, kaer nia liman no harohan ho lian kmaan.</p>
+            <p>Inan dehan ba Isabela: "Isabela, Jesus mak Na'i ne'ebé ukun anin no tasi. Bainhira ita harohan no husu Nia paz, Jesus haruka Nia paz kmanek mai fo proteje ita-nia laran." Isabela foti hanoin ba Jesus, harohan neineik no taka matan. Iha tempu ki'ik laran, ta'uk hotu lakon tiha no paz furak halo Isabela toba hakmatek to'o dader.</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Iha Joaõ 14:27, paz ne'ebé Jesus fo ne'e hanesan ka la hanesan ho paz ne'ebé mundu fo?</li>
+                <li>Isabela iha Suai manán oinsá nia ta'uk ba anin no rai-tarutu iha kalan?</li>
+                <li>Bainhira ó sente ta'uk ka bilán iha ó-nia laran, oinsá ó bele husu no simu Jesus nia paz hodi tuur hakmatek?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Jesus nia paz proteje ha'u-nia laran! Semana ne'e, bainhira ó sente ta'uk ba buat ruma iha kalan ka iha dader, kaer liman harohan: "Jesus, fo Ita-nia paz kmanek mai ha'u-nia laran," no toba ka la'o ho paz hakmatek.</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 10 · Pájina 3</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 4: LISAUN 11 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 11 · LISAUN 11</span>
+                <span class="quarter-label">Trimestre 1 · Ksolok, Paz no Obediénsia</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 11. Halo Tuir Maromak nia Liafuan ho Ksolok</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/13-1.jpeg" alt="Lisaun 11 - Daniel iha Oecusse rega kintál ho oin-midar">
+                        <p class="image-caption">Daniel iha Oecusse rega ai-horis iha kintál ho laran ksolok</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Maromak hahi'i no haksolok liu bainhira ita rona no halo tuir Nia Liafuan ho laran ksolok.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — 1 Samuel 15:22</div>
+                        <p class="verse-text">"Samuel dehan: 'Na'i haksolok liu ba sakrifísiu ho ai-han ho manan ka ba rona Na'i nia lian? Haree ba, rona no halo tuir ne'e di'ak liu sakrifísiu...'"</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Maromak la buka ita fo prezente karu ka halo buat boot ne'ebé foti an, maibé Maromak buka no haksolok liu bainhira ita 'halo tuir' (obediente) ba Nia Liafuan. Rona no halo tuir ho laran ksolok mak sinál ne'ebé hatudu katak ita hadomi Maromak husi laran.</p>
+            <p>Iha Oecusse (Ambeno), labarik-mane ida ho tinan sanulu naran Daniel simu liafuan husi nia aman atu bá rega modo sira iha kintál molok bá halimar ho belun sira. Daniel sente baruk ki'ik maibé nia hanoin fali istória Samuel nian iha Bíblia: 'Rona no halo tuir ne'e di'ak liu!'</p>
+            <p>Daniel kanta no lori balde bee nian hodi rega modo sira hotu ho oin-midar. Bainhira nia aman haree Daniel halo servisu ne'e ho ksolok no lalais, aman hakuak Daniel metin no dehan: "Daniel, ó-nia laran ksolok atu rona no halo tuir halo ha'u no Maromak haksolok tebes!" Daniel aprende katak halo tuir Liafuan lori bensaun no ksolok boot ba klamar.</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Tuir 1 Samuel 15:22, buat saida mak Na'i haksolok liu fali sakrifísiu hotu-hotu?</li>
+                <li>Daniel iha Oecusse hatudu oinsá nia halo tuir nia aman nia liafuan ho laran ksolok sin lamenta?</li>
+                <li>Iha ó-nia moris loron-loron iha uma no eskola, oinsá ó bele halo tuir mestre, inan-aman, no Maromak nia mandamentu ho ksolok lialos?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Ha'u halo tuir Maromak ho ksolok! Semana ne'e, bainhira inan-aman ka mestre haruka ó halo servisu ruma, keta lamenta ka murmu, maibé dehan "Sim, ha'u halo ho ksolok!" no halo lalais ho oin-midar.</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 11 · Pájina 4</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 5: LISAUN 12 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 12 · LISAUN 12</span>
+                <span class="quarter-label">Trimestre 1 · Ksolok, Paz no Obediénsia</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 12. Hato'o Agradesimentu ba Grasias Hotu</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/14-1.jpeg" alt="Lisaun 12 - Beatriz iha Viqueque hakuak kadernu ho agradesimentu">
+                        <p class="image-caption">Beatriz iha Viqueque hakuak kadernu foun ho laran agradesimentu</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Ita la haluha bensaun no salvasaun husi Maromak, no fo agradesimentu loron-loron ho laran lialos.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Lucas 17:15-16</div>
+                        <p class="verse-text">"Ema ida husi sira ne'e, bainhira haree katak nia di'ak tiha, fila fali hodi fo glória ba Maromak ho lian boot; nia monu ho oin ba rai iha Jesus nia ain okos no hato'o agradesimentu ba Nia. Ema ne'e Samaritano ida."</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Bainhira Jesus kure ema moras-lepra sanulu (10), sira hotu la'o haksolok. Maibé ema ida de'it mak fila fali ho laran nakenu ho agradesimentu atu monu iha Jesus nia ain no dehan "Obrigadu barak!" Maromak hahi'i ema ne'ebé fo agradesimentu no la haluha grasa no bensaun ne'ebé simu tiha.</p>
+            <p>Iha suku Viqueque, labarik-feto ida ho tinan sia naran Beatriz simu ajuda husi mestre Súnday School ne'ebé fo kadernu no kaneta foun ba nia atu eskola. Beatriz hakuak kadernu ne'e ho ksolok boot no halai lalais ba uma. Nia la'ós de'it uza kadernu ne'e, maibé nia hakerek karta ki'ik ida fo ba mestre no harohan ba Maromak: "Aman Maromak, obrigadu barak tanba fo mestre di'ak no fo kadernu mai ha'u!"</p>
+            <p>Mestre no Beatriz nia família sente kontente tebes tanba Beatriz nia laran fo agradesimentu loron-loron. Beatriz hatene katak ai-han, roupa, família, no salvasaun hotu mai husi Maromak nia liman bensaun, nune'e nia fo agradesimentu nafatin iha Nia oin.</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Husi ema sanulu (10) ne'ebé Jesus kure, na'in hira mak fila fali atu hato'o agradesimentu ba Jesus? (Lucas 17:15-16)</li>
+                <li>Beatriz iha Viqueque hatudu oinsá nia agradesimentu ba bensaun ne'ebé nia simu?</li>
+                <li>Buat di'ak 3 saida mak Maromak fo tiha ba ó semana ne'e ne'ebé ó presiza fo agradesimentu lialos ba Nia?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Ha'u-nia laran nakenu ho agradesimentu! Semana ne'e, hakerek ka dehan "Obrigadu barak ba Maromak no ba [naran ema]" ba buat 3 ne'ebé ó simu loron-loron.</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 12 · Pájina 5</span>
+    </footer>
+</section>
+</div>
+<!-- ==================== MÓDULU 4 ==================== -->
+<div class="module-4">
+<!-- ==================== PAGE 1: COVER & MODULE OVERVIEW ==================== -->
+<section class="page cover-page">
+    <div>
+        <div style="text-align: center;">
+            <span class="cover-top-badge">Kurikulum Treinu Disípulu Ki'ik · Timór-Leste (Tetun Dili)</span>
+        </div>
+
+        <div class="cover-hero">
+            <h1 class="cover-main-title">KURIKULUM DISÍPULU KANOROK BA LABARIK</h1>
+            <p class="cover-sub-title">Módulu 4 (Semana 13 – 16): Desizaun Disípulu no Karakter iha Uma Laran</p>
+            <p class="cover-desc">
+                Livru lisaun Súnday School hodi hanorin labarik sira iha Timór-Leste atu foti desizaun brani tuir Jesus, respeitu inan-aman, kria dame no domin ho maun-alin sira, no ko'alia liafuan morin ne'ebé foti kbiit iha uma laran.
+            </p>
+        </div>
+
+        <h2 class="cover-grid-title">Konteúdu Módulu 4 (Semana 13 to'o Semana 16)</h2>
+
+        <table class="toc-table">
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 13</span>
+                    <span class="toc-lisaun-num">Lisaun 13</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Pedro Nia Konfesaun Fiar no Ha'u-nia Desizaun</p>
+                    <p class="toc-lesson-verse">📖 Mateus 16:16</p>
+                    <p class="toc-lesson-summary">Bento iha Dili foti desizaun brani iha Igreja atu konfesa Jesus nu'udar Kristu no la'o nu'udar Nia disípulu.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/15-1.jpeg" alt="Lisaun 13" class="toc-thumb-img">
+                </td>
+            </tr>
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 14</span>
+                    <span class="toc-lisaun-num">Lisaun 14</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Respeitu no Ha'hi Inan-Aman</p>
+                    <p class="toc-lesson-verse">📖 Efésiu 6:1-3</p>
+                    <p class="toc-lesson-summary">Teresa iha foho Ermera ajuda nia inan hamos kofe-fuan no lori ai-maran ho oin-midar no respeitu boot.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/16-1.jpeg" alt="Lisaun 14" class="toc-thumb-img">
+                </td>
+            </tr>
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 15</span>
+                    <span class="toc-lisaun-num">Lisaun 15</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Domin no Dame iha Maun-Alin no Biin-Alin Sira Leet</p>
+                    <p class="toc-lesson-verse">📖 Jenesis 2:18 · Roma 12:10</p>
+                    <p class="toc-lesson-summary">Gabriel iha Liquiçá halakon hirus no fahe ai-fuan jaca ba nia alin-feto Rita ho domin maun-alin nian.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/17-1.jpeg" alt="Lisaun 15" class="toc-thumb-img">
+                </td>
+            </tr>
+            <tr class="toc-row">
+                <td class="toc-cell-num">
+                    <span class="toc-semana">Semana 16</span>
+                    <span class="toc-lisaun-num">Lisaun 16</span>
+                </td>
+                <td class="toc-cell-info">
+                    <p class="toc-lesson-name">Liafuan Di'ak no Kmanek ho Domin</p>
+                    <p class="toc-lesson-verse">📖 Efésiu 4:29 · Provérbiu 15:1</p>
+                    <p class="toc-lesson-summary">Josefina iha Maliana kaer nia avó-feto nia liman ho domin no ko'alia liafuan kmaan ne'ebé fo bensaun ba uma laran.</p>
+                </td>
+                <td class="toc-cell-thumb">
+                    <img src="/images/sundaySchool/18-1.jpeg" alt="Lisaun 16" class="toc-thumb-img">
+                </td>
+            </tr>
+        </table>
+
+        <div class="cover-guide-box">
+            <strong>Matadalan ba Mestre Súnday School:</strong> Kada lisaun prepara ba sesaun minutu 45–60. Hahú ho kantiku no orasaun, lee versíkulu Bíblia hamutuk, konta istória moris hodi hatudu imajem ba labarik sira, diskute pergunta 3, no enkoraja labarik sira hala'o <em>Misaun Prátika</em> iha semana laran.
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Módulu 4 (Semana 13–16) · Pájina 1</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 2: LISAUN 13 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 13 · LISAUN 13</span>
+                <span class="quarter-label">Trimestre 1 · Desizaun Disípulu Lialos</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 13. Pedro Nia Konfesaun Fiar no Ha'u-nia Desizaun</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/15-1.jpeg" alt="Lisaun 13 - Bento iha Dili foti desizaun brani atu tuir Jesus">
+                        <p class="image-caption">Bento iha Dili konfesa fiar ho brani iha Súnday School</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Ita foti lian brani katak 'Jesus ne'e Kristu, Maromak Moris Nia Oan', no foti desizaun atu la'o nu'udar Nia disípulu lialos.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Mateus 16:16</div>
+                        <p class="verse-text">"Simão Pedro responde dehan: 'Ita ne'e Kristu, Maromak moris nia Oan-Mane.'"</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Jesus husu ba Nia disípulu sira: 'Ema mundu ne'e hanoin ha'u ne'e sé?' Maibé depoiz ne'e Nia husu diretu ba sira: 'Maibé imi hanoin ha'u ne'e sé?' Pedro foti lian brani no konfesa husi laran moos katak: 'Ita ne'e Kristu, Maromak moris nia Oan-Mane!' Jesus hahi'i Pedro nia fiar no haraik bensaun boot ba nia.</p>
+            <p>Iha suku Dili besik tasi-ibun, labarik-mane ida ho tinan sanulu-resin-ida naran Bento tuur iha Igreja no rona mestre nia hanorin. Bento hanoin fali kona-ba nia moris: dalaruma nia tuir belun sira halimar iha li'ur no moe atu hatudu katak nia tuir Jesus. Maibé rona tiha Pedro nia lian, Bento sente kbiit foun iha nia laran.</p>
+            <p>Bento hamriik iha orasaun laran no dehan ba Na'i: 'Jesus, ha'u la moe tan! Ha'u konfesa ho ha'u-nia ibun no laran katak Ita ne'e ha'u-nia Na'i no Maromak. Ha'u foti desizaun atu tuir Ita nu'udar disípulu lialos!' Husi loron ne'e, Bento la'o ho oin-midar no brani atu konvida nia belun sira mai rona Evanjellu.</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Bainhira Jesus husu 'Imi hanoin ha'u ne'e sé?', Pedro responde ho fiar dehan saida? (Mateus 16:16)</li>
+                <li>Bento iha Dili aprende saida husi Pedro nia konfesaun fiar, no tansá nia troka nia laran?</li>
+                <li>Bainhira belun sira iha eskola ka suku la tuir Jesus, oinsá ó bele foti desizaun brani atu tuir no konfesa Jesus nu'udar disípulu lialos?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Ha'u foti desizaun atu tuir Jesus! Semana ne'e, foti kadernu ida ka dehan ba mestre/família katak: 'Ha'u foti desizaun atu tuir Jesus loron-loron!' no brani foti lian harohan iha Igreja no uma laran.</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 13 · Pájina 2</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 3: LISAUN 14 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 14 · LISAUN 14</span>
+                <span class="quarter-label">Trimestre 2 · Karakter Disípulu iha Uma Laran</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 14. Respeitu no Ha'hi Inan-Aman</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/16-1.jpeg" alt="Lisaun 14 - Teresa iha Ermera ajuda nia inan hamos kofe-fuan">
+                        <p class="image-caption">Teresa iha Ermera ajuda nia inan hamos kofe-fuan ho oin-midar</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Ita rona no respeitu inan-aman nia liafuan ho laran agradesimentu, tanba Maromak tau sira atu kuida ita.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Efésiu 6:1-3</div>
+                        <p class="verse-text">"Oan sira, rona imi-nia inan-aman iha Na'i laran, tanba ne'e di'ak no lialos. 'Respeitu ó-nia aman no inan'—ne'e mak mandamentu primeiru ne'ebé iha promesa—'atu ó hetan di'ak no moris naruk iha rai.'"</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Maromak fo inan-aman mai ita nu'udar prezente kmanek boot liu. Maromak haruka ita atu 'respeitu no ha'hi inan-aman'. Ne'e dehan katak ita rona sira-nia liafuan ho laran moos, la responde ho lian hakanek ka oin-aat, no ajuda sira ho ksolok. Bainhira ita respeitu inan-aman, Maromak promesa katak ita sei hetan di'ak no moris naruk iha rai.</p>
+            <p>Iha foho matak Ermera, labarik-feto ida ho tinan sia naran Teresa haruka husi nia inan atu ajuda ku'u kofe-fuan no lori ai-maran mai uma molok loron-matan tun. Dalaruma Teresa sente baruk no hakarak halimar de'it. Maibé Teresa hanoin fali versíkulu Efésiu 6:1-3 ne'ebé mestre hanorin iha Súnday School.</p>
+            <p>Teresa halai lalais bá ajuda nia inan ho oin-midar no ksolok. Bainhira inan haree Teresa halo servisu ho laran ksolok no respeitu, inan hakuak Teresa metin no harohan bensaun ba nia. Teresa aprende katak rona inan-aman lori ksolok boot ba Maromak no ba família!</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Mandamentu primeiru ne'ebé iha promesa husi Maromak ba oan sira mak saida? (Efésiu 6:1-3)</li>
+                <li>Teresa iha Ermera hatudu oinsá respeitu no obediénsia ba nia inan bainhira haruka ajuda servisu uma nian?</li>
+                <li>Iha ó-nia moris loron-loron, liafuan no hahalok saida mak hatudu respeitu lialos ba ó-nia inan no aman?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Ha'u respeitu no ha'hi ha'u-nia inan-aman! Semana ne'e, rona lalais inan-aman nia liafuan sin lamenta, no dehan ba sira: 'Inan, Aman, ha'u ama no respeitu imi barak!' hamutuk ho halo servisu uma nian 1 ho ksolok.</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 14 · Pájina 3</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 4: LISAUN 15 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 15 · LISAUN 15</span>
+                <span class="quarter-label">Trimestre 2 · Karakter Disípulu iha Uma Laran</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 15. Domin no Dame iha Maun-Alin no Biin-Alin Sira Leet</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/17-1.jpeg" alt="Lisaun 15 - Gabriel iha Liquiçá fahe ai-fuan jaca ba nia alin-feto Rita">
+                        <p class="image-caption">Gabriel iha Liquiçá fahe ai-fuan jaca ba nia alin-feto Rita ho domin</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Iha uma laran, ita tulun no hadomi malu nu'udar maun-alin no biin-alin ho laran-luak no respeitu.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Jenesis 2:18 · Roma 12:10</div>
+                        <p class="verse-text">"Na'i Maromak dehan: 'La di'ak ba ema atu hela mesak; Ha'u sei halo ajudante ida ne'ebé adekuadu ba nia.' (Jenesis 2:18) / Hadomi malu ho domin maun-alin nian; foti malu ho respeitu boot liu fali ó-nia an rasik. (Roma 12:10)"</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Maromak la fo maun-alin no biin-alin mai ita atu istóriadu ka istória-aat malu, maibé atu sai ajudante no belun metin iha uma laran. Iha família laran, hadomi maun-alin dehan katak ita fahe ai-han no sasán sira, husik violénsia ka lia-hakanek, no fo apoiu ba malu iha tempu susar.</p>
+            <p>Iha suku Liquiçá besik tasi, labarik-mane ida ho tinan sanulu naran Gabriel no nia alin-feto ki'ik Rita halimar kosta no han ai-fuan jaca. Rita foti jaca fuan boot no monu halo Gabriel hakanek laran no hakarak hirus no subar ai-fuan hotu. Maibé Gabriel hanoin fali Liafuan Roma 12:10: 'Hadomi malu ho domin maun-alin nian.'</p>
+            <p>Gabriel dada iis naruk, oin-midar no fahe ai-fuan jaca ne'e ba nia alin ho laran-luak. Rita haksolok no fo hakuak ba nia maun. Sira halimar no tuur hamutuk ho dame no ksolok. Inan-aman haree sira ho ksolok boot no fahe bensaun ba uma laran.</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Roma 12:10 hanorin ita atu hadomi no respeitu maun-alin no biin-alin sira oinsá?</li>
+                <li>Gabriel iha Liquiçá halo desizaun di'ak saida bainhira nia hakarak hirus ba nia alin-feto Rita?</li>
+                <li>Bainhira ó no ó-nia maun-alin ka biin-alin sira iha uma iha diferensa ka hakarak istória, oinsá ó bele halo dame no fahe ho domin?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Ha'u kria dame no domin ho ha'u-nia maun-alin sira! Semana ne'e, fahe hahán ka halimar hamutuk ho ó-nia maun-alin/biin-alin sin istória, no ajuda sira halo servisu uma nian ka dever eskola nian ho laran-di'ak.</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 15 · Pájina 4</span>
+    </footer>
+</section>
+
+<!-- ==================== PAGE 5: LISAUN 16 ==================== -->
+<section class="page">
+    <div>
+        <header class="lesson-header">
+            <div class="lesson-meta">
+                <span class="semana-tag">SEMANA 16 · LISAUN 16</span>
+                <span class="quarter-label">Trimestre 2 · Karakter Disípulu iha Uma Laran</span>
+            </div>
+            <h1 class="lesson-title">Lisaun 16. Liafuan Di'ak no Kmanek ho Domin</h1>
+        </header>
+
+        <table class="hero-split-table">
+            <tr>
+                <td class="hero-img-cell">
+                    <div class="image-slot-card">
+                        <img src="/images/sundaySchool/18-1.jpeg" alt="Lisaun 16 - Josefina iha Maliana kaer nia avó-feto nia liman ho liafuan morin">
+                        <p class="image-caption">Josefina iha Maliana kaer nia avó-feto nia liman ho liafuan morin</p>
+                    </div>
+                </td>
+                <td class="hero-cards-cell">
+                    <div class="topic-card">
+                        <span class="topic-label">🎯 Tópiku Prinsipál Ohin</span>
+                        Ita ko'alia liafuan morin no kmanek ne'ebé foti kbiit no fo ksolok ba família no belun sira iha uma no li'ur.
+                    </div>
+                    <div class="verse-card">
+                        <div class="verse-header">📖 Versíkulu Bíblia Ohin — Efésiu 4:29 · Provérbiu 15:1</div>
+                        <p class="verse-text">"Keta husik liafuan aat sai husi imi-nia ibun, maibé ko'alia de'it liafuan di'ak ne'ebé foti kbiit no fo grasa ba sira ne'ebé rona. (Efésiu 4:29) / Resposta kmaan halakon hirus, maibé liafuan muki hamosu hirus boot. (Provérbiu 15:1)"</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="section-card story-card">
+            <h3>📖 1. Tama ba Na'i Nia Liafuan &amp; Istória Moris</h3>
+            <p>Ita-nia liafuan iha kbiit boot. Liafuan aat ka lia-hakanek hanesan tudik ne'ebé hamosu kanek iha laran, maibé liafuan morin, kmaan, no kmanek fo kbiit no fo kura ba ema nia klamar. Nu'udar Jesus nia disípulu, ita presiza simu Espíritu Santu nia kbiit atu ko'alia liafuan di'ak ne'ebé foti kbiit ba família no belun sira.</p>
+            <p>Iha suku Maliana (Bobonaro), labarik-feto ida ho tinan sia naran Josefina gosta ko'alia lian manas bainhira nia sente kole ka hirus ba servisu uma nian. Loron ida, Josefina ko'alia lian maka'as ba nia avó-feto. Avó la hirus maibé hatudu oin triste no dehan neineik: 'Josefina, liafuan aat fo kanek ba laran. Maromak fo ibun ba ita atu hahi'i no fo bensaun.'</p>
+            <p>Josefina sente arrepende iha laran. Nia kaer nia avó nia liman no dehan: 'Avó, deskulpa ha'u. Ha'u hahi'i avó no ama avó barak.' Husi loron ne'e, Josefina uza liafuan kmaan: 'Obrigadu', 'Favór', 'Deskulpa', no 'Ita kapás tebes!' Iha uma laran, liafuan morin Josefina nian hamosu ksolok no paz kmanek ba ema hotu.</p>
+        </div>
+
+        <div class="section-card question-card">
+            <h3>🤔 2. Mai Ita Hanoin Hamutuk</h3>
+            <ol>
+                <li>Efésiu 4:29 hanorin ita atu keta husik liafuan saida sai husi ibun, no ko'alia liafuan oinsá?</li>
+                <li>Josefina iha Maliana aprende saida bainhira nia haree nia avó nia oin triste tanba liafuan manas?</li>
+                <li>Liafuan aat ka muki saida mak ó presiza husik tiha, no liafuan kmanek 3 saida mak ó sei ko'alia loron-loron iha uma?</li>
+            </ol>
+        </div>
+
+        <div class="section-card mission-card">
+            <h3>🌱 3. Moris nu'udar Jesus Nia Disípulu</h3>
+            <p><strong>Misaun Prátika Semana Ne'e:</strong> Ha'u ko'alia de'it liafuan di'ak no kmanek! Semana ne'e, husik liafuan hirus/aat hotu, no ko'alia liafuan bensaun nian ba família no amigu sira (ezemplu: 'Obrigadu barak', 'Ha'u ama ó', 'Ita halo di'ak tebes!').</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <span>Kurikulum Disípulu Kanorok ba Labarik · Timór-Leste</span>
+        <span>Semana 16 · Pájina 5</span>
+    </footer>
+</section>
+</div>
+
+</body>
+</html>
