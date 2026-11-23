@@ -64,6 +64,18 @@ const BOOKS_DATABASE = [
     // [신간 도서 (isNew: true)]
     // ======================================================================
     {
+        id: 1012,
+        publisherId: "pub-2",
+        isNew: true,
+        title: "Devosaun Diáriu Dezembru — Evangellu João (Q.T. TL)",
+        author: "QuietTime Timor-Leste",
+        issueLabel: "Foun • Q.T. Dezembru",
+        description: "Meditasaun loron-loron husi loron 1 to'o 31 fulan-Dezembru (Evangellu João) iha lian Tetun no Inglés, kompletu ho insight teolójiku, pergunta reflesaun no orasaun.",
+        coverImage: "images/q-book-cover.jpeg",
+        customUrl: "q-time.html"
+    },
+    
+    {
         id: 1009,
         publisherId: "pub-2",
         isNew: true,
