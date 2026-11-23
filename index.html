@@ -20,7 +20,7 @@
     <!-- [상단 헤더] -->
     <header>
         <div class="header-container">
-            <a href="index.html" class="logo" title="Pájina Prinsipál">
+            <a href="index.html" class="logo" title="Pájina Prinsipál" onclick="if(document.getElementById('searchInput').value){ event.preventDefault(); clearSearch(); }">
                 <img src="images/logo-s-j.png" alt="SUE AND JUN Logo"
                      onerror="this.onerror=null; this.src='https://placehold.co/180x60/1e3a8a/ffffff?text=S%26J+LIBRARY';">
                 <div class="logo-text-group">
@@ -30,9 +30,19 @@
                 </div>
             </a>
 
-            <div class="search-box">
+            <!-- 검색 입력창 및 초기화(X) 버튼 -->
+            <div class="search-box" style="position: relative;">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="searchInput" placeholder="Buka títulu livru ka autór..." onkeyup="handleSearch()">
+                <input type="text" id="searchInput" 
+                       placeholder="Buka títulu livru, autór ka tópiku..." 
+                       oninput="handleSearch()"
+                       style="padding-right: 2.25rem;">
+                <button type="button" id="clearSearchBtn" onclick="clearSearch()" 
+                        aria-label="Hamoos buka"
+                        title="Hamoos buka (ESC)"
+                        style="display: none; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #94a3b8; cursor: pointer; font-size: 1rem; padding: 4px;">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -54,13 +64,30 @@
 
     <!-- [메인 콘텐츠 영역] -->
     <main>
+        <!-- 검색 중일 때만 노출되는 상단 상태 바 & 홈 복귀 버튼 -->
+        <div id="searchStatusBar" style="display: none; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; background: #eff6ff; border: 1px solid #bfdbfe; padding: 0.85rem 1.25rem; border-radius: 12px; margin-bottom: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.55rem; color: #1e3a8a; font-size: 0.95rem;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span id="searchStatusText">Rezultadu buka</span>
+            </div>
+            <button type="button" onclick="clearSearch()" 
+                    style="display: inline-flex; align-items: center; gap: 0.45rem; background: #1e3a8a; color: #ffffff; border: none; padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: background 0.2s;">
+                <i class="fa-solid fa-arrow-left"></i> Fila ba Pájina Prinsipál
+            </button>
+        </div>
+
+        <!-- 검색 결과 없음 안내 박스 (홈 복귀 버튼 포함) -->
         <div class="no-results" id="noResultsBox">
             <i class="fa-solid fa-circle-exclamation" style="font-size: 2.2rem; margin-bottom: 0.65rem; color: #94a3b8;"></i>
-            <p>La hetan livru ne'ebé koresponde ho ita-nia buka.</p>
+            <p style="margin-bottom: 1rem;">La hetan livru ne'ebé koresponde ho ita-nia buka.</p>
+            <button type="button" onclick="clearSearch()" 
+                    style="display: inline-flex; align-items: center; gap: 0.45rem; background: #2563eb; color: #ffffff; border: none; padding: 0.6rem 1.2rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600; cursor: pointer;">
+                <i class="fa-solid fa-house"></i> Haree Livru Hotu (Home)
+            </button>
         </div>
 
         <!-- 1. 금주의 신간 섹션 -->
-        <section class="section-container">
+        <section class="section-container" id="newBooksSection">
             <div class="section-header">
                 <h3 class="section-title">
                     <i class="fa-solid fa-fire"></i> Livru Foun Semana Ida-Ne'e
@@ -71,7 +98,7 @@
         </section>
 
         <!-- 2. 지나간 출판물 섹션 -->
-        <section class="section-container">
+        <section class="section-container" id="archiveBooksSection">
             <div class="section-header">
                 <h3 class="section-title" id="archiveBooksSectionTitle">
                     <i class="fa-solid fa-box-archive"></i> Publikasaun Sira Uluk (Arkivu Ikus 10)
@@ -122,6 +149,7 @@
         let bannerAutoTimer = null;
         let showMainAllArchives = false;
 
+        // 상단 출판사 슬라이더 배너 렌더링
         function renderBannerSlides() {
             const track = document.getElementById("heroSlidesTrack");
             const dotsContainer = document.getElementById("sliderDots");
@@ -200,29 +228,71 @@
             renderBooks(document.getElementById("searchInput").value);
         }
 
+        // 검색 입력 처리 및 초기화 버튼(X) 토글
         function handleSearch() {
-            renderBooks(document.getElementById("searchInput").value);
+            const input = document.getElementById("searchInput");
+            const clearBtn = document.getElementById("clearSearchBtn");
+
+            if (clearBtn) {
+                clearBtn.style.display = input.value.length > 0 ? "block" : "none";
+            }
+
+            renderBooks(input.value);
         }
 
+        // 도서 목록 렌더링 (일반 홈 모드 & 검색 모드 통합)
         function renderBooks(searchKeyword = "") {
-            const query = searchKeyword.trim().toLowerCase();
+            const rawKeyword = searchKeyword.trim();
+            const isSearching = rawKeyword.length > 0;
 
-            const filteredBooks = BOOKS_DATABASE.filter(book => {
-                if (!query) return true;
-                return book.title.toLowerCase().includes(query) ||
-                       book.author.toLowerCase().includes(query);
-            });
+            // 1. 검색 중일 때는 상단 배너 숨김 + 검색 상태 바(홈 복귀 버튼 포함) 노출
+            const bannerWrapper = document.getElementById("heroSliderWrapper");
+            const searchStatusBar = document.getElementById("searchStatusBar");
+            const searchStatusText = document.getElementById("searchStatusText");
+
+            if (bannerWrapper) {
+                bannerWrapper.style.display = isSearching ? "none" : "block";
+            }
+
+            // 2. library-data.js의 통합 검색 함수 호출 (강세 부호 무시 + 다중 필드 검색)
+            const filteredBooks = searchLibraryBooks(rawKeyword);
+
+            if (searchStatusBar) {
+                searchStatusBar.style.display = isSearching ? "flex" : "none";
+                if (isSearching && searchStatusText) {
+                    // XSS 방지를 위해 textContent로 안전하게 검색어 삽입
+                    searchStatusText.innerHTML = "";
+                    const prefixText = document.createTextNode("Rezultadu buka ba ");
+                    const strongQuery = document.createElement("strong");
+                    strongQuery.textContent = `"${rawKeyword}"`;
+                    const suffixText = document.createTextNode(" — Hetan livru ");
+                    const strongCount = document.createElement("strong");
+                    strongCount.textContent = filteredBooks.length;
+
+                    searchStatusText.append(prefixText, strongQuery, suffixText, strongCount);
+                }
+            }
 
             const newBooks = filteredBooks.filter(b => b.isNew === true);
             const allArchiveBooks = filteredBooks.filter(b => b.isNew === false);
-            const archiveBooks = showMainAllArchives ? allArchiveBooks : allArchiveBooks.slice(0, 10);
 
-            document.getElementById("archiveBooksSectionTitle").innerHTML = showMainAllArchives
-                ? `<i class="fa-solid fa-box-archive"></i> Publikasaun Hotu (Arkivu Kompletu)`
-                : `<i class="fa-solid fa-box-archive"></i> Publikasaun Sira Uluk (Arkivu Ikus 10)`;
+            // 3. 검색 중일 때는 10개 제한 없이 매칭된 모든 아카이브 도서 노출
+            const archiveBooks = (isSearching || showMainAllArchives)
+                ? allArchiveBooks
+                : allArchiveBooks.slice(0, 10);
+
+            // 아카이브 섹션 헤더 및 전체보기 버튼 업데이트
+            const archiveTitleEl = document.getElementById("archiveBooksSectionTitle");
+            if (isSearching) {
+                archiveTitleEl.innerHTML = `<i class="fa-solid fa-box-archive"></i> Rezultadu iha Arkivu`;
+            } else {
+                archiveTitleEl.innerHTML = showMainAllArchives
+                    ? `<i class="fa-solid fa-box-archive"></i> Publikasaun Hotu (Arkivu Kompletu)`
+                    : `<i class="fa-solid fa-box-archive"></i> Publikasaun Sira Uluk (Arkivu Ikus 10)`;
+            }
 
             const viewAllLink = document.getElementById("mainViewAllLink");
-            if (allArchiveBooks.length > 0) {
+            if (!isSearching && allArchiveBooks.length > 10) {
                 viewAllLink.style.display = "inline-flex";
                 viewAllLink.innerHTML = showMainAllArchives
                     ? `Haree Ikus 10 De'it <i class="fa-solid fa-angle-up"></i>`
@@ -231,12 +301,26 @@
                 viewAllLink.style.display = "none";
             }
 
+            // 카드 그리드 렌더링
             document.getElementById("newBooksGrid").innerHTML = newBooks.map(b => createBookCardHTML(b, false)).join("");
             document.getElementById("archiveBooksGrid").innerHTML = archiveBooks.map(b => createBookCardHTML(b, true)).join("");
 
             document.getElementById("newBooksCount").innerText = `Livru ${newBooks.length}`;
-            document.getElementById("archiveBooksCount").innerText = `Livru ${archiveBooks.length} / ${allArchiveBooks.length}`;
+            document.getElementById("archiveBooksCount").innerText = isSearching
+                ? `Livru ${archiveBooks.length}`
+                : `Livru ${archiveBooks.length} / ${allArchiveBooks.length}`;
 
+            // 4. 검색 중일 때 결과가 0개인 섹션은 깔끔하게 숨김 처리
+            const newSection = document.getElementById("newBooksSection");
+            const archiveSection = document.getElementById("archiveBooksSection");
+            if (newSection) {
+                newSection.style.display = (isSearching && newBooks.length === 0) ? "none" : "block";
+            }
+            if (archiveSection) {
+                archiveSection.style.display = (isSearching && archiveBooks.length === 0) ? "none" : "block";
+            }
+
+            // 전체 검색 결과 없음 안내 박스
             const noResultsBox = document.getElementById("noResultsBox");
             noResultsBox.style.display = (newBooks.length === 0 && archiveBooks.length === 0) ? "block" : "none";
         }
