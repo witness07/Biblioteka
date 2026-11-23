@@ -7,7 +7,6 @@ const DEFAULT_COVER_IMAGE = "images/edited-image.jpg";
 
 // 1. 출판사 통합 데이터 (메인 슬라이더 + 상세 페이지 헤더/배너 공용)
 const PUBLISHERS_DATA = [
-  
     {
         id: "pub-2",
         logoImg: "images/logo-lafaek.png", // 필요시 기독교 연합 로고 파일명으로 변경하세요
@@ -32,7 +31,7 @@ const PUBLISHERS_DATA = [
         icon: "fa-child-reaching",
         themeClass: "pub-3"
     },
-      {
+    {
         id: "pub-1",
         logoImg: "images/logo-s-j.png",
         headerTopSub: "SALAUN FORMASAUN",
@@ -68,54 +67,40 @@ const BOOKS_DATABASE = [
         id: 1009,
         publisherId: "pub-2",
         isNew: true,
-        title: "Kurríkulu Eskola Domingu — Vol. 1 (Semana 1–12)",
+        title: "Kurríkulu Eskola Domingu — Vol. 1 (Semana 1–16)",
         author: "Eskola Domingu Timor-Leste",
         issueLabel: "Disípulu • Vol. 1",
-        description: "Lisaun semana 1 to'o 12 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
+        description: "Lisaun semana 1 to'o 16 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
         coverImage: "images/sundaySchool/vol-1.jpeg",
-        heyzineUrl: "https://heyzine.com/flip-book/e842712a7f.html"
+        customUrl: "data/books/kurikulum_q1.html"
     },
     {
         id: 1010,
         publisherId: "pub-2",
         isNew: true,
-        title: "Kurríkulu Eskola Domingu — Vol. 2 (Semana 13–24)",
+        title: "Kurríkulu Eskola Domingu — Vol. 2 (Semana 17–32)",
         author: "Eskola Domingu Timor-Leste",
         issueLabel: "Disípulu • Vol. 2",
-        description: "Lisaun semana 12 to'o 24 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
+        description: "Lisaun semana 17 to'o 32 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
         coverImage: "images/sundaySchool/vol-2.jpeg",
-        heyzineUrl: "https://heyzine.com/flip-book/05d5095fd4.html"
+        customUrl: "data/books/kurikulum_q2.html"
     },
     {
         id: 1011,
         publisherId: "pub-2",
         isNew: true,
-        title: "Kurríkulu Eskola Domingu — Vol. 3 (Semana 25–36)",
+        title: "Kurríkulu Eskola Domingu — Vol. 3 (Semana 33–52)",
         author: "Eskola Domingu Timor-Leste",
         issueLabel: "Disípulu • Vol. 3",
-        description: "Lisaun semana 25 to'o 36 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
+        description: "Lisaun semana 33 to'o 52 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
         coverImage: "images/sundaySchool/vol-3.jpeg",
-        heyzineUrl: "https://heyzine.com/flip-book/c563f9df83.html"
-    },
-     {
-        id: 1012,
-        publisherId: "pub-2",
-        isNew: true,
-        title: "Kurríkulu Eskola Domingu — Vol. 4 (Semana 37–52)",
-        author: "Eskola Domingu Timor-Leste",
-        issueLabel: "Disípulu • Vol. 3",
-        description: "Lisaun semana 37 to'o 52 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
-        coverImage: "images/sundaySchool/vol-4.jpeg",
-        heyzineUrl: "https://heyzine.com/flip-book/48cd4f78e4.html"
+        customUrl: "data/books/kurikulum_q3.html"
     },
 
-   
     // ======================================================================
     // [지난 출판물 (isNew: false)]
     // ======================================================================
-    
-     
-     {
+    {
         id: 1008,
         publisherId: "pub-2",
         isNew: false,
@@ -126,8 +111,6 @@ const BOOKS_DATABASE = [
         coverImage: "images/bible/01_abraham/1.jpeg",
         customUrl: "story.html?bible=01_abraham&pub=pub-2"
     },
-    
-    
     {
         id: 1007,
         publisherId: "pub-1",
@@ -139,7 +122,6 @@ const BOOKS_DATABASE = [
         coverImage: "images/kor-tetun.jpeg",
         customUrl: "eps_topik.html"
     },
-    
     {
         id: 1006,
         publisherId: "pub-2",
@@ -151,8 +133,7 @@ const BOOKS_DATABASE = [
         coverImage: "images/wes_cate.jpg",
         customUrl: "catechism.html?doc=wes"
     },
-
-     {
+    {
         id: 1005,
         publisherId: "pub-2",
         isNew: false,
@@ -163,8 +144,6 @@ const BOOKS_DATABASE = [
         coverImage: "images/hei_cate.jpg",
         customUrl: "catechism.html?doc=hei"
     },
-    
-    
     {
         id: 1004,
         publisherId: "pub-3",
@@ -198,7 +177,7 @@ const BOOKS_DATABASE = [
         coverImage: "images/sheperd/6.jpeg",
         customUrl: "story.html?book=sheperd"
     },
-     {
+    {
         id: 1001,
         publisherId: "pub-0",
         isNew: false,
@@ -220,8 +199,6 @@ const BOOKS_DATABASE = [
         coverImage: "images/bibleTime-vol11.png",
         heyzineUrl: "https://heyzine.com/flip-book/fc63f38965.html"
     },
-  
-        
     {
         id: 2,
         publisherId: "pub-0",
@@ -266,13 +243,58 @@ const BOOKS_DATABASE = [
         coverImage: "images/dromos-vol12.png",
         heyzineUrl: "https://heyzine.com/flip-book/9afc3291c8.html"
     }
-    
-   
 ];
 
 /* ==========================================================================
-   3. 공통 헬퍼 함수 (출판사 조회, 도서 카드 HTML 생성, 모달 제어)
+   3. 공통 헬퍼 함수 (출판사 조회, 검색 정규화, 도서 카드 HTML 생성, 모달 제어)
    ========================================================================== */
+
+/**
+ * 검색용 문자열 정규화 함수
+ * - 소문자 변환, 앞뒤 공백 제거
+ * - 테툼어/포르투갈어 강세 부호(Diacritics) 제거 (예: "Bíblia" -> "biblia", "Kurríkulu" -> "kurrikulu")
+ */
+function normalizeSearchText(text) {
+    if (!text) return "";
+    return text
+        .toString()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .trim();
+}
+
+/**
+ * 통합 도서 검색 함수 (index.html, detail.html 공용)
+ * - 제목, 저자, 설명, 출판사명, 호수 라벨을 모두 포함하여 다중 키워드(공백 구분) 검색 지원
+ * @param {string} keyword - 사용자 입력 검색어
+ * @param {string|null} publisherId - 특정 출판사로 제한할 경우 출판사 ID (선택사항)
+ * @returns {Array} 필터링된 도서 객체 배열
+ */
+function searchLibraryBooks(keyword = "", publisherId = null) {
+    const normalizedQuery = normalizeSearchText(keyword);
+    const searchTokens = normalizedQuery.split(/\s+/).filter(Boolean);
+
+    return BOOKS_DATABASE.filter(book => {
+        // 특정 출판사 필터가 지정된 경우 먼저 확인
+        if (publisherId && book.publisherId !== publisherId) {
+            return false;
+        }
+
+        // 검색어가 없으면 전체 반환
+        if (searchTokens.length === 0) {
+            return true;
+        }
+
+        const pubName = getPublisherName(book.publisherId);
+        const searchableTarget = normalizeSearchText(
+            `${book.title} ${book.author} ${book.description} ${pubName} ${book.issueLabel}`
+        );
+
+        // 공백으로 구분된 모든 검색 키워드가 포함되는지 확인 (AND 조건)
+        return searchTokens.every(token => searchableTarget.includes(token));
+    });
+}
 
 // ID로 출판사 객체 조회
 function getPublisherById(pubId) {
@@ -319,16 +341,21 @@ function openBookModal(bookId) {
     const book = BOOKS_DATABASE.find(b => b.id === bookId);
     if (!book) return;
 
+    // 1. customUrl이 설정된 로컬 HTML 책인 경우 새 탭에서 열기
     if (book.customUrl) {
-        window.location.href = book.customUrl;
+        window.open(book.customUrl, '_blank', 'noopener,noreferrer');
         return;
     }
+
+    // 2. 기존 Heyzine 플립북 모달 실행
+    const modal = document.getElementById("bookModal");
+    if (!modal) return;
 
     document.getElementById("modalBookTitle").innerText = `${book.title} (${book.author})`;
     document.getElementById("heyzineExternalLink").href = book.heyzineUrl;
     document.getElementById("heyzineIframe").src = book.heyzineUrl;
 
-    document.getElementById("bookModal").classList.add("active");
+    modal.classList.add("active");
     document.body.style.overflow = "hidden";
 }
 
@@ -337,11 +364,44 @@ function closeBookModal() {
     const modal = document.getElementById("bookModal");
     if (!modal) return;
     modal.classList.remove("active");
-    document.getElementById("heyzineIframe").src = "";
+    const iframe = document.getElementById("heyzineIframe");
+    if (iframe) iframe.src = "";
     document.body.style.overflow = "";
 }
 
-// ESC 키로 모달 닫기
+/**
+ * 검색 초기화 및 홈(전체 목록) 복귀 함수
+ * - 검색창 입력값을 비우고, 페이지 내 handleSearch()를 호출하여 초기 화면으로 복구
+ */
+function clearSearch() {
+    const searchInput = document.getElementById("searchInput");
+    if (!searchInput) return;
+
+    searchInput.value = "";
+
+    // 각 페이지(index.html, detail.html)에 정의된 검색 핸들러 실행
+    if (typeof handleSearch === "function") {
+        handleSearch();
+    } else if (typeof renderBooks === "function") {
+        renderBooks("");
+    }
+
+    // 화면 최상단으로 부드럽게 스크롤 이동
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// ESC 키 처리: 모달이 열려있으면 모달을 닫고, 검색 중이면 검색 초기화(홈 복귀)
 window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeBookModal();
+    if (e.key === "Escape") {
+        const modal = document.getElementById("bookModal");
+        if (modal && modal.classList.contains("active")) {
+            closeBookModal();
+            return;
+        }
+
+        const searchInput = document.getElementById("searchInput");
+        if (searchInput && searchInput.value.trim().length > 0) {
+            clearSearch();
+        }
+    }
 });
