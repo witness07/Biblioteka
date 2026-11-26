@@ -63,6 +63,7 @@ const BOOKS_DATABASE = [
     // ======================================================================
     // [신간 도서 (isNew: true)]
     // ======================================================================
+   
     {
         id: 1012,
         publisherId: "pub-2",
@@ -74,7 +75,28 @@ const BOOKS_DATABASE = [
         coverImage: "images/q-book-cover.jpeg",
         customUrl: "q-time.html"
     },
-    
+    {
+        id: 1013,
+        publisherId: "pub-2",
+        isNew: true,
+        title: "Atributu sira Maromak nian (The Attributes of God)",
+        author: "Arthur W. Pink",
+        issueLabel: "Livru Kiik • #01",
+        description: "Estudu teolójiku kona-ba Maromak nia karakter no perfeisaun sira (soberania, santidade, domin, grasa no fidelidade) iha lian Tetun no Inglés.",
+        coverImage: "images/bookLet/booklet_01.jpg",
+        customUrl: "booklet-viewer.html?file=data/res/bookLetJs/booklet_01.json"
+    },
+    {
+    id: 1023,
+    publisherId: "pub-2",
+    isNew: true,
+    title: "Estudu Bíblia — Livru Kiik 10 (Chapel Library)",
+    author: "Chapel Library",
+    issueLabel: "Estudu • Livru 1–10",
+    description: "Matadalan estudu Bíblia husi livru kiik 10 (Page 1 Rezumu & Page 2 Pergunta ho Versíkulu) iha lian Tetun no Inglés.",
+    coverImage: "images/bookLet/booklet_WB_01.jpg",
+    customUrl: "study-guide.html"
+    },
     {
         id: 1009,
         publisherId: "pub-2",
@@ -157,6 +179,17 @@ const BOOKS_DATABASE = [
         customUrl: "catechism.html?doc=hei"
     },
     {
+        id: 1014,
+        publisherId: "pub-2",
+        isNew: false,
+        title: "Fiar: Saida Mak Nia Essénsia no Nia Rezultadu sira (Faith: What It Is and What It Leads To)",
+        author: "Charles H. Spurgeon",
+        issueLabel: "Livru Kiik • #02",
+        description: "Estudu kona-ba objetu, kauza, fundasaun, garantia no rezultadu husi fiar salvasaun nian iha lian Tetun no Inglés.",
+        coverImage: "images/bookLet/booklet_02.jpg",
+        customUrl: "booklet-viewer.html?file=data/res/bookLetJs/booklet_02.json"
+    },
+    {
         id: 1004,
         publisherId: "pub-3",
         isNew: false,
@@ -233,6 +266,95 @@ const BOOKS_DATABASE = [
         coverImage: "images/dromos_vol14.png",
         heyzineUrl: "https://heyzine.com/flip-book/8078848189.html"
     },
+    {
+        id: 1015,
+        publisherId: "pub-2",
+        isNew: false,
+        title: "Ó Moris Foun Ona Ka Lae? (Are You Born Again?)",
+        author: "J. C. Ryle",
+        issueLabel: "Livru Kiik • #03",
+        description: "Ezame kona-ba sinál bíbliku neen husi rejenerasaun ka moris foun iha Kristu iha lian Tetun no Inglés.",
+        coverImage: "images/bookLet/booklet_03.jpg",
+        customUrl: "booklet-viewer.html?file=data/res/bookLetJs/booklet_03.json"
+    },
+    {
+        id: 1016,
+        publisherId: "pub-2",
+        isNew: false,
+        title: "Ó Bá Iha Enkontru Orasaun Ka Lae? (Do You Go to the Prayer Meeting?)",
+        author: "Horatius Bonar",
+        issueLabel: "Livru Kiik • #04",
+        description: "Bolun séria kona-ba importánsia enkontru orasaun, eternidade no apelu atu vijila no harohan iha lian Tetun no Inglés.",
+        coverImage: "images/bookLet/booklet_04.jpg",
+        customUrl: "booklet-viewer.html?file=data/res/bookLetJs/booklet_04.json"
+    },
+    {
+        id: 1017,
+        publisherId: "pub-2",
+        isNew: false,
+        title: "Dalan Tama Ba Eskritura Sagrada (Pathway into the Scriptures)",
+        author: "William Tyndale",
+        issueLabel: "Livru Kiik • #05",
+        description: "Matadalan atu komprende Testamentu Tuan no Foun, Lei no Evanjellu, Grasa no Fiar iha lian Tetun no Inglés.",
+        coverImage: "images/bookLet/booklet_05.jpg",
+        customUrl: "booklet-viewer.html?file=data/res/bookLetJs/booklet_05.json"
+    },
+    {
+        id: 1018,
+        publisherId: "pub-2",
+        isNew: false,
+        title: "Oho Sala (Mortification of Sin)",
+        author: "John Owen",
+        issueLabel: "Livru Kiik • #06",
+        description: "Hanorin kona-ba oho sala liuhosi Espíritu Santu no fiar ba Kristu ne'ebé kruzifika iha lian Tetun no Inglés.",
+        coverImage: "images/bookLet/booklet_06.jpg",
+        customUrl: "booklet-viewer.html?file=data/res/bookLetJs/booklet_06.json"
+    },
+    {
+        id: 1019,
+        publisherId: "pub-2",
+        isNew: false,
+        title: "Sakrifísiu Ne'ebé Simu (The Acceptable Sacrifice)",
+        author: "John Bunyan",
+        issueLabel: "Livru Kiik • #07",
+        description: "Hanorin kona-ba enselénsia no kmaan husi fuan ne'ebé rahun no kontritu iha Kristu iha lian Tetun no Inglés.",
+        coverImage: "images/bookLet/booklet_07.jpg",
+        customUrl: "booklet-viewer.html?file=data/res/bookLetJs/booklet_07.json"
+    },
+    {
+        id: 1020,
+        publisherId: "pub-2",
+        isNew: false,
+        title: "Orasaun Família Nian La Bele Neglijénsia (Family Prayer Not to Be Neglected)",
+        author: "Isaac Backus",
+        issueLabel: "Livru Kiik • #08",
+        description: "Apelu atu hamoris fali adorasaun no orasaun família nian loron-loron hodi buka Na'i hamutuk iha lian Tetun no Inglés.",
+        coverImage: "images/bookLet/booklet_08.jpg",
+        customUrl: "booklet-viewer.html?file=data/res/bookLetJs/booklet_08.json"
+    },
+    {
+        id: 1021,
+        publisherId: "pub-2",
+        isNew: false,
+        title: "Karidade Sarani Nian (Christian Charity)",
+        author: "Jonathan Edwards",
+        issueLabel: "Livru Kiik • #09",
+        description: "Hanorin kona-ba devér fó ba ema kiak, mordomia fiél no rekompensa eternidade nian iha lian Tetun no Inglés.",
+        coverImage: "images/bookLet/booklet_09.jpg",
+        customUrl: "booklet-viewer.html?file=data/res/bookLetJs/booklet_09.json"
+    },
+    {
+        id: 1022,
+        publisherId: "pub-2",
+        isNew: false,
+        title: "Hanoin Sira Ba Joven Mane Sira (Thoughts for Young Men)",
+        author: "J. C. Ryle",
+        issueLabel: "Livru Kiik • #10",
+        description: "Konsellu pastorál kona-ba kuidadu juventude, kontra tentasaun no serbí Maromak ohin iha lian Tetun no Inglés.",
+        coverImage: "images/bookLet/booklet_10.jpg",
+        customUrl: "booklet-viewer.html?file=data/res/bookLetJs/booklet_10.json"
+    },
+
     {
         id: 4,
         publisherId: "pub-0",
