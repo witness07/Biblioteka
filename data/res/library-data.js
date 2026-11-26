@@ -108,28 +108,7 @@ const BOOKS_DATABASE = [
         coverImage: "images/sundaySchool/vol-1.jpeg",
         customUrl: "data/books/kurikulum_q1.html"
     },
-    {
-        id: 1010,
-        publisherId: "pub-2",
-        isNew: true,
-        title: "Kurríkulu Eskola Domingu — Vol. 2 (Semana 17–32)",
-        author: "Eskola Domingu Timor-Leste",
-        issueLabel: "Disípulu • Vol. 2",
-        description: "Lisaun semana 17 to'o 32 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
-        coverImage: "images/sundaySchool/vol-2.jpeg",
-        customUrl: "data/books/kurikulum_q2.html"
-    },
-    {
-        id: 1011,
-        publisherId: "pub-2",
-        isNew: true,
-        title: "Kurríkulu Eskola Domingu — Vol. 3 (Semana 33–52)",
-        author: "Eskola Domingu Timor-Leste",
-        issueLabel: "Disípulu • Vol. 3",
-        description: "Lisaun semana 33 to'o 52 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
-        coverImage: "images/sundaySchool/vol-3.jpeg",
-        customUrl: "data/books/kurikulum_q3.html"
-    },
+    
 
     // ======================================================================
     // [지난 출판물 (isNew: false)]
@@ -177,6 +156,28 @@ const BOOKS_DATABASE = [
         description: "Pergunta sira no Resposta sira kona ba Fiar.",
         coverImage: "images/hei_cate.jpg",
         customUrl: "catechism.html?doc=hei"
+    },
+    {
+        id: 1010,
+        publisherId: "pub-2",
+        isNew: false,
+        title: "Kurríkulu Eskola Domingu — Vol. 2 (Semana 17–32)",
+        author: "Eskola Domingu Timor-Leste",
+        issueLabel: "Disípulu • Vol. 2",
+        description: "Lisaun semana 17 to'o 32 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
+        coverImage: "images/sundaySchool/vol-2.jpeg",
+        customUrl: "data/books/kurikulum_q2.html"
+    },
+    {
+        id: 1011,
+        publisherId: "pub-2",
+        isNew: false,
+        title: "Kurríkulu Eskola Domingu — Vol. 3 (Semana 33–52)",
+        author: "Eskola Domingu Timor-Leste",
+        issueLabel: "Disípulu • Vol. 3",
+        description: "Lisaun semana 33 to'o 52 ba labarik sira iha lian Tetun, kompletu ho istória moris, pergunta, misaun prátika no imajem.",
+        coverImage: "images/sundaySchool/vol-3.jpeg",
+        customUrl: "data/books/kurikulum_q3.html"
     },
     {
         id: 1014,
