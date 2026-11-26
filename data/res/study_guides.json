@@ -1,0 +1,772 @@
+[
+  {
+    "book_id": 1,
+    "title_tet": "Atributu Maromak Nian",
+    "title_en": "The Attributes of God",
+    "title_ko": "하나님의 속성",
+    "author": "Arthur W. Pink",
+    "author_en": "Arthur W. Pink",
+    "cover_image": "images/bookLet/booklet_01.jpg",
+    "page1": {
+      "summary_tet": "Koñesimentu espirituál no lori ba moris rohan-laek kona-ba Maromak mak nesesidade moris nian ne'ebé urjente no fundamentál liu ba kriatura hotu. Antes mundu no kriatura sira mosu, iha tempu rohan-laek antes tempu hahú, Maromak hela mesak iha kompletude perfeitu Trindade nian, no Kria mundu la'ós tanba falta ka nesesidade ruma husi liur, maibé tanba nia ksolok soberanu rasik no hakarak di'ak rasik. Tan ne'e, kriasaun la aumenta no la prienxe buat ruma ba glória esensiál Maromak nian. Livru ida-ne'e hatudu ho konsistente atributu sira ne'ebé revela iha Bíblia, hanesan soberania absoluta, koñesimentu hotu-hotu, imutabilidade, santidade kompletu, justisa boot, domin no mizerikórdia la iha rohan, no laran-nakali santu hasoru sala. Tanba ema labele tau fiar no adora ho loos Maromak ne'ebé la koñese, sarani sira la para de'it iha koñesimentu teolójiku abstratu, maibé liuhusi obediénsia prátiku—hakruuk tomak ba autoridade Maromak nian no ajusta parte ki'ik hotu iha moris tuir nia ukun-fuan sira—mak foin bele koñese Maromak ho loos iha klean klamar nian. Pontu hahú fiar loos nian mak rekoñese no hakruuk aan tuir Bíblia ba karáter Maromak nian ne'ebé la iha rohan.",
+      "summary_en": "Spiritual, saving knowledge of God is the most urgent and fundamental need of every creature. Before all things and before time began, God existed alone in the perfect fullness of the Trinity, creating the world not out of external lack or need, but purely from His sovereign pleasure and good will; creation adds nothing to His essential glory. This book consistently illuminates God's revealed attributes—absolute sovereignty, omniscience, immutability, complete holiness, awful justice, boundless love and mercy, and holy wrath against sin. Because an unknown God cannot be rightly trusted or worshiped, believers move beyond abstract theology into practical obedience—submitting fully to God's authority and ordering every detail of life by His commands—to know Him deeply in the soul. True faith begins by receiving and bowing before God's infinite character as revealed in Scripture.",
+      "summary_ko": "하나님을 영적이고 구원에 이르게 아는 지식은 모든 피조물에게 가장 절실하며 근본적인 생명의 필요입니다. 하나님은 천지 만물과 피조물이 존재하기 이전, 시간 이전의 영원 전부터 삼위일체의 완벽한 온전함 속에서 홀로 계셨으며, 어떠한 외부적 결핍이나 필요에 의해서가 아니라 순전히 자신의 주권적인 기쁨과 선하신 뜻에 따라 세상을 창조하셨습니다. 따라서 창조는 하나님의 본질적 영광에 무언가를 보태거나 채운 것이 아닙니다. 본 서는 성경에 계시된 하나님의 절대적 주권, 전지하심, 불변성, 완전한 거룩함, 엄위하신 공의, 무한한 사랑과 자비, 그리고 죄를 향한 거룩한 진노 등의 속성을 일관되게 조명합니다. 알지 못하는 하나님은 신뢰할 수도, 참되게 예배할 수도 없기에, 성도는 관념적인 신학 지식에 머물지 않고 하나님의 권위에 온전히 복종하며 삶의 세밀한 부분까지 그분의 계명에 맞추어 조절하는 실천적 순종을 통해 비로소 영혼 깊은 곳에서 하나님을 올바르게 알아가게 됩니다. 참된 신앙의 출발점은 바로 이 무한하신 하나님의 성품을 성경 그대로 인정하고 엎드리는 데 있습니다.",
+      "summary_ko_char_count": 543,
+      "summary_tet_char_count": 1172
+    },
+    "page2": {
+      "scriptures": [
+        {
+          "ref_code": "JOB.22.21",
+          "label_tet": "Job 22:21",
+          "label_en": "Job 22:21",
+          "label_ko": "욥기 22:21",
+          "text_tet": "Hadook aan ba Maromak no moris iha dame, nune'e di'ak sei mai ba ó.",
+          "text_en": "Submit to God and be at peace with him; in this way prosperity will come to you.",
+          "text_ko": "너는 하나님과 친근하고 평안하라 그리하면 복이 네게 임하리라"
+        },
+        {
+          "ref_code": "JER.9.23-24",
+          "label_tet": "Jeremias 9:23-24",
+          "label_en": "Jeremiah 9:23-24",
+          "label_ko": "예레미야 9:23-24",
+          "text_tet": "Nai dehan nune'e: Ema matenek labele gaba nia matenek... Maibé ema ne'ebé gaba aan tenke gaba kona-ba ida-ne'e: katak nia komprende no koñese Hau, katak Hau mak Nai ne'ebé halo domin, justisa no lialoos iha rai.",
+          "text_en": "This is what the LORD says: Let not the wise boast of their wisdom... but let the one who boasts boast about this: that they have the understanding to know me, that I am the LORD, who exercises kindness, justice and righteousness on earth.",
+          "text_ko": "여호와께서 이와 같이 말씀하시되 지혜로운 자는 그의 지혜를 자랑하지 말라... 자랑하는 자는 이것으로 자랑할지니 곧 명철하여 나를 아는 것과 나 여호와는 사랑과 정의와 공의를 땅에 행하는 자인 줄 깨닫는 것이라"
+        },
+        {
+          "ref_code": "MAL.3.6",
+          "label_tet": "Malakias 3:6",
+          "label_en": "Malachi 3:6",
+          "label_ko": "말라기 3:6",
+          "text_tet": "Hau, Nai, la troka; tanba ne'e, oan-mane sira Jacob nian, imi la lakon mohu.",
+          "text_en": "I the LORD do not change. So you, the descendants of Jacob, are not destroyed.",
+          "text_ko": "나 여호와는 변하지 아니하나니 그러므로 야곱의 자손들아 너희가 소멸되지 아니하느니라"
+        },
+        {
+          "ref_code": "HEB.4.13",
+          "label_tet": "Ebreu 4:13",
+          "label_en": "Hebrews 4:13",
+          "label_ko": "히브리서 4:13",
+          "text_tet": "La iha kriatura ida mak subar husi nia oin; buat hotu molik no nakloke iha matan Nia ne'ebé sei tesi lia ba ita.",
+          "text_en": "Nothing in all creation is hidden from God's sight. Everything is uncovered and laid bare before the eyes of him to whom we must give account.",
+          "text_ko": "지으신 것이 하나도 그 앞에 나타나지 않음이 없고 우리의 결산을 받으실 이의 눈 앞에 만물이 벌거벗은 것 같이 드러나느니라"
+        }
+      ],
+      "questions_tet": [
+        "(Kompreensaun) Saida mak 'Solitariedade Maromak Nian' ne'ebé hakerek-nain enfatiza, no oinsá Maromak nia auto-sufisiénsia antes kriasaun?",
+        "(Kompreensaun) Oinsá imutabilidade no koñesimentu hotu-hotu Maromak nian fó kmaan no serteza ba orasaun no moris fiar sarani ne'ebé laran-kraik?",
+        "(Meditasaun) Oinsá santidade no laran-nakali boot Maromak nian la kontra malu no halo harmonía perfeitu ho nia mizerikórdia no domin?",
+        "(Aplikasaun) Atu koñesimentu kona-ba Maromak la para de'it iha kuriozidade intelektuál maibé lori ba obediénsia prátiku iha moris loron-loron, hanoin ka hahalok saida mak hau tenke entrega ohin?"
+      ],
+      "questions_en": [
+        "(Comprehension) What is the 'Solitariness of God' emphasized by the author, and what was God's self-sufficiency before creation?",
+        "(Comprehension) What comfort and assurance do God's immutability and omniscience bring to a discouraged believer's prayer and walk of faith?",
+        "(Reflection) How do God's holiness and awful wrath harmonize completely with His mercy and love without conflict?",
+        "(Application) What mindset or action must I surrender today so that knowing God moves beyond intellectual curiosity into practical obedience in daily life?"
+      ],
+      "questions_ko": [
+        "(이해) 저자가 강조하는 '하나님의 독자성(The Solitariness of God)'이란 무엇이며, 창조 이전 하나님의 자족하심은 어떠했습니까?",
+        "(이해) 하나님의 불변성(Immutability)과 전지하심(Omniscience)은 낙심한 성도의 기도와 신앙생활에 어떤 위로와 확신을 줍니까?",
+        "(묵상) 하나님의 거룩함과 엄위하신 진노, 그리고 그분의 자비와 사랑은 어떻게 서로 상충하지 않고 완전한 조화를 이룹니까?",
+        "(적용) 하나님을 아는 지식이 단순한 지적 호기심에 그치지 않고 일상의 실천적 순종으로 이어지기 위해 오늘 내가 내어놓아야 할 관념이나 행동은 무엇입니까?"
+      ],
+      "prayer_tet": "Aman Maromak ne'ebé ukun mesak ho kompletu husi tempu rohan-laek no ukun lalehan no rai ho santidade no soberania, hau arrepende aan ba hau nia ignoránsia ne'ebé limita Maromak ho hau nia hanoin kloot. Loke hau nia matan atu haree ho loos karáter perfeitu Nai nian ne'ebé revela iha Bíblia, no halo hau hakruuk aan ho haraik aan iha oin fidelidade no santidade ne'ebé la troka. Liu husi koñesimentu teolójiku, lori hau hakruuk tomak ba soberania Nai nian iha moris loron-loron atu koñese liután Maromak. Iha naran Jesus Kristu. Amen.",
+      "prayer_en": "Heavenly Father, self-sufficient from eternity and ruling the universe in holiness and sovereignty, I repent of my ignorance in limiting You with narrow thoughts. Help me rightly behold Your perfect attributes revealed in Scripture and bow humbly before Your unchanging faithfulness and holiness. Moving beyond abstract knowledge, lead me to full submission to Your sovereignty in daily life so I may know You more deeply. In Jesus Christ's name. Amen.",
+      "prayer_ko": "영원 전부터 홀로 자족하시며 거룩함과 주권으로 우주를 다스리시는 하나님 아버지, 저의 얕은 생각으로 하나님을 제한했던 무지를 회개합니다. 성경에 계시된 주님의 완벽한 성품을 올바로 보게 하시고, 불변하신 신실함과 거룩함 앞에 겸손히 엎드리게 하소서. 관념적인 지식을 넘어 일상의 삶 속에서 주님의 주권에 온전히 복종함으로 하나님을 더욱 깊이 알아가게 하소서. 예수 그리스도의 이름으로 기도합니다. 아멘.\n\n---"
+    }
+  },
+  {
+    "book_id": 2,
+    "title_tet": "Fiar: Nia Esensia no Rezultadu",
+    "title_en": "Faith: What It Is and What It Leads To",
+    "title_ko": "믿음: 본질과 결과",
+    "author": "Charles H. Spurgeon",
+    "author_en": "Charles H. Spurgeon",
+    "cover_image": "images/bookLet/booklet_02.jpg",
+    "page1": {
+      "summary_tet": "Objetu úniku no loos husi fiar salva nian la'ós kondisaun laran sarani nian rasik, maibé Jesus Kristu ne'ebé fakar raan no mate troka maksalak sira iha krús no moris hi'as. Ema barak halo sala boot hodi buka fiar salva nian iha sira nia sentimentu rasik, direitu espirituál, nível arrependimentu, ka nível santifikasaun laran, maibé baze bíbliku úniku ba justifikasaun no perdaun sala mak raan kompletu Kristu nian, mediator úniku. Maromak halo Kristu sai sakrifísiu troka maksalak sira hodi kumpre dala ida de'it kastigu hotu ne'ebé lei ezije; tanba ne'e, ema ne'ebé husik méritu rasik no sadere ba Kristu simu kedas grasa justifikasaun rohan-laek ne'ebé la iha kondenasaun. Fiar la'ós mai ho kondisaun di'ak ne'ebé prepara uluk ona atu hetan salvasaun, maibé mai nu'udar ita-nia an rasik hodi sadere de'it ba rekoñesimentu katak ita maksalak kiak no ba garantia promesa Bíblia nian katak Kristu bolu maksalak sira. Rezultadu husi fiar loos mak fó dame kompletu no serteza salvasaun ba maksalak, no lori sarani ho natural ba moris santu ne'ebé agradese domin Nai nian.",
+      "summary_en": "The sole true objective object of saving faith is not a believer's inward state, but Jesus Christ crucified for sinners and raised again. Many fatally seek saving faith in their own feelings, spiritual worthiness, degree of repentance, or level of sanctification, yet the only biblical ground for justification and forgiveness is Christ's finished blood as sole Mediator. Making Christ the sinner's Substitute, God executed in one stroke all that the law demanded; thus one who abandons self-merit and leans on Christ immediately receives eternal justification with no condemnation. Faith does not bring prepared goodness as a qualification, but comes just as it is, relying on the reality of sin and the warrant of Scripture's promise that Christ calls sinners. Consequently, true faith brings deep peace and assurance and naturally leads into a holy life grateful for Christ's love.",
+      "summary_ko": "구원하는 참된 믿음의 유일하고 참된 객관적 대상은 성도 자신의 내면 상태가 아니라, 십자가에서 죄인을 대신해 피 흘려 죽으시고 부활하신 예수 그리스도이십니다. 많은 이들이 구원의 믿음을 자신의 감정, 영적 자격, 회개의 정도, 또는 내면의 성화 수준에서 찾으려는 치명적 오해를 범하지만, 칭의와 죄 사함의 유일한 성경적 근거는 오직 중보자이신 그리스도의 완성된 보혈뿐입니다. 하나님께서는 그리스도를 죄인의 대속물(Substitute)로 삼으사 율법이 요구하는 모든 형벌을 단번에 집행하셨으므로, 자기 공로를 포기하고 그리스도를 의지하는 자는 즉시 결코 정죄함이 없는 영원한 칭의의 은혜를 받습니다. 믿음은 구원받기 위한 선한 조건을 미리 갖추어 나아오는 것이 아니라, 자신이 비참한 죄인이라는 사실과 그리스도께서 죄인을 부르신다는 성경적 약속의 보증만을 의지하여 있는 모습 그대로 나아오는 것입니다. 그 결과 참된 믿음은 죄인에게 완전한 평안과 구원의 확신을 주며, 주님의 사랑에 감사하는 거룩한 삶으로 성도를 자연스럽게 인도합니다.",
+      "summary_ko_char_count": 522,
+      "summary_tet_char_count": 1069
+    },
+    "page2": {
+      "scriptures": [
+        {
+          "ref_code": "1TI.1.15",
+          "label_tet": "1 Timoteo 1:15",
+          "label_en": "1 Timothy 1:15",
+          "label_ko": "디모데전서 1:15",
+          "text_tet": "Liafuan ida-ne'e fiar-loos no merese simu tomak: Kristu Jesus mai iha mundu atu salva maksalak sira.",
+          "text_en": "Here is a trustworthy saying that deserves full acceptance: Christ Jesus came into the world to save sinners.",
+          "text_ko": "미쁘다 모든 사람이 받을 만한 이 말이여 그리스도 예수께서 죄인을 구원하시려고 세상에 임하셨다 하였도다"
+        },
+        {
+          "ref_code": "ROM.4.25",
+          "label_tet": "Roma 4:25",
+          "label_en": "Romans 4:25",
+          "label_ko": "로마서 4:25",
+          "text_tet": "Nia entrega aan tanba ita-nia sala sira no moris hi'as atu halo ita loos iha Maromak nia oin.",
+          "text_en": "He was delivered over to death for our sins and was raised to life for our justification.",
+          "text_ko": "예수는 우리가 범죄한 것 때문에 내줌이 되고 또한 우리를 의롭다 하시기 위하여 살아나셨느니라"
+        },
+        {
+          "ref_code": "ROM.8.1",
+          "label_tet": "Roma 8:1",
+          "label_en": "Romans 8:1",
+          "label_ko": "로마서 8:1",
+          "text_tet": "Nune'e, agora la iha tan kondenasaun ba sira ne'ebé iha Kristu Jesus.",
+          "text_en": "Therefore, there is now no condemnation for those who are in Christ Jesus.",
+          "text_ko": "그러므로 이제 그리스도 예수 안에 있는 자에게는 결코 정죄함이 없나니"
+        },
+        {
+          "ref_code": "JHN.5.24",
+          "label_tet": "Joao 5:24",
+          "label_en": "John 5:24",
+          "label_ko": "요한복음 5:24",
+          "text_tet": "Loos duni, loos duni Hau dehan ba imi: ema ne'ebé rona Hau nia liafuan no fiar Nia ne'ebé haruka Hau iha moris rohan-laek, no la tama iha tesi-lia, maibé muda ona husi mate ba moris.",
+          "text_en": "Very truly I tell you, whoever hears my word and believes him who sent me has eternal life and will not come under judgment but has crossed over from death to life.",
+          "text_ko": "내가 진실로 진실로 너희에게 이르노니 내 말을 듣고 또 나 보내신 이를 믿는 자는 영생을 얻었고 심판에 이르지 아니하나니 사망에서 생명으로 옮겼느니라"
+        }
+      ],
+      "questions_tet": [
+        "(Kompreensaun) Saida mak 'objetu objetivu loos' husi fiar salva nian ne'ebé Spurgeon ko'alia, no tansá perigu bainhira uza sentimentu ka hahalok rasik nu'udar baze fiar nian?",
+        "(Kompreensaun) Saida mak doutrina 'substituisaun' Kristu nian, no oinsá Maromak bele halo maksalak sai loos kompletu lahó estraga nia justisa?",
+        "(Meditasaun) Garantia loos ne'ebé lori maksalak hakbesik aan ba Kristu la'ós bazeia ba esperiénsia ka direitu espesífiku, maibé bazeia de'it ba saida?",
+        "(Aplikasaun) Bainhira serteza salvasaun nakdoko tanba fraku espirituál ka sentimentu sala, oinsá hau sei manán sentimentu kondenasaun hodi hateke ba justisa Kristu nian ne'ebé kompletu ona iha krús?"
+      ],
+      "questions_en": [
+        "(Comprehension) What is the true 'objective object' of saving faith according to Spurgeon, and why is it dangerous to base faith on one's own feelings or works?",
+        "(Comprehension) What is the doctrine of Christ's substitution, and how can God declare sinners completely righteous without compromising His justice?",
+        "(Reflection) What is the true warrant that allows a sinner to come to Christ, resting not on personal experience or merit but solely on what?",
+        "(Application) When assurance wavers due to spiritual weakness or guilt, how will I overcome condemnation by looking to Christ's finished righteousness on the cross?"
+      ],
+      "questions_ko": [
+        "(이해) 스펄전이 말하는 구원하는 믿음의 참된 '객관적 대상'은 무엇이며, 왜 자신의 감정이나 행위를 믿음의 근거로 삼는 것이 위험합니까?",
+        "(이해) 그리스도의 '대속(Substitution)' 교리란 무엇이며, 하나님은 어떻게 공의를 해치지 않으시면서 죄인을 완전히 의롭다 하실 수 있습니까?",
+        "(묵상) 죄인이 그리스도께 나아갈 수 있는 참된 보증(Warrant)은 나의 구체적인 경험이나 자격이 아니라 오직 무엇에 근거합니까?",
+        "(적용) 영적 연약함이나 죄책감으로 인해 구원의 확신이 흔들릴 때, 십자가에서 완성된 그리스도의 의를 바라봄으로 정죄감을 어떻게 이겨내겠습니까?"
+      ],
+      "prayer_tet": "Hau hateke la'ós ba hau nia direitu ka méritu rasik, maibé ba Jesus Kristu ne'ebé foti hau nia sala iha krús. Labele halo hau sadere ba sentimentu ne'ebé nakdoko ka hahalok iha hau laran, maibé fó fiar tomak de'it ba méritu kompletu Nai nian ne'ebé kumpre lei no fakar raan troka hau. Hau hahi grasa la iha kondenasaun ne'ebé fó dala ida de'it, no lori hau serbi Nai ho barani, agradesimentu no ksolok. Iha naran Jesus Kristu. Amen.",
+      "prayer_en": "I look not to my own worthiness or merit, but to Jesus Christ who bore my sins on the cross. Keep me from leaning on shifting feelings or inward works, and grant that I trust solely in Your finished merit who fulfilled the law and shed Your blood as my substitute. I praise You for the once-for-all grace of no condemnation, and lead me to serve You boldly with gratitude and joy. In Jesus Christ's name. Amen.",
+      "prayer_ko": "저의 자격이나 공로가 아닌, 오직 십자가에서 저의 죄를 대신 짊어지신 예수 그리스도를 바라봅니다. 제 안의 흔들리는 감정이나 행위를 의지하지 않고, 저를 위해 율법을 완성하시고 대속의 피를 흘리신 주님의 완성된 공로만을 전적으로 신뢰하게 하소서. 단번에 주신 정죄함 없는 은혜를 찬양하며, 감사와 기쁨으로 담대히 주님을 섬기게 하소서. 예수 그리스도의 이름으로 기도합니다. 아멘.\n\n---"
+    }
+  },
+  {
+    "book_id": 3,
+    "title_tet": "O Moris Hikas Ona?",
+    "title_en": "Are You Born Again?",
+    "title_ko": "당신은 거듭났는가?",
+    "author": "John C. Ryle",
+    "author_en": "John C. Ryle",
+    "cover_image": "images/bookLet/booklet_03.jpg",
+    "page1": {
+      "summary_tet": "Bíblia hanorin katak moris hikas espirituál loos (rejenerasaun) la determina de'it ho bá igreja ka rituál relijiozu husi liur, maibé prova ho klaru liuhusi sinal bíbliku neen ne'ebé moris iha klamar. Ema ne'ebé moris hikas: dahuluk, la halo sala ho toma-konta ho laran no hakarak tomak tanba fini santu Espiritu Santu nian hela iha nia laran, no nia funu nafatin no odi sala. Daruak, tau fiar tomak de'it ba Jesus Kristu atu hetan salvasaun. Datoluk, halo ho ativu hakarak no justisa Maromak nian iha moris, no dahaat, hadomi ho laran-loos maun-alin no biin-alin sira ne'ebé moris husi Maromak. Dalimak, manán ho fiar valor no tentasaun mundu nian, no daneen, kuida ho didi'ak puridade klamar nian rasik atu buat aat labele kona. Ryle fó avizu firme hasoru relijiozidade nominál ne'ebé la iha evidénsia bíbliku sira-ne'e, no enkoraja maka'as leitor hotu atu diagnostika ho klean kondisaun espirituál rasik iha espelhu liafuan nian hodi to'o ba grasa salvasaun loos. Klamar ne'ebé sai foun husi Espiritu buka santidade iha momentu hotu moris nian no haksolok tomak iha Maromak.",
+      "summary_en": "Scripture teaches that true spiritual rebirth (regeneration) is not settled by church attendance or outward rituals, but proved by six biblical marks dwelling in the soul. The reborn believer: first, does not practice habitual sin because the holy seed of the Spirit abides within, fighting and hating sin; second, trusts Christ alone for salvation; third, actively practices God's will and righteousness; fourth, loves fellow children of God sincerely; fifth, overcomes the world's values and temptations by faith; and sixth, keeps the soul pure so the evil one cannot touch it. Ryle sternly warns against nominal religion lacking these marks and urges every reader to examine their spiritual state in the mirror of Scripture to attain true saving grace. A soul renewed by the Spirit pursues holiness in every moment and delights in God.",
+      "summary_ko": "성경은 참된 영적 거듭남(재생)의 여부가 단순한 교회 출석이나 외형적 종교 의식으로 결정되는 것이 아니라, 영혼 속에 실재하는 6가지 성경적 표지로 명확히 입증된다고 가르칩니다. 거듭난 자는 첫째, 거룩한 성령의 씨가 안에 거하므로 마음과 의지 전체로 습관적인 죄를 짓지 않으며 죄와 끊임없이 싸우고 미워합니다. 둘째, 구원을 위해 오직 예수 그리스도만을 전적으로 신뢰합니다. 셋째, 삶 속에서 적극적으로 하나님의 뜻과 의를 행하며, 넷째, 하나님께로부터 난 형제 자매들을 진실하게 사랑합니다. 다섯째, 세상의 가치관과 유혹을 믿음으로 이겨내며, 여섯째, 악한 자가 건드리지 못하도록 자신의 영혼의 정결을 삼가 지킵니다. 라이일은 이러한 성경적 증거가 전혀 없는 명목상의 종교성을 단호히 경고하며, 모든 독자가 말씀의 거울 앞에서 자신의 영적 상태를 철저히 진단하여 참된 구원의 은혜에 이르도록 강력하게 촉구합니다. 성령으로 새로워진 영혼은 삶의 모든 순간 거룩함을 추구하며 하나님을 온전히 기뻐하게 됩니다.",
+      "summary_ko_char_count": 508,
+      "summary_tet_char_count": 1076
+    },
+    "page2": {
+      "scriptures": [
+        {
+          "ref_code": "1JN.3.9",
+          "label_tet": "1 Joao 3:9",
+          "label_en": "1 John 3:9",
+          "label_ko": "요한일서 3:9",
+          "text_tet": "Ema ne'ebé moris husi Maromak la halo sala, tanba fini Maromak nian hela iha nia laran; nia labele halo sala, tanba nia moris husi Maromak.",
+          "text_en": "No one who is born of God will continue to sin, because God's seed remains in them; they cannot go on sinning, because they have been born of God.",
+          "text_ko": "하나님께로부터 난 자마다 죄를 지어지 아니하나니 이는 하나님의 씨가 그의 속에 거함이요 그도 범죄하지 못하는 것은 하나님께로부터 났음이라"
+        },
+        {
+          "ref_code": "1JN.5.1",
+          "label_tet": "1 Joao 5:1",
+          "label_en": "1 John 5:1",
+          "label_ko": "요한일서 5:1",
+          "text_tet": "Ema hotu ne'ebé fiar katak Jesus mak Kristu moris husi Maromak, no ema hotu ne'ebé hadomi Nia ne'ebé fó moris mós hadomi sira ne'ebé moris husi Nia.",
+          "text_en": "Everyone who believes that Jesus is the Christ is born of God, and everyone who loves the father loves his child as well.",
+          "text_ko": "예수께서 그리스도시심을 믿는 자마다 하나님께로부터 난 자니 또한 가신 이를 사랑하는 자마다 그에게서 난 자를 사랑하느니라"
+        },
+        {
+          "ref_code": "1JN.3.14",
+          "label_tet": "1 Joao 3:14",
+          "label_en": "1 John 3:14",
+          "label_ko": "요한일서 3:14",
+          "text_tet": "Ita hatene katak ita muda ona husi mate ba moris, tanba ita hadomi maun-alin sira; ema ne'ebé la hadomi hela iha mate.",
+          "text_en": "We know that we have passed from death to life, because we love each other. Anyone who does not love remains in death.",
+          "text_ko": "우리는 형제를 사랑함으로 사망에서 옮겨 생명으로 들어간 줄을 알거니와 사랑하지 아니하는 자는 사망에 머물러 있느니라"
+        },
+        {
+          "ref_code": "1JN.5.18",
+          "label_tet": "1 Joao 5:18",
+          "label_en": "1 John 5:18",
+          "label_ko": "요한일서 5:18",
+          "text_tet": "Ita hatene katak ema ne'ebé moris husi Maromak la kontinua halo sala, maibé Nia ne'ebé moris husi Maromak kuida nia, no buat aat labele kona nia.",
+          "text_en": "We know that anyone born of God does not continue to sin; the One who was born of God keeps them safe, and the evil one cannot harm them.",
+          "text_ko": "하나님께로부터 난 자는 다 범죄하지 아니하는 줄을 우리가 아노라 하나님께로부터 나신 자가 그를 지키시매 악한 자가 그를 만지지도 못하느니라"
+        }
+      ],
+      "questions_tet": [
+        "(Kompreensaun) Saida mak sinal bíbliku neen husi sarani ne'ebé moris hikas ne'ebé J. C. Ryle aprezenta bazeia ba 1 Joao?",
+        "(Kompreensaun) Liafuan 'ema ne'ebé moris hikas la halo sala toman' katak saida ho espesífiku, la'ós perfeisionizmu katak la iha sala ruma?",
+        "(Meditasaun) Oinsá kuidadu an rasik hodi manán tentasaun mundu nian no mantein puridade klamar nian mosu iha hau nia liafuan, uza tempu, no relasaun sira?",
+        "(Aplikasaun) Bainhira diagnostika ho onestu kondisaun espirituál rasik bazeia ba sinal neen ne'e, área saida mak tenke arrepende ho kle'an liután no sai foun liuhusi grasa Espiritu nian?"
+      ],
+      "questions_en": [
+        "(Comprehension) What are the six biblical marks of a born-again believer presented by J. C. Ryle based on 1 John?",
+        "(Comprehension) What does 'one who is born again does not practice habitual sin' specifically mean rather than sinless perfectionism?",
+        "(Reflection) How does self-keeping—overcoming worldly temptation and guarding spiritual purity—appear in my speech, use of time, and relationships?",
+        "(Application) When honestly examining my spiritual state against these six marks, what area needs deeper repentance and renewal by the Spirit's grace?"
+      ],
+      "questions_ko": [
+        "(이해) J. C. 라이일이 요한일서를 바탕으로 제시한 거듭난 성도의 6가지 성경적 표지는 무엇입니까?",
+        "(이해) '거듭난 자는 습관적인 죄를 짓지 않는다'는 말은 죄가 전혀 없다는 완벽주의를 의미하는 것이 아니라 구체적으로 무슨 뜻입니까?",
+        "(묵상) 세상의 유혹을 이기고 영혼의 정결을 지키는 삼가 조심함(Self-keeping)이 나의 언어, 시간 활용, 관계 속에서 어떻게 나타나고 있습니까?",
+        "(적용) 6가지 성경적 표지를 바탕으로 나 자신의 영적 상태를 정직하게 진단할 때, 성령의 은혜로 더 깊이 회개하고 새로워져야 할 영역은 어디입니까?"
+      ],
+      "prayer_tet": "Maromak Santu, labele halo hau hakmatek iha hahalok relijiozu husi liur, maibé lori hau hateke ho haraik aan ba hau nia klamar iha espelhu liafuan nian. Halo hau moris hikas tomak liuhusi Espiritu atu odi sala, sadere de'it ba Kristu, hadomi maun-alin sira, no manán mundu. Fó dalan ba serbisu moris nian mosu barak liután iha hau laran loron-loron atu sai sarani loos ne'ebé fó glória ba Maromak. Iha naran Jesus Kristu. Amen.",
+      "prayer_en": "Holy God, do not let me rest in outward religious observance, but lead me to examine my soul humbly in the mirror of Your Word. Cause me to be truly born again by the Spirit to hate sin, trust Christ alone, love the brethren, and overcome the world. Let the fruit of new life abound within me day by day so I may be a true believer who glorifies You. In Jesus Christ's name. Amen.",
+      "prayer_ko": "거룩하신 하나님, 외형적인 종교 행위에 안주하지 않고 말씀의 거울 앞에 제 영혼을 겸손히 돌아보게 하소서. 성령으로 저를 온전히 거듭나게 하사 죄를 미워하고, 오직 그리스도만을 의지하며, 형제를 사랑하고 세상을 이기게 하소서. 제 안에 생명의 역사가 날마다 풍성히 드러나 하나님께 영광 돌리는 참된 성도가 되게 하소서. 예수 그리스도의 이름으로 기도합니다. 아멘.\n\n---"
+    }
+  },
+  {
+    "book_id": 4,
+    "title_tet": "O Bá Enkontru Orasaun Ka?",
+    "title_en": "Do You Go to the Prayer Meeting?",
+    "title_ko": "당신은 기도회에 참석하는가?",
+    "author": "Horatius Bonar",
+    "author_en": "Horatius Bonar",
+    "cover_image": "images/bookLet/booklet_04.jpg",
+    "page1": {
+      "summary_tet": "Enkontru orasaun komunidade ne'ebé sarani sira halo hamutuk ho laran ida mak priviléjiu santu no meiu prinsipál grasa nian ne'ebé fó forsa moris espirituál no komunhaun kle'an ho Maromak. Hakerek-nain hatudu falsidade bíbliku husi razaun lima prinsipál ne'ebé sarani barak fó bainhira la tau-matan ba enkontru orasaun: indiferensa pesoál, programa okupadu no falta tempu, moe sosiál, kuidadu hasoru espiritualidade liu, ka alegasaun katak orasaun pesoál de'it to'o ona. Esénsia husi razaun sira-ne'e la'ós de'it problema situasaun, maibé mosu husi frieza espirituál monu nian ne'ebé hadomi mundu no buka konfortu isin nian duké hadomi Maromak. Bonar fó avizu todan katak klamar ne'ebé sente baruk no sees aan husi oras ida orasaun hamutuk ho sarani sira iha rai la bele duni partisipa iha komunhaun hahi no orasaun rohan-laek iha lalehan. Tan ne'e, sarani tenke soe tiha tauk ba ema nia haree ka baruk isin nian no restaura fatin orasaun komunidade atu esperiénsia revivamentu espirituál ho laran-manas orasaun. Bainhira sarani sira halibur hamutuk no harohan, kbiit espirituál no bensaun lalehan nian fakar barak.",
+      "summary_en": "Corporate prayer meetings where believers pray together with one accord are a sacred privilege and vital means of grace for spiritual vitality and deep communion with God. The author exposes five common excuses for neglecting prayer meetings—personal indifference, busy schedules and lack of time, social embarrassment, wariness of excessive spirituality, or claiming private prayer suffices—showing they stem from worldly love and fleshly comfort rather than mere circumstance. Bonar warns solemnly that a soul who finds one hour of corporate prayer wearisome on earth is unfit for eternal praise and prayer in heaven. Believers must cast off human fear and sloth, restore corporate prayer, and experience spiritual renewal through earnest prayer. When believers gather and pray together, spiritual power and heavenly blessings are richly poured out.",
+      "summary_ko": "성도가 피차 마음을 같이하여 드리는 공동체 기도회는 영적 생명력을 공급받고 하나님과 깊이 교제하는 거룩한 특권이자 은혜의 핵심 방편입니다. 저자는 많은 성도들이 기도 모임을 소홀히 하면서 제시하는 5가지 주요 핑계—개인적 무관심, 바쁜 일정과 시간 부족, 사회적 부끄러움, 과도한 영성에 대한 경계, 혹은 개인 기도만으로 충분하다는 주장—의 허구성을 성경적으로 파헤칩니다. 이러한 변명의 본질은 단순한 환경의 문제가 아니라, 하나님을 사랑하기보다 세상을 사랑하고 육신의 편안함을 추구하는 타락한 영적 냉담함에서 비롯된 것입니다. 보나르는 지상에서 성도들과 모여 드리는 기도 한 시간을 지루해하고 피하는 심령은 장차 하늘나라에서 드릴 영원한 찬양과 기도의 교제에도 결코 어울릴 수 없음을 엄히 경고합니다. 따라서 성도는 세상의 눈치나 육신의 게으름을 떨쳐버리고 공동체 기도의 자리를 회복하여 기도의 열정으로 영적 부흥을 경험해야 합니다. 성도가 함께 모여 기도할 때 영적 권능과 하늘의 축복이 풍성히 부어집니다.",
+      "summary_ko_char_count": 509,
+      "summary_tet_char_count": 1114
+    },
+    "page2": {
+      "scriptures": [
+        {
+          "ref_code": "MAL.3.16",
+          "label_tet": "Malakias 3:16",
+          "label_en": "Malachi 3:16",
+          "label_ko": "말라기 3:16",
+          "text_tet": "Tempu ne'ebá sira ne'ebé hamta'uk Nai ko'alia malu, no Nai rona ho klaru; hakerek livru memória ida iha Nai nia oin ba sira ne'ebé hamta'uk Nai no respeitu nia naran.",
+          "text_en": "Then those who feared the LORD talked with each other, and the LORD listened and heard. A scroll of remembrance was written in his presence concerning those who feared the LORD and honored his name.",
+          "text_ko": "그 때에 여호와를 경외하는 자들이 피차에 말하매 여호와께서 그것을 분명히 들으시고 여호와를 경외하는 자와 그 이름을 존중히 여기는 자를 위하여 여호와 앞에 있는 기념책에 기록하셨느니라"
+        },
+        {
+          "ref_code": "ACT.1.14",
+          "label_tet": "Apóstolu 1:14",
+          "label_en": "Acts 1:14",
+          "label_ko": "사도행전 1:14",
+          "text_tet": "Sira hotu halibur aan hamutuk ho laran ida atu harohan beibeik, hamutuk ho feto sira, Maria Jesus nia inan, no nia maun-alin sira.",
+          "text_en": "They all joined together constantly in prayer, along with the women and Mary the mother of Jesus, and with his brothers.",
+          "text_ko": "여자들과 예수의 어머니 마리아와 예수의 아우들과 더불어 마음을 같이하여 오로지 기도에 힘쓰더라"
+        },
+        {
+          "ref_code": "HEB.10.25",
+          "label_tet": "Ebreu 10:25",
+          "label_en": "Hebrews 10:25",
+          "label_ko": "히브리서 10:25",
+          "text_tet": "La bele husik halibur hamutuk hanesan balun nia toman, maibé hametin malu, liuliu bainhira imi haree loron ne'e besik ona.",
+          "text_en": "Not giving up meeting together, as some are in the habit of doing, but encouraging one another—and all the more as you see the Day approaching.",
+          "text_ko": "모이기를 폐하는 어떤 사람들의 습관과 같이 하지 말고 오직 권하여 그 날이 가까움을 볼수록 더욱 그리하자"
+        },
+        {
+          "ref_code": "MRK.8.38",
+          "label_tet": "Marcos 8:38",
+          "label_en": "Mark 8:38",
+          "label_ko": "마가복음 8:38",
+          "text_tet": "Ema ne'ebé sente moe kona-ba Hau no Hau nia liafuan iha jerasaun adúlteru no maksalak ida-ne'e, Oan Mane mós sei sente moe kona-ba nia bainhira Nia mai iha nia Aman nia glória hamutuk ho anju santu sira.",
+          "text_en": "If anyone is ashamed of me and my words in this adulterous and sinful generation, the Son of Man will be ashamed of them when he comes in his Father's glory with the holy angels.",
+          "text_ko": "누구든지 이 음란하고 죄 많은 세대에서 나와 내 말을 부끄러워하면 인자도 아버지의 영광으로 거룩한 천사들과 함께 올 때에 그 사람을 부끄러워하리라"
+        }
+      ],
+      "questions_tet": [
+        "(Kompreensaun) Saida mak razaun lima prinsipál ne'ebé Bonar aponta kona-ba la bá enkontru orasaun, no oinsá hakerek-nain kontra razaun sira-ne'e?",
+        "(Kompreensaun) Saida mak kauza espirituál fundamentál ne'ebé halo sarani la tau-matan ka la haksolok iha enkontru orasaun komunidade?",
+        "(Meditasaun) Avizu katak 'ema ne'ebé baruk ho oras ida enkontru orasaun iha rai la bele duni partisipa iha hahi no orasaun rohan-laek iha lalehan' fó dezafiu espirituál saida ba hau?",
+        "(Aplikasaun) Atu partisipa ho ativu iha enkontru orasaun komunidade no harohan hamutuk ho laran ida, prioridade moris saida mak hau tenke ajusta iha semana ida-ne'e?"
+      ],
+      "questions_en": [
+        "(Comprehension) What are the five main excuses for missing prayer meetings identified by Bonar, and how does he refute them?",
+        "(Comprehension) What is the fundamental spiritual root behind a believer neglecting or not delighting in corporate prayer gatherings?",
+        "(Reflection) What spiritual challenge does the warning that 'one who finds an hour of prayer meeting wearisome on earth is unfit for eternal praise and prayer in heaven' bring to me?",
+        "(Application) What priority in my life do I need to adjust this week to actively join corporate prayer meetings and pray with one accord?"
+      ],
+      "questions_ko": [
+        "(이해) 보나르가 지적하는 대표적인 기도회 불참 핑계 5가지는 무엇이며, 저자는 이를 어떻게 반박합니까?",
+        "(이해) 성도가 공동체 기도 모임을 소홀히 하거나 기뻐하지 않는 근본적인 영적 원인은 무엇입니까?",
+        "(묵상) \"지상에서 기도회 한 시간을 지루해하는 사람은 하늘나라의 영원한 찬양과 기도에도 어울리지 않는다\"는 경고가 나에게 주는 영적 도전은 무엇입니까?",
+        "(적용) 공동체 기도회와 성도의 기도 모임에 적극적으로 참여하여 마음을 같이하여 기도하기 위해 이번 주에 조정해야 할 내 삶의 우선순위는 무엇입니까?"
+      ],
+      "prayer_tet": "Nai ne'ebé rona lian orasaun, hau arrepende aan ba baruk no frieza espirituál ne'ebé subar iha okupasaun mundu nian no indiferensa hodi sees aan husi enkontru orasaun sarani sira. Fó dalan ba hau atu komprende katak fatin ne'ebé halibur hamutuk hodi harohan mak kanal bensaun ne'ebé hemu bee moris rohan-laek nian, no harohan hamutuk ho laran ida. Labele hateke ba ema nia haree, maibé kuida fatin orasaun ho barani no hahi Nai ho ksolok. Iha naran Jesus Kristu. Amen.",
+      "prayer_en": "Lord who hears prayer, I repent of sloth and spiritual coldness hidden behind busyness and indifference that kept me from the prayer meeting of the saints. Grant that I see the gathering for prayer as a channel of blessing drinking from the fountain of eternal life, and strive in prayer with one accord. Keep me from fearing human opinion, guard my place of prayer boldly, and praise You with joy. In Jesus Christ's name. Amen.",
+      "prayer_ko": "기공의 소리를 들으시는 주님, 세상의 바쁨과 무관심 뒤에 숨어 성도의 기도 모임을 멀리했던 게으름과 영적 냉담함을 회개합니다. 모여 기도하는 자리가 영생의 생수를 마시는 축복의 통로임을 깨달아 마음을 같이하여 기도에 힘쓰게 하소서. 세상의 눈치를 보지 않고 담대히 기도의 자리를 지키며, 기쁨으로 주님을 찬양하게 하소서. 예수 그리스도의 이름으로 기도합니다. 아멘.\n\n---"
+    }
+  },
+  {
+    "book_id": 5,
+    "title_tet": "Dalan ba Eskritura Sagrada",
+    "title_en": "Pathway into the Scriptures",
+    "title_ko": "성경으로 들어가는 길",
+    "author": "William Tyndale",
+    "author_en": "William Tyndale",
+    "cover_image": "images/bookLet/booklet_05.jpg",
+    "page1": {
+      "summary_tet": "Xave atu interpreta ho loos lia-loos Bíblia nian no hetan dalan moris loos nian mak komprende ho klaru diferensa fundamentál entre lei Maromak nian no evanjelhu. Lei aprezenta estandarte santidade perfeitu Maromak nian hodi halo nakloke ho klean kiak, inkapasidade no natureza sala ema nian, nune'e halo sarani husik tomak justisa no méritu rasik no sente deskonfiansa. Iha sorin seluk, evanjelhu mak liafuan di'ak (evanjelhu) katak Kristu kumpre ho perfeitu ezije hotu lei nian iha krús no harahun kbiit sala no mate nian. Salvasaun fó la'ós liuhusi hahalok di'ak ka méritu sakramentu ema nian, maibé liuhusi grasa liuhusi fiar iha Kristu de'it; sarani ne'ebé komprende ida-ne'e simu natureza foun liuhusi serbisu Espiritu nian no halo ho haksolok obediénsia ba lei tanba agradesimentu no domin ba Maromak, la'ós tanba tauk kondenasaun. Tyndale orienta maka'as atu hasai tradisaun ema nian ka interpretasaun artifisiál no hateke ho loos ba Kristu liuhusi estrutura lei no evanjelhu iha Bíblia rasik. Liafuan lia-loos grasa nian lori sarani sai husi kondenasaun ba liberdade espirituál loos.",
+      "summary_en": "The key to rightly interpreting Scripture and finding true life is clearly distinguishing between God's law and the gospel. The law sets forth God's standard of complete holiness, exposing human misery, helplessness, and sinfulness so believers abandon self-righteousness and despair of self-merit. The gospel is the good news (evangelion) that Christ fulfilled every demand of the law on the cross and broke the power of sin and death. Salvation comes not by human works or sacramental merit, but by grace through faith in Christ alone; renewed by the Spirit, the redeemed believer gladly obeys the law out of gratitude and love to God rather than fear of condemnation. Tyndale urges setting aside human traditions and artificial interpretations to behold Christ through Scripture's own law-and-gospel structure, leading believers out of condemnation into true spiritual freedom.",
+      "summary_ko": "성경 진리를 올바르게 해석하고 참된 생명의 길을 찾기 위한 열쇠는 하나님의 율법과 복음 사이의 근본적인 구별을 명확히 이해하는 데 있습니다. 율법은 하나님의 완전한 거룩함의 기준을 제시하여 인간의 비참함과 무기력함, 죄성을 철저히 파헤침으로써 성도로 하여금 자기 의와 공로를 완전히 포기하고 절망하게 만드는 기능을 합니다. 반면 복음은 그리스도께서 십자가에서 모든 율법의 요구를 완벽히 이루시고 죄와 사망의 권세를 깨뜨리셨다는 기쁜 소식(Evangelion)입니다. 구원은 인간의 선한 행위나 성례전적 공로가 아니라 오직 그리스도를 믿는 은혜로 주어지며, 이를 깨달은 성도는 성령의 역사로 새로운 본성을 받아 정죄의 두려움이 아닌 하나님을 향한 감사와 사랑으로 율법에 즐거이 순종하게 됩니다. 틴데일은 인간적 전통이나 인위적 해석을 배제하고 성경 자체의 율법과 복음 구조를 통해 그리스도를 바로 바라볼 것을 강력히 안내합니다. 은혜의 진리 말씀은 성도를 정죄에서 벗어나 참된 영적 자유로 이끕니다.",
+      "summary_ko_char_count": 502,
+      "summary_tet_char_count": 1091
+    },
+    "page2": {
+      "scriptures": [
+        {
+          "ref_code": "JHN.1.17",
+          "label_tet": "Joao 1:17",
+          "label_en": "John 1:17",
+          "label_ko": "요한복음 1:17",
+          "text_tet": "Tanba lei fó liuhusi Moisés, maibé grasa no lia-loos mai liuhusi Jesus Kristu.",
+          "text_en": "For the law was given through Moses; grace and truth came through Jesus Christ.",
+          "text_ko": "율법은 모세로 말미암아 주어진 것이요 은혜와 진리는 예수 그리스도로 말미암아 온 것이라"
+        },
+        {
+          "ref_code": "GEN.3.15",
+          "label_tet": "Jénesis 3:15",
+          "label_en": "Genesis 3:15",
+          "label_ko": "창세기 3:15",
+          "text_tet": "Hau sei tau inimizade entre ó no feto ne'e, no entre ó nia jerasaun no nia jerasaun; nia jerasaun sei baku rahun ó nia ulun, no ó sei tata nia salto.",
+          "text_en": "And I will put enmity between you and the woman, and between your offspring and hers; he will crush your head, and you will strike his heel.",
+          "text_ko": "내가 너로 여자와 원수가 되게 하고 네 후손도 여자의 후손과 원수가 되게 하리니 여자의 후손은 네 머리를 상하게 할 것이요 너는 그의 발꿈치를 상하게 할 것이니라"
+        },
+        {
+          "ref_code": "2CO.3.6",
+          "label_tet": "2 Korintu 3:6",
+          "label_en": "2 Corinthians 3:6",
+          "label_ko": "고린도후서 3:6",
+          "text_tet": "Nia halo ita mós sai ministru kapas ba aliansa foun, la'ós ba letra lei nian, maibé ba Espiritu; tanba letra oho, maibé Espiritu fó moris.",
+          "text_en": "He has made us competent as ministers of a new covenant—not of the letter but of the Spirit; for the letter kills, but the Spirit gives life.",
+          "text_ko": "그가 또한 우리를 새 언약의 일꾼 되기에 만족하게 하셨으니 율법 조문으로 하지 아니하고 오직 영으로 함이니 율법 조문은 죽이는 것이요 영은 살리는 것이니라"
+        },
+        {
+          "ref_code": "ROM.8.1",
+          "label_tet": "Roma 8:1",
+          "label_en": "Romans 8:1",
+          "label_ko": "로마서 8:1",
+          "text_tet": "Nune'e, agora la iha tan kondenasaun ba sira ne'ebé iha Kristu Jesus.",
+          "text_en": "Therefore, there is now no condemnation for those who are in Christ Jesus.",
+          "text_ko": "그러므로 이제 그리스도 예수 안에 있는 자에게는 결코 정죄함이 없나니"
+        }
+      ],
+      "questions_tet": [
+        "(Kompreensaun) Saida mak funsaun 'Lei' no esénsia 'Evanjelhu' ne'ebé Tyndale esplika, no oinsá rua-ne'e lahanesan?",
+        "(Kompreensaun) Tansá akontesimentu substituisaun Kristu nian sai 'liafuan di'ak aas liu (evanjelhu)' ba maksalak ne'ebé iha okos kondenasaun lei nian?",
+        "(Meditasaun) Hahalok di'ak ne'ebé sarani salva ona halo la'ós kondisaun atu hetan salvasaun, maibé mai husi motivasaun no natureza saida?",
+        "(Aplikasaun) Bainhira lee Bíblia, oinsá hau sei harii toman lee hodi aplika ho loos prinsípiu lei no evanjelhu no medita ho kle'an grasa krús nian duké sadere ba hahalok rasik?"
+      ],
+      "questions_en": [
+        "(Comprehension) What is the function of the 'Law' and the essence of the 'Gospel' as Tyndale explains, and how are they distinct?",
+        "(Comprehension) Why is Christ's substitutionary work the 'greatest good news (Gospel)' to a sinner under the condemnation of the law?",
+        "(Reflection) Rather than a condition for salvation, from what motive and new nature do good works flow in a redeemed believer?",
+        "(Application) How will I build a Bible-reading habit that rightly applies law and gospel and meditates deeply on the grace of the cross rather than my own works?"
+      ],
+      "questions_ko": [
+        "(이해) 틴데일이 설명하는 '율법(Law)'의 기능과 '복음(Gospel)'의 본질은 각각 무엇이며, 이 둘은 어떻게 구별됩니까?",
+        "(이해) 율법의 정죄 아래 있는 죄인에게 그리스도의 대속 사건이 왜 '최고의 기쁜 소식(Evangelion)'이 됩니까?",
+        "(묵상) 구원받은 성도가 행하는 선한 행위는 구원을 얻기 위한 조건이 아니라 어떤 동기와 본성에서 흘러나오는 것입니까?",
+        "(적용) 성경을 읽을 때 율법과 복음의 원리를 바로 적용하여, 내 행위를 의지하지 않고 십자가의 은혜를 깊이 묵상하는 독서 습관을 어떻게 세우겠습니까?"
+      ],
+      "prayer_tet": "Maromak Na'in ba Liafuan, agradese ba lori hau komprende hau nia kiak no sala liuhusi lei, no goza justisa perfeitu no liberdade ne'ebé Kristu kumpre iha evanjelhu. Hasai husi hau laran legalizmu ne'ebé hakarak sadere ba hahalok rasik ka hahalok relijiozu husi liur. Fó dalan ba hau atu gaba de'it grasa Kristu nian, no moris hodi hadomi Maromak no halo obediénsia ho haksolok liuhusi kbiit Espiritu nian. Iha naran Jesus Kristu. Amen.",
+      "prayer_en": "Lord of the Word, thank You for showing me my misery and sin through the law and letting me enjoy the perfect righteousness and freedom Christ accomplished in the gospel. Remove any legalistic spirit that leans on my own works or outward religious acts. Let me boast only in Christ's grace and live in joyful love and obedience to You by the power of the Spirit. In Jesus Christ's name. Amen.",
+      "prayer_ko": "말씀의 주인이신 하나님, 율법을 통해 저의 비참함과 죄를 깨닫게 하시고 복음 안에서 그리스도가 이루신 완벽한 의와 자유를 누리게 하시니 감사합니다. 제 자신의 행위나 외적 종교 행위를 의지하려 했던 율법주의적 마음을 버리게 하소서. 오직 그리스도의 은혜만을 자랑하며, 성령의 능력으로 하나님을 사랑하고 즐거이 순종하는 삶을 살게 하소서. 예수 그리스도의 이름으로 기도합니다. 아멘.\n\n---"
+    }
+  },
+  {
+    "book_id": 6,
+    "title_tet": "Oho Sala",
+    "title_en": "Mortification of Sin",
+    "title_ko": "죄 죽이기",
+    "author": "John Owen",
+    "author_en": "John Owen",
+    "cover_image": "images/bookLet/booklet_06.jpg",
+    "page1": {
+      "summary_tet": "Maski sarani hetan ona justifikasaun iha Kristu no sai livre kompletu husi kondenasaun, durante moris iha rai ne'e tenke oho nafatin loron-loron kbiit sala ne'ebé hela iha laran (sala ne'ebé hela iha laran). Oho sala labele kumpre ho desizaun vontade ema nian, abstinénsia legalístiku, ka kumpre regra husi liur, maibé posivel de'it liuhusi kbiit todan-liu Espiritu Santu nian ne'ebé hela iha sarani. Se sarani la oho nafatin sala iha laran, grasa espirituál sei mamar, konsiénsia sai mate, lakon dame santu, no monu ba derrota espirituál todan no estatutu atan sala nian. Sarani tenke sadere ba Espiritu no aplika raan Kristu nian ne'ebé hedi iha krús no grasa substituisaun ba funu espirituál loron-loron. Liuhusi ida-ne'e, enfrakesa abut habelun-aat no kumpre grasa santifikasaun atu goza tomak moris espirituál loos no dame ne'ebé Maromak fó. Kbiit Espiritu nian ne'ebé funu nafatin hasoru sala iha laran no pasiénsia santu garante nafatin vitória espirituál sarani nian. Sarani salva ona kompleta santidade loron-loron iha Espiritu.",
+      "summary_en": "Even believers justified in Christ and freed from condemnation must continually put to death (mortify) the remaining power of indwelling sin throughout life on earth. Mortification cannot be achieved by human willpower, legalistic abstinence, or external rules alone, but only by the almighty power of the indwelling Holy Spirit. If believers fail to continually kill indwelling sin, spiritual grace withers, conscience grows dull, sacred peace is lost, and they fall into spiritual defeat and bondage to sin. Relying on the Spirit, believers apply Christ's crucified blood and substitutionary grace to daily spiritual warfare, weakening lust's roots and advancing in sanctification to enjoy true spiritual life and peace. The Spirit's ongoing battle against indwelling sin and holy perseverance secure spiritual victory.",
+      "summary_ko": "그리스도 안에서 칭의를 얻고 정죄에서 완전히 벗어난 성도라 할지라도, 이 땅에 사는 동안 마음에 잔존하는 내주하는 죄(Indwelling Sin)의 권세를 매일 끊임없이 죽여야(Mortify) 합니다. 죄 죽이기는 인간의 의지적 결단이나 율법주의적 금욕, 외적 규칙 준수로 결코 이루어질 수 없으며, 오직 성도 안에 내주하시는 성령의 전능하신 권능으로만 가능합니다. 만약 성도가 내면의 죄를 지속적으로 죽이지 않는다면, 영적 은혜가 시들고 양심이 마비되며 거룩한 평안을 잃어버리고 심각한 영적 패배와 죄의 노예 상태에 빠지게 됩니다. 성도는 성령을 의지하여 십자가에 못 박히신 그리스도의 보혈과 대속의 은혜를 매일의 영적 전쟁에 적용해야 합니다. 이를 통해 정욕의 뿌리를 약화시키고 성화의 은혜를 이루어 하나님이 주시는 참된 영적 생명과 평안을 온전히 누려야 합니다. 내주하는 죄와 끊임없이 싸우는 성령의 권능과 거룩한 인내가 성도의 영적 승리를 늘 보장해 줍니다. 구원받은 성도는 성령 안에서 날마다 거룩함을 완성해 갑니다.",
+      "summary_ko_char_count": 518,
+      "summary_tet_char_count": 1037
+    },
+    "page2": {
+      "scriptures": [
+        {
+          "ref_code": "ROM.8.13",
+          "label_tet": "Roma 8:13",
+          "label_en": "Romans 8:13",
+          "label_ko": "로마서 8:13",
+          "text_tet": "Tanba se imi moris tuir isin, imi sei mate; maibé se liuhusi Espiritu imi oho hahalok isin nian, imi sei moris.",
+          "text_en": "For if you live according to the flesh, you will die; but if by the Spirit you put to death the misdeeds of the body, you will live.",
+          "text_ko": "너희가 육신대로 살면 반드시 죽을 것이로되 영으로써 몸의 행실을 죽이면 살리니"
+        },
+        {
+          "ref_code": "GAL.5.24",
+          "label_tet": "Galásia 5:24",
+          "label_en": "Galatians 5:24",
+          "label_ko": "갈라디아서 5:24",
+          "text_tet": "Sira ne'ebé Kristu Jesus nian hedi ona isin iha krús hamutuk ho nia paixaun no hakarak aat sira.",
+          "text_en": "Those who belong to Christ Jesus have crucified the flesh with its passions and desires.",
+          "text_ko": "그리스도 예수의 사람들은 육체와 함께 그 정욕과 탐심을 십자가에 못 박았느니라"
+        },
+        {
+          "ref_code": "1CO.9.27",
+          "label_tet": "1 Korintu 9:27",
+          "label_en": "1 Corinthians 9:27",
+          "label_ko": "고린도전서 9:27",
+          "text_tet": "Maibé hau baku hau nia isin no halo sai atan, atu hafoin haklaken ba ema seluk, hau rasik labele sai ema ne'ebé lakon.",
+          "text_en": "No, I strike a blow to my body and make it my slave so that after I have preached to others, I myself will not be disqualified for the prize.",
+          "text_ko": "내가 내 몸을 치워 복종하게 함은 내가 남에게 전파한 후에 자기가 도리어 버림을 당할까 두려워함이로다"
+        },
+        {
+          "ref_code": "JHN.15.5",
+          "label_tet": "Joao 15:5",
+          "label_en": "John 15:5",
+          "label_ko": "요한복음 15:5",
+          "text_tet": "Hau mak uvas-hun, imi mak sanak sira; ema ne'ebé hela iha Hau no Hau iha nia sei fó fuan barak, tanba la iha Hau imi labele halo buat ida.",
+          "text_en": "I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit; apart from me you can do nothing.",
+          "text_ko": "나를 떠나서는 너희가 아무 것도 할 수 없음이라"
+        }
+      ],
+      "questions_tet": [
+        "(Kompreensaun) Saida mak definisaun bíbliku kona-ba 'oho sala' ne'ebé John Owen ko'alia, no tansá ida-ne'e tarefa ne'ebé presiza ba moris tomak ba sarani ne'ebé salva ona?",
+        "(Kompreensaun) Tansá Espiritu de'it mak sai ajente efisiente ne'ebé oho sala, no saida mak diferensa desisivu ho asketizmu legalístiku artifisiál?",
+        "(Meditasaun) Sensu krize espirituál saida mak avizu katak 'se ó la oho nafatin sala, sala sei oho ó' fó ba hau nia funu espirituál loron-loron?",
+        "(Aplikasaun) Bainhira hasoru habelun-aat no tentasaun ne'ebé mosu ho subar iha hau laran, oinsá hau sei husu no aplika ho espesífiku grasa krús no ajuda Espiritu nian?"
+      ],
+      "questions_en": [
+        "(Comprehension) What is the biblical definition of 'mortification of sin' in John Owen, and why is it a lifelong task for those already saved?",
+        "(Comprehension) Why is the Spirit alone the effective agent who mortifies sin, and what is the decisive difference from artificial legalistic asceticism?",
+        "(Reflection) What sense of spiritual urgency does the warning 'be killing sin or sin will be killing you' give to my daily spiritual warfare?",
+        "(Application) Against secret lusts and temptations rising within me, how will I specifically seek and apply the grace of the cross and the Spirit's help?"
+      ],
+      "questions_ko": [
+        "(이해) 존 오웬이 말하는 '죄 죽이기(Mortification)'의 성경적 정의는 무엇이며, 왜 이미 구원받은 성도에게 평생 필요한 과제입니까?",
+        "(이해) 오직 성령만이 죄를 죽이는 유효한 주체가 되시는 이유는 무엇이며, 인위적인 율법적 금욕주의와의 결정적 차이는 무엇입니까?",
+        "(묵상) \"죄를 끊임없이 죽이지 않으면 죄가 당신을 죽일 것이다\"라는 경고가 나의 일상 속 영적 전쟁에 주는 영적 위기감은 어떠합니까?",
+        "(적용) 내 안에 은밀히 일어나는 정욕과 유혹에 맞서, 십자가의 은혜와 성령의 도우심을 구체적으로 어떻게 간구하고 적용하겠습니까?"
+      ],
+      "prayer_tet": "Espiritu Santu, labele halo hau husik hela sala subar no korrupsaun ne'ebé hela iha hau laran. Hau konfesa katak ho hau nia forsa no desizaun rasik hau labele manán sala, nune'e loron-loron liuhusi raan krús no kbiit Espiritu nian, oho habelun-aat sala ne'ebé hela iha hau laran. Halo hau matan-moris no atentu nafatin ba espirituál, no moris iha santifikasaun loos ne'ebé haloot santidade Kristu nian. Iha naran Jesus Kristu. Amen.",
+      "prayer_en": "Holy Spirit, keep me from ignoring hidden sin and corruption remaining within me. I confess I cannot overcome sin by my own strength or resolve, so day by day through the blood of the cross and the power of the Spirit, put to death indwelling sin. Keep me spiritually watchful and alert, living in true sanctification that reflects Christ's holiness. In Jesus Christ's name. Amen.",
+      "prayer_ko": "거룩하신 성령님, 제 안에 잔존하는 은밀한 죄와 부패함을 외면하지 않게 하소서. 제 힘과 결단으로는 죄를 이길 수 없음을 고백하오니, 날마다 십자가의 보혈과 성령의 권능으로 내주하는 죄의 정욕을 죽이게 하소서. 영적으로 늘 깨어 긴장하며, 그리스도의 거룩함을 닮아가는 진정한 성화의 삶을 살게 하소서. 예수 그리스도의 이름으로 기도합니다. 아멘.\n\n---"
+    }
+  },
+  {
+    "book_id": 7,
+    "title_tet": "Sakrifisiu Ne'ebé Simu",
+    "title_en": "The Acceptable Sacrifice",
+    "title_ko": "열납되는 제사",
+    "author": "John Bunyan",
+    "author_en": "John Bunyan",
+    "cover_image": "images/bookLet/booklet_07.jpg",
+    "page1": {
+      "summary_tet": "Sakrifísiu ne'ebé aas liu no folin-boot liu ne'ebé Maromak simu ho haksolok la'ós hahalok relijiozu husi liur ka rituál boot, maibé de'it 'laran ne'ebé nakfera no kontritu'. Fuan naturál ema nian iha hun mak to'os no foti-aan hanesan fatuk no labele duni harahun aan rasik ho forsa rasik. Maibé bainhira Espiritu uza martelu liafuan santu hodi tuku konsiénsia maksalak nian, klamar komprende ninia kiak no klean sala nian no hakruuk iha oin Maromak ho moras espirituál todan no triste santu. Maromak la hatún ka husik ema ne'ebé husik méritu rasik no mai ho laran nakfera, maibé falun kanek sira-ne'e ho raan krús Kristu nian de'it no fó kura no kmaan rohan-laek. Laran ne'ebé nakfera mak templu santu no sakrifísiu ne'ebé merese simu iha ne'ebé sarani fahe komunhaun kle'an ho Maromak. Iha fuan ne'ebé harahun ho loos, Maromak fakar barak grasa lalehan nian ne'ebé boot no dame rohan-laek. Fuan nakfera mak hela-fatin santu ne'ebé grasa Maromak nian hela.",
+      "summary_en": "The highest and most acceptable sacrifice to God is not outward religious performance or grand ceremony, but 'a broken and contrite heart.' The natural human heart is rock-hard and proud and cannot break itself by its own strength. Yet when the Spirit strikes the sinner's conscience with the hammer of the holy Word, the soul sees its misery and depth of sin and bows before God in godly sorrow and contrition. God never despises or turns away those who renounce self-merit and come with a broken heart, but binds up their wounds with Christ's blood and gives lasting healing and comfort. A broken heart is the sacred temple and acceptable sacrifice where believers commune intimately with God, upon which God pours abundant heavenly grace and eternal peace.",
+      "summary_ko": "하나님께서 기뻐 받으시는 가장 뛰어나고 가치 있는 제사는 외적인 종교적 행위나 웅장한 의식이 아니라, 오직 '상하고 통회하는 심령(A broken and contrite heart)'입니다. 인간의 자연스러운 마음은 본래 바위처럼 완고하고 교만하여 스스로의 힘으로는 결코 자신을 깨뜨릴 수 없습니다. 그러나 성령께서 거룩한 말씀의 망치를 사용하여 죄인의 양심을 두드리실 때, 영혼은 자신의 비참함과 죄의 깊이를 깨닫고 심각한 영적 통증과 거룩한 근심 속에 하나님 앞에 무릎 꿇게 됩니다. 하나님은 이렇게 자신의 공로를 포기하고 상한 마음으로 나아오는 자를 결코 멸시하거나 외면하지 않으시며, 오직 그리스도의 십자가 보혈로 그 상처를 싸매시고 영원한 치유와 위로를 베푸십니다. 상한 심령이야말로 성도가 하나님과 친밀한 교제를 나누는 거룩한 성전이자 받으실 만한 제사입니다. 참되게 깨어진 심령 위에 하나님은 하늘의 크신 은혜와 영원한 평안을 넘치도록 부어주십니다. 상한 마음은 하나님 은혜가 거하는 거룩한 처소입니다.",
+      "summary_ko_char_count": 512,
+      "summary_tet_char_count": 956
+    },
+    "page2": {
+      "scriptures": [
+        {
+          "ref_code": "PSA.51.17",
+          "label_tet": "Salmo 51:17",
+          "label_en": "Psalm 51:17",
+          "label_ko": "시편 51:17",
+          "text_tet": "Sakrifísiu sira Maromak nian mak klamar ne'ebé nakfera; ó, Maromak, ó la hatún fuan ne'ebé nakfera no kontritu.",
+          "text_en": "My sacrifice, O God, is a broken spirit; a broken and contrite heart you, God, will not despise.",
+          "text_ko": "하나님께서 구하시는 제사는 상한 심령이라 하나님이여 상하고 통회하는 마음을 주께서 멸시하지 아니하시리이다"
+        },
+        {
+          "ref_code": "ISA.57.15",
+          "label_tet": "Isaias 57:15",
+          "label_en": "Isaiah 57:15",
+          "label_ko": "이사야 57:15",
+          "text_tet": "Tanba nune'e mak Nia ne'ebé aas no santu, ne'ebé hela iha rohan-laek no nia naran Santu dehan: Hau hela iha fatin aas no santu, no mós hamutuk ho ida ne'ebé kontritu no laran-kraik, atu fó moris fali ba klamar ema laran-kraik sira no fó moris fali ba fuan sira ne'ebé kontritu.",
+          "text_en": "For this is what the high and exalted One says—he who lives forever, whose name is holy: 'I live in a high and holy place, but also with the one who is contrite and lowly in spirit, to revive the spirit of the lowly and to revive the heart of the contrite.'",
+          "text_ko": "내가 높고 거룩한 곳에 있으며 또한 통회하고 마음이 겸손한 자와 함께 있나니 이는 겸손한 자의 영을 소생시키며 통회하는 자의 마음을 소생시키려 함이라"
+        },
+        {
+          "ref_code": "ISA.61.1",
+          "label_tet": "Isaias 61:1",
+          "label_en": "Isaiah 61:1",
+          "label_ko": "이사야 61:1",
+          "text_tet": "Espiritu Nai Maromak iha Hau leten, tanba Nai hili ona Hau atu fó liafuan di'ak ba ema kiak sira; Nia haruka Hau atu kura sira ne'ebé laran-kanek...",
+          "text_en": "The Spirit of the Sovereign LORD is on me, because the LORD has anointed me to proclaim good news to the poor. He has sent me to bind up the brokenhearted...",
+          "text_ko": "주 여호와의 영이 내게 내리셨으니 이는 여호와께서 내게 기름을 부으사 가난한 자에게 아름다운 소식을 전하게 하려 하심이라 나를 보내사 마음이 상한 자를 고치며..."
+        },
+        {
+          "ref_code": "PRO.28.13",
+          "label_tet": "Provérbios 28:13",
+          "label_en": "Proverbs 28:13",
+          "label_ko": "잠언 28:13",
+          "text_tet": "Ema ne'ebé subar nia sala sei la hetan susesu, maibé ema ne'ebé konfesa no husik sala sei hetan mizerikórdia.",
+          "text_en": "Whoever conceals their sins does not prosper, but the one who confesses and renounces them finds mercy.",
+          "text_ko": "자기의 죄를 숨기는 자는 형통하지 못하나 죄를 자복하고 버리는 자는 불쌍히 여김을 받으리라"
+        }
+      ],
+      "questions_tet": [
+        "(Kompreensaun) Saida mak kondisaun espirituál husi 'laran ne'ebé nakfera no kontritu' ne'ebé John Bunyan enfatiza, no tansá ida-ne'e sai sakrifísiu aas liu ba Maromak duké sakrifísiu husi liur hotu?",
+        "(Kompreensaun) Oinsá serbisu Espiritu nian ne'ebé harahun fuan maksalak ne'ebé to'os no asaun liafuan Bíblia nian mosu ho espesífiku?",
+        "(Meditasaun) Karaterístika prinsipál sira husi sarani ne'ebé iha ho loos laran nakfera (sensibilidade ba sala, haraik aan kle'an, orasaun no agradesimentu) iha hau nia moris agora ka lae?",
+        "(Aplikasaun) Bainhira fuan sai to'os ka maran espirituálmente, saida mak hau sei deside atu bá iha tronu grasa nian hodi konfesa no buka bensaun laran nakfera nian?"
+      ],
+      "questions_en": [
+        "(Comprehension) What spiritual state is a 'broken and contrite heart' in John Bunyan, and why is it more acceptable to God than all outward sacrifices?",
+        "(Comprehension) How do the Spirit's work breaking a hard sinner's heart and the operation of Scripture specifically take place?",
+        "(Reflection) Are the marks of a truly broken heart—sensitivity to sin, deep humility, prayer, and gratitude—present in my life right now?",
+        "(Application) When my heart grows hard or spiritually dry, what do I resolve to do to approach the throne of grace, confess, and seek brokenness?"
+      ],
+      "questions_ko": [
+        "(이해) 존 번연이 강조하는 '상하고 통회하는 심령'이란 어떤 영적 상태이며, 왜 이것이 모든 외적 제사보다 하나님께 뛰어난 제사가 됩니까?",
+        "(이해) 완악한 죄인의 마음을 깨뜨리시는 성령의 역사와 성경 말씀의 작용은 구체적으로 어떻게 나타납니까?",
+        "(묵상) 참되게 상한 심령을 가진 성도에게 나타나는 주요 특징들(죄에 대한 민감함, 깊은 겸손, 기도와 감사)이 지금 내 삶 속에 있습니까?",
+        "(적용) 마음이 완고해지거나 영적으로 매말라 있을 때, 은혜의 보좌 앞에 나가 자복하고 상한 심령의 복을 구하기 위해 무엇을 결단하겠습니까?"
+      ],
+      "prayer_tet": "Maromak ne'ebé buka ema kontritu, harahun ho martelu liafuan Nai nian no Espiritu nian fuan foti-aan no to'os iha hau laran. Bainhira hau komprende klean hau nia sala no hakruuk iha oin Nai ho laran nakfera, fakar grasa perdaun no kura husi krús. Fó dalan ba hau nia klamar sai sakrifísiu santu no merese simu iha ne'ebé Maromak hela. Iha naran Jesus Kristu. Amen.",
+      "prayer_en": "God who seeks the contrite, break the proud and hard heart within me with the hammer of Your Word and Spirit. As I see the depth of my sin and bow before You with a broken heart, pour out the grace of forgiveness and healing from the cross. Make my spirit a holy and acceptable sacrifice where You dwell. In Jesus Christ's name. Amen.",
+      "prayer_ko": "통회하는 자를 찾으시는 하나님, 제 안의 교만하고 딱딱한 마음을 주의 말씀과 성령의 망치로 깨뜨려 주소서. 제 죄의 깊이를 깨닫고 상한 심령으로 주 앞에 엎드릴 때, 십자가의 용서와 치유의 은혜를 부어 주소서. 제 심령이 하나님이 거하시는 거룩하고 받으실 만한 제사가 되게 하소서. 예수 그리스도의 이름으로 기도합니다. 아멘.\n\n---"
+    }
+  },
+  {
+    "book_id": 8,
+    "title_tet": "Orasaun Familia Labele Husik",
+    "title_en": "Family Prayer Not to Be Neglected",
+    "title_ko": "가정 기도의 중요성",
+    "author": "Isaac Backus",
+    "author_en": "Isaac Backus",
+    "cover_image": "images/bookLet/booklet_08.jpg",
+    "page1": {
+      "summary_tet": "Kultu família no orasaun família loron-loron mak obrigasaun espirituál ne'ebé loos no priviléjiu grasa santu ne'ebé família sarani tenke fó ba Maromak. Bíblia fó sasin ho klaru kona-ba nesesidade kultu família liuhusi ezemplu patriarka sira iha Testamentu Tuan ne'ebé harii altár bainhira muda, husu loron-loron 'ai-han loron-loron nian' iha Orasaun Nai nian, no mandamentu Testamentu Foun atu harohan lahó para. Razaun barak—hanesan moris okupadu, falta kapasidade atu lidera orasaun, la iha vontade, ka hanoin sala kona-ba legalizmu—mai husi ignoránsia espirituál no foti-aan ne'ebé la hamta'uk Maromak. Xefe família tenke deside nu'udar guarda espirituál família nian atu harii nafatin loron-loron família ho orasaun, no fó eransa piedade ne'ebé la aat ba oan no jerasaun tuirmai hodi rekoñese Maromak nu'udar soberanu família nian. Família ne'ebé harii ona altár orasaun sei simu nafatin kuidadu, dame no prosperidade espirituál husi Nai. Hakail-fatin dahuluk atu harii família santu mak família tomak serbi ho loos Maromak loron-loron ho orasaun. Orasaun família mak kanal prinsipál atu entrega fiar.",
+      "summary_en": "Family worship and daily family prayer are a rightful spiritual duty and sacred privilege of grace that Christian households owe to God. Scripture testifies to family worship through the Old Testament patriarchs building altars wherever they traveled, the Lord's Prayer petition for 'daily bread,' and New Testament commands to pray without ceasing. Common excuses—busyness, inability to lead prayer, lack of desire, or misconceptions of legalism—spring from spiritual ignorance and pride that fail to revere God. Heads of households must resolve as spiritual watchmen to build up the family daily in prayer, acknowledging God as Sovereign over the home to pass down an uncorrupted legacy of godliness to children and future generations. Homes with a prayer altar experience ongoing care, peace, and spiritual flourishing.",
+      "summary_ko": "가정 예배와 매일 드리는 가정 기도는 성도 가정이 하나님께 드려야 할 마땅한 영적 의무이자 거룩한 은혜의 특권입니다. 성경은 구약 족장들이 이동할 때마다 제단을 쌓았던 본과 주기도문의 '일용할 양식'을 위한 일상적 간구, 그리고 쉬지 말고 기도하라는 신약의 명령을 통해 가정 예배의 필수성을 명확히 증거합니다. 바쁜 일상, 기도 인도 능력의 부족, 의욕 없음, 혹은 율법주의에 대한 무지한 오해 등 수많은 핑계는 사실 하나님을 경외하지 않는 영적 무지와 교만에서 비롯된 것입니다. 가장은 가정을 영적으로 파수하는 파수꾼으로서 결단하여 매일 가정을 기도로 바로 세워야 하며, 하나님을 가정의 주권자로 인정함으로써 자녀와 다음 세대에 훼손되지 않는 경건의 유산을 물려주어야 합니다. 기도의 제단이 세워진 가정에는 주님의 보살핌과 평안, 영적 번성이 지속적으로 임하게 됩니다. 거룩한 가정을 이루는 첫걸음은 온 가족이 기도로 매일 하나님을 바르게 섬기는 일입니다. 가정 기도는 신앙 전수의 핵심 통로입니다.",
+      "summary_ko_char_count": 504,
+      "summary_tet_char_count": 1105
+    },
+    "page2": {
+      "scriptures": [
+        {
+          "ref_code": "JOS.24.15",
+          "label_tet": "Josué 24:15",
+          "label_en": "Joshua 24:15",
+          "label_ko": "여호수아 24:15",
+          "text_tet": "Maibé se serbi Nai la di'ak iha imi nia matan, hili ohin loron sé mak imi sei serbi... Maibé ba hau no hau nia uma-laran, ami sei serbi Nai.",
+          "text_en": "But if serving the LORD seems undesirable to you, then choose for yourselves this day whom you will serve... But as for me and my household, we will serve the LORD.",
+          "text_ko": "만일 여호와를 섬기는 것이 너희에게 좋지 않게 보이거든... 너희가 섬길 자를 오늘 택하라 오직 나와 내 집은 여호와를 섬기겠노라 하니"
+        },
+        {
+          "ref_code": "MAT.6.11",
+          "label_tet": "Mateus 6:11",
+          "label_en": "Matthew 6:11",
+          "label_ko": "마태복음 6:11",
+          "text_tet": "Fó mai ami ohin ami nia ai-han loron-loron nian.",
+          "text_en": "Give us today our daily bread.",
+          "text_ko": "오늘 우리에게 일용할 양식을 주시옵고"
+        },
+        {
+          "ref_code": "1PE.3.7",
+          "label_tet": "1 Pedro 3:7",
+          "label_en": "1 Peter 3:7",
+          "label_ko": "베드로전서 3:7",
+          "text_tet": "La'en sira, hanesan ne'e mós, hela hamutuk ho imi nia feen sira ho koñesimentu... atu imi nia orasaun sira labele taka.",
+          "text_en": "Husbands, in the same way be considerate as you live with your wives... so that nothing will hinder your prayers.",
+          "text_ko": "남편들아 이와 같이 지식을 따라 너희 아내와 동거하고... 이는 너희 기도가 막히지 아니하게 하려 함이라"
+        },
+        {
+          "ref_code": "1TH.5.17-18",
+          "label_tet": "1 Tesalonika 5:17-18",
+          "label_en": "1 Thessalonians 5:17-18",
+          "label_ko": "데살로니가전서 5:17-18",
+          "text_tet": "Harohan beibeik, agradese iha buat hotu; tanba ida-ne'e mak Maromak nia hakarak iha Kristu Jesus ba imi.",
+          "text_en": "Rejoice always, pray continually, give thanks in all circumstances; for this is God's will for you in Christ Jesus.",
+          "text_ko": "쉬지 말고 기도하라 범사에 감사하라 이것이 그리스도 예수 안에서 너희를 향하신 하나님의 뜻이니라"
+        }
+      ],
+      "questions_tet": [
+        "(Kompreensaun) Saida mak baze bíbliku sira ba orasaun família loron-loron ne'ebé Backus aprezenta liuhusi moris patriarka Testamentu Tuan, Orasaun Nai nian, no mandamentu Testamentu Foun?",
+        "(Kompreensaun) Oinsá Bíblia kontra razaun prinsipál sira husi ema ne'ebé la tau-matan ba orasaun família (falta kapasidade, preokupasaun legalizmu, la iha vontade)?",
+        "(Meditasaun) Bainhira hateke ba avizu katak 'família ne'ebé la harohan hanesan família jentiu ne'ebé la koñese Maromak' (Jer 10:25), saida mak situasaun espirituál atual iha ami nia família?",
+        "(Aplikasaun) Atu harii no mantein fali loron-loron altár orasaun iha ami nia família, mudansa espesífiku saida mak hau tenke halo nu'udar xefe família ka membru?"
+      ],
+      "questions_en": [
+        "(Comprehension) What biblical grounds for daily family prayer does Backus present from Old Testament patriarchs, the Lord's Prayer, and New Testament commands?",
+        "(Comprehension) How does Scripture refute common excuses for neglecting family prayer (lack of ability, fear of legalism, lack of inclination)?",
+        "(Reflection) In light of the warning that prayerless families are like heathen nations that do not call on God (Jer. 10:25), what is our family's spiritual condition?",
+        "(Application) What concrete change must I make as head or member of the household to rebuild and maintain a daily altar of family prayer?"
+      ],
+      "questions_ko": [
+        "(이해) 백커스가 구약 족장들의 삶과 주기도문, 신약의 명령을 통해 제시하는 매일 가정 기도의 성경적 근거들은 무엇입니까?",
+        "(이해) 가정 기도를 소홀히 하는 사람들이 대는 대표적인 핑계들(능력 부족, 율법주의 우려, 의욕 없음)에 대해 성경은 어떻게 반박합니까?",
+        "(묵상) \"기도하지 않는 가정은 하나님을 모르는 이방인 가정과 같다\"는 경고(렘 10:25)에 비추어 볼 때 우리 가정의 영적 현주소는 어떠합니까?",
+        "(적용) 우리 가정 안에서 매일 기도의 제단을 다시 쌓고 유지하기 위해, 내가 가장이나 구성원으로서 실천해야 할 구체적인 변화는 무엇입니까?"
+      ],
+      "prayer_tet": "Aman Maromak ne'ebé kria família no bolu sai komunidade santu, hau arrepende aan ba husik hela altár orasaun família tanba razaun okupadu no baruk. Hanesan konfisaun Josué nian, lori hau no hau nia uma-laran atu serbi de'it Nai ho ksolok. Buka grasa Nai nian loron-loron ho orasaun, no halo piedade no agradesimentu sai barak iha família laran. Iha naran Jesus Kristu. Amen.",
+      "prayer_en": "Heavenly Father who created the family and called it to be a holy community, I repent of neglecting the family altar of prayer through excuses of busyness and sloth. Like Joshua's confession, lead me and my household to serve the LORD alone with joy. Let us seek Your grace daily in prayer and abound in godliness and gratitude within our home. In Jesus Christ's name. Amen.",
+      "prayer_ko": "가정을 창조하시고 거룩한 공동체로 부르신 하나님 아버지, 바쁘다는 핑계와 게으름으로 가정 기도의 제단을 소홀히 했던 것을 회개합니다. 여호수아의 고백처럼 나와 우리 집이 오직 여호와만을 기쁨으로 섬기게 하소서. 매일 기도로 주님의 은혜를 구하며, 가정 안에 경건과 감사가 넘치게 하소서. 예수 그리스도의 이름으로 기도합니다. 아멘.\n\n---"
+    }
+  },
+  {
+    "book_id": 9,
+    "title_tet": "Karidade Kristaun",
+    "title_en": "Christian Charity",
+    "title_ko": "그리스도인의 사랑과 자선",
+    "author": "Jonathan Edwards",
+    "author_en": "Jonathan Edwards",
+    "cover_image": "images/bookLet/booklet_09.jpg",
+    "page1": {
+      "summary_tet": "Karidade kristaun ne'ebé loke liman atu ajuda viziñu no maun-alin ne'ebé iha difikuldade no kiak la'ós de'it hahalok di'ak pesoál ka opsaun, maibé mandamentu bíbliku todan no obrigasaun esensiál husi ema ne'ebé salva ona. Ema hotu iha solidariedade fraternidade iha Maromak, no sasán hotu ne'ebé sarani iha la'ós propriedade absoluta rasik, maibé entrega de'it nu'udar mordomu di'ak Maromak nian. Baze kle'an liu husi karidade mak domin la iha rohan krús nian iha ne'ebé Kristu ne'ebé riku sai kiak rasik tanba ita no fó nia moris rasik. Tau razaun oioin hodi kaer metin sasán ho laran-kloot no la tau-matan ba ajuda mak hahalok ne'ebé bolu tesi-lia justisa Maromak nian; iha sorin seluk, ba ema ne'ebé fahe ho haksolok iha naran Nai nian, Maromak sei prienxe ho serteza ho rekoñesimentu barak iha rai no lalehan rohan-laek. Ajuda no karidade domin nian mak fuan no sasin grasa ne'ebé furak liu no nobre liu ne'ebé mosu iha moris sarani salva ona. Domin ba viziñu mak medida kompletu ne'ebé prova fiar loos salvasaun sarani nian.",
+      "summary_en": "Christian charity—opening one's hand to help poor and needy neighbors and brethren—is not mere optional philanthropy, but a solemn biblical command and essential duty of the redeemed. All people share a bond in God, and all possessions entrusted to believers are held as stewards of God rather than absolute owners. The deepest ground of charity is the boundless love of the cross, where the rich Christ became poor for us and gave His life. Making excuses to hoard wealth selfishly and neglect almsgiving invites God's righteous judgment, whereas those who share willingly in the Lord's name are richly recompensed by God now and in eternity. Loving generosity is a precious fruit and proof of saving grace and a true measure of genuine faith.",
+      "summary_ko": "곤란하고 가난한 이웃과 형제를 향해 손을 펼쳐 돕는 그리스도인의 자선(Charity)은 단순한 개인적 선행이나 선택 사항이 아니라, 하나님의 엄중한 성경적 명령이자 구원받은 자의 필수적 의무입니다. 모든 인간은 하나님 안에서 형제적 연대감을 지니고 있으며, 성도가 소유한 모든 물질은 자신의 절대적 소유가 아니라 하나님의 선한 청지기로서 위탁받은 것에 불과합니다. 자선의 가장 깊은 근거는 부요하신 그리스도께서 우리를 위해 친히 가난하게 되시고 자신의 생명까지 내어주신 십자가의 무한한 사랑입니다. 여러 핑계를 대며 물질을 인색하게 쥐고 구제를 소홀히 하는 것은 하나님의 공의로운 심판을 부르는 행위이며, 반대로 주님의 이름으로 기꺼이 나누는 자에게는 하나님께서 이 땅과 영원한 하늘의 풍성한 보상으로 반드시 채워주십니다. 사랑의 구제와 자선은 구원받은 성도의 삶에서 나타나는 가장 아름답고 고귀한 은혜의 열매이자 증거입니다. 이웃 사랑은 성도의 구원받은 참된 신앙을 입증하는 온전한 척도입니다.",
+      "summary_ko_char_count": 501,
+      "summary_tet_char_count": 1029
+    },
+    "page2": {
+      "scriptures": [
+        {
+          "ref_code": "DEU.15.7-8",
+          "label_tet": "Deuteronómiu 15:7-8",
+          "label_en": "Deuteronomy 15:7-8",
+          "label_ko": "신명기 15:7-8",
+          "text_tet": "Se iha maun-alin kiak ruma hela hamutuk ho ó iha ida husi ó nia sidade iha rai ne'ebé Nai ó nia Maromak fó ba ó, labele halo to'os ó nia fuan ka taka ó nia liman hasoru ó nia maun-alin kiak; maibé loke loos ó nia liman ba nia no fó empresta buat ne'ebé nia presiza ho barak.",
+          "text_en": "If anyone is poor among your fellow Israelites in any of the towns of the land the LORD your God is giving you, do not be hardhearted or tightfisted toward them. Rather, be openhanded and freely lend them whatever they need.",
+          "text_ko": "네 하나님 여호와께서 네게 주신 땅 어느 성문에서든지 가난한 형제가 너와 함께 거하거든 그 가난한 형제에게 네 마음을 완악하게 하지 말며 네 손을 쥐지 말고 반드시 네 손을 그에게 펼쳐서 그에게 필요한 것으로 넉넉히 꾸어주라"
+        },
+        {
+          "ref_code": "2CO.8.9",
+          "label_tet": "2 Korintu 8:9",
+          "label_en": "2 Corinthians 8:9",
+          "label_ko": "고린도후서 8:9",
+          "text_tet": "Tanba imi hatene grasa ita-nia Nai Jesus Kristu nian, katak maski Nia riku, Nia sai kiak tanba imi, atu liuhusi nia kiak imi sai riku.",
+          "text_en": "For you know the grace of our Lord Jesus Christ, that though he was rich, yet for your sake he became poor, so that you through his poverty might become rich.",
+          "text_ko": "우리 주 예수 그리스도의 은혜를 너희가 알거니와 부요하신 이로서 너희를 위하여 가난하게 되심은 그의 가난함으로 말미암아 너희를 부요하게 하려 하심이라"
+        },
+        {
+          "ref_code": "PRO.19.17",
+          "label_tet": "Provérbios 19:17",
+          "label_en": "Proverbs 19:17",
+          "label_ko": "잠언 19:17",
+          "text_tet": "Ema ne'ebé fó mizerikórdia ba ema kiak fó empresta ba Nai, no Nia sei selu fali nia hahalok di'ak.",
+          "text_en": "Whoever is kind to the poor lends to the LORD, and he will reward them for what they have done.",
+          "text_ko": "가난한 자를 불쌍히 여기는 것은 여호와께 꾸어 드리는 것이니 그의 선행을 그에게 받아 주시리라"
+        },
+        {
+          "ref_code": "JAS.2.15-16",
+          "label_tet": "Tiago 2:15-16",
+          "label_en": "James 2:15-16",
+          "label_ko": "야고보서 2:15-16",
+          "text_tet": "Se maun-alin ka biin-alin ruma la iha roupa no falta ai-han loron-loron nian, no ida husi imi dehan ba sira: Bá ho dame, sai manas no bosu, maibé la fó buat ne'ebé isin presiza, sá benefísiu mak ida-ne'e fó?",
+          "text_en": "Suppose a brother or a sister is without clothes and daily food. If one of you says to them, 'Go in peace; keep warm and well fed,' but does nothing about their physical needs, what good is it?",
+          "text_ko": "만일 형제나 자매가 헐벗고 숙할 양식이 없는데... 그 몸에 쓸 것을 주지 아니하면 무슨 유익이 있으리요"
+        }
+      ],
+      "questions_tet": [
+        "(Kompreensaun) Saida mak obrigasaun no baze fiar husi 'karidade kristaun' ne'ebé Jonathan Edwards esplika bazeia ba Deuteronómiu 15?",
+        "(Kompreensaun) Oinsá grasa krús Jesus Kristu nian no sai kiak (2 Kor 8:9) aprezenta ezemplu ba ita-nia hanoin kona-ba sasán no domin ba viziñu?",
+        "(Meditasaun) Hau fiar ho loos ka lae lia-loos katak 'fó ba ema kiak la'ós lakon, maibé hanesan fini ne'ebé kuda ba Maromak'?",
+        "(Aplikasaun) Atu la husik hela maun-alin ka viziñu ne'ebé iha nesesidade no fahe hau nia sasán no tempu ho domin Nai nian ho espíritu mordomu, saida mak planu prátiku?"
+      ],
+      "questions_en": [
+        "(Comprehension) What is the duty and theological ground of 'Christian charity' explained by Jonathan Edwards from Deuteronomy 15?",
+        "(Comprehension) How does the grace of Christ's cross and His becoming poor (2 Cor. 8:9) pattern our view of wealth and neighbor-love?",
+        "(Reflection) Do I truly believe the truth that 'giving to the poor is not loss, but seed sown to God'?",
+        "(Application) What is my practical step to care for needy brethren and neighbors and steward my resources and time in Christ's love?"
+      ],
+      "questions_ko": [
+        "(이해) 조나단 에드워즈가 신명기 15장을 바탕으로 설명하는 '그리스도인의 자선'의 의무와 신앙적 근거는 무엇입니까?",
+        "(이해) 예수 그리스도의 십자가 은혜와 가난하게 되심(고후 8:9)은 우리의 물질관과 이웃 사랑에 어떤 본을 제시합니까?",
+        "(묵상) \"가난한 자에게 내어주는 것은 잃어버리는 것이 아니라 하나님께 심는 씨앗과 같다\"는 진리를 나는 진정 믿고 있습니까?",
+        "(적용) 주변의 궁핍한 형제나 이웃을 외면하지 않고, 청지기 정신으로 내 재물과 시간을 주님의 사랑으로 나누기 위한 실천 방안은 무엇입니까?"
+      ],
+      "prayer_tet": "Maromak Hun Domin Nian, hau hanoin grasa Nai nian ne'ebé sai kiak rasik tanba ami no fó nia moris rasik. Hau konfesa katak sasán ne'ebé iha hau nia liman la'ós hau nian, maibé Nai nian, nune'e labele taka fuan ka kaer metin liman, maibé loke luan liman ba viziñu ne'ebé iha nesesidade. Fó dalan ba hau atu fahe ho haksolok lahó laran-kloot no sai kanal ne'ebé suli domin Nai nian ba mundu. Iha naran Jesus Kristu. Amen.",
+      "prayer_en": "God of love, I remember the grace of the Lord who became poor for us and gave His very life. I confess that the resources in my hands are not my own but Yours, so keep me from closing my heart or tightening my hand, and let me open my hand wide to the needy. Let me give joyfully without stinginess and flow Your love into the world. In Jesus Christ's name. Amen.",
+      "prayer_ko": "사랑의 원천이신 하나님, 저희를 위해 친히 가난하게 되시고 생명까지 내어주신 주님의 은혜를 기억합니다. 제 손에 있는 물질이 제 것이 아닌 주님의 것임을 고백하오니, 마음을 닫거나 손을 쥐지 않고 곤궁한 이웃에게 손을 넓게 펴게 하소서. 인색함 없이 즐거이 나누며 주님의 사랑을 세상에 흘려보내는 유통자 되게 하소서. 예수 그리스도의 이름으로 기도합니다. 아멘.\n\n---"
+    }
+  },
+  {
+    "book_id": 10,
+    "title_tet": "Hanoin Ba Jovem Mane Sira",
+    "title_en": "Thoughts for Young Men",
+    "title_ko": "청년들에게 주는 조언",
+    "author": "John C. Ryle",
+    "author_en": "John C. Ryle",
+    "cover_image": "images/bookLet/booklet_10.jpg",
+    "page1": {
+      "summary_tet": "Tempu joven mak tempu kuda-oan espirituál moris nian no tempu osan-mean ne'ebé desisivu no folin-boot liu ne'ebé determina karáter moris tomak no destinasaun rohan-laek. Maibé joven sira hasoru ho fasil perigu no tentasaun lima ne'ebé fatal: foti-aan, buka konfortu isin liu, hakmatek espirituál falsu, hatún relijiaun, no tauk ema nia haree no grupu idade hanesan. Ryle enkora maka'as joven sira atu hateke ho klaru ba falsidade no rezultadu todan sala nian, no labele adia to'o katuas, maibé simu kedas agora Jesus Kristu ne'ebé sai guarda tempu joven nian hodi hahú komunhaun pesoál kle'an. Atu sees husi matan-ween no arrependimentu moris tomak tanba liberdade iha tempu joven, joven sira tenke haka'as aan ho ativu iha treinamentu piedade espirituál ne'ebé hamoos klamar ho liafuan no orasaun no serbi Maromak ho desizaun santu. Fiar fiél ne'ebé entrega ba Maromak iha tempu joven sai ahi-oan fiar gloriozu ne'ebé leno moris tomak no liga ho folin-boot ba koroa lalehan ne'ebé nunka mamar. Desizaun piedade iha tempu joven mak xave prinsipál ne'ebé determina ksolok moris tomak no rohan-laek.",
+      "summary_en": "Youth is the spiritual seedtime of life and the decisive, precious window when lifelong character and eternal destiny are shaped. Yet young people are easily exposed to five fatal dangers and temptations: pride, indulgence in fleshly pleasure, false spiritual ease, contempt for religion, and fear of human opinion and peers. Ryle urges youth to face sin's deceit and tragic fruit, and without waiting for old age, to receive Jesus Christ now as Guardian of youth for intimate personal fellowship. To avoid lifelong tears and regret from youthful indulgence, youth must diligently cultivate godliness—cleansing the soul by the Word and prayer and serving God with holy resolve. Faith devoted to God in youth shines as a glorious lamp guiding life and leads to an unfading crown in heaven.",
+      "summary_ko": "청년의 시기는 인생의 영적 모내기철이자 평생의 성품과 영원한 운명이 결정되는 가장 결정적이고 귀중한 골든타임입니다. 그러나 청년들은 교만, 육체적 쾌락 탐닉, 영적 무사안일, 종교적 업신여김, 그리고 타인의 시선과 또래 집단을 두려워하는 5가지 치명적인 위험과 유혹에 매우 쉽게 노출되어 있습니다. 라이일은 청년들에게 죄의 간교함과 참혹한 결과를 직시하고, 나이가 들 때까지 미루지 말고 지금 당장 젊음의 보호자이신 예수 그리스도를 영접하여 친밀한 인격적 교제를 시작하라고 강력히 권면합니다. 젊은 날의 방종으로 인한 평생의 눈물과 후회를 피하기 위해, 청년들은 말씀과 기도로 영혼을 정결케 하며 거룩한 결단으로 하나님을 섬기는 영적 경건 훈련에 적극 힘써야 합니다. 젊은 시절 하나님께 바쳐진 성실한 믿음은 평생의 삶을 온전히 비추는 영광스러운 신앙의 등불이 되며 결코 시들지 않는 하늘의 면류관으로 귀하게 연결됩니다. 청년기의 경건 결단이 평생과 영원한 행복을 결정짓는 가장 핵심적인 열쇠입니다.",
+      "summary_ko_char_count": 503,
+      "summary_tet_char_count": 1097
+    },
+    "page2": {
+      "scriptures": [
+        {
+          "ref_code": "TIT.2.6",
+          "label_tet": "Tito 2:6",
+          "label_en": "Titus 2:6",
+          "label_ko": "디도서 2:6",
+          "text_tet": "Hanesan ne'e mós, enkora joven mane sira atu kontrola aan.",
+          "text_en": "Similarly, encourage the young men to be self-controlled.",
+          "text_ko": "너는 이와 같이 젊은 한 사람들을 권면하여 신중하도록 하되"
+        },
+        {
+          "ref_code": "ECC.11.9",
+          "label_tet": "Elezia 11:9",
+          "label_en": "Ecclesiastes 11:9",
+          "label_ko": "전도서 11:9",
+          "text_tet": "Jovem, haksolok iha ó nia tempu joven, no halo ó nia fuan haksolok iha ó nia loron joven sira; la'o tuir dalan ne'ebé ó nia fuan hakarak no buat ne'ebé ó nia matan haree, maibé hatene katak ba buat hotu ne'e Maromak sei tesi lia ba ó.",
+          "text_en": "You who are young, be happy while you are young, and let your heart give you joy in the days of your youth. Follow the ways of your heart and whatever your eyes see, but know that for all these things God will bring you into judgment.",
+          "text_ko": "청년이여 네 어린 때를 즐거워하며 네 청년의 날들을 마음에 기뻐하여 마음에 원하는 길들과 네 눈이 보는 대로 행하라 그러나 하나님이 이 모든 일로 말미암아 너를 심판하실 줄 알라"
+        },
+        {
+          "ref_code": "HEB.11.24-25",
+          "label_tet": "Ebreu 11:24-25",
+          "label_en": "Hebrews 11:24-25",
+          "label_ko": "히브리서 11:24-25",
+          "text_tet": "Liuhusi fiar Moisés, bainhira boot ona, lakohi bolu oan-mane Faraó nia oan-feto nian, no hili liu hetan terus hamutuk ho Maromak nia povu duké goza ksolok sala nian ba tempu uitoan,",
+          "text_en": "By faith Moses, when he had grown up, refused to be known as the son of Pharaoh's daughter. He chose to be mistreated along with the people of God rather than to enjoy the fleeting pleasures of sin,",
+          "text_ko": "믿음으로 모세는 장성하여 파라오의 공주의 아들이라 칭함받기를 거절하고 도리어 하나님의 백성과 함께 고난 받기를 잠시 죄악의 낙을 누리는 것보다 더 좋아하고"
+        },
+        {
+          "ref_code": "JER.3.4",
+          "label_tet": "Jeremias 3:4",
+          "label_en": "Jeremiah 3:4",
+          "label_ko": "예레미야 3:4",
+          "text_tet": "Ó la bolu ba Hau husi agora: 'Hau nia Aman, Ó mak guarda husi hau nia tempu joven'?",
+          "text_en": "Have you not just called to me: 'My Father, my friend from my youth'?",
+          "text_ko": "네가 이제부터는 내게 부르짖기를 나의 아버지여 아버지는 나의 청년 시절의 보호자이시오니 할 것이 아니겠느냐"
+        }
+      ],
+      "questions_tet": [
+        "(Kompreensaun) Saida mak perigu espirituál lima ne'ebé joven sira tenke kuida espesífiku ne'ebé J. C. Ryle aprezenta?",
+        "(Kompreensaun) Saida mak signifikadu husi liafuan 'tempu joven mak tempu kuda-oan moris nian no tempu ne'ebé determina karáter', no bensaun saida mak serbi Maromak bainhira sei joven?",
+        "(Meditasaun) Hau nunka sente moe ka dudu aan atu serbi Maromak tanba tauk ema seluk nia reputasaun ka haree husi grupu idade hanesan ka lae?",
+        "(Aplikasaun) Atu manán tentasaun ksolok no indiferensa espirituál no harii treinamentu piedade hodi lee Bíblia no harohan loron-loron, saida mak hau sei deside ohin?"
+      ],
+      "questions_en": [
+        "(Comprehension) What are the five spiritual dangers young men must especially guard against according to J. C. Ryle?",
+        "(Comprehension) What is the meaning of 'youth is the seedtime of life when character is formed,' and what is the blessing of serving God in youth?",
+        "(Reflection) Have I ever felt ashamed or hesitated to serve God out of fear of public opinion or peer pressure?",
+        "(Application) To overcome pleasures and spiritual indifference and build godliness through daily Bible reading and prayer, what will I decide today?"
+      ],
+      "questions_ko": [
+        "(이해) J. C. 라이일이 제시한 청년들이 특별히 경계해야 할 5가지 영적 위험 요소는 무엇입니까?",
+        "(이해) \"청년기는 일생의 모내기철이자 성품이 결정되는 시기\"라는 말의 의미와, 젊어서 하나님을 섬기는 것의 복됨은 무엇입니까?",
+        "(묵상) 세상 사람들의 평판이나 또래 집단의 시선을 두려워하여 하나님을 섬기는 것을 부끄러워하거나 망설인 적은 없습니까?",
+        "(적용) 쾌락의 유혹과 영적 무관심을 이겨내고, 매일 성경을 읽고 기도하며 경건의 훈련을 쌓기 위해 오늘 결단할 일은 무엇입니까?"
+      ],
+      "prayer_tet": "Maromak Guarda Tempu Jovem, iha tempu folin-boot moris nian, labele halo hau nia fuan dada husi paixaun no ksolok mundu nian. Labele halo hau tauk ema nia haree, maibé halo de'it Nai sai hau nia rekoñesimentu. Iha tempu joven, fó dalan ba hau atu hanoin Kriadór Maromak no hamoos hau nia klamar ho liafuan no orasaun, no uza ho ksolok nu'udar instrumentu santu Nai nian. Iha naran Jesus Kristu. Amen.",
+      "prayer_en": "God, Guardian of youth, in the precious season of life, keep my heart from being captured by worldly passions and pleasures. Keep me from fearing human eyes and make You alone my reward. In youth, help me remember my Creator, cleanse my soul with the Word and prayer, and be joyfully used as Your holy instrument. In Jesus Christ's name. Amen.",
+      "prayer_ko": "젊음의 보호자이신 하나님, 인생의 소중한 시기에 세상의 정욕과 쾌락에 마음을 빼앗기지 않게 하소서. 사람의 시선을 두려워하지 않고 오직 주님만을 저의 상급으로 삼게 하소서. 청년의 때에 창조주 하나님을 기억하며 말씀과 기도로 내 영혼을 정결케 하고, 주님의 거룩한 도구로 기쁨으로 쓰임받게 하소서. 예수 그리스도의 이름으로 기도합니다. 아멘."
+    }
+  }
+]

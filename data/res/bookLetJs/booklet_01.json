@@ -1,0 +1,402 @@
+{
+  "booklet_id": 1,
+  "author": "Arthur W. Pink",
+  "title_en": "The Attributes of God",
+  "title_tet": "Atributu sira Maromak nian",
+  "subtitle_en": "A Spiritual and Saving Knowledge of the Divine Character",
+  "subtitle_tet": "Konesimentu Espirituál no Salvasaun nian kona-ba Maromak nia Karakter",
+  "cover_image": "data/images/bookLet/booklet_01.jpg",
+  "cards": [
+    {
+      "card_index": 1,
+      "section_heading_en": "Preface - Acquaint Now Thyself with Him",
+      "section_heading_tet": "Lia-Uluk - Importánsia atu Hatene Maromak ho Loloos",
+      "scripture_en": "\"Acquaint now thyself with Him, and be at peace: thereby good shall come unto thee\" (Job 22:21). \"Let him that glorieth glory in this, that he understandeth and knoweth Me, that I am the LORD\" (Jer 9:23-24).",
+      "scripture_tet": "\"Hatene ba Nia agora no hetan dame; nune'e buat di'ak sei mai ba ó\" (Jó 22:21). \"Ema ne'ebé gaba aan, tenke gaba aan iha buat ida-ne'e: katak nia komprende no hatene Ha'u, katak Ha'u mak NA'I\" (Jeremias 9:23-24).",
+      "body_en": "A spiritual and saving knowledge of God is the greatest need of every human creature. The foundation of all true knowledge of God must be a clear mental apprehension of His perfections as revealed in Holy Scripture. An unknown God can neither be trusted, served, nor worshipped. Something more than a theoretical knowledge of God is needed by us. God is only truly known in the soul as we yield ourselves to Him, submit to His authority, and regulate all the details of our lives by His holy precepts and commandments.",
+      "body_tet": "Konesimentu espirituál no salvasaun nian kona-ba Maromak mak nesesidade boot liu ba kriatura umana hotu-hotu. Fundasaun ba konesimentu loos hotu kona-ba Maromak tenke mai husi komprensaun ne'ebé klaru kona-ba Ninia perfeisaun sira ne'ebé hatudu sai iha Eskritura Sagrada. Maromak ne'ebé ita la hatene labele hetan konfiansa, labele hetan servisu, no labele hetan adorasaun. Ita presiza liu fali konesimentu teóriku de'it. Ita hatene Maromak ho loloos iha ita-nia klamar bainhira ita entrega aan ba Nia, hakru'uk ba Ninia autoridade, no regula detallu hotu ita-nia moris nian tuir Ninia ukun-fuan santu sira.",
+      "key_takeaway_en": "True saving knowledge of God is not mere theory, but is gained by yielding ourselves to His sovereignty and obeying His Word.",
+      "key_takeaway_tet": "Konesimentu salvasaun nian ne'ebé loos la'ós teoria de'it, maibé ita hetan bainhira ita entrega aan ba Ninia soberania no halo tuir Ninia Liafuan."
+    },
+    {
+      "card_index": 2,
+      "section_heading_en": "Chapter 1. The Solitariness of God",
+      "section_heading_tet": "Kapítulu 1. Maromak nia Ezisténsia Mesak (Solitariness)",
+      "scripture_en": "\"In the beginning God\" (Gen 1:1). \"I am the LORD, I change not\" (Mal 3:6).",
+      "scripture_tet": "\"Iha hahú Maromak\" (Jénezis 1:1). \"Ha'u mak NA'I, Ha'u la muda\" (Malakias 3:6).",
+      "body_en": "During eternity past, God was alone: self-contained, self-sufficient, self-satisfied; in need of nothing. There was no heaven, no earth, no angels, no universe. Had a universe, angels, or human beings been necessary to Him in any way, they also had been called into existence from all eternity. The creating of them added nothing to God essentially, for His essential glory can be neither augmented nor diminished. God was under no constraint or necessity to create; that He chose to do so was purely a sovereign act determined by His own mere good pleasure.",
+      "body_tet": "Durante eternidade liubá, Maromak hela mesak: Nia rasik kompletu, sufisiente iha Nia aan rasik, no haksolok iha Nia aan rasik; la presiza buat ida. Laiha lalehan, laiha rai, laiha anju sira, no laiha universu. Se karik universu, anju sira ka ema presiza ba Nia, sira mós sei eziste ona husi eternidade. Kriasun la aumenta buat ida ba Maromak nia esénsia, tanba Ninia glória esensiál labele aumenta no labele hamenus. Maromak laiha obrigasaun atu kria; Nia hili atu kria nu'udar hahalok soberanu ida ne'ebé mai husi Ninia hakarak di'ak rasik.",
+      "key_takeaway_en": "From all eternity before creation, God was completely self-sufficient; creation was not out of need, but purely His sovereign good pleasure.",
+      "key_takeaway_tet": "Molok kriasun husi eternidade, Maromak sufisiente ona iha Nia aan rasik; kriasun la mai husi nesesidade, maibé husi Ninia hakarak soberanu de'it.",
+      "infographic": {
+        "type": "comparison",
+        "title_en": "God's Self-Sufficiency vs. Creaturely Dependence",
+        "title_tet": "Maromak nia Sufisiénsia Rasik vs. Kriatura nia Dependénsia",
+        "columns": [
+          {
+            "header_en": "God's Essential Self-Sufficiency",
+            "header_tet": "Maromak nia Sufisiénsia Esensiál",
+            "items_en": [
+              "Needs nothing outside Himself",
+              "Eternally self-satisfied in Triune unity",
+              "Essential glory never increases or decreases"
+            ],
+            "items_tet": [
+              "La presiza buat ida iha li'ur husi Nia aan",
+              "Haksolok ba nafatin iha unidade Trindade",
+              "Glória esensiál nunka aumenta ka hamenus"
+            ]
+          },
+          {
+            "header_en": "Creaturely Dependence",
+            "header_tet": "Kriatura nia Dependénsia",
+            "items_en": [
+              "Created purely by God's sovereign pleasure",
+              "Depends entirely on God for existence and life",
+              "Exists to manifest God's glory"
+            ],
+            "items_tet": [
+              "Kria de'it husi Maromak nia hakarak soberanu",
+              "Depende tomak ba Maromak ba ezisténsia no moris",
+              "Eziste atu hatudu sai Maromak nia glória"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "card_index": 3,
+      "section_heading_en": "Chapter 2. The Decrees of God",
+      "section_heading_tet": "Kapítulu 2. Maromak nia Dekretu sira",
+      "scripture_en": "\"According to the eternal purpose which He purposed in Christ Jesus our Lord\" (Eph 3:11).",
+      "scripture_tet": "\"Tuir planu rohan-laek ne'ebé Nia halo iha Kristu Jesus ita-nia Na'i\" (Éfezu 3:11).",
+      "body_en": "The decree of God is His purpose or determination with respect to future things. God's decrees relate to all future things without exception: whatever is done in time was foreordained before time began. His decrees are: (1) Eternal, for no unforeseen event ever arises to God; (2) Wise, selecting the best ends and fittest means; (3) Free, influenced by no external cause; and (4) Absolute and unconditional, never suspended upon uncertain human conditions.",
+      "body_tet": "Maromak nia dekretu mak Ninia planu ka desizaun kona-ba buat sira ne'ebé sei mosu iha futuru. Maromak nia dekretu sira abranje buat hotu iha futuru sein exesaun: buat hotu ne'ebé akontese iha tempu laran hetan ona ordenasaun molok tempu hahú. Ninia dekretu sira mak: (1) Rohan-laek (eternu), tanba laiha akontesimentu foun ne'ebé hakfodak Maromak; (2) Matenek, hili objetivu di'ak liu no meiu ne'ebé loos liu; (3) Livre, la hetan influénsia husi li'ur; no (4) Absolutu no sein kondisaun, la depende ba kondisaun umana ne'ebé la seguru.",
+      "key_takeaway_en": "God's decrees encompass all events and are eternal, wise, free, and unconditionally accomplished.",
+      "key_takeaway_tet": "Maromak nia dekretu sira abranje akontesimentu hotu no sai rohan-laek, matenek, livre, no kumpre sein kondisaun.",
+      "infographic": {
+        "type": "grid",
+        "title_en": "Four Properties of Divine Decrees",
+        "title_tet": "Atributu 4 husi Maromak nia Dekretu",
+        "items": [
+          {
+            "label_en": "1. Eternal",
+            "label_tet": "1. Rohan-laek",
+            "desc_en": "Fixed before time began; nothing is unforeseen.",
+            "desc_tet": "Determina molok tempu hahú; laiha buat ida ne'ebé la hatene uluk."
+          },
+          {
+            "label_en": "2. Wise",
+            "label_tet": "2. Matenek",
+            "desc_en": "Chooses the highest ends and fittest means.",
+            "desc_tet": "Hili objetivu aas liu no dalan ne'ebé adekuadu liu."
+          },
+          {
+            "label_en": "3. Free",
+            "label_tet": "3. Livre",
+            "desc_en": "Influenced by no external cause or creature.",
+            "desc_tet": "La hetan influénsia husi kauza esterna ka kriatura ruma."
+          },
+          {
+            "label_en": "4. Unconditional",
+            "label_tet": "4. Sein Kondisaun",
+            "desc_en": "Certain of fulfillment without human contingency.",
+            "desc_tet": "Sei kumpre ho serteza sein depende ba kondisaun ema nian."
+          }
+        ]
+      }
+    },
+    {
+      "card_index": 4,
+      "section_heading_en": "Chapter 3. The Knowledge of God",
+      "section_heading_tet": "Kapítulu 3. Maromak nia Konesimentu (Hatene Buat Hotu)",
+      "scripture_en": "\"Neither is there any creature that is not manifest in His sight: but all things are naked and opened unto the eyes of Him with whom we have to do\" (Heb 4:13).",
+      "scripture_tet": "\"Laiha kriatura ida ne'ebé subar iha Ninia oin, maibé buat hotu-hotu molik no nakloke iha Nia matan ne'ebé ita tenke hatán ba\" (Ebreu 4:13).",
+      "body_en": "God is omniscient. He knows everything possible and everything actual; all events and all creatures of the past, present, and future. Nothing escapes His notice, nothing can be hidden from Him, and nothing is forgotten by Him. His knowledge is perfect: He never errs, never changes, and never overlooks anything. To the wicked, this knowledge brings terror, for their secret sins are in the light of His countenance; but to the believer, God's omniscience brings deep comfort, for He knows the way we take.",
+      "body_tet": "Maromak hatene buat hotu (omnisciente). Nia hatene buat hotu ne'ebé bele akontese no buat hotu ne'ebé akontese duni; akontesimentu no kriatura hotu iha tempu uluk, agora no futuru. Laiha buat ida ne'ebé liu husi Ninia atensaun, labele subar buat ida husi Nia, no Nia nunka haluha buat ida. Ninia konesimentu perfeitu: Nia nunka sala, nunka muda, no nunka haluha buat ruma. Ba ema aat sira, konesimentu ne'e lori ta'uk tanba sira-nia sala subar nakloke iha Ninia naroman; maibé ba fiar-na'in sira, ida-ne'e lori konsolasaun kle'an tanba Nia hatene dalan ne'ebé ita la'o.",
+      "key_takeaway_en": "God's omniscience is a solemn warning to the wicked, yet a profound comfort to believers whose trials and motives are fully known to Him.",
+      "key_takeaway_tet": "Maromak nia konesimentu ba buat hotu sai avizu boot ba ema aat, maibé sai konsolasaun kle'an ba fiar-na'in sira tanba Nia hatene sira-nia terus no motivu hotu."
+    },
+    {
+      "card_index": 5,
+      "section_heading_en": "Chapter 4. The Foreknowledge of God",
+      "section_heading_tet": "Kapítulu 4. Maromak nia Hatene Uluk (Foreknowledge)",
+      "scripture_en": "\"For whom He did foreknow, He also did predestinate to be conformed to the image of His Son\" (Rom 8:29).",
+      "scripture_tet": "\"Tanba sira ne'ebé Nia hatene uluk ona, Nia mós destina uluk atu sai hanesan Ninia Oan-Mane nia ilas\" (Roma 8:29).",
+      "body_en": "Scriptural foreknowledge never refers merely to foresight of events or human actions, but always has reference to persons whom God has loved and appointed. God foreknows what will be because He has decreed what shall be. False theology makes God's foresight of our believing the cause of His election; whereas Scripture teaches that God's sovereign election is the cause, and our believing in Christ is the gracious effect.",
+      "body_tet": "Iha Eskritura, liafuan 'hatene uluk' (foreknowledge) nunka refere de'it ba haree uluk akontesimentu ka hahalok ema nian, maibé sempre refere ba ema sira ne'ebé Maromak hadomi no hili ona. Maromak hatene uluk buat ne'ebé sei akontese tanba Nia dekreta ona buat ne'ebé tenke akontese. Teolojia falsu halo ema nia fiar nu'udar kauza ba Maromak nia eleisaun; maibé Eskritura hanorin katak Maromak nia eleisaun soberanu mak kauza, no ita-nia fiar ba Kristu mak rezultadu husi Ninia grasa.",
+      "key_takeaway_en": "Divine foreknowledge is rooted in God's sovereign love for persons; election is the cause of salvation, and faith is its fruit.",
+      "key_takeaway_tet": "Maromak nia hatene uluk harii iha Ninia domin soberanu ba ema; eleisaun mak kauza salvasaun nian, no fiar mak nia fuan.",
+      "infographic": {
+        "type": "comparison",
+        "title_en": "Order of Election and Faith",
+        "title_tet": "Ordem Eleisaun no Fiar nian",
+        "columns": [
+          {
+            "header_en": "Human-Centered Misconception",
+            "header_tet": "Komprensaun Sala ne'ebé Sentra iha Ema",
+            "items_en": [
+              "1. Foreseen human faith (Cause)",
+              "2. God's election based on human choice (Effect)"
+            ],
+            "items_tet": [
+              "1. Haree uluk ema nia fiar (Kauza)",
+              "2. Maromak hili tuir ema nia desizaun (Rezultadu)"
+            ]
+          },
+          {
+            "header_en": "Biblical Truth",
+            "header_tet": "Lia-Loos Bíbliku",
+            "items_en": [
+              "1. God's sovereign love & election (Cause)",
+              "2. Gift of faith and salvation in Christ (Effect)"
+            ],
+            "items_tet": [
+              "1. Maromak nia domin soberanu no eleisaun (Kauza)",
+              "2. Prezente fiar no salvasaun iha Kristu (Rezultadu)"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "card_index": 6,
+      "section_heading_en": "Chapter 5. The Supremacy of God",
+      "section_heading_tet": "Kapítulu 5. Maromak nia Supremasia (Autoridade Aas Liu Hotu)",
+      "scripture_en": "\"Thine, O LORD, is the greatness, and the power, and the glory, and the victory, and the majesty... and Thou reignest over all\" (1 Chron 29:11-12).",
+      "scripture_tet": "\"Ita-Boot nian, oh NA'I, mak kbiit boot, podér, glória, vitória no majestade... no Ita-Boot ukun iha buat hotu nia leten\" (1 Krónikas 29:11-12).",
+      "body_en": "The absolute and universal supremacy of God is plainly affirmed throughout Scripture. Men often imagine that Satan is thwarting God's designs on every side, yet before the Most High, presidents and popes, kings and emperors, are less than grasshoppers. All that He has designed He does; all that He has decreed He performs. Nothing can resist His supreme will.",
+      "body_tet": "Supremasia absoluta no universál Maromak nian hetan afirmasaun klaru iha Eskritura tomak. Ema dala barak hanoin katak Satanás bele halo Maromak nia planu falha, maibé iha Ida ne'ebé Aas Liu nia oin, prezidente no papa sira, liurai no imperadór sira ki'ik liu fali gafañotu. Buat hotu ne'ebé Nia planeia, Nia halo; buat hotu ne'ebé Nia dekreta, Nia kumpre. Laiha buat ida bele kontra Ninia hakarak supremu.",
+      "key_takeaway_en": "God reigns supreme over all creation and earthly rulers; none of His eternal purposes can ever be frustrated.",
+      "key_takeaway_tet": "Maromak ukun nu'udar Liurai Aas Liu iha kriatura no ukun-na'in hotu nia leten; Ninia planu rohan-laek nunka bele falha."
+    },
+    {
+      "card_index": 7,
+      "section_heading_en": "Chapter 6. The Sovereignty of God",
+      "section_heading_tet": "Kapítulu 6. Maromak nia Soberania",
+      "scripture_en": "\"He doeth according to His will in the army of heaven, and among the inhabitants of the earth: and none can stay His hand\" (Dan 4:35).",
+      "scripture_tet": "\"Nia halo tuir Ninia hakarak iha tropa lalehan nian no iha ema sira ne'ebé hela iha rai leten; no laiha ema ida bele hanetik Ninia liman\" (Daniel 4:35).",
+      "body_en": "The sovereignty of God is the exercise of His supremacy. Subject to none, influenced by none, absolutely independent, God does as He pleases, only as He pleases, and always as He pleases. Divine sovereignty does not destroy human responsibility; rather, human responsibility rests upon it. In grace, God placed His elect upon an unconditional footing in Christ, who bore their responsibilities and wrought out a perfect righteousness for them.",
+      "body_tet": "Maromak nia soberania mak ezersísiu husi Ninia supremasia. La hakru'uk ba ema ida, la hetan influénsia husi buat ida, no independente tomak, Maromak halo tuir Ninia hakarak, de'it tuir Ninia hakarak, no sempre tuir Ninia hakarak. Soberania divina la halakon responsabilidade umana, maibé responsabilidade umana harii iha nia leten. Iha grasa, Maromak tau Ninia ema hili sira iha pozisaun sein kondisaun iha Kristu, ne'ebé lori sira-nia responsabilidade no halo justisa perfeitu ba sira.",
+      "key_takeaway_en": "God's sovereignty harmonizes with human responsibility and guarantees complete salvation in Christ for His elect.",
+      "key_takeaway_tet": "Maromak nia soberania armoniza ho responsabilidade umana no garante salvasaun kompletu iha Kristu ba Ninia ema hili sira.",
+      "infographic": {
+        "type": "comparison",
+        "title_en": "Conditional Standing vs. Unconditional Grace in Christ",
+        "title_tet": "Pozisaun Kondisionál vs. Grasa Sein Kondisaun iha Kristu",
+        "columns": [
+          {
+            "header_en": "Under Adam / Law",
+            "header_tet": "Iha Adão / Lei nia Okos",
+            "items_en": [
+              "Conditional footing dependent on human obedience",
+              "Resulted in failure and condemnation"
+            ],
+            "items_tet": [
+              "Pozisaun kondisionál ne'ebé depende ba ema nia obediénsia",
+              "Rezulta iha fallansu no kondenasaun"
+            ]
+          },
+          {
+            "header_en": "In Christ (The Elect)",
+            "header_tet": "Iha Kristu (Ema Hili sira)",
+            "items_en": [
+              "Unconditional standing in Christ our Surety",
+              "Christ fulfilled all obedience and secured eternal life"
+            ],
+            "items_tet": [
+              "Pozisaun sein kondisaun iha Kristu ita-nia Garantia",
+              "Kristu kumpre obediénsia hotu no garante moris rohan-laek"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "card_index": 8,
+      "section_heading_en": "Chapter 7. The Immutability of God",
+      "section_heading_tet": "Kapítulu 7. Maromak nia Imutabilidade (La Muda)",
+      "scripture_en": "\"I am the LORD, I change not\" (Mal 3:6). \"The counsel of the LORD standeth for ever\" (Psa 33:11).",
+      "scripture_tet": "\"Ha'u mak NA'I, Ha'u la muda\" (Malakias 3:6). \"NA'I nia planu hamriik metin ba nafatin\" (Salmu 33:11).",
+      "body_en": "Immutability is one of the divine perfections distinguishing God from all creatures. God is perpetually the same—compared in Scripture to a Rock. (1) He is immutable in His essence: being already perfect, He cannot change for the better or the worse. (2) He is immutable in His attributes: His power, wisdom, holiness, love, and mercy remain forever identical. (3) He is immutable in His counsel: His will never varies, giving solid comfort to the saint and terror to the wicked.",
+      "body_tet": "Imutabilidade (la muda) mak perfeisaun divina ida ne'ebé haketak Maromak husi kriatura hotu. Maromak sempre hanesan ba nafatin—iha Eskritura Nia kompara ho Fatuk Boot (Rocha). (1) Nia la muda iha Ninia esénsia: tanba perfeitu ona, Nia labele muda sai di'ak liu ka aat liu. (2) Nia la muda iha Ninia atributu sira: Ninia podér, matenek, santidade, domin no laran-sadia hela hanesan ba nafatin. (3) Nia la muda iha Ninia planu: Ninia hakarak nunka troka, hodi fó konsolasaun metin ba santu sira no ta'uk ba ema aat.",
+      "key_takeaway_en": "Because God never changes in His essence, character, or promises, He is an unshakable Rock for His people.",
+      "key_takeaway_tet": "Tanba Maromak nunka muda iha Ninia esénsia, karakter ka promesa sira, Nia sai Fatuk Boot ne'ebé la nakdoko ba Ninia povu."
+    },
+    {
+      "card_index": 9,
+      "section_heading_en": "Chapter 8. The Holiness of God",
+      "section_heading_tet": "Kapítulu 8. Maromak nia Santidade",
+      "scripture_en": "\"Who shall not fear Thee, O Lord, and glorify Thy name? for Thou only art holy\" (Rev 15:4). \"God is light, and in Him is no darkness at all\" (1 John 1:5).",
+      "scripture_tet": "\"Sé mak sei la ta'uk Ita-Boot, oh Na'i, no la hahi'i Ita-nia naran? Tanba Ita-Boot mesak de'it mak santu\" (Apokalipse 15:4). \"Maromak mak naroman, no iha Nia laiha nakukun uitoan mós\" (1 João 1:5).",
+      "body_en": "God alone is independently, infinitely, and immutably holy. Holiness is the very beauty of the divine nature. God's holiness is manifested in His works, in His law, and supremely at the Cross, where sin imputed to His Son was punished to its utmost deserts. Because God is holy, acceptance with Him on the ground of human works is impossible; yet what His holiness demanded, His grace provided in Christ.",
+      "body_tet": "Maromak mesak de'it mak santu ho independente, rohan-laek no la muda. Santidade mak beleza loloos husi natureza divina. Maromak nia santidade hatudu sai iha Ninia obra sira, iha Ninia lei, no aas liu iha Krús, iha ne'ebé sala ne'ebé tau ba Ninia Oan hetan kastigu tomak. Tanba Maromak santu, ema labele simu justifikasaun liuhosi hahalok rasik; maibé buat ne'ebé Ninia santidade ezije, Ninia grasa prepara ona iha Kristu.",
+      "key_takeaway_en": "God's absolute holiness never compromises with sin, yet at the Cross His grace satisfied every demand of His holiness.",
+      "key_takeaway_tet": "Maromak nia santidade absoluta nunka kompromete ho sala, maibé iha Krús Ninia grasa kumpre ezijénsia hotu husi Ninia santidade."
+    },
+    {
+      "card_index": 10,
+      "section_heading_en": "Chapter 9. The Power of God",
+      "section_heading_tet": "Kapítulu 9. Maromak nia Podér (Omnipoténsia)",
+      "scripture_en": "\"God hath spoken once; twice have I heard this; that power belongeth unto God\" (Psa 62:11).",
+      "scripture_tet": "\"Maromak ko'alia dala ida; dala rua ha'u rona ida-ne'e: katak podér pertense ba Maromak\" (Salmu 62:11).",
+      "body_en": "The power of God is that strength whereby He brings to pass whatsoever His infinite wisdom directs and His pure will resolves. His power is infinite and self-existent; no creature can restrain or frustrate it. We behold His power in creation—making all things out of nothing; in preservation—upholding all things; and in government—restraining Satan and evil men. Clothed with omnipotence, no prayer is too hard for Him to answer and no need too great for Him to supply.",
+      "body_tet": "Maromak nia podér mak kbiit ne'ebé Nia uza atu kumpre buat hotu ne'ebé Ninia matenek rohan-laek dirije no Ninia hakarak santu deside. Ninia podér laiha rohan no eziste iha Nia aan rasik; kriatura ida labele hanetik ka hamate ida-ne'e. Ita haree Ninia podér iha kriasun—kria buat hotu husi mamuk; iha prezervasaun—kaer metin buat hotu; no iha governasaun—hanetik Satanás no ema aat sira. Tanba Nia hatais ho omnipoténsia, laiha orasaun ne'ebé susar liu ba Nia atu hatán no laiha nesesidade ne'ebé boot liu ba Nia atu fó.",
+      "key_takeaway_en": "God's omnipotence creates and sustains the universe, assuring believers that no prayer is too hard for Him to answer.",
+      "key_takeaway_tet": "Maromak nia omnipoténsia kria no sustenta universu, hodi garante ba fiar-na'in sira katak laiha orasaun ne'ebé susar liu ba Nia atu hatán."
+    },
+    {
+      "card_index": 11,
+      "section_heading_en": "Chapter 10. The Faithfulness of God",
+      "section_heading_tet": "Kapítulu 10. Maromak nia Fidelidade (Laran-Metin)",
+      "scripture_en": "\"Know therefore that the LORD thy God, He is God, the faithful God\" (Deut 7:9).",
+      "scripture_tet": "\"Tanba ne'e hatene ba katak NA'I ó-nia Maromak, Nia mak Maromak, Maromak ne'ebé laran-metin\" (Deuteronómiu 7:9).",
+      "body_en": "Amidst a world marked by unfaithfulness, how blessed to behold One who is faithful at all times. God is true, and His Word of promise is sure; He never forgets, never fails, and never forfeits His word. God is faithful in preserving His people, faithful in afflicting His people with seasonable covenant correction, and faithful in glorifying all whom He has called.",
+      "body_tet": "Iha mundu ida ne'ebé nakonu ho infidelidade nia leet, bensaun boot tebes atu hateke ba Ida ne'ebé laran-metin iha tempu hotu. Maromak mak loos, no Ninia Liafuan promesa nian seguru; Nia nunka haluha, nunka falha, no nunka kontra Ninia liafuan. Maromak laran-metin hodi prezerva Ninia povu, laran-metin hodi korrije Ninia povu ho domin aliansa nian, no laran-metin hodi fó glória ba sira hotu ne'ebé Nia bolu.",
+      "key_takeaway_en": "In an unfaithful world, God's unfailing faithfulness is the sure anchor for our preservation, discipline, and final glorification.",
+      "key_takeaway_tet": "Iha mundu ne'ebé la laran-metin, Maromak nia fidelidade ne'ebé nunka falha sai ánkora seguru ba ita-nia prezervasaun, dixiplina no glorifikasaun ikus."
+    },
+    {
+      "card_index": 12,
+      "section_heading_en": "Chapter 11. The Goodness of God",
+      "section_heading_tet": "Kapítulu 11. Maromak nia Laran-Di'ak (Goodness)",
+      "scripture_en": "\"The goodness of God endureth continually\" (Psa 52:1). \"The LORD is good, a strong hold in the day of trouble\" (Nahum 1:7).",
+      "scripture_tet": "\"Maromak nia laran-di'ak hela ba nafatin\" (Salmu 52:1). \"NA'I mak di'ak, fatin seguru iha loron terus nian\" (Naum 1:7).",
+      "body_en": "The goodness of God refers to the absolute perfection of His nature: He is originally, essentially, infinitely, and immutably good—the highest good (summum bonum). His goodness is seen in creation, in restraining immediate wrath after the fall, and supremely in sending His Son to redeem sinners. God's goodness is the very life of the believer's trust in every day of trouble.",
+      "body_tet": "Maromak nia laran-di'ak refere ba perfeisaun absoluta husi Ninia natureza: Nia di'ak husi hahú, esensiál, rohan-laek no la muda—Nia mak di'ak ne'ebé aas liu hotu. Ninia laran-di'ak hatudu sai iha kriasun, hodi la hasai kedas hirus tomak bainhira ema monu ba sala, no aas liu hodi haruka Ninia Oan atu sosa fali ema sala-na'in sira. Maromak nia laran-di'ak mak moris husi fiar-na'in nia konfiansa iha loron terus hotu.",
+      "key_takeaway_en": "God is the highest good, and His unchanging goodness is our stronghold in every season of distress.",
+      "key_takeaway_tet": "Maromak mak di'ak ne'ebé aas liu hotu, no Ninia laran-di'ak ne'ebé la muda sai ita-nia fatin seguru iha tempu terus hotu."
+    },
+    {
+      "card_index": 13,
+      "section_heading_en": "Chapter 12. The Patience of God",
+      "section_heading_tet": "Kapítulu 12. Maromak nia Pasiénsia (Tahan Kle'ur)",
+      "scripture_en": "\"The LORD is slow to anger, and great in power\" (Nahum 1:3).",
+      "scripture_tet": "\"NA'I neineik atu hirus, no boot iha podér\" (Naum 1:3).",
+      "body_en": "Divine patience is that power of control which God exercises over Himself, causing Him to bear with the wicked and forbear so long in punishing them. God is slow to anger because He is great in power, exercising no less power over Himself than over His creatures. While mercy regards the creature as miserable, patience bears with the sin that caused the misery. Remembering God's infinite patience with us teaches us to be patient with others.",
+      "body_tet": "Pasiénsia divina mak podér kontrolu nian ne'ebé Maromak hala'o ba Nia aan rasik, hodi halo Nia tahan ema aat sira no demora kle'ur atu kastigu sira. Maromak neineik atu hirus tanba Nia boot iha podér, hodi kontrola Nia aan rasik hanesan Nia kontrola kriatura sira. Enkuantu laran-sadia haree kriatura nia terus, pasiénsia tahan sala ne'ebé hamosu terus ne'e. Hanoin fali Maromak nia pasiénsia rohan-laek mai ita hanorin ita atu hatudu pasiénsia ba ema seluk.",
+      "key_takeaway_en": "God's patience is His mighty self-restraint toward sinners and our supreme model for bearing with others.",
+      "key_takeaway_tet": "Maromak nia pasiénsia mak Ninia kontrolu boot ba Nia aan hasoru ema sala-na'in sira no sai ita-nia ezemplu aas liu atu tahan ema seluk."
+    },
+    {
+      "card_index": 14,
+      "section_heading_en": "Chapter 13. The Grace of God",
+      "section_heading_tet": "Kapítulu 13. Maromak nia Grasa",
+      "scripture_en": "\"Being justified freely by His grace through the redemption that is in Christ Jesus\" (Rom 3:24).",
+      "scripture_tet": "\"Hetan justifikasaun gratuita husi Ninia grasa liuhosi redensaun ne'ebé iha Kristu Jesus\" (Roma 3:24).",
+      "body_en": "Grace is the sovereign and saving favor of God exercised in bestowing blessings upon those who have no merit and from whom no compensation is demanded. Divine grace has three principal characteristics: (1) It is eternal, planned in Christ before the world began; (2) It is free, never purchased by human effort; and (3) It is sovereign, bestowed upon whom God pleases. If grace could be earned, it would cease to be grace.",
+      "body_tet": "Grasa mak favór soberanu no salvasaun nian husi Maromak ne'ebé fó bensaun ba sira ne'ebé laiha méritu no la ezije selu fali buat ida. Grasa divina iha karakterístika prinsipál tolu: (1) Rohan-laek, planeia ona iha Kristu molok mundu hahú; (2) Gratuita (livre), nunka sosa ho ema nia esforsu; no (3) Soberanu, fó ba ema ne'ebé Maromak hakarak. Se ema bele manán grasa ho serbisu, ida-ne'e la'ós ona grasa.",
+      "key_takeaway_en": "God's grace is eternal, completely free, and sovereignly bestowed on undeserving sinners through Jesus Christ.",
+      "key_takeaway_tet": "Maromak nia grasa mak rohan-laek, gratuita tomak, no fó ho soberanu ba ema sala-na'in ne'ebé la merese liuhosi Jesus Kristu."
+    },
+    {
+      "card_index": 15,
+      "section_heading_en": "Chapter 14. The Mercy of God",
+      "section_heading_tet": "Kapítulu 14. Maromak nia Laran-Sadia (Mizerikórdia)",
+      "scripture_en": "\"O give thanks unto the LORD; for He is good: for His mercy endureth for ever\" (Psa 136:1).",
+      "scripture_tet": "\"Fó agradese ba NA'I, tanba Nia di'ak; tanba Ninia laran-sadia hela ba nafatin\" (Salmu 136:1).",
+      "body_en": "The mercy of God has its spring in divine goodness and denotes His ready inclination to relieve the misery of fallen creatures, thus presupposing sin. Scripture distinguishes: (1) General mercy extended over all creation; (2) Special mercy supplying temporal necessities to mankind; and (3) Sovereign mercy reserved for the heirs of salvation through the Mediator, arising solely from God's imperial pleasure.",
+      "body_tet": "Maromak nia laran-sadia (mizerikórdia) mai husi Ninia laran-di'ak no hatudu Ninia prontidaun atu hasai kriatura sira ne'ebé monu husi sira-nia terus, tanba ne'e pressupoen sala. Eskritura haketak: (1) Laran-sadia jerál ba kriatura hotu; (2) Laran-sadia espesiál ne'ebé fó nesesidade moris nian ba umanidade; no (3) Laran-sadia soberanu ne'ebé rai hela ba erdeiru salvasaun nian liuhosi Mediadór, ne'ebé mai de'it husi Maromak nia hakarak liurai nian.",
+      "key_takeaway_en": "God's mercy relieves the misery of fallen sinners and finds its highest expression in covenant salvation through Christ.",
+      "key_takeaway_tet": "Maromak nia laran-sadia hasai terus husi ema sala-na'in ne'ebé monu no hatudu sai aas liu iha salvasaun aliansa nian liuhosi Kristu."
+    },
+    {
+      "card_index": 16,
+      "section_heading_en": "Chapter 15. The Lovingkindness of God",
+      "section_heading_tet": "Kapítulu 15. Maromak nia Domin-Laran-Di'ak (Lovingkindness)",
+      "scripture_en": "\"How excellent is Thy lovingkindness, O God! therefore the children of men put their trust under the shadow of Thy wings\" (Psa 36:7).",
+      "scripture_tet": "\"Ita-nia domin-laran-di'ak folin-boot tebes, oh Maromak! Tanba ne'e ema nia oan sira tau konfiansa iha Ita-nia liras mahon okos\" (Salmu 36:7).",
+      "body_en": "Lovingkindness speaks of God's paternal favor and tender affection toward His people. This lovingkindness is never removed from His children, for God has solemnly engaged Himself by covenant never to take it utterly from them. To the regenerate soul, the sweet constraints of God's lovingkindness and grace are far more powerful than the terrors of His Law.",
+      "body_tet": "Domin-laran-di'ak (lovingkindness) ko'alia kona-ba Maromak nia favór nu'udar Aman no afeisaun mamar ba Ninia povu. Domin-laran-di'ak ne'e nunka hasai husi Ninia oan sira, tanba Maromak promete ona ho aliansa katak Nia nunka sei hasai ida-ne'e husi sira. Ba klamar ne'ebé moris foun ona, kbiit mamar husi Maromak nia domin-laran-di'ak no grasa forte liu fali ta'uk husi Ninia Lei.",
+      "key_takeaway_en": "God's covenant lovingkindness is a Father's tender, unbreakable affection that gently constrains believers to obey.",
+      "key_takeaway_tet": "Maromak nia domin-laran-di'ak aliansa nian mak Aman nia afeisaun mamar ne'ebé labele kotu, ne'ebé dada fiar-na'in sira atu halo tuir."
+    },
+    {
+      "card_index": 17,
+      "section_heading_en": "Chapter 16. The Love of God",
+      "section_heading_tet": "Kapítulu 16. Maromak nia Domin",
+      "scripture_en": "\"God is love\" (1 John 4:8). \"I have loved thee with an everlasting love\" (Jer 31:3).",
+      "scripture_tet": "\"Maromak mak domin\" (1 João 4:8). \"Ha'u hadomi ó ho domin ne'ebé rohan-laek\" (Jeremias 31:3).",
+      "body_en": "Love is not merely one of God's attributes, but His very nature. Scripture reveals seven distinct characteristics of divine love: it is uninfluenced by anything in the creature, eternal without beginning, sovereign in its choice, infinite beyond measure, immutable without diminution, holy in principle, and gracious in its manifestation through Jesus Christ at Calvary.",
+      "body_tet": "Domin la'ós de'it ida husi Maromak nia atributu sira, maibé Ninia natureza rasik. Eskritura hatudu karakterístika hitu husi domin divina: la hetan influénsia husi kriatura, rohan-laek sein hahú, soberanu iha Ninia hili, laiha sasukat, la muda no la hamenus, santu iha prinsípiu, no nakonu ho grasa iha Ninia manifestasaun liuhosi Jesus Kristu iha Kalváriu.",
+      "key_takeaway_en": "God's love is His very nature—spontaneous, eternal, sovereign, infinite, immutable, holy, and revealed at Calvary.",
+      "key_takeaway_tet": "Maromak nia domin mak Ninia natureza rasik—espontáneu, rohan-laek, soberanu, infinitu, la muda, santu no hatudu sai iha Kalváriu.",
+      "infographic": {
+        "type": "grid",
+        "title_en": "7 Characteristics of God's Love",
+        "title_tet": "Karakterístika 7 husi Maromak nia Domin",
+        "items": [
+          {
+            "label_en": "1. Uninfluenced",
+            "label_tet": "1. Espontáneu",
+            "desc_en": "Uncaused by any merit in the creature.",
+            "desc_tet": "La mai husi méritu ruma iha kriatura."
+          },
+          {
+            "label_en": "2. Eternal",
+            "label_tet": "2. Rohan-laek",
+            "desc_en": "Without beginning or end.",
+            "desc_tet": "Laiha hahú no laiha rohan."
+          },
+          {
+            "label_en": "3. Sovereign",
+            "label_tet": "3. Soberanu",
+            "desc_en": "Bestowed according to God's own will.",
+            "desc_tet": "Fó tuir Maromak nia hakarak rasik."
+          },
+          {
+            "label_en": "4. Infinite",
+            "label_tet": "4. Infinitu",
+            "desc_en": "Passes knowledge and defies measurement.",
+            "desc_tet": "Liutiha konesimentu no labele sukat."
+          },
+          {
+            "label_en": "5. Immutable",
+            "label_tet": "5. La Muda",
+            "desc_en": "Loves His own unto the end.",
+            "desc_tet": "Hadomi Ninia ema sira to'o rohan."
+          },
+          {
+            "label_en": "6. Holy & Gracious",
+            "label_tet": "6. Santu & Grasiozu",
+            "desc_en": "Never compromises righteousness; proven at the Cross.",
+            "desc_tet": "Nunka kontra justisa; hatudu iha Krús."
+          }
+        ]
+      }
+    },
+    {
+      "card_index": 18,
+      "section_heading_en": "Chapter 17. The Love of God to Us",
+      "section_heading_tet": "Kapítulu 17. Maromak nia Domin mai Ita",
+      "scripture_en": "\"Having loved His own which were in the world, He loved them unto the end\" (John 13:1).",
+      "scripture_tet": "\"Tanba Nia hadomi ona Ninia ema sira ne'ebé iha mundu, Nia hadomi sira to'o rohan\" (João 13:1).",
+      "body_en": "Holy Writ knows nothing of a saving love of God outside of Christ. Because God's love is in Christ Jesus, it was neither attracted by anything in its objects nor can it be repelled by their failings. Every act of God toward His people in time—election, redemption, effectual calling, and restoration—is the expression of His eternal, invincible love.",
+      "body_tet": "Eskritura Sagrada la hatene domin salvasaun nian husi Maromak iha Kristu nia li'ur. Tanba Maromak nia domin iha Kristu Jesus, domin ne'e la hetan atrasaun husi ema nia di'ak no labele lakon tanba ema nia fallansu. Hahalok hotu ne'ebé Maromak halo ba Ninia povu iha tempu laran—eleisaun, redensaun, bolu ne'ebé efetivu, no restaurasaun—mak espresaun husi Ninia domin rohan-laek ne'ebé la bele manán.",
+      "key_takeaway_en": "God's saving love is anchored in Christ Jesus, making it invincible and unbreakable toward His redeemed people.",
+      "key_takeaway_tet": "Maromak nia domin salvasaun nian metin iha Kristu Jesus, hodi halo ida-ne'e sai kbiit ne'ebé labele manán ba Ninia povu ne'ebé hetan redensaun."
+    },
+    {
+      "card_index": 19,
+      "section_heading_en": "Chapter 18. The Wrath of God",
+      "section_heading_tet": "Kapítulu 18. Maromak nia Hirus (Wrath)",
+      "scripture_en": "\"For the wrath of God is revealed from heaven against all ungodliness and unrighteousness of men\" (Rom 1:18).",
+      "scripture_tet": "\"Tanba Maromak nia hirus hatudu sai husi lalehan hasoru ema sira-nia impiedade no injustisa hotu\" (Roma 1:18).",
+      "body_en": "The wrath of God is as much a divine perfection as His faithfulness or mercy; indifference to sin would be a moral blemish. Wrath is God's eternal detestation of all unrighteousness—His holiness stirred into activity against sin. Supremely, God's wrath was revealed at the Cross when His own Son bore the curse of sin, proving His unyielding justice.",
+      "body_tet": "Maromak nia hirus mak perfeisaun divina ida hanesan mós Ninia fidelidade ka laran-sadia; la preokupa ho sala sei sai defetu morál ida. Hirus mak Maromak nia ódiu rohan-laek ba injustisa hotu—Ninia santidade ne'ebé book aan hasoru sala. Aas liu hotu, Maromak nia hirus hatudu sai iha Krús bainhira Ninia Oan rasik lori maldisaun sala nian, hodi prova Ninia justisa ne'ebé la nakdoko.",
+      "key_takeaway_en": "God's wrath is the active expression of His holiness against sin, fully satisfied for believers through Christ's sacrifice on the Cross.",
+      "key_takeaway_tet": "Maromak nia hirus mak espresaun ativa husi Ninia santidade hasoru sala, ne'ebé hetan satisfasaun tomak ba fiar-na'in sira liuhosi Kristu nia sakrifísiu iha Krús."
+    },
+    {
+      "card_index": 20,
+      "section_heading_en": "Chapter 19. The Contemplation of God",
+      "section_heading_tet": "Kapítulu 19. Kontemplasaun ba Maromak",
+      "scripture_en": "\"Canst thou by searching find out God? canst thou find out the Almighty unto perfection?\" (Job 11:7). \"Now unto the King eternal, immortal, invisible, the only wise God, be honour and glory for ever and ever. Amen\" (1 Tim 1:17).",
+      "scripture_tet": "\"Ó bele buka-hatene Maromak to'o rohan ka? Ó bele komprende Ida ne'ebé Kbiit-Boot Liu to'o perfeisaun ka?\" (Jó 11:7). \"Agora ba Liurai rohan-laek, ne'ebé la mate, ne'ebé matan la haree, Maromak mesak de'it ne'ebé matenek, sai onra no glória ba nafatin. Amen\" (1 Timóteo 1:17).",
+      "body_en": "God is incomprehensible—beyond the full grasp of finite minds—yet this calls us to reverent, prayerful inquiry into what He has revealed in His Word. Nothing so enlarges the intellect and elevates the soul as devout meditation upon God. True happiness consists solely in the enjoyment of this all-sufficient, sovereign God, whose lovingkindness is better than life.",
+      "body_tet": "Maromak mak inkompreensível—liutiha ema nia hanoin ne'ebé limitadu—maibé ida-ne'e bolu ita atu estuda ho respeitu no orasaun buat ne'ebé Nia hatudu sai iha Ninia Liafuan. Laiha buat ida ne'ebé haluan ita-nia hanoin no hasa'e ita-nia klamar hanesan meditasaun devota kona-ba Maromak. Ksolok loloos hela de'it iha haksolok ho Maromak soberanu ne'ebé sufisiente iha buat hotu, ne'ebé Ninia domin-laran-di'ak di'ak liu fali moris.",
+      "key_takeaway_en": "Though God surpasses full human comprehension, devout contemplation of His revealed character is the soul's highest privilege and joy.",
+      "key_takeaway_tet": "Maski Maromak liutiha ema nia komprensaun tomak, kontemplasaun devota ba Ninia karakter ne'ebé hatudu sai mak klamar nia priviléjiu no ksolok aas liu."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "booklet_id": 5,
+  "author": "William Tyndale",
+  "title_en": "Pathway into the Scriptures",
+  "title_tet": "Dalan Tama Ba Eskritura Sagrada",
+  "subtitle_en": "Understanding the Law, the Gospel, Grace, and Faith",
+  "subtitle_tet": "Komprende Lei, Evanjellu, Grasa no Fiar",
+  "cover_image": "data/images/bookLet/booklet_05.jpg",
+  "cards": [
+    {
+      "card_index": 1,
+      "section_heading_en": "Introduction - A Pathway into Holy Scripture",
+      "section_heading_tet": "Introdusaun - Dalan Ba Eskritura Sagrada",
+      "scripture_en": "\"Search the scriptures; for in them ye think ye have eternal life: and they are they which testify of me\" (John 5:39).",
+      "scripture_tet": "\"Buka-hatene Eskritura sira; tanba imi hanoin katak iha sira imi iha moris rohan-laek; no sira mak testemuña kona-ba Ha'u\" (João 5:39).",
+      "body_en": "Seeing that it has pleased God to send unto our Englishmen the Scripture in their mother tongue—considering that there be in every place false teachers and blind leaders, that you should be deceived of no man—I supposed it very necessary to prepare this pathway into the scripture for you, that you might walk surely and ever know the true from the false. And above all to put you in remembrance of certain points, which are, that you well understand what these words mean: the Old Testament, the New Testament, the law, the gospel, Moses, Christ, nature, grace, working and believing, deeds and faith; lest we ascribe to the one that which belongs to the other, and make of Christ, Moses; of the gospel, the law; despise grace and rob faith.",
+      "body_tet": "Haree katak Maromak kontente atu haruka Eskritura ba ita-nia ema sira iha sira-nia lian rasik—hodi hanoin katak iha fatin hotu iha mestre falsu no líder matan-delek sira, atu imi la bele hetan bosok husi ema ida—ha'u hanoin nesesáriu tebes atu prepara dalan tama ba Eskritura ida-ne'e ba imi, atu imi bele la'o ho seguru no sempre hatene loos husi sala. No liuliu atu fó hanoin fali kona-ba pontu balun, ne'ebé mak imi komprende ho di'ak saida mak liafuan sira-ne'e signifika: Testamentu Tuan, Testamentu Foun, lei, evanjellu, Moisés, Kristu, natureza, grasa, serbisu no fiar, hahalok no fiar; atu ita la fó ba ida buat ne'ebé pertense ba seluk, no la halo Kristu sai Moisés; evanjellu sai lei; la hamenus grasa no la hadau fiar.",
+      "key_takeaway_en": "To read Scripture rightly and discern truth from error, we must clearly distinguish Law and Gospel, Grace and Faith.",
+      "key_takeaway_tet": "Atu lee Eskritura ho loos no haketak lia-loos husi sala, ita tenke haketak ho klaru Lei no Evanjellu, Grasa no Fiar."
+    },
+    {
+      "card_index": 2,
+      "section_heading_en": "Old and New Testaments",
+      "section_heading_tet": "Testamentu Tuan no Testamentu Foun",
+      "scripture_en": "\"For the law was given by Moses, but grace and truth came by Jesus Christ\" (John 1:17).",
+      "scripture_tet": "\"Tanba lei fó liuhosi Moisés, maibé grasa no lia-loos mai liuhosi Jesus Kristu\" (João 1:17).",
+      "body_en": "The Old Testament is a book wherein is written the laws of God and the deeds of those who fulfill them, and of those also who fulfill them not. The New Testament is a book wherein are contained the promises of God and the deeds of those which believe them or believe them not.",
+      "body_tet": "Testamentu Tuan mak livru ida ne'ebé hakerek iha nia laran Maromak nia lei sira no hahalok sira husi ema ne'ebé kumpre sira, no mós husi sira ne'ebé la kumpre sira. Testamentu Foun mak livru ida ne'ebé iha nia laran Maromak nia promesa sira no hahalok sira husi ema ne'ebé fiar sira ka la fiar sira.",
+      "key_takeaway_en": "The Old Testament centers on God's laws and human obedience or failure, while the New Testament centers on God's promises and faith.",
+      "key_takeaway_tet": "Testamentu Tuan sentra iha Maromak nia lei no obediénsia ka fallansu ema nian, enkuantu Testamentu Foun sentra iha Maromak nia promesa no fiar."
+    },
+    {
+      "card_index": 3,
+      "section_heading_en": "The Gospel - Joyful Tidings of Deliverance",
+      "section_heading_tet": "Evanjellu - Lia-Di'ak Ksolok Nian Kona-Ba Libertasaun",
+      "scripture_en": "\"For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth\" (Rom 1:16).",
+      "scripture_tet": "\"Tanba ha'u la moe ba evanjellu Kristu nian; tanba ida-ne'e mak podér Maromak nian ba salvasaun ba ema hotu ne'ebé fiar\" (Roma 1:16).",
+      "body_en": "Evangelion (that we call the gospel) is a Greek word and signifies good, merry, glad, and joyful tidings, that make a man’s heart glad, and make him sing, dance, and leap for joy. In like manner is the evangelion of God joyful tidings published by the apostles throughout all the world, of Christ the right David, how that He has fought with sin, with death, and the devil, and overcome them. Whereby all men that were in bondage to sin, wounded with death, overcome of the devil, are without their own merits or deservings, loosed, justified, restored to life, and saved.",
+      "body_tet": "Evanjellu (ne'ebé ita bolu evanjellu) mak liafuan Gregu ida no signifika lia-di'ak, ksolok no haksolok nian, ne'ebé halo ema nia fuan haksolok, no halo nia kanta, dansa no haksoit ho ksolok. Nune'e mós evanjellu Maromak nian mak lia-di'ak ksolok nian ne'ebé apóstolu sira haklaken iha mundu tomak, kona-ba Kristu David loos, oinsá Nia funu hasoru sala, mate no diabu, no manán sira. Liuhosi ida-ne'e, ema hotu ne'ebé iha atan ba sala, kanek ho mate, manán husi diabu, sai livre, hetan justifikasaun, hetan fali moris no salva sein sira-nia méritu ka merese rasik.",
+      "key_takeaway_en": "The gospel is joyful news of Christ's victory over sin, death, and Satan, freely liberating and justifying sinners apart from merit.",
+      "key_takeaway_tet": "Evanjellu mak lia-di'ak ksolok nian kona-ba Kristu nia vitória hasoru sala, mate no Satanás, hodi liberta no justifika ema sala-na'in sein méritu."
+    },
+    {
+      "card_index": 4,
+      "section_heading_en": "The Law - The Ministration of Death and Self-Despair",
+      "section_heading_tet": "Lei - Ministériu Mate Nian no Desesperu Ba Aan Rasik",
+      "scripture_en": "\"By the law is the knowledge of sin\" (Rom 3:20). \"The letter killeth, but the spirit giveth life\" (2 Cor 3:6).",
+      "scripture_tet": "\"Liuhosi lei mak mai konesimentu kona-ba sala\" (Roma 3:20). \"Letra oho, maibé espíritu fó moris\" (2 Korintu 3:6).",
+      "body_en": "The law (whose minister is Moses) was given to bring us unto the knowledge of ourselves, that we might thereby feel and perceive what we are by nature. The law condemns us and all our deeds and is called of Paul “the ministration of death.” For it kills our consciences and drives us to desperation, inasmuch as it requires of us that which is impossible for our nature to do. But grace and verity are given us by Christ (John 1:17): so that, when the law has passed upon us, and condemned us to death, then in Christ we have grace.",
+      "body_tet": "Lei (ne'ebé ninia ministru mak Moisés) fó atu lori ita ba konesimentu kona-ba ita-nia aan rasik, atu liuhosi ida-ne'e ita bele sente no haree saida mak ita tuir natureza. Lei kondena ita no ita-nia hahalok hotu no Paulo bolu \"ministériu mate nian\". Tanba ida-ne'e oho ita-nia konsiénsia no lori ita ba desesperu, tanba ezije husi ita buat ne'ebé imposível ba ita-nia natureza atu halo. Maibé grasa no lia-loos fó mai ita liuhosi Kristu (João 1:17): atu, bainhira lei liu ona iha ita, no kondena ita ba mate, entaun iha Kristu ita iha grasa.",
+      "key_takeaway_en": "The law exposes our sin and inability, driving us from self-reliance to seek grace in Christ.",
+      "key_takeaway_tet": "Lei hatudu sai ita-nia sala no inkapasidade, hodi lori ita husi depende ba aan rasik atu buka grasa iha Kristu."
+    },
+    {
+      "card_index": 5,
+      "section_heading_en": "Our State by Nature - Poison of Adam's Fall",
+      "section_heading_tet": "Ita-Nia Estadu Tuir Natureza - Venenu Monu Adão Nian",
+      "scripture_en": "\"And were by nature the children of wrath, even as others\" (Eph 2:3).",
+      "scripture_tet": "\"No tuir natureza oan sira hirus nian, hanesan mós ema seluk\" (Éfezu 2:3).",
+      "body_en": "By nature, through the fall of Adam, are we the children of wrath, heirs of the vengeance of God by birth, yea, and from our conception. For our nature is to do sin, as is the nature of a serpent to sting. And as a serpent, yet young, is full of poison, and cannot afterward but bring forth the fruits thereof, so are we hated of God for that natural poison which is conceived and born with us, before we do any outward evil. By grace (that is to say, by favor) we are plucked out of Adam and grafted in Christ, the root of all goodness.",
+      "body_tet": "Tuir natureza, liuhosi monu Adão nian, ita mak oan sira hirus nian, erdeiru ba vingansa Maromak nian husi moris, sin, no husi konsepsaun. Tanba ita-nia natureza mak halo sala, hanesan natureza samea nian atu tata. No hanesan samea ki'ik ida nakonu ho venenu, no hafoin labele la fó fuan husi ida-ne'e, nune'e mós Maromak la gosta tanba venenu naturál ne'ebé moris hamutuk ho ita, antes ita halo aat ruma iha li'ur. Liuhosi grasa (katak, liuhosi favór) ita foti sai husi Adão no enxerta iha Kristu, abut husi di'ak hotu.",
+      "key_takeaway_en": "By Adam's fall we are born with a sinful nature, yet by grace we are grafted into Christ, the root of all good.",
+      "key_takeaway_tet": "Liuhosi monu Adão nian ita moris ho natureza sala, maibé liuhosi grasa ita enxerta iha Kristu, abut husi di'ak hotu."
+    },
+    {
+      "card_index": 6,
+      "section_heading_en": "Faith and Righteousness - Free Justification",
+      "section_heading_tet": "Fiar no Justisa - Justifikasaun Gratuita",
+      "scripture_en": "\"Therefore being justified by faith, we have peace with God through our Lord Jesus Christ\" (Rom 5:1).",
+      "scripture_tet": "\"Tanba ne'e hetan justifikasaun liuhosi fiar, ita iha dame ho Maromak liuhosi ita-nia Na'i Jesus Kristu\" (Roma 5:1).",
+      "body_en": "By faith are we saved only in believing the promises. And though faith be never without love and good works, yet is our saving imputed neither to love nor unto good works, but unto faith only. For love and works are under the law, which requires perfection. Now faith is under the promises, which damn not but give pardon, grace, mercy, favor. The righteousness that is of value before God is to believe the promises of God, after the law has confounded the conscience.",
+      "body_tet": "Liuhosi fiar mak ita salva de'it hodi fiar promesa sira. No maski fiar nunka la iha domin no hahalok di'ak sira, maibé ita-nia salvasaun sura la'ós ba domin ka ba hahalok di'ak sira, maibé ba fiar de'it. Tanba domin no hahalok sira iha lei nia okos, ne'ebé ezije perfeisaun. Agora fiar iha promesa sira nia okos, ne'ebé la kondena maibé fó perdaun, grasa, laran-sadia, favór. Justisa ne'ebé iha folin iha Maromak nia oin mak fiar promesa sira Maromak nian, hafoin lei halo moe konsiénsia.",
+      "key_takeaway_en": "Justification comes by faith alone resting on God's promises, while love and good works follow faith without earning salvation.",
+      "key_takeaway_tet": "Justifikasaun mai liuhosi fiar de'it ne'ebé depende ba Maromak nia promesa, enkuantu domin no hahalok di'ak tuir fiar sein manán salvasaun."
+    },
+    {
+      "card_index": 7,
+      "section_heading_en": "The Double Office of Christ - Savior and Example",
+      "section_heading_tet": "Servisu Rua Kristu Nian - Salvador no Ezemplu",
+      "scripture_en": "\"Christ also suffered for us, leaving us an example, that ye should follow his steps\" (1 Pet 2:21).",
+      "scripture_tet": "\"Kristu mós terus ba ita, hodi husik hela ezemplu ida ba ita, atu imi tuir Ninia ain-fatin\" (1 Pedro 2:21).",
+      "body_en": "Now Christ stands us in double stead, and serves us in two ways. First, He is our redeemer, deliverer, reconciler, mediator, intercessor, advocate. His blood-shedding, and all that He did, does me as good service as though I myself had done it. Secondarily, after that we be overcome with love and kindness, and now seek to do the will of God, then have we Christ an example to counterfeit: bestow ourselves, all that we have, freely for our neighbors' wealth only.",
+      "body_tet": "Agora Kristu hamriik ba ita iha dalan rua, no serbí ita iha dalan rua. Dahuluk, Nia mak ita-nia redentór, libertador, rekonsiliadór, mediadór, intersesór, advogadu. Ninia fakar-raan, no buat hotu ne'ebé Nia halo, fó benefísiu ba ha'u hanesan ha'u rasik mak halo. Daruak, hafoin ita manán ho domin no laran-di'ak, no agora buka atu halo Maromak nia hakarak, entaun ita iha Kristu nu'udar ezemplu atu banati-tuir: entrega ita-nia aan, buat hotu ne'ebé ita iha, ho gratuita ba ita-nia viziñu nia di'ak de'it.",
+      "key_takeaway_en": "Christ first saves us as our Redeemer and Mediator, and then inspires us as our Example to serve our neighbor freely in love.",
+      "key_takeaway_tet": "Kristu uluk salva ita nu'udar ita-nia Redentór no Mediadór, no hafoin inspira ita nu'udar ita-nia Ezemplu atu serbí viziñu ho gratuita iha domin."
+    },
+    {
+      "card_index": 8,
+      "section_heading_en": "Conclusion - Unlocking the Key to Scripture",
+      "section_heading_tet": "Konkluzaun - Loke Xave Ba Eskritura",
+      "scripture_en": "\"Then opened he their understanding, that they might understand the scriptures\" (Luke 24:45).",
+      "scripture_tet": "\"Hafoin Nia loke sira-nia komprensaun, atu sira bele komprende Eskritura sira\" (Lucas 24:45).",
+      "body_en": "These things, I say, to know, is to have all the Scripture unlocked and opened before you, so that if you will go in and read, you cannot but understand. And in these things to be ignorant is to have all the Scripture locked up, so that the more you read it, the blinder you are. And now, because the lay and unlearned people are taught these first principles of our profession, therefore they read the Scripture and understand and delight therein.",
+      "body_tet": "Buat sira-ne'e, ha'u dehan, atu hatene, mak iha Eskritura hotu nakloke no loke iha ó-nia oin, atu se ó tama no lee, ó la bele la komprende. No iha buat sira-ne'e atu la hatene mak iha Eskritura hotu taka metin, atu liután ó lee ida-ne'e, liután ó sai matan-delek. No agora, tanba ema leigu no sira ne'ebé la eskola hetan hanorin prinsípiu dahuluk sira husi ita-nia profisaun, tanba ne'e sira lee Eskritura no komprende no haksolok iha laran.",
+      "key_takeaway_en": "Grasping Law and Gospel unlocks the whole Bible, enabling every believer to read with understanding and joy.",
+      "key_takeaway_tet": "Komprende Lei no Evanjellu loke Bíblia tomak, hodi fó kbiit ba fiar-na'in hotu atu lee ho komprensaun no ksolok.",
+      "infographic": {
+        "type": "comparison",
+        "title_en": "Law (Moses) vs. Gospel (Christ)",
+        "title_tet": "Lei (Moisés) vs. Evanjellu (Kristu)",
+        "columns": [
+          {
+            "header_en": "The Law (Moses)",
+            "header_tet": "Lei (Moisés)",
+            "items_en": [
+              "Demands perfection and exposes sin",
+              "Condemns and drives to self-despair",
+              "Points to our need for grace"
+            ],
+            "items_tet": [
+              "Ezije perfeisaun no hatudu sai sala",
+              "Kondena no lori ba desesperu ba aan rasik",
+              "Hatudu ba ita-nia nesesidade ba grasa"
+            ]
+          },
+          {
+            "header_en": "The Gospel (Christ)",
+            "header_tet": "Evanjellu (Kristu)",
+            "items_en": [
+              "Joyful tidings of Christ's victory over sin & death",
+              "Freely justifies by faith and promises",
+              "Leads to loving obedience and service"
+            ],
+            "items_tet": [
+              "Lia-di'ak ksolok kona-ba Kristu nia vitória hasoru sala no mate",
+              "Justifika ho gratuita liuhosi fiar no promesa",
+              "Lori ba obediénsia domin nian no servisu"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
